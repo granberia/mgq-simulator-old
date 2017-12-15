@@ -1,0 +1,181 @@
+<div align="center" *ngIf="loaded">
+  <div style="width: 1280px" align="left">
+    <form [formGroup]="formGroup">
+      <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-10">
+          <div class="row flex-items-xs-middle">
+            <div class="col-sm-2">
+              <img src="images/faces/{{ actor?.id }}.png">
+            </div>
+            <div class="col-sm-4">
+
+              <div class="select">
+                <select formControlName="actor">
+                  <option *ngFor="let actor of actorList" [value]=actor.id>{{ actor.name }} ({{ actor.secondaryName }})</option>
+                </select>
+              </div>
+              Lv 60
+              <br>
+              <div class="select">
+                <select formControlName="job">
+                  <option *ngFor="let job of jobList" [value]=job.id>{{ job.name }}</option>
+                </select>
+              </div>
+              Lv 10
+              <br>
+              <div class="select">
+                <select formControlName="race">
+                  <option *ngFor="let race of raceList" [value]=race.id>{{ race.name }}</option>
+                </select>
+              </div>
+              Lv 10
+            </div>
+            <div class="col-sm-6">
+            </div>
+          </div>
+          <clr-tabs>
+            <clr-tab>
+              <button clrTabLink id="link1">기본 능력</button>
+              <clr-tab-content id="content1" *clrIfActive="true">
+                <app-basis-view [actor]="actor" [job]="job" [race]="race"></app-basis-view>
+              </clr-tab-content>
+            </clr-tab>
+            <clr-tab>
+              <button clrTabLink>특수 능력</button>
+              <clr-tab-content>
+                <app-special-view [actor]="actor" [job]="job" [race]="race"></app-special-view>
+              </clr-tab-content>
+            </clr-tab>
+            <clr-tab>
+              <button clrTabLink>속성 내성</button>
+              <clr-tab-content>
+                <app-element-resist-view [actor]="actor" [job]="job" [race]="race"></app-element-resist-view>
+              </clr-tab-content>
+            </clr-tab>
+            <clr-tab>
+              <button clrTabLink>상태이상 내성</button>
+              <clr-tab-content>
+                <app-state-resist-view [actor]="actor" [job]="job" [race]="race"></app-state-resist-view>
+              </clr-tab-content>
+            </clr-tab>
+            <clr-tab>
+              <button clrTabLink>직업</button>
+              <clr-tab-content>
+                <app-job-view [job]="job"></app-job-view>
+              </clr-tab-content>
+            </clr-tab>
+            <clr-tab>
+              <button clrTabLink>종족</button>
+              <clr-tab-content>
+                <app-race-view [race]="race"></app-race-view>
+              </clr-tab-content>
+            </clr-tab>
+            <clr-tab>
+              <button clrTabLink>장비 구성</button>
+              <clr-tab-content>
+                개발중임
+              </clr-tab-content>
+            </clr-tab>
+            <clr-tab>
+              <button clrTabLink>습득 스킬</button>
+              <clr-tab-content>
+                개발중임
+              </clr-tab-content>
+            </clr-tab>
+            <clr-tab>
+              <button clrTabLink>고유 어빌리티</button>
+              <clr-tab-content>
+                2.20 나오면 다 바뀔건데 지금 구현할 필요가 있냐??
+              </clr-tab-content>
+            </clr-tab>
+          </clr-tabs>
+
+          <div style="font-size: 24px; margin-top: 48px; margin-bottom: 12px">
+            <img src="images/faces/{{ actor?.id }}.png" style="width: 24px; height:24px">
+            <b>나도 리뷰 쓰기</b>
+          </div>
+          <disqus [identifier]="actor.id"></disqus>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 별도 탭으로 뺄 예정
+
+  <div class="row">
+            <div class="status col-sm-12">
+              <br> 앞으로 일정
+              <br> 1. 모든 동료, 직업, 종족 집어넣어서 단순 베이스 스탯 계산기라도 끝내기, 고유 어빌리티도 이 과정에서 넣자
+              <br> 2. 모든 장비 집어넣어서 각 장비에 따른 스탯 계산하기 (여기서 찍쌀 가능성 높음)
+              <br> 3. 모든 어빌리티 집어넣어서 어빌리티 장착시 스탯 계산하기 (언제 다 집어넣냐)
+              <br> 4. 파티 설정 로컬에 저장하기 5. 모든 스킬 집어넣어서 배울 수 있는 스킬 중 실질적인 딜이 가장 강한 스킬과 그 딜량 구하기 (개같다)
+              <br> 6. 턴 수 입력하면 버프 등등 다 계산해서 어떤 버프 바르고 쳐야 입력한 턴 수 동안 누적 딜이 제일 높은지 구하기 (이거까지 하면 완성)
+              <br> 7. RPGVX 세이브 선택한 이후 파싱해서 어디까지 여기에 불러와지나 해보기? 와 이건 빡세겠는데?
+              <br> 99999. 사용자 인터페이스 개선하기
+              <br>
+              <br>
+
+              <clr-stack-view>
+                <clr-stack-block>
+                  <clr-stack-label>작업 기록</clr-stack-label>
+                  <clr-stack-block>
+                    <clr-stack-label>2017년 12월 7일</clr-stack-label>
+                    <clr-stack-content>선택 가능한 직업 절반정도 등록했다
+                      <br>clarity에서 사이드바를 별로 권장하지 않아서 페이지 레이아웃 갈았음
+                      <br>https://github.com/vmware/clarity/pull/1421/ 이거 받아들여지면 드랍다운 검색 기능 지원할 예정</clr-stack-content>
+                  </clr-stack-block>
+                  <clr-stack-block>
+                    <clr-stack-label>2017년 12월 8일</clr-stack-label>
+                    <clr-stack-content>선택 가능한 직업 전부 등록 완료
+                      <br> 모든 직업 보기 페이지 추가, 단 지금은 UI가 존나 구림. 정렬이나 필터 구현해야 함</clr-stack-content>
+                  </clr-stack-block>
+                  <clr-stack-block>
+                    <clr-stack-label>2017년 12월 9일</clr-stack-label>
+                    <clr-stack-content>직업 표에서 이름 및 스탯별 정렬 구현함, 이름 검색 가능
+                      <br>이제 모든 종족 일일히 추가할 차례다
+                      <br>작업 기록 길어지니까 접었다 폈다 할수있게 바꿈
+                      <br>← 쉬벌 날짜 옆에 여백 많은거보소 clarity 장난하냐??</clr-stack-content>
+                  </clr-stack-block>
+                  <clr-stack-block>
+                    <clr-stack-label>2017년 12월 10일</clr-stack-label>
+                    <clr-stack-content>가로 길이 1440으로 바뀜. 모든 종족 보기 페이지 추가 - 대충 몇개 종족만 등록함
+                      <br>속성이랑 상태이상 내성 표시를 추가함. 종족 하위천사로 왔다갔다 하면서 실험해보던가
+                      <br>2.20 버전 나오면 밸런스 바뀐다고 하네
+                      <br>덕분에 지금 수동으로 노가다 뛰며 값 넣어도 전혀 소용없게 됨
+                      <br>기능이나 열심히 구현하자</clr-stack-content>
+                  </clr-stack-block>
+                  <clr-stack-block>
+                    <clr-stack-label>2017년 12월 11일</clr-stack-label>
+                    <clr-stack-content>탭으로 작동하게 바꿨음
+                      <br>특수 능력 탭에서 잡다한 정보 볼 수 있게 구현됨</clr-stack-content>
+                  </clr-stack-block>
+                  <clr-stack-block>
+                    <clr-stack-label>2017년 12월 12일</clr-stack-label>
+                    <clr-stack-content>직업 및 종족 탭 추가됨
+                      <br>속성 내성과 상태이상 내성에 아이콘을 추가함
+                      <br>당분간 RPGVX 데이터 추출기 작업할거라 웹 업데이트는 없을 예정</clr-stack-content>
+                  </clr-stack-block>
+                  <clr-stack-block>
+                    <clr-stack-label>2017년 12월 13일</clr-stack-label>
+                    <clr-stack-content>직접 만든 추출기로 게임 데이터 뽑아내서 모든 동료랑 종족 추가했다
+                      <br>70번 인덱스 동료까지 초상화 넣음. 동료 초상화 다 일일히 넣어줘야 하나? 좀 귀찮겠다</clr-stack-content>
+                  </clr-stack-block>
+                  <clr-stack-block>
+                    <clr-stack-label>2017년 12월 14일</clr-stack-label>
+                    <clr-stack-content>모든 초상화 등록했다 (엄청 귀찮다)
+                      <br>직업 탭과 종족 탭에 들어가면 번역기체지만 설명이 뜬다</clr-stack-content>
+                  </clr-stack-block>
+                  <clr-stack-block>
+                    <clr-stack-label>2017년 12월 15일</clr-stack-label>
+                    <clr-stack-content>동료 목록에서 동료를 클릭하면 상세 보기 메뉴로 진입한다
+                      <br>disqus를 사용하여 댓글을 달 수 있다</clr-stack-content>
+                  </clr-stack-block>
+                </clr-stack-block>
+              </clr-stack-view>
+            </div>
+          </div>
+
+        -->

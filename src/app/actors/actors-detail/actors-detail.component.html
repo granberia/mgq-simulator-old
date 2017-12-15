@@ -1,0 +1,85 @@
+<div align="center" *ngIf="actor">
+  <div style="width: 1080px" align="left">
+    <div class="row">
+      <div class="status col-sm-12">
+        <div style="font-size: 24px">
+          <img src="images/faces/{{ actor?.id }}.png">
+          <br>
+          <br>
+          <b>{{ actor.name }} ({{ actor.secondaryName }})</b>
+        </div>
+      </div>
+      <div class="status col-sm-2">
+        <b>최대 HP</b>
+      </div>
+      <div class="status col-sm-2">
+        {{ actor.hp }}
+      </div>
+      <div class="status col-sm-2">
+        <b>최대 MP</b>
+      </div>
+      <div class="status col-sm-2">
+        {{ actor.mp }}
+      </div>
+      <div class="status col-sm-2">
+        <b>최대 SP</b>
+      </div>
+      <div class="status col-sm-2">
+        {{ actor.sp }}
+      </div>
+      <div class="status col-sm-2">
+        <b>공격력</b>
+      </div>
+      <div class="status col-sm-2">
+        {{ actor.atk }}
+      </div>
+      <div class="status col-sm-2">
+        <b>방어력</b>
+      </div>
+      <div class="status col-sm-2">
+        {{ actor.def }}
+      </div>
+      <div class="status col-sm-2">
+        <b>마력</b>
+      </div>
+      <div class="status col-sm-2">
+        {{ actor.mat }}
+      </div>
+      <div class="status col-sm-2">
+        <b>정신력</b>
+      </div>
+      <div class="status col-sm-2">
+        {{ actor.mdf }}
+      </div>
+      <div class="status col-sm-2">
+        <b>민첩성</b>
+      </div>
+      <div class="status col-sm-2">
+        {{ actor.agi }}
+      </div>
+      <div class="status col-sm-2">
+        <b>손재주</b>
+      </div>
+      <div class="status col-sm-2">
+        {{ actor.luk }}
+      </div>
+      <div class="status col-sm-2">
+        <b>기본 직업</b>
+      </div>
+      <div class="status col-sm-10">
+        {{ dataService.getOneJob(actor.defaultJob).name }}
+      </div>
+      <div class="status col-sm-2">
+        <b>기본 종족</b>
+      </div>
+      <div class="status col-sm-10">
+        {{ dataService.getOneRace(actor.defaultRace).name }}
+      </div>
+    </div>
+    <div style="font-size: 24px; margin-top: 48px; margin-bottom: 12px">
+      <img src="images/faces/{{ actor?.id }}.png" style="width: 24px; height:24px">
+      <b>나도 리뷰 쓰기</b>
+    </div>
+    <disqus [identifier]="actor.id"></disqus>
+  </div>
+</div>

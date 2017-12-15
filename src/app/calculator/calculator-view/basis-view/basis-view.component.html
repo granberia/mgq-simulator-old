@@ -1,0 +1,86 @@
+<div class="row">
+  <div class="status col-sm-3">
+    <b>최대 HP</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateStat('hp', {actor: actor, job: job, race: race}) }}
+  </div>
+  <div class="status col-sm-3">
+    <b>최대 MP</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateStat('mp', {actor: actor, job: job, race: race}) }}
+  </div>
+  <div class="status col-sm-3">
+    <b>공격력</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateStat('atk', {actor: actor, job: job, race: race}) }}
+  </div>
+  <div class="status col-sm-3">
+    <b>방어력</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateStat('def', {actor: actor, job: job, race: race}) }}
+  </div>
+  <div class="status col-sm-3">
+    <b>마력</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateStat('mat', {actor: actor, job: job, race: race}) }}
+  </div>
+  <div class="status col-sm-3">
+    <b>정신력</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateStat('mdf', {actor: actor, job: job, race: race}) }}
+  </div>
+  <div class="status col-sm-3">
+    <b>민첩성</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateStat('agi', {actor: actor, job: job, race: race}) }}
+  </div>
+  <div class="status col-sm-3">
+    <b>손재주</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateStat('luk', {actor: actor, job: job, race: race}) }}
+  </div>
+  <div class="status col-sm-3">
+    <b>명중률</b>
+  </div>
+  <div class="status col-sm-3">
+    무기에 기반하므로 나중에 구현될 예정
+  </div>
+  <div class="status col-sm-3">
+    <b>회심률</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('critical', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>회피율</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('evasion', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>마법 회피율</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('magicEvasion', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>카운터율</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('counter', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>마법 카운터율</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('magicCounter', {actor: actor, job: job, race: race}) }}%
+  </div>
+</div>

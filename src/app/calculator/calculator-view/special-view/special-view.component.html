@@ -1,0 +1,86 @@
+<div class="row">
+  <div class="status col-sm-3">
+    <b>HP 재생률</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('hpRegen', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>MP 재생률</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('mpRegen', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>SP 재생률</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('spRegen', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>SP 충전율</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('spCharge', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>MP 소비율</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialMinStat('mpCost', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>SP 소비율</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialMinStat('spCost', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>회복 효과율</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('healRate', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>아이템 효과율</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('itemUseRate', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>훔치기 성공률</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('stealRate', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>마법 반사율</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('magicReflect', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>경험치 획득률</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('expRate', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>직업 경험치 획득률</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('jobExpRate', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>골드 획득 배율</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('goldRate', {actor: actor, job: job, race: race}) }}%
+  </div>
+  <div class="status col-sm-3">
+    <b>아이템 획득 배율</b>
+  </div>
+  <div class="status col-sm-3">
+    {{ calculateService.calculateSpecialStat('itemGetRate', {actor: actor, job: job, race: race}) }}%
+  </div>
+</div>

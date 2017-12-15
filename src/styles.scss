@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/clarity-ui/src/utils/dependencies.clarity";
+@import "./theme.scss";
+@import "../node_modules/clarity-ui/src/utils/components.clarity";
+
+.datagrid-body {
+    overflow-y: hidden;
+}
+
+button:focus {
+    outline: 0px;
+}
+
+.status {
+    margin-top: 20px;
+}

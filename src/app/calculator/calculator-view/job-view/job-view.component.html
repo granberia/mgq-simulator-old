@@ -1,0 +1,85 @@
+<div class="row" *ngIf="job">
+  <div class="status col-sm-12">
+    <div style="font-size: 24px">
+      <b>{{ job.name }}</b>
+    </div>
+    <ng-container *ngFor="let item of description[job.id]">
+      <br>{{ item }}
+    </ng-container>
+  </div>
+  <div class="status col-sm-2">
+    <b>최대 HP</b>
+  </div>
+  <div class="status col-sm-2">
+    {{ job.hp }}%
+  </div>
+  <div class="status col-sm-2">
+    <b>최대 MP</b>
+  </div>
+  <div class="status col-sm-2">
+    {{ job.mp }}%
+  </div>
+  <div class="status col-sm-2">
+    <b>최대 SP</b>
+  </div>
+  <div class="status col-sm-2">
+    {{ job.sp }}%
+  </div>
+  <div class="status col-sm-2">
+    <b>공격력</b>
+  </div>
+  <div class="status col-sm-2">
+    {{ job.atk }}%
+  </div>
+  <div class="status col-sm-2">
+    <b>방어력</b>
+  </div>
+  <div class="status col-sm-2">
+    {{ job.def }}%
+  </div>
+  <div class="status col-sm-2">
+    <b>마력</b>
+  </div>
+  <div class="status col-sm-2">
+    {{ job.mat }}%
+  </div>
+  <div class="status col-sm-2">
+    <b>정신력</b>
+  </div>
+  <div class="status col-sm-2">
+    {{ job.mdf }}%
+  </div>
+  <div class="status col-sm-2">
+    <b>민첩성</b>
+  </div>
+  <div class="status col-sm-2">
+    {{ job.agi }}%
+  </div>
+  <div class="status col-sm-2">
+    <b>손재주</b>
+  </div>
+  <div class="status col-sm-2">
+    {{ job.luk }}%
+  </div>
+  <div class="status col-sm-2" *ngIf="job.addSkill">
+    <b>스킬타입 추가</b>
+  </div>
+  <div class="status col-sm-10" *ngIf="job.addSkill">
+    <ng-container *ngFor="let item of job.addSkill let i = index">
+      <ng-container *ngIf="i!==0">/ </ng-container>{{ skillType[item] }}</ng-container>
+  </div>
+  <div class="status col-sm-2" *ngIf="job.addWeapon">
+    <b>무기타입 추가</b>
+  </div>
+  <div class="status col-sm-10" *ngIf="job.addWeapon">
+    <ng-container *ngFor="let item of job.addWeapon let i = index">
+      <ng-container *ngIf="i!==0">/ </ng-container>{{ weaponType[item] }}</ng-container>
+  </div>
+  <div class="status col-sm-2" *ngIf="job.addArmor">
+    <b>방어구타입 추가</b>
+  </div>
+  <div class="status col-sm-10" *ngIf="job.addArmor">
+    <ng-container *ngFor="let item of job.addArmor let i = index">
+      <ng-container *ngIf="i!==0">/ </ng-container>{{ armorType[item] }}</ng-container>
+  </div>
+</div>

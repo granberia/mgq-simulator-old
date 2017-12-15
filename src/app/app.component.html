@@ -1,0 +1,31 @@
+<clr-main-container>
+  <clr-header>
+    <div class="branding">
+      <a class="nav-link">
+        <span class="clr-icon clr-clarity-logo"></span>
+        <span class="title">몬무스 퀘스트 패러독스 시뮬레이터</span>
+      </a>
+    </div>
+      <div class="header-nav" [clr-nav-level]="1">
+        <a class="nav-link" href="#" [routerLink]="['/main']" routerLinkActive="active">
+          <span class="nav-text">메인</span>
+        </a>
+        <a class="nav-link" href="#" [routerLink]="['/actors']" routerLinkActive="active">
+          <span class="nav-text">동료 정보</span>
+        </a>
+        <a class="nav-link" href="#" [routerLink]="['/jobs']" routerLinkActive="active">
+          <span class="nav-text">직업 정보</span>
+        </a>
+        <a class="nav-link" href="#" [routerLink]="['/races']" routerLinkActive="active">
+          <span class="nav-text">종족 정보</span>
+        </a>
+      </div>
+    <div class="header-actions">
+    </div>
+  </clr-header>
+  <div class="content-container">
+    <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</clr-main-container>
