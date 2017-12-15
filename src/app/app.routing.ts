@@ -10,7 +10,7 @@ import { RacesListComponent } from './races/races-list/races-list.component';
 
 export const ROUTES: Routes = [
   {
-    path: 'main',
+    path: '/',
     component: CalculatorViewComponent,
     pathMatch: 'full',
   },
@@ -19,8 +19,8 @@ export const ROUTES: Routes = [
   { path: 'actors/:id', component: ActorsDetailComponent },
   { path: 'jobs', component: JobsListComponent },
   { path: 'races', component: RacesListComponent },
-  { path: '', redirectTo: 'main', pathMatch: 'full' },
-  { path: '**', redirectTo: 'main' },
+  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '**', redirectTo: '/' },
 ];
 
 export const ROUTING: ModuleWithProviders = RouterModule.forRoot(ROUTES);
