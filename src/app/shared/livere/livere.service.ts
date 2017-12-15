@@ -1,13 +1,11 @@
 import { Injectable, Inject } from '@angular/core';
-import { SHORTNAME } from './disqus.token';
+import { LIVERE_UID } from './livere.token';
 
 declare const global: any;
 
 @Injectable()
-export class DisqusService {
-
-  constructor( @Inject(SHORTNAME) public shortname: string) {
-  }
+export class LivereService {
+  constructor(@Inject(LIVERE_UID) public livereUID: string) {}
 
   get window() {
     return _window();
@@ -17,4 +15,3 @@ export class DisqusService {
 function _window() {
   return typeof window !== 'undefined' ? window : global;
 }
-

@@ -7,7 +7,7 @@ import { ActorsModule } from 'app/actors/actors.module';
 import { CalculatorModule } from 'app/calculator/calculator.module';
 import { JobsModule } from 'app/jobs/jobs.module';
 import { RacesModule } from 'app/races/races.module';
-import { DisqusModule } from 'app/shared/disqus/disqus.module';
+import { LivereModule } from './shared/livere/livere.module';
 import { ClarityModule } from 'clarity-angular';
 
 import { AppComponent } from './app.component';
@@ -29,7 +29,7 @@ import { CoreModule } from './core/core.module';
     ActorsModule,
     JobsModule,
     RacesModule,
-    DisqusModule.forRoot('mgq-simulator-1'),
+    LivereModule.forRoot('MTAyMC8zMjQxMy84OTc0'),
   ],
   providers: [CanDeactivateGuard],
   bootstrap: [AppComponent],

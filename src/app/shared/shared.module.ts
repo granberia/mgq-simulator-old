@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClarityModule } from 'clarity-angular';
-import { DisqusModule } from './disqus/disqus.module';
+import { LivereModule } from './livere/livere.module';
 import { TranslatePipe } from './translate.pipe';
 import { DataService } from './data.service';
 import { CalculateService } from './calculate.service';
@@ -13,7 +13,7 @@ import { CalculateService } from './calculate.service';
     CommonModule,
     RouterModule,
     ClarityModule,
-    DisqusModule,
+    LivereModule,
     FormsModule,
     ReactiveFormsModule,
     TranslatePipe,
