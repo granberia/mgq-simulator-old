@@ -19,7 +19,6 @@ export class ActorsListComponent implements OnInit {
 
   actorList: Actor[];
   baseRaces: BaseRace[] = [];
-  raceFilter: BaseRace[] = [];
   total: {};
 
   constructor(
@@ -42,18 +41,12 @@ export class ActorsListComponent implements OnInit {
   }
 
   addFilter(item: BaseRace) {
-    if (this.raceFilter.includes(item)) {
-      this.raceFilter.splice(this.raceFilter.indexOf(item), 1);
+    if (this.dataService.raceFilter.includes(item)) {
+      this.dataService.raceFilter.splice(this.dataService.raceFilter.indexOf(item), 1);
     } else {
-      this.raceFilter.push(item);
+      this.dataService.raceFilter.push(item);
     }
-    if (this.raceFilter.length !== 0) {
-      this.actorList = this.dataService.getAllActors({
-        baseRace: this.raceFilter,
-      }).actors;
-    } else {
-      this.actorList = this.dataService.getAllActors().actors;
-    }
+    this.actorList = this.dataService.getAllActors().actors;
   }
 
 }

@@ -10,21 +10,20 @@ import { RACE_LIST } from './database/racesDataBase';
 @Injectable()
 export class DataService {
   total = {};
+  raceFilter: BaseRace[] = [];
 
   constructor() { }
 
-  getAllActors(filter?: {
-    baseRace?: BaseRace[];
-  }) {
+  getAllActors() {
     this.total = {};
     for (let key in RaceType) {
       this.total[RaceType[key]] = 0;
     }
     let result = ACTOR_LIST.map(actor => this.setupDefaultActorValues(actor));
-    if (filter && filter.baseRace) {
+    if (this.raceFilter.length != 0) {
       result = ACTOR_LIST.filter(actor => {
         let flag = false;
-        filter.baseRace.forEach(race => {
+        this.raceFilter.forEach(race => {
           if (actor.baseRaces.includes(race)) {
             flag = true;
           }
