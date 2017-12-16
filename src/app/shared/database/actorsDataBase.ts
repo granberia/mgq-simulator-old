@@ -15,6 +15,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 197,
     defaultJob: '141',
     defaultRace: '151',
+    initJob: [{ id: '141', level: 1 }],
+    initRace: [{ id: '151', level: 1 }],
   },
   {
     id: '5',
@@ -31,6 +33,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 197,
     defaultJob: '134',
     defaultRace: '158',
+    initJob: [{ id: '134', level: 2 }],
+    initRace: [{ id: '158', level: 2 }, { id: '232', level: 1 }, { id: '254', level: 1 }, { id: '265', level: 1 }, { id: '293', level: 1 }, { id: '301', level: 1 }],
   },
   {
     id: '12',
@@ -47,6 +51,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '34',
     defaultRace: '215',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 1 }, { id: '62', level: 10 }, { id: '63', level: 1 }, { id: '86', level: 10 }, { id: '92', level: 10 }],
+    initRace: [{ id: '214', level: 10 }, { id: '215', level: 4 }],
   },
   {
     id: '13',
@@ -63,6 +69,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '15',
     defaultRace: '217',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 8 }, { id: '22', level: 10 }, { id: '23', level: 6 }],
+    initRace: [{ id: '214', level: 10 }, { id: '217', level: 6 }],
   },
   {
     id: '14',
@@ -79,6 +87,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 198,
     defaultJob: '45',
     defaultRace: '226',
+    initJob: [{ id: '33', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }],
+    initRace: [{ id: '214', level: 10 }, { id: '223', level: 10 }, { id: '224', level: 10 }, { id: '226', level: 10 }],
   },
   {
     id: '15',
@@ -95,6 +105,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '26',
     defaultRace: '284',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '22', level: 10 }, { id: '23', level: 10 }, { id: '26', level: 10 }, { id: '33', level: 10 }],
+    initRace: [{ id: '214', level: 10 }, { id: '283', level: 10 }, { id: '284', level: 10 }, { id: '287', level: 10 }],
   },
   {
     id: '19',
@@ -111,6 +123,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 220,
     defaultJob: '99',
     defaultRace: '182',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }, { id: '25', level: 10 }, { id: '26', level: 10 }, { id: '27', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '92', level: 10 }, { id: '93', level: 10 }, { id: '95', level: 10 }, { id: '97', level: 10 }, { id: '99', level: 10 }, { id: '101', level: 10 }, { id: '123', level: 10 }, { id: '124', level: 10 }, { id: '126', level: 10 }, { id: '127', level: 10 }, { id: '129', level: 10 }, { id: '130', level: 10 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 10 }, { id: '177', level: 10 }, { id: '178', level: 10 }, { id: '179', level: 10 }, { id: '180', level: 10 }, { id: '181', level: 10 }, { id: '182', level: 10 }],
   },
   {
     id: '26',
@@ -127,6 +141,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 198,
     defaultJob: '52',
     defaultRace: '362',
+    initJob: [{ id: '44', level: 2 }, { id: '52', level: 2 }],
+    initRace: [{ id: '362', level: 2 }],
   },
   {
     id: '34',
@@ -143,6 +159,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 241,
     defaultJob: '10',
     defaultRace: '364',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '9', level: 10 }, { id: '10', level: 5 }, { id: '44', level: 10 }, { id: '45', level: 10 }],
+    initRace: [{ id: '362', level: 10 }, { id: '363', level: 10 }, { id: '364', level: 5 }, { id: '366', level: 10 }, { id: '367', level: 5 }],
   },
   {
     id: '36',
@@ -159,6 +177,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 241,
     defaultJob: '54',
     defaultRace: '365',
+    initJob: [{ id: '1', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '35', level: 2 }, { id: '36', level: 2 }, { id: '37', level: 2 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '47', level: 10 }, { id: '52', level: 10 }, { id: '53', level: 10 }, { id: '54', level: 5 }],
+    initRace: [{ id: '362', level: 10 }, { id: '363', level: 10 }, { id: '365', level: 5 }, { id: '368', level: 10 }, { id: '369', level: 5 }],
   },
   {
     id: '41',
@@ -175,6 +195,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '103',
     defaultRace: '362',
+    initJob: [{ id: '103', level: 7 }, { id: '126', level: 4 }],
+    initRace: [{ id: '362', level: 3 }],
   },
   {
     id: '45',
@@ -191,6 +213,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 225,
     defaultJob: '35',
     defaultRace: '160',
+    initJob: [{ id: '1', level: 10 }, { id: '12', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '35', level: 3 }, { id: '36', level: 3 }, { id: '37', level: 3 }, { id: '38', level: 10 }, { id: '39', level: 3 }, { id: '40', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 10 }, { id: '160', level: 3 }, { id: '232', level: 10 }, { id: '254', level: 10 }, { id: '255', level: 10 }, { id: '265', level: 10 }, { id: '266', level: 10 }, { id: '293', level: 10 }, { id: '301', level: 10 }, { id: '319', level: 10 }],
   },
   {
     id: '53',
@@ -207,6 +231,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '62',
     defaultRace: '223',
+    initJob: [{ id: '62', level: 2 }],
+    initRace: [{ id: '223', level: 2 }],
   },
   {
     id: '54',
@@ -223,6 +249,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '22',
     defaultRace: '223',
+    initJob: [{ id: '22', level: 2 }],
+    initRace: [{ id: '223', level: 2 }],
   },
   {
     id: '55',
@@ -239,6 +267,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '1',
     defaultRace: '293',
+    initJob: [{ id: '1', level: 2 }],
+    initRace: [{ id: '293', level: 2 }],
   },
   {
     id: '56',
@@ -255,6 +285,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '33',
     defaultRace: '175',
+    initJob: [{ id: '33', level: 2 }],
+    initRace: [{ id: '175', level: 2 }],
   },
   {
     id: '57',
@@ -271,6 +303,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '22',
     defaultRace: '175',
+    initJob: [{ id: '22', level: 2 }],
+    initRace: [{ id: '175', level: 2 }],
   },
   {
     id: '58',
@@ -287,6 +321,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '44',
     defaultRace: '175',
+    initJob: [{ id: '44', level: 2 }],
+    initRace: [{ id: '175', level: 2 }],
   },
   {
     id: '59',
@@ -303,6 +339,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '92',
     defaultRace: '319',
+    initJob: [{ id: '92', level: 3 }],
+    initRace: [{ id: '319', level: 3 }],
   },
   {
     id: '60',
@@ -319,6 +357,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 153,
     defaultJob: '62',
     defaultRace: '232',
+    initJob: [{ id: '62', level: 3 }],
+    initRace: [{ id: '232', level: 3 }],
   },
   {
     id: '61',
@@ -335,6 +375,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '52',
     defaultRace: '293',
+    initJob: [{ id: '52', level: 3 }],
+    initRace: [{ id: '293', level: 3 }],
   },
   {
     id: '62',
@@ -351,6 +393,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '1',
     defaultRace: '167',
+    initJob: [{ id: '1', level: 4 }, { id: '62', level: 3 }],
+    initRace: [{ id: '167', level: 4 }],
   },
   {
     id: '64',
@@ -367,6 +411,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '129',
     defaultRace: '254',
+    initJob: [{ id: '62', level: 3 }, { id: '123', level: 5 }, { id: '129', level: 6 }],
+    initRace: [{ id: '254', level: 5 }],
   },
   {
     id: '66',
@@ -383,6 +429,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '79',
     defaultRace: '184',
+    initJob: [{ id: '62', level: 3 }, { id: '79', level: 3 }],
+    initRace: [{ id: '184', level: 4 }],
   },
   {
     id: '68',
@@ -399,6 +447,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '22',
     defaultRace: '283',
+    initJob: [{ id: '1', level: 4 }, { id: '22', level: 5 }, { id: '62', level: 3 }],
+    initRace: [{ id: '283', level: 4 }],
   },
   {
     id: '70',
@@ -415,6 +465,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '62',
     defaultRace: '232',
+    initJob: [{ id: '62', level: 4 }],
+    initRace: [{ id: '232', level: 4 }],
   },
   {
     id: '71',
@@ -431,6 +483,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '22',
     defaultRace: '232',
+    initJob: [{ id: '22', level: 4 }],
+    initRace: [{ id: '232', level: 4 }],
   },
   {
     id: '72',
@@ -447,6 +501,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '92',
     defaultRace: '274',
+    initJob: [{ id: '92', level: 4 }],
+    initRace: [{ id: '274', level: 4 }],
   },
   {
     id: '73',
@@ -463,6 +519,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '1',
     defaultRace: '293',
+    initJob: [{ id: '1', level: 4 }],
+    initRace: [{ id: '293', level: 4 }],
   },
   {
     id: '74',
@@ -479,6 +537,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '52',
     defaultRace: '232',
+    initJob: [{ id: '52', level: 4 }, { id: '92', level: 4 }],
+    initRace: [{ id: '232', level: 4 }],
   },
   {
     id: '75',
@@ -495,6 +555,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '92',
     defaultRace: '232',
+    initJob: [{ id: '22', level: 4 }, { id: '92', level: 4 }],
+    initRace: [{ id: '232', level: 4 }],
   },
   {
     id: '76',
@@ -511,6 +573,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '62',
     defaultRace: '301',
+    initJob: [{ id: '62', level: 5 }, { id: '72', level: 5 }],
+    initRace: [{ id: '301', level: 4 }, { id: '351', level: 1 }],
   },
   {
     id: '77',
@@ -527,6 +591,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '110',
     defaultRace: '344',
+    initJob: [{ id: '110', level: 5 }],
+    initRace: [{ id: '344', level: 4 }, { id: '351', level: 1 }],
   },
   {
     id: '78',
@@ -543,6 +609,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '33',
     defaultRace: '309',
+    initJob: [{ id: '33', level: 5 }, { id: '79', level: 4 }, { id: '123', level: 4 }],
+    initRace: [{ id: '309', level: 4 }, { id: '351', level: 1 }],
   },
   {
     id: '79',
@@ -559,6 +627,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '149',
     defaultRace: '265',
+    initJob: [],
+    initRace: [{ id: '265', level: 4 }, { id: '351', level: 1 }],
   },
   {
     id: '80',
@@ -575,6 +645,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '1',
     defaultRace: '232',
+    initJob: [{ id: '1', level: 5 }, { id: '72', level: 5 }],
+    initRace: [{ id: '232', level: 4 }],
   },
   {
     id: '81',
@@ -591,6 +663,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '22',
     defaultRace: '309',
+    initJob: [{ id: '22', level: 5 }, { id: '123', level: 5 }],
+    initRace: [{ id: '309', level: 4 }],
   },
   {
     id: '82',
@@ -607,6 +681,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '120',
     defaultRace: '274',
+    initJob: [{ id: '62', level: 4 }, { id: '92', level: 6 }, { id: '120', level: 6 }],
+    initRace: [{ id: '274', level: 4 }],
   },
   {
     id: '83',
@@ -623,6 +699,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '92',
     defaultRace: '274',
+    initJob: [{ id: '62', level: 5 }, { id: '92', level: 5 }],
+    initRace: [{ id: '274', level: 4 }],
   },
   {
     id: '84',
@@ -639,6 +717,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '92',
     defaultRace: '274',
+    initJob: [{ id: '92', level: 5 }],
+    initRace: [{ id: '274', level: 4 }],
   },
   {
     id: '85',
@@ -655,6 +735,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '134',
     defaultRace: '293',
+    initJob: [{ id: '134', level: 6 }],
+    initRace: [{ id: '293', level: 5 }],
   },
   {
     id: '86',
@@ -671,6 +753,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '44',
     defaultRace: '293',
+    initJob: [{ id: '44', level: 6 }],
+    initRace: [{ id: '293', level: 5 }],
   },
   {
     id: '87',
@@ -687,6 +771,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '22',
     defaultRace: '293',
+    initJob: [{ id: '1', level: 5 }, { id: '22', level: 6 }],
+    initRace: [{ id: '293', level: 5 }],
   },
   {
     id: '88',
@@ -703,6 +789,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '33',
     defaultRace: '214',
+    initJob: [{ id: '33', level: 6 }, { id: '86', level: 6 }],
+    initRace: [{ id: '214', level: 5 }],
   },
   {
     id: '89',
@@ -719,6 +807,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '92',
     defaultRace: '293',
+    initJob: [{ id: '52', level: 5 }, { id: '92', level: 6 }],
+    initRace: [{ id: '265', level: 5 }, { id: '293', level: 5 }],
   },
   {
     id: '90',
@@ -735,6 +825,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '72',
     defaultRace: '309',
+    initJob: [{ id: '72', level: 6 }, { id: '92', level: 6 }],
+    initRace: [{ id: '309', level: 5 }],
   },
   {
     id: '91',
@@ -751,6 +843,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '33',
     defaultRace: '336',
+    initJob: [{ id: '33', level: 6 }, { id: '86', level: 5 }],
+    initRace: [{ id: '336', level: 5 }],
   },
   {
     id: '92',
@@ -767,6 +861,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '72',
     defaultRace: '319',
+    initJob: [{ id: '72', level: 7 }],
+    initRace: [{ id: '319', level: 6 }, { id: '351', level: 1 }],
   },
   {
     id: '93',
@@ -783,6 +879,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '22',
     defaultRace: '283',
+    initJob: [{ id: '22', level: 7 }],
+    initRace: [{ id: '232', level: 6 }, { id: '283', level: 6 }, { id: '351', level: 1 }],
   },
   {
     id: '94',
@@ -799,6 +897,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '110',
     defaultRace: '344',
+    initJob: [{ id: '110', level: 7 }],
+    initRace: [{ id: '344', level: 6 }, { id: '351', level: 1 }],
   },
   {
     id: '95',
@@ -815,6 +915,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '1',
     defaultRace: '203',
+    initJob: [{ id: '1', level: 7 }, { id: '52', level: 5 }],
+    initRace: [{ id: '203', level: 6 }],
   },
   {
     id: '96',
@@ -831,6 +933,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '33',
     defaultRace: '203',
+    initJob: [{ id: '33', level: 7 }, { id: '52', level: 5 }],
+    initRace: [{ id: '203', level: 6 }],
   },
   {
     id: '97',
@@ -847,6 +951,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '92',
     defaultRace: '214',
+    initJob: [{ id: '33', level: 7 }, { id: '92', level: 7 }],
+    initRace: [{ id: '214', level: 6 }],
   },
   {
     id: '98',
@@ -863,6 +969,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '86',
     defaultRace: '301',
+    initJob: [{ id: '86', level: 6 }, { id: '92', level: 7 }],
+    initRace: [{ id: '301', level: 6 }],
   },
   {
     id: '99',
@@ -879,6 +987,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '22',
     defaultRace: '194',
+    initJob: [{ id: '22', level: 7 }, { id: '79', level: 6 }, { id: '120', level: 6 }],
+    initRace: [{ id: '194', level: 6 }],
   },
   {
     id: '100',
@@ -895,6 +1005,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '120',
     defaultRace: '319',
+    initJob: [{ id: '44', level: 5 }, { id: '120', level: 7 }],
+    initRace: [{ id: '319', level: 6 }],
   },
   {
     id: '101',
@@ -911,6 +1023,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '1',
     defaultRace: '232',
+    initJob: [{ id: '1', level: 7 }],
+    initRace: [{ id: '232', level: 6 }],
   },
   {
     id: '102',
@@ -927,6 +1041,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '65',
     defaultRace: '245',
+    initJob: [{ id: '33', level: 10 }, { id: '42', level: 1 }, { id: '62', level: 10 }, { id: '65', level: 1 }],
+    initRace: [{ id: '245', level: 6 }],
   },
   {
     id: '103',
@@ -943,6 +1059,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '42',
     defaultRace: '245',
+    initJob: [{ id: '33', level: 10 }, { id: '42', level: 1 }, { id: '62', level: 10 }, { id: '65', level: 1 }],
+    initRace: [{ id: '245', level: 5 }],
   },
   {
     id: '104',
@@ -959,6 +1077,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '38',
     defaultRace: '309',
+    initJob: [{ id: '33', level: 10 }, { id: '38', level: 2 }],
+    initRace: [{ id: '309', level: 10 }, { id: '314', level: 2 }],
   },
   {
     id: '105',
@@ -975,6 +1095,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '34',
     defaultRace: '341',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 2 }],
+    initRace: [{ id: '336', level: 10 }, { id: '341', level: 3 }],
   },
   {
     id: '106',
@@ -991,6 +1113,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '42',
     defaultRace: '248',
+    initJob: [{ id: '33', level: 10 }, { id: '42', level: 10 }, { id: '62', level: 10 }, { id: '65', level: 10 }],
+    initRace: [{ id: '232', level: 10 }, { id: '235', level: 2 }, { id: '245', level: 10 }, { id: '246', level: 10 }, { id: '248', level: 10 }],
   },
   {
     id: '107',
@@ -1007,6 +1131,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '86',
     defaultRace: '301',
+    initJob: [{ id: '86', level: 8 }, { id: '92', level: 7 }],
+    initRace: [{ id: '301', level: 7 }],
   },
   {
     id: '108',
@@ -1023,6 +1149,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '123',
     defaultRace: '301',
+    initJob: [{ id: '123', level: 8 }, { id: '129', level: 7 }],
+    initRace: [{ id: '301', level: 7 }],
   },
   {
     id: '109',
@@ -1039,6 +1167,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '129',
     defaultRace: '301',
+    initJob: [{ id: '92', level: 7 }, { id: '129', level: 8 }],
+    initRace: [{ id: '301', level: 7 }],
   },
   {
     id: '110',
@@ -1055,6 +1185,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '62',
     defaultRace: '223',
+    initJob: [{ id: '62', level: 9 }],
+    initRace: [{ id: '223', level: 7 }],
   },
   {
     id: '111',
@@ -1071,6 +1203,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '33',
     defaultRace: '319',
+    initJob: [{ id: '33', level: 9 }, { id: '86', level: 6 }],
+    initRace: [{ id: '319', level: 7 }],
   },
   {
     id: '112',
@@ -1087,6 +1221,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '52',
     defaultRace: '324',
+    initJob: [{ id: '52', level: 9 }],
+    initRace: [{ id: '319', level: 10 }, { id: '324', level: 3 }],
   },
   {
     id: '113',
@@ -1103,6 +1239,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '1',
     defaultRace: '254',
+    initJob: [{ id: '1', level: 9 }, { id: '33', level: 6 }],
+    initRace: [{ id: '254', level: 7 }],
   },
   {
     id: '114',
@@ -1119,6 +1257,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '93',
     defaultRace: '319',
+    initJob: [{ id: '92', level: 10 }, { id: '93', level: 2 }],
+    initRace: [{ id: '319', level: 7 }],
   },
   {
     id: '115',
@@ -1135,6 +1275,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '1',
     defaultRace: '301',
+    initJob: [{ id: '1', level: 8 }, { id: '62', level: 6 }],
+    initRace: [{ id: '301', level: 7 }],
   },
   {
     id: '116',
@@ -1151,6 +1293,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '33',
     defaultRace: '301',
+    initJob: [{ id: '22', level: 6 }, { id: '33', level: 8 }],
+    initRace: [{ id: '301', level: 7 }],
   },
   {
     id: '117',
@@ -1167,6 +1311,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '22',
     defaultRace: '194',
+    initJob: [{ id: '22', level: 8 }],
+    initRace: [{ id: '194', level: 7 }],
   },
   {
     id: '118',
@@ -1183,6 +1329,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '95',
     defaultRace: '194',
+    initJob: [{ id: '33', level: 8 }, { id: '44', level: 8 }, { id: '92', level: 10 }, { id: '95', level: 2 }],
+    initRace: [{ id: '194', level: 7 }],
   },
   {
     id: '119',
@@ -1199,6 +1347,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '108',
     defaultRace: '339',
+    initJob: [{ id: '33', level: 10 }, { id: '103', level: 10 }, { id: '108', level: 2 }],
+    initRace: [{ id: '336', level: 10 }, { id: '339', level: 1 }],
   },
   {
     id: '120',
@@ -1215,6 +1365,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '108',
     defaultRace: '339',
+    initJob: [{ id: '22', level: 10 }, { id: '44', level: 5 }, { id: '103', level: 10 }, { id: '108', level: 3 }],
+    initRace: [{ id: '336', level: 10 }, { id: '339', level: 1 }],
   },
   {
     id: '121',
@@ -1231,6 +1383,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '108',
     defaultRace: '339',
+    initJob: [{ id: '103', level: 10 }, { id: '108', level: 6 }, { id: '120', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '265', level: 10 }, { id: '336', level: 10 }, { id: '339', level: 4 }],
   },
   {
     id: '122',
@@ -1247,6 +1401,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '44',
     defaultRace: '254',
+    initJob: [{ id: '1', level: 7 }, { id: '44', level: 9 }],
+    initRace: [{ id: '254', level: 8 }],
   },
   {
     id: '123',
@@ -1263,6 +1419,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '44',
     defaultRace: '175',
+    initJob: [{ id: '44', level: 9 }, { id: '92', level: 10 }, { id: '97', level: 3 }],
+    initRace: [{ id: '175', level: 8 }],
   },
   {
     id: '124',
@@ -1279,6 +1437,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '22',
     defaultRace: '232',
+    initJob: [{ id: '22', level: 9 }, { id: '62', level: 7 }],
+    initRace: [{ id: '232', level: 8 }],
   },
   {
     id: '125',
@@ -1295,6 +1455,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '1',
     defaultRace: '233',
+    initJob: [{ id: '1', level: 9 }, { id: '22', level: 7 }],
+    initRace: [{ id: '232', level: 10 }, { id: '233', level: 4 }],
   },
   {
     id: '126',
@@ -1311,6 +1473,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '56',
     defaultRace: '344',
+    initJob: [{ id: '52', level: 10 }, { id: '56', level: 2 }],
+    initRace: [{ id: '344', level: 8 }, { id: '354', level: 5 }],
   },
   {
     id: '127',
@@ -1327,6 +1491,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '72',
     defaultRace: '309',
+    initJob: [{ id: '1', level: 5 }, { id: '72', level: 9 }],
+    initRace: [{ id: '309', level: 8 }, { id: '354', level: 5 }],
   },
   {
     id: '128',
@@ -1343,6 +1509,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '56',
     defaultRace: '359',
+    initJob: [{ id: '52', level: 10 }, { id: '56', level: 6 }, { id: '110', level: 10 }],
+    initRace: [{ id: '344', level: 10 }, { id: '354', level: 10 }, { id: '359', level: 2 }],
   },
   {
     id: '129',
@@ -1359,6 +1527,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '56',
     defaultRace: '359',
+    initJob: [{ id: '52', level: 10 }, { id: '56', level: 3 }, { id: '110', level: 10 }, { id: '111', level: 3 }],
+    initRace: [{ id: '344', level: 10 }, { id: '351', level: 6 }, { id: '354', level: 10 }, { id: '359', level: 6 }],
   },
   {
     id: '130',
@@ -1375,6 +1545,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '34',
     defaultRace: '336',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 4 }],
+    initRace: [{ id: '336', level: 8 }],
   },
   {
     id: '131',
@@ -1391,6 +1563,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '93',
     defaultRace: '344',
+    initJob: [{ id: '92', level: 10 }, { id: '93', level: 4 }, { id: '129', level: 10 }],
+    initRace: [{ id: '344', level: 8 }],
   },
   {
     id: '132',
@@ -1407,6 +1581,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '2',
     defaultRace: '328',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 4 }],
+    initRace: [{ id: '328', level: 8 }],
   },
   {
     id: '133',
@@ -1423,6 +1599,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '23',
     defaultRace: '328',
+    initJob: [{ id: '1', level: 6 }, { id: '22', level: 10 }, { id: '23', level: 3 }],
+    initRace: [{ id: '328', level: 8 }],
   },
   {
     id: '134',
@@ -1439,6 +1617,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 198,
     defaultJob: '114',
     defaultRace: '175',
+    initJob: [{ id: '103', level: 6 }, { id: '110', level: 10 }, { id: '111', level: 4 }, { id: '113', level: 10 }, { id: '114', level: 5 }, { id: '126', level: 10 }],
+    initRace: [{ id: '175', level: 4 }],
   },
   {
     id: '135',
@@ -1455,6 +1635,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '23',
     defaultRace: '328',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 7 }],
+    initRace: [{ id: '328', level: 9 }],
   },
   {
     id: '136',
@@ -1471,6 +1653,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '53',
     defaultRace: '204',
+    initJob: [{ id: '52', level: 10 }, { id: '53', level: 5 }, { id: '92', level: 10 }, { id: '97', level: 3 }],
+    initRace: [{ id: '203', level: 10 }, { id: '204', level: 2 }],
   },
   {
     id: '137',
@@ -1487,6 +1671,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '15',
     defaultRace: '217',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 5 }, { id: '110', level: 10 }],
+    initRace: [{ id: '214', level: 10 }, { id: '217', level: 2 }],
   },
   {
     id: '138',
@@ -1503,6 +1689,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '86',
     defaultRace: '214',
+    initJob: [{ id: '44', level: 10 }, { id: '86', level: 9 }],
+    initRace: [{ id: '214', level: 9 }],
   },
   {
     id: '139',
@@ -1519,6 +1707,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '33',
     defaultRace: '214',
+    initJob: [{ id: '33', level: 10 }, { id: '44', level: 10 }],
+    initRace: [{ id: '214', level: 9 }],
   },
   {
     id: '140',
@@ -1535,6 +1725,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '15',
     defaultRace: '314',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 6 }, { id: '129', level: 8 }],
+    initRace: [{ id: '309', level: 10 }, { id: '314', level: 2 }],
   },
   {
     id: '141',
@@ -1551,6 +1743,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '17',
     defaultRace: '237',
+    initJob: [{ id: '1', level: 10 }, { id: '17', level: 6 }],
+    initRace: [{ id: '232', level: 10 }, { id: '237', level: 2 }],
   },
   {
     id: '142',
@@ -1567,6 +1761,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 152,
     defaultJob: '23',
     defaultRace: '344',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 6 }, { id: '33', level: 10 }],
+    initRace: [{ id: '344', level: 10 }, { id: '349', level: 2 }],
   },
   {
     id: '143',
@@ -1583,6 +1779,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '149',
     defaultRace: '176',
+    initJob: [{ id: '62', level: 10 }, { id: '79', level: 4 }, { id: '86', level: 10 }, { id: '87', level: 6 }, { id: '92', level: 10 }, { id: '97', level: 6 }, { id: '120', level: 3 }, { id: '123', level: 2 }, { id: '126', level: 5 }, { id: '129', level: 4 }, { id: '149', level: 10 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 2 }],
   },
   {
     id: '144',
@@ -1599,6 +1797,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '80',
     defaultRace: '265',
+    initJob: [{ id: '62', level: 10 }, { id: '79', level: 10 }, { id: '80', level: 4 }],
+    initRace: [{ id: '265', level: 9 }, { id: '309', level: 8 }],
   },
   {
     id: '145',
@@ -1615,6 +1815,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '15',
     defaultRace: '310',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 6 }],
+    initRace: [{ id: '309', level: 9 }],
   },
   {
     id: '146',
@@ -1631,6 +1833,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '2',
     defaultRace: '309',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 7 }, { id: '72', level: 5 }],
+    initRace: [{ id: '309', level: 9 }],
   },
   {
     id: '147',
@@ -1647,6 +1851,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '59',
     defaultRace: '319',
+    initJob: [{ id: '52', level: 10 }, { id: '59', level: 7 }],
+    initRace: [{ id: '319', level: 9 }],
   },
   {
     id: '148',
@@ -1663,6 +1869,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '23',
     defaultRace: '274',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 7 }, { id: '92', level: 10 }, { id: '93', level: 4 }],
+    initRace: [{ id: '274', level: 9 }],
   },
   {
     id: '149',
@@ -1679,6 +1887,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '40',
     defaultRace: '158',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 5 }, { id: '40', level: 3 }, { id: '86', level: 10 }],
+    initRace: [{ id: '158', level: 9 }],
   },
   {
     id: '150',
@@ -1695,6 +1905,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '34',
     defaultRace: '331',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 7 }, { id: '134', level: 10 }],
+    initRace: [{ id: '328', level: 10 }, { id: '331', level: 2 }],
   },
   {
     id: '151',
@@ -1711,6 +1923,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '23',
     defaultRace: '254',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 7 }, { id: '79', level: 10 }],
+    initRace: [{ id: '254', level: 9 }],
   },
   {
     id: '152',
@@ -1727,6 +1941,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '15',
     defaultRace: '254',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 7 }, { id: '120', level: 10 }],
+    initRace: [{ id: '254', level: 9 }],
   },
   {
     id: '153',
@@ -1743,6 +1959,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '36',
     defaultRace: '165',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '36', level: 5 }, { id: '38', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 10 }, { id: '160', level: 10 }, { id: '161', level: 10 }, { id: '162', level: 10 }, { id: '163', level: 10 }, { id: '164', level: 10 }, { id: '165', level: 10 }, { id: '232', level: 10 }, { id: '233', level: 10 }],
   },
   {
     id: '154',
@@ -1759,6 +1977,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 153,
     defaultJob: '15',
     defaultRace: '293',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 7 }, { id: '22', level: 6 }],
+    initRace: [{ id: '293', level: 9 }],
   },
   {
     id: '155',
@@ -1775,6 +1995,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '100',
     defaultRace: '176',
+    initJob: [{ id: '92', level: 10 }, { id: '93', level: 10 }, { id: '95', level: 10 }, { id: '100', level: 2 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 4 }],
   },
   {
     id: '156',
@@ -1791,6 +2013,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '2',
     defaultRace: '159',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 7 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 4 }],
   },
   {
     id: '157',
@@ -1807,6 +2031,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '38',
     defaultRace: '314',
+    initJob: [{ id: '22', level: 8 }, { id: '33', level: 10 }, { id: '38', level: 7 }],
+    initRace: [{ id: '167', level: 10 }, { id: '309', level: 10 }, { id: '314', level: 4 }],
   },
   {
     id: '158',
@@ -1823,6 +2049,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '34',
     defaultRace: '155',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 7 }, { id: '123', level: 7 }],
+    initRace: [{ id: '151', level: 10 }, { id: '155', level: 4 }],
   },
   {
     id: '159',
@@ -1839,6 +2067,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '34',
     defaultRace: '345',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 7 }],
+    initRace: [{ id: '344', level: 10 }, { id: '345', level: 4 }],
   },
   {
     id: '160',
@@ -1855,6 +2085,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '40',
     defaultRace: '155',
+    initJob: [{ id: '33', level: 10 }, { id: '40', level: 7 }],
+    initRace: [{ id: '151', level: 10 }, { id: '155', level: 4 }],
   },
   {
     id: '161',
@@ -1871,6 +2103,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '124',
     defaultRace: '266',
+    initJob: [{ id: '103', level: 10 }, { id: '123', level: 10 }, { id: '124', level: 7 }],
+    initRace: [{ id: '265', level: 10 }, { id: '266', level: 4 }],
   },
   {
     id: '162',
@@ -1887,6 +2121,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '40',
     defaultRace: '341',
+    initJob: [{ id: '33', level: 10 }, { id: '40', level: 7 }],
+    initRace: [{ id: '223', level: 10 }, { id: '265', level: 10 }, { id: '336', level: 10 }, { id: '341', level: 10 }],
   },
   {
     id: '163',
@@ -1903,6 +2139,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '104',
     defaultRace: '155',
+    initJob: [{ id: '33', level: 10 }, { id: '40', level: 5 }, { id: '103', level: 10 }, { id: '104', level: 8 }],
+    initRace: [{ id: '151', level: 10 }, { id: '155', level: 5 }],
   },
   {
     id: '164',
@@ -1919,6 +2157,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '15',
     defaultRace: '170',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 7 }],
+    initRace: [{ id: '167', level: 10 }, { id: '170', level: 6 }],
   },
   {
     id: '165',
@@ -1935,6 +2175,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '97',
     defaultRace: '345',
+    initJob: [{ id: '92', level: 10 }, { id: '97', level: 7 }, { id: '129', level: 10 }],
+    initRace: [{ id: '223', level: 10 }, { id: '224', level: 7 }, { id: '344', level: 10 }, { id: '345', level: 5 }],
   },
   {
     id: '166',
@@ -1951,6 +2193,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '127',
     defaultRace: '176',
+    initJob: [{ id: '126', level: 10 }, { id: '127', level: 7 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 4 }],
   },
   {
     id: '167',
@@ -1967,6 +2211,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '106',
     defaultRace: '155',
+    initJob: [{ id: '33', level: 10 }, { id: '40', level: 5 }, { id: '103', level: 10 }, { id: '106', level: 8 }],
+    initRace: [{ id: '151', level: 10 }, { id: '155', level: 5 }],
   },
   {
     id: '168',
@@ -1983,6 +2229,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '82',
     defaultRace: '168',
+    initJob: [{ id: '52', level: 10 }, { id: '79', level: 10 }, { id: '82', level: 6 }],
+    initRace: [{ id: '158', level: 10 }, { id: '161', level: 6 }, { id: '167', level: 10 }, { id: '168', level: 5 }],
   },
   {
     id: '169',
@@ -1999,6 +2247,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '63',
     defaultRace: '284',
+    initJob: [{ id: '52', level: 10 }, { id: '62', level: 10 }, { id: '63', level: 8 }],
+    initRace: [{ id: '283', level: 10 }, { id: '284', level: 5 }],
   },
   {
     id: '170',
@@ -2015,6 +2265,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '7',
     defaultRace: '284',
+    initJob: [{ id: '1', level: 10 }, { id: '7', level: 5 }, { id: '33', level: 10 }, { id: '62', level: 10 }],
+    initRace: [{ id: '283', level: 10 }, { id: '284', level: 5 }],
   },
   {
     id: '171',
@@ -2031,6 +2283,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '2',
     defaultRace: '284',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 8 }, { id: '7', level: 4 }, { id: '33', level: 10 }, { id: '62', level: 10 }, { id: '63', level: 8 }],
+    initRace: [{ id: '283', level: 10 }, { id: '284', level: 10 }],
   },
   {
     id: '172',
@@ -2047,6 +2301,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '93',
     defaultRace: '337',
+    initJob: [{ id: '44', level: 10 }, { id: '92', level: 10 }, { id: '93', level: 8 }, { id: '97', level: 5 }],
+    initRace: [{ id: '336', level: 10 }, { id: '337', level: 6 }],
   },
   {
     id: '173',
@@ -2063,6 +2319,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '53',
     defaultRace: '310',
+    initJob: [{ id: '52', level: 10 }, { id: '53', level: 8 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 6 }],
   },
   {
     id: '174',
@@ -2079,6 +2337,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '15',
     defaultRace: '310',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 8 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 6 }],
   },
   {
     id: '175',
@@ -2095,6 +2355,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '59',
     defaultRace: '266',
+    initJob: [{ id: '33', level: 10 }, { id: '52', level: 10 }, { id: '59', level: 8 }, { id: '120', level: 10 }],
+    initRace: [{ id: '265', level: 10 }, { id: '266', level: 6 }],
   },
   {
     id: '176',
@@ -2111,6 +2373,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '63',
     defaultRace: '224',
+    initJob: [{ id: '62', level: 10 }, { id: '63', level: 8 }, { id: '110', level: 10 }, { id: '111', level: 5 }],
+    initRace: [{ id: '223', level: 10 }, { id: '224', level: 7 }, { id: '344', level: 10 }, { id: '351', level: 4 }],
   },
   {
     id: '177',
@@ -2127,6 +2391,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '23',
     defaultRace: '351',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 8 }, { id: '92', level: 10 }, { id: '97', level: 5 }],
+    initRace: [{ id: '158', level: 10 }, { id: '344', level: 10 }, { id: '351', level: 5 }],
   },
   {
     id: '178',
@@ -2143,6 +2409,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '56',
     defaultRace: '359',
+    initJob: [{ id: '52', level: 10 }, { id: '56', level: 8 }, { id: '72', level: 10 }, { id: '110', level: 10 }, { id: '111', level: 5 }],
+    initRace: [{ id: '344', level: 10 }, { id: '345', level: 6 }, { id: '351', level: 3 }, { id: '354', level: 10 }, { id: '359', level: 6 }],
   },
   {
     id: '179',
@@ -2159,6 +2427,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '38',
     defaultRace: '329',
+    initJob: [{ id: '33', level: 10 }, { id: '38', level: 8 }, { id: '62', level: 10 }, { id: '92', level: 10 }, { id: '95', level: 4 }],
+    initRace: [{ id: '293', level: 10 }, { id: '296', level: 4 }, { id: '328', level: 10 }, { id: '329', level: 6 }, { id: '344', level: 10 }, { id: '351', level: 3 }],
   },
   {
     id: '180',
@@ -2175,6 +2445,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '34',
     defaultRace: '337',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 9 }, { id: '72', level: 10 }],
+    initRace: [{ id: '336', level: 10 }, { id: '337', level: 8 }],
   },
   {
     id: '181',
@@ -2191,6 +2463,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '121',
     defaultRace: '337',
+    initJob: [{ id: '33', level: 10 }, { id: '38', level: 10 }, { id: '120', level: 10 }, { id: '121', level: 3 }],
+    initRace: [{ id: '158', level: 10 }, { id: '336', level: 10 }, { id: '337', level: 6 }],
   },
   {
     id: '182',
@@ -2207,6 +2481,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '106',
     defaultRace: '355',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 5 }, { id: '103', level: 10 }, { id: '106', level: 9 }],
+    initRace: [{ id: '151', level: 10 }, { id: '155', level: 6 }, { id: '354', level: 10 }, { id: '355', level: 6 }],
   },
   {
     id: '183',
@@ -2223,6 +2499,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '34',
     defaultRace: '345',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 9 }, { id: '126', level: 10 }],
+    initRace: [{ id: '344', level: 10 }, { id: '345', level: 6 }, { id: '354', level: 10 }],
   },
   {
     id: '184',
@@ -2239,6 +2517,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '130',
     defaultRace: '345',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 5 }, { id: '38', level: 8 }, { id: '129', level: 10 }, { id: '130', level: 9 }],
+    initRace: [{ id: '328', level: 10 }, { id: '344', level: 10 }, { id: '345', level: 10 }],
   },
   {
     id: '185',
@@ -2255,6 +2535,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '56',
     defaultRace: '359',
+    initJob: [{ id: '52', level: 10 }, { id: '56', level: 9 }, { id: '110', level: 10 }, { id: '111', level: 5 }, { id: '129', level: 10 }, { id: '130', level: 5 }],
+    initRace: [{ id: '344', level: 10 }, { id: '345', level: 6 }, { id: '354', level: 10 }, { id: '359', level: 2 }],
   },
   {
     id: '191',
@@ -2271,6 +2553,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '130',
     defaultRace: '322',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 7 }, { id: '44', level: 10 }, { id: '92', level: 10 }, { id: '95', level: 5 }, { id: '129', level: 10 }, { id: '130', level: 5 }],
+    initRace: [{ id: '319', level: 10 }, { id: '322', level: 6 }],
   },
   {
     id: '192',
@@ -2287,6 +2571,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '72',
     defaultRace: '310',
+    initJob: [{ id: '72', level: 10 }, { id: '92', level: 10 }, { id: '97', level: 8 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 6 }],
   },
   {
     id: '193',
@@ -2303,6 +2589,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '82',
     defaultRace: '266',
+    initJob: [{ id: '62', level: 10 }, { id: '79', level: 10 }, { id: '82', level: 8 }],
+    initRace: [{ id: '232', level: 10 }, { id: '265', level: 10 }, { id: '266', level: 6 }],
   },
   {
     id: '194',
@@ -2319,6 +2607,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '42',
     defaultRace: '168',
+    initJob: [{ id: '33', level: 10 }, { id: '42', level: 8 }],
+    initRace: [{ id: '167', level: 10 }, { id: '168', level: 6 }],
   },
   {
     id: '195',
@@ -2335,6 +2625,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '34',
     defaultRace: '195',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 8 }, { id: '44', level: 10 }, { id: '45', level: 5 }],
+    initRace: [{ id: '194', level: 10 }, { id: '195', level: 6 }],
   },
   {
     id: '196',
@@ -2351,6 +2643,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '80',
     defaultRace: '199',
+    initJob: [{ id: '79', level: 10 }, { id: '80', level: 7 }, { id: '82', level: 5 }, { id: '120', level: 10 }],
+    initRace: [{ id: '194', level: 10 }, { id: '199', level: 6 }],
   },
   {
     id: '197',
@@ -2367,6 +2661,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '68',
     defaultRace: '197',
+    initJob: [{ id: '1', level: 10 }, { id: '62', level: 10 }, { id: '68', level: 8 }],
+    initRace: [{ id: '194', level: 10 }, { id: '197', level: 6 }],
   },
   {
     id: '198',
@@ -2383,6 +2679,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '93',
     defaultRace: '168',
+    initJob: [{ id: '92', level: 10 }, { id: '93', level: 8 }],
+    initRace: [{ id: '167', level: 10 }, { id: '168', level: 6 }],
   },
   {
     id: '199',
@@ -2399,6 +2697,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '53',
     defaultRace: '302',
+    initJob: [{ id: '44', level: 10 }, { id: '52', level: 10 }, { id: '53', level: 7 }],
+    initRace: [{ id: '265', level: 10 }, { id: '301', level: 10 }, { id: '302', level: 6 }, { id: '304', level: 4 }],
   },
   {
     id: '200',
@@ -2415,6 +2715,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '34',
     defaultRace: '337',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 8 }],
+    initRace: [{ id: '336', level: 10 }, { id: '337', level: 6 }],
   },
   {
     id: '201',
@@ -2431,6 +2733,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 198,
     defaultJob: '68',
     defaultRace: '197',
+    initJob: [{ id: '62', level: 10 }, { id: '63', level: 4 }, { id: '68', level: 6 }, { id: '123', level: 10 }, { id: '124', level: 5 }, { id: '126', level: 10 }, { id: '129', level: 10 }, { id: '130', level: 5 }],
+    initRace: [{ id: '194', level: 10 }, { id: '197', level: 6 }],
   },
   {
     id: '202',
@@ -2447,6 +2751,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 192,
     defaultJob: '68',
     defaultRace: '197',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 5 }, { id: '62', level: 10 }, { id: '68', level: 8 }],
+    initRace: [{ id: '194', level: 10 }, { id: '197', level: 6 }],
   },
   {
     id: '203',
@@ -2463,6 +2769,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '75',
     defaultRace: '289',
+    initJob: [{ id: '1', level: 10 }, { id: '9', level: 7 }, { id: '72', level: 10 }, { id: '75', level: 6 }],
+    initRace: [{ id: '283', level: 10 }, { id: '289', level: 6 }, { id: '301', level: 10 }],
   },
   {
     id: '204',
@@ -2479,6 +2787,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '75',
     defaultRace: '296',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 6 }, { id: '72', level: 10 }, { id: '75', level: 7 }],
+    initRace: [{ id: '293', level: 10 }, { id: '296', level: 6 }, { id: '301', level: 10 }, { id: '302', level: 6 }],
   },
   {
     id: '205',
@@ -2495,6 +2805,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '76',
     defaultRace: '290',
+    initJob: [{ id: '1', level: 10 }, { id: '9', level: 10 }, { id: '11', level: 5 }, { id: '72', level: 10 }, { id: '75', level: 10 }, { id: '76', level: 7 }],
+    initRace: [{ id: '283', level: 10 }, { id: '289', level: 10 }, { id: '290', level: 5 }, { id: '301', level: 10 }, { id: '302', level: 10 }],
   },
   {
     id: '206',
@@ -2511,6 +2823,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '23',
     defaultRace: '294',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 8 }, { id: '92', level: 10 }, { id: '95', level: 6 }],
+    initRace: [{ id: '293', level: 10 }, { id: '294', level: 4 }, { id: '296', level: 6 }],
   },
   {
     id: '207',
@@ -2527,6 +2841,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '9',
     defaultRace: '239',
+    initJob: [{ id: '1', level: 10 }, { id: '9', level: 8 }, { id: '62', level: 10 }, { id: '63', level: 5 }],
+    initRace: [{ id: '232', level: 10 }, { id: '239', level: 6 }],
   },
   {
     id: '208',
@@ -2543,6 +2859,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '45',
     defaultRace: '320',
+    initJob: [{ id: '33', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 9 }],
+    initRace: [{ id: '319', level: 10 }, { id: '320', level: 6 }],
   },
   {
     id: '209',
@@ -2559,6 +2877,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '63',
     defaultRace: '310',
+    initJob: [{ id: '62', level: 10 }, { id: '63', level: 8 }, { id: '129', level: 10 }],
+    initRace: [{ id: '167', level: 10 }, { id: '309', level: 10 }, { id: '310', level: 7 }],
   },
   {
     id: '210',
@@ -2575,6 +2895,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '42',
     defaultRace: '337',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 5 }, { id: '42', level: 10 }],
+    initRace: [{ id: '336', level: 10 }, { id: '337', level: 7 }],
   },
   {
     id: '211',
@@ -2591,6 +2913,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '97',
     defaultRace: '341',
+    initJob: [{ id: '92', level: 10 }, { id: '97', level: 10 }, { id: '129', level: 10 }, { id: '130', level: 10 }],
+    initRace: [{ id: '265', level: 10 }, { id: '266', level: 8 }, { id: '336', level: 10 }, { id: '341', level: 8 }],
   },
   {
     id: '212',
@@ -2607,6 +2931,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '73',
     defaultRace: '210',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 8 }, { id: '72', level: 10 }, { id: '73', level: 8 }],
+    initRace: [{ id: '203', level: 10 }, { id: '210', level: 8 }],
   },
   {
     id: '213',
@@ -2623,6 +2949,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '23',
     defaultRace: '235',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }],
+    initRace: [{ id: '232', level: 10 }, { id: '235', level: 8 }],
   },
   {
     id: '214',
@@ -2639,6 +2967,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '97',
     defaultRace: '255',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 5 }, { id: '92', level: 10 }, { id: '97', level: 8 }],
+    initRace: [{ id: '167', level: 10 }, { id: '254', level: 10 }, { id: '255', level: 8 }],
   },
   {
     id: '215',
@@ -2655,6 +2985,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '17',
     defaultRace: '237',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 5 }, { id: '17', level: 8 }],
+    initRace: [{ id: '232', level: 10 }, { id: '237', level: 8 }],
   },
   {
     id: '216',
@@ -2671,6 +3003,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '130',
     defaultRace: '237',
+    initJob: [{ id: '1', level: 10 }, { id: '17', level: 5 }, { id: '123', level: 10 }, { id: '129', level: 10 }, { id: '130', level: 8 }],
+    initRace: [{ id: '232', level: 10 }, { id: '237', level: 8 }],
   },
   {
     id: '217',
@@ -2687,6 +3021,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '111',
     defaultRace: '237',
+    initJob: [{ id: '52', level: 10 }, { id: '56', level: 4 }, { id: '103', level: 10 }, { id: '110', level: 10 }, { id: '111', level: 8 }],
+    initRace: [{ id: '232', level: 10 }, { id: '237', level: 8 }],
   },
   {
     id: '218',
@@ -2703,6 +3039,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '17',
     defaultRace: '237',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }, { id: '17', level: 10 }],
+    initRace: [{ id: '167', level: 10 }, { id: '170', level: 5 }, { id: '232', level: 10 }, { id: '237', level: 10 }],
   },
   {
     id: '219',
@@ -2719,6 +3057,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '65',
     defaultRace: '204',
+    initJob: [{ id: '52', level: 10 }, { id: '62', level: 10 }, { id: '65', level: 5 }],
+    initRace: [{ id: '203', level: 10 }, { id: '204', level: 8 }],
   },
   {
     id: '220',
@@ -2735,6 +3075,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '12',
     defaultRace: '204',
+    initJob: [{ id: '1', level: 10 }, { id: '12', level: 5 }],
+    initRace: [{ id: '203', level: 10 }, { id: '204', level: 8 }],
   },
   {
     id: '221',
@@ -2751,6 +3093,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '97',
     defaultRace: '168',
+    initJob: [{ id: '33', level: 10 }, { id: '42', level: 5 }, { id: '92', level: 10 }, { id: '97', level: 8 }],
+    initRace: [{ id: '167', level: 10 }, { id: '168', level: 8 }],
   },
   {
     id: '222',
@@ -2767,6 +3111,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '23',
     defaultRace: '241',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 8 }, { id: '62', level: 10 }, { id: '63', level: 6 }],
+    initRace: [{ id: '232', level: 10 }, { id: '241', level: 8 }],
   },
   {
     id: '223',
@@ -2783,6 +3129,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '92',
     defaultRace: '168',
+    initJob: [{ id: '92', level: 10 }],
+    initRace: [{ id: '167', level: 10 }, { id: '168', level: 8 }],
   },
   {
     id: '224',
@@ -2799,6 +3147,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '23',
     defaultRace: '168',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 8 }, { id: '92', level: 10 }],
+    initRace: [{ id: '167', level: 10 }, { id: '168', level: 8 }],
   },
   {
     id: '225',
@@ -2815,6 +3165,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '124',
     defaultRace: '168',
+    initJob: [{ id: '92', level: 10 }, { id: '123', level: 10 }, { id: '124', level: 8 }, { id: '129', level: 10 }],
+    initRace: [{ id: '167', level: 10 }, { id: '168', level: 8 }],
   },
   {
     id: '226',
@@ -2831,6 +3183,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '93',
     defaultRace: '259',
+    initJob: [{ id: '1', level: 10 }, { id: '19', level: 10 }, { id: '33', level: 10 }, { id: '42', level: 10 }, { id: '62', level: 10 }, { id: '65', level: 5 }, { id: '92', level: 10 }, { id: '93', level: 10 }],
+    initRace: [{ id: '167', level: 10 }, { id: '254', level: 10 }, { id: '259', level: 10 }],
   },
   {
     id: '227',
@@ -2847,6 +3201,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '93',
     defaultRace: '259',
+    initJob: [{ id: '44', level: 10 }, { id: '45', level: 4 }, { id: '92', level: 10 }, { id: '93', level: 10 }],
+    initRace: [{ id: '254', level: 10 }, { id: '259', level: 9 }],
   },
   {
     id: '228',
@@ -2863,6 +3219,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '93',
     defaultRace: '314',
+    initJob: [{ id: '33', level: 10 }, { id: '38', level: 8 }, { id: '42', level: 3 }, { id: '92', level: 10 }, { id: '93', level: 5 }],
+    initRace: [{ id: '309', level: 10 }, { id: '314', level: 9 }],
   },
   {
     id: '229',
@@ -2879,6 +3237,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '42',
     defaultRace: '168',
+    initJob: [{ id: '33', level: 10 }, { id: '42', level: 8 }, { id: '92', level: 10 }, { id: '93', level: 8 }],
+    initRace: [{ id: '167', level: 10 }, { id: '168', level: 9 }],
   },
   {
     id: '230',
@@ -2895,6 +3255,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '92',
     defaultRace: '256',
+    initJob: [{ id: '52', level: 10 }, { id: '59', level: 10 }, { id: '92', level: 10 }],
+    initRace: [{ id: '167', level: 10 }, { id: '254', level: 10 }, { id: '255', level: 10 }, { id: '256', level: 5 }, { id: '283', level: 10 }, { id: '287', level: 10 }],
   },
   {
     id: '231',
@@ -2911,6 +3273,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '34',
     defaultRace: '310',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 5 }, { id: '44', level: 10 }, { id: '103', level: 10 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 5 }],
   },
   {
     id: '232',
@@ -2927,6 +3291,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '34',
     defaultRace: '204',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 9 }, { id: '44', level: 10 }, { id: '45', level: 4 }, { id: '47', level: 3 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 8 }, { id: '203', level: 10 }, { id: '204', level: 8 }, { id: '214', level: 10 }, { id: '215', level: 8 }],
   },
   {
     id: '233',
@@ -2943,6 +3309,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '47',
     defaultRace: '159',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '47', level: 8 }, { id: '103', level: 10 }, { id: '104', level: 8 }, { id: '108', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 10 }, { id: '254', level: 10 }, { id: '255', level: 10 }],
   },
   {
     id: '234',
@@ -2959,6 +3327,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '2',
     defaultRace: '310',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 5 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 9 }],
   },
   {
     id: '235',
@@ -2975,6 +3345,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '63',
     defaultRace: '310',
+    initJob: [{ id: '62', level: 10 }, { id: '63', level: 10 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 9 }],
   },
   {
     id: '236',
@@ -2991,6 +3363,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '45',
     defaultRace: '320',
+    initJob: [{ id: '33', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 8 }],
+    initRace: [{ id: '319', level: 10 }, { id: '320', level: 9 }],
   },
   {
     id: '237',
@@ -3007,6 +3381,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '53',
     defaultRace: '324',
+    initJob: [{ id: '44', level: 10 }, { id: '52', level: 10 }, { id: '53', level: 5 }],
+    initRace: [{ id: '319', level: 10 }, { id: '320', level: 6 }, { id: '324', level: 6 }],
   },
   {
     id: '238',
@@ -3023,6 +3399,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '45',
     defaultRace: '324',
+    initJob: [{ id: '44', level: 10 }, { id: '45', level: 6 }, { id: '52', level: 10 }, { id: '62', level: 10 }, { id: '63', level: 7 }],
+    initRace: [{ id: '319', level: 10 }, { id: '324', level: 9 }],
   },
   {
     id: '239',
@@ -3039,6 +3417,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '53',
     defaultRace: '324',
+    initJob: [{ id: '52', level: 10 }, { id: '53', level: 8 }],
+    initRace: [{ id: '319', level: 10 }, { id: '322', level: 4 }, { id: '324', level: 9 }],
   },
   {
     id: '240',
@@ -3055,6 +3435,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '15',
     defaultRace: '324',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 8 }],
+    initRace: [{ id: '319', level: 10 }, { id: '320', level: 5 }, { id: '324', level: 10 }],
   },
   {
     id: '241',
@@ -3071,6 +3453,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '59',
     defaultRace: '320',
+    initJob: [{ id: '33', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '52', level: 10 }, { id: '59', level: 8 }, { id: '134', level: 10 }],
+    initRace: [{ id: '319', level: 10 }, { id: '320', level: 7 }, { id: '322', level: 7 }],
   },
   {
     id: '242',
@@ -3087,6 +3471,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '59',
     defaultRace: '321',
+    initJob: [{ id: '44', level: 10 }, { id: '45', level: 8 }, { id: '52', level: 10 }, { id: '59', level: 8 }, { id: '134', level: 10 }],
+    initRace: [{ id: '319', level: 10 }, { id: '320', level: 7 }, { id: '322', level: 7 }],
   },
   {
     id: '243',
@@ -3103,6 +3489,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '53',
     defaultRace: '310',
+    initJob: [{ id: '52', level: 10 }, { id: '53', level: 7 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 9 }],
   },
   {
     id: '244',
@@ -3119,6 +3507,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '72',
     defaultRace: '312',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 8 }, { id: '72', level: 10 }],
+    initRace: [{ id: '309', level: 10 }, { id: '312', level: 9 }],
   },
   {
     id: '245',
@@ -3135,6 +3525,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '135',
     defaultRace: '312',
+    initJob: [{ id: '1', level: 10 }, { id: '22', level: 10 }, { id: '23', level: 10 }, { id: '33', level: 10 }, { id: '72', level: 10 }, { id: '73', level: 10 }, { id: '134', level: 10 }, { id: '135', level: 6 }],
+    initRace: [{ id: '309', level: 10 }, { id: '312', level: 10 }],
   },
   {
     id: '246',
@@ -3151,6 +3543,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '45',
     defaultRace: '226',
+    initJob: [{ id: '33', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 9 }],
+    initRace: [{ id: '223', level: 10 }, { id: '226', level: 9 }],
   },
   {
     id: '247',
@@ -3167,6 +3561,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '53',
     defaultRace: '228',
+    initJob: [{ id: '52', level: 10 }, { id: '53', level: 9 }, { id: '62', level: 10 }],
+    initRace: [{ id: '635', level: 5 }, { id: '223', level: 10 }, { id: '228', level: 9 }],
   },
   {
     id: '248',
@@ -3183,6 +3579,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '63',
     defaultRace: '224',
+    initJob: [{ id: '62', level: 10 }, { id: '63', level: 10 }],
+    initRace: [{ id: '223', level: 10 }, { id: '224', level: 9 }],
   },
   {
     id: '249',
@@ -3199,6 +3597,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '73',
     defaultRace: '312',
+    initJob: [{ id: '1', level: 10 }, { id: '22', level: 10 }, { id: '23', level: 8 }, { id: '72', level: 10 }, { id: '73', level: 6 }],
+    initRace: [{ id: '309', level: 10 }, { id: '312', level: 10 }],
   },
   {
     id: '250',
@@ -3215,6 +3615,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '130',
     defaultRace: '345',
+    initJob: [{ id: '52', level: 10 }, { id: '92', level: 10 }, { id: '97', level: 10 }, { id: '129', level: 10 }, { id: '130', level: 7 }],
+    initRace: [{ id: '344', level: 10 }, { id: '345', level: 10 }],
   },
   {
     id: '251',
@@ -3231,6 +3633,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '97',
     defaultRace: '345',
+    initJob: [{ id: '52', level: 10 }, { id: '92', level: 10 }, { id: '97', level: 10 }],
+    initRace: [{ id: '344', level: 10 }, { id: '345', level: 8 }],
   },
   {
     id: '252',
@@ -3247,6 +3651,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '2',
     defaultRace: '266',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '62', level: 10 }, { id: '129', level: 10 }],
+    initRace: [{ id: '265', level: 10 }, { id: '266', level: 10 }],
   },
   {
     id: '253',
@@ -3263,6 +3669,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '15',
     defaultRace: '261',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }, { id: '33', level: 10 }],
+    initRace: [{ id: '254', level: 10 }, { id: '261', level: 10 }],
   },
   {
     id: '254',
@@ -3279,6 +3687,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '42',
     defaultRace: '310',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 5 }, { id: '42', level: 9 }, { id: '44', level: 10 }],
+    initRace: [{ id: '167', level: 10 }, { id: '309', level: 10 }, { id: '310', level: 10 }],
   },
   {
     id: '255',
@@ -3295,6 +3705,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '53',
     defaultRace: '228',
+    initJob: [{ id: '52', level: 10 }, { id: '53', level: 10 }, { id: '92', level: 10 }],
+    initRace: [{ id: '223', level: 10 }, { id: '224', level: 6 }, { id: '228', level: 7 }],
   },
   {
     id: '256',
@@ -3311,6 +3723,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '15',
     defaultRace: '329',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }],
+    initRace: [{ id: '328', level: 10 }, { id: '329', level: 10 }],
   },
   {
     id: '257',
@@ -3327,6 +3741,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '15',
     defaultRace: '329',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }],
+    initRace: [{ id: '328', level: 10 }, { id: '329', level: 10 }],
   },
   {
     id: '258',
@@ -3343,6 +3759,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '95',
     defaultRace: '306',
+    initJob: [{ id: '92', level: 10 }, { id: '95', level: 10 }],
+    initRace: [{ id: '301', level: 10 }, { id: '302', level: 7 }, { id: '306', level: 7 }],
   },
   {
     id: '259',
@@ -3359,6 +3777,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '93',
     defaultRace: '275',
+    initJob: [{ id: '62', level: 10 }, { id: '92', level: 10 }, { id: '93', level: 10 }],
+    initRace: [{ id: '274', level: 10 }, { id: '275', level: 10 }],
   },
   {
     id: '260',
@@ -3375,6 +3795,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '9',
     defaultRace: '277',
+    initJob: [{ id: '1', level: 10 }, { id: '9', level: 10 }],
+    initRace: [{ id: '274', level: 10 }, { id: '275', level: 4 }, { id: '277', level: 9 }],
   },
   {
     id: '261',
@@ -3391,6 +3813,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '15',
     defaultRace: '349',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }, { id: '129', level: 10 }],
+    initRace: [{ id: '344', level: 10 }, { id: '349', level: 10 }],
   },
   {
     id: '262',
@@ -3407,6 +3831,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '15',
     defaultRace: '349',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }, { id: '17', level: 10 }],
+    initRace: [{ id: '344', level: 10 }, { id: '349', level: 10 }],
   },
   {
     id: '263',
@@ -3423,6 +3849,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '12',
     defaultRace: '310',
+    initJob: [{ id: '1', level: 10 }, { id: '12', level: 7 }, { id: '92', level: 10 }, { id: '93', level: 10 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 10 }],
   },
   {
     id: '264',
@@ -3439,6 +3867,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '34',
     defaultRace: '349',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '103', level: 10 }],
+    initRace: [{ id: '344', level: 10 }, { id: '345', level: 5 }, { id: '349', level: 8 }],
   },
   {
     id: '265',
@@ -3455,6 +3885,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '42',
     defaultRace: '248',
+    initJob: [{ id: '33', level: 10 }, { id: '42', level: 10 }],
+    initRace: [{ id: '232', level: 10 }, { id: '233', level: 5 }, { id: '245', level: 10 }, { id: '248', level: 7 }],
   },
   {
     id: '266',
@@ -3471,6 +3903,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '65',
     defaultRace: '246',
+    initJob: [{ id: '52', level: 10 }, { id: '62', level: 10 }, { id: '65', level: 10 }],
+    initRace: [{ id: '245', level: 10 }, { id: '246', level: 10 }],
   },
   {
     id: '267',
@@ -3487,6 +3921,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '12',
     defaultRace: '246',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 5 }, { id: '12', level: 10 }],
+    initRace: [{ id: '245', level: 10 }, { id: '246', level: 10 }],
   },
   {
     id: '268',
@@ -3503,6 +3939,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '135',
     defaultRace: '313',
+    initJob: [{ id: '1', level: 10 }, { id: '22', level: 10 }, { id: '23', level: 10 }, { id: '72', level: 10 }, { id: '73', level: 10 }, { id: '134', level: 10 }, { id: '135', level: 10 }],
+    initRace: [{ id: '309', level: 10 }, { id: '312', level: 10 }, { id: '313', level: 2 }],
   },
   {
     id: '269',
@@ -3519,6 +3957,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '26',
     defaultRace: '224',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 5 }, { id: '26', level: 8 }, { id: '33', level: 10 }],
+    initRace: [{ id: '223', level: 10 }, { id: '224', level: 10 }, { id: '228', level: 5 }],
   },
   {
     id: '270',
@@ -3535,6 +3975,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '15',
     defaultRace: '255',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 6 }, { id: '254', level: 10 }, { id: '255', level: 10 }],
   },
   {
     id: '271',
@@ -3551,6 +3993,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '59',
     defaultRace: '266',
+    initJob: [{ id: '52', level: 10 }, { id: '59', level: 10 }, { id: '120', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 4 }, { id: '265', level: 10 }, { id: '266', level: 10 }],
   },
   {
     id: '272',
@@ -3567,6 +4011,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '95',
     defaultRace: '275',
+    initJob: [{ id: '92', level: 10 }, { id: '93', level: 6 }, { id: '95', level: 10 }],
+    initRace: [{ id: '274', level: 10 }, { id: '275', level: 10 }],
   },
   {
     id: '273',
@@ -3583,6 +4029,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '59',
     defaultRace: '302',
+    initJob: [{ id: '52', level: 10 }, { id: '59', level: 10 }],
+    initRace: [{ id: '301', level: 10 }, { id: '302', level: 8 }, { id: '319', level: 10 }, { id: '322', level: 5 }],
   },
   {
     id: '274',
@@ -3599,6 +4047,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '63',
     defaultRace: '302',
+    initJob: [{ id: '44', level: 10 }, { id: '45', level: 5 }, { id: '52', level: 10 }, { id: '62', level: 10 }, { id: '63', level: 10 }],
+    initRace: [{ id: '301', level: 10 }, { id: '302', level: 10 }, { id: '304', level: 5 }],
   },
   {
     id: '275',
@@ -3615,6 +4065,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '2',
     defaultRace: '312',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 10 }, { id: '312', level: 8 }],
   },
   {
     id: '276',
@@ -3631,6 +4083,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '53',
     defaultRace: '312',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '52', level: 10 }, { id: '53', level: 10 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 10 }, { id: '312', level: 8 }],
   },
   {
     id: '277',
@@ -3647,6 +4101,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '34',
     defaultRace: '312',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 10 }, { id: '312', level: 8 }],
   },
   {
     id: '278',
@@ -3663,6 +4119,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '53',
     defaultRace: '304',
+    initJob: [{ id: '52', level: 10 }, { id: '53', level: 10 }],
+    initRace: [{ id: '301', level: 10 }, { id: '302', level: 7 }, { id: '304', level: 7 }],
   },
   {
     id: '279',
@@ -3679,6 +4137,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '23',
     defaultRace: '266',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }],
+    initRace: [{ id: '265', level: 10 }, { id: '266', level: 7 }, { id: '301', level: 10 }, { id: '304', level: 7 }],
   },
   {
     id: '280',
@@ -3695,6 +4155,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '11',
     defaultRace: '305',
+    initJob: [{ id: '1', level: 10 }, { id: '9', level: 10 }, { id: '11', level: 5 }],
+    initRace: [{ id: '265', level: 10 }, { id: '301', level: 10 }, { id: '302', level: 10 }, { id: '303', level: 3 }, { id: '304', level: 10 }, { id: '305', level: 3 }],
   },
   {
     id: '281',
@@ -3711,6 +4173,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '97',
     defaultRace: '176',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '52', level: 10 }, { id: '59', level: 10 }, { id: '92', level: 10 }, { id: '97', level: 10 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 10 }],
   },
   {
     id: '282',
@@ -3727,6 +4191,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '130',
     defaultRace: '176',
+    initJob: [{ id: '123', level: 10 }, { id: '124', level: 5 }, { id: '129', level: 10 }, { id: '130', level: 10 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 10 }],
   },
   {
     id: '283',
@@ -3743,6 +4209,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '97',
     defaultRace: '176',
+    initJob: [{ id: '92', level: 10 }, { id: '97', level: 10 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 10 }],
   },
   {
     id: '284',
@@ -3759,6 +4227,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '59',
     defaultRace: '176',
+    initJob: [{ id: '52', level: 10 }, { id: '59', level: 10 }, { id: '129', level: 10 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 8 }],
   },
   {
     id: '285',
@@ -3775,6 +4245,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '130',
     defaultRace: '176',
+    initJob: [{ id: '79', level: 10 }, { id: '129', level: 10 }, { id: '130', level: 10 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 5 }],
   },
   {
     id: '286',
@@ -3791,6 +4263,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '34',
     defaultRace: '180',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 5 }, { id: '47', level: 10 }, { id: '86', level: 10 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 5 }, { id: '180', level: 8 }],
   },
   {
     id: '287',
@@ -3807,6 +4281,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 198,
     defaultJob: '97',
     defaultRace: '177',
+    initJob: [{ id: '52', level: 10 }, { id: '86', level: 10 }, { id: '87', level: 5 }, { id: '92', level: 10 }, { id: '97', level: 10 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 10 }, { id: '177', level: 2 }],
   },
   {
     id: '288',
@@ -3823,6 +4299,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '97',
     defaultRace: '177',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '92', level: 10 }, { id: '97', level: 10 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 10 }, { id: '177', level: 2 }],
   },
   {
     id: '289',
@@ -3839,6 +4317,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '130',
     defaultRace: '270',
+    initJob: [{ id: '123', level: 10 }, { id: '124', level: 10 }, { id: '129', level: 10 }, { id: '130', level: 10 }],
+    initRace: [{ id: '265', level: 10 }, { id: '266', level: 7 }, { id: '270', level: 10 }],
   },
   {
     id: '290',
@@ -3855,6 +4335,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '2',
     defaultRace: '310',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '33', level: 10 }, { id: '134', level: 10 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 10 }],
   },
   {
     id: '291',
@@ -3871,6 +4353,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '15',
     defaultRace: '266',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }, { id: '134', level: 10 }],
+    initRace: [{ id: '265', level: 10 }, { id: '266', level: 10 }],
   },
   {
     id: '292',
@@ -3887,6 +4371,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '40',
     defaultRace: '159',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 5 }, { id: '40', level: 10 }, { id: '92', level: 10 }, { id: '97', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 10 }],
   },
   {
     id: '293',
@@ -3903,6 +4389,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '124',
     defaultRace: '159',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '123', level: 10 }, { id: '124', level: 10 }, { id: '129', level: 10 }, { id: '130', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 10 }],
   },
   {
     id: '294',
@@ -3919,6 +4407,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '100',
     defaultRace: '160',
+    initJob: [{ id: '52', level: 10 }, { id: '92', level: 10 }, { id: '93', level: 10 }, { id: '95', level: 10 }, { id: '100', level: 7 }, { id: '134', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 10 }, { id: '160', level: 2 }, { id: '265', level: 10 }, { id: '266', level: 10 }],
   },
   {
     id: '295',
@@ -3935,6 +4425,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 198,
     defaultJob: '34',
     defaultRace: '160',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '134', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 10 }, { id: '160', level: 2 }, { id: '223', level: 10 }, { id: '228', level: 10 }],
   },
   {
     id: '297',
@@ -3951,6 +4443,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 148,
     defaultJob: '2',
     defaultRace: '235',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '22', level: 10 }],
+    initRace: [{ id: '232', level: 10 }, { id: '235', level: 10 }, { id: '274', level: 10 }, { id: '293', level: 10 }, { id: '294', level: 10 }],
   },
   {
     id: '298',
@@ -3967,6 +4461,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 152,
     defaultJob: '23',
     defaultRace: '284',
+    initJob: [{ id: '1', level: 10 }, { id: '22', level: 10 }, { id: '23', level: 10 }],
+    initRace: [{ id: '274', level: 10 }, { id: '283', level: 10 }, { id: '284', level: 10 }, { id: '287', level: 5 }],
   },
   {
     id: '299',
@@ -3983,6 +4479,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '63',
     defaultRace: '228',
+    initJob: [{ id: '62', level: 10 }, { id: '63', level: 10 }, { id: '92', level: 10 }],
+    initRace: [{ id: '223', level: 10 }, { id: '224', level: 5 }, { id: '228', level: 10 }],
   },
   {
     id: '300',
@@ -3999,6 +4497,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '15',
     defaultRace: '170',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }, { id: '17', level: 5 }],
+    initRace: [{ id: '167', level: 10 }, { id: '170', level: 10 }],
   },
   {
     id: '301',
@@ -4015,6 +4515,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '12',
     defaultRace: '163',
+    initJob: [{ id: '1', level: 10 }, { id: '12', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '163', level: 10 }, { id: '167', level: 10 }, { id: '232', level: 10 }, { id: '235', level: 5 }],
   },
   {
     id: '302',
@@ -4031,6 +4533,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '2',
     defaultRace: '185',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }],
+    initRace: [{ id: '184', level: 10 }, { id: '185', level: 10 }],
   },
   {
     id: '303',
@@ -4047,6 +4551,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '95',
     defaultRace: '351',
+    initJob: [{ id: '92', level: 10 }, { id: '95', level: 10 }],
+    initRace: [{ id: '344', level: 10 }, { id: '351', level: 10 }],
   },
   {
     id: '304',
@@ -4063,6 +4569,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '56',
     defaultRace: '351',
+    initJob: [{ id: '52', level: 10 }, { id: '56', level: 10 }, { id: '110', level: 10 }, { id: '111', level: 10 }],
+    initRace: [{ id: '344', level: 10 }, { id: '351', level: 10 }, { id: '354', level: 10 }, { id: '359', level: 10 }],
   },
   {
     id: '305',
@@ -4079,6 +4587,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '23',
     defaultRace: '351',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }],
+    initRace: [{ id: '265', level: 10 }, { id: '266', level: 10 }, { id: '344', level: 10 }, { id: '351', level: 10 }, { id: '354', level: 10 }, { id: '355', level: 6 }],
   },
   {
     id: '306',
@@ -4095,6 +4605,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '56',
     defaultRace: '351',
+    initJob: [{ id: '52', level: 10 }, { id: '56', level: 10 }, { id: '110', level: 10 }, { id: '111', level: 10 }, { id: '129', level: 10 }],
+    initRace: [{ id: '344', level: 10 }, { id: '351', level: 10 }, { id: '354', level: 10 }, { id: '355', level: 10 }],
   },
   {
     id: '307',
@@ -4111,6 +4623,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '93',
     defaultRace: '302',
+    initJob: [{ id: '52', level: 10 }, { id: '92', level: 10 }, { id: '93', level: 10 }, { id: '95', level: 5 }],
+    initRace: [{ id: '265', level: 10 }, { id: '266', level: 10 }, { id: '301', level: 10 }, { id: '302', level: 10 }],
   },
   {
     id: '308',
@@ -4127,6 +4641,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '23',
     defaultRace: '289',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 8 }, { id: '22', level: 10 }, { id: '23', level: 8 }, { id: '33', level: 10 }, { id: '34', level: 5 }],
+    initRace: [{ id: '283', level: 10 }, { id: '289', level: 10 }],
   },
   {
     id: '309',
@@ -4143,6 +4659,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '68',
     defaultRace: '197',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }, { id: '62', level: 10 }, { id: '68', level: 10 }],
+    initRace: [{ id: '194', level: 10 }, { id: '197', level: 10 }, { id: '301', level: 10 }, { id: '302', level: 10 }],
   },
   {
     id: '310',
@@ -4159,6 +4677,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '17',
     defaultRace: '255',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }, { id: '17', level: 10 }],
+    initRace: [{ id: '194', level: 10 }, { id: '195', level: 10 }, { id: '254', level: 10 }, { id: '255', level: 10 }],
   },
   {
     id: '311',
@@ -4175,6 +4695,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 198,
     defaultJob: '93',
     defaultRace: '215',
+    initJob: [{ id: '33', level: 10 }, { id: '40', level: 10 }, { id: '92', level: 10 }, { id: '93', level: 10 }],
+    initRace: [{ id: '214', level: 10 }, { id: '215', level: 10 }],
   },
   {
     id: '312',
@@ -4191,6 +4713,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '17',
     defaultRace: '204',
+    initJob: [{ id: '1', level: 10 }, { id: '17', level: 10 }, { id: '52', level: 10 }, { id: '53', level: 10 }],
+    initRace: [{ id: '203', level: 10 }, { id: '204', level: 10 }],
   },
   {
     id: '313',
@@ -4207,6 +4731,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '45',
     defaultRace: '235',
+    initJob: [{ id: '33', level: 10 }, { id: '38', level: 6 }, { id: '44', level: 10 }, { id: '45', level: 10 }],
+    initRace: [{ id: '214', level: 10 }, { id: '232', level: 10 }, { id: '235', level: 10 }],
   },
   {
     id: '314',
@@ -4223,6 +4749,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '15',
     defaultRace: '204',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }],
+    initRace: [{ id: '203', level: 10 }, { id: '204', level: 10 }],
   },
   {
     id: '315',
@@ -4239,6 +4767,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 204,
     defaultJob: '41',
     defaultRace: '221',
+    initJob: [{ id: '1', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '40', level: 10 }, { id: '41', level: 5 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '86', level: 10 }, { id: '92', level: 10 }, { id: '93', level: 10 }, { id: '134', level: 10 }, { id: '135', level: 10 }],
+    initRace: [{ id: '214', level: 10 }, { id: '215', level: 10 }, { id: '216', level: 10 }, { id: '217', level: 10 }, { id: '218', level: 10 }, { id: '219', level: 10 }, { id: '220', level: 10 }, { id: '221', level: 5 }],
   },
   {
     id: '316',
@@ -4255,6 +4785,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 203,
     defaultJob: '54',
     defaultRace: '212',
+    initJob: [{ id: '1', level: 10 }, { id: '33', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '52', level: 10 }, { id: '53', level: 10 }, { id: '54', level: 5 }, { id: '134', level: 10 }, { id: '135', level: 10 }],
+    initRace: [{ id: '203', level: 10 }, { id: '204', level: 10 }, { id: '205', level: 10 }, { id: '206', level: 10 }, { id: '207', level: 10 }, { id: '208', level: 10 }, { id: '209', level: 10 }, { id: '212', level: 5 }],
   },
   {
     id: '317',
@@ -4271,6 +4803,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '34',
     defaultRace: '322',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }],
+    initRace: [{ id: '319', level: 10 }, { id: '322', level: 10 }],
   },
   {
     id: '318',
@@ -4287,6 +4821,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '45',
     defaultRace: '320',
+    initJob: [{ id: '44', level: 10 }, { id: '45', level: 10 }],
+    initRace: [{ id: '319', level: 10 }, { id: '320', level: 10 }],
   },
   {
     id: '319',
@@ -4303,6 +4839,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '53',
     defaultRace: '322',
+    initJob: [{ id: '52', level: 10 }, { id: '53', level: 10 }, { id: '59', level: 6 }],
+    initRace: [{ id: '319', level: 10 }, { id: '322', level: 10 }],
   },
   {
     id: '320',
@@ -4319,6 +4857,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '45',
     defaultRace: '320',
+    initJob: [{ id: '44', level: 10 }, { id: '45', level: 10 }],
+    initRace: [{ id: '319', level: 10 }, { id: '320', level: 10 }],
   },
   {
     id: '321',
@@ -4335,6 +4875,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '34',
     defaultRace: '322',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }],
+    initRace: [{ id: '319', level: 10 }, { id: '322', level: 10 }],
   },
   {
     id: '322',
@@ -4351,6 +4893,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '60',
     defaultRace: '326',
+    initJob: [{ id: '1', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '52', level: 10 }, { id: '59', level: 10 }, { id: '60', level: 5 }, { id: '134', level: 10 }, { id: '135', level: 5 }],
+    initRace: [{ id: '319', level: 10 }, { id: '320', level: 10 }, { id: '321', level: 10 }, { id: '322', level: 10 }, { id: '323', level: 10 }, { id: '324', level: 10 }, { id: '325', level: 10 }, { id: '326', level: 5 }],
   },
   {
     id: '323',
@@ -4367,6 +4911,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '94',
     defaultRace: '281',
+    initJob: [{ id: '1', level: 10 }, { id: '9', level: 10 }, { id: '62', level: 10 }, { id: '63', level: 10 }, { id: '92', level: 10 }, { id: '93', level: 10 }, { id: '94', level: 5 }, { id: '95', level: 10 }],
+    initRace: [{ id: '232', level: 10 }, { id: '235', level: 10 }, { id: '274', level: 10 }, { id: '275', level: 10 }, { id: '276', level: 10 }, { id: '277', level: 10 }, { id: '278', level: 10 }, { id: '279', level: 10 }, { id: '280', level: 10 }, { id: '281', level: 5 }],
   },
   {
     id: '324',
@@ -4383,6 +4929,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '2',
     defaultRace: '195',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }],
+    initRace: [{ id: '194', level: 10 }, { id: '195', level: 10 }],
   },
   {
     id: '325',
@@ -4399,6 +4947,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '9',
     defaultRace: '197',
+    initJob: [{ id: '1', level: 10 }, { id: '9', level: 10 }, { id: '92', level: 10 }, { id: '95', level: 10 }],
+    initRace: [{ id: '194', level: 10 }, { id: '195', level: 8 }, { id: '197', level: 8 }],
   },
   {
     id: '326',
@@ -4415,6 +4965,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '96',
     defaultRace: '196',
+    initJob: [{ id: '44', level: 10 }, { id: '45', level: 10 }, { id: '92', level: 10 }, { id: '95', level: 10 }, { id: '96', level: 3 }],
+    initRace: [{ id: '194', level: 10 }, { id: '195', level: 10 }, { id: '196', level: 3 }],
   },
   {
     id: '327',
@@ -4431,6 +4983,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 187,
     defaultJob: '36',
     defaultRace: '196',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '36', level: 3 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '52', level: 10 }, { id: '92', level: 10 }, { id: '95', level: 10 }, { id: '134', level: 10 }],
+    initRace: [{ id: '194', level: 10 }, { id: '195', level: 10 }, { id: '196', level: 3 }],
   },
   {
     id: '328',
@@ -4447,6 +5001,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 198,
     defaultJob: '46',
     defaultRace: '201',
+    initJob: [{ id: '1', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '46', level: 5 }, { id: '79', level: 10 }, { id: '80', level: 10 }, { id: '92', level: 10 }, { id: '95', level: 10 }, { id: '93', level: 3 }, { id: '134', level: 10 }, { id: '135', level: 10 }],
+    initRace: [{ id: '194', level: 10 }, { id: '195', level: 10 }, { id: '196', level: 10 }, { id: '197', level: 10 }, { id: '198', level: 10 }, { id: '199', level: 10 }, { id: '200', level: 10 }, { id: '201', level: 5 }],
   },
   {
     id: '329',
@@ -4463,6 +5019,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '16',
     defaultRace: '305',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }, { id: '16', level: 3 }],
+    initRace: [{ id: '265', level: 10 }, { id: '301', level: 10 }, { id: '302', level: 10 }, { id: '303', level: 3 }, { id: '304', level: 10 }, { id: '305', level: 3 }],
   },
   {
     id: '330',
@@ -4479,6 +5037,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '38',
     defaultRace: '314',
+    initJob: [{ id: '33', level: 10 }, { id: '38', level: 10 }],
+    initRace: [{ id: '309', level: 10 }, { id: '314', level: 10 }],
   },
   {
     id: '331',
@@ -4495,6 +5055,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '43',
     defaultRace: '314',
+    initJob: [{ id: '33', level: 10 }, { id: '38', level: 10 }, { id: '42', level: 10 }, { id: '43', level: 3 }, { id: '62', level: 10 }, { id: '65', level: 10 }],
+    initRace: [{ id: '309', level: 10 }, { id: '314', level: 10 }],
   },
   {
     id: '332',
@@ -4511,6 +5073,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '25',
     defaultRace: '314',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }, { id: '25', level: 3 }, { id: '33', level: 10 }, { id: '38', level: 10 }],
+    initRace: [{ id: '309', level: 10 }, { id: '314', level: 10 }],
   },
   {
     id: '333',
@@ -4527,6 +5091,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 182,
     defaultJob: '39',
     defaultRace: '315',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '38', level: 10 }, { id: '38', level: 10 }, { id: '39', level: 3 }],
+    initRace: [{ id: '309', level: 10 }, { id: '314', level: 10 }, { id: '315', level: 3 }],
   },
   {
     id: '334',
@@ -4543,6 +5109,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '14',
     defaultRace: '315',
+    initJob: [{ id: '1', level: 10 }, { id: '12', level: 10 }, { id: '14', level: 5 }, { id: '22', level: 10 }, { id: '23', level: 10 }, { id: '26', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '38', level: 10 }, { id: '39', level: 5 }],
+    initRace: [{ id: '309', level: 10 }, { id: '310', level: 10 }, { id: '311', level: 10 }, { id: '312', level: 10 }, { id: '313', level: 10 }, { id: '314', level: 10 }, { id: '315', level: 10 }],
   },
   {
     id: '335',
@@ -4559,6 +5127,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '2',
     defaultRace: '185',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '104', level: 10 }],
+    initRace: [{ id: '184', level: 10 }, { id: '185', level: 10 }],
   },
   {
     id: '336',
@@ -4575,6 +5145,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '34',
     defaultRace: '187',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '38', level: 10 }],
+    initRace: [{ id: '184', level: 10 }, { id: '187', level: 10 }],
   },
   {
     id: '337',
@@ -4591,6 +5163,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '2',
     defaultRace: '186',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }],
+    initRace: [{ id: '184', level: 10 }, { id: '185', level: 10 }, { id: '186', level: 3 }],
   },
   {
     id: '338',
@@ -4607,6 +5181,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '8',
     defaultRace: '186',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 5 }, { id: '7', level: 10 }, { id: '8', level: 3 }, { id: '33', level: 10 }, { id: '34', level: 5 }],
+    initRace: [{ id: '184', level: 10 }, { id: '185', level: 10 }, { id: '186', level: 3 }, { id: '187', level: 10 }],
   },
   {
     id: '339',
@@ -4623,6 +5199,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '37',
     defaultRace: '188',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '37', level: 3 }, { id: '40', level: 10 }, { id: '62', level: 10 }, { id: '65', level: 10 }],
+    initRace: [{ id: '184', level: 10 }, { id: '185', level: 10 }, { id: '187', level: 10 }, { id: '188', level: 3 }],
   },
   {
     id: '340',
@@ -4639,6 +5217,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 198,
     defaultJob: '4',
     defaultRace: '192',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '4', level: 5 }, { id: '7', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '40', level: 10 }, { id: '62', level: 10 }, { id: '65', level: 10 }, { id: '134', level: 10 }, { id: '135', level: 10 }],
+    initRace: [{ id: '184', level: 10 }, { id: '185', level: 10 }, { id: '186', level: 10 }, { id: '187', level: 10 }, { id: '188', level: 10 }, { id: '189', level: 10 }, { id: '190', level: 10 }, { id: '192', level: 5 }],
   },
   {
     id: '341',
@@ -4655,6 +5235,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 209,
     defaultJob: '99',
     defaultRace: '182',
+    initJob: [{ id: '22', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '44', level: 10 }, { id: '92', level: 10 }, { id: '97', level: 10 }, { id: '99', level: 5 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 10 }, { id: '177', level: 10 }, { id: '178', level: 10 }, { id: '179', level: 10 }, { id: '180', level: 10 }, { id: '181', level: 10 }, { id: '182', level: 5 }],
   },
   {
     id: '342',
@@ -4671,6 +5253,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '36',
     defaultRace: '338',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '36', level: 4 }],
+    initRace: [{ id: '336', level: 10 }, { id: '337', level: 10 }, { id: '338', level: 4 }],
   },
   {
     id: '343',
@@ -4687,6 +5271,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '43',
     defaultRace: '169',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '42', level: 10 }, { id: '43', level: 4 }],
+    initRace: [{ id: '167', level: 10 }, { id: '168', level: 10 }, { id: '169', level: 4 }, { id: '336', level: 10 }, { id: '337', level: 10 }],
   },
   {
     id: '344',
@@ -4703,6 +5289,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '10',
     defaultRace: '169',
+    initJob: [{ id: '1', level: 10 }, { id: '9', level: 10 }, { id: '10', level: 4 }, { id: '44', level: 10 }, { id: '45', level: 10 }],
+    initRace: [{ id: '167', level: 10 }, { id: '168', level: 10 }, { id: '169', level: 4 }, { id: '283', level: 10 }, { id: '284', level: 10 }],
   },
   {
     id: '345',
@@ -4719,6 +5307,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '16',
     defaultRace: '260',
+    initJob: [{ id: '1', level: 10 }, { id: '12', level: 10 }, { id: '15', level: 10 }, { id: '16', level: 4 }, { id: '92', level: 10 }, { id: '93', level: 10 }],
+    initRace: [{ id: '167', level: 10 }, { id: '168', level: 10 }, { id: '254', level: 10 }, { id: '255', level: 10 }, { id: '259', level: 10 }, { id: '260', level: 4 }],
   },
   {
     id: '346',
@@ -4735,6 +5325,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '23',
     defaultRace: '234',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }],
+    initRace: [{ id: '232', level: 10 }, { id: '233', level: 10 }, { id: '234', level: 4 }, { id: '235', level: 10 }],
   },
   {
     id: '347',
@@ -4751,6 +5343,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 153,
     defaultJob: '11',
     defaultRace: '288',
+    initJob: [{ id: '1', level: 10 }, { id: '9', level: 10 }, { id: '11', level: 4 }],
+    initRace: [{ id: '283', level: 10 }, { id: '287', level: 10 }, { id: '288', level: 4 }],
   },
   {
     id: '348',
@@ -4767,6 +5361,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '16',
     defaultRace: '290',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }, { id: '16', level: 4 }, { id: '22', level: 10 }],
+    initRace: [{ id: '283', level: 10 }, { id: '289', level: 10 }, { id: '290', level: 4 }],
   },
   {
     id: '349',
@@ -4783,6 +5379,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '24',
     defaultRace: '179',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }, { id: '24', level: 4 }],
+    initRace: [{ id: '175', level: 10 }, { id: '178', level: 10 }, { id: '179', level: 4 }],
   },
   {
     id: '350',
@@ -4799,6 +5397,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '25',
     defaultRace: '160',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }, { id: '25', level: 4 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 10 }, { id: '160', level: 4 }],
   },
   {
     id: '351',
@@ -4815,6 +5415,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '131',
     defaultRace: '271',
+    initJob: [{ id: '123', level: 10 }, { id: '129', level: 10 }, { id: '130', level: 10 }, { id: '131', level: 4 }],
+    initRace: [{ id: '265', level: 10 }, { id: '270', level: 10 }, { id: '271', level: 4 }],
   },
   {
     id: '352',
@@ -4831,6 +5433,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '8',
     defaultRace: '162',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '7', level: 10 }, { id: '8', level: 4 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '44', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 10 }, { id: '161', level: 10 }, { id: '162', level: 4 }],
   },
   {
     id: '353',
@@ -4847,6 +5451,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '36',
     defaultRace: '160',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '36', level: 4 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 10 }, { id: '160', level: 4 }],
   },
   {
     id: '354',
@@ -4863,6 +5469,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '23',
     defaultRace: '234',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }],
+    initRace: [{ id: '232', level: 10 }, { id: '233', level: 10 }, { id: '234', level: 4 }],
   },
   {
     id: '355',
@@ -4879,6 +5487,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '2',
     defaultRace: '362',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '52', level: 10 }],
+    initRace: [{ id: '362', level: 10 }],
   },
   {
     id: '356',
@@ -4895,6 +5505,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '96',
     defaultRace: '362',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '92', level: 10 }, { id: '95', level: 10 }, { id: '96', level: 4 }, { id: '97', level: 10 }, { id: '98', level: 4 }],
+    initRace: [{ id: '362', level: 10 }],
   },
   {
     id: '357',
@@ -4911,6 +5523,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '24',
     defaultRace: '362',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }, { id: '24', level: 4 }],
+    initRace: [{ id: '232', level: 10 }, { id: '233', level: 10 }, { id: '235', level: 10 }, { id: '362', level: 10 }],
   },
   {
     id: '358',
@@ -4927,6 +5541,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '46',
     defaultRace: '362',
+    initJob: [{ id: '44', level: 10 }, { id: '45', level: 10 }, { id: '46', level: 4 }],
+    initRace: [{ id: '319', level: 10 }, { id: '320', level: 10 }, { id: '322', level: 10 }, { id: '362', level: 10 }],
   },
   {
     id: '359',
@@ -4943,6 +5559,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '54',
     defaultRace: '368',
+    initJob: [{ id: '44', level: 10 }, { id: '45', level: 10 }, { id: '52', level: 10 }, { id: '53', level: 10 }, { id: '54', level: 5 }],
+    initRace: [{ id: '362', level: 10 }, { id: '368', level: 10 }],
   },
   {
     id: '360',
@@ -4959,6 +5577,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '6',
     defaultRace: '366',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '5', level: 10 }, { id: '6', level: 5 }, { id: '44', level: 10 }],
+    initRace: [{ id: '362', level: 10 }, { id: '366', level: 10 }],
   },
   {
     id: '361',
@@ -4975,6 +5595,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '39',
     defaultRace: '363',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '38', level: 10 }, { id: '39', level: 5 }, { id: '44', level: 10 }, { id: '45', level: 10 }],
+    initRace: [{ id: '344', level: 10 }, { id: '351', level: 10 }, { id: '362', level: 10 }, { id: '363', level: 10 }],
   },
   {
     id: '362',
@@ -4991,6 +5613,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '29',
     defaultRace: '363',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }, { id: '28', level: 10 }, { id: '29', level: 5 }, { id: '44', level: 10 }, { id: '45', level: 10 }],
+    initRace: [{ id: '344', level: 10 }, { id: '351', level: 10 }, { id: '362', level: 10 }, { id: '363', level: 10 }],
   },
   {
     id: '363',
@@ -5007,6 +5631,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '23',
     defaultRace: '355',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }],
+    initRace: [{ id: '232', level: 10 }, { id: '235', level: 10 }, { id: '354', level: 10 }, { id: '355', level: 10 }],
   },
   {
     id: '364',
@@ -5023,6 +5649,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '63',
     defaultRace: '355',
+    initJob: [{ id: '62', level: 10 }, { id: '63', level: 10 }],
+    initRace: [{ id: '223', level: 10 }, { id: '224', level: 10 }, { id: '265', level: 10 }, { id: '266', level: 10 }, { id: '354', level: 10 }, { id: '355', level: 5 }],
   },
   {
     id: '365',
@@ -5039,6 +5667,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 164,
     defaultJob: '46',
     defaultRace: '357',
+    initJob: [{ id: '44', level: 10 }, { id: '45', level: 10 }, { id: '46', level: 5 }],
+    initRace: [{ id: '265', level: 10 }, { id: '266', level: 10 }, { id: '354', level: 10 }, { id: '357', level: 10 }, { id: '362', level: 10 }],
   },
   {
     id: '366',
@@ -5055,6 +5685,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 164,
     defaultJob: '35',
     defaultRace: '357',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '35', level: 5 }],
+    initRace: [{ id: '328', level: 10 }, { id: '331', level: 10 }, { id: '354', level: 10 }, { id: '357', level: 10 }, { id: '362', level: 10 }],
   },
   {
     id: '367',
@@ -5071,6 +5703,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '53',
     defaultRace: '355',
+    initJob: [{ id: '52', level: 10 }, { id: '53', level: 10 }],
+    initRace: [{ id: '265', level: 10 }, { id: '266', level: 10 }, { id: '301', level: 10 }, { id: '302', level: 10 }, { id: '354', level: 10 }, { id: '355', level: 5 }],
   },
   {
     id: '368',
@@ -5087,6 +5721,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '4',
     defaultRace: '209',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '4', level: 5 }, { id: '7', level: 10 }, { id: '8', level: 3 }, { id: '33', level: 10 }],
+    initRace: [{ id: '203', level: 10 }, { id: '204', level: 10 }, { id: '205', level: 10 }, { id: '208', level: 10 }, { id: '209', level: 10 }, { id: '210', level: 10 }, { id: '211', level: 10 }, { id: '328', level: 10 }, { id: '329', level: 10 }, { id: '330', level: 10 }],
   },
   {
     id: '370',
@@ -5103,6 +5739,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '35',
     defaultRace: '220',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '35', level: 5 }, { id: '36', level: 2 }, { id: '37', level: 2 }, { id: '38', level: 10 }, { id: '40', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '86', level: 10 }, { id: '87', level: 10 }, { id: '92', level: 10 }, { id: '93', level: 10 }],
+    initRace: [{ id: '214', level: 10 }, { id: '215', level: 10 }, { id: '216', level: 10 }, { id: '219', level: 10 }, { id: '220', level: 10 }, { id: '328', level: 10 }, { id: '329', level: 10 }, { id: '330', level: 10 }],
   },
   {
     id: '372',
@@ -5119,6 +5757,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '69',
     defaultRace: '198',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '62', level: 10 }, { id: '63', level: 10 }, { id: '64', level: 5 }, { id: '68', level: 10 }, { id: '69', level: 5 }, { id: '92', level: 10 }, { id: '95', level: 10 }],
+    initRace: [{ id: '194', level: 10 }, { id: '195', level: 10 }, { id: '196', level: 10 }, { id: '197', level: 10 }, { id: '198', level: 5 }, { id: '328', level: 10 }, { id: '329', level: 10 }, { id: '330', level: 10 }],
   },
   {
     id: '374',
@@ -5135,6 +5775,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '46',
     defaultRace: '263',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }, { id: '16', level: 5 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '46', level: 5 }, { id: '134', level: 10 }, { id: '135', level: 10 }],
+    initRace: [{ id: '254', level: 10 }, { id: '255', level: 10 }, { id: '256', level: 10 }, { id: '257', level: 10 }, { id: '258', level: 10 }, { id: '259', level: 10 }, { id: '260', level: 10 }, { id: '263', level: 5 }, { id: '328', level: 10 }, { id: '329', level: 10 }, { id: '330', level: 10 }],
   },
   {
     id: '376',
@@ -5151,6 +5793,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '11',
     defaultRace: '281',
+    initJob: [{ id: '1', level: 10 }, { id: '9', level: 10 }, { id: '11', level: 5 }, { id: '62', level: 10 }, { id: '63', level: 10 }, { id: '92', level: 10 }, { id: '93', level: 10 }, { id: '134', level: 10 }, { id: '135', level: 10 }],
+    initRace: [{ id: '274', level: 10 }, { id: '275', level: 10 }, { id: '276', level: 10 }, { id: '277', level: 10 }, { id: '278', level: 10 }, { id: '279', level: 10 }, { id: '280', level: 10 }, { id: '281', level: 5 }, { id: '328', level: 10 }, { id: '329', level: 10 }, { id: '330', level: 10 }],
   },
   {
     id: '378',
@@ -5167,6 +5811,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '55',
     defaultRace: '272',
+    initJob: [{ id: '52', level: 10 }, { id: '53', level: 10 }, { id: '55', level: 5 }, { id: '59', level: 10 }, { id: '61', level: 5 }, { id: '129', level: 10 }, { id: '130', level: 10 }, { id: '131', level: 5 }, { id: '134', level: 10 }, { id: '135', level: 10 }],
+    initRace: [{ id: '265', level: 10 }, { id: '266', level: 10 }, { id: '267', level: 10 }, { id: '268', level: 10 }, { id: '269', level: 10 }, { id: '270', level: 10 }, { id: '271', level: 10 }, { id: '272', level: 5 }, { id: '328', level: 10 }, { id: '329', level: 10 }, { id: '330', level: 10 }],
   },
   {
     id: '382',
@@ -5183,6 +5829,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 209,
     defaultJob: '8',
     defaultRace: '177',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '7', level: 10 }, { id: '8', level: 5 }, { id: '19', level: 10 }, { id: '20', level: 4 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '38', level: 10 }, { id: '42', level: 10 }, { id: '92', level: 10 }, { id: '97', level: 10 }, { id: '99', level: 5 }],
+    initRace: [{ id: '175', level: 10 }, { id: '176', level: 10 }, { id: '177', level: 5 }, { id: '180', level: 10 }],
   },
   {
     id: '383',
@@ -5199,6 +5847,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 204,
     defaultJob: '6',
     defaultRace: '364',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '5', level: 10 }, { id: '6', level: 5 }, { id: '9', level: 10 }, { id: '10', level: 5 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '72', level: 10 }, { id: '73', level: 10 }],
+    initRace: [{ id: '362', level: 10 }, { id: '363', level: 10 }, { id: '364', level: 5 }],
   },
   {
     id: '391',
@@ -5215,6 +5865,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 174,
     defaultJob: '47',
     defaultRace: '160',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 10 }, { id: '44', level: 10 }, { id: '45', level: 10 }, { id: '47', level: 8 }, { id: '103', level: 10 }, { id: '104', level: 8 }, { id: '108', level: 10 }],
+    initRace: [{ id: '158', level: 10 }, { id: '159', level: 10 }, { id: '254', level: 5 }, { id: '255', level: 10 }],
   },
   {
     id: '520',
@@ -5231,6 +5883,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '91',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 7 }, { id: '52', level: 10 }, { id: '56', level: 10 }, { id: '62', level: 10 }, { id: '63', level: 10 }, { id: '79', level: 10 }, { id: '80', level: 10 }, { id: '86', level: 10 }, { id: '87', level: 10 }, { id: '91', level: 2 }, { id: '120', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '522',
@@ -5247,6 +5901,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 177,
     defaultJob: '7',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '7', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '92', level: 10 }, { id: '120', level: 10 }, { id: '121', level: 10 }, { id: '123', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '525',
@@ -5263,6 +5919,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '44',
     defaultRace: '151',
+    initJob: [{ id: '44', level: 2 }],
+    initRace: [{ id: '151', level: 2 }],
   },
   {
     id: '529',
@@ -5279,6 +5937,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '2',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 7 }, { id: '129', level: 10 }, { id: '134', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '530',
@@ -5295,6 +5955,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 198,
     defaultJob: '1',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 7 }, { id: '129', level: 10 }, { id: '134', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '531',
@@ -5311,6 +5973,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '138',
     defaultRace: '151',
+    initJob: [{ id: '44', level: 10 }, { id: '110', level: 10 }, { id: '134', level: 10 }, { id: '138', level: 2 }],
+    initRace: [{ id: '151', level: 7 }],
   },
   {
     id: '533',
@@ -5327,6 +5991,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '135',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '52', level: 10 }, { id: '59', level: 10 }, { id: '134', level: 10 }, { id: '135', level: 2 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '535',
@@ -5343,6 +6009,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 168,
     defaultJob: '137',
     defaultRace: '357',
+    initJob: [{ id: '1', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '38', level: 10 }, { id: '44', level: 10 }, { id: '47', level: 10 }, { id: '103', level: 10 }, { id: '104', level: 10 }, { id: '134', level: 10 }, { id: '135', level: 10 }, { id: '137', level: 2 }],
+    initRace: [{ id: '151', level: 10 }, { id: '354', level: 10 }, { id: '357', level: 4 }],
   },
   {
     id: '536',
@@ -5359,6 +6027,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '69',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '62', level: 10 }, { id: '63', level: 10 }, { id: '68', level: 10 }, { id: '69', level: 2 }],
+    initRace: [{ id: '151', level: 10 }, { id: '336', level: 10 }, { id: '337', level: 10 }],
   },
   {
     id: '538',
@@ -5375,6 +6045,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '142',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '5', level: 10 }, { id: '44', level: 10 }, { id: '141', level: 10 }, { id: '142', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '540',
@@ -5391,6 +6063,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 133,
     defaultJob: '120',
     defaultRace: '254',
+    initJob: [{ id: '120', level: 10 }, { id: '92', level: 6 }],
+    initRace: [{ id: '254', level: 3 }],
   },
   {
     id: '541',
@@ -5407,6 +6081,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 123,
     defaultJob: '86',
     defaultRace: '274',
+    initJob: [{ id: '86', level: 8 }, { id: '92', level: 8 }],
+    initRace: [{ id: '274', level: 4 }],
   },
   {
     id: '542',
@@ -5423,6 +6099,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 98,
     defaultJob: '79',
     defaultRace: '194',
+    initJob: [{ id: '79', level: 8 }],
+    initRace: [{ id: '194', level: 6 }],
   },
   {
     id: '543',
@@ -5439,6 +6117,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 117,
     defaultJob: '65',
     defaultRace: '241',
+    initJob: [{ id: '22', level: 10 }, { id: '52', level: 10 }, { id: '62', level: 10 }, { id: '65', level: 8 }],
+    initRace: [{ id: '232', level: 10 }, { id: '241', level: 8 }],
   },
   {
     id: '544',
@@ -5455,6 +6135,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 198,
     defaultJob: '129',
     defaultRace: '151',
+    initJob: [{ id: '92', level: 10 }, { id: '97', level: 6 }, { id: '129', level: 10 }],
+    initRace: [{ id: '151', level: 7 }],
   },
   {
     id: '545',
@@ -5471,6 +6153,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 182,
     defaultJob: '79',
     defaultRace: '151',
+    initJob: [{ id: '79', level: 3 }],
+    initRace: [{ id: '151', level: 3 }],
   },
   {
     id: '546',
@@ -5487,6 +6171,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 182,
     defaultJob: '149',
     defaultRace: '151',
+    initJob: [{ id: '149', level: 1 }],
+    initRace: [{ id: '151', level: 4 }],
   },
   {
     id: '547',
@@ -5503,6 +6189,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '80',
     defaultRace: '151',
+    initJob: [{ id: '52', level: 10 }, { id: '56', level: 5 }, { id: '79', level: 10 }, { id: '80', level: 7 }, { id: '1', level: 10 }],
+    initRace: [{ id: '151', level: 9 }],
   },
   {
     id: '548',
@@ -5519,6 +6207,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 187,
     defaultJob: '92',
     defaultRace: '151',
+    initJob: [{ id: '92', level: 4 }],
+    initRace: [{ id: '151', level: 4 }],
   },
   {
     id: '549',
@@ -5535,6 +6225,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '62',
     defaultRace: '151',
+    initJob: [{ id: '62', level: 5 }],
+    initRace: [{ id: '151', level: 4 }],
   },
   {
     id: '550',
@@ -5551,6 +6243,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 173,
     defaultJob: '22',
     defaultRace: '151',
+    initJob: [{ id: '22', level: 6 }],
+    initRace: [{ id: '151', level: 5 }],
   },
   {
     id: '551',
@@ -5567,6 +6261,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 193,
     defaultJob: '130',
     defaultRace: '151',
+    initJob: [{ id: '123', level: 8 }, { id: '129', level: 10 }, { id: '130', level: 3 }],
+    initRace: [{ id: '151', level: 5 }],
   },
   {
     id: '552',
@@ -5583,6 +6279,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 187,
     defaultJob: '52',
     defaultRace: '203',
+    initJob: [{ id: '52', level: 7 }],
+    initRace: [{ id: '203', level: 6 }],
   },
   {
     id: '553',
@@ -5599,6 +6297,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 187,
     defaultJob: '103',
     defaultRace: '151',
+    initJob: [{ id: '103', level: 7 }],
+    initRace: [{ id: '151', level: 6 }],
   },
   {
     id: '554',
@@ -5615,6 +6315,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '126',
     defaultRace: '151',
+    initJob: [{ id: '126', level: 7 }],
+    initRace: [{ id: '151', level: 6 }],
   },
   {
     id: '555',
@@ -5631,6 +6333,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 177,
     defaultJob: '123',
     defaultRace: '151',
+    initJob: [{ id: '123', level: 4 }],
+    initRace: [{ id: '151', level: 4 }],
   },
   {
     id: '556',
@@ -5647,6 +6351,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '44',
     defaultRace: '151',
+    initJob: [{ id: '44', level: 9 }],
+    initRace: [{ id: '151', level: 7 }],
   },
   {
     id: '557',
@@ -5663,6 +6369,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '77',
     defaultRace: '151',
+    initJob: [{ id: '72', level: 10 }, { id: '77', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '558',
@@ -5679,6 +6387,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 183,
     defaultJob: '86',
     defaultRace: '151',
+    initJob: [{ id: '86', level: 9 }, { id: '120', level: 8 }],
+    initRace: [{ id: '151', level: 9 }],
   },
   {
     id: '559',
@@ -5695,6 +6405,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 198,
     defaultJob: '65',
     defaultRace: '151',
+    initJob: [{ id: '62', level: 10 }, { id: '63', level: 10 }, { id: '65', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '560',
@@ -5711,6 +6423,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '93',
     defaultRace: '151',
+    initJob: [{ id: '92', level: 10 }, { id: '93', level: 7 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '561',
@@ -5727,6 +6441,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 177,
     defaultJob: '34',
     defaultRace: '151',
+    initJob: [{ id: '33', level: 10 }, { id: '34', level: 7 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '562',
@@ -5743,6 +6459,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 147,
     defaultJob: '15',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 8 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '563',
@@ -5759,6 +6477,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '72',
     defaultRace: '151',
+    initJob: [{ id: '72', level: 3 }],
+    initRace: [{ id: '151', level: 2 }],
   },
   {
     id: '564',
@@ -5775,6 +6495,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 178,
     defaultJob: '5',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '5', level: 5 }, { id: '44', level: 10 }, { id: '72', level: 10 }],
+    initRace: [{ id: '151', level: 8 }],
   },
   {
     id: '565',
@@ -5791,6 +6513,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 138,
     defaultJob: '15',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 5 }, { id: '15', level: 7 }, { id: '72', level: 10 }, { id: '73', level: 5 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '566',
@@ -5807,6 +6531,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 182,
     defaultJob: '110',
     defaultRace: '151',
+    initJob: [{ id: '110', level: 4 }],
+    initRace: [{ id: '151', level: 4 }],
   },
   {
     id: '567',
@@ -5823,6 +6549,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 188,
     defaultJob: '77',
     defaultRace: '151',
+    initJob: [{ id: '72', level: 10 }, { id: '77', level: 2 }, { id: '92', level: 10 }],
+    initRace: [{ id: '151', level: 4 }],
   },
   {
     id: '569',
@@ -5839,6 +6567,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 182,
     defaultJob: '84',
     defaultRace: '151',
+    initJob: [{ id: '52', level: 10 }, { id: '62', level: 10 }, { id: '84', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '570',
@@ -5855,6 +6585,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 169,
     defaultJob: '2',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '571',
@@ -5871,6 +6603,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 180,
     defaultJob: '75',
     defaultRace: '151',
+    initJob: [{ id: '72', level: 10 }, { id: '75', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '572',
@@ -5887,6 +6621,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 190,
     defaultJob: '121',
     defaultRace: '151',
+    initJob: [{ id: '120', level: 10 }, { id: '121', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '573',
@@ -5903,6 +6639,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '15',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '15', level: 10 }, { id: '17', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '574',
@@ -5919,6 +6657,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 196,
     defaultJob: '93',
     defaultRace: '151',
+    initJob: [{ id: '44', level: 10 }, { id: '45', level: 10 }, { id: '92', level: 10 }, { id: '93', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '575',
@@ -5935,6 +6675,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 190,
     defaultJob: '12',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '12', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '576',
@@ -5951,6 +6693,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 190,
     defaultJob: '104',
     defaultRace: '151',
+    initJob: [{ id: '103', level: 10 }, { id: '104', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '577',
@@ -5967,6 +6711,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 190,
     defaultJob: '49',
     defaultRace: '151',
+    initJob: [{ id: '33', level: 10 }, { id: '49', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '578',
@@ -5983,6 +6729,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 158,
     defaultJob: '73',
     defaultRace: '151',
+    initJob: [{ id: '72', level: 10 }, { id: '73', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '579',
@@ -5999,6 +6747,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 153,
     defaultJob: '17',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '17', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '580',
@@ -6015,6 +6765,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 201,
     defaultJob: '97',
     defaultRace: '151',
+    initJob: [{ id: '92', level: 10 }, { id: '93', level: 10 }, { id: '95', level: 10 }, { id: '97', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '581',
@@ -6031,6 +6783,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 190,
     defaultJob: '59',
     defaultRace: '151',
+    initJob: [{ id: '52', level: 10 }, { id: '59', level: 10 }, { id: '134', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '582',
@@ -6047,6 +6801,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 196,
     defaultJob: '82',
     defaultRace: '151',
+    initJob: [{ id: '79', level: 10 }, { id: '80', level: 10 }, { id: '82', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '583',
@@ -6063,6 +6819,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 163,
     defaultJob: '68',
     defaultRace: '151',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '62', level: 10 }, { id: '68', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '584',
@@ -6079,6 +6837,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 196,
     defaultJob: '68',
     defaultRace: '151',
+    initJob: [{ id: '52', level: 10 }, { id: '56', level: 10 }, { id: '62', level: 10 }, { id: '68', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '585',
@@ -6095,6 +6855,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 191,
     defaultJob: '68',
     defaultRace: '151',
+    initJob: [{ id: '22', level: 10 }, { id: '23', level: 10 }, { id: '62', level: 10 }, { id: '68', level: 10 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '586',
@@ -6111,6 +6873,8 @@ export const ACTOR_LIST: Actor[] = [
     luk: 196,
     defaultJob: '67',
     defaultRace: '151',
+    initJob: [{ id: '52', level: 10 }, { id: '62', level: 10 }, { id: '65', level: 10 }, { id: '66', level: 2 }, { id: '67', level: 5 }, { id: '84', level: 10 }, { id: '85', level: 3 }],
+    initRace: [{ id: '151', level: 10 }],
   },
   {
     id: '701',
@@ -6127,5 +6891,7 @@ export const ACTOR_LIST: Actor[] = [
     luk: 180,
     defaultJob: '20',
     defaultRace: '153',
+    initJob: [{ id: '1', level: 10 }, { id: '2', level: 10 }, { id: '19', level: 10 }, { id: '20', level: 10 }, { id: '33', level: 10 }, { id: '34', level: 10 }, { id: '38', level: 10 }, { id: '42', level: 10 }, { id: '43', level: 10 }, { id: '45', level: 10 }, { id: '47', level: 10 }, { id: '48', level: 10 }],
+    initRace: [{ id: '151', level: 10 }, { id: '152', level: 10 }, { id: '153', level: 4 }, { id: '158', level: 10 }, { id: '159', level: 10 }, { id: '160', level: 10 }, { id: '362', level: 10 }, { id: '363', level: 10 }, { id: '365', level: 10 }],
   },
 ];

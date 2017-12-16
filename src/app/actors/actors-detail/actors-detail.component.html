@@ -76,6 +76,37 @@
         {{ dataService.getOneRace(actor.defaultRace).name }}
       </div>
     </div>
+
+    <div class="row">
+      <div class="status col-sm-2">
+        <b>초기 직업</b>
+      </div>
+      <div class="status col-sm-10" style="margin-top: 0px">
+        <div class="row">
+          <ng-container *ngFor="let item of actor.initJob">
+            <div class="status col-sm-3">
+              {{ dataService.getOneJob(item.id).name }} Lv {{ item.level }}
+              <br>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="status col-sm-2">
+        <b>초기 종족</b>
+      </div>
+      <div class="status col-sm-10" style="margin-top: 0px">
+        <div class="row">
+          <ng-container *ngFor="let item of actor.initRace">
+            <div class="status col-sm-3">
+              {{ dataService.getOneRace(item.id).name }} Lv {{ item.level }}
+              <br>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
     <div style="font-size: 24px; margin-top: 48px; margin-bottom: 12px">
       <img src="images/faces/{{ actor?.id }}.png" style="width: 24px; height:24px">
       <b>나도 리뷰 쓰기</b>

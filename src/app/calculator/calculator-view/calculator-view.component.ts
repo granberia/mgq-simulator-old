@@ -39,9 +39,9 @@ export class CalculatorViewComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    this.actorList = this.dataService.getAllActors();
-    this.jobList = this.dataService.getAllJobs();
-    this.raceRawList = this.dataService.getAllRaces();
+    this.actorList = this.dataService.getAllActors().actors;
+    this.jobList = this.dataService.getAllJobs().jobs;
+    this.raceRawList = this.dataService.getAllRaces().races;
     this.formGroup = new FormGroup({
       actor: new FormControl(['']),
       race: new FormControl(['']),

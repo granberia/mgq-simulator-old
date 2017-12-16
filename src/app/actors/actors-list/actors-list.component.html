@@ -1,3 +1,9 @@
+<ng-container *ngFor="let item of baseRaces">
+    <span [ngClass]="{'label-info': raceFilter && raceFilter.includes(item), 'label-light-blue': raceFilter && raceFilter.includes(item)}" class="label clickable" style="cursor: pointer" (click)="addFilter(item)">
+      {{ item }}
+      <span class="badge">{{ total[item] }}</span>
+    </span>
+  </ng-container>
 <clr-datagrid>
   <clr-dg-column [clrDgSortBy]="actorComparators.nameComparator">이름
     <clr-dg-string-filter [clrDgStringFilter]="nameFilter"></clr-dg-string-filter>
@@ -25,7 +31,7 @@
   </clr-dg-row>
 
   <clr-dg-footer>
-    {{pagination.totalItems}}개 동료 중 {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}번째
+    {{pagination.totalItems}}명 동료 중 {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}번째
     <clr-dg-pagination #pagination [clrDgPageSize]="20"></clr-dg-pagination>
   </clr-dg-footer>
 </clr-datagrid>

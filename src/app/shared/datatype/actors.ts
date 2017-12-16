@@ -3,7 +3,15 @@ import { BaseRace } from './races';
 
 export interface Actor extends Common {
   secondaryName?: string;
-  baseRaces?: BaseRace[];
   defaultJob: string;
   defaultRace: string;
+  initJob: {
+    id: string,
+    level: number,
+  }[];
+  initRace: {
+    id: string,
+    level: number,
+  }[];
+  baseRaces?: BaseRace[];
 }

@@ -25,7 +25,7 @@ export class JobsListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.jobList = this.dataService.getAllJobs();
+    this.jobList = this.dataService.getAllJobs().jobs;
   }
 
   viewDetail(job: Job) {

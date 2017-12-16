@@ -4,6 +4,7 @@ import { ActorComparators } from '../../shared/comparator';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'app/shared/data.service';
 import { Actor } from '../../shared/datatype/actors';
+import { BaseRace, RaceType } from '../../shared/datatype/races';
 
 @Component({
   selector: 'app-actors-list',
@@ -17,6 +18,9 @@ export class ActorsListComponent implements OnInit {
   actorComparators = ActorComparators;
 
   actorList: Actor[];
+  baseRaces: BaseRace[] = [];
+  raceFilter: BaseRace[] = [];
+  total: {};
 
   constructor(
     private route: ActivatedRoute,
@@ -25,11 +29,31 @@ export class ActorsListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.actorList = this.dataService.getAllActors();
+    for (let key in RaceType) {
+      this.baseRaces.push(RaceType[key]);
+    }
+    const data = this.dataService.getAllActors();
+    this.actorList = data.actors;
+    this.total = data.total;
   }
 
   viewDetail(actor: Actor) {
     this.router.navigate([`./${actor.id}`], { relativeTo: this.route });
+  }
+
+  addFilter(item: BaseRace) {
+    if (this.raceFilter.includes(item)) {
+      this.raceFilter.splice(this.raceFilter.indexOf(item), 1);
+    } else {
+      this.raceFilter.push(item);
+    }
+    if (this.raceFilter.length !== 0) {
+      this.actorList = this.dataService.getAllActors({
+        baseRace: this.raceFilter,
+      }).actors;
+    } else {
+      this.actorList = this.dataService.getAllActors().actors;
+    }
   }
 
 }

@@ -25,7 +25,7 @@ export class RacesListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.raceList = this.dataService.getAllRaces();
+    this.raceList = this.dataService.getAllRaces().races;
   }
 
   viewDetail(race: Race) {
