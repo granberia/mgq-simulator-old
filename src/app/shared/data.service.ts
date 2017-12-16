@@ -32,7 +32,6 @@ export class DataService {
         return flag;
       });
     }
-    console.log(this.total);
     return {
       total: this.total,
       actors: result,
