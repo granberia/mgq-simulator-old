@@ -29,7 +29,7 @@ export class JobsListComponent implements OnInit {
   }
 
   viewDetail(job: Job) {
-    // this.router.navigate([`../${job.id}`], { relativeTo: this.route });
+    this.router.navigate([`./${job.id}`], { relativeTo: this.route });
   }
 
 }

@@ -7,8 +7,6 @@ import { ElementResistViewComponent } from './calculator-view/element-resist-vie
 import { StateResistViewComponent } from './calculator-view/state-resist-view/state-resist-view.component';
 import { BasisViewComponent } from './calculator-view/basis-view/basis-view.component';
 import { SpecialViewComponent } from './calculator-view/special-view/special-view.component';
-import { JobViewComponent } from './calculator-view/job-view/job-view.component';
-import { RaceViewComponent } from './calculator-view/race-view/race-view.component';
 
 @NgModule({
   imports: [CommonModule, HttpClientModule, SharedModule],
@@ -18,8 +16,6 @@ import { RaceViewComponent } from './calculator-view/race-view/race-view.compone
     StateResistViewComponent,
     BasisViewComponent,
     SpecialViewComponent,
-    JobViewComponent,
-    RaceViewComponent
   ],
 })
 export class CalculatorModule { }

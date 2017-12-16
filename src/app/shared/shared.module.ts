@@ -4,9 +4,10 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClarityModule } from 'clarity-angular';
 import { LivereModule } from './livere/livere.module';
-import { TranslatePipe } from './translate.pipe';
 import { DataService } from './data.service';
 import { CalculateService } from './calculate.service';
+import { JobViewComponent } from './views/job-view/job-view.component';
+import { RaceViewComponent } from './views/race-view/race-view.component';
 
 @NgModule({
   exports: [
@@ -16,12 +17,16 @@ import { CalculateService } from './calculate.service';
     LivereModule,
     FormsModule,
     ReactiveFormsModule,
-    TranslatePipe,
+    JobViewComponent,
+    RaceViewComponent,
   ],
   imports: [
     CommonModule,
   ],
-  declarations: [TranslatePipe],
+  declarations: [
+    JobViewComponent,
+    RaceViewComponent,
+  ],
   providers: [DataService, CalculateService],
 })
 export class SharedModule {}

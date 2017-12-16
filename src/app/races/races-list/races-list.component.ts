@@ -29,7 +29,7 @@ export class RacesListComponent implements OnInit {
   }
 
   viewDetail(race: Race) {
-    // this.router.navigate([`../${race.id}`], { relativeTo: this.route });
+    this.router.navigate([`./${race.id}`], { relativeTo: this.route });
   }
 
 }

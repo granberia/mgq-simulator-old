@@ -9,7 +9,7 @@ import { WeaponType } from './../../../shared/datatype/weapons';
 @Component({
   selector: 'app-race-view',
   templateUrl: './race-view.component.html',
-  styleUrls: ['../calculator-view.component.scss']
+  styleUrls: ['./race-view.component.scss']
 })
 export class RaceViewComponent implements OnInit {
   @Input() race: Race;

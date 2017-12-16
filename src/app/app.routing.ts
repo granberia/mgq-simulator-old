@@ -6,7 +6,9 @@ import { CalculatorViewComponent } from './calculator/calculator-view/calculator
 import { ActorsListComponent } from './actors/actors-list/actors-list.component';
 import { ActorsDetailComponent } from './actors/actors-detail/actors-detail.component';
 import { JobsListComponent } from './jobs/jobs-list/jobs-list.component';
+import { JobsDetailComponent } from './jobs/jobs-detail/jobs-detail.component';
 import { RacesListComponent } from './races/races-list/races-list.component';
+import { RacesDetailComponent } from './races/races-detail/races-detail.component';
 
 export const ROUTES: Routes = [
   {
@@ -18,7 +20,9 @@ export const ROUTES: Routes = [
   { path: 'actors', component: ActorsListComponent },
   { path: 'actors/:id', component: ActorsDetailComponent },
   { path: 'jobs', component: JobsListComponent },
+  { path: 'jobs/:id', component: JobsDetailComponent },
   { path: 'races', component: RacesListComponent },
+  { path: 'races/:id', component: RacesDetailComponent },
   { path: '', redirectTo: 'main', pathMatch: 'full' },
   { path: '**', redirectTo: 'main' },
 ];

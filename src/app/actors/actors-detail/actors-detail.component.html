@@ -66,13 +66,13 @@
       <div class="status col-sm-2">
         <b>기본 직업</b>
       </div>
-      <div class="status col-sm-10">
+      <div class="status col-sm-10" *ngIf="actor">
         {{ dataService.getOneJob(actor.defaultJob).name }}
       </div>
       <div class="status col-sm-2">
         <b>기본 종족</b>
       </div>
-      <div class="status col-sm-10">
+      <div class="status col-sm-10" *ngIf="actor">
         {{ dataService.getOneRace(actor.defaultRace).name }}
       </div>
     </div>
