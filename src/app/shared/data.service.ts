@@ -11,7 +11,9 @@ import { WeaponType } from './datatype/weapons';
 
 @Injectable()
 export class DataService {
-  total = {};
+  actorRaceCount = {};
+  actorRaceFilter: BaseRace[] = [];
+  raceCount = {};
   raceFilter: BaseRace[] = [];
   artistFilter: string[] = [];
   weaponFilter: string[] = [];
@@ -19,15 +21,15 @@ export class DataService {
   constructor() { }
 
   getAllActors() {
-    this.total = {};
+    this.actorRaceCount = {};
     for (let key in RaceType) {
-      this.total[RaceType[key]] = 0;
+      this.actorRaceCount[RaceType[key]] = 0;
     }
     let result = ACTOR_LIST.map(actor => this.setupDefaultActorValues(actor));
-    if (this.raceFilter.length != 0) {
+    if (this.actorRaceFilter.length != 0) {
       result = ACTOR_LIST.filter(actor => {
         let flag = false;
-        this.raceFilter.forEach(race => {
+        this.actorRaceFilter.forEach(race => {
           if (actor.baseRaces.includes(race)) {
             flag = true;
           }
@@ -36,7 +38,7 @@ export class DataService {
       });
     }
     return {
-      total: this.total,
+      total: this.actorRaceCount,
       actors: result,
     };
   }
@@ -57,9 +59,28 @@ export class DataService {
   }
 
   getAllRaces() {
+    this.raceCount = {};
+    for (let key in RaceType) {
+      this.raceCount[RaceType[key]] = 0;
+    }
+    let result = RACE_LIST.map(race => {
+      this.raceCount[this.getRaceType(Number(race.id))]++;
+      return this.setupDefaultValues(race);
+    });
+    if (this.raceFilter.length != 0) {
+      result = RACE_LIST.filter(race => {
+        let flag = false;
+        this.raceFilter.forEach(filterRace => {
+          if (this.getRaceType(Number(race.id)) === filterRace) {
+            flag = true;
+          }
+        });
+        return flag;
+      });
+    }
     return {
-      total: [],
-      races: RACE_LIST.map(race => this.setupDefaultValues(race)),
+      total: this.raceCount,
+      races: result,
     };
   }
 
@@ -93,79 +114,7 @@ export class DataService {
   setupDefaultActorValues(target: any) { // interface 를 정의할 때 기본값 설정이 불가능하자 사용한 수단
     target.baseRaces = [];
     target.initRace.forEach(race => {
-      let baseRace = '';
-      if (Number(race.id) >= 151 && Number(race.id) < 158) {
-        baseRace = '인간';
-      }
-      if (Number(race.id) >= 158 && Number(race.id) < 167) {
-        baseRace = '요마';
-      }
-      if (Number(race.id) >= 167 && Number(race.id) < 175) {
-        baseRace = '아인';
-      }
-      if (Number(race.id) >= 175 && Number(race.id) < 184) {
-        baseRace = '음마';
-      }
-      if (Number(race.id) >= 184 && Number(race.id) < 194) {
-        baseRace = '흡혈귀';
-      }
-      if (Number(race.id) >= 194 && Number(race.id) < 203) {
-        baseRace = '인어';
-      }
-      if (Number(race.id) >= 203 && Number(race.id) < 214) {
-        baseRace = '엘프';
-      }
-      if (Number(race.id) >= 214 && Number(race.id) < 223) {
-        baseRace = '요정';
-      }
-      if (Number(race.id) >= 223 && Number(race.id) < 232) {
-        baseRace = '슬라임';
-      }
-      if (Number(race.id) >= 232 && Number(race.id) < 245) {
-        baseRace = '마수';
-      }
-      if (Number(race.id) >= 245 && Number(race.id) < 254) {
-        baseRace = '요호';
-      }
-      if (Number(race.id) >= 254 && Number(race.id) < 265) {
-        baseRace = '라미아';
-      }
-      if (Number(race.id) >= 265 && Number(race.id) < 274) {
-        baseRace = '스큐라';
-      }
-      if (Number(race.id) >= 274 && Number(race.id) < 283) {
-        baseRace = '하피';
-      }
-      if (Number(race.id) >= 283 && Number(race.id) < 293) {
-        baseRace = '드래곤';
-      }
-      if (Number(race.id) >= 293 && Number(race.id) < 301) {
-        baseRace = '육서종';
-      }
-      if (Number(race.id) >= 301 && Number(race.id) < 309) {
-        baseRace = '해서종';
-      }
-      if (Number(race.id) >= 309 && Number(race.id) < 319) {
-        baseRace = '벌레';
-      }
-      if (Number(race.id) >= 319 && Number(race.id) < 328) {
-        baseRace = '식물';
-      }
-      if (Number(race.id) >= 328 && Number(race.id) < 336) {
-        baseRace = '좀비';
-      }
-      if (Number(race.id) >= 336 && Number(race.id) < 344) {
-        baseRace = '고스트';
-      }
-      if (Number(race.id) >= 344 && Number(race.id) < 354) {
-        baseRace = '돌';
-      }
-      if (Number(race.id) >= 354 && Number(race.id) < 362) {
-        baseRace = '키메라';
-      }
-      if (Number(race.id) >= 362) {
-        baseRace = '천사';
-      }
+      let baseRace = this.getRaceType(Number(race.id));
       target.baseRaces.push(baseRace);
     });
     let result = [];
@@ -176,7 +125,7 @@ export class DataService {
     });
     target.baseRaces = result;
     result.forEach(item => {
-      this.total[item]++;
+      this.actorRaceCount[item]++;
     });
     return target;
   }
@@ -193,6 +142,82 @@ export class DataService {
       target.stateResist[status] = target.stateResist[status] ? target.stateResist[status] : 100;
     });
     return target;
+  }
+
+  getRaceType(index: number) {
+    if (index >= 151 && index < 158) {
+      return '인간';
+    }
+    if (index >= 158 && index < 167) {
+      return '요마';
+    }
+    if (index >= 167 && index < 175) {
+      return '아인';
+    }
+    if (index >= 175 && index < 184) {
+      return '음마';
+    }
+    if (index >= 184 && index < 194) {
+      return '흡혈귀';
+    }
+    if (index >= 194 && index < 203) {
+      return '인어';
+    }
+    if (index >= 203 && index < 214) {
+      return '엘프';
+    }
+    if (index >= 214 && index < 223) {
+      return '요정';
+    }
+    if (index >= 223 && index < 232) {
+      return '슬라임';
+    }
+    if (index >= 232 && index < 245) {
+      return '마수';
+    }
+    if (index >= 245 && index < 254) {
+      return '요호';
+    }
+    if (index >= 254 && index < 265) {
+      return '라미아';
+    }
+    if (index >= 265 && index < 274) {
+      return '스큐라';
+    }
+    if (index >= 274 && index < 283) {
+      return '하피';
+    }
+    if (index >= 283 && index < 293) {
+      return '드래곤';
+    }
+    if (index >= 293 && index < 301) {
+      return '육서종';
+    }
+    if (index >= 301 && index < 309) {
+      return '해서종';
+    }
+    if (index >= 309 && index < 319) {
+      return '벌레';
+    }
+    if (index >= 319 && index < 328) {
+      return '식물';
+    }
+    if (index >= 328 && index < 336) {
+      return '좀비';
+    }
+    if (index >= 336 && index < 344) {
+      return '고스트';
+    }
+    if (index >= 344 && index < 354) {
+      return '돌';
+    }
+    if (index >= 354 && index < 362) {
+      return '키메라';
+    }
+    if (index >= 362) {
+      return '천사';
+    }
+    return '';
   }
 
 }

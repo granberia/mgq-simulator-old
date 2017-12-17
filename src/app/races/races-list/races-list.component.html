@@ -1,3 +1,10 @@
+<ng-container *ngFor="let item of baseRaces">
+    <span [ngClass]="{'label-info': dataService.raceFilter.length !== 0 && dataService.raceFilter.includes(item), 'label-light-blue': dataService.raceFilter.length !== 0 && dataService.raceFilter.includes(item)}"
+      class="label clickable" style="cursor: pointer" (click)="addFilter(item)">
+      {{ item }}
+      <span class="badge">{{ total[item] }}</span>
+    </span>
+  </ng-container>
 <clr-datagrid>
   <clr-dg-column [clrDgSortBy]="raceComparators.nameComparator">직업명
     <clr-dg-string-filter [clrDgStringFilter]="nameFilter"></clr-dg-string-filter>

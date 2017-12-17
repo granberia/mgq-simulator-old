@@ -44,10 +44,10 @@ export class ActorsListComponent implements OnInit {
   }
 
   addFilter(item: BaseRace) {
-    if (this.dataService.raceFilter.includes(item)) {
-      this.dataService.raceFilter.splice(this.dataService.raceFilter.indexOf(item), 1);
+    if (this.dataService.actorRaceFilter.includes(item)) {
+      this.dataService.actorRaceFilter.splice(this.dataService.actorRaceFilter.indexOf(item), 1);
     } else {
-      this.dataService.raceFilter.push(item);
+      this.dataService.actorRaceFilter.push(item);
     }
     this.actorList = this.dataService.getAllActors().actors;
   }
