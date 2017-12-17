@@ -11,6 +11,7 @@ import { RACE_LIST } from './database/racesDataBase';
 export class DataService {
   total = {};
   raceFilter: BaseRace[] = [];
+  artistFilter: string[] = [];
 
   constructor() { }
 

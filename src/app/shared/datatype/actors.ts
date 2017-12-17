@@ -14,4 +14,5 @@ export interface Actor extends Common {
     level: number,
   }[];
   baseRaces?: BaseRace[];
+  artist: string;
 }

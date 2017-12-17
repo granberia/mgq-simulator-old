@@ -9,6 +9,7 @@ import { CalculateService } from './calculate.service';
 import { JobViewComponent } from './views/job-view/job-view.component';
 import { RaceViewComponent } from './views/race-view/race-view.component';
 
+
 @NgModule({
   exports: [
     CommonModule,

@@ -215,6 +215,12 @@ export class ActorSecondaryNameComparator implements Comparator<Actor> {
   }
 }
 
+export class ActorArtistComparator implements Comparator<Actor> {
+  compare(a: Actor, b: Actor) {
+    return a.artist < b.artist ? 1 : -1;
+  }
+}
+
 export class ActorHPComparator implements Comparator<Actor> {
   compare(a: Actor, b: Actor) {
     if (a.hp === b.hp) {
@@ -299,6 +305,7 @@ export class ActorLukComparator implements Comparator<Actor> {
 export const ActorComparators = {
   nameComparator: new ActorNameComparator(),
   secondaryNameComparator: new ActorSecondaryNameComparator(),
+  artistComparator: new ActorArtistComparator(),
   hpComparator: new ActorHPComparator(),
   mpComparator: new ActorMPComparator(),
   spComparator: new ActorMPComparator(),

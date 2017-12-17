@@ -1,8 +1,9 @@
 import { ActivatedRoute, Router } from '@angular/router';
-import { ActorNameFilter, ActorSecondaryNameFilter } from '../../shared/filter';
+import { ActorNameFilter, ActorSecondaryNameFilter, ActorArtistFilter } from '../../shared/filter';
 import { ActorComparators } from '../../shared/comparator';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'app/shared/data.service';
+import { ArtistList } from './../../shared/datatype/artist';
 import { Actor } from '../../shared/datatype/actors';
 import { BaseRace, RaceType } from '../../shared/datatype/races';
 
@@ -12,19 +13,21 @@ import { BaseRace, RaceType } from '../../shared/datatype/races';
   styleUrls: ['./actors-list.component.scss']
 })
 export class ActorsListComponent implements OnInit {
-  columns = ['secondaryName', 'hp', 'mp', 'sp', 'atk', 'def', 'mat', 'mdf', 'agi', 'luk'];
+  columns = ['secondaryName', 'artist', 'hp', 'mp', 'sp', 'atk', 'def', 'mat', 'mdf', 'agi', 'luk'];
   nameFilter = new ActorNameFilter();
   secondaryNameFilter = new ActorSecondaryNameFilter();
+  artistFilter = new ActorArtistFilter(this.dataService);
   actorComparators = ActorComparators;
 
   actorList: Actor[];
   baseRaces: BaseRace[] = [];
+  artistList = ArtistList;
   total: {};
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private dataService: DataService,
+    public dataService: DataService,
   ) { }
 
   ngOnInit() {

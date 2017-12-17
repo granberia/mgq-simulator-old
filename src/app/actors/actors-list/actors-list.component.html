@@ -1,15 +1,26 @@
 <ng-container *ngFor="let item of baseRaces">
-    <span [ngClass]="{'label-info': dataService.raceFilter.length !== 0 && dataService.raceFilter.includes(item), 'label-light-blue': dataService.raceFilter.length !== 0 && dataService.raceFilter.includes(item)}" class="label clickable" style="cursor: pointer" (click)="addFilter(item)">
-      {{ item }}
-      <span class="badge">{{ total[item] }}</span>
-    </span>
-  </ng-container>
+  <span [ngClass]="{'label-info': dataService.raceFilter.length !== 0 && dataService.raceFilter.includes(item), 'label-light-blue': dataService.raceFilter.length !== 0 && dataService.raceFilter.includes(item)}"
+    class="label clickable" style="cursor: pointer" (click)="addFilter(item)">
+    {{ item }}
+    <span class="badge">{{ total[item] }}</span>
+  </span>
+</ng-container>
 <clr-datagrid>
   <clr-dg-column [clrDgSortBy]="actorComparators.nameComparator">이름
     <clr-dg-string-filter [clrDgStringFilter]="nameFilter"></clr-dg-string-filter>
   </clr-dg-column>
   <clr-dg-column [clrDgSortBy]="actorComparators.secondaryNameComparator">별칭
     <clr-dg-string-filter [clrDgStringFilter]="secondaryNameFilter"></clr-dg-string-filter>
+  </clr-dg-column>
+  <clr-dg-column [clrDgSortBy]="actorComparators.artistComparator">일러스트
+    <clr-dg-filter [clrDgFilter]="artistFilter">
+      <ng-container *ngFor="let item of artistList let i = index">
+        <clr-checkbox [clrChecked]="dataService.artistFilter.includes(item)" (clrCheckedChange)="artistFilter.setValue($event, item)" [clrInline]="true">
+          <div style="width: 96px">{{ item }}</div>
+        </clr-checkbox>
+        <ng-container *ngIf="i % 3 === 2"><br></ng-container>
+      </ng-container>
+    </clr-dg-filter>
   </clr-dg-column>
   <clr-dg-column [clrDgSortBy]="actorComparators.hpComparator">HP</clr-dg-column>
   <clr-dg-column [clrDgSortBy]="actorComparators.mpComparator">MP</clr-dg-column>
