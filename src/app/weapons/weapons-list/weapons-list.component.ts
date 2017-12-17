@@ -48,6 +48,15 @@ export class WeaponsListComponent implements OnInit {
     this.weaponList = this.dataService.getAllWeapons().weapons;
   }
 
+  calculateStyle(icon: number) {
+    return {
+      'width': '24px',
+      'height': '24px',
+      'object-fit': 'none',
+      'object-position': '-' + (icon % 16 * 24) + 'px -' + (Math.floor(icon / 16) * 24) + 'px',
+    }
+  }
+
 }
 
 
