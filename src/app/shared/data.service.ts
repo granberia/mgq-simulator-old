@@ -2,16 +2,19 @@ import { ElementList } from './datatype/elements';
 import { StatusList } from './datatype/status';
 import { Injectable } from '@angular/core';
 import { ACTOR_LIST } from './database/actorsDataBase';
-import { Job } from './datatype/jobs';
 import { JOB_LIST } from './database/jobsDataBase';
-import { Race, BaseRace, RaceType } from './datatype/races';
+import { BaseRace, RaceType } from './datatype/races';
 import { RACE_LIST } from './database/racesDataBase';
+import { WEAPON_LIST } from './database/weaponsDataBase';
+import { WeaponType } from './datatype/weapons';
+
 
 @Injectable()
 export class DataService {
   total = {};
   raceFilter: BaseRace[] = [];
   artistFilter: string[] = [];
+  weaponFilter: string[] = [];
 
   constructor() { }
 
@@ -45,23 +48,46 @@ export class DataService {
   getAllJobs() {
     return {
       total: [],
-      jobs: JOB_LIST.map(job => this.setupDefaultJobValues(job)),
+      jobs: JOB_LIST.map(job => this.setupDefaultValues(job)),
     };
   }
 
   getOneJob(id: string) {
-    return this.setupDefaultJobValues(JOB_LIST.find(job => job.id === id));
+    return this.setupDefaultValues(JOB_LIST.find(job => job.id === id));
   }
 
   getAllRaces() {
     return {
       total: [],
-      races: RACE_LIST.map(race => this.setupDefaultJobValues(race)),
+      races: RACE_LIST.map(race => this.setupDefaultValues(race)),
     };
   }
 
   getOneRace(id: string) {
-    return this.setupDefaultJobValues(RACE_LIST.find(race => race.id === id));
+    return this.setupDefaultValues(RACE_LIST.find(race => race.id === id));
+  }
+
+  getAllWeapons() {
+    let result = WEAPON_LIST.map(weapon => this.setupDefaultValues(weapon));
+    if (this.weaponFilter.length != 0) {
+      result = WEAPON_LIST.filter(weapon => {
+        let flag = false;
+        this.weaponFilter.forEach(type => {
+          if (WeaponType[weapon.type] === type) {
+            flag = true;
+          }
+        });
+        return flag;
+      });
+    }
+    return {
+      total: [],
+      weapons: result,
+    };
+  }
+
+  getOneWeapon(id: string) {
+    return this.setupDefaultValues(WEAPON_LIST.find(weapon => weapon.id === id));
   }
 
   setupDefaultActorValues(target: any) { // interface 를 정의할 때 기본값 설정이 불가능하자 사용한 수단
@@ -155,7 +181,7 @@ export class DataService {
     return target;
   }
 
-  setupDefaultJobValues(target: any) { // interface 를 정의할 때 기본값 설정이 불가능하자 사용한 수단
+  setupDefaultValues(target: any) { // interface 를 정의할 때 기본값 설정이 불가능하자 사용한 수단
     const elementList = ElementList;
     target.elementResist = target.elementResist ? target.elementResist : {};
     elementList.forEach(element => {

@@ -5,8 +5,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ActorsModule } from 'app/actors/actors.module';
 import { CalculatorModule } from 'app/calculator/calculator.module';
-import { JobsModule } from 'app/jobs/jobs.module';
-import { RacesModule } from 'app/races/races.module';
+import { JobsModule } from './jobs/jobs.module';
+import { RacesModule } from './races/races.module';
+import { WeaponsModule } from './weapons/weapons.module';
 import { LivereModule } from './shared/livere/livere.module';
 import { ClarityModule } from 'clarity-angular';
 
@@ -29,6 +30,7 @@ import { CoreModule } from './core/core.module';
     ActorsModule,
     JobsModule,
     RacesModule,
+    WeaponsModule,
     LivereModule.forRoot('MTAyMC8zMjQxMy84OTc0'),
   ],
   providers: [CanDeactivateGuard],

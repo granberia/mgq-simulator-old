@@ -2270,7 +2270,7 @@ export const RACE_LIST: Race[] = [
   },
   {
     id: '209',
-    name: '아크 엪르',
+    name: '아크 엘프',
     require: ['208'],
     addSkill: ['7', '23', '27', '49', '50', '55', '61'],
     addWeapon: [],

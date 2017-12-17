@@ -103,7 +103,6 @@
         <div class="row">
           <ng-container *ngFor="let item of actor.initRace">
             <div class="status col-sm-3">
-              {{ item.id }}
               {{ dataService.getOneRace(item.id).name }} Lv {{ item.level }}
               <br>
             </div>

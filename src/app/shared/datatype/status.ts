@@ -26,6 +26,34 @@ export interface StateResist {
   incontinence?: number; // 실금
 }
 
+export interface StateOnHit {
+  death?: number; // 즉사
+  ascension?: number; // 승천
+  climax?: number; // 절정
+  bind?: number; // 구속
+  poison?: number; // 독
+  blind?: number; // 눈멈
+  silence?: number; // 침묵
+  confusion?: number; // 혼란
+  sleep?: number; // 수면
+  paralysis?: number; // 마비
+  burn?: number; // 번
+  freeze?: number; // 프리즈
+  shock?: number; // 쇼크
+  slow?: number; // 슬로우
+  stop?: number; // 스톱
+  mini?: number; // 미니멈
+  zombie?: number; // 좀비
+  petrify?: number; // 석화
+  digest?: number; // 소화
+  stun?: number; // 스턴
+  slime?: number; // 미끈미끈
+  horny?: number; // 민감
+  trance?: number; // 황홀
+  seduction?: number; // 유혹
+  incontinence?: number; // 실금
+}
+
 export const StatusList = [
   'death',
   'ascension',

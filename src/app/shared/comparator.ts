@@ -2,6 +2,8 @@ import { Comparator } from 'clarity-angular';
 import { Actor } from './datatype/actors';
 import { Job } from './datatype/jobs';
 import { Race } from './datatype/races';
+import { Weapon } from './datatype/weapons';
+import { WeaponType } from './../shared/datatype/weapons';
 
 export class JobNameComparator implements Comparator<Job> {
   compare(a: Job, b: Job) {
@@ -315,4 +317,81 @@ export const ActorComparators = {
   mdfComparator: new ActorMdfComparator(),
   agiComparator: new ActorAgiComparator(),
   lukComparator: new ActorLukComparator(),
+};
+
+export class WeaponNameComparator implements Comparator<Weapon> {
+  compare(a: Weapon, b: Weapon) {
+    return a.name < b.name ? 1 : -1;
+  }
+}
+
+export class WeaponTypeComparator implements Comparator<Weapon> {
+  compare(a: Weapon, b: Weapon) {
+    return WeaponType[a.type] < WeaponType[b.type] ? 1 : -1;
+  }
+}
+
+export class WeaponAtkComparator implements Comparator<Weapon> {
+  compare(a: Weapon, b: Weapon) {
+    if (a.atkAdd === b.atkAdd) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.atkAdd - b.atkAdd;
+  }
+}
+
+export class WeaponDefComparator implements Comparator<Weapon> {
+  compare(a: Weapon, b: Weapon) {
+    if (a.defAdd === b.defAdd) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.defAdd - b.defAdd;
+  }
+}
+
+export class WeaponMatComparator implements Comparator<Weapon> {
+  compare(a: Weapon, b: Weapon) {
+    if (a.matAdd === b.matAdd) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.matAdd - b.matAdd;
+  }
+}
+
+export class WeaponMdfComparator implements Comparator<Weapon> {
+  compare(a: Weapon, b: Weapon) {
+    if (a.mdfAdd === b.mdfAdd) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.mdfAdd - b.mdfAdd;
+  }
+}
+
+export class WeaponAgiComparator implements Comparator<Weapon> {
+  compare(a: Weapon, b: Weapon) {
+    if (a.agiAdd === b.agiAdd) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.agiAdd - b.agiAdd;
+  }
+}
+
+export class WeaponLukComparator implements Comparator<Weapon> {
+  compare(a: Weapon, b: Weapon) {
+    if (a.lukAdd === b.lukAdd) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.lukAdd - b.lukAdd;
+  }
+}
+
+export const WeaponComparators = {
+  nameComparator: new WeaponNameComparator(),
+  typeComparator: new WeaponTypeComparator(),
+  atkComparator: new WeaponAtkComparator(),
+  defComparator: new WeaponDefComparator(),
+  matComparator: new WeaponMatComparator(),
+  mdfComparator: new WeaponMdfComparator(),
+  agiComparator: new WeaponAgiComparator(),
+  lukComparator: new WeaponLukComparator(),
 };

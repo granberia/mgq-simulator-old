@@ -1,3 +1,8 @@
+import { Equip } from './common';
+
+export interface Weapon extends Equip {
+}
+
 export const WeaponType = {
   '1': '단검',
   '2': '검',
