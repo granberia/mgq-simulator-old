@@ -1,10 +1,12 @@
 import { ActivatedRoute, Router } from '@angular/router';
-import { WeaponNameFilter, WeaponTypeFilter } from '../../shared/filter';
+import { WeaponNameFilter, WeaponTypeFilter, SpecialStatFilter } from '../../shared/filter';
 import { WeaponComparators } from '../../shared/comparator';
 import { Component, OnInit } from '@angular/core';
-import { DataService } from 'app/shared/data.service';
+import { DataService } from '../../shared/data.service';
+import { CalculateService } from '../../shared/calculate.service';
 import { Weapon } from '../../shared/datatype/weapons';
 import { WeaponType } from './../../shared/datatype/weapons';
+import { ElementPower } from '../../shared/datatype/elements';
 
 @Component({
   selector: 'app-weapons-list',
@@ -15,7 +17,8 @@ import { WeaponType } from './../../shared/datatype/weapons';
 export class WeaponsListComponent implements OnInit {
   columns = ['atkAdd', 'defAdd', 'matAdd', 'mdfAdd', 'agiAdd', 'lukAdd'];
   nameFilter = new WeaponNameFilter();
-  typeFilter = new WeaponTypeFilter();
+  typeFilter = new WeaponTypeFilter(this.dataService);
+  specialStatFilter = new SpecialStatFilter();
   weaponComparators = WeaponComparators;
 
   weaponList: Weapon[];
@@ -25,7 +28,8 @@ export class WeaponsListComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private dataService: DataService,
+    public dataService: DataService,
+    public calculateService: CalculateService,
   ) { }
 
   ngOnInit() {
@@ -38,25 +42,6 @@ export class WeaponsListComponent implements OnInit {
   viewDetail(weapon: Weapon) {
     // this.router.navigate([`./${weapon.id}`], { relativeTo: this.route });
   }
-  
-  addFilter(item: string) {
-    if (this.dataService.weaponFilter.includes(item)) {
-      this.dataService.weaponFilter.splice(this.dataService.weaponFilter.indexOf(item), 1);
-    } else {
-      this.dataService.weaponFilter.push(item);
-    }
-    this.weaponList = this.dataService.getAllWeapons().weapons;
-  }
-
-  calculateStyle(icon: number) {
-    return {
-      'width': '24px',
-      'height': '24px',
-      'object-fit': 'none',
-      'object-position': '-' + (icon % 16 * 24) + 'px -' + (Math.floor(icon / 16) * 24) + 'px',
-    }
-  }
-
 }
 
 

@@ -27,6 +27,7 @@ export interface Equip extends Common {
   // <ゴールド消費率 80%> 골드 소비율
   // 종족 특공은 미루자 (번호로 추출)
   // 확장 hp mp sp 재생율도 있으나 무시
+  displaySpecialStat?: string;
 }
 
 // 공격시 속성 미구현
@@ -81,7 +82,7 @@ export interface Common {
   // 스킬군 강화
   skillPower?: {
     id: string,
-    type: number,
+    power: number,
   }[];
   // 상태이상 내성
   stateResist?: StateResist;

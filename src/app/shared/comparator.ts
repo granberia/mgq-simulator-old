@@ -4,6 +4,8 @@ import { Job } from './datatype/jobs';
 import { Race } from './datatype/races';
 import { Weapon } from './datatype/weapons';
 import { WeaponType } from './../shared/datatype/weapons';
+import { Armor } from './datatype/armors';
+import { ArmorType } from './../shared/datatype/armors';
 
 export class JobNameComparator implements Comparator<Job> {
   compare(a: Job, b: Job) {
@@ -319,6 +321,12 @@ export const ActorComparators = {
   lukComparator: new ActorLukComparator(),
 };
 
+export class SpecialStatComparator implements Comparator<Weapon | Armor> {
+  compare(a: Weapon | Armor, b: Weapon | Armor) {
+    return a.displaySpecialStat < b.displaySpecialStat ? 1 : -1;
+  }
+}
+
 export class WeaponNameComparator implements Comparator<Weapon> {
   compare(a: Weapon, b: Weapon) {
     return a.name < b.name ? 1 : -1;
@@ -394,4 +402,85 @@ export const WeaponComparators = {
   mdfComparator: new WeaponMdfComparator(),
   agiComparator: new WeaponAgiComparator(),
   lukComparator: new WeaponLukComparator(),
+  specialStatComparator: new SpecialStatComparator(),
+};
+
+
+
+export class ArmorNameComparator implements Comparator<Armor> {
+  compare(a: Armor, b: Armor) {
+    return a.name < b.name ? 1 : -1;
+  }
+}
+
+export class ArmorTypeComparator implements Comparator<Armor> {
+  compare(a: Armor, b: Armor) {
+    return ArmorType[a.type] < ArmorType[b.type] ? 1 : -1;
+  }
+}
+
+export class ArmorAtkComparator implements Comparator<Armor> {
+  compare(a: Armor, b: Armor) {
+    if (a.atkAdd === b.atkAdd) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.atkAdd - b.atkAdd;
+  }
+}
+
+export class ArmorDefComparator implements Comparator<Armor> {
+  compare(a: Armor, b: Armor) {
+    if (a.defAdd === b.defAdd) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.defAdd - b.defAdd;
+  }
+}
+
+export class ArmorMatComparator implements Comparator<Armor> {
+  compare(a: Armor, b: Armor) {
+    if (a.matAdd === b.matAdd) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.matAdd - b.matAdd;
+  }
+}
+
+export class ArmorMdfComparator implements Comparator<Armor> {
+  compare(a: Armor, b: Armor) {
+    if (a.mdfAdd === b.mdfAdd) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.mdfAdd - b.mdfAdd;
+  }
+}
+
+export class ArmorAgiComparator implements Comparator<Armor> {
+  compare(a: Armor, b: Armor) {
+    if (a.agiAdd === b.agiAdd) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.agiAdd - b.agiAdd;
+  }
+}
+
+export class ArmorLukComparator implements Comparator<Armor> {
+  compare(a: Armor, b: Armor) {
+    if (a.lukAdd === b.lukAdd) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.lukAdd - b.lukAdd;
+  }
+}
+
+export const ArmorComparators = {
+  nameComparator: new ArmorNameComparator(),
+  typeComparator: new ArmorTypeComparator(),
+  atkComparator: new ArmorAtkComparator(),
+  defComparator: new ArmorDefComparator(),
+  matComparator: new ArmorMatComparator(),
+  mdfComparator: new ArmorMdfComparator(),
+  agiComparator: new ArmorAgiComparator(),
+  lukComparator: new ArmorLukComparator(),
+  specialStatComparator: new SpecialStatComparator(),
 };

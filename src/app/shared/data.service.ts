@@ -1,12 +1,17 @@
-import { ElementList } from './datatype/elements';
-import { StatusList } from './datatype/status';
+import { ElementList, ElementListKor } from './datatype/elements';
+import { StatusList, StatusListKor } from './datatype/status';
+import { SkillType } from './datatype/skills';
 import { Injectable } from '@angular/core';
 import { ACTOR_LIST } from './database/actorsDataBase';
 import { JOB_LIST } from './database/jobsDataBase';
 import { BaseRace, RaceType } from './datatype/races';
 import { RACE_LIST } from './database/racesDataBase';
+import { Weapon } from './datatype/weapons';
 import { WEAPON_LIST } from './database/weaponsDataBase';
 import { WeaponType } from './datatype/weapons';
+import { ARMOR_LIST } from './database/armorsDataBase';
+import { ArmorType } from './datatype/armors';
+import { Armor } from './datatype/armors';
 
 
 @Injectable()
@@ -17,6 +22,7 @@ export class DataService {
   raceFilter: BaseRace[] = [];
   artistFilter: string[] = [];
   weaponFilter: string[] = [];
+  armorFilter: string[] = [];
 
   constructor() { }
 
@@ -90,6 +96,12 @@ export class DataService {
 
   getAllWeapons() {
     let result = WEAPON_LIST.map(weapon => this.setupDefaultValues(weapon));
+    result = result.map(weapon => {
+      return {
+        ...weapon,
+        displaySpecialStat: this.setSpecialStats(weapon),
+      }
+    });
     if (this.weaponFilter.length != 0) {
       result = WEAPON_LIST.filter(weapon => {
         let flag = false;
@@ -109,6 +121,37 @@ export class DataService {
 
   getOneWeapon(id: string) {
     return this.setupDefaultValues(WEAPON_LIST.find(weapon => weapon.id === id));
+  }
+
+  getAllArmors() {
+    let result = ARMOR_LIST.map(armor => this.setupDefaultValues(armor));
+    result = result.map(armor => {
+      return {
+        ...armor,
+        displaySpecialStat: this.setSpecialStats(armor),
+      }
+    });
+    if (this.armorFilter.length != 0) {
+      result = ARMOR_LIST.filter(armor => {
+        let flag = false;
+        this.armorFilter.forEach(type => {
+          if (ArmorType[armor.type] === type) {
+            flag = true;
+          }
+        });
+        return flag;
+      });
+    }
+    return {
+      total: [],
+      armors: result,
+    };
+  }
+
+
+
+  getOneArmor(id: string) {
+    return this.setupDefaultValues(ARMOR_LIST.find(armor => armor.id === id));
   }
 
   setupDefaultActorValues(target: any) { // interface 를 정의할 때 기본값 설정이 불가능하자 사용한 수단
@@ -218,6 +261,34 @@ export class DataService {
       return '천사';
     }
     return '';
+  }
+
+  setSpecialStats(target: Weapon | Armor) {
+    let result = '';
+    for (let i = 0; i < ElementList.length; i++) {
+      if (target.elementPower[ElementList[i]]) {
+        result = result + ElementListKor[i] + '강화 ' + target.elementPower[ElementList[i]] + '% ';
+      }
+    }
+    for (let i = 0; i < ElementList.length; i++) {
+      if (target.elementResist[ElementList[i]] && target.elementResist[ElementList[i]] !== 100) {
+        result = result + ElementListKor[i] + '내성 ' + target.elementResist[ElementList[i]] + '% ';
+      }
+    }
+    for (let i = 0; i < target.skillPower.length; i++) {
+      result = result + SkillType[target.skillPower[i].id] + '강화 ' + target.skillPower[i].power + '% ';
+    }
+    for (let i = 0; i < StatusList.length; i++) {
+      if (target.stateOnHit[StatusList[i]]) {
+        result = result + StatusListKor[i] + '부여 ' + target.stateOnHit[StatusList[i]] + '% ';
+      }
+    }
+    for (let i = 0; i < StatusList.length; i++) {
+      if (target.stateResist[StatusList[i]] && target.stateResist[StatusList[i]] !== 100) {
+        result = result + StatusListKor[i] + '내성 ' + target.stateResist[StatusList[i]] + '% ';
+      }
+    }
+    return result;
   }
 
 }

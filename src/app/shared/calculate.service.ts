@@ -3,6 +3,7 @@ import { Actor } from './datatype/actors';
 import { Job } from './datatype/jobs';
 import { Race } from './datatype/races';
 
+
 @Injectable()
 export class CalculateService {
 
@@ -129,4 +130,14 @@ export class CalculateService {
     result = target.race ? result * (target.race.stateResist[name]) / 100 : result;
     return Math.floor(result);
   }
+
+  calculateStyle(icon: number) {
+    return {
+      'width': '24px',
+      'height': '24px',
+      'object-fit': 'none',
+      'object-position': '-' + (icon % 16 * 24) + 'px -' + (Math.floor(icon / 16) * 24) + 'px',
+    }
+  }
+
 }

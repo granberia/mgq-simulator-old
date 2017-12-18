@@ -3865,7 +3865,7 @@ export const WEAPON_LIST: Weapon[] = [
     },
     stateOnHit: {
     },
-    skillPower: [{ id: '23', type: 15 }],
+    skillPower: [{ id: '23', power: 15 }],
   },
   {
     id: '180',
@@ -3894,7 +3894,7 @@ export const WEAPON_LIST: Weapon[] = [
     },
     stateOnHit: {
     },
-    skillPower: [{ id: '22', type: 15 }],
+    skillPower: [{ id: '22', power: 15 }],
   },
   {
     id: '181',
@@ -3982,7 +3982,7 @@ export const WEAPON_LIST: Weapon[] = [
     },
     stateOnHit: {
     },
-    skillPower: [{ id: '22', type: 15 }, { id: '23', type: 15 }, { id: '24', type: 15 }, { id: '25', type: 15 }, { id: '26', type: 15 }, { id: '27', type: 15 }, { id: '28', type: 15 }, { id: '29', type: 15 }],
+    skillPower: [{ id: '22', power: 15 }, { id: '23', power: 15 }, { id: '24', power: 15 }, { id: '25', power: 15 }, { id: '26', power: 15 }, { id: '27', power: 15 }, { id: '28', power: 15 }, { id: '29', power: 15 }],
   },
   {
     id: '190',
@@ -9799,7 +9799,7 @@ export const WEAPON_LIST: Weapon[] = [
     },
     stateOnHit: {
     },
-    skillPower: [{ id: '29', type: 15 }],
+    skillPower: [{ id: '29', power: 15 }],
   },
   {
     id: '455',
@@ -9829,7 +9829,7 @@ export const WEAPON_LIST: Weapon[] = [
     },
     stateOnHit: {
     },
-    skillPower: [{ id: '29', type: 15 }],
+    skillPower: [{ id: '29', power: 15 }],
   },
   {
     id: '456',
@@ -9977,7 +9977,7 @@ export const WEAPON_LIST: Weapon[] = [
     },
     stateOnHit: {
     },
-    skillPower: [{ id: '29', type: 15 }],
+    skillPower: [{ id: '29', power: 15 }],
   },
   {
     id: '461',
@@ -10084,7 +10084,7 @@ export const WEAPON_LIST: Weapon[] = [
     },
     stateOnHit: {
     },
-    skillPower: [{ id: '29', type: 15 }],
+    skillPower: [{ id: '29', power: 15 }],
   },
   {
     id: '472',
@@ -16126,7 +16126,7 @@ export const WEAPON_LIST: Weapon[] = [
     },
     stateOnHit: {
     },
-    skillPower: [{ id: '29', type: 15 }],
+    skillPower: [{ id: '29', power: 15 }],
   },
   {
     id: '732',
@@ -16308,7 +16308,7 @@ export const WEAPON_LIST: Weapon[] = [
     },
     stateOnHit: {
     },
-    skillPower: [{ id: '29', type: 15 }],
+    skillPower: [{ id: '29', power: 15 }],
   },
   {
     id: '738',
@@ -18609,7 +18609,7 @@ export const WEAPON_LIST: Weapon[] = [
     },
     stateOnHit: {
     },
-    skillPower: [{ id: '29', type: 15 }],
+    skillPower: [{ id: '29', power: 15 }],
   },
   {
     id: '848',
@@ -18697,7 +18697,7 @@ export const WEAPON_LIST: Weapon[] = [
     },
     stateOnHit: {
     },
-    skillPower: [{ id: '55', type: 15 }],
+    skillPower: [{ id: '55', power: 15 }],
   },
   {
     id: '851',
@@ -18756,7 +18756,7 @@ export const WEAPON_LIST: Weapon[] = [
     stateOnHit: {
       seduction: 15,
     },
-    skillPower: [{ id: '58', type: 15 }],
+    skillPower: [{ id: '58', power: 15 }],
   },
   {
     id: '853',

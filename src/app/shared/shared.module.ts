@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClarityModule } from 'clarity-angular';
-import { LivereModule } from './livere/livere.module';
+import { LivereModule } from 'ngx-livere';
 import { DataService } from './data.service';
 import { CalculateService } from './calculate.service';
 import { JobViewComponent } from './views/job-view/job-view.component';

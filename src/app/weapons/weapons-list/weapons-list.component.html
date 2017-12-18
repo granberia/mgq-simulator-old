@@ -1,15 +1,16 @@
-<ng-container *ngFor="let item of weaponTypes">
-  <span [ngClass]="{'label-info': dataService.weaponFilter.length !== 0 && dataService.weaponFilter.includes(item), 'label-light-blue': dataService.weaponFilter.length !== 0 && dataService.weaponFilter.includes(item)}"
-    class="label clickable" style="cursor: pointer" (click)="addFilter(item)">
-    {{ item }}
-  </span>
-</ng-container>
 <clr-datagrid>
   <clr-dg-column [clrDgSortBy]="weaponComparators.nameComparator">이름
     <clr-dg-string-filter [clrDgStringFilter]="nameFilter"></clr-dg-string-filter>
   </clr-dg-column>
   <clr-dg-column [clrDgSortBy]="weaponComparators.typeComparator">분류
-    <clr-dg-string-filter [clrDgStringFilter]="typeFilter"></clr-dg-string-filter>
+    <clr-dg-filter [clrDgFilter]="typeFilter">
+      <ng-container *ngFor="let item of weaponTypes let i = index">
+        <clr-checkbox [clrChecked]="dataService.weaponFilter.includes(item)" (clrCheckedChange)="typeFilter.setValue($event, item)" [clrInline]="true">
+          <div style="width: 96px">{{ item }}</div>
+        </clr-checkbox>
+        <ng-container *ngIf="i % 2 === 1"><br></ng-container>
+      </ng-container>
+    </clr-dg-filter>
   </clr-dg-column>
   <clr-dg-column [clrDgSortBy]="weaponComparators.atkComparator">공격력</clr-dg-column>
   <clr-dg-column [clrDgSortBy]="weaponComparators.defComparator">방어력</clr-dg-column>
@@ -17,15 +18,19 @@
   <clr-dg-column [clrDgSortBy]="weaponComparators.mdfComparator">정신력</clr-dg-column>
   <clr-dg-column [clrDgSortBy]="weaponComparators.agiComparator">민첩성</clr-dg-column>
   <clr-dg-column [clrDgSortBy]="weaponComparators.lukComparator">손재주</clr-dg-column>
+  <clr-dg-column style="width: 30%" [clrDgSortBy]="weaponComparators.specialStatComparator">부가 효과
+    <clr-dg-string-filter [clrDgStringFilter]="specialStatFilter"></clr-dg-string-filter>
+  </clr-dg-column>
 
   <clr-dg-row *clrDgItems="let weapon of weaponList">
     <clr-dg-cell style="padding: 5px; cursor: pointer" (click)="viewDetail(weapon)">
-      <img src="images/icons/iconset.png" [ngStyle]="calculateStyle(weapon.icon)"> {{ weapon.name }}
+      <img src="images/icons/iconset.png" [ngStyle]="calculateService.calculateStyle(weapon.icon)"> {{ weapon.name }}
     </clr-dg-cell>
     <clr-dg-cell style="cursor: pointer" (click)="viewDetail(weapon)">{{ weaponType[weapon.type] }}</clr-dg-cell>
     <ng-container *ngFor="let item of columns">
       <clr-dg-cell style="cursor: pointer" (click)="viewDetail(weapon)">{{ weapon[item] }}</clr-dg-cell>
     </ng-container>
+    <clr-dg-cell style="cursor: pointer; text-overflow: ellipsis;" (click)="viewDetail(weapon)">{{ weapon.displaySpecialStat }}</clr-dg-cell>
   </clr-dg-row>
 
   <clr-dg-footer>

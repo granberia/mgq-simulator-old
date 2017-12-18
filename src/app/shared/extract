@@ -3,11 +3,15 @@
 # ● Extract Actor in VXACE
 #===============================================================================
 def extract_actor_ace(file)
-  weapon = get_weapon
+  datas = get_weapon # weapon
+  #datas = get_armor # armor
   set_data(file, 'import { Weapon } from "../datatype/weapons";')
   set_data(file, 'export const WEAPON_LIST: Weapon[] = [')
-  for i in 1...1000
-    target = weapon[i]
+  #set_data(file, 'import { Armor } from "../datatype/armors";')
+  #set_data(file, 'export const ARMOR_LIST: Armor[] = [')
+  for i in 1...1000 # weapon
+  #for i in 1...349 # armor
+    target = datas[i]
     
     if target.name != '***더미' &&  target.name != '**더미' &&  target.name != ''
       set_data(file, '{')
@@ -15,7 +19,8 @@ def extract_actor_ace(file)
       set_data(file, 'id: \''+ target.id.to_s + '\',', true)
       set_data(file, 'name: \''+ target.name + '\',', true)
       set_data(file, 'description: \''+ target.description + '\',', true)
-      set_data(file, 'type: \''+ target.wtype_id.to_s + '\',', true)     
+      set_data(file, 'type: \''+ target.wtype_id.to_s + '\',', true) #weapon 
+      # set_data(file, 'type: \''+ target.atype_id.to_s + '\',', true) #armor
       set_data(file, 'icon: '+ target.icon_index.to_s + ',', true)
       set_data(file, 'price: '+ target.price.to_s + ',', true)
       
@@ -481,7 +486,7 @@ def extract_actor_ace(file)
             if cnt != 0
               temp = temp + ', '
             end
-            temp = temp + '{id: \'' + a.to_s + '\', type: ' + b.to_s + '}'
+            temp = temp + '{id: \'' + a.to_s + '\', power: ' + b.to_s + '}'
             cnt = cnt + 1
           }
         end

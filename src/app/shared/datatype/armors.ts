@@ -1,3 +1,8 @@
+import { Equip } from './common';
+
+export interface Armor extends Equip {
+}
+
 export const ArmorType = {
   '1': '옷',
   '2': '무도복',
@@ -16,5 +21,5 @@ export const ArmorType = {
   '38': '경방패',
   '39': '방패',
   '40': '중방패',
-  '41': '장신구',
+//  '41': '장신구',
 };

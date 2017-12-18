@@ -4007,6 +4007,23 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
+ngx-livere@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/ngx-livere/-/ngx-livere-0.1.3.tgz#7c0fa0b9da623730553f812550c14ad8cdfa4d7d"
+  dependencies:
+    "@angular/animations" "^4.3.0"
+    "@angular/common" "^4.3.0"
+    "@angular/compiler" "^4.3.0"
+    "@angular/core" "^4.3.0"
+    "@angular/forms" "^4.3.0"
+    "@angular/http" "^4.3.0"
+    "@angular/platform-browser" "^4.3.0"
+    "@angular/platform-browser-dynamic" "^4.3.0"
+    "@angular/router" "^4.3.0"
+    core-js "^2.4.1"
+    rxjs "^5.4.3"
+    zone.js "^0.8.14"
+
 no-case@^2.2.0:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.2.tgz#60b813396be39b3f1288a4c1ed5d1e7d28b464ac"
@@ -5406,17 +5423,17 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
+rxjs@^5.4.3, rxjs@^5.5.4:
+  version "5.5.5"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.5.tgz#e164f11d38eaf29f56f08c3447f74ff02dd84e97"
+  dependencies:
+    symbol-observable "1.0.1"
+
 rxjs@^5.5.2:
   version "5.5.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.3.tgz#b62227e74b84f4e77bdf440e50b5ee01a1bc7dcd"
   dependencies:
     symbol-observable "^1.0.1"
-
-rxjs@^5.5.4:
-  version "5.5.5"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.5.tgz#e164f11d38eaf29f56f08c3447f74ff02dd84e97"
-  dependencies:
-    symbol-observable "1.0.1"
 
 safe-buffer@5.1.1, safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
