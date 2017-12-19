@@ -23,7 +23,7 @@
   </clr-dg-column>
 
   <clr-dg-row *clrDgItems="let weapon of weaponList">
-    <clr-dg-cell style="padding: 5px; cursor: pointer" (click)="viewDetail(weapon)">
+    <clr-dg-cell style="padding: 6px; cursor: pointer" (click)="viewDetail(weapon)">
       <img src="images/icons/iconset.png" [ngStyle]="calculateService.calculateStyle(weapon.icon)"> {{ weapon.name }}
     </clr-dg-cell>
     <clr-dg-cell style="cursor: pointer" (click)="viewDetail(weapon)">{{ weaponType[weapon.type] }}</clr-dg-cell>

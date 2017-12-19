@@ -12,6 +12,8 @@ import { WeaponType } from './datatype/weapons';
 import { ARMOR_LIST } from './database/armorsDataBase';
 import { ArmorType } from './datatype/armors';
 import { Armor } from './datatype/armors';
+import { ACCESSORY_LIST } from './database/accessoriesDataBase';
+import { Accessory } from './datatype/accessories';
 
 
 @Injectable()
@@ -102,17 +104,6 @@ export class DataService {
         displaySpecialStat: this.setSpecialStats(weapon),
       }
     });
-    if (this.weaponFilter.length != 0) {
-      result = WEAPON_LIST.filter(weapon => {
-        let flag = false;
-        this.weaponFilter.forEach(type => {
-          if (WeaponType[weapon.type] === type) {
-            flag = true;
-          }
-        });
-        return flag;
-      });
-    }
     return {
       total: [],
       weapons: result,
@@ -131,27 +122,32 @@ export class DataService {
         displaySpecialStat: this.setSpecialStats(armor),
       }
     });
-    if (this.armorFilter.length != 0) {
-      result = ARMOR_LIST.filter(armor => {
-        let flag = false;
-        this.armorFilter.forEach(type => {
-          if (ArmorType[armor.type] === type) {
-            flag = true;
-          }
-        });
-        return flag;
-      });
-    }
     return {
       total: [],
       armors: result,
     };
   }
 
-
-
   getOneArmor(id: string) {
     return this.setupDefaultValues(ARMOR_LIST.find(armor => armor.id === id));
+  }
+
+  getAllAccessories() {
+    let result = ACCESSORY_LIST.map(accessory => this.setupDefaultValues(accessory));
+    result = result.map(accessory => {
+      return {
+        ...accessory,
+        displaySpecialStat: this.setSpecialStats(accessory),
+      }
+    });
+    return {
+      total: [],
+      accessories: result,
+    };
+  }
+
+  getOneAccessory(id: string) {
+    return this.setupDefaultValues(ACCESSORY_LIST.find(accessory => accessory.id === id));
   }
 
   setupDefaultActorValues(target: any) { // interface 를 정의할 때 기본값 설정이 불가능하자 사용한 수단

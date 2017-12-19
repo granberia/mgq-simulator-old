@@ -10,7 +10,6 @@
               <img src="images/faces/{{ actor?.id }}.png">
             </div>
             <div class="col-sm-4">
-
               <div class="select">
                 <select formControlName="actor">
                   <option *ngFor="let actor of actorList" [value]=actor.id>{{ actor.name }} ({{ actor.secondaryName }})</option>

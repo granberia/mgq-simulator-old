@@ -23,7 +23,7 @@
   </clr-dg-column>
 
   <clr-dg-row *clrDgItems="let armor of armorList">
-    <clr-dg-cell style="padding: 5px; cursor: pointer" (click)="viewDetail(armor)">
+    <clr-dg-cell style="padding: 6px; cursor: pointer" (click)="viewDetail(armor)">
       <img src="images/icons/iconset.png" [ngStyle]="calculateService.calculateStyle(armor.icon)"> {{ armor.name }}
     </clr-dg-cell>
     <clr-dg-cell style="cursor: pointer" (click)="viewDetail(armor)">{{ armorType[armor.type] }}</clr-dg-cell>

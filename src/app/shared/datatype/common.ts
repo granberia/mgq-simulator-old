@@ -19,14 +19,33 @@ export interface Equip extends Common {
   criticalAdd?: number;
   evasionAdd?: number;
   magicEvasionAdd?: number;
+  criticalEvasionAdd?: number;
   counterAdd?: number;
   reflectAdd?: number;
   magicReflectAdd?: number;
-  // 춤사용시의 스테이터스 이상 발생율이 올라간다 - 접시
-
-  // <ゴールド消費率 80%> 골드 소비율
-  // 종족 특공은 미루자 (번호로 추출)
+  spOnInit?: number;
+  physicalDamage?: number;
+  magicDamage?: number;
+  floorDamage?: number;
+  ignoreDamage?: number;
+  endure?: number;
+  absorbMP?: number;
+  damageToGold?: number;
+  moreAction?: number;
+  reverseHeal?: number;
+  hpRegenOnVictory?: number;
+  mpRegenOnVictory?: number;
+  // 리본 상태유효도 0인 경우 작동 안함!!
+  // weaponPower 빼먹음 !!! (주판의 책)
   // 확장 hp mp sp 재생율도 있으나 무시
+  // <トリガーステート H,0,20%,32> 빈사시 스킬 (1152)
+  // <戦闘開始時発動 32,50%> 전투시작시 스킬 (1181)
+  // <ターン終了時発動 36,100%> 턴종료시 스킬 (1185)
+  // <通常攻撃 4> 통상공격 개조 (1189)
+  // <属性吸収 1> 속성 흡수 (1488)
+  // <連続発動タイプ 30-2,31-2,32-2,33-2,34-2,35-2,36-2,37-2,38-2,39-2,43-2,44-2,45-2,46-2,47-2,48-2,49-2> 연속발동 1685
+  // 지형 강화 (1710)
+
   displaySpecialStat?: string;
 }
 
@@ -70,9 +89,14 @@ export interface Common {
   expRate?: number;
   jobExpRate?: number;
   goldRate?: number;
+  goldCost?: number;
   itemGetRate?: number;
   aggroRate?: number;
   defenceRate?: number;
+  moreAttack?: number;
+  dualWield?: boolean;
+  autoBattle?: boolean;
+  noBackstab?: boolean;
   // 속성 내성
   elementResist?: ElementResist;
   // 속성 부여
@@ -84,6 +108,13 @@ export interface Common {
     id: string,
     power: number,
   }[];
+  // 스킬군 상태이상확률 강화
+  skillStateUp?: {
+    id: string,
+    power: number,
+  }[];
+  // 종족 특공
+  raceKill?: string[];
   // 상태이상 내성
   stateResist?: StateResist;
   // 공격시 상태이상 ( TODO 아직 직업 및 종족에서 안 불러오니 참고!!)
@@ -95,7 +126,7 @@ export const NOT_LEARN_ACTORS: number[] = [
 ];
 
 
-/* 빠진 것 목록
+/* 액터 직업 종족에서 빠진 것 목록
   通常攻撃強化 일반 공격 강화 (무기군, 퍼센트)
   武器スキル倍率強化 무기 스킬 배율 강화 (무기군, 스킬군, 퍼센트)
   HPタイプ消費率 HP 소비율 (스킬군, 퍼센트)

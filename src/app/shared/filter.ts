@@ -8,6 +8,7 @@ import { Weapon } from './datatype/weapons';
 import { WeaponType } from './../shared/datatype/weapons';
 import { Armor } from './datatype/armors';
 import { ArmorType } from './../shared/datatype/armors';
+import { Accessory } from './datatype/accessories';
 
 
 export class JobNameFilter implements StringFilter<Job> {
@@ -127,6 +128,13 @@ export class ArmorTypeFilter implements Filter<Armor> {
       this.dataService.armorFilter.splice(this.dataService.armorFilter.indexOf(armor), 1);
     } 
     this.changes.emit(true);
+  }
+}
+
+export class AccessoryNameFilter implements StringFilter<Accessory> {
+  accepts(a: Accessory, search: string): boolean {
+    return "" + a.name === search
+      || a.name.toLowerCase().indexOf(search) >= 0;
   }
 }
 

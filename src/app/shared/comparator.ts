@@ -6,6 +6,8 @@ import { Weapon } from './datatype/weapons';
 import { WeaponType } from './../shared/datatype/weapons';
 import { Armor } from './datatype/armors';
 import { ArmorType } from './../shared/datatype/armors';
+import { Accessory } from './datatype/accessories';
+
 
 export class JobNameComparator implements Comparator<Job> {
   compare(a: Job, b: Job) {
@@ -482,5 +484,16 @@ export const ArmorComparators = {
   mdfComparator: new ArmorMdfComparator(),
   agiComparator: new ArmorAgiComparator(),
   lukComparator: new ArmorLukComparator(),
+  specialStatComparator: new SpecialStatComparator(),
+};
+
+export class AccessoryNameComparator implements Comparator<Accessory> {
+  compare(a: Accessory, b: Accessory) {
+    return a.name < b.name ? 1 : -1;
+  }
+}
+
+export const AccessoryComparators = {
+  nameComparator: new ArmorNameComparator(),
   specialStatComparator: new SpecialStatComparator(),
 };

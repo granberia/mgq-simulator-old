@@ -11,6 +11,7 @@ import { RacesListComponent } from './races/races-list/races-list.component';
 import { RacesDetailComponent } from './races/races-detail/races-detail.component';
 import { WeaponsListComponent } from './weapons/weapons-list/weapons-list.component';
 import { ArmorsListComponent } from './armors/armors-list/armors-list.component';
+import { AccessoriesListComponent } from './accessories/accessories-list/accessories-list.component';
 
 export const ROUTES: Routes = [
   {
@@ -27,6 +28,7 @@ export const ROUTES: Routes = [
   { path: 'races/:id', component: RacesDetailComponent },
   { path: 'weapons', component: WeaponsListComponent },
   { path: 'armors', component: ArmorsListComponent },
+  { path: 'accessories', component: AccessoriesListComponent },
   { path: '', redirectTo: 'main', pathMatch: 'full' },
   { path: '**', redirectTo: 'main' },
 ];

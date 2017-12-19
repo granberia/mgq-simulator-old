@@ -9,6 +9,7 @@ import { JobsModule } from './jobs/jobs.module';
 import { RacesModule } from './races/races.module';
 import { WeaponsModule } from './weapons/weapons.module';
 import { ArmorsModule } from './armors/armors.module';
+import { AccessoriesModule } from './accessories/accessories.module';
 import { LivereModule } from 'ngx-livere';
 import { ClarityModule } from 'clarity-angular';
 
@@ -33,6 +34,7 @@ import { CoreModule } from './core/core.module';
     RacesModule,
     WeaponsModule,
     ArmorsModule,
+    AccessoriesModule,
     LivereModule.forRoot('MTAyMC8zMjQxMy84OTc0'),
   ],
   providers: [CanDeactivateGuard],

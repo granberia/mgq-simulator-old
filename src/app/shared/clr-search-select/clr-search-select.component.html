@@ -1,0 +1,8 @@
+<div class="clr-select-wrapper">
+  <input (click)="onFocus()" [ngModel]="filter" (ngModelChange)="onFilterChange($event)" type="text" class="clr-select-search">
+  <div *ngIf="!open" class="clr-select-text">{{ label }}</div>
+  <clr-icon class="clr-select-caret" shape="angle" dir="down"></clr-icon>
+  <div *ngIf="open" class="clr-select-dropdown">
+    <div class="clr-select-item" [class.selected]="item[valueField] === value" *ngFor="let item of filteredOptions" (click)="onSelect(item)">{{ item[labelField] }}</div>
+  </div>
+</div>
