@@ -10,7 +10,7 @@
     <clr-dg-cell style="padding: 6px; cursor: pointer" (click)="viewDetail(accessory)">
       <img src="images/icons/iconset.png" [ngStyle]="calculateService.calculateStyle(accessory.icon)"> {{ accessory.name }}
     </clr-dg-cell>
-    <clr-dg-cell style="cursor: pointer" (click)="viewDetail(accessory)">{{ accessory.displaySpecialStat }}</clr-dg-cell>
+    <clr-dg-cell style="cursor: pointer" (click)="viewDetail(accessory)">{{ accessory.description.split('【장신구】')[1] }}</clr-dg-cell>
   </clr-dg-row>
 
   <clr-dg-footer>
