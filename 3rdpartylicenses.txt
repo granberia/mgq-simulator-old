@@ -28,7 +28,7 @@ THE SOFTWARE.
 MIT
 MIT
 
-ngx-livere@0.1.3
+ngx-livere@0.1.4
 MIT
 MIT
 
