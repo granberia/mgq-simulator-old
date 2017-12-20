@@ -2,11 +2,11 @@ import { Comparator } from 'clarity-angular';
 import { Actor } from './datatype/actors';
 import { Job } from './datatype/jobs';
 import { Race } from './datatype/races';
-import { Weapon } from './datatype/weapons';
-import { WeaponType } from './../shared/datatype/weapons';
-import { Armor } from './datatype/armors';
-import { ArmorType } from './../shared/datatype/armors';
+import { Weapon, WeaponType } from './datatype/weapons';
+import { Armor, ArmorType } from './datatype/armors';
 import { Accessory } from './datatype/accessories';
+import { Skill, SkillType } from './datatype/skills';
+
 
 
 export class JobNameComparator implements Comparator<Job> {
@@ -496,4 +496,21 @@ export class AccessoryNameComparator implements Comparator<Accessory> {
 export const AccessoryComparators = {
   nameComparator: new ArmorNameComparator(),
   specialStatComparator: new SpecialStatComparator(),
+};
+
+export class SkillNameComparator implements Comparator<Skill> {
+  compare(a: Skill, b: Skill) {
+    return a.name < b.name ? 1 : -1;
+  }
+}
+
+export class SkillTypeComparator implements Comparator<Skill> {
+  compare(a: Skill, b: Skill) {
+    return SkillType[a.type] < SkillType[b.type] ? 1 : -1;
+  }
+}
+
+export const SkillComparators = {
+  nameComparator: new SkillNameComparator(),
+  typeComparator: new SkillTypeComparator(),
 };

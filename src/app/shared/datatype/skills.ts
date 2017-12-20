@@ -1,3 +1,22 @@
+
+export interface Skill {
+  id: string;
+  name: string;
+  description: string;
+  type: string;
+  icon: number;
+  scope: number;
+  action: number;
+  mpCost: number;
+  spCost: number;
+  hitType: number;
+  addSpeed?: number;
+  repeats?: number;
+  element?: number;
+  fomula?: string;
+  canCritical?: boolean;
+}
+
 export const SkillType = {
   '6': '단검 기술',
   '7': '검 기술',

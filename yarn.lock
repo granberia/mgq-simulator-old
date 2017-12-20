@@ -4007,9 +4007,9 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-ngx-livere@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/ngx-livere/-/ngx-livere-0.1.3.tgz#7c0fa0b9da623730553f812550c14ad8cdfa4d7d"
+ngx-livere@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/ngx-livere/-/ngx-livere-0.1.4.tgz#475c98648a0c2bcefd516e00e396f4ce8d6a3311"
   dependencies:
     "@angular/animations" "^4.3.0"
     "@angular/common" "^4.3.0"

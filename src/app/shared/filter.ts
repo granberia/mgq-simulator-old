@@ -9,6 +9,7 @@ import { WeaponType } from './../shared/datatype/weapons';
 import { Armor } from './datatype/armors';
 import { ArmorType } from './../shared/datatype/armors';
 import { Accessory } from './datatype/accessories';
+import { Skill, SkillType } from './datatype/skills';
 
 
 export class JobNameFilter implements StringFilter<Job> {
@@ -142,5 +143,37 @@ export class SpecialStatFilter implements StringFilter<Weapon | Armor> {
   accepts(a: Weapon | Armor, search: string): boolean {
     return "" + a.displaySpecialStat === search
       || a.displaySpecialStat.toLowerCase().indexOf(search) >= 0;
+  }
+}
+
+export class SkillNameFilter implements StringFilter<Skill> {
+  accepts(a: Skill, search: string): boolean {
+    return "" + a.name === search
+      || a.name.toLowerCase().indexOf(search) >= 0;
+  }
+}
+
+export class SkillTypeFilter implements Filter<Skill> {
+  constructor(
+    public dataService: DataService,
+  ) { }
+
+  changes: EventEmitter<any> = new EventEmitter<any>(false);
+
+  accepts(skill: Skill) {
+    return (this.dataService.skillFilter.includes(SkillType[skill.type]));
+  }
+
+  isActive(): boolean {
+    return this.dataService.skillFilter.length !== 0;
+  }
+
+  setValue(value: boolean, skill: string) {
+    if (value === true && (!this.dataService.skillFilter.includes(skill))) {
+      this.dataService.skillFilter.push(skill);
+    } else if (value === false && this.dataService.skillFilter.includes(skill)) {
+      this.dataService.skillFilter.splice(this.dataService.skillFilter.indexOf(skill), 1);
+    } 
+    this.changes.emit(true);
   }
 }
