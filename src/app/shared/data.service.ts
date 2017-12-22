@@ -15,6 +15,8 @@ import { Armor } from './datatype/armors';
 import { ACCESSORY_LIST } from './database/accessoriesDataBase';
 import { Accessory } from './datatype/accessories';
 import { SKILL_LIST } from './database/skillsDataBase';
+import { ABILITY_LIST } from './database/abilitiesDataBase';
+
 
 
 @Injectable()
@@ -27,6 +29,7 @@ export class DataService {
   weaponFilter: string[] = [];
   armorFilter: string[] = [];
   skillFilter: string[] = [];
+  abilityFilter: string[] = [];
 
   constructor() { }
 
@@ -153,7 +156,7 @@ export class DataService {
   }
 
   getAllSkills() {
-    let result = SKILL_LIST.map(skill => this.setupDefaultValues(skill));
+    let result = SKILL_LIST;
     return {
       total: [],
       skills: result,
@@ -161,7 +164,19 @@ export class DataService {
   }
 
   getOneSkill(id: string) {
-    return this.setupDefaultValues(SKILL_LIST.find(skill => skill.id === id));
+    return SKILL_LIST;
+  }
+
+  getAllAbilities() {
+    let result = ABILITY_LIST;
+    return {
+      total: [],
+      abilities: result,
+    };
+  }
+
+  getOneAbility(id: string) {
+    return ABILITY_LIST;
   }
 
   setupDefaultActorValues(target: any) { // interface 를 정의할 때 기본값 설정이 불가능하자 사용한 수단

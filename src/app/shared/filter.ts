@@ -10,6 +10,7 @@ import { Armor } from './datatype/armors';
 import { ArmorType } from './../shared/datatype/armors';
 import { Accessory } from './datatype/accessories';
 import { Skill, SkillType } from './datatype/skills';
+import { Ability, AbilityType } from './datatype/abilities';
 
 
 export class JobNameFilter implements StringFilter<Job> {
@@ -173,6 +174,38 @@ export class SkillTypeFilter implements Filter<Skill> {
       this.dataService.skillFilter.push(skill);
     } else if (value === false && this.dataService.skillFilter.includes(skill)) {
       this.dataService.skillFilter.splice(this.dataService.skillFilter.indexOf(skill), 1);
+    } 
+    this.changes.emit(true);
+  }
+}
+
+export class AbilityNameFilter implements StringFilter<Ability> {
+  accepts(a: Ability, search: string): boolean {
+    return "" + a.name === search
+      || a.name.toLowerCase().indexOf(search) >= 0;
+  }
+}
+
+export class AbilityTypeFilter implements Filter<Ability> {
+  constructor(
+    public dataService: DataService,
+  ) { }
+
+  changes: EventEmitter<any> = new EventEmitter<any>(false);
+
+  accepts(ability: Ability) {
+    return (this.dataService.abilityFilter.includes(AbilityType[ability.type]));
+  }
+
+  isActive(): boolean {
+    return this.dataService.abilityFilter.length !== 0;
+  }
+
+  setValue(value: boolean, ability: string) {
+    if (value === true && (!this.dataService.abilityFilter.includes(ability))) {
+      this.dataService.abilityFilter.push(ability);
+    } else if (value === false && this.dataService.abilityFilter.includes(ability)) {
+      this.dataService.abilityFilter.splice(this.dataService.abilityFilter.indexOf(ability), 1);
     } 
     this.changes.emit(true);
   }

@@ -6,6 +6,7 @@ import { Weapon, WeaponType } from './datatype/weapons';
 import { Armor, ArmorType } from './datatype/armors';
 import { Accessory } from './datatype/accessories';
 import { Skill, SkillType } from './datatype/skills';
+import { Ability, AbilityType } from './datatype/abilities';
 
 
 
@@ -513,4 +514,31 @@ export class SkillTypeComparator implements Comparator<Skill> {
 export const SkillComparators = {
   nameComparator: new SkillNameComparator(),
   typeComparator: new SkillTypeComparator(),
+};
+
+export class AbilityNameComparator implements Comparator<Ability> {
+  compare(a: Ability, b: Ability) {
+    return a.name < b.name ? 1 : -1;
+  }
+}
+
+export class AbilityTypeComparator implements Comparator<Ability> {
+  compare(a: Ability, b: Ability) {
+    return AbilityType[a.type] < AbilityType[b.type] ? 1 : -1;
+  }
+}
+
+export class AbilitySizeComparator implements Comparator<Ability> {
+  compare(a: Ability, b: Ability) {
+    if (a.size === b.size) {
+      return a.name < b.name ? 1 : -1;
+    }
+    return a.size - b.size;
+  }
+}
+
+export const AbilityComparators = {
+  nameComparator: new AbilityNameComparator(),
+  typeComparator: new AbilityTypeComparator(),
+  sizeComparator: new AbilitySizeComparator(),
 };

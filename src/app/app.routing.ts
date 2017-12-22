@@ -13,6 +13,7 @@ import { WeaponsListComponent } from './weapons/weapons-list/weapons-list.compon
 import { ArmorsListComponent } from './armors/armors-list/armors-list.component';
 import { AccessoriesListComponent } from './accessories/accessories-list/accessories-list.component';
 import { SkillsListComponent } from './skills/skills-list/skills-list.component';
+import { AbilitiesListComponent } from './abilities/abilities-list/abilities-list.component';
 
 
 export const ROUTES: Routes = [
@@ -32,6 +33,7 @@ export const ROUTES: Routes = [
   { path: 'armors', component: ArmorsListComponent },
   { path: 'accessories', component: AccessoriesListComponent },
   { path: 'skills', component: SkillsListComponent },
+  { path: 'abilities', component: AbilitiesListComponent },
   { path: '', redirectTo: 'main', pathMatch: 'full' },
   { path: '**', redirectTo: 'main' },
 ];
