@@ -163,10 +163,6 @@ export class DataService {
     };
   }
 
-  getOneSkill(id: string) {
-    return SKILL_LIST;
-  }
-
   getAllAbilities() {
     let result = ABILITY_LIST;
     return {
@@ -174,9 +170,13 @@ export class DataService {
       abilities: result,
     };
   }
-
-  getOneAbility(id: string) {
-    return ABILITY_LIST;
+  
+  getOneAbilityOrSkill(id: string) {
+    if (Number(id) <= 860 || Number(id) >= 5620) { // 어빌리티
+      return ABILITY_LIST.find(ability => ability.id === id);
+    } else { // 스킬
+      return SKILL_LIST.find(skill => skill.id === id);
+    }
   }
 
   setupDefaultActorValues(target: any) { // interface 를 정의할 때 기본값 설정이 불가능하자 사용한 수단
@@ -199,6 +199,14 @@ export class DataService {
   }
 
   setupDefaultValues(target: any) { // interface 를 정의할 때 기본값 설정이 불가능하자 사용한 수단
+    if (target.learningSkills.length !== 0) {
+      target.learningSkills = target.learningSkills.map(item => {
+        return {
+          ...item,
+          skill: this.getOneAbilityOrSkill(item.id),
+        }
+      });
+    }
     const elementList = ElementList;
     target.elementResist = target.elementResist ? target.elementResist : {};
     elementList.forEach(element => {

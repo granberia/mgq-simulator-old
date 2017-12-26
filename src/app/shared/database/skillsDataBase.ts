@@ -1,9 +1,159 @@
 import { Skill } from "../datatype/skills";
 export const SKILL_LIST: Skill[] = [
   {
+    id: '901',
+    name: '나이프 던지기',
+    description: '위력: E(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 적 하나에 나이프를 내던지는 단검 기술',
+    type: '6',
+    icon: 306,
+    scope: 1,
+    action: 1,
+    mpCost: 0,
+    spCost: 1,
+    hitType: 1,
+    element: -1,
+    fomula: '(a.atk + a.luk) * 1.2 * 1.2 - b.def',
+    canCritical: true,
+  },
+  {
+    id: '902',
+    name: '연속 나이프 던지기',
+    description: '위력: D(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 적 하나에 연속으로 나이프를 내던지는 단검 기술',
+    type: '6',
+    icon: 306,
+    scope: 1,
+    action: 1,
+    mpCost: 0,
+    spCost: 2,
+    hitType: 1,
+    element: -1,
+    fomula: '(a.atk + a.luk) * 1.2 * 0.8 - b.def',
+    canCritical: true,
+  },
+  {
+    id: '903',
+    name: '꼬치',
+    description: '위력: D(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 적의 몸통에 목적을 정해, 일격으로 꼬치로 하는 단검 기술',
+    type: '6',
+    icon: 306,
+    scope: 1,
+    action: 1,
+    mpCost: 0,
+    spCost: 3,
+    hitType: 1,
+    element: -1,
+    fomula: '(a.atk + a.luk) * 1.2 * 1.6 - b.def',
+    canCritical: true,
+  },
+  {
+    id: '904',
+    name: '트릭 나이프',
+    description: '위력: C(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 트리키에 잘라 청구서 데미지를 입게 하는 단검 기술',
+    type: '6',
+    icon: 306,
+    scope: 1,
+    action: 1,
+    mpCost: 0,
+    spCost: 3,
+    hitType: 1,
+    element: -1,
+    fomula: '(a.atk + a.luk) * 1.2 * 1.9 - b.def',
+    canCritical: true,
+  },
+  {
+    id: '905',
+    name: '어쌔신 슬로우',
+    description: '위력: D(공·손)　대상: 적 하나　속성: ＋　효과: 즉사＋ 급소를 노려, 적의 생명을 빼앗아 가는 암살자의 칼날',
+    type: '6',
+    icon: 306,
+    scope: 1,
+    action: 1,
+    mpCost: 0,
+    spCost: 2,
+    hitType: 1,
+    element: -1,
+    fomula: '(a.atk + a.luk) * 1.2 * 1.6 - b.def',
+    canCritical: true,
+  },
+  {
+    id: '906',
+    name: '카디크루·베이',
+    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 마력을 담아 적을 찢어, 대데미지를 준다',
+    type: '6',
+    icon: 306,
+    scope: 1,
+    action: 1,
+    mpCost: 0,
+    spCost: 4,
+    hitType: 1,
+    element: -1,
+    fomula: '(a.atk + a.luk) * 1.2 * 2.2 - b.def',
+    canCritical: true,
+  },
+  {
+    id: '907',
+    name: '어쌔신 댄스',
+    description: '위력: B(공·손)　대상: 적 랜덤 3회　속성: ＋　효과: 즉사＋ 춤 같은 움직임으로 적의 급소를 몇번이나 공격해, 생명을 빼앗는다',
+    type: '6',
+    icon: 306,
+    scope: 3,
+    action: 1,
+    mpCost: 0,
+    spCost: 5,
+    hitType: 1,
+    element: -1,
+    fomula: '(a.atk + a.luk) * 1.2 * 1.0 - b.def',
+    canCritical: true,
+  },
+  {
+    id: '908',
+    name: '나이후인피니티',
+    description: '위력: A(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 적 하나에 무수한 나이프 던지기를 주입하는 단검 기술',
+    type: '6',
+    icon: 306,
+    scope: 1,
+    action: 1,
+    mpCost: 0,
+    spCost: 7,
+    hitType: 1,
+    element: -1,
+    fomula: '(a.atk + a.luk) * 1.2 * 3.4 - b.def',
+    canCritical: true,
+  },
+  {
+    id: '909',
+    name: '서던 크로스',
+    description: '위력: A(공·손)　대상: 적 전체　속성: 번개＋　효과: ＋ 번개의 마력을 띤 칼날로 적 전체를 십자에 찢는 단검 오의',
+    type: '6',
+    icon: 306,
+    scope: 2,
+    action: 1,
+    mpCost: 0,
+    spCost: 8,
+    hitType: 1,
+    element: -1,
+    fomula: '(a.atk + a.luk) * 1.2 * 3.4 - b.def',
+    canCritical: true,
+  },
+  {
+    id: '910',
+    name: '샤드우테스타먼트',
+    description: '위력: S(공·손)　대상: 적 전체　속성: 어둠＋　효과: ＋ 칼날로 공간을 찢어, 어둠의 충격을 일으키게 하는 단검 오의',
+    type: '6',
+    icon: 306,
+    scope: 2,
+    action: 1,
+    mpCost: 0,
+    spCost: 6,
+    hitType: 0,
+    element: -1,
+    fomula: '(a.atk + a.luk) * 1.2 * 4.7 - b.def',
+    canCritical: true,
+  },
+  {
     id: '916',
     name: '천군의 검',
-    description: '위력: S(공)　대상: 적 하나　속성: 성＋　효과: ＋\n말하는 일을 (듣)묻지 않는 사람을 대패시키는 일격',
+    description: '위력: S(공)　대상: 적 하나　속성: 성＋　효과: ＋ 말하는 일을 (듣)묻지 않는 사람을 대패시키는 일격',
     type: '7',
     icon: 463,
     scope: 1,
@@ -18,7 +168,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '917',
     name: '되받아 치기',
-    description: '위력: E(공)　대상: 적 하나\n베어 내림의 직후에 손목을 돌려주어 베어올리는 검 기술',
+    description: '위력: E(공)　대상: 적 하나 베어 내림의 직후에 손목을 돌려주어 베어올리는 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -33,7 +183,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '918',
     name: '질풍 찌르기',
-    description: '위력: E(공)　대상: 적 하나　속성: 바람＋　효과: 속공＋\n질풍과 같이 발을 디뎌, 적에게 칼날을 주입하는 검 기술',
+    description: '위력: E(공)　대상: 적 하나　속성: 바람＋　효과: 속공＋ 질풍과 같이 발을 디뎌, 적에게 칼날을 주입하는 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -49,7 +199,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '919',
     name: '불차검',
-    description: '위력: D(공)　대상: 적 하나\n차바퀴장의 충격파를 발해 적을 찢는 검 기술',
+    description: '위력: D(공)　대상: 적 하나 차바퀴장의 충격파를 발해 적을 찢는 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -64,7 +214,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '920',
     name: '제칼날 베어',
-    description: '위력: B(공)　대상: 적 하나　효과: 자신도 데미지\n고위력이지만 자신도 데미지를 받게 되는 양날칼의 참격',
+    description: '위력: B(공)　대상: 적 하나　효과: 자신도 데미지 고위력이지만 자신도 데미지를 받게 되는 양날칼의 참격',
     type: '7',
     icon: 463,
     scope: 1,
@@ -76,7 +226,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '921',
     name: '하야부사 베어',
-    description: '위력: C(공)　대상: 적 하나\n재빠르게 2연속의 참격을 내지르는 검 기술',
+    description: '위력: C(공)　대상: 적 하나 재빠르게 2연속의 참격을 내지르는 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -91,7 +241,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '922',
     name: '화염 베어',
-    description: '위력: C(공)　대상: 적 하나　속성: 불길＋\n불길의 마력을 띤 참격',
+    description: '위력: C(공)　대상: 적 하나　속성: 불길＋ 불길의 마력을 띤 참격',
     type: '7',
     icon: 463,
     scope: 1,
@@ -106,7 +256,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '923',
     name: '얼음 베어',
-    description: '위력: C(공)　대상: 적 하나　속성: 얼음＋\n얼음의 마력을 띤 참격',
+    description: '위력: C(공)　대상: 적 하나　속성: 얼음＋ 얼음의 마력을 띤 참격',
     type: '7',
     icon: 463,
     scope: 1,
@@ -121,7 +271,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '924',
     name: '번개 베어',
-    description: '위력: C(공)　대상: 적 하나　속성: 번개＋\n번개의 마력을 띤 참격',
+    description: '위력: C(공)　대상: 적 하나　속성: 번개＋ 번개의 마력을 띤 참격',
     type: '7',
     icon: 463,
     scope: 1,
@@ -136,7 +286,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '925',
     name: '령풍초인',
-    description: '위력: B(공)　대상: 적 하나　속성: 바람＋　효과: 풍약체＋\n음양식을 검에 담아, 바람의 힘으로 적을 베는 검 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: 바람＋　효과: 풍약체＋ 음양식을 검에 담아, 바람의 힘으로 적을 베는 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -151,7 +301,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '926',
     name: '토각검',
-    description: '위력: B(공)　대상: 적 하나　속성: 흙＋　효과: 흙약체＋\n음양식을 검에 담아, 흙의 힘으로 적을 베는 검 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: 흙＋　효과: 흙약체＋ 음양식을 검에 담아, 흙의 힘으로 적을 베는 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -166,7 +316,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '927',
     name: '검 12수',
-    description: '위력: B(공)　대상: 적 하나　속성: 물＋　효과: 수 약체＋\n음양식을 검에 담아, 물의 힘으로 적을 베는 검 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: 물＋　효과: 수 약체＋ 음양식을 검에 담아, 물의 힘으로 적을 베는 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -181,7 +331,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '928',
     name: '탈혼인',
-    description: '위력: B(공)　대상: 적 하나　속성: ＋　효과: HP흡수＋\n특수한 음양식을 칼날에 담아, 적의 생명력을 강탈하는 검 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: ＋　효과: HP흡수＋ 특수한 음양식을 칼날에 담아, 적의 생명력을 강탈하는 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -196,7 +346,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '929',
     name: '입멸참',
-    description: '위력: A(공)　대상: 적 하나　속성: ＋　효과: 즉사＋\n죽음의 음양식을 칼날에 담아, 적을 일격으로 매장하는 검 기술',
+    description: '위력: A(공)　대상: 적 하나　속성: ＋　효과: 즉사＋ 죽음의 음양식을 칼날에 담아, 적을 일격으로 매장하는 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -211,7 +361,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '930',
     name: '엔젤 댄스',
-    description: '위력: D(공)　대상: 적 랜덤 3회　속성: ＋　효과: ＋\n화려하게 춤 같은 움직임으로 적을 찢는 천사 특유의 검 기술',
+    description: '위력: D(공)　대상: 적 랜덤 3회　속성: ＋　효과: ＋ 화려하게 춤 같은 움직임으로 적을 찢는 천사 특유의 검 기술',
     type: '7',
     icon: 463,
     scope: 3,
@@ -226,7 +376,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '931',
     name: '진공 베어',
-    description: '위력: A(공)　대상: 적 하나　속성: 바람＋　효과: ＋\n너무나 날카로워서 진공을 일으키게 하는 참격',
+    description: '위력: A(공)　대상: 적 하나　속성: 바람＋　효과: ＋ 너무나 날카로워서 진공을 일으키게 하는 참격',
     type: '7',
     icon: 463,
     scope: 1,
@@ -241,7 +391,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '932',
     name: '열풍검',
-    description: '위력: D(공)　대상: 적 전체　속성: 바람\n검격에 의해 진공의 칼날을 발생시키고 적 전체에 발하는 검 기술',
+    description: '위력: D(공)　대상: 적 전체　속성: 바람 검격에 의해 진공의 칼날을 발생시키고 적 전체에 발하는 검 기술',
     type: '7',
     icon: 463,
     scope: 2,
@@ -256,7 +406,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '933',
     name: '달빛의 칼',
-    description: '위력: B(공)　대상: 적 하나\n달빛아래에 춤추어, 적을 일섬 하는 검 기술',
+    description: '위력: B(공)　대상: 적 하나 달빛아래에 춤추어, 적을 일섬 하는 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -271,7 +421,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '934',
     name: '마신 베어',
-    description: '위력: S(공)　대상: 적 하나　효과: 회심or미스\n마신과 같이 회심의 일격을 내지르지만, 제외할 가능성도 높다',
+    description: '위력: S(공)　대상: 적 하나　효과: 회심or미스 마신과 같이 회심의 일격을 내지르지만, 제외할 가능성도 높다',
     type: '7',
     icon: 463,
     scope: 1,
@@ -286,7 +436,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '935',
     name: '데드 크래쉬',
-    description: '위력: C(공)　대상: 적 하나　속성: ＋　효과: 즉사＋\n혼신의 힘으로 칼날을 찍어내려, 생명을 끊는 검 기술',
+    description: '위력: C(공)　대상: 적 하나　속성: ＋　효과: 즉사＋ 혼신의 힘으로 칼날을 찍어내려, 생명을 끊는 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -301,7 +451,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '936',
     name: '2 도십자참',
-    description: '위력: B(공)　대상: 적 하나　속성: ＋　효과: ＋\n2 개의 칼날로 십자를 그리도록(듯이) 적을 찢는 참격',
+    description: '위력: B(공)　대상: 적 하나　속성: ＋　효과: ＋ 2 개의 칼날로 십자를 그리도록(듯이) 적을 찢는 참격',
     type: '7',
     icon: 463,
     scope: 1,
@@ -316,7 +466,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '937',
     name: '마검·수 베어',
-    description: '위력: B(공)　대상: 적 하나　속성: 번개＋　효과: ＋\n적의 품에 뛰어들어, 목구멍 맨 안쪽에 찌르기를 내지르는 검 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: 번개＋　효과: ＋ 적의 품에 뛰어들어, 목구멍 맨 안쪽에 찌르기를 내지르는 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -331,7 +481,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '938',
     name: '혈렬 번개명찌르기',
-    description: '위력: C(공)　대상: 적 하나　속성: 번개＋　효과: 속공＋\n단번에 틈을 채워, 번개격을 수반한 찌르기를 내지르는 고속검',
+    description: '위력: C(공)　대상: 적 하나　속성: 번개＋　효과: 속공＋ 단번에 틈을 채워, 번개격을 수반한 찌르기를 내지르는 고속검',
     type: '7',
     icon: 463,
     scope: 1,
@@ -347,7 +497,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '939',
     name: '장맛비 베어',
-    description: '위력: B(공)　대상: 적 전체\n칼날의 비를 내질러, 적 전체를 흐트러지고 베어로 하는 검 기술',
+    description: '위력: B(공)　대상: 적 전체 칼날의 비를 내질러, 적 전체를 흐트러지고 베어로 하는 검 기술',
     type: '7',
     icon: 463,
     scope: 2,
@@ -362,7 +512,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '940',
     name: '극룡참',
-    description: '위력: A(공)　대상: 적 하나　속성: ＋　효과: ＋\n솟아오르는 용의 오라를 추방하는 필살의 검 기술',
+    description: '위력: A(공)　대상: 적 하나　속성: ＋　효과: ＋ 솟아오르는 용의 오라를 추방하는 필살의 검 기술',
     type: '7',
     icon: 463,
     scope: 1,
@@ -377,7 +527,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '941',
     name: '히트 웨이브',
-    description: '위력: A(공)　대상: 적 전체　속성: ＋　효과: ＋\n적 전체를 일격으로 찢는 대집단용의 검 기술',
+    description: '위력: A(공)　대상: 적 전체　속성: ＋　효과: ＋ 적 전체를 일격으로 찢는 대집단용의 검 기술',
     type: '7',
     icon: 463,
     scope: 2,
@@ -392,7 +542,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '942',
     name: '플레임 슬래시',
-    description: '위력: B(공)　대상: 적 전체　속성: 불길＋\n불길의 마력을 검에 머물어, 적을 일섬 하는 오의',
+    description: '위력: B(공)　대상: 적 전체　속성: 불길＋ 불길의 마력을 검에 머물어, 적을 일섬 하는 오의',
     type: '7',
     icon: 463,
     scope: 2,
@@ -407,7 +557,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '943',
     name: '아이스 슬래시',
-    description: '위력: B(공)　대상: 적 전체　속성: 얼음＋\n얼음의 마력을 검에 머물어, 적을 일섬 하는 오의',
+    description: '위력: B(공)　대상: 적 전체　속성: 얼음＋ 얼음의 마력을 검에 머물어, 적을 일섬 하는 오의',
     type: '7',
     icon: 463,
     scope: 2,
@@ -422,7 +572,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '944',
     name: '썬더 슬래시',
-    description: '위력: B(공)　대상: 적 전체　속성: 번개＋\n번개의 마력을 검에 머물어, 적을 일섬 하는 오의',
+    description: '위력: B(공)　대상: 적 전체　속성: 번개＋ 번개의 마력을 검에 머물어, 적을 일섬 하는 오의',
     type: '7',
     icon: 463,
     scope: 2,
@@ -437,7 +587,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '945',
     name: '참마의 무용',
-    description: '위력: B(공)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n마물을 멸하기 위해서(때문에) 짜내진, 춤과 같은 검 기술',
+    description: '위력: B(공)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 마물을 멸하기 위해서(때문에) 짜내진, 춤과 같은 검 기술',
     type: '7',
     icon: 463,
     scope: 3,
@@ -452,7 +602,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '946',
     name: '도룡격',
-    description: '위력: A(공)　대상: 적 하나　속성: ＋　효과: 용특공＋\n용을 토벌해 멸하는 필살의 참격',
+    description: '위력: A(공)　대상: 적 하나　속성: ＋　효과: 용특공＋ 용을 토벌해 멸하는 필살의 참격',
     type: '7',
     icon: 463,
     scope: 1,
@@ -467,7 +617,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '947',
     name: '운신불차검',
-    description: '위력: A(공)　대상: 적 전체\n차바퀴장의 충격파를 복수 생기게 해 적 전체를 찢는 검 기술',
+    description: '위력: A(공)　대상: 적 전체 차바퀴장의 충격파를 복수 생기게 해 적 전체를 찢는 검 기술',
     type: '7',
     icon: 463,
     scope: 2,
@@ -482,7 +632,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '948',
     name: '멸세참',
-    description: '위력: S(공)　대상: 적 하나　속성: 어둠＋　효과: ＋\n암흑의 힘을 칼날에 담은 필멸의 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: 어둠＋　효과: ＋ 암흑의 힘을 칼날에 담은 필멸의 오의',
     type: '7',
     icon: 463,
     scope: 1,
@@ -497,7 +647,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '949',
     name: '아크브린가',
-    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋\n마력을 담아 적을 찢는, 엘프족비전의 필살 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋ 마력을 담아 적을 찢는, 엘프족비전의 필살 오의',
     type: '7',
     icon: 463,
     scope: 1,
@@ -512,7 +662,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '950',
     name: '순검·질풍 신뢰',
-    description: '위력: S(공)　대상: 적 하나　속성: 바람＋　효과: 속공＋\n바람의 마력을 검에 담아, 질풍 신뢰의 발걸음으로 찌르기를 내지르는 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: 바람＋　효과: 속공＋ 바람의 마력을 검에 담아, 질풍 신뢰의 발걸음으로 찌르기를 내지르는 오의',
     type: '7',
     icon: 463,
     scope: 1,
@@ -528,7 +678,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '951',
     name: '신라검·란박',
-    description: '위력: A(공)　대상: 적 전체　속성: 얼음＋　효과: ＋\n불어닥치는 영(진눈깨비)의 안, 적을 흐트러지고 베는 검 기술',
+    description: '위력: A(공)　대상: 적 전체　속성: 얼음＋　효과: ＋ 불어닥치는 영(진눈깨비)의 안, 적을 흐트러지고 베는 검 기술',
     type: '7',
     icon: 463,
     scope: 2,
@@ -543,7 +693,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '952',
     name: '데스바운드',
-    description: '위력: A(공)　대상: 적 전체　속성: ＋　효과: ＋\n모든 적에게 죽음을 가져오는 필살의 대집단용검 기술',
+    description: '위력: A(공)　대상: 적 전체　속성: ＋　효과: ＋ 모든 적에게 죽음을 가져오는 필살의 대집단용검 기술',
     type: '7',
     icon: 463,
     scope: 2,
@@ -558,7 +708,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '953',
     name: '사검·혼란별',
-    description: '위력: A(공)　대상: 적 랜덤 5회　속성: ＋　효과: ＋\n몇번이나 참격을 내질러, 적에게 연속 공격을 퍼붓는 마검 기술',
+    description: '위력: A(공)　대상: 적 랜덤 5회　속성: ＋　효과: ＋ 몇번이나 참격을 내질러, 적에게 연속 공격을 퍼붓는 마검 기술',
     type: '7',
     icon: 463,
     scope: 3,
@@ -573,7 +723,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '954',
     name: '마영유성참',
-    description: '위력: S(공)　대상: 적 랜덤 5회　속성: 어둠＋　효과: ＋\n유성과 같은 참격의 폭풍우로 적을 멸하는 어둠의 오의',
+    description: '위력: S(공)　대상: 적 랜덤 5회　속성: 어둠＋　효과: ＋ 유성과 같은 참격의 폭풍우로 적을 멸하는 어둠의 오의',
     type: '7',
     icon: 463,
     scope: 3,
@@ -588,7 +738,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '955',
     name: '백호노 칼',
-    description: '위력: A(공)　대상: 적 전체　속성: 바람＋　효과: 풍약체＋\n백호의 음양식을 칼날에 담아, 적을 일섬 하는 바람의 오의',
+    description: '위력: A(공)　대상: 적 전체　속성: 바람＋　효과: 풍약체＋ 백호의 음양식을 칼날에 담아, 적을 일섬 하는 바람의 오의',
     type: '7',
     icon: 463,
     scope: 2,
@@ -603,7 +753,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '956',
     name: '현무노 칼',
-    description: '위력: A(공)　대상: 적 전체　속성: 흙＋　효과: 흙약체＋\n현무의 음양식을 칼날에 담아, 적을 일섬 하는 흙의 오의',
+    description: '위력: A(공)　대상: 적 전체　속성: 흙＋　효과: 흙약체＋ 현무의 음양식을 칼날에 담아, 적을 일섬 하는 흙의 오의',
     type: '7',
     icon: 463,
     scope: 2,
@@ -618,7 +768,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '957',
     name: '청룡노 칼',
-    description: '위력: A(공)　대상: 적 전체　속성: 물＋　효과: 수 약체＋\n청룡의 음양식을 칼날에 담아, 적을 일섬 하는 물의 오의',
+    description: '위력: A(공)　대상: 적 전체　속성: 물＋　효과: 수 약체＋ 청룡의 음양식을 칼날에 담아, 적을 일섬 하는 물의 오의',
     type: '7',
     icon: 463,
     scope: 2,
@@ -633,7 +783,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '958',
     name: '주작노 칼',
-    description: '위력: A(공)　대상: 적 전체　속성: 불길＋　효과: 염 약체＋\n주작의 음양식을 칼날에 담아, 적을 일섬 하는 불의 오의',
+    description: '위력: A(공)　대상: 적 전체　속성: 불길＋　효과: 염 약체＋ 주작의 음양식을 칼날에 담아, 적을 일섬 하는 불의 오의',
     type: '7',
     icon: 463,
     scope: 2,
@@ -648,7 +798,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '959',
     name: '기가 슬래시',
-    description: '위력: A(공)　대상: 적 전체　속성: 불길·빙·뢰＋\n3 속성의 마력을 칼날에 담아, 적을 일섬 하는 파괴 오의',
+    description: '위력: A(공)　대상: 적 전체　속성: 불길·빙·뢰＋ 3 속성의 마력을 칼날에 담아, 적을 일섬 하는 파괴 오의',
     type: '7',
     icon: 463,
     scope: 2,
@@ -663,7 +813,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '961',
     name: '월하 산화',
-    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋\n달아래, 상대의 생명을 꽃이라고 가라앉히는 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋ 달아래, 상대의 생명을 꽃이라고 가라앉히는 오의',
     type: '7',
     icon: 463,
     scope: 1,
@@ -678,7 +828,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '962',
     name: '마인·진눈깨비',
-    description: '위력: S(공)　대상: 적 하나　속성: 얼음＋　효과: ＋\n춤추어 지는 진눈깨비안, 적을 찢는 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: 얼음＋　효과: ＋ 춤추어 지는 진눈깨비안, 적을 찢는 오의',
     type: '7',
     icon: 463,
     scope: 1,
@@ -693,7 +843,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '963',
     name: '황룡 9염진',
-    description: '위력: S(공)　대상: 적 하나　속성: 불길＋　효과: ＋\n적 하나에 불길의 참격을 집중하는, 용족의 필살 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: 불길＋　효과: ＋ 적 하나에 불길의 참격을 집중하는, 용족의 필살 오의',
     type: '7',
     icon: 463,
     scope: 1,
@@ -708,7 +858,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '964',
     name: '쟈스티스헤분',
-    description: '위력: A(공)　대상: 적 전체　속성: 성\n검을 통해서 마물을 멸하는 오라를 솟아오르게 하는 오의',
+    description: '위력: A(공)　대상: 적 전체　속성: 성 검을 통해서 마물을 멸하는 오라를 솟아오르게 하는 오의',
     type: '7',
     icon: 463,
     scope: 2,
@@ -723,7 +873,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '965',
     name: '섬살',
-    description: '위력: S(공)　대상: 적 하나　효과: 속공·강화 해제\n시공 그 자체를 찢어, 모든 효과를 소멸시키는 오의',
+    description: '위력: S(공)　대상: 적 하나　효과: 속공·강화 해제 시공 그 자체를 찢어, 모든 효과를 소멸시키는 오의',
     type: '7',
     icon: 463,
     scope: 1,
@@ -739,7 +889,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '966',
     name: '열공타천참',
-    description: '위력: S(공)　대상: 적 하나　속성: 성＋　효과: ＋\n성스러운 파동을 발하면서, 적을 베어 찢는 타천사의 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: 성＋　효과: ＋ 성스러운 파동을 발하면서, 적을 베어 찢는 타천사의 오의',
     type: '7',
     icon: 463,
     scope: 1,
@@ -754,7 +904,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '971',
     name: '구중의 나찰',
-    description: '위력: SSS(공)　대상: 적 랜덤 9회　속성: ＋　효과: ＋\n9연속의 검섬으로 적을 흐트러지고 베는, 타천사의 필살 오의',
+    description: '위력: SSS(공)　대상: 적 랜덤 9회　속성: ＋　효과: ＋ 9연속의 검섬으로 적을 흐트러지고 베는, 타천사의 필살 오의',
     type: '7',
     icon: 463,
     scope: 3,
@@ -769,7 +919,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '976',
     name: '위안의 검',
-    description: '대상: 아군 하나　효과: HP중 회복\n위안의 힘을 집중한 검을 내걸어, 아군 하나의 체력을 회복 하는 기술',
+    description: '대상: 아군 하나　효과: HP중 회복 위안의 힘을 집중한 검을 내걸어, 아군 하나의 체력을 회복 하는 기술',
     type: '7',
     icon: 463,
     scope: 7,
@@ -784,7 +934,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '977',
     name: '기적의 검',
-    description: '대상: 아군 하나　효과: HP대회복\n기적의 힘을 집중한 검을 내걸어, 아군 하나의 체력을 크게 회복 하는 기술',
+    description: '대상: 아군 하나　효과: HP대회복 기적의 힘을 집중한 검을 내걸어, 아군 하나의 체력을 크게 회복 하는 기술',
     type: '7',
     icon: 463,
     scope: 7,
@@ -799,7 +949,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '978',
     name: '대기적의 검',
-    description: '대상: 아군 전체　효과: HP대회복\n기적의 힘을 집중한 검을 내걸어, 아군 전체의 체력을 크게 회복 하는 기술',
+    description: '대상: 아군 전체　효과: HP대회복 기적의 힘을 집중한 검을 내걸어, 아군 전체의 체력을 크게 회복 하는 기술',
     type: '7',
     icon: 463,
     scope: 8,
@@ -814,7 +964,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '985',
     name: '차지 레이',
-    description: '위력: E(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n날카롭게 발을 디뎌, 검처를 회전시키면서 적에게 쑤셔 넣는 첨검 기술',
+    description: '위력: E(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 날카롭게 발을 디뎌, 검처를 회전시키면서 적에게 쑤셔 넣는 첨검 기술',
     type: '8',
     icon: 697,
     scope: 1,
@@ -829,7 +979,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '986',
     name: 'V슬래시',
-    description: '위력: C(공·민)　대상: 적 하나　속성: ＋　효과: ＋\nV의 글자에 적을 찢는 화려한 첨검 기술',
+    description: '위력: C(공·민)　대상: 적 하나　속성: ＋　효과: ＋ V의 글자에 적을 찢는 화려한 첨검 기술',
     type: '8',
     icon: 697,
     scope: 1,
@@ -844,7 +994,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '987',
     name: '댄싱 사브르',
-    description: '위력: D(공·민)　대상: 적 랜덤 3회　속성: ＋　효과: ＋\n춤 같은 발놀림으로 연속 찌르기를 퍼붓는 첨검 기술',
+    description: '위력: D(공·민)　대상: 적 랜덤 3회　속성: ＋　효과: ＋ 춤 같은 발놀림으로 연속 찌르기를 퍼붓는 첨검 기술',
     type: '8',
     icon: 697,
     scope: 3,
@@ -859,7 +1009,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '988',
     name: '스프랏슈후르레',
-    description: '위력: E(공·민)　대상: 적 전체　속성: ＋　효과: ＋\n화려한 발놀림으로 적 전체를 찌르는 첨검 기술',
+    description: '위력: E(공·민)　대상: 적 전체　속성: ＋　효과: ＋ 화려한 발놀림으로 적 전체를 찌르는 첨검 기술',
     type: '8',
     icon: 697,
     scope: 2,
@@ -874,7 +1024,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '989',
     name: '크로스안불',
-    description: '위력: D(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n세련된 사벨 다루기로 적 하나를 2회 찌른다',
+    description: '위력: D(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 세련된 사벨 다루기로 적 하나를 2회 찌른다',
     type: '8',
     icon: 697,
     scope: 1,
@@ -889,7 +1039,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '990',
     name: '트라이장드',
-    description: '위력: B(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n탁월한 사벨 다루기로 적 하나를 3회 찌른다',
+    description: '위력: B(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 탁월한 사벨 다루기로 적 하나를 3회 찌른다',
     type: '8',
     icon: 697,
     scope: 1,
@@ -904,7 +1054,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '991',
     name: '포티트리아',
-    description: '위력: A(공·민)　대상: 적 랜덤 3회　속성: 불길＋　효과: ＋\n춤추도록(듯이) 내질러지는 불길의 난격',
+    description: '위력: A(공·민)　대상: 적 랜덤 3회　속성: 불길＋　효과: ＋ 춤추도록(듯이) 내질러지는 불길의 난격',
     type: '8',
     icon: 697,
     scope: 3,
@@ -919,7 +1069,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '992',
     name: '파고스트리아',
-    description: '위력: A(공·민)　대상: 적 랜덤 3회　속성: 얼음＋　효과: ＋\n춤추도록(듯이) 내질러지는 얼음의 난격',
+    description: '위력: A(공·민)　대상: 적 랜덤 3회　속성: 얼음＋　효과: ＋ 춤추도록(듯이) 내질러지는 얼음의 난격',
     type: '8',
     icon: 697,
     scope: 3,
@@ -934,7 +1084,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '993',
     name: '케라브트리아',
-    description: '위력: A(공·민)　대상: 적 랜덤 3회　속성: 번개＋　효과: ＋\n춤추도록(듯이) 내질러지는 번개의 난격',
+    description: '위력: A(공·민)　대상: 적 랜덤 3회　속성: 번개＋　효과: ＋ 춤추도록(듯이) 내질러지는 번개의 난격',
     type: '8',
     icon: 697,
     scope: 3,
@@ -949,7 +1099,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '994',
     name: '제크스르쥬',
-    description: '위력: S(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n신의 조화의 사벨 다루기로 적 하나에 6연격을 건다',
+    description: '위력: S(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 신의 조화의 사벨 다루기로 적 하나에 6연격을 건다',
     type: '8',
     icon: 697,
     scope: 1,
@@ -964,7 +1114,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '995',
     name: '프리에이르',
-    description: '위력: B(공·민)　대상: 적 하나　속성: 불길＋　효과: ＋\n마력을 띤 칼날로 적을 발화시키는 특수한 첨검 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: 불길＋　효과: ＋ 마력을 띤 칼날로 적을 발화시키는 특수한 첨검 기술',
     type: '8',
     icon: 697,
     scope: 1,
@@ -979,7 +1129,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '996',
     name: '비크트워르',
-    description: '위력: S(공·민)　대상: 적 하나　속성: 불길＋　효과: ＋\n마력을 띤 칼날로 V자에 베어 붙여, 적을 불꽃상 시키는 특수한 첨검 오의',
+    description: '위력: S(공·민)　대상: 적 하나　속성: 불길＋　효과: ＋ 마력을 띤 칼날로 V자에 베어 붙여, 적을 불꽃상 시키는 특수한 첨검 오의',
     type: '8',
     icon: 697,
     scope: 1,
@@ -994,7 +1144,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '997',
     name: '안 스턴',
-    description: '위력: C(공·민)　대상: 적 전체　속성: ＋　효과: ＋\n전력의 호쾌한 사벨 다루기로 적을 관철하는 첨검 기술',
+    description: '위력: C(공·민)　대상: 적 전체　속성: ＋　효과: ＋ 전력의 호쾌한 사벨 다루기로 적을 관철하는 첨검 기술',
     type: '8',
     icon: 697,
     scope: 2,
@@ -1009,7 +1159,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '998',
     name: '네메시스',
-    description: '위력: A(공·민)　대상: 적 전체　속성: ＋　효과: ＋\n힘과 마력을 융합시켜, 적을 벌집으로 하는 첨검 오의',
+    description: '위력: A(공·민)　대상: 적 전체　속성: ＋　효과: ＋ 힘과 마력을 융합시켜, 적을 벌집으로 하는 첨검 오의',
     type: '8',
     icon: 697,
     scope: 2,
@@ -1024,7 +1174,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '999',
     name: '노던 크로스',
-    description: '위력: A(공·민)　대상: 적 전체　속성: 불길＋　효과: ＋\n불길의 마력을 띤 칼날로 적 전체를 십자에 찢는 첨검 오의',
+    description: '위력: A(공·민)　대상: 적 전체　속성: 불길＋　효과: ＋ 불길의 마력을 띤 칼날로 적 전체를 십자에 찢는 첨검 오의',
     type: '8',
     icon: 697,
     scope: 2,
@@ -1039,7 +1189,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1001',
     name: '노블레스·오블리주',
-    description: '대상: 사용자　효과: 「첨검 기술」연속 발동·SP자동 회복\n3 턴의 사이 첨검 기술이 연속 발동, 그 이외의 스킬은 사용 불능',
+    description: '대상: 사용자　효과: 「첨검 기술」연속 발동·SP자동 회복 3 턴의 사이 첨검 기술이 연속 발동, 그 이외의 스킬은 사용 불능',
     type: '8',
     icon: 697,
     scope: 11,
@@ -1051,7 +1201,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1007',
     name: '칼등치기',
-    description: '위력: E(공·손)　대상: 적 하나　속성: ＋　효과: 마비＋\n봉우리에서 적을 구타해, 기절에 이르게 하는 도 기술',
+    description: '위력: E(공·손)　대상: 적 하나　속성: ＋　효과: 마비＋ 봉우리에서 적을 구타해, 기절에 이르게 하는 도 기술',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1066,7 +1216,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1008',
     name: '3회연속참',
-    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n경쾌한 도다루기로 3연격을 내지르는 기술',
+    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 경쾌한 도다루기로 3연격을 내지르는 기술',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1081,7 +1231,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1009',
     name: '거합 빼기',
-    description: '위력: B(공·손)　대상: 적 전체　속성: ＋　효과: ＋\n일단 도를 칼집에 거두어, 일격으로 밀어 베기로 하는 거합 기술',
+    description: '위력: B(공·손)　대상: 적 전체　속성: ＋　효과: ＋ 일단 도를 칼집에 거두어, 일격으로 밀어 베기로 하는 거합 기술',
     type: '9',
     icon: 922,
     scope: 2,
@@ -1096,7 +1246,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1010',
     name: '아돌',
-    description: '위력: A(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n강인한 몸의 용수철을 이용해 내지르는 필살의 찌르기 기술',
+    description: '위력: A(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 강인한 몸의 용수철을 이용해 내지르는 필살의 찌르기 기술',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1111,7 +1261,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1011',
     name: '거합·염노 칼',
-    description: '위력: S(공·손)　대상: 적 하나　속성: 불길＋　효과: ＋\n불꽃을 동반하는 거합 빼고, 적 도대체를 베는 도 기술',
+    description: '위력: S(공·손)　대상: 적 하나　속성: 불길＋　효과: ＋ 불꽃을 동반하는 거합 빼고, 적 도대체를 베는 도 기술',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1126,7 +1276,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1012',
     name: '거합·눈보라노 칼',
-    description: '위력: S(공·손)　대상: 적 하나　속성: 얼음＋　효과: ＋\n얼음을 동반하는 거합 빼고, 적 도대체를 베는 도 기술',
+    description: '위력: S(공·손)　대상: 적 하나　속성: 얼음＋　효과: ＋ 얼음을 동반하는 거합 빼고, 적 도대체를 베는 도 기술',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1141,7 +1291,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1013',
     name: '거합·번개흙노 칼',
-    description: '위력: S(공·손)　대상: 적 하나　속성: 번개＋　효과: ＋\n번개를 동반하는 거합 빼고, 적 도대체를 베는 도 기술',
+    description: '위력: S(공·손)　대상: 적 하나　속성: 번개＋　효과: ＋ 번개를 동반하는 거합 빼고, 적 도대체를 베는 도 기술',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1156,7 +1306,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1014',
     name: '가지 흘림',
-    description: '위력: D(공·손)　대상: 적 하나　속성: ＋　효과: 식물 특공＋\n가지를 모두 떨어뜨릴 정도의 참격으로, 식물 몬스터를 무력화하는 기술',
+    description: '위력: D(공·손)　대상: 적 하나　속성: ＋　효과: 식물 특공＋ 가지를 모두 떨어뜨릴 정도의 참격으로, 식물 몬스터를 무력화하는 기술',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1171,7 +1321,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1015',
     name: '산화 유린참',
-    description: '위력: C(공·손)　대상: 적 전체　속성: ＋　효과: 식물 특공＋\n무수한 칼날로 유린해, 식물 몬스터의 꽃을 가라앉힐 수 있는 기술',
+    description: '위력: C(공·손)　대상: 적 전체　속성: ＋　효과: 식물 특공＋ 무수한 칼날로 유린해, 식물 몬스터의 꽃을 가라앉힐 수 있는 기술',
     type: '9',
     icon: 922,
     scope: 2,
@@ -1186,7 +1336,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1016',
     name: '빙인·달빛',
-    description: '위력: C(공·손)　대상: 적 하나　속성: 얼음＋　효과: ＋\n얼음을 동반한 칼날로, 적을 베어 찢으면서 동결시키는 참격',
+    description: '위력: C(공·손)　대상: 적 하나　속성: 얼음＋　효과: ＋ 얼음을 동반한 칼날로, 적을 베어 찢으면서 동결시키는 참격',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1201,7 +1351,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1017',
     name: '마빙장송칼날',
-    description: '위력: A(공·손)　대상: 적 하나　속성: 얼음＋　효과: ＋\n얼음을 동반하는 날카로운 칼날로, 적을 즉시 매장하는 참격',
+    description: '위력: A(공·손)　대상: 적 하나　속성: 얼음＋　효과: ＋ 얼음을 동반하는 날카로운 칼날로, 적을 즉시 매장하는 참격',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1216,7 +1366,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1018',
     name: '멸혼도',
-    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: 고스트 특공＋\n더러움 없는 시퍼런 칼날로, 헤맬 수 있는 영혼을 토벌해 멸하는 도 기술',
+    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: 고스트 특공＋ 더러움 없는 시퍼런 칼날로, 헤맬 수 있는 영혼을 토벌해 멸하는 도 기술',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1231,7 +1381,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1019',
     name: '참신참마',
-    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: 아인 특공＋\n흐림 없는 시퍼런 칼날로, 요괴 변화의 종류를 멸하는 도 기술',
+    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: 아인 특공＋ 흐림 없는 시퍼런 칼날로, 요괴 변화의 종류를 멸하는 도 기술',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1246,7 +1396,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1020',
     name: '8상발파',
-    description: '위력: A(공·손)　대상: 적 랜덤 8회　속성: ＋　효과: ＋\n다완의 이점을 극한으로까지 살린 8상발파의 흐트러지고 베어',
+    description: '위력: A(공·손)　대상: 적 랜덤 8회　속성: ＋　효과: ＋ 다완의 이점을 극한으로까지 살린 8상발파의 흐트러지고 베어',
     type: '9',
     icon: 922,
     scope: 3,
@@ -1261,7 +1411,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1021',
     name: '9완련섬',
-    description: '위력: S(공·손)　대상: 적 랜덤 9회　속성: ＋　효과: ＋\n다팔에 잡은 칼날을 동시에 조종해, 적을 흐트러지고 베는 오의',
+    description: '위력: S(공·손)　대상: 적 랜덤 9회　속성: ＋　효과: ＋ 다팔에 잡은 칼날을 동시에 조종해, 적을 흐트러지고 베는 오의',
     type: '9',
     icon: 922,
     scope: 3,
@@ -1276,7 +1426,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1022',
     name: '축지·염섬',
-    description: '위력: A(공·손)　대상: 적 전체　속성: 불길＋　효과: ＋\n신속의 참격을 내질러, 작열의 검섬으로 적을 일소 하는 오의',
+    description: '위력: A(공·손)　대상: 적 전체　속성: 불길＋　효과: ＋ 신속의 참격을 내질러, 작열의 검섬으로 적을 일소 하는 오의',
     type: '9',
     icon: 922,
     scope: 2,
@@ -1291,7 +1441,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1023',
     name: '마도·명경지수',
-    description: '위력: A(공·손)　대상: 적 전체　속성: 물＋　효과: ＋\n명경지수의 마음대로, 거합참를 내지르는 오의',
+    description: '위력: A(공·손)　대상: 적 전체　속성: 물＋　효과: ＋ 명경지수의 마음대로, 거합참를 내지르는 오의',
     type: '9',
     icon: 922,
     scope: 2,
@@ -1306,7 +1456,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1024',
     name: '신도·쿄우카 미츠키',
-    description: '위력: S(공·손)　대상: 적 하나　속성: 성＋　효과: ＋\n적의 생명을 꽃이라고 가라앉힐 수 있는 명경지수의 필살 오의',
+    description: '위력: S(공·손)　대상: 적 하나　속성: 성＋　효과: ＋ 적의 생명을 꽃이라고 가라앉힐 수 있는 명경지수의 필살 오의',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1321,7 +1471,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1025',
     name: '미진멸섬',
-    description: '위력: S(공·손)　대상: 적 하나　속성: 어둠＋　효과: ＋\n주원의 칼날로 적을 종횡 무진에 찢는 어둠의 필살 오의',
+    description: '위력: S(공·손)　대상: 적 하나　속성: 어둠＋　효과: ＋ 주원의 칼날로 적을 종횡 무진에 찢는 어둠의 필살 오의',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1336,7 +1486,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1026',
     name: '성인 7성천',
-    description: '위력: S(공·손)　대상: 적 랜덤 7회　속성: 성＋　효과: ＋\n성스러운 번쩍임과 함께 무수한 검섬을 내지르는 필살 오의',
+    description: '위력: S(공·손)　대상: 적 랜덤 7회　속성: 성＋　효과: ＋ 성스러운 번쩍임과 함께 무수한 검섬을 내지르는 필살 오의',
     type: '9',
     icon: 922,
     scope: 3,
@@ -1351,7 +1501,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1027',
     name: '벚꽃환무',
-    description: '위력: S(공·손)　대상: 적 랜덤 6회　속성: 어둠＋　효과: ＋\n어둠의 거합을 연속으로 내지르는 뒤의 오의',
+    description: '위력: S(공·손)　대상: 적 랜덤 6회　속성: 어둠＋　효과: ＋ 어둠의 거합을 연속으로 내지르는 뒤의 오의',
     type: '9',
     icon: 922,
     scope: 3,
@@ -1366,7 +1516,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1029',
     name: '순섬·경사 십자',
-    description: '위력: SS(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n2 개의 칼날로 십자에 베어 찢는, 스큐라족의 비전 기술',
+    description: '위력: SS(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 2 개의 칼날로 십자에 베어 찢는, 스큐라족의 비전 기술',
     type: '9',
     icon: 922,
     scope: 1,
@@ -1381,7 +1531,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1032',
     name: '심두멸각',
-    description: '대상: 사용자　효과: 속성 무효\n강인한 정신력에 의해, 3 턴의 사이는 속성 데미지를 받아들이지 않는 비장의 기술',
+    description: '대상: 사용자　효과: 속성 무효 강인한 정신력에 의해, 3 턴의 사이는 속성 데미지를 받아들이지 않는 비장의 기술',
     type: '9',
     icon: 922,
     scope: 11,
@@ -1393,7 +1543,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1033',
     name: '육 참골단',
-    description: '대상: 사용자　효과: 공격력·손재주 업·방어력 다운\n방어를 버려, 공격에만 전념하는 비장의 기술',
+    description: '대상: 사용자　효과: 공격력·손재주 업·방어력 다운 방어를 버려, 공격에만 전념하는 비장의 기술',
     type: '9',
     icon: 922,
     scope: 11,
@@ -1405,7 +1555,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1034',
     name: '잘라 버리고 미안',
-    description: '대상: 사용자　효과: 통상 공격 즉사 100%\n칼날에 필멸의 저주를 담아, 조금의 사이 통상 공격에 즉사 효과가 수반한다',
+    description: '대상: 사용자　효과: 통상 공격 즉사 100% 칼날에 필멸의 저주를 담아, 조금의 사이 통상 공격에 즉사 효과가 수반한다',
     type: '9',
     icon: 922,
     scope: 11,
@@ -1417,7 +1567,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1035',
     name: '빈주목',
-    description: '대상: 사용자　효과: 「도 기술」연속 발동·방어력 대다운·SP자동 회복\n방비를 완전하게 버려, 도 기술을 연속으로 내지르는 오의',
+    description: '대상: 사용자　효과: 「도 기술」연속 발동·방어력 대다운·SP자동 회복 방비를 완전하게 버려, 도 기술을 연속으로 내지르는 오의',
     type: '9',
     icon: 922,
     scope: 11,
@@ -1429,7 +1579,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1036',
     name: '할복 자살',
-    description: '대상: 사용자　효과: 빈사·SP전회복\n자신을 빈사에 몰아넣어, 기력을 넘치게 하는 비장의 기술',
+    description: '대상: 사용자　효과: 빈사·SP전회복 자신을 빈사에 몰아넣어, 기력을 넘치게 하는 비장의 기술',
     type: '9',
     icon: 922,
     scope: 11,
@@ -1444,7 +1594,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1041',
     name: '하이점프',
-    description: '위력: C(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n하늘 높게 날아 뛰어 낙하의 충격을 담은 일격을 내지르는 창 기술',
+    description: '위력: C(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 하늘 높게 날아 뛰어 낙하의 충격을 담은 일격을 내지르는 창 기술',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1460,7 +1610,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1042',
     name: '새흘림',
-    description: '위력: D(공·민)　대상: 적 하나　효과: 새특공\n하늘을 달려, 비상 하는 마물을 창으로 두드려 떨어뜨린다',
+    description: '위력: D(공·민)　대상: 적 하나　효과: 새특공 하늘을 달려, 비상 하는 마물을 창으로 두드려 떨어뜨린다',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1476,7 +1626,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1043',
     name: '인파크트스피아',
-    description: '위력: C(공·민)　대상: 적 전체\n하늘 높게 날아 뛰어 창을 휘둘러 충격파를 적 전체에 퍼붓는다',
+    description: '위력: C(공·민)　대상: 적 전체 하늘 높게 날아 뛰어 창을 휘둘러 충격파를 적 전체에 퍼붓는다',
     type: '10',
     icon: 836,
     scope: 2,
@@ -1492,7 +1642,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1044',
     name: '비룡의 춤',
-    description: '위력: B(공·민)　대상: 적 랜덤 3회　속성: ＋　효과: ＋\n몇번이나 연속으로 날아 뛰어 낙하의 자돌을 3연속으로 내지른다',
+    description: '위력: B(공·민)　대상: 적 랜덤 3회　속성: ＋　효과: ＋ 몇번이나 연속으로 날아 뛰어 낙하의 자돌을 3연속으로 내지른다',
     type: '10',
     icon: 836,
     scope: 3,
@@ -1508,7 +1658,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1045',
     name: '화염창',
-    description: '위력: C(공·민)　대상: 적 하나　속성: 불길\n화염을 수반한 창으로 두상으로부터 적을 관철한다',
+    description: '위력: C(공·민)　대상: 적 하나　속성: 불길 화염을 수반한 창으로 두상으로부터 적을 관철한다',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1524,7 +1674,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1046',
     name: '절빙창',
-    description: '위력: C(공·민)　대상: 적 하나　속성: 얼음\n얼음을 동반한 창으로 두상으로부터 적을 관철한다',
+    description: '위력: C(공·민)　대상: 적 하나　속성: 얼음 얼음을 동반한 창으로 두상으로부터 적을 관철한다',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1540,7 +1690,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1047',
     name: '뢰신창',
-    description: '위력: C(공·민)　대상: 적 하나　속성: 번개\n번개를 동반한 창으로 두상으로부터 적을 관철한다',
+    description: '위력: C(공·민)　대상: 적 하나　속성: 번개 번개를 동반한 창으로 두상으로부터 적을 관철한다',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1556,7 +1706,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1048',
     name: '하이 윈드',
-    description: '위력: C(공·민)　대상: 적 하나　속성: 바람\n진공을 수반한 창으로 적을 찢는다',
+    description: '위력: C(공·민)　대상: 적 하나　속성: 바람 진공을 수반한 창으로 적을 찢는다',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1572,7 +1722,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1049',
     name: '암열창',
-    description: '위력: C(공·민)　대상: 적 하나　속성: 흙\n대지의 힘을 집중한 창으로 적을 양단 한다',
+    description: '위력: C(공·민)　대상: 적 하나　속성: 흙 대지의 힘을 집중한 창으로 적을 양단 한다',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1588,7 +1738,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1050',
     name: '아크아란스',
-    description: '위력: C(공·민)　대상: 적 하나　속성: 물\n물의 힘을 집중한 창으로 재빠르게 적을 뚫는다',
+    description: '위력: C(공·민)　대상: 적 하나　속성: 물 물의 힘을 집중한 창으로 재빠르게 적을 뚫는다',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1604,7 +1754,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1051',
     name: '언데드 슬레이어-',
-    description: '위력: C(공·민)　대상: 적 하나　효과: 좀비·고스트 특공\n죽음으로부터 소생한 몬스터를 멸하는, 성스러운 창 기술',
+    description: '위력: C(공·민)　대상: 적 하나　효과: 좀비·고스트 특공 죽음으로부터 소생한 몬스터를 멸하는, 성스러운 창 기술',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1620,7 +1770,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1052',
     name: '레크이엠란스',
-    description: '위력: B(공·민)　대상: 적 전체　효과: 흡혈귀·좀비·고스트 특공\n부정을 토벌해 지불해, 어둠의 마물을 지옥에 돌려 보내는 창 기술',
+    description: '위력: B(공·민)　대상: 적 전체　효과: 흡혈귀·좀비·고스트 특공 부정을 토벌해 지불해, 어둠의 마물을 지옥에 돌려 보내는 창 기술',
     type: '10',
     icon: 836,
     scope: 2,
@@ -1636,7 +1786,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1053',
     name: '홀리 쉬프트',
-    description: '위력: B(공·민)　대상: 적 하나　속성: 성\n파사의 오라를 담아, 적 하나를 꿰뚫는 창 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: 성 파사의 오라를 담아, 적 하나를 꿰뚫는 창 기술',
     type: '10',
     icon: 836,
     scope: 2,
@@ -1652,7 +1802,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1054',
     name: '스파이럴 파이어',
-    description: '위력: A(공·민)　대상: 적 하나 특수:불길\n종횡 무진에 질주 해, 불길을 감긴 창을 연속으로 주입하는 기술',
+    description: '위력: A(공·민)　대상: 적 하나 특수:불길 종횡 무진에 질주 해, 불길을 감긴 창을 연속으로 주입하는 기술',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1668,7 +1818,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1055',
     name: '폭스 헌트',
-    description: '위력: C(공·민)　대상: 적 하나　효과: 여우 특공\n땅을 기는 여우를 하늘로부터 사냥하는 필살의 창',
+    description: '위력: C(공·민)　대상: 적 하나　효과: 여우 특공 땅을 기는 여우를 하늘로부터 사냥하는 필살의 창',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1684,7 +1834,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1056',
     name: '센토어 러쉬',
-    description: '위력: B(공·민)　대상: 적 하나　효과: 속공\n인마일체의 움직임으로 강렬한 찌르기를 내지르는 창 기술',
+    description: '위력: B(공·민)　대상: 적 하나　효과: 속공 인마일체의 움직임으로 강렬한 찌르기를 내지르는 창 기술',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1700,7 +1850,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1057',
     name: '신속 삼단 찌르기',
-    description: '위력: B(공·민)　대상: 적 하나　속성: ＋　효과: 속공＋\n신속으로 질주 해, 3연속의 찌르기를 내지르는 창 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: ＋　효과: 속공＋ 신속으로 질주 해, 3연속의 찌르기를 내지르는 창 기술',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1716,7 +1866,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1058',
     name: '스카이 트윈',
-    description: '위력: B(공·민)　대상: 적 전체\n하늘을 춤추면서 횡치기의 이중참격을 내지르는 창 기술',
+    description: '위력: B(공·민)　대상: 적 전체 하늘을 춤추면서 횡치기의 이중참격을 내지르는 창 기술',
     type: '10',
     icon: 836,
     scope: 2,
@@ -1732,7 +1882,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1059',
     name: '에아란스',
-    description: '위력: B(공·민)　대상: 적 하나　속성: 바람\n창과 날개를 동시에 털어, 진공의 칼날로 적을 찢는 창 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: 바람 창과 날개를 동시에 털어, 진공의 칼날로 적을 찢는 창 기술',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1748,7 +1898,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1060',
     name: '산·에리알',
-    description: '위력: A(공·민)　대상: 적 랜덤 4회　속성: 성\n마물의 집단을 멸하기 위해서(때문에) 짜내진, 전처녀의 창 기술',
+    description: '위력: A(공·민)　대상: 적 랜덤 4회　속성: 성 마물의 집단을 멸하기 위해서(때문에) 짜내진, 전처녀의 창 기술',
     type: '10',
     icon: 836,
     scope: 3,
@@ -1764,7 +1914,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1061',
     name: '산·콘키스타',
-    description: '위력: A(공·민)　대상: 적 랜덤 3회　속성: 성\n파사의 힘이 가득찬 창을 난무시켜,3연속으로 적을 관철하는 오의',
+    description: '위력: A(공·민)　대상: 적 랜덤 3회　속성: 성 파사의 힘이 가득찬 창을 난무시켜,3연속으로 적을 관철하는 오의',
     type: '10',
     icon: 836,
     scope: 3,
@@ -1780,7 +1930,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1062',
     name: '산·리베리온',
-    description: '위력: S(공·민)　대상: 적 하나　속성: 성\n파사의 힘을 창에게 머물어, 악을 멸 하는 신성 오의',
+    description: '위력: S(공·민)　대상: 적 하나　속성: 성 파사의 힘을 창에게 머물어, 악을 멸 하는 신성 오의',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1796,7 +1946,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1063',
     name: '산·미라쥬',
-    description: '위력: S(공·민)　대상: 적 랜덤 8회　속성: 성\n도당을 짠 마물을 정리해 토벌해 멸하는, 전처녀의 창오의',
+    description: '위력: S(공·민)　대상: 적 랜덤 8회　속성: 성 도당을 짠 마물을 정리해 토벌해 멸하는, 전처녀의 창오의',
     type: '10',
     icon: 836,
     scope: 3,
@@ -1812,7 +1962,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1064',
     name: '센토어 버스트',
-    description: '위력: S(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n인마일체의 동작으로 파괴의 찌르기를 내지르는 창오의',
+    description: '위력: S(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 인마일체의 동작으로 파괴의 찌르기를 내지르는 창오의',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1828,7 +1978,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1065',
     name: '스파이럴 더스트',
-    description: '위력: S(공·민)　대상: 적 랜덤 4회\n진공을 일으키게 할 정도의 속도로 연속 찌르기를 내지르는 오의',
+    description: '위력: S(공·민)　대상: 적 랜덤 4회 진공을 일으키게 할 정도의 속도로 연속 찌르기를 내지르는 오의',
     type: '10',
     icon: 836,
     scope: 3,
@@ -1844,7 +1994,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1066',
     name: '천마 두엽참',
-    description: '위력: A(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n하늘 높이 비상 해, 두상으로부터 일격을 먹이는 필살의 창 기술',
+    description: '위력: A(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 하늘 높이 비상 해, 두상으로부터 일격을 먹이는 필살의 창 기술',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1860,7 +2010,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1067',
     name: '스카이트이스타',
-    description: '위력: A(공·민)　대상: 적 전체\n화려하게 공중을 춤추어, 참격과 진공파를 내지르는 하피족의 오의',
+    description: '위력: A(공·민)　대상: 적 전체 화려하게 공중을 춤추어, 참격과 진공파를 내지르는 하피족의 오의',
     type: '10',
     icon: 836,
     scope: 2,
@@ -1876,7 +2026,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1068',
     name: '멸룡창',
-    description: '위력: A(공·민)　대상: 적 하나　효과: 용특공\n천공으로부터 강하해 용을 사냥하는 드래곤 헌터의 창 기술',
+    description: '위력: A(공·민)　대상: 적 하나　효과: 용특공 천공으로부터 강하해 용을 사냥하는 드래곤 헌터의 창 기술',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1892,7 +2042,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1069',
     name: '이류젼란스',
-    description: '위력: S(공·민)　대상: 적 하나　속성: 성＋　효과: ＋\n창처를 난무시켜, 어둠을 떠는 신성 오의',
+    description: '위력: S(공·민)　대상: 적 하나　속성: 성＋　효과: ＋ 창처를 난무시켜, 어둠을 떠는 신성 오의',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1908,7 +2058,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1070',
     name: '나이트메아란스',
-    description: '위력: S(공·민)　대상: 적 하나　속성: 어둠＋　효과: ＋\n어둠의 파동을 창에게 띠어 적을 꿰뚫는 어둠의 오의',
+    description: '위력: S(공·민)　대상: 적 하나　속성: 어둠＋　효과: ＋ 어둠의 파동을 창에게 띠어 적을 꿰뚫는 어둠의 오의',
     type: '10',
     icon: 836,
     scope: 1,
@@ -1924,7 +2074,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1071',
     name: '호리란딘그',
-    description: '위력: A(공·민)　대상: 적 전체　속성: 성\n하늘 높게 비상 해, 지상에 향해 성스러운 창을 내리게 하는 오의',
+    description: '위력: A(공·민)　대상: 적 전체　속성: 성 하늘 높게 비상 해, 지상에 향해 성스러운 창을 내리게 하는 오의',
     type: '10',
     icon: 836,
     scope: 2,
@@ -1940,7 +2090,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1072',
     name: '다크네스드라이브',
-    description: '위력: A(공·민)　대상: 적 전체　속성: 어둠\n천공을 달려 어둠의 마법진을 그려, 적 전체를 파괴의 파동에 말려들게 하는 오의',
+    description: '위력: A(공·민)　대상: 적 전체　속성: 어둠 천공을 달려 어둠의 마법진을 그려, 적 전체를 파괴의 파동에 말려들게 하는 오의',
     type: '10',
     icon: 836,
     scope: 2,
@@ -1956,7 +2106,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1073',
     name: '성창난무',
-    description: '위력: S(공·민)　대상: 적 랜덤 4회　속성: 성\n성스러운 파동을 담은 찌르기를 4연속으로 내지르는 난무 오의',
+    description: '위력: S(공·민)　대상: 적 랜덤 4회　속성: 성 성스러운 파동을 담은 찌르기를 4연속으로 내지르는 난무 오의',
     type: '10',
     icon: 836,
     scope: 3,
@@ -1972,7 +2122,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1074',
     name: '마창난무',
-    description: '위력: S(공·민)　대상: 적 랜덤 4회　속성: 어둠\n어둠의 파동을 담은 찌르기를 4연속으로 내지르는 난무 오의',
+    description: '위력: S(공·민)　대상: 적 랜덤 4회　속성: 어둠 어둠의 파동을 담은 찌르기를 4연속으로 내지르는 난무 오의',
     type: '10',
     icon: 836,
     scope: 3,
@@ -1988,7 +2138,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1075',
     name: '나선광창',
-    description: '위력: B(공·민)　대상: 적 전체　속성: 성\n나선을 낳는 찌르기를 연속으로 내질러, 적 전체를 공격하는 창 기술',
+    description: '위력: B(공·민)　대상: 적 전체　속성: 성 나선을 낳는 찌르기를 연속으로 내질러, 적 전체를 공격하는 창 기술',
     type: '10',
     icon: 836,
     scope: 2,
@@ -2004,7 +2154,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1076',
     name: '멸마섬황',
-    description: '위력: A(공·민)　대상: 적 전체　속성: 성\n창으로부터 성스러운 오라를 조사해, 사악을 다 굽는 오의',
+    description: '위력: A(공·민)　대상: 적 전체　속성: 성 창으로부터 성스러운 오라를 조사해, 사악을 다 굽는 오의',
     type: '10',
     icon: 836,
     scope: 2,
@@ -2020,7 +2170,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1077',
     name: '포톤란서',
-    description: '위력: B(공·민)　대상: 적 하나　속성: 성\n창으로부터 미츠코를 추방해, 적 하나를 체내로부터 파괴하는 창 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: 성 창으로부터 미츠코를 추방해, 적 하나를 체내로부터 파괴하는 창 기술',
     type: '10',
     icon: 836,
     scope: 1,
@@ -2036,7 +2186,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1078',
     name: '니베룬바레스티',
-    description: '위력: S(공·민)　대상: 적 하나　속성: 성＋　효과: ＋\n화려한 연속 공격의 뒤, 성스러운 창을 적에게 투척 하는 전처녀의 최종 오의',
+    description: '위력: S(공·민)　대상: 적 하나　속성: 성＋　효과: ＋ 화려한 연속 공격의 뒤, 성스러운 창을 적에게 투척 하는 전처녀의 최종 오의',
     type: '10',
     icon: 836,
     scope: 1,
@@ -2052,7 +2202,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1080',
     name: '유성창',
-    description: '위력: S(공·민)　대상: 적 전체　속성: ＋　효과: ＋\n유성과 같이 적에게 창을 주입하는 파괴 오의',
+    description: '위력: S(공·민)　대상: 적 전체　속성: ＋　효과: ＋ 유성과 같이 적에게 창을 주입하는 파괴 오의',
     type: '10',
     icon: 836,
     scope: 2,
@@ -2068,7 +2218,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1082',
     name: '용검',
-    description: '위력: E(공·민)　대상: 적 하나　효과: HP흡수·SP흡수\n마력을 담은 창으로 적의 HP와 SP를 흡수하는 기술',
+    description: '위력: E(공·민)　대상: 적 하나　효과: HP흡수·SP흡수 마력을 담은 창으로 적의 HP와 SP를 흡수하는 기술',
     type: '10',
     icon: 836,
     scope: 1,
@@ -2081,7 +2231,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1083',
     name: '신용검',
-    description: '위력: D(공·민)　대상: 적 하나　효과: HP흡수·MP흡수·SP흡수\n성스러운 마력을 담은 창으로 적의 HP와 MP, SP를 흡수하는 기술',
+    description: '위력: D(공·민)　대상: 적 하나　효과: HP흡수·MP흡수·SP흡수 성스러운 마력을 담은 창으로 적의 HP와 MP, SP를 흡수하는 기술',
     type: '10',
     icon: 836,
     scope: 1,
@@ -2094,7 +2244,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1084',
     name: '사용검',
-    description: '위력: D(공·민)　대상: 적 하나　효과: HP흡수·SP흡수·즉사\n적의 HP와 SP를 흡수해, 동시에 즉사시키는 어둠의 창 기술',
+    description: '위력: D(공·민)　대상: 적 하나　효과: HP흡수·SP흡수·즉사 적의 HP와 SP를 흡수해, 동시에 즉사시키는 어둠의 창 기술',
     type: '10',
     icon: 836,
     scope: 1,
@@ -2107,7 +2257,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1085',
     name: '기원의 성창',
-    description: '대상: 아군 하나　효과: HP중 회복\n성스러운 창을 하늘로 내걸어 빌어, 아군 하나의 HP를 회복 시킨다',
+    description: '대상: 아군 하나　효과: HP중 회복 성스러운 창을 하늘로 내걸어 빌어, 아군 하나의 HP를 회복 시킨다',
     type: '10',
     icon: 836,
     scope: 7,
@@ -2123,7 +2273,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1086',
     name: '기적의 성창',
-    description: '대상: 아군 전체　효과: HP중 회복\n기적의 창을 하늘로 내걸어 빌어, 아군 전원의 HP를 회복 시킨다',
+    description: '대상: 아군 전체　효과: HP중 회복 기적의 창을 하늘로 내걸어 빌어, 아군 전원의 HP를 회복 시킨다',
     type: '10',
     icon: 836,
     scope: 8,
@@ -2139,7 +2289,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1087',
     name: '성창차지',
-    description: '대상: 아군 전체　효과: 공격력 업\n성스러운 창을 내걸어 고무 해, 아군 전체의 공격력을 업 시킨다',
+    description: '대상: 아군 전체　효과: 공격력 업 성스러운 창을 내걸어 고무 해, 아군 전체의 공격력을 업 시킨다',
     type: '10',
     icon: 836,
     scope: 8,
@@ -2152,7 +2302,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1088',
     name: '성창가드',
-    description: '대상: 아군 전체　효과: 방어력 업\n성스러운 창을 내걸어 수호해, 아군 전체의 방어력을 업 시킨다',
+    description: '대상: 아군 전체　효과: 방어력 업 성스러운 창을 내걸어 수호해, 아군 전체의 방어력을 업 시킨다',
     type: '10',
     icon: 836,
     scope: 8,
@@ -2165,7 +2315,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1089',
     name: '처음으로 공을 세우는 일',
-    description: '대상: 사용자　효과: 민첩성 대업·「창 기술」마셔 사용 가능\n창 기술 밖에 사용 할 수 없게 되지만, 민첩성이 현격히 상승하는 기술',
+    description: '대상: 사용자　효과: 민첩성 대업·「창 기술」마셔 사용 가능 창 기술 밖에 사용 할 수 없게 되지만, 민첩성이 현격히 상승하는 기술',
     type: '10',
     icon: 836,
     scope: 11,
@@ -2178,7 +2328,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1090',
     name: '인마일체',
-    description: '대상: 사용자　효과: 「창 기술」마셔 사용 가능·연속 발동·SP자동 회복\n창 기술 밖에 사용 할 수 없게 되지만, 1 턴에 2회 발동한다',
+    description: '대상: 사용자　효과: 「창 기술」마셔 사용 가능·연속 발동·SP자동 회복 창 기술 밖에 사용 할 수 없게 되지만, 1 턴에 2회 발동한다',
     type: '10',
     icon: 836,
     scope: 11,
@@ -2191,7 +2341,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1091',
     name: '이크시온',
-    description: '대상: 사용자　효과: 2회 행동·「창 기술」마셔 사용 가능·SP자동 회복\n창 기술 밖에 사용 할 수 없게 되지만, 1 턴에 2회 행동할 수 있는 오의',
+    description: '대상: 사용자　효과: 2회 행동·「창 기술」마셔 사용 가능·SP자동 회복 창 기술 밖에 사용 할 수 없게 되지만, 1 턴에 2회 행동할 수 있는 오의',
     type: '10',
     icon: 836,
     scope: 11,
@@ -2204,7 +2354,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1092',
     name: '하이차지',
-    description: '대상: 사용자　효과: SP중 회복\n성창에게 기력을 담아, SP를 50% 회복 한다',
+    description: '대상: 사용자　효과: SP중 회복 성창에게 기력을 담아, SP를 50% 회복 한다',
     type: '10',
     icon: 836,
     scope: 11,
@@ -2217,7 +2367,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1093',
     name: '엑셀 차지',
-    description: '대상: 사용자　효과: SP대회복\n성창에게 기력을 담아, SP를 전회복 한다',
+    description: '대상: 사용자　효과: SP대회복 성창에게 기력을 담아, SP를 전회복 한다',
     type: '10',
     icon: 836,
     scope: 11,
@@ -2230,7 +2380,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1099',
     name: '폭진 도끼',
-    description: '위력: B(공)　대상: 적 하나\n도끼의 중량을 파괴력으로 바꾸어, 연속으로 주입하는 도끼 기술',
+    description: '위력: B(공)　대상: 적 하나 도끼의 중량을 파괴력으로 바꾸어, 연속으로 주입하는 도끼 기술',
     type: '11',
     icon: 972,
     scope: 1,
@@ -2245,7 +2395,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1100',
     name: '맹우회전도끼',
-    description: '위력: B(공)　대상: 적 전체\n파워풀하게 회전하면서 적 전체에 타격을 주입하는 도끼 기술',
+    description: '위력: B(공)　대상: 적 전체 파워풀하게 회전하면서 적 전체에 타격을 주입하는 도끼 기술',
     type: '11',
     icon: 972,
     scope: 2,
@@ -2260,7 +2410,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1101',
     name: '보르케이노악스',
-    description: '위력: B(공)　대상: 적 하나　속성: 불길\n날뛰는 화산과 같은 일격을 적에게 주입하는 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: 불길 날뛰는 화산과 같은 일격을 적에게 주입하는 기술',
     type: '11',
     icon: 972,
     scope: 1,
@@ -2275,7 +2425,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1102',
     name: '스그하리케인',
-    description: '위력: C(공)　대상: 적 전체　속성: 바람\n민첩한 모습으로 진공파를 야기해, 적 전체를 공격하는 도끼 기술',
+    description: '위력: C(공)　대상: 적 전체　속성: 바람 민첩한 모습으로 진공파를 야기해, 적 전체를 공격하는 도끼 기술',
     type: '11',
     icon: 972,
     scope: 2,
@@ -2290,7 +2440,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1103',
     name: '버서커 러쉬',
-    description: '위력: A(공)　대상: 적 랜덤 3회\n광전사의 도끼 다루기로, 적에게 난격을 먹이는 도끼 기술',
+    description: '위력: A(공)　대상: 적 랜덤 3회 광전사의 도끼 다루기로, 적에게 난격을 먹이는 도끼 기술',
     type: '11',
     icon: 972,
     scope: 3,
@@ -2305,7 +2455,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1104',
     name: '미노타우로스 크래쉬',
-    description: '위력: S(공)　대상: 적 하나　효과: 회심or미스\n혼신의 내리치기로 회심의 일격을 내지르지만, 미스의 가능성도 높다',
+    description: '위력: S(공)　대상: 적 하나　효과: 회심or미스 혼신의 내리치기로 회심의 일격을 내지르지만, 미스의 가능성도 높다',
     type: '11',
     icon: 972,
     scope: 1,
@@ -2320,7 +2470,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1105',
     name: '기가 크래쉬',
-    description: '위력: SS(공)　대상: 적 하나　효과: 회심or미스\n극한의 내리치기로 회심의 일격을 내지르지만, 미스의 가능성도 높다',
+    description: '위력: SS(공)　대상: 적 하나　효과: 회심or미스 극한의 내리치기로 회심의 일격을 내지르지만, 미스의 가능성도 높다',
     type: '11',
     icon: 972,
     scope: 1,
@@ -2335,7 +2485,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1106',
     name: '굉염 도끼',
-    description: '위력: B(공)　대상: 적 하나　속성: 불길\n도끼에게 불길을 품어, 적에게 내던지는 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: 불길 도끼에게 불길을 품어, 적에게 내던지는 기술',
     type: '11',
     icon: 972,
     scope: 1,
@@ -2350,7 +2500,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1107',
     name: '쇄빙도끼',
-    description: '위력: B(공)　대상: 적 하나　속성: 얼음\n도끼에게 얼음을 품어, 적에게 내던지는 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: 얼음 도끼에게 얼음을 품어, 적에게 내던지는 기술',
     type: '11',
     icon: 972,
     scope: 1,
@@ -2365,7 +2515,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1108',
     name: '번개신 도끼',
-    description: '위력: B(공)　대상: 적 하나　속성: 번개\n도끼에게 번개를 품어, 적에게 내던지는 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: 번개 도끼에게 번개를 품어, 적에게 내던지는 기술',
     type: '11',
     icon: 972,
     scope: 1,
@@ -2380,7 +2530,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1109',
     name: '굉염란 도끼',
-    description: '위력: A(공)　대상: 적 랜덤 3회　속성: 불길\n도끼에게 불길을 품어, 적에게 흐트러지고 공격하는 기술',
+    description: '위력: A(공)　대상: 적 랜덤 3회　속성: 불길 도끼에게 불길을 품어, 적에게 흐트러지고 공격하는 기술',
     type: '11',
     icon: 972,
     scope: 3,
@@ -2395,7 +2545,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1110',
     name: '쇄빙란 도끼',
-    description: '위력: A(공)　대상: 적 랜덤 3회　속성: 얼음\n도끼에게 얼음을 품어, 적에게 흐트러지고 공격하는 기술',
+    description: '위력: A(공)　대상: 적 랜덤 3회　속성: 얼음 도끼에게 얼음을 품어, 적에게 흐트러지고 공격하는 기술',
     type: '11',
     icon: 972,
     scope: 3,
@@ -2410,7 +2560,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1111',
     name: '번개신란 도끼',
-    description: '위력: A(공)　대상: 적 랜덤 3회　속성: 번개\n도끼에게 번개를 품어, 적에게 흐트러지고 공격하는 기술',
+    description: '위력: A(공)　대상: 적 랜덤 3회　속성: 번개 도끼에게 번개를 품어, 적에게 흐트러지고 공격하는 기술',
     type: '11',
     icon: 972,
     scope: 3,
@@ -2425,7 +2575,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1112',
     name: '괴 도끼·오오야마명동',
-    description: '위력: S(공)　대상: 적 하나　속성: 흙＋　효과: ＋\n흙의 힘을 도끼에게 머물어, 혼신의 힘을 집중해 주입하는 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: 흙＋　효과: ＋ 흙의 힘을 도끼에게 머물어, 혼신의 힘을 집중해 주입하는 오의',
     type: '11',
     icon: 972,
     scope: 1,
@@ -2440,7 +2590,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1113',
     name: '데드 리 호크',
-    description: '위력: A(공)　대상: 적 전체\n도끼를 부메랑과 같이 몇번이나 내던지는 기술',
+    description: '위력: A(공)　대상: 적 전체 도끼를 부메랑과 같이 몇번이나 내던지는 기술',
     type: '11',
     icon: 972,
     scope: 2,
@@ -2455,7 +2605,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1114',
     name: '오크트·디아보로',
-    description: '위력: S(공)　대상: 적 랜덤 8회　속성: ＋　효과: ＋\n투쟁심을 극한으로까지 높여, 적의 무리에 도끼의 난타를 주입하는 오의',
+    description: '위력: S(공)　대상: 적 랜덤 8회　속성: ＋　효과: ＋ 투쟁심을 극한으로까지 높여, 적의 무리에 도끼의 난타를 주입하는 오의',
     type: '11',
     icon: 972,
     scope: 3,
@@ -2470,7 +2620,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1115',
     name: '미진련 도끼',
-    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋\n호완에 의한 도끼의 난타로 적을 난타로 하는 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋ 호완에 의한 도끼의 난타로 적을 난타로 하는 오의',
     type: '11',
     icon: 972,
     scope: 1,
@@ -2485,7 +2635,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1116',
     name: '절·회신격',
-    description: '위력: A(공)　대상: 적 전체\n대지를 부수는 일격으로, 적 전체에 파괴의 충격을 가져오는 오의',
+    description: '위력: A(공)　대상: 적 전체 대지를 부수는 일격으로, 적 전체에 파괴의 충격을 가져오는 오의',
     type: '11',
     icon: 972,
     scope: 2,
@@ -2500,7 +2650,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1118',
     name: '혼란도끼',
-    description: '대상: 사용자　효과: 흐트러지고 치는 것 가능\n투쟁심을 높여, 혼란 치는 것을 내지르는 기술',
+    description: '대상: 사용자　효과: 흐트러지고 치는 것 가능 투쟁심을 높여, 혼란 치는 것을 내지르는 기술',
     type: '11',
     icon: 972,
     scope: 11,
@@ -2512,7 +2662,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1124',
     name: '강습 곤봉',
-    description: '위력: B(공)　대상: 적 하나\n센 힘으로 적을 일격 해, 분쇄하는 곤봉 기술',
+    description: '위력: B(공)　대상: 적 하나 센 힘으로 적을 일격 해, 분쇄하는 곤봉 기술',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2527,7 +2677,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1125',
     name: '난타곤봉',
-    description: '위력: A(공)　대상: 적 하나\n민첩한 곤봉 다루기로 적에게 연속 공격을 주입하는 기술',
+    description: '위력: A(공)　대상: 적 하나 민첩한 곤봉 다루기로 적에게 연속 공격을 주입하는 기술',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2542,7 +2692,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1126',
     name: '통전격',
-    description: '위력: E(공)　대상: 적 하나　속성: 번개\n전격을 품은 곤봉을, 적에게 주입하는 기술',
+    description: '위력: E(공)　대상: 적 하나　속성: 번개 전격을 품은 곤봉을, 적에게 주입하는 기술',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2557,7 +2707,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1127',
     name: '좀비 난격',
-    description: '위력: C(공)　대상: 적 랜덤 3회\n아무것도 생각하지 않고 곤봉을 흔들어, 적의 무리를 난타로 하는 기술',
+    description: '위력: C(공)　대상: 적 랜덤 3회 아무것도 생각하지 않고 곤봉을 흔들어, 적의 무리를 난타로 하는 기술',
     type: '12',
     icon: 1056,
     scope: 3,
@@ -2572,7 +2722,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1128',
     name: '선 곤봉 일섬격',
-    description: '위력: B(공)　대상: 적 전체\n곤봉으로 적 전체를 일섬 해, 격렬한 난타를 퍼붓는 기술',
+    description: '위력: B(공)　대상: 적 전체 곤봉으로 적 전체를 일섬 해, 격렬한 난타를 퍼붓는 기술',
     type: '12',
     icon: 1056,
     scope: 2,
@@ -2587,7 +2737,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1129',
     name: '암석 흘림',
-    description: '위력: A(공)　대상: 적 전체\n곤봉으로 암석을 튕겨날려, 적의 두상에 내리게 하는 곤봉 기술',
+    description: '위력: A(공)　대상: 적 전체 곤봉으로 암석을 튕겨날려, 적의 두상에 내리게 하는 곤봉 기술',
     type: '12',
     icon: 1056,
     scope: 2,
@@ -2602,7 +2752,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1130',
     name: '동결격',
-    description: '위력: C(공)　대상: 적 하나　속성: 얼음\n얼음을 품은 곤봉으로, 적을 타격하는 기술',
+    description: '위력: C(공)　대상: 적 하나　속성: 얼음 얼음을 품은 곤봉으로, 적을 타격하는 기술',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2617,7 +2767,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1131',
     name: '굉빙격',
-    description: '위력: A(공)　대상: 적 하나　속성: 얼음\n얼음을 품은 곤봉의 타격으로, 적을 동결시키면서 분쇄하는 오의',
+    description: '위력: A(공)　대상: 적 하나　속성: 얼음 얼음을 품은 곤봉의 타격으로, 적을 동결시키면서 분쇄하는 오의',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2632,7 +2782,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1132',
     name: '귀신격',
-    description: '위력: S(공)　대상: 적 하나　효과: 회심or미스\n귀신의 센 힘으로 회심의 일격을 내지르지만, 미스의 가능성도 높다',
+    description: '위력: S(공)　대상: 적 하나　효과: 회심or미스 귀신의 센 힘으로 회심의 일격을 내지르지만, 미스의 가능성도 높다',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2647,7 +2797,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1133',
     name: '귀신 난격',
-    description: '위력: SS(공)　대상: 적 랜덤 4회　효과: 회심or미스\n귀신의 센 힘으로 회심의 일격을 난타하지만, 미스의 가능성도 높다',
+    description: '위력: SS(공)　대상: 적 랜덤 4회　효과: 회심or미스 귀신의 센 힘으로 회심의 일격을 난타하지만, 미스의 가능성도 높다',
     type: '12',
     icon: 1056,
     scope: 3,
@@ -2662,7 +2812,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1134',
     name: '어스 크래쉬 고브 인',
-    description: '위력: D(공)　대상: 적 하나　효과: 회심or미스\n고블린 아가씨가 짜낸 타격 기술이지만, 명중율은 낮다',
+    description: '위력: D(공)　대상: 적 하나　효과: 회심or미스 고블린 아가씨가 짜낸 타격 기술이지만, 명중율은 낮다',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2677,7 +2827,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1135',
     name: '고브 인 메이 크라이',
-    description: '위력: C(공)　대상: 적 하나\n대지를 두드려 모래 먼지를 일으켜, 게다가 잊혀져 난타하는 아류 기술',
+    description: '위력: C(공)　대상: 적 하나 대지를 두드려 모래 먼지를 일으켜, 게다가 잊혀져 난타하는 아류 기술',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2692,7 +2842,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1136',
     name: '고브 인 마스트 다이',
-    description: '위력: A(공)　대상: 적 하나\n모래 먼지에 잊혀져 적을 맹난타하는 아류의 최종 오의',
+    description: '위력: A(공)　대상: 적 하나 모래 먼지에 잊혀져 적을 맹난타하는 아류의 최종 오의',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2707,7 +2857,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1137',
     name: '슬라임 짓이김',
-    description: '위력: D(공)　대상: 적 하나　효과: 슬라임 특공\n슬라임을 두드려 잡는 곤봉의 일격',
+    description: '위력: D(공)　대상: 적 하나　효과: 슬라임 특공 슬라임을 두드려 잡는 곤봉의 일격',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2722,7 +2872,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1138',
     name: '점마파열격',
-    description: '위력: C(공)　대상: 적 전체　효과: 슬라임 특공\n슬라임의 집단이 단번에 튀어날 정도의 대타격',
+    description: '위력: C(공)　대상: 적 전체　효과: 슬라임 특공 슬라임의 집단이 단번에 튀어날 정도의 대타격',
     type: '12',
     icon: 1056,
     scope: 2,
@@ -2737,7 +2887,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1139',
     name: '주원격',
-    description: '위력: C(공·마)　대상: 적 하나　효과: 석화·즉사\n깊은 저주를 담은 곤봉의 타격 공격',
+    description: '위력: C(공·마)　대상: 적 하나　효과: 석화·즉사 깊은 저주를 담은 곤봉의 타격 공격',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2752,7 +2902,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1140',
     name: '카스드인파크트',
-    description: '위력: A(공·마)　대상: 적 하나　효과: 석화·즉사\n수백년의 저주를 담아, 적의 심신을 동시에 파괴하는 오의',
+    description: '위력: A(공·마)　대상: 적 하나　효과: 석화·즉사 수백년의 저주를 담아, 적의 심신을 동시에 파괴하는 오의',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2767,7 +2917,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1141',
     name: '와이르드후르스그',
-    description: '위력: A(공)　대상: 적 전체\n센 힘으로 곤봉을 휘둘러, 회전하면서 적 전체를 공격하는 기술',
+    description: '위력: A(공)　대상: 적 전체 센 힘으로 곤봉을 휘둘러, 회전하면서 적 전체를 공격하는 기술',
     type: '12',
     icon: 1056,
     scope: 2,
@@ -2782,7 +2932,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1142',
     name: '코즈믹크브라스트',
-    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋\n은하의 별들을 파괴한다고 말해지는 곤봉의 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋ 은하의 별들을 파괴한다고 말해지는 곤봉의 오의',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2797,7 +2947,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1143',
     name: '크리티컬 해머',
-    description: '위력: B(공)　대상: 적 하나　효과: 혼란\n혼신의 힘으로 적의 정수리에 일격을 주입해, 졸도시키는 곤봉 기술',
+    description: '위력: B(공)　대상: 적 하나　효과: 혼란 혼신의 힘으로 적의 정수리에 일격을 주입해, 졸도시키는 곤봉 기술',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2812,7 +2962,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1144',
     name: '그랜드 슬라이드',
-    description: '위력: C(공)　대상: 적 전체\n지면을 미끄러지도록(듯이) 곤봉을 흔들어, 적 전체를 벼랑 넘어뜨리는 기술',
+    description: '위력: C(공)　대상: 적 전체 지면을 미끄러지도록(듯이) 곤봉을 흔들어, 적 전체를 벼랑 넘어뜨리는 기술',
     type: '12',
     icon: 1056,
     scope: 2,
@@ -2827,7 +2977,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1145',
     name: '귀신란파',
-    description: '위력: S(공)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n열풍과 같이 내질러지는 곤봉의 난타 오의',
+    description: '위력: S(공)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 열풍과 같이 내질러지는 곤봉의 난타 오의',
     type: '12',
     icon: 1056,
     scope: 3,
@@ -2842,7 +2992,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1146',
     name: '지 열대렬파',
-    description: '위력: A(공)　대상: 적 전체　속성: 흙\n강렬한 일격으로 대렬파를 발생시켜, 적을 분쇄하는 곤봉 기술',
+    description: '위력: A(공)　대상: 적 전체　속성: 흙 강렬한 일격으로 대렬파를 발생시켜, 적을 분쇄하는 곤봉 기술',
     type: '12',
     icon: 1056,
     scope: 2,
@@ -2857,7 +3007,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1147',
     name: '더스트 스플래쉬',
-    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋\n곤봉을 적에게 고속으로 주입해, 충격으로 분쇄하는 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋ 곤봉을 적에게 고속으로 주입해, 충격으로 분쇄하는 오의',
     type: '12',
     icon: 1056,
     scope: 1,
@@ -2872,7 +3022,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1148',
     name: '데스토션드라이브',
-    description: '위력: A(공)　대상: 적 전체　속성: ＋　효과: ＋\n대지에 곤봉의 일격을 주입해, 충격파를 일으키는 오의',
+    description: '위력: A(공)　대상: 적 전체　속성: ＋　효과: ＋ 대지에 곤봉의 일격을 주입해, 충격파를 일으키는 오의',
     type: '12',
     icon: 1056,
     scope: 2,
@@ -2887,7 +3037,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1156',
     name: '거듭하고 베어',
-    description: '위력: D(공or마)　대상: 적 하나　속성: ＋　효과: ＋\n칼날로 재빠르게 2회베어 붙이는 낫 기술',
+    description: '위력: D(공or마)　대상: 적 하나　속성: ＋　효과: ＋ 칼날로 재빠르게 2회베어 붙이는 낫 기술',
     type: '13',
     icon: 1182,
     scope: 1,
@@ -2902,7 +3052,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1157',
     name: '얼음결단',
-    description: '위력: D(공or마)　대상: 적 하나　속성: 얼음＋　효과: ＋\n얼음을 품은 칼날로 적을 끊는 낫 기술',
+    description: '위력: D(공or마)　대상: 적 하나　속성: 얼음＋　효과: ＋ 얼음을 품은 칼날로 적을 끊는 낫 기술',
     type: '13',
     icon: 1182,
     scope: 1,
@@ -2917,7 +3067,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1158',
     name: '련참카마이타치',
-    description: '위력: D(공or마)　대상: 적 하나　속성: 바람＋　효과: ＋\n질풍과 같이 적을 잘게 자르는 낫 기술',
+    description: '위력: D(공or마)　대상: 적 하나　속성: 바람＋　효과: ＋ 질풍과 같이 적을 잘게 자르는 낫 기술',
     type: '13',
     icon: 1182,
     scope: 1,
@@ -2932,7 +3082,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1159',
     name: '4그림자낫',
-    description: '위력: B(공or마)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n차원에 사이를 들어가라, 차례차례로 어둠의 칼날을 소환 하는 낫 기술',
+    description: '위력: B(공or마)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 차원에 사이를 들어가라, 차례차례로 어둠의 칼날을 소환 하는 낫 기술',
     type: '13',
     icon: 1182,
     scope: 3,
@@ -2947,7 +3097,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1160',
     name: '일섬 후려치기',
-    description: '위력: C(공or마)　대상: 적 전체　속성: ＋　효과: 좀비 특공＋\n적의 무리를 일격으로 후려쳐 넘긴 광범위 공격',
+    description: '위력: C(공or마)　대상: 적 전체　속성: ＋　효과: 좀비 특공＋ 적의 무리를 일격으로 후려쳐 넘긴 광범위 공격',
     type: '13',
     icon: 1182,
     scope: 2,
@@ -2962,7 +3112,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1161',
     name: '암흑 일섬',
-    description: '위력: S(공or마)　대상: 적 하나　속성: ＋　효과: 좀비 특공＋\n신속의 칼날로 적을 일섬 하는 낫에서의 거합',
+    description: '위력: S(공or마)　대상: 적 하나　속성: ＋　효과: 좀비 특공＋ 신속의 칼날로 적을 일섬 하는 낫에서의 거합',
     type: '13',
     icon: 1182,
     scope: 1,
@@ -2977,7 +3127,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1162',
     name: '암봉진',
-    description: '위력: B(공or마)　대상: 적 하나　속성: ＋　효과: 고스트 특공＋\n마력의 칼날로 차원을 찢어, 어둠의 힘을 분출하게 하는 오의',
+    description: '위력: B(공or마)　대상: 적 하나　속성: ＋　효과: 고스트 특공＋ 마력의 칼날로 차원을 찢어, 어둠의 힘을 분출하게 하는 오의',
     type: '13',
     icon: 1182,
     scope: 1,
@@ -2992,7 +3142,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1163',
     name: '어둠 산화',
-    description: '위력: S(공or마)　대상: 적 하나　속성: ＋　효과: 고스트 특공＋\n어둠의 칼날로 적을 베어, 화라고 가라앉힐 수 있는 무자비한 낫 기술',
+    description: '위력: S(공or마)　대상: 적 하나　속성: ＋　효과: 고스트 특공＋ 어둠의 칼날로 적을 베어, 화라고 가라앉힐 수 있는 무자비한 낫 기술',
     type: '13',
     icon: 1182,
     scope: 1,
@@ -3007,7 +3157,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1164',
     name: '페인트잡파',
-    description: '위력: B(공or마)　대상: 적 하나　속성: ＋　효과: 인형 특공＋\n페인트를 끼워 넣어, 적을 해체하는 낫 기술',
+    description: '위력: B(공or마)　대상: 적 하나　속성: ＋　효과: 인형 특공＋ 페인트를 끼워 넣어, 적을 해체하는 낫 기술',
     type: '13',
     icon: 1182,
     scope: 1,
@@ -3022,7 +3172,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1165',
     name: '인형 파괴격',
-    description: '위력: S(공or마)　대상: 적 하나　속성: ＋　효과: 인형 특공＋\n계략에 숙달 해, 인형을 해체하는 낫 기술',
+    description: '위력: S(공or마)　대상: 적 하나　속성: ＋　효과: 인형 특공＋ 계략에 숙달 해, 인형을 해체하는 낫 기술',
     type: '13',
     icon: 1182,
     scope: 1,
@@ -3037,7 +3187,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1166',
     name: '결정참',
-    description: '위력: B(공or마)　대상: 적 하나　속성: 얼음＋　효과: ＋\n공간을 동결시키면서 적을 베는 낫 기술',
+    description: '위력: B(공or마)　대상: 적 하나　속성: 얼음＋　효과: ＋ 공간을 동결시키면서 적을 베는 낫 기술',
     type: '13',
     icon: 1182,
     scope: 1,
@@ -3052,7 +3202,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1167',
     name: '음양장인',
-    description: '위력: S(공or마)　대상: 적 하나　속성: 얼음＋　효과: ＋\n음양의 진을 그리면서 적의 생명을 끊는 낫 기술',
+    description: '위력: S(공or마)　대상: 적 하나　속성: 얼음＋　효과: ＋ 음양의 진을 그리면서 적의 생명을 끊는 낫 기술',
     type: '13',
     icon: 1182,
     scope: 1,
@@ -3067,7 +3217,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1168',
     name: '명계파',
-    description: '위력: A(공or마)　대상: 적 전체　속성: ＋　효과: 즉사＋\n명계의 문을 열어, 낫을 통해서 어둠의 파동을 발하는 오의',
+    description: '위력: A(공or마)　대상: 적 전체　속성: ＋　효과: 즉사＋ 명계의 문을 열어, 낫을 통해서 어둠의 파동을 발하는 오의',
     type: '13',
     icon: 1182,
     scope: 2,
@@ -3082,7 +3232,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1169',
     name: '사련인',
-    description: '위력: S(공or마)　대상: 적 하나　속성: ＋　효과: ＋\n춤추는 것 같은 낫다루기로 적을 죽어 권하는 연속참격',
+    description: '위력: S(공or마)　대상: 적 하나　속성: ＋　효과: ＋ 춤추는 것 같은 낫다루기로 적을 죽어 권하는 연속참격',
     type: '13',
     icon: 1182,
     scope: 1,
@@ -3097,7 +3247,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1170',
     name: '레퀴엠 리퍼',
-    description: '위력: S(공or마)　대상: 적 전체　속성: ＋　효과: 즉사＋\n적 전체의 생명을 한번 휘두름으로 끊는 필멸의 낫 기술',
+    description: '위력: S(공or마)　대상: 적 전체　속성: ＋　효과: 즉사＋ 적 전체의 생명을 한번 휘두름으로 끊는 필멸의 낫 기술',
     type: '13',
     icon: 1182,
     scope: 2,
@@ -3112,7 +3262,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1172',
     name: '사신의 낫',
-    description: '대상: 적 하나　효과: 즉사\n적의 영혼을 꺼내, 무자비하게 베어 내는 낫 기술 오의',
+    description: '대상: 적 하나　효과: 즉사 적의 영혼을 꺼내, 무자비하게 베어 내는 낫 기술 오의',
     type: '13',
     icon: 1182,
     scope: 1,
@@ -3124,7 +3274,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1174',
     name: '최면의 낫',
-    description: '대상: 적 전체　효과: 수면\n낫을 교묘하게 조종해 최면 상태에 떨어뜨려, 적의 의식을 상실시키는 기술',
+    description: '대상: 적 전체　효과: 수면 낫을 교묘하게 조종해 최면 상태에 떨어뜨려, 적의 의식을 상실시키는 기술',
     type: '13',
     icon: 1182,
     scope: 2,
@@ -3136,7 +3286,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1175',
     name: '혼란의 낫',
-    description: '대상: 적 전체　효과: 혼란\n낫을 교묘하게 조종해 최면 상태에 떨어뜨려, 적의 이성을 어지럽히는 기술',
+    description: '대상: 적 전체　효과: 혼란 낫을 교묘하게 조종해 최면 상태에 떨어뜨려, 적의 이성을 어지럽히는 기술',
     type: '13',
     icon: 1182,
     scope: 2,
@@ -3148,7 +3298,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1176',
     name: '절명의 낫',
-    description: '대상: 적 전체　효과: 즉사\n사신의 낫다루기로 적의 영혼을 베어 내는 오의',
+    description: '대상: 적 전체　효과: 즉사 사신의 낫다루기로 적의 영혼을 베어 내는 오의',
     type: '13',
     icon: 1182,
     scope: 2,
@@ -3160,7 +3310,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1182',
     name: '거듭하고 공격해',
-    description: '위력: E(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n적 하나에 일순간으로 복수의 화살을 쳐박는 활 기술',
+    description: '위력: E(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 적 하나에 일순간으로 복수의 화살을 쳐박는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3175,7 +3325,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1183',
     name: '혼란화살',
-    description: '위력: D(공·손)　대상: 적 랜덤 4회\n적의 무리에 화살을 혼란격를 하는 활 기술',
+    description: '위력: D(공·손)　대상: 적 랜덤 4회 적의 무리에 화살을 혼란격를 하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 3,
@@ -3190,7 +3340,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1184',
     name: '차지아로',
-    description: '위력: C(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n화살을 당겨, 적 하나 목표로 해 발하는 일격',
+    description: '위력: C(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 화살을 당겨, 적 하나 목표로 해 발하는 일격',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3205,7 +3355,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1185',
     name: '불길의 화살',
-    description: '위력: E(공·손)　대상: 적 하나　속성: 불길\n마력으로 불길을 품은 화살을 적에게 발사하는 활 기술',
+    description: '위력: E(공·손)　대상: 적 하나　속성: 불길 마력으로 불길을 품은 화살을 적에게 발사하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3220,7 +3370,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1186',
     name: '얼음의 화살',
-    description: '위력: E(공·손)　대상: 적 하나　속성: 얼음\n마력으로 얼음을 품은 화살을 적에게 발사하는 활 기술',
+    description: '위력: E(공·손)　대상: 적 하나　속성: 얼음 마력으로 얼음을 품은 화살을 적에게 발사하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3235,7 +3385,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1187',
     name: '번개의 화살',
-    description: '위력: E(공·손)　대상: 적 하나　속성: 번개\n마력으로 번개를 품은 화살을 적에게 발사하는 활 기술',
+    description: '위력: E(공·손)　대상: 적 하나　속성: 번개 마력으로 번개를 품은 화살을 적에게 발사하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3250,7 +3400,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1188',
     name: '바람의 화살',
-    description: '위력: E(공·손)　대상: 적 하나　속성: 바람\n마력으로 바람을 품은 화살을 적에게 발사하는 활 기술',
+    description: '위력: E(공·손)　대상: 적 하나　속성: 바람 마력으로 바람을 품은 화살을 적에게 발사하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3265,7 +3415,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1189',
     name: '흙의 화살',
-    description: '위력: E(공·손)　대상: 적 하나　속성: 흙\n마력으로 흙을 품은 화살을 적에게 발사하는 활 기술',
+    description: '위력: E(공·손)　대상: 적 하나　속성: 흙 마력으로 흙을 품은 화살을 적에게 발사하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3280,7 +3430,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1190',
     name: '물의 화살',
-    description: '위력: E(공·손)　대상: 적 하나　속성: 물\n마력으로 물을 품은 화살을 적에게 발사하는 활 기술',
+    description: '위력: E(공·손)　대상: 적 하나　속성: 물 마력으로 물을 품은 화살을 적에게 발사하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3295,7 +3445,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1191',
     name: '스프랏슈아로',
-    description: '위력: B(공·손)　대상: 적 하나\n적 하나에 연속으로 화살을 쳐박는 활 기술',
+    description: '위력: B(공·손)　대상: 적 하나 적 하나에 연속으로 화살을 쳐박는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3310,7 +3460,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1192',
     name: '레인아로',
-    description: '위력: C(공·손)　대상: 적 전체\n적의 무리의 두상에 화살을 세례를 퍼부을 수 있는 활 기술',
+    description: '위력: C(공·손)　대상: 적 전체 적의 무리의 두상에 화살을 세례를 퍼부을 수 있는 활 기술',
     type: '14',
     icon: 1345,
     scope: 2,
@@ -3325,7 +3475,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1193',
     name: '에르비아로',
-    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n엘프족직전[直傳]의 사격법에 따르는 정확 무비한 연속활 기술',
+    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 엘프족직전[直傳]의 사격법에 따르는 정확 무비한 연속활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3340,7 +3490,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1194',
     name: '마르치프르아로',
-    description: '위력: A(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n복수의 화살을 동시에 발사해, 적 하나에 집중시키는 활 기술',
+    description: '위력: A(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 복수의 화살을 동시에 발사해, 적 하나에 집중시키는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3355,7 +3505,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1195',
     name: '한화살참파',
-    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: 엘프 특공＋\n참격과 같은 충격파를 수반하는 활 기술',
+    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: 엘프 특공＋ 참격과 같은 충격파를 수반하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3370,7 +3520,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1196',
     name: '큐핏드아로',
-    description: '위력: B(공·손)　대상: 적 하나　효과: 유혹\n유혹의 마력을 담은 화살로, 적의 마음을 빼앗는 활 기술',
+    description: '위력: B(공·손)　대상: 적 하나　효과: 유혹 유혹의 마력을 담은 화살로, 적의 마음을 빼앗는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3385,7 +3535,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1197',
     name: '오라 스타',
-    description: '위력: A(공·손)　대상: 적 전체　속성: 번개\n성스러운 오라로 자장을 전개해, 전류의 화살로 방전하는 활 기술',
+    description: '위력: A(공·손)　대상: 적 전체　속성: 번개 성스러운 오라로 자장을 전개해, 전류의 화살로 방전하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 2,
@@ -3400,7 +3550,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1198',
     name: '에비르키라',
-    description: '위력: E(공·손)　대상: 적 하나　효과: 육서종 특공\n육서종에게 대데미지를 주는 사냥꾼의 일격',
+    description: '위력: E(공·손)　대상: 적 하나　효과: 육서종 특공 육서종에게 대데미지를 주는 사냥꾼의 일격',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3415,7 +3565,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1199',
     name: '비스트 킬러',
-    description: '위력: E(공·손)　대상: 적 하나　효과: 짐승 특공\n마수에게 대데미지를 주는 사냥꾼의 일격',
+    description: '위력: E(공·손)　대상: 적 하나　효과: 짐승 특공 마수에게 대데미지를 주는 사냥꾼의 일격',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3430,7 +3580,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1200',
     name: '플라워 헌트',
-    description: '위력: C(공·손)　대상: 적 하나　효과: 식물 특공\n식물 몬스터에게 대데미지를 주는 사냥꾼의 일격',
+    description: '위력: C(공·손)　대상: 적 하나　효과: 식물 특공 식물 몬스터에게 대데미지를 주는 사냥꾼의 일격',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3445,7 +3595,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1201',
     name: '인섹트 헌트',
-    description: '위력: C(공·손)　대상: 적 하나　효과: 충 특공\n곤충 몬스터에게 대데미지를 주는 사냥꾼의 일격',
+    description: '위력: C(공·손)　대상: 적 하나　효과: 충 특공 곤충 몬스터에게 대데미지를 주는 사냥꾼의 일격',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3460,7 +3610,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1202',
     name: '헌터 킬러 스나이퍼',
-    description: '위력: C(공·손)　대상: 적 하나　효과: 인간·엘프 특공\n모든 사냥꾼을 역관광으로 하는 장 사정의 오의',
+    description: '위력: C(공·손)　대상: 적 하나　효과: 인간·엘프 특공 모든 사냥꾼을 역관광으로 하는 장 사정의 오의',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3475,7 +3625,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1203',
     name: '라미아 버스터',
-    description: '위력: C(공·손)　대상: 적 하나　효과: 라미아 특공\n라미아에게 대데미지를 주는 사냥꾼의 일격',
+    description: '위력: C(공·손)　대상: 적 하나　효과: 라미아 특공 라미아에게 대데미지를 주는 사냥꾼의 일격',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3490,7 +3640,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1204',
     name: '스큐라 버스터',
-    description: '위력: C(공·손)　대상: 적 하나　효과: 스큐라 특공\n스큐라에게 대데미지를 주는 사냥꾼의 일격',
+    description: '위력: C(공·손)　대상: 적 하나　효과: 스큐라 특공 스큐라에게 대데미지를 주는 사냥꾼의 일격',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3505,7 +3655,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1205',
     name: '엘프 사냥',
-    description: '위력: C(공·손)　대상: 적 하나　효과: 엘프 특공\n엘프에게 대데미지를 주는 사냥꾼의 일격',
+    description: '위력: C(공·손)　대상: 적 하나　효과: 엘프 특공 엘프에게 대데미지를 주는 사냥꾼의 일격',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3520,7 +3670,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1206',
     name: '페어리 사냥',
-    description: '위력: C(공·손)　대상: 적 하나　효과: 요정 특공\n페어리에게 대데미지를 주는 사냥꾼의 일격',
+    description: '위력: C(공·손)　대상: 적 하나　효과: 요정 특공 페어리에게 대데미지를 주는 사냥꾼의 일격',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3535,7 +3685,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1207',
     name: '기간트스나이프',
-    description: '위력: B(공·손)　대상: 적 하나　효과: 거체 특공\n거체 몬스터에게 대데미지를 주는 사냥꾼의 일격',
+    description: '위력: B(공·손)　대상: 적 하나　효과: 거체 특공 거체 몬스터에게 대데미지를 주는 사냥꾼의 일격',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3550,7 +3700,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1208',
     name: '마비화살',
-    description: '위력: D(공·손)　대상: 적 하나　효과: 마비\n마취제를 포함한 화살을 적에게 발사하는 활 기술',
+    description: '위력: D(공·손)　대상: 적 하나　효과: 마비 마취제를 포함한 화살을 적에게 발사하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3565,7 +3715,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1209',
     name: '잠의 화살',
-    description: '위력: D(공·손)　대상: 적 하나　효과: 수면\n수면제를 포함한 화살을 적에게 발사하는 활 기술',
+    description: '위력: D(공·손)　대상: 적 하나　효과: 수면 수면제를 포함한 화살을 적에게 발사하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3580,7 +3730,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1210',
     name: '석화의 화살',
-    description: '위력: C(공·손)　대상: 적 하나　효과: 석화\n석화의 마력을 담은 화살을 적에게 발사하는 활 기술',
+    description: '위력: C(공·손)　대상: 적 하나　효과: 석화 석화의 마력을 담은 화살을 적에게 발사하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3595,7 +3745,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1211',
     name: '일격의 화살',
-    description: '위력: C(공·손)　대상: 적 하나　효과: 즉사\n적의 급소를 노려 화살을 발사해, 일격으로 즉사시키는 활 기술',
+    description: '위력: C(공·손)　대상: 적 하나　효과: 즉사 적의 급소를 노려 화살을 발사해, 일격으로 즉사시키는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3610,7 +3760,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1212',
     name: '폭섬시',
-    description: '위력: A(공·손)　대상: 적 하나　속성: 불길＋　효과: ＋\n적에게 박힌 순간에 폭발을 일으키는 활 기술',
+    description: '위력: A(공·손)　대상: 적 하나　속성: 불길＋　효과: ＋ 적에게 박힌 순간에 폭발을 일으키는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3625,7 +3775,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1213',
     name: '장맛비화살',
-    description: '위력: S(공·손)　대상: 적 랜덤 4회\n장맛비와 같이 화살을 발사해, 적의 무리를 관통시키는 오의',
+    description: '위력: S(공·손)　대상: 적 랜덤 4회 장맛비와 같이 화살을 발사해, 적의 무리를 관통시키는 오의',
     type: '14',
     icon: 1345,
     scope: 3,
@@ -3640,7 +3790,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1214',
     name: '빨강의 충격',
-    description: '위력: S(공·손)　대상: 적 하나　속성: 불길＋　효과: 거체 특공＋\n모든 거체 몬스터를 구축하는 작열의 일격',
+    description: '위력: S(공·손)　대상: 적 하나　속성: 불길＋　효과: 거체 특공＋ 모든 거체 몬스터를 구축하는 작열의 일격',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3655,7 +3805,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1215',
     name: '플레어 트랩',
-    description: '위력: A(공·손)　대상: 적 하나　속성: 불길\n도화선을 타, 굉장한 지옥의 맹렬한 불을 적에게 주입하는 활 기술',
+    description: '위력: A(공·손)　대상: 적 하나　속성: 불길 도화선을 타, 굉장한 지옥의 맹렬한 불을 적에게 주입하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3670,7 +3820,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1216',
     name: '프로스트 트랩',
-    description: '위력: S(공·손)　대상: 적 하나　속성: 얼음\n도화선을 타, 얼어붙는 냉기를 적에게 주입하는 활 기술',
+    description: '위력: S(공·손)　대상: 적 하나　속성: 얼음 도화선을 타, 얼어붙는 냉기를 적에게 주입하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3685,7 +3835,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1217',
     name: '네뷰라리후레크트',
-    description: '위력: S(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n광자를 주위에 전개해, 빛의 화살을 난반사시켜 적을 토벌하는 활 기술',
+    description: '위력: S(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 광자를 주위에 전개해, 빛의 화살을 난반사시켜 적을 토벌하는 활 기술',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3700,7 +3850,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1218',
     name: '코즈믹크다스트',
-    description: '위력: A(공·손)　대상: 적 전체　속성: 불길\n천공으로부터 불길의 화살을 비와 같이 내리게 하는 오의',
+    description: '위력: A(공·손)　대상: 적 전체　속성: 불길 천공으로부터 불길의 화살을 비와 같이 내리게 하는 오의',
     type: '14',
     icon: 1345,
     scope: 2,
@@ -3715,7 +3865,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1219',
     name: '유성란시',
-    description: '위력: S(공·손)　대상: 적 랜덤 6회　속성: 성＋　효과: ＋\n성스러운 힘을 집중해, 유성과 같이 화살을 난무 시키는 오의',
+    description: '위력: S(공·손)　대상: 적 랜덤 6회　속성: 성＋　효과: ＋ 성스러운 힘을 집중해, 유성과 같이 화살을 난무 시키는 오의',
     type: '14',
     icon: 1345,
     scope: 3,
@@ -3730,7 +3880,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1220',
     name: '산화란시',
-    description: '위력: S(공·손)　대상: 적 랜덤 6회　속성: 어둠＋　효과: ＋\n어둠의 힘을 집중한 화살을 흐트러지고 공격하는 오의',
+    description: '위력: S(공·손)　대상: 적 랜덤 6회　속성: 어둠＋　효과: ＋ 어둠의 힘을 집중한 화살을 흐트러지고 공격하는 오의',
     type: '14',
     icon: 1345,
     scope: 3,
@@ -3745,7 +3895,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1221',
     name: '에레멘타르아로',
-    description: '위력: SS(공·손)　대상: 적 하나　속성: 불길·풍·토·수\n엘프 특유의 감응능력으로 4 정령의 힘을 빌려 화살에 머물어 발사하는 오의',
+    description: '위력: SS(공·손)　대상: 적 하나　속성: 불길·풍·토·수 엘프 특유의 감응능력으로 4 정령의 힘을 빌려 화살에 머물어 발사하는 오의',
     type: '14',
     icon: 1345,
     scope: 1,
@@ -3760,7 +3910,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1222',
     name: '아르테미스그레이브',
-    description: '위력: SS(공·손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n엘프의 여왕에만 전해지는 태고의 활오의',
+    description: '위력: SS(공·손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 엘프의 여왕에만 전해지는 태고의 활오의',
     type: '14',
     icon: 1345,
     scope: 3,
@@ -3775,7 +3925,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1225',
     name: '히르아로',
-    description: '대상: 아군 하나　효과: HP대회복\n위안의 마력이 가득찬 화살로 아군을 쏘아 맞혀, 체력을 회복 시키는 활 기술',
+    description: '대상: 아군 하나　효과: HP대회복 위안의 마력이 가득찬 화살로 아군을 쏘아 맞혀, 체력을 회복 시키는 활 기술',
     type: '14',
     icon: 1345,
     scope: 7,
@@ -3790,7 +3940,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1226',
     name: '미라크루아로',
-    description: '대상: 아군 전체　효과: HP대회복\n아군 전체에 위안의 화살을 발사해, 체력을 회복 시키는 활 기술',
+    description: '대상: 아군 전체　효과: HP대회복 아군 전체에 위안의 화살을 발사해, 체력을 회복 시키는 활 기술',
     type: '14',
     icon: 1345,
     scope: 8,
@@ -3805,7 +3955,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1232',
     name: '와르트위프',
-    description: '위력: D(공·손)　대상: 적 랜덤 3회　속성: ＋　효과: ＋\n왈츠를 춤이야 게 춤추어, 적을 연속으로 고정시켜두는 채찍 기술',
+    description: '위력: D(공·손)　대상: 적 랜덤 3회　속성: ＋　효과: ＋ 왈츠를 춤이야 게 춤추어, 적을 연속으로 고정시켜두는 채찍 기술',
     type: '15',
     icon: 1462,
     scope: 3,
@@ -3820,7 +3970,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1233',
     name: '저리고 치는 것',
-    description: '위력: C(공·손)　대상: 적 하나　속성: ＋　효과: 마비＋\n마물의 몸을 저리게 하는 채찍의 일격',
+    description: '위력: C(공·손)　대상: 적 하나　속성: ＋　효과: 마비＋ 마물의 몸을 저리게 하는 채찍의 일격',
     type: '15',
     icon: 1462,
     scope: 1,
@@ -3835,7 +3985,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1234',
     name: '스네이크테일',
-    description: '위력: B(공·손)　대상: 적 전체　속성: ＋　효과: 마비＋\n뱀과 같이 꾸불꾸불하는 궤도에서 적 전체를 재기 불능케 하는 채찍 기술',
+    description: '위력: B(공·손)　대상: 적 전체　속성: ＋　효과: 마비＋ 뱀과 같이 꾸불꾸불하는 궤도에서 적 전체를 재기 불능케 하는 채찍 기술',
     type: '15',
     icon: 1462,
     scope: 2,
@@ -3850,7 +4000,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1235',
     name: '드래곤 슬레이어-',
-    description: '위력: C(공·손)　대상: 적 전체　속성: ＋　효과: 용특공·마비＋\n드래곤종에 대데미지를 주는 채찍 사용 특유의 기술',
+    description: '위력: C(공·손)　대상: 적 전체　속성: ＋　효과: 용특공·마비＋ 드래곤종에 대데미지를 주는 채찍 사용 특유의 기술',
     type: '15',
     icon: 1462,
     scope: 2,
@@ -3865,7 +4015,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1236',
     name: '데빌 버스터',
-    description: '위력: C(공·손)　대상: 적 전체　속성: ＋　효과: 요마 특공·마비＋\n요마에게 대데미지를 주는 데빌 서머너 특유의 채찍 기술',
+    description: '위력: C(공·손)　대상: 적 전체　속성: ＋　효과: 요마 특공·마비＋ 요마에게 대데미지를 주는 데빌 서머너 특유의 채찍 기술',
     type: '15',
     icon: 1462,
     scope: 2,
@@ -3880,7 +4030,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1237',
     name: '뢰박의 채찍',
-    description: '위력: B(공·손)　대상: 적 하나　속성: 번개＋　효과: 구속＋\n전격을 띤 채찍으로 적을 구속하는 기술',
+    description: '위력: B(공·손)　대상: 적 하나　속성: 번개＋　효과: 구속＋ 전격을 띤 채찍으로 적을 구속하는 기술',
     type: '15',
     icon: 1462,
     scope: 1,
@@ -3895,7 +4045,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1238',
     name: '뢰박 3섬',
-    description: '위력: S(공·손)　대상: 적 하나　속성: 번개＋　효과: 구속＋\n전격을 띤 채찍으로 적을 구속해, 연속으로 고정시켜두는 오의',
+    description: '위력: S(공·손)　대상: 적 하나　속성: 번개＋　효과: 구속＋ 전격을 띤 채찍으로 적을 구속해, 연속으로 고정시켜두는 오의',
     type: '15',
     icon: 1462,
     scope: 1,
@@ -3910,7 +4060,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1239',
     name: '마창원무',
-    description: '위력: B(공·손)　대상: 적 전체　속성: ＋　효과: 혼란·수면·마비＋\n진을 그리도록(듯이) 채찍을 흔들어, 적 전체를 후려쳐 넘긴 기술',
+    description: '위력: B(공·손)　대상: 적 전체　속성: ＋　효과: 혼란·수면·마비＋ 진을 그리도록(듯이) 채찍을 흔들어, 적 전체를 후려쳐 넘긴 기술',
     type: '15',
     icon: 1462,
     scope: 2,
@@ -3925,7 +4075,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1240',
     name: '코이즈미노흑진',
-    description: '위력: A(공·손)　대상: 적 전체　속성: ＋　효과: 혼란·수면·마비＋\n편처에서 어둠의 마법진을 그려, 적 전체를 토벌해 멸하는 오의',
+    description: '위력: A(공·손)　대상: 적 전체　속성: ＋　효과: 혼란·수면·마비＋ 편처에서 어둠의 마법진을 그려, 적 전체를 토벌해 멸하는 오의',
     type: '15',
     icon: 1462,
     scope: 2,
@@ -3940,7 +4090,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1241',
     name: '용해의 채찍',
-    description: '위력: B(공·손)　대상: 랜덤 3회　속성: ＋　효과: 소화＋\n자신의 소화액을 채찍에게 실어, 적을 녹이는 아류의 채찍 기술',
+    description: '위력: B(공·손)　대상: 랜덤 3회　속성: ＋　효과: 소화＋ 자신의 소화액을 채찍에게 실어, 적을 녹이는 아류의 채찍 기술',
     type: '15',
     icon: 1462,
     scope: 3,
@@ -3955,7 +4105,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1242',
     name: '메르티 스파이럴',
-    description: '위력: S(공·손)　대상: 적 랜덤 4회　속성: ＋　효과: 소화＋\n소화액을 실은 채찍을 적의 무리에 몇번이나 터는 채찍 오의',
+    description: '위력: S(공·손)　대상: 적 랜덤 4회　속성: ＋　효과: 소화＋ 소화액을 실은 채찍을 적의 무리에 몇번이나 터는 채찍 오의',
     type: '15',
     icon: 1462,
     scope: 3,
@@ -3970,7 +4120,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1243',
     name: '드라곤테일',
-    description: '위력: A(공·손)　대상: 적 전체　속성: 성＋　효과: 마비＋\n용의 꼬리와 같은 센 힘으로 적 전체를 고정시켜두는 채찍 기술',
+    description: '위력: A(공·손)　대상: 적 전체　속성: 성＋　효과: 마비＋ 용의 꼬리와 같은 센 힘으로 적 전체를 고정시켜두는 채찍 기술',
     type: '15',
     icon: 1462,
     scope: 2,
@@ -3985,7 +4135,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1244',
     name: '큰뱀의 춤',
-    description: '위력: S(공·손)　대상: 적 랜덤 4회　속성: 성＋　효과: 마비＋\n센 힘과 날씬함을 융합시켜, 적의 무리를 날뛰는 채찍의 난격 오의',
+    description: '위력: S(공·손)　대상: 적 랜덤 4회　속성: 성＋　효과: 마비＋ 센 힘과 날씬함을 융합시켜, 적의 무리를 날뛰는 채찍의 난격 오의',
     type: '15',
     icon: 1462,
     scope: 3,
@@ -4000,7 +4150,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1245',
     name: '칠흑의 큰뱀',
-    description: '위력: A(공·손)　대상: 적 전체　속성: 어둠＋　효과: 마비＋\n어둠 오라를 수반하면서 적 전체를 고정시켜두는 채찍 기술',
+    description: '위력: A(공·손)　대상: 적 전체　속성: 어둠＋　효과: 마비＋ 어둠 오라를 수반하면서 적 전체를 고정시켜두는 채찍 기술',
     type: '15',
     icon: 1462,
     scope: 2,
@@ -4015,7 +4165,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1246',
     name: '어둠의 나선채찍',
-    description: '위력: S(공·손)　대상: 적 하나　속성: 어둠＋　효과: 마비＋\n어둠 오라를 담아, 적 도대체를 나선 궤도에서 고정시켜두는 채찍 오의',
+    description: '위력: S(공·손)　대상: 적 하나　속성: 어둠＋　효과: 마비＋ 어둠 오라를 담아, 적 도대체를 나선 궤도에서 고정시켜두는 채찍 오의',
     type: '15',
     icon: 1462,
     scope: 1,
@@ -4030,7 +4180,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1247',
     name: '레인보위프',
-    description: '위력: S(공·손)　대상: 적 전체　속성: 불길·빙·뢰·풍·토·수＋　효과: ＋\n6 속성의 힘을 채찍에게 집중시켜, 융합 반응을 일으키는 채찍 오의',
+    description: '위력: S(공·손)　대상: 적 전체　속성: 불길·빙·뢰·풍·토·수＋　효과: ＋ 6 속성의 힘을 채찍에게 집중시켜, 융합 반응을 일으키는 채찍 오의',
     type: '15',
     icon: 1462,
     scope: 2,
@@ -4045,7 +4195,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1249',
     name: '구속의 채찍',
-    description: '위력: D(공·손)　대상: 적 전체　속성: ＋　효과: 구속＋\n채찍을 적에게 감기게 해 자유를 빼앗는 기술',
+    description: '위력: D(공·손)　대상: 적 전체　속성: ＋　효과: 구속＋ 채찍을 적에게 감기게 해 자유를 빼앗는 기술',
     type: '15',
     icon: 1462,
     scope: 2,
@@ -4060,7 +4210,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1250',
     name: '혼란의 채찍',
-    description: '위력: D(공·손)　대상: 적 전체　속성: ＋　효과: 혼란＋\n적의 머리를 고정시켜두어, 혼란시키는 채찍 기술',
+    description: '위력: D(공·손)　대상: 적 전체　속성: ＋　효과: 혼란＋ 적의 머리를 고정시켜두어, 혼란시키는 채찍 기술',
     type: '15',
     icon: 1462,
     scope: 2,
@@ -4075,7 +4225,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1251',
     name: '사랑의 매',
-    description: '위력: D(공·손)　대상: 적 전체　속성: ＋　효과: 유혹＋\n사랑을 담아 고정시켜두어, 적을 매료하는 채찍 기술',
+    description: '위력: D(공·손)　대상: 적 전체　속성: ＋　효과: 유혹＋ 사랑을 담아 고정시켜두어, 적을 매료하는 채찍 기술',
     type: '15',
     icon: 1462,
     scope: 2,
@@ -4090,7 +4240,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1252',
     name: '몬스터 서번트',
-    description: '　효과: 랜덤\n채찍을 흔들어, 마물을 호출해 공격시키는 기술',
+    description: '　효과: 랜덤 채찍을 흔들어, 마물을 호출해 공격시키는 기술',
     type: '15',
     icon: 1462,
     scope: 0,
@@ -4102,7 +4252,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1253',
     name: '홀리 서번트',
-    description: '　효과: 랜덤\n채찍을 흔들어, 성스러운 존재를 호출해 공격시키는 기술',
+    description: '　효과: 랜덤 채찍을 흔들어, 성스러운 존재를 호출해 공격시키는 기술',
     type: '15',
     icon: 1462,
     scope: 0,
@@ -4114,7 +4264,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1254',
     name: '데빌 서번트',
-    description: '　효과: 랜덤\n채찍을 흔들어, 어둠의 존재를 호출해 공격시키는 기술',
+    description: '　효과: 랜덤 채찍을 흔들어, 어둠의 존재를 호출해 공격시키는 기술',
     type: '15',
     icon: 1462,
     scope: 0,
@@ -4126,7 +4276,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1260',
     name: '노비르송트',
-    description: '위력: E(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n부메랑을 가진 팔이 뻗어 직접적을 때려 붙이는 기술',
+    description: '위력: E(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 부메랑을 가진 팔이 뻗어 직접적을 때려 붙이는 기술',
     type: '16',
     icon: 1485,
     scope: 1,
@@ -4141,7 +4291,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1261',
     name: '제비 흘림',
-    description: '위력: D(공·손)　대상: 적 하나　효과: 새특공\n하늘을 나는 몬스터를 부메랑으로 두드려 떨어뜨리는 투척 기술',
+    description: '위력: D(공·손)　대상: 적 하나　효과: 새특공 하늘을 나는 몬스터를 부메랑으로 두드려 떨어뜨리는 투척 기술',
     type: '16',
     icon: 1485,
     scope: 1,
@@ -4156,7 +4306,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1262',
     name: '트윈 슛',
-    description: '위력: D(공·손)　대상: 적 하나\n2개에 분열시킨 부메랑을 적 1체에 내던지는 투척 기술',
+    description: '위력: D(공·손)　대상: 적 하나 2개에 분열시킨 부메랑을 적 1체에 내던지는 투척 기술',
     type: '16',
     icon: 1485,
     scope: 1,
@@ -4171,7 +4321,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1263',
     name: '스파이럴 엣지',
-    description: '위력: C(공·손)　대상: 적 전체\n바람을 자르도록(듯이) 부메랑을 내던져, 적 전체를 공격하는 투척 기술',
+    description: '위력: C(공·손)　대상: 적 전체 바람을 자르도록(듯이) 부메랑을 내던져, 적 전체를 공격하는 투척 기술',
     type: '16',
     icon: 1485,
     scope: 2,
@@ -4186,7 +4336,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1264',
     name: '윈드스르',
-    description: '위력: C(공·손)　대상: 적 전체　속성: 바람\n바람의 부메랑을 내던져, 적 전체를 벼랑 넘어뜨리는 투척 기술',
+    description: '위력: C(공·손)　대상: 적 전체　속성: 바람 바람의 부메랑을 내던져, 적 전체를 벼랑 넘어뜨리는 투척 기술',
     type: '16',
     icon: 1485,
     scope: 2,
@@ -4201,7 +4351,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1265',
     name: '트윈 부메랑',
-    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n2개에 분열시킨 부메랑을 적 하나에 내던지는 투척 기술',
+    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 2개에 분열시킨 부메랑을 적 하나에 내던지는 투척 기술',
     type: '16',
     icon: 1485,
     scope: 1,
@@ -4216,7 +4366,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1266',
     name: '에아로다트',
-    description: '위력: B(공·손)　대상: 적 하나　속성: 바람\n진공의 칼날을 수반한 부메랑을 내던져, 적을 새기는 투척 기술',
+    description: '위력: B(공·손)　대상: 적 하나　속성: 바람 진공의 칼날을 수반한 부메랑을 내던져, 적을 새기는 투척 기술',
     type: '16',
     icon: 1485,
     scope: 1,
@@ -4231,7 +4381,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1267',
     name: '메르티스르',
-    description: '위력: C(공·손)　대상: 적 전체　효과: 소화\n소화액을 수반한 부메랑을 내던져, 적을 녹이는 투척 기술',
+    description: '위력: C(공·손)　대상: 적 전체　효과: 소화 소화액을 수반한 부메랑을 내던져, 적을 녹이는 투척 기술',
     type: '16',
     icon: 1485,
     scope: 2,
@@ -4246,7 +4396,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1268',
     name: '슈팅 스타',
-    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n유성과 같이 적 하나에 부메랑을 부딪치는 투척 기술',
+    description: '위력: B(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 유성과 같이 적 하나에 부메랑을 부딪치는 투척 기술',
     type: '16',
     icon: 1485,
     scope: 1,
@@ -4261,7 +4411,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1269',
     name: '스타 게이저',
-    description: '위력: A(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n별들의 힘을 집중한 부메랑을 적에게 내던지는 투척 기술',
+    description: '위력: A(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 별들의 힘을 집중한 부메랑을 적에게 내던지는 투척 기술',
     type: '16',
     icon: 1485,
     scope: 1,
@@ -4276,7 +4426,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1270',
     name: '버닝 엣지',
-    description: '위력: A(공·손)　대상: 적 전체　속성: 불길\n지옥의 맹렬한 불을 수반하는 부메랑으로 적 전체를 다 굽는 투척 기술',
+    description: '위력: A(공·손)　대상: 적 전체　속성: 불길 지옥의 맹렬한 불을 수반하는 부메랑으로 적 전체를 다 굽는 투척 기술',
     type: '16',
     icon: 1485,
     scope: 2,
@@ -4291,7 +4441,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1271',
     name: '코즈믹스르',
-    description: '위력: S(공·손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n유성과 같이 부메랑을 몇번이나 내던지는 투척 기술',
+    description: '위력: S(공·손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 유성과 같이 부메랑을 몇번이나 내던지는 투척 기술',
     type: '16',
     icon: 1485,
     scope: 3,
@@ -4306,7 +4456,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1272',
     name: '피후스엣지',
-    description: '위력: S(공·손)　대상: 적 랜덤 5회　속성: ＋　효과: ＋\n부메랑을 5연속으로 내던져, 난무 시키는 투척 기술',
+    description: '위력: S(공·손)　대상: 적 랜덤 5회　속성: ＋　효과: ＋ 부메랑을 5연속으로 내던져, 난무 시키는 투척 기술',
     type: '16',
     icon: 1485,
     scope: 3,
@@ -4321,7 +4471,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1273',
     name: '4하늘바람 차바퀴',
-    description: '위력: S(공·손)　대상: 적 하나　속성: 바람＋　효과: ＋\n진공의 칼날을 4개 발생시켜, 적을 십자에 베어 찢는 투척 오의',
+    description: '위력: S(공·손)　대상: 적 하나　속성: 바람＋　효과: ＋ 진공의 칼날을 4개 발생시켜, 적을 십자에 베어 찢는 투척 오의',
     type: '16',
     icon: 1485,
     scope: 1,
@@ -4336,7 +4486,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1274',
     name: '그림자 나선',
-    description: '위력: S(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n나선 궤도에서 적 하나에 충격파를 주입하는 투척 오의',
+    description: '위력: S(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 나선 궤도에서 적 하나에 충격파를 주입하는 투척 오의',
     type: '16',
     icon: 1485,
     scope: 1,
@@ -4351,7 +4501,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1282',
     name: '철구격',
-    description: '위력: D(공)　대상: 적 하나\n중량을 담아 적 하나에 철구를 내던지는 기술',
+    description: '위력: D(공)　대상: 적 하나 중량을 담아 적 하나에 철구를 내던지는 기술',
     type: '17',
     icon: 1505,
     scope: 1,
@@ -4366,7 +4516,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1283',
     name: '철구 화염격',
-    description: '위력: D(공)　대상: 적 전체　속성: 불길\n불길을 품은 철구로 적 전체를 공격하는 기술',
+    description: '위력: D(공)　대상: 적 전체　속성: 불길 불길을 품은 철구로 적 전체를 공격하는 기술',
     type: '17',
     icon: 1505,
     scope: 2,
@@ -4381,7 +4531,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1284',
     name: '철구얼음주격',
-    description: '위력: D(공)　대상: 적 전체　속성: 얼음\n얼음을 품은 철구로 적 전체를 공격하는 기술',
+    description: '위력: D(공)　대상: 적 전체　속성: 얼음 얼음을 품은 철구로 적 전체를 공격하는 기술',
     type: '17',
     icon: 1505,
     scope: 2,
@@ -4396,7 +4546,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1285',
     name: '철구번개 전격',
-    description: '위력: D(공)　대상: 적 전체　속성: 번개\n번개를 품은 철구로 적 전체를 공격하는 기술',
+    description: '위력: D(공)　대상: 적 전체　속성: 번개 번개를 품은 철구로 적 전체를 공격하는 기술',
     type: '17',
     icon: 1505,
     scope: 2,
@@ -4411,7 +4561,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1286',
     name: '촉수 살인',
-    description: '위력: D(공)　대상: 적 하나　효과: 스큐라 특공\n촉수를 노려 두드려 잡는 스큐라 살인의 철구 기술',
+    description: '위력: D(공)　대상: 적 하나　효과: 스큐라 특공 촉수를 노려 두드려 잡는 스큐라 살인의 철구 기술',
     type: '17',
     icon: 1505,
     scope: 1,
@@ -4426,7 +4576,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1287',
     name: '키르스큐라',
-    description: '위력: C(공)　대상: 적 전체　효과: 스큐라 특공\n스큐라의 무리를 단번에 두드려 잡는 철구 기술',
+    description: '위력: C(공)　대상: 적 전체　효과: 스큐라 특공 스큐라의 무리를 단번에 두드려 잡는 철구 기술',
     type: '17',
     icon: 1505,
     scope: 2,
@@ -4441,7 +4591,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1288',
     name: '헤비스파이랄',
-    description: '위력: C(공)　대상: 적 전체\n무거운 철구를 경쾌하게 휘둘러, 적 전체를 공격하는 기술',
+    description: '위력: C(공)　대상: 적 전체 무거운 철구를 경쾌하게 휘둘러, 적 전체를 공격하는 기술',
     type: '17',
     icon: 1505,
     scope: 2,
@@ -4456,7 +4606,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1289',
     name: '체인 드라이브',
-    description: '위력: A(공)　대상: 랜덤 3회\n철구에게 중량을 실어, 연속으로 내던지는 기술',
+    description: '위력: A(공)　대상: 랜덤 3회 철구에게 중량을 실어, 연속으로 내던지는 기술',
     type: '17',
     icon: 1505,
     scope: 3,
@@ -4471,7 +4621,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1290',
     name: '그랜드 드라이브',
-    description: '위력: B(공)　대상: 적 전체\n땅을 기도록(듯이) 철구를 휘둘러, 적 전체를 벼랑 넘어뜨리는 기술',
+    description: '위력: B(공)　대상: 적 전체 땅을 기도록(듯이) 철구를 휘둘러, 적 전체를 벼랑 넘어뜨리는 기술',
     type: '17',
     icon: 1505,
     scope: 2,
@@ -4486,7 +4636,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1291',
     name: '천벌의 철구',
-    description: '위력: B(공)　대상: 적 전체　속성: 성\n파사의 힘을 철구에게 담아, 적을 구타하는 기술',
+    description: '위력: B(공)　대상: 적 전체　속성: 성 파사의 힘을 철구에게 담아, 적을 구타하는 기술',
     type: '17',
     icon: 1505,
     scope: 2,
@@ -4501,7 +4651,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1292',
     name: '쇄무',
-    description: '위력: C(공)　대상: 적 전체　속성: ＋　효과: ＋\n철구를 두상으로 교묘하게 춤추게 해 적의 무리를 후려쳐 넘긴 기술',
+    description: '위력: C(공)　대상: 적 전체　속성: ＋　효과: ＋ 철구를 두상으로 교묘하게 춤추게 해 적의 무리를 후려쳐 넘긴 기술',
     type: '17',
     icon: 1505,
     scope: 2,
@@ -4516,7 +4666,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1293',
     name: '젯드리메이스',
-    description: '위력: C(공)　대상: 적 전체\n발밑에 철구를 내던져, 충격파를 발생시키는 기술',
+    description: '위력: C(공)　대상: 적 전체 발밑에 철구를 내던져, 충격파를 발생시키는 기술',
     type: '17',
     icon: 1505,
     scope: 2,
@@ -4531,7 +4681,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1294',
     name: '웨이트 캐논',
-    description: '위력: B(공)　대상: 적 하나\n적 1체에 목적을 붙여, 대포와 같이 철구를 주입하는 기술',
+    description: '위력: B(공)　대상: 적 하나 적 1체에 목적을 붙여, 대포와 같이 철구를 주입하는 기술',
     type: '17',
     icon: 1505,
     scope: 1,
@@ -4546,7 +4696,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1295',
     name: '크리티컬 아크',
-    description: '위력: A(공)　대상: 적 전체\n센 힘으로 철구를 휘둘러, 적 전체를 벼랑 넘어뜨리는 기술',
+    description: '위력: A(공)　대상: 적 전체 센 힘으로 철구를 휘둘러, 적 전체를 벼랑 넘어뜨리는 기술',
     type: '17',
     icon: 1505,
     scope: 2,
@@ -4561,7 +4711,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1296',
     name: '우로보로스',
-    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋\n적 하나에 난격을 집중하는 철구 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋ 적 하나에 난격을 집중하는 철구 오의',
     type: '17',
     icon: 1505,
     scope: 1,
@@ -4576,7 +4726,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1297',
     name: '철구강난무',
-    description: '위력: S(공)　대상: 적 랜덤 5회\n철구를 격렬하게 휘둘러, 적의 무리에 몇번이나 내던지는 기술',
+    description: '위력: S(공)　대상: 적 랜덤 5회 철구를 격렬하게 휘둘러, 적의 무리에 몇번이나 내던지는 기술',
     type: '17',
     icon: 1505,
     scope: 3,
@@ -4591,7 +4741,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1298',
     name: '크로스 메이든',
-    description: '위력: A(공)　대상: 적 하나　속성: 성\n성스러운 힘을 철구에게 담아, 십자를 그리도록(듯이) 주입하는 오의',
+    description: '위력: A(공)　대상: 적 하나　속성: 성 성스러운 힘을 철구에게 담아, 십자를 그리도록(듯이) 주입하는 오의',
     type: '17',
     icon: 1505,
     scope: 1,
@@ -4606,7 +4756,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1299',
     name: '카구라란진',
-    description: '위력: A(공)　대상: 적 전체　속성: ＋　효과: ＋\n성스러운 힘을 철구에게 담아, 적의 무리를 구타하는 기술',
+    description: '위력: A(공)　대상: 적 전체　속성: ＋　효과: ＋ 성스러운 힘을 철구에게 담아, 적의 무리를 구타하는 기술',
     type: '17',
     icon: 1505,
     scope: 2,
@@ -4621,7 +4771,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1300',
     name: '레이징바스트',
-    description: '위력: A(공)　대상: 적 전체\n철구를 지면에 내던져, 대지를 흔드는 오의',
+    description: '위력: A(공)　대상: 적 전체 철구를 지면에 내던져, 대지를 흔드는 오의',
     type: '17',
     icon: 1505,
     scope: 2,
@@ -4636,7 +4786,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1301',
     name: '파괴의 일격',
-    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋\n철구를 회전시켜 기세를 붙여, 일격으로 적을 두드려 잡는 파괴 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋ 철구를 회전시켜 기세를 붙여, 일격으로 적을 두드려 잡는 파괴 오의',
     type: '17',
     icon: 1505,
     scope: 1,
@@ -4651,7 +4801,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1302',
     name: '오성멸구격',
-    description: '위력: SSS(공)　대상: 적 랜덤 5회　속성: ＋　효과: ＋\n파괴의 힘을 집중한 철구를 몇번이나 적에게 내던지는 궁극 오의',
+    description: '위력: SSS(공)　대상: 적 랜덤 5회　속성: ＋　효과: ＋ 파괴의 힘을 집중한 철구를 몇번이나 적에게 내던지는 궁극 오의',
     type: '17',
     icon: 1505,
     scope: 3,
@@ -4666,7 +4816,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1309',
     name: '겹침부채',
-    description: '위력: D(손·민)　대상: 적 하나　속성: ＋　효과: ＋\n숨도 말할 수 없는 2연속의 참격을 내지르는 부채 기술',
+    description: '위력: D(손·민)　대상: 적 하나　속성: ＋　효과: ＋ 숨도 말할 수 없는 2연속의 참격을 내지르는 부채 기술',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4682,7 +4832,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1310',
     name: '비상부채',
-    description: '위력: E(손·민)　대상: 적 하나　속성: 바람＋　효과: ＋\n부채로 소규모의 용권을 발생시키는 기술',
+    description: '위력: E(손·민)　대상: 적 하나　속성: 바람＋　효과: ＋ 부채로 소규모의 용권을 발생시키는 기술',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4698,7 +4848,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1311',
     name: '진공부채',
-    description: '위력: C(손·민)　대상: 적 하나　속성: 바람＋　효과: ＋\n부채로 진공을 수반하는 참격을 내지르는 기술',
+    description: '위력: C(손·민)　대상: 적 하나　속성: 바람＋　효과: ＋ 부채로 진공을 수반하는 참격을 내지르는 기술',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4714,7 +4864,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1312',
     name: '호월 부채',
-    description: '위력: C(손·민)　대상: 적 하나　속성: 흙＋　효과: ＋\n대지의 힘을 부채에게 머물어, 초승달과 같이 적을 베어 찢는 기술',
+    description: '위력: C(손·민)　대상: 적 하나　속성: 흙＋　효과: ＋ 대지의 힘을 부채에게 머물어, 초승달과 같이 적을 베어 찢는 기술',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4730,7 +4880,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1313',
     name: '호월란섬',
-    description: '위력: S(손·민)　대상: 적 하나　속성: 흙＋　효과: ＋\n대지의 힘을 부채에게 머물어, 초승달을 개개 그려 흐트러지고 베는 오의',
+    description: '위력: S(손·민)　대상: 적 하나　속성: 흙＋　효과: ＋ 대지의 힘을 부채에게 머물어, 초승달을 개개 그려 흐트러지고 베는 오의',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4746,7 +4896,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1314',
     name: '부채무용',
-    description: '위력: C(손·민)　대상: 적 하나　속성: 바람＋　효과: ＋\n진공을 수반한 부채로 춤추도록(듯이) 베어 붙이는 기술',
+    description: '위력: C(손·민)　대상: 적 하나　속성: 바람＋　효과: ＋ 진공을 수반한 부채로 춤추도록(듯이) 베어 붙이는 기술',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4762,7 +4912,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1315',
     name: '부채폭풍우',
-    description: '위력: C(손·민)　대상: 적 전체　속성: 바람＋　효과: ＋\n무수한 진공의 칼날로 적을 잘게 자르는 부채 기술',
+    description: '위력: C(손·민)　대상: 적 전체　속성: 바람＋　효과: ＋ 무수한 진공의 칼날로 적을 잘게 자르는 부채 기술',
     type: '18',
     icon: 1540,
     scope: 2,
@@ -4778,7 +4928,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1316',
     name: '화조풍월',
-    description: '위력: A(손·민)　대상: 적 전체　속성: 바람＋　효과: ＋\n요염한 무용으로, 진공의 칼날을 내지르는 부채 기술',
+    description: '위력: A(손·민)　대상: 적 전체　속성: 바람＋　효과: ＋ 요염한 무용으로, 진공의 칼날을 내지르는 부채 기술',
     type: '18',
     icon: 1540,
     scope: 2,
@@ -4794,7 +4944,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1317',
     name: '질풍부채',
-    description: '위력: C(손·민)　대상: 적 전체　속성: 바람＋　효과: ＋\n천공을 화려하게 춤추어, 질풍의 부채로 적 전체를 새기는 오의',
+    description: '위력: C(손·민)　대상: 적 전체　속성: 바람＋　효과: ＋ 천공을 화려하게 춤추어, 질풍의 부채로 적 전체를 새기는 오의',
     type: '18',
     icon: 1540,
     scope: 2,
@@ -4810,7 +4960,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1318',
     name: '천공부채',
-    description: '위력: A(손·민)　대상: 적 전체　속성: 바람＋　효과: ＋\n부채로 무수한 용권을 발생시켜, 적을 말려들게 하는 오의',
+    description: '위력: A(손·민)　대상: 적 전체　속성: 바람＋　효과: ＋ 부채로 무수한 용권을 발생시켜, 적을 말려들게 하는 오의',
     type: '18',
     icon: 1540,
     scope: 2,
@@ -4826,7 +4976,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1319',
     name: '파 부채',
-    description: '위력: C(손·민)　대상: 적 하나　속성: 물＋　효과: ＋\n물결의 힘을 집중해 내질러지는 부채의 일격',
+    description: '위력: C(손·민)　대상: 적 하나　속성: 물＋　효과: ＋ 물결의 힘을 집중해 내질러지는 부채의 일격',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4842,7 +4992,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1320',
     name: '해신부채',
-    description: '위력: S(손·민)　대상: 적 하나　속성: 물＋　효과: ＋\n해신의 힘을 품어, 적을 재빠르게 찢는 부채 기술',
+    description: '위력: S(손·민)　대상: 적 하나　속성: 물＋　효과: ＋ 해신의 힘을 품어, 적을 재빠르게 찢는 부채 기술',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4858,7 +5008,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1321',
     name: '탁류부채',
-    description: '위력: C(손·민)　대상: 적 전체　속성: 물＋　효과: ＋\n격렬한 탁류에 적 전체를 말려들게 하는 부채 기술',
+    description: '위력: C(손·민)　대상: 적 전체　속성: 물＋　효과: ＋ 격렬한 탁류에 적 전체를 말려들게 하는 부채 기술',
     type: '18',
     icon: 1540,
     scope: 2,
@@ -4874,7 +5024,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1322',
     name: '격류부채',
-    description: '위력: A(손·민)　대상: 적 전체　속성: 물＋　효과: ＋\n격류를 낳아, 적 전체를 흘러가게 하는 오의',
+    description: '위력: A(손·민)　대상: 적 전체　속성: 물＋　효과: ＋ 격류를 낳아, 적 전체를 흘러가게 하는 오의',
     type: '18',
     icon: 1540,
     scope: 2,
@@ -4890,7 +5040,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1323',
     name: '눈 부채',
-    description: '위력: B(손·민)　대상: 적 하나　속성: 얼음＋　효과: ＋\n극한의 냉기를 야기해, 적을 동결시키는 부채 기술',
+    description: '위력: B(손·민)　대상: 적 하나　속성: 얼음＋　효과: ＋ 극한의 냉기를 야기해, 적을 동결시키는 부채 기술',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4906,7 +5056,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1324',
     name: '얼음 무선',
-    description: '위력: A(손·민)　대상: 적 전체　속성: 얼음＋　효과: ＋\n격렬한 눈보라를 야기해, 적 전체를 동결시키는 오의',
+    description: '위력: A(손·민)　대상: 적 전체　속성: 얼음＋　효과: ＋ 격렬한 눈보라를 야기해, 적 전체를 동결시키는 오의',
     type: '18',
     icon: 1540,
     scope: 2,
@@ -4922,7 +5072,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1325',
     name: '감전부채',
-    description: '위력: B(손·민)　대상: 적 하나　속성: 번개＋　효과: ＋\n전격을 수반하는 일격으로 적을 저리게 하는 부채 기술',
+    description: '위력: B(손·민)　대상: 적 하나　속성: 번개＋　효과: ＋ 전격을 수반하는 일격으로 적을 저리게 하는 부채 기술',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4938,7 +5088,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1326',
     name: '소뢰 부채',
-    description: '위력: S(손·민)　대상: 적 하나　속성: 번개＋　효과: ＋\n번개를 소환 해, 적에게 퍼붓는 오의',
+    description: '위력: S(손·민)　대상: 적 하나　속성: 번개＋　효과: ＋ 번개를 소환 해, 적에게 퍼붓는 오의',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4954,7 +5104,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1327',
     name: '주원 부채',
-    description: '위력: S(손·민)　대상: 적 하나　속성: ＋　효과: 석화·즉사＋\n저주의 생각을 담고 적을 잘게 자르는 오의',
+    description: '위력: S(손·민)　대상: 적 하나　속성: ＋　효과: 석화·즉사＋ 저주의 생각을 담고 적을 잘게 자르는 오의',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4970,7 +5120,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1328',
     name: '낙엽의 춤',
-    description: '위력: A(손·민)　대상: 적 하나　속성: ＋　효과: 수면＋\n하늘에 춤추는 잎을 베는 것과 같이, 오의로 화려하게 적을 새기는 오의',
+    description: '위력: A(손·민)　대상: 적 하나　속성: ＋　효과: 수면＋ 하늘에 춤추는 잎을 베는 것과 같이, 오의로 화려하게 적을 새기는 오의',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -4986,7 +5136,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1330',
     name: '승천공주부채',
-    description: '위력: SS(손·민)　대상: 적 하나　속성: ＋　효과: ＋\n민첩한 부채의 모습으로 솥 족제비를 일으키면서 적 하나를 잘게 자르는 오의',
+    description: '위력: SS(손·민)　대상: 적 하나　속성: ＋　효과: ＋ 민첩한 부채의 모습으로 솥 족제비를 일으키면서 적 하나를 잘게 자르는 오의',
     type: '18',
     icon: 1540,
     scope: 1,
@@ -5002,7 +5152,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1338',
     name: '쌍탄',
-    description: '위력: E(손)　대상: 적 하나　속성: ＋　효과: ＋\n적 하나에 대해, 2발의 탄환을 동시에 발사하는 총 기술',
+    description: '위력: E(손)　대상: 적 하나　속성: ＋　효과: ＋ 적 하나에 대해, 2발의 탄환을 동시에 발사하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5017,7 +5167,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1339',
     name: '전체 사격',
-    description: '위력: D(손)　대상: 적 전체　속성: ＋　효과: ＋\n적 전체에 총탄을 퍼붓는 총 기술',
+    description: '위력: D(손)　대상: 적 전체　속성: ＋　효과: ＋ 적 전체에 총탄을 퍼붓는 총 기술',
     type: '19',
     icon: 1576,
     scope: 2,
@@ -5032,7 +5182,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1340',
     name: '집중 사격',
-    description: '위력: B(손)　대상: 적 하나　속성: ＋　효과: ＋\n적 하나에 집중해 총격을 퍼붓는 총 기술',
+    description: '위력: B(손)　대상: 적 하나　속성: ＋　효과: ＋ 적 하나에 집중해 총격을 퍼붓는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5047,7 +5197,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1341',
     name: '산탄',
-    description: '위력: B(손)　대상: 적 하나　효과: 스턴\n적 하나에 산탄을 발사해, 움직임을 봉하는 총 기술',
+    description: '위력: B(손)　대상: 적 하나　효과: 스턴 적 하나에 산탄을 발사해, 움직임을 봉하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5062,7 +5212,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1342',
     name: '도탄',
-    description: '위력: B(손)　대상: 적 하나　속성: ＋　효과: ＋\n벽에 총탄을 반사시켜, 파괴력을 늘려 발사하는 총 기술',
+    description: '위력: B(손)　대상: 적 하나　속성: ＋　효과: ＋ 벽에 총탄을 반사시켜, 파괴력을 늘려 발사하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5077,7 +5227,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1343',
     name: '조살탄',
-    description: '위력: C(손)　대상: 적 하나　효과: 새특공\n하피족에 효과가 있는 탄환을 발사하는 총 기술',
+    description: '위력: C(손)　대상: 적 하나　효과: 새특공 하피족에 효과가 있는 탄환을 발사하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5092,7 +5242,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1344',
     name: '음멸탄',
-    description: '위력: C(손)　대상: 적 하나　효과: 음마 특공\n서큐버스에게 효과가 있는 탄환을 발사하는 총 기술',
+    description: '위력: C(손)　대상: 적 하나　효과: 음마 특공 서큐버스에게 효과가 있는 탄환을 발사하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5107,7 +5257,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1345',
     name: '은의 탄환',
-    description: '위력: C(손)　대상: 적 하나　효과: 요마·흡혈귀 특공\n마족에 효과가 있는 탄환을 발사하는 총 기술',
+    description: '위력: C(손)　대상: 적 하나　효과: 요마·흡혈귀 특공 마족에 효과가 있는 탄환을 발사하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5122,7 +5272,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1346',
     name: '멸시의 탄환',
-    description: '위력: C(손)　대상: 적 하나　효과: 좀비·고스트 특공\n언데드에게 효과가 있는 탄환을 발사하는 총 기술',
+    description: '위력: C(손)　대상: 적 하나　효과: 좀비·고스트 특공 언데드에게 효과가 있는 탄환을 발사하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5137,7 +5287,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1347',
     name: '맹독의 나선탄',
-    description: '위력: C(손)　대상: 적 하나　효과: 육서종·해서종 특공\n생물계 몬스터에게 효과가 있는 탄환을 발사하는 총 기술',
+    description: '위력: C(손)　대상: 적 하나　효과: 육서종·해서종 특공 생물계 몬스터에게 효과가 있는 탄환을 발사하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5152,7 +5302,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1348',
     name: '환수탄',
-    description: '위력: C(손)　대상: 적 하나　효과: 인어·호·룡특공\n환수에 효과가 있는 탄환을 발사하는 총 기술',
+    description: '위력: C(손)　대상: 적 하나　효과: 인어·호·룡특공 환수에 효과가 있는 탄환을 발사하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5167,7 +5317,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1349',
     name: '음양탄',
-    description: '위력: B(손)　대상: 적 하나　효과: 석화·즉사\n저주를 담은 탄환을 목표로 발사하는 총 기술',
+    description: '위력: B(손)　대상: 적 하나　효과: 석화·즉사 저주를 담은 탄환을 목표로 발사하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5182,7 +5332,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1350',
     name: '풀 개틀링',
-    description: '위력: B(손)　대상: 적 하나\n총기를 자신의 몸에 접속해, 탄환의 비를 퍼붓는 총 기술',
+    description: '위력: B(손)　대상: 적 하나 총기를 자신의 몸에 접속해, 탄환의 비를 퍼붓는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5197,7 +5347,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1351',
     name: '쇼크 웨이브',
-    description: '위력: A(손)　대상: 적 전체　속성: 번개\n총기를 자신의 몸에 접속해, 전격을 연속 발사하는 총 기술',
+    description: '위력: A(손)　대상: 적 전체　속성: 번개 총기를 자신의 몸에 접속해, 전격을 연속 발사하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 2,
@@ -5212,7 +5362,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1352',
     name: '아토믹 레이',
-    description: '위력: S(손)　대상: 적 전체　속성: 불길\n총기를 자신의 몸에 접속해, 핵융합에 의한 충격파를 발하는 총 기술',
+    description: '위력: S(손)　대상: 적 전체　속성: 불길 총기를 자신의 몸에 접속해, 핵융합에 의한 충격파를 발하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 2,
@@ -5227,7 +5377,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1353',
     name: '센트로즈',
-    description: '위력: S(손)　대상: 적 하나　속성: 성＋　효과: ＋\n성스러운 총 총알을 발사해, 꽃과 같은 폭염을 발생시키는 총 기술',
+    description: '위력: S(손)　대상: 적 하나　속성: 성＋　효과: ＋ 성스러운 총 총알을 발사해, 꽃과 같은 폭염을 발생시키는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5242,7 +5392,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1354',
     name: '블랙 달리아',
-    description: '위력: S(손)　대상: 적 하나　속성: 어둠＋　효과: ＋\n어둠의 총 총알을 발사해, 꽃과 같은 폭염을 발생시키는 총 기술',
+    description: '위력: S(손)　대상: 적 하나　속성: 어둠＋　효과: ＋ 어둠의 총 총알을 발사해, 꽃과 같은 폭염을 발생시키는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5257,7 +5407,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1355',
     name: '댄싱 플레어',
-    description: '위력: A(손)　대상: 적 전체　속성: 불길\n적 전체에 불길의 탄환을 흐트러지고 공격하는 총 기술',
+    description: '위력: A(손)　대상: 적 전체　속성: 불길 적 전체에 불길의 탄환을 흐트러지고 공격하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 2,
@@ -5272,7 +5422,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1356',
     name: '메기드바스트',
-    description: '위력: A(손)　대상: 적 전체　속성: 얼음\n적 전체에 얼음의 탄환을 흐트러지고 공격하는 총 기술',
+    description: '위력: A(손)　대상: 적 전체　속성: 얼음 적 전체에 얼음의 탄환을 흐트러지고 공격하는 총 기술',
     type: '19',
     icon: 1576,
     scope: 2,
@@ -5287,7 +5437,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1357',
     name: '호리데스페라드',
-    description: '위력: S(손)　대상: 적 랜덤 4회　속성: 성＋　효과: ＋\n적의 무리에 성스러운 탄환을 흐트러지고 공격하는 오의',
+    description: '위력: S(손)　대상: 적 랜덤 4회　속성: 성＋　효과: ＋ 적의 무리에 성스러운 탄환을 흐트러지고 공격하는 오의',
     type: '19',
     icon: 1576,
     scope: 3,
@@ -5302,7 +5452,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1358',
     name: '샤드우데스페라드',
-    description: '위력: S(손)　대상: 적 랜덤 4회　속성: 어둠＋　효과: ＋\n적의 무리에 어둠의 탄환을 흐트러지고 공격하는 오의',
+    description: '위력: S(손)　대상: 적 랜덤 4회　속성: 어둠＋　효과: ＋ 적의 무리에 어둠의 탄환을 흐트러지고 공격하는 오의',
     type: '19',
     icon: 1576,
     scope: 3,
@@ -5317,7 +5467,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1361',
     name: '보복',
-    description: '위력: 가변　대상: 적 하나　속성: ＋　효과: ＋\n사용자의 체력이 적을 정도 위력이 높아지는 총 기술',
+    description: '위력: 가변　대상: 적 하나　속성: ＋　효과: ＋ 사용자의 체력이 적을 정도 위력이 높아지는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5332,7 +5482,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1362',
     name: '인의',
-    description: '위력: 가변(손)　대상: 적 하나　속성: ＋　효과: ＋\n아군의 전투 불능자가 많을 정도 위력이 높아지는 총 기술',
+    description: '위력: 가변(손)　대상: 적 하나　속성: ＋　효과: ＋ 아군의 전투 불능자가 많을 정도 위력이 높아지는 총 기술',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5347,7 +5497,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1363',
     name: '암살',
-    description: '위력: B(손)　대상: 적 하나　속성: ＋　효과: 즉사＋\n적 일체의 급소에 탄환을 발사해, 즉사시킨다',
+    description: '위력: B(손)　대상: 적 하나　속성: ＋　효과: 즉사＋ 적 일체의 급소에 탄환을 발사해, 즉사시킨다',
     type: '19',
     icon: 1576,
     scope: 1,
@@ -5362,7 +5512,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1364',
     name: '제재',
-    description: '위력: 가변　대상: 아군 하나\n아군을 총격 해, 빈사에 몰아넣는 용서가 없는 기술',
+    description: '위력: 가변　대상: 아군 하나 아군을 총격 해, 빈사에 몰아넣는 용서가 없는 기술',
     type: '19',
     icon: 1576,
     scope: 7,
@@ -5377,7 +5527,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1365',
     name: '숙정',
-    description: '대상: 아군 하나　효과: 즉사\n아군 하나를 즉사시키는 냉철한 총격',
+    description: '대상: 아군 하나　효과: 즉사 아군 하나를 즉사시키는 냉철한 총격',
     type: '19',
     icon: 1576,
     scope: 7,
@@ -5392,7 +5542,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1366',
     name: '악의 꽃',
-    description: '위력: 가변　대상: 적 전체　속성: ＋　효과: ＋\n사용자가 손상되어, 아군이 넘어질수록 위력이 높아지는 총 기술',
+    description: '위력: 가변　대상: 적 전체　속성: ＋　효과: ＋ 사용자가 손상되어, 아군이 넘어질수록 위력이 높아지는 총 기술',
     type: '19',
     icon: 1576,
     scope: 2,
@@ -5407,7 +5557,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1367',
     name: '회복탄',
-    description: '대상: 아군 하나　효과: HP대회복\n회복의 힘을 담겨진 탄환을 아군 하나에 발사한다',
+    description: '대상: 아군 하나　효과: HP대회복 회복의 힘을 담겨진 탄환을 아군 하나에 발사한다',
     type: '19',
     icon: 1576,
     scope: 7,
@@ -5422,7 +5572,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1368',
     name: '회복탄 난사',
-    description: '대상: 아군 랜덤 8회　효과: HP대회복\n회복의 힘을 담겨진 탄환을 아군에게 난사한다',
+    description: '대상: 아군 랜덤 8회　효과: HP대회복 회복의 힘을 담겨진 탄환을 아군에게 난사한다',
     type: '19',
     icon: 1576,
     scope: 3,
@@ -5437,7 +5587,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1374',
     name: '믹스게이즈',
-    description: '위력: B(공)　대상: 적 하나　속성: ＋　효과: ＋\n참격과 격투 기술을 동시에 주입하는 믹스 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: ＋　효과: ＋ 참격과 격투 기술을 동시에 주입하는 믹스 기술',
     type: '20',
     icon: 476,
     scope: 1,
@@ -5452,7 +5602,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1375',
     name: '암드스토무',
-    description: '위력: B(공)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n광범위하게 칼날의 아라시를 추방해, 적에게 몇번이나 참격을 먹이는 기술',
+    description: '위력: B(공)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 광범위하게 칼날의 아라시를 추방해, 적에게 몇번이나 참격을 먹이는 기술',
     type: '20',
     icon: 476,
     scope: 3,
@@ -5467,7 +5617,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1376',
     name: '와이드스 매쉬',
-    description: '위력: B(공)　대상: 적 전체　속성: ＋　효과: ＋\n광범위를 양날칼로 밀어 베기로 하는 검 기술',
+    description: '위력: B(공)　대상: 적 전체　속성: ＋　효과: ＋ 광범위를 양날칼로 밀어 베기로 하는 검 기술',
     type: '20',
     icon: 476,
     scope: 2,
@@ -5482,7 +5632,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1377',
     name: '크레이지 타임',
-    description: '위력: A(공)　대상: 적 랜덤 6회　속성: ＋　효과: ＋\n격투와 검 기술을 짜맞춰, 주먹과 칼날을 연속으로 터는 종합 무예',
+    description: '위력: A(공)　대상: 적 랜덤 6회　속성: ＋　효과: ＋ 격투와 검 기술을 짜맞춰, 주먹과 칼날을 연속으로 터는 종합 무예',
     type: '20',
     icon: 476,
     scope: 3,
@@ -5497,7 +5647,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1378',
     name: '산산조각 베어',
-    description: '위력: B(공)　대상: 적 하나　속성: ＋　효과: ＋\n양팔의 칼날로 적을 산산조각에 잘게 자르는 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: ＋　효과: ＋ 양팔의 칼날로 적을 산산조각에 잘게 자르는 기술',
     type: '20',
     icon: 476,
     scope: 1,
@@ -5512,7 +5662,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1379',
     name: '팔손이나무련참',
-    description: '위력: B(공)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n8개의 팔에 잡은 칼날로 적의 무리를 베어 새기는 기술',
+    description: '위력: B(공)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 8개의 팔에 잡은 칼날로 적의 무리를 베어 새기는 기술',
     type: '20',
     icon: 476,
     scope: 3,
@@ -5527,7 +5677,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1380',
     name: '4 도미진 겹침이네',
-    description: '위력: B(공)　대상: 적 하나　속성: ＋　효과: ＋\n4 도로 참격을 발해, 결정타에 횡치기를 내지르는 검 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: ＋　효과: ＋ 4 도로 참격을 발해, 결정타에 횡치기를 내지르는 검 기술',
     type: '20',
     icon: 476,
     scope: 1,
@@ -5542,7 +5692,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1384',
     name: '프라라야',
-    description: '위력: S(공)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n다팔에 잡은 무수한 칼날로, 적의 무리에 난격을 퍼붓는 오의',
+    description: '위력: S(공)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 다팔에 잡은 무수한 칼날로, 적의 무리에 난격을 퍼붓는 오의',
     type: '20',
     icon: 476,
     scope: 3,
@@ -5557,7 +5707,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1385',
     name: '피나카',
-    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋\n다팔에 잡은 무수한 칼날을 흔들어, 적 하나에 참격을 집중하는 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋ 다팔에 잡은 무수한 칼날을 흔들어, 적 하나에 참격을 집중하는 오의',
     type: '20',
     icon: 476,
     scope: 1,
@@ -5572,7 +5722,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1386',
     name: '제비처럼 재빨리 몸을 반전시킴 8련',
-    description: '위력: A(공)　대상: 적 전체　속성: ＋　효과: ＋\n적 전체를 일섬 하는 베어 반환을 8연속으로 내지르는, 다완만이 가능한 도 기술',
+    description: '위력: A(공)　대상: 적 전체　속성: ＋　효과: ＋ 적 전체를 일섬 하는 베어 반환을 8연속으로 내지르는, 다완만이 가능한 도 기술',
     type: '20',
     icon: 476,
     scope: 2,
@@ -5587,7 +5737,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1388',
     name: '퀸 풀 암즈',
-    description: '위력: S(공)　대상: 적 전체　속성: ＋　효과: ＋\n양팔의 칼날로 주위를 어루만지고 베는, 스큐라 여왕의 전승 오의',
+    description: '위력: S(공)　대상: 적 전체　속성: ＋　효과: ＋ 양팔의 칼날로 주위를 어루만지고 베는, 스큐라 여왕의 전승 오의',
     type: '20',
     icon: 476,
     scope: 2,
@@ -5602,7 +5752,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1391',
     name: '엉터리 베어',
-    description: '위력: B(공)　대상: 적아군 랜덤 4회\n터무니없게 검을 휘둘러, 적아군을 불문하고 흐트러지고 베는 기술',
+    description: '위력: B(공)　대상: 적아군 랜덤 4회 터무니없게 검을 휘둘러, 적아군을 불문하고 흐트러지고 베는 기술',
     type: '20',
     icon: 476,
     scope: 3,
@@ -5617,7 +5767,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1392',
     name: '맹인람',
-    description: '위력: S(공)　대상: 적아군 랜덤 8회\n대상을 선택하지 않는 칼날의 폭풍우로, 적아군을 불문하고 베어 새기는 오의',
+    description: '위력: S(공)　대상: 적아군 랜덤 8회 대상을 선택하지 않는 칼날의 폭풍우로, 적아군을 불문하고 베어 새기는 오의',
     type: '20',
     icon: 476,
     scope: 3,
@@ -5632,7 +5782,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1393',
     name: '세컨드 쉬프트',
-    description: '대상: 사용자　효과: 흐트러지고 공격해 가능\n정신을 예민하게 해, 검을 휘두르는 회수를 올리는 기술',
+    description: '대상: 사용자　효과: 흐트러지고 공격해 가능 정신을 예민하게 해, 검을 휘두르는 회수를 올리는 기술',
     type: '20',
     icon: 476,
     scope: 11,
@@ -5644,7 +5794,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1400',
     name: '다리후리기',
-    description: '위력: E(공·민)　대상: 적 하나　효과: 스턴·속공\n적의 다리를 후려쳐, 몸의 자세를 무너뜨려 스턴 시키는 기술',
+    description: '위력: E(공·민)　대상: 적 하나　효과: 스턴·속공 적의 다리를 후려쳐, 몸의 자세를 무너뜨려 스턴 시키는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5660,7 +5810,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1401',
     name: '나는 일무릎 차는 것',
-    description: '위력: E(공·민)　대상: 적 하나　효과: 새특공·속공\n도약해 무릎 차는 것을 내질러, 새계에 대데미지',
+    description: '위력: E(공·민)　대상: 적 하나　효과: 새특공·속공 도약해 무릎 차는 것을 내질러, 새계에 대데미지',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5676,7 +5826,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1402',
     name: '돌려차기',
-    description: '위력: E(공·민)　대상: 적 전체\n날카로운 돌려차기를 내질러, 적 전체에 데미지를 주는 기술',
+    description: '위력: E(공·민)　대상: 적 전체 날카로운 돌려차기를 내질러, 적 전체에 데미지를 주는 기술',
     type: '21',
     icon: 182,
     scope: 2,
@@ -5691,7 +5841,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1403',
     name: '비공',
-    description: '위력: E(공·민)　대상: 적 하나　효과: 즉사\n적의 급소를 찔러, 일격으로 즉사시키는 기술',
+    description: '위력: E(공·민)　대상: 적 하나　효과: 즉사 적의 급소를 찔러, 일격으로 즉사시키는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5706,7 +5856,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1404',
     name: '비공난타',
-    description: '위력: D(공·민)　대상: 적 랜덤 3회　효과: 즉사\n적의 급소를 노려, 난타를 내지르는 필살주먹',
+    description: '위력: D(공·민)　대상: 적 랜덤 3회　효과: 즉사 적의 급소를 노려, 난타를 내지르는 필살주먹',
     type: '21',
     icon: 182,
     scope: 3,
@@ -5721,7 +5871,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1405',
     name: '정권찌르기',
-    description: '위력: D(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n날카롭게 발을 디뎌, 전력으로 주먹을 내지르는 기술',
+    description: '위력: D(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 날카롭게 발을 디뎌, 전력으로 주먹을 내지르는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5736,7 +5886,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1406',
     name: '악마손바닥',
-    description: '위력: C(공·민)　대상: 적 하나\n기분을 집중시킨 장저[掌底]를 적에게 주입하는 기술',
+    description: '위력: C(공·민)　대상: 적 하나 기분을 집중시킨 장저[掌底]를 적에게 주입하는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5751,7 +5901,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1407',
     name: '폭렬주먹',
-    description: '위력: B(공·민)　대상: 적 랜덤 4회\n연속으로 주먹을 내질러, 적에게 몇번이나 데미지를 주는 기술',
+    description: '위력: B(공·민)　대상: 적 랜덤 4회 연속으로 주먹을 내질러, 적에게 몇번이나 데미지를 주는 기술',
     type: '21',
     icon: 182,
     scope: 3,
@@ -5766,7 +5916,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1408',
     name: '전진련각',
-    description: '위력: B(공·민)　대상: 적 하나　속성: 번개\n전격을 휘감은 차는 것을 적 하나에 집중시키는 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: 번개 전격을 휘감은 차는 것을 적 하나에 집중시키는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5781,7 +5931,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1409',
     name: '염 무용 3연격',
-    description: '위력: B(공·민)　대상: 적 하나　속성: 불길＋　효과: 통상 공격 불길 속성\n불길의 마력을 품은 주먹으로 3연격을 퍼붓는 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: 불길＋　효과: 통상 공격 불길 속성 불길의 마력을 품은 주먹으로 3연격을 퍼붓는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5796,7 +5946,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1410',
     name: '빙권란박격',
-    description: '위력: B(공·민)　대상: 적 하나　속성: 얼음＋　효과: 통상 공격 얼음 속성\n얼음의 마력을 품은 주먹을 주입해, 격렬한 우박을 야기하는 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: 얼음＋　효과: 통상 공격 얼음 속성 얼음의 마력을 품은 주먹을 주입해, 격렬한 우박을 야기하는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5811,7 +5961,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1411',
     name: '번개신갈격',
-    description: '위력: B(공·민)　대상: 적 하나　속성: 번개＋　효과: 통상 공격 번개속성\n번개의 마력을 주먹에 모아, 적에게 일순간으로 주입하는 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: 번개＋　효과: 통상 공격 번개속성 번개의 마력을 주먹에 모아, 적에게 일순간으로 주입하는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5826,7 +5976,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1412',
     name: '진공 파동손바닥',
-    description: '위력: A(공·민)　대상: 적 하나　속성: 바람＋　효과: 통상 공격 바람 속성\n진공의 마력을 손바닥에 집중시켜, 적에게 향해 발하는 기술',
+    description: '위력: A(공·민)　대상: 적 하나　속성: 바람＋　효과: 통상 공격 바람 속성 진공의 마력을 손바닥에 집중시켜, 적에게 향해 발하는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5841,7 +5991,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1413',
     name: '토각금강주먹',
-    description: '위력: A(공·민)　대상: 적 하나　속성: 흙＋　효과: 통상 공격 흙 속성\n대지의 마력을 주먹에 집중해, 적에게 주입하는 기술',
+    description: '위력: A(공·민)　대상: 적 하나　속성: 흙＋　효과: 통상 공격 흙 속성 대지의 마력을 주먹에 집중해, 적에게 주입하는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5856,7 +6006,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1414',
     name: '파 단수렬축',
-    description: '위력: A(공·민)　대상: 적 하나　속성: 물＋　효과: 통상 공격 물 속성\n다리에 물의 마력을 모아, 적에게 차는 것을 발하는 기술',
+    description: '위력: A(공·민)　대상: 적 하나　속성: 물＋　효과: 통상 공격 물 속성 다리에 물의 마력을 모아, 적에게 차는 것을 발하는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5871,7 +6021,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1415',
     name: '금강신장',
-    description: '위력: B(공·민)　대상: 적 하나　속성: 성\n성스러운 오라를 손바닥에 집중해 주입해, 적을 내부로부터 파괴하는 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: 성 성스러운 오라를 손바닥에 집중해 주입해, 적을 내부로부터 파괴하는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5886,7 +6036,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1416',
     name: '신의 철권',
-    description: '위력: A(공·민)　대상: 적 하나　속성: 성\n신의 분노를 담은 철권을 적에게 주입하는 오의',
+    description: '위력: A(공·민)　대상: 적 하나　속성: 성 신의 분노를 담은 철권을 적에게 주입하는 오의',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5901,7 +6051,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1417',
     name: '폭염 주먹',
-    description: '위력: B(공·민)　대상: 적 하나　속성: 불길＋　효과: ＋\n고열을 띤 주먹을 주입해, 단번에 불꽃상 시키는 용족인 주먹 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: 불길＋　효과: ＋ 고열을 띤 주먹을 주입해, 단번에 불꽃상 시키는 용족인 주먹 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5916,7 +6066,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1418',
     name: '드레인 킬러',
-    description: '위력: C(공·민)　대상: 적 하나　효과: 음마·흡혈귀 특공\n정령을 들이마시는 마물에게 전류를 흘려 넣어, 내부로부터 파괴하는 기술',
+    description: '위력: C(공·민)　대상: 적 하나　효과: 음마·흡혈귀 특공 정령을 들이마시는 마물에게 전류를 흘려 넣어, 내부로부터 파괴하는 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5931,7 +6081,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1419',
     name: '고양이 킥',
-    description: '위력: B(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n몸의 용수철을 이용해 적 하나에 차는 것을 주입하는 고양이 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 몸의 용수철을 이용해 적 하나에 차는 것을 주입하는 고양이 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5946,7 +6096,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1420',
     name: '네코스 러쉬',
-    description: '위력: C(공·민)　대상: 적 전체　속성: ＋　효과: ＋\n날씬한 육체를 살려, 날카로운 손톱으로 적 전체를 일섬 하는 고양이 기술',
+    description: '위력: C(공·민)　대상: 적 전체　속성: ＋　효과: ＋ 날씬한 육체를 살려, 날카로운 손톱으로 적 전체를 일섬 하는 고양이 기술',
     type: '21',
     icon: 182,
     scope: 2,
@@ -5961,7 +6111,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1421',
     name: '파업 레이 캣',
-    description: '위력: S(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n적 하나에 연속 공격을 퍼붓는 묘족의 오의',
+    description: '위력: S(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 적 하나에 연속 공격을 퍼붓는 묘족의 오의',
     type: '21',
     icon: 182,
     scope: 1,
@@ -5976,7 +6126,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1422',
     name: '무신란조',
-    description: '위력: S(공·민)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n민첩한 움직임으로 손톱의 난격을 내지르는 묘족의 오의',
+    description: '위력: S(공·민)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 민첩한 움직임으로 손톱의 난격을 내지르는 묘족의 오의',
     type: '21',
     icon: 182,
     scope: 3,
@@ -5991,7 +6141,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1423',
     name: '3회연속봉격',
-    description: '위력: B(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n복수의 팔로 연속 타격을 내지르는 벌레계 몬스터 특유의 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 복수의 팔로 연속 타격을 내지르는 벌레계 몬스터 특유의 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -6006,7 +6156,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1424',
     name: '봉완대란무용',
-    description: '위력: S(공·민)　대상: 적 랜덤 5회　속성: ＋　효과: ＋\n다완으로 강렬한 연속 타격을 내지르는 곤충족의 오의',
+    description: '위력: S(공·민)　대상: 적 랜덤 5회　속성: ＋　효과: ＋ 다완으로 강렬한 연속 타격을 내지르는 곤충족의 오의',
     type: '21',
     icon: 182,
     scope: 3,
@@ -6021,7 +6171,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1425',
     name: '성광렬섬격',
-    description: '위력: A(공·민)　대상: 적 전체　속성: 성\n성스러운 오라를 수반해, 적 전체에 주먹의 난타를 발하는 기술',
+    description: '위력: A(공·민)　대상: 적 전체　속성: 성 성스러운 오라를 수반해, 적 전체에 주먹의 난타를 발하는 기술',
     type: '21',
     icon: 182,
     scope: 2,
@@ -6036,7 +6186,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1426',
     name: '암흑련충권',
-    description: '위력: A(공·민)　대상: 적 전체　속성: 어둠\n어둠 오라를 수반해, 적 전체에 주먹의 난타를 발하는 기술',
+    description: '위력: A(공·민)　대상: 적 전체　속성: 어둠 어둠 오라를 수반해, 적 전체에 주먹의 난타를 발하는 기술',
     type: '21',
     icon: 182,
     scope: 2,
@@ -6051,7 +6201,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1427',
     name: '4천광장',
-    description: '위력: S(공·민)　대상: 적 랜덤 4회　속성: 성＋　효과: ＋\n성스러운 오라를 주먹에 집중해, 4연격을 내지르는 오의',
+    description: '위력: S(공·민)　대상: 적 랜덤 4회　속성: 성＋　효과: ＋ 성스러운 오라를 주먹에 집중해, 4연격을 내지르는 오의',
     type: '21',
     icon: 182,
     scope: 3,
@@ -6066,7 +6216,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1428',
     name: '4성멸공',
-    description: '위력: S(공·민)　대상: 적 랜덤 4회　속성: 어둠＋　효과: ＋\n어둠 오라를 주먹에 집중해, 4연격을 내지르는 오의',
+    description: '위력: S(공·민)　대상: 적 랜덤 4회　속성: 어둠＋　효과: ＋ 어둠 오라를 주먹에 집중해, 4연격을 내지르는 오의',
     type: '21',
     icon: 182,
     scope: 3,
@@ -6081,7 +6231,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1429',
     name: '열기광장',
-    description: '위력: S(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n모든 기분을 집중시킨 장저[掌底]를 적에게 주입하는 격투 오의',
+    description: '위력: S(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 모든 기분을 집중시킨 장저[掌底]를 적에게 주입하는 격투 오의',
     type: '21',
     icon: 182,
     scope: 1,
@@ -6096,7 +6246,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1430',
     name: '순옥살',
-    description: '위력: S(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n암흑의 오라를 휘감으면서 난격을 내질러, 적 1체를 매장하는 어둠 오의',
+    description: '위력: S(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 암흑의 오라를 휘감으면서 난격을 내질러, 적 1체를 매장하는 어둠 오의',
     type: '21',
     icon: 182,
     scope: 1,
@@ -6111,7 +6261,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1431',
     name: '에레먼트피닛슈',
-    description: '위력: S(공·민)　대상: 적 하나　속성: 불길·빙·뢰·풍·토·수＋\n적 1체에 6 속성의 마력을 담은 연격을 주입하는 오의',
+    description: '위력: S(공·민)　대상: 적 하나　속성: 불길·빙·뢰·풍·토·수＋ 적 1체에 6 속성의 마력을 담은 연격을 주입하는 오의',
     type: '21',
     icon: 182,
     scope: 1,
@@ -6126,7 +6276,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1432',
     name: '흑염 16 손바닥',
-    description: '위력: S(공·민)　대상: 적 랜덤 6회　속성: 불길＋　효과: ＋\n고열을 띤 주먹으로 적 전체에 난격을 문병하는 용족의 최강주먹 기술',
+    description: '위력: S(공·민)　대상: 적 랜덤 6회　속성: 불길＋　효과: ＋ 고열을 띤 주먹으로 적 전체에 난격을 문병하는 용족의 최강주먹 기술',
     type: '21',
     icon: 182,
     scope: 3,
@@ -6141,7 +6291,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1437',
     name: '사큐바스빈타',
-    description: '위력: C(손·민)　대상: 적 하나　속성: ＋　효과: ＋\n기분을 집중해, 손바닥으로부터 주입하는 음마 직전[直傳]의 격투 기술',
+    description: '위력: C(손·민)　대상: 적 하나　속성: ＋　효과: ＋ 기분을 집중해, 손바닥으로부터 주입하는 음마 직전[直傳]의 격투 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -6156,7 +6306,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1438',
     name: '랏슈빈타',
-    description: '위력: A(손·민)　대상: 적 하나　속성: ＋　효과: ＋\n기분을 집중한 손바닥으로 연격을 주입하는 음마의 격투 기술',
+    description: '위력: A(손·민)　대상: 적 하나　속성: ＋　효과: ＋ 기분을 집중한 손바닥으로 연격을 주입하는 음마의 격투 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -6171,7 +6321,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1439',
     name: '마장·젖짜기',
-    description: '대상: 적 하나　효과: 밀크 획득\n달콤한 손다루기로, 상대의 밀크를 짜내는 손재주',
+    description: '대상: 적 하나　효과: 밀크 획득 달콤한 손다루기로, 상대의 밀크를 짜내는 손재주',
     type: '21',
     icon: 182,
     scope: 1,
@@ -6183,7 +6333,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1440',
     name: '마장·실금의 권유',
-    description: '위력: A(손or민)　대상: 적 하나　속성: 쾌락　효과: 실금\n달콤한 손다루기로, 상대를 실금에 이끄는 손재주',
+    description: '위력: A(손or민)　대상: 적 하나　속성: 쾌락　효과: 실금 달콤한 손다루기로, 상대를 실금에 이끄는 손재주',
     type: '21',
     icon: 182,
     scope: 1,
@@ -6198,7 +6348,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1441',
     name: '총섬무',
-    description: '위력: B(손or민)　대상: 적 전체　속성: 쾌락\n매끄러운 움직임으로 적 전체를 애무하는 쾌락 기술',
+    description: '위력: B(손or민)　대상: 적 전체　속성: 쾌락 매끄러운 움직임으로 적 전체를 애무하는 쾌락 기술',
     type: '21',
     icon: 182,
     scope: 2,
@@ -6213,7 +6363,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1442',
     name: '순신란무',
-    description: '위력: S(손or민)　대상: 적 랜덤 4회　속성: 쾌락\n섬광과 같은 움직임으로 적을 흐트러지고 어루만지는 쾌락 오의',
+    description: '위력: S(손or민)　대상: 적 랜덤 4회　속성: 쾌락 섬광과 같은 움직임으로 적을 흐트러지고 어루만지는 쾌락 오의',
     type: '21',
     icon: 182,
     scope: 3,
@@ -6228,7 +6378,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1443',
     name: '옛 식음투법·뱀희',
-    description: '위력: S(손or민)　대상: 적 하나　속성: 쾌락　효과: HP흡수·구속\n적의 동작을 봉하면서, 차분히 적을 범하는 음 기술',
+    description: '위력: S(손or민)　대상: 적 하나　속성: 쾌락　효과: HP흡수·구속 적의 동작을 봉하면서, 차분히 적을 범하는 음 기술',
     type: '21',
     icon: 182,
     scope: 1,
@@ -6243,7 +6393,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1445',
     name: '급소 지르기광장',
-    description: '위력: A(손)　대상: 적 하나　효과: 물리 카운터 발동\n조용하게 준비해, 적의 공격에 대해서 장저[掌底]를 내지르는 반격 오의',
+    description: '위력: A(손)　대상: 적 하나　효과: 물리 카운터 발동 조용하게 준비해, 적의 공격에 대해서 장저[掌底]를 내지르는 반격 오의',
     type: '21',
     icon: 182,
     scope: 11,
@@ -6256,7 +6406,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1446',
     name: '체크라',
-    description: '대상: 사용자　효과: HP회복\n위안의 기분을 넘치게 해 자신의 상처를 달래는 회복 기술',
+    description: '대상: 사용자　효과: HP회복 위안의 기분을 넘치게 해 자신의 상처를 달래는 회복 기술',
     type: '21',
     icon: 182,
     scope: 11,
@@ -6271,7 +6421,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1447',
     name: '확산 체크라',
-    description: '대상: 아군 전체　효과: HP회복\n위안의 기분을 확산시켜, 아군 전체를 치유하는 회복 기술',
+    description: '대상: 아군 전체　효과: HP회복 위안의 기분을 확산시켜, 아군 전체를 치유하는 회복 기술',
     type: '21',
     icon: 182,
     scope: 8,
@@ -6286,7 +6436,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1448',
     name: '뒤체크라',
-    description: '대상: 사용자　효과: MP소회복\n마도의 기분을 체내에 돌아 다니게 해 MP를 회복 하는 기술',
+    description: '대상: 사용자　효과: MP소회복 마도의 기분을 체내에 돌아 다니게 해 MP를 회복 하는 기술',
     type: '21',
     icon: 182,
     scope: 11,
@@ -6298,7 +6448,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1450',
     name: '소생',
-    description: '대상: 아군 하나　효과: 소생\n무도가에게 전해지는 소생방법으로, 아군의 소생하는 기술',
+    description: '대상: 아군 하나　효과: 소생 무도가에게 전해지는 소생방법으로, 아군의 소생하는 기술',
     type: '21',
     icon: 182,
     scope: 9,
@@ -6313,7 +6463,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1451',
     name: '뒤소생',
-    description: '대상: 아군 하나　효과: 완전 소생\n비전의 소생방법으로, 아군을 완쾌 시키면서 부활시키는 기술',
+    description: '대상: 아군 하나　효과: 완전 소생 비전의 소생방법으로, 아군을 완쾌 시키면서 부활시키는 기술',
     type: '21',
     icon: 182,
     scope: 10,
@@ -6328,7 +6478,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1452',
     name: '3마의 주먹',
-    description: '대상: 사용자　효과: 통상 공격 불길·빙·뢰속성\n원소의 힘을 주먹에 모아, 3개의 속성을 동시에 머무는 기술',
+    description: '대상: 사용자　효과: 통상 공격 불길·빙·뢰속성 원소의 힘을 주먹에 모아, 3개의 속성을 동시에 머무는 기술',
     type: '21',
     icon: 182,
     scope: 11,
@@ -6340,7 +6490,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1453',
     name: '4정령의 주먹',
-    description: '대상: 사용자　효과: 통상 공격 불길·풍·토·수속성\n원소의 힘을 주먹에 모아, 4개의 속성을 동시에 머무는 기술',
+    description: '대상: 사용자　효과: 통상 공격 불길·풍·토·수속성 원소의 힘을 주먹에 모아, 4개의 속성을 동시에 머무는 기술',
     type: '21',
     icon: 182,
     scope: 11,
@@ -6352,7 +6502,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1454',
     name: '성마 주먹',
-    description: '대상: 사용자　효과: 통상 공격성·암속성\n성과 어둠 오라를 주먹에 모아, 2 속성을 동시에 머무는 기술',
+    description: '대상: 사용자　효과: 통상 공격성·암속성 성과 어둠 오라를 주먹에 모아, 2 속성을 동시에 머무는 기술',
     type: '21',
     icon: 182,
     scope: 11,
@@ -6364,7 +6514,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1460',
     name: '힐',
-    description: '대상: 아군 하나　효과: HP중 회복\n아군 하나의 체력을 회복 하는 위안의 마법',
+    description: '대상: 아군 하나　효과: HP중 회복 아군 하나의 체력을 회복 하는 위안의 마법',
     type: '22',
     icon: 207,
     scope: 7,
@@ -6379,7 +6529,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1461',
     name: '메가 힐',
-    description: '대상: 아군 하나　효과: HP대회복\n아군 하나의 체력을 대회복 하는 위안의 마법',
+    description: '대상: 아군 하나　효과: HP대회복 아군 하나의 체력을 대회복 하는 위안의 마법',
     type: '22',
     icon: 207,
     scope: 7,
@@ -6394,7 +6544,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1462',
     name: '올 힐',
-    description: '대상: 아군 전체　효과: HP중 회복\n아군 전체의 체력을 회복 하는 위안의 마법',
+    description: '대상: 아군 전체　효과: HP중 회복 아군 전체의 체력을 회복 하는 위안의 마법',
     type: '22',
     icon: 207,
     scope: 8,
@@ -6409,7 +6559,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1463',
     name: '올 메가 힐',
-    description: '대상: 아군 전체　효과: HP대회복\n아군 전체의 체력을 대회복 하는 위안의 마법',
+    description: '대상: 아군 전체　효과: HP대회복 아군 전체의 체력을 대회복 하는 위안의 마법',
     type: '22',
     icon: 207,
     scope: 8,
@@ -6424,7 +6574,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1464',
     name: '큐어',
-    description: '대상: 아군 하나　효과: 상태 이상 회복\n아군 하나 상태 이상을 회복 하는 마법',
+    description: '대상: 아군 하나　효과: 상태 이상 회복 아군 하나 상태 이상을 회복 하는 마법',
     type: '22',
     icon: 207,
     scope: 7,
@@ -6436,7 +6586,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1465',
     name: '올 큐어',
-    description: '대상: 아군 전체　효과: 상태 이상 회복\n아군 전체 상태 이상을 회복 하는 마법',
+    description: '대상: 아군 전체　효과: 상태 이상 회복 아군 전체 상태 이상을 회복 하는 마법',
     type: '22',
     icon: 207,
     scope: 8,
@@ -6448,7 +6598,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1466',
     name: '래이즈',
-    description: '대상: 아군 하나　효과: 소생\n아군 하나를 체력 반 상태로 소생 시키는 마법',
+    description: '대상: 아군 하나　효과: 소생 아군 하나를 체력 반 상태로 소생 시키는 마법',
     type: '22',
     icon: 207,
     scope: 9,
@@ -6463,7 +6613,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1467',
     name: '메가 래이즈',
-    description: '대상: 아군 하나　효과: 완전 소생\n아군 하나를 체력 완쾌 상태로 소생 시키는 마법',
+    description: '대상: 아군 하나　효과: 완전 소생 아군 하나를 체력 완쾌 상태로 소생 시키는 마법',
     type: '22',
     icon: 207,
     scope: 9,
@@ -6478,7 +6628,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1468',
     name: '올 메가 래이즈',
-    description: '대상: 아군 전체　효과: 완전 소생\n아군 전체를 체력 완쾌 상태로 소생 시키는 마법',
+    description: '대상: 아군 전체　효과: 완전 소생 아군 전체를 체력 완쾌 상태로 소생 시키는 마법',
     type: '22',
     icon: 207,
     scope: 10,
@@ -6493,7 +6643,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1469',
     name: '호리아로',
-    description: '위력: C(마or정)　대상: 적 하나　속성: 성\n성스러운 마력을 화살로 바꾸어 적을 관통시키는 마법',
+    description: '위력: C(마or정)　대상: 적 하나　속성: 성 성스러운 마력을 화살로 바꾸어 적을 관통시키는 마법',
     type: '22',
     icon: 207,
     scope: 1,
@@ -6508,7 +6658,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1470',
     name: '니르바나',
-    description: '위력: A(마or정)　대상: 적 전체　속성: 성＋　효과: ＋\n하늘로부터 성스러운 화살을 무수에 쏟아지게 하는 마법',
+    description: '위력: A(마or정)　대상: 적 전체　속성: 성＋　효과: ＋ 하늘로부터 성스러운 화살을 무수에 쏟아지게 하는 마법',
     type: '22',
     icon: 207,
     scope: 2,
@@ -6523,7 +6673,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1471',
     name: '마히르',
-    description: '위력: B(마or정)　대상: 적 하나\n적의 대사를 과잉 촉진시키고 육체를 파괴하는 마법',
+    description: '위력: B(마or정)　대상: 적 하나 적의 대사를 과잉 촉진시키고 육체를 파괴하는 마법',
     type: '22',
     icon: 207,
     scope: 1,
@@ -6538,7 +6688,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1472',
     name: '오르마히르',
-    description: '위력: B(마or정)　대상: 적 전체\n적 전체의 대사를 과잉 촉진시키고 육체를 파괴하는 마법',
+    description: '위력: B(마or정)　대상: 적 전체 적 전체의 대사를 과잉 촉진시키고 육체를 파괴하는 마법',
     type: '22',
     icon: 207,
     scope: 2,
@@ -6553,7 +6703,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1473',
     name: '헤분',
-    description: '대상: 적 하나 특수:승천\n성스러운 파동으로 적 하나를 승천 시키는 마법',
+    description: '대상: 적 하나 특수:승천 성스러운 파동으로 적 하나를 승천 시키는 마법',
     type: '22',
     icon: 207,
     scope: 1,
@@ -6565,7 +6715,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1474',
     name: '오르헤분',
-    description: '대상: 적 전체 특수:승천\n성스러운 파동으로 적 전체를 승천 시키는 마법',
+    description: '대상: 적 전체 특수:승천 성스러운 파동으로 적 전체를 승천 시키는 마법',
     type: '22',
     icon: 207,
     scope: 2,
@@ -6577,7 +6727,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1475',
     name: '어택',
-    description: '대상: 아군 하나　효과: 공격력 업\n아군 하나의 공격력을 업 시키는 마법',
+    description: '대상: 아군 하나　효과: 공격력 업 아군 하나의 공격력을 업 시키는 마법',
     type: '22',
     icon: 207,
     scope: 7,
@@ -6589,7 +6739,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1476',
     name: '매직',
-    description: '대상: 아군 하나　효과: 마력 업\n아군 하나의 마력을 업 시키는 마법',
+    description: '대상: 아군 하나　효과: 마력 업 아군 하나의 마력을 업 시키는 마법',
     type: '22',
     icon: 207,
     scope: 7,
@@ -6601,7 +6751,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1477',
     name: '가드',
-    description: '대상: 아군 하나　효과: 방어력 업\n아군 하나의 방어력을 업 시키는 마법',
+    description: '대상: 아군 하나　효과: 방어력 업 아군 하나의 방어력을 업 시키는 마법',
     type: '22',
     icon: 207,
     scope: 7,
@@ -6613,7 +6763,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1478',
     name: '마인드',
-    description: '대상: 아군 하나　효과: 정신력 업\n아군 하나의 정신력을 업 시키는 마법',
+    description: '대상: 아군 하나　효과: 정신력 업 아군 하나의 정신력을 업 시키는 마법',
     type: '22',
     icon: 207,
     scope: 7,
@@ -6625,7 +6775,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1479',
     name: '테크닉',
-    description: '대상: 아군 하나　효과: 손재주 업\n아군 하나의 손재주를 업 시키는 마법',
+    description: '대상: 아군 하나　효과: 손재주 업 아군 하나의 손재주를 업 시키는 마법',
     type: '22',
     icon: 207,
     scope: 7,
@@ -6637,7 +6787,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1480',
     name: '올 어택',
-    description: '대상: 아군 전체　효과: 공격력 업\n아군 전체의 공격력을 업 시키는 마법',
+    description: '대상: 아군 전체　효과: 공격력 업 아군 전체의 공격력을 업 시키는 마법',
     type: '22',
     icon: 207,
     scope: 8,
@@ -6649,7 +6799,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1481',
     name: '올 매직',
-    description: '대상: 아군 전체　효과: 마력 업\n아군 전체의 마력을 업 시키는 마법',
+    description: '대상: 아군 전체　효과: 마력 업 아군 전체의 마력을 업 시키는 마법',
     type: '22',
     icon: 207,
     scope: 8,
@@ -6661,7 +6811,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1482',
     name: '올 가드',
-    description: '대상: 아군 전체　효과: 방어력 업\n아군 전체의 방어력을 업 시키는 마법',
+    description: '대상: 아군 전체　효과: 방어력 업 아군 전체의 방어력을 업 시키는 마법',
     type: '22',
     icon: 207,
     scope: 8,
@@ -6673,7 +6823,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1483',
     name: '올 마인드',
-    description: '대상: 아군 전체　효과: 정신력 업\n아군 전체의 정신력을 업 시키는 마법',
+    description: '대상: 아군 전체　효과: 정신력 업 아군 전체의 정신력을 업 시키는 마법',
     type: '22',
     icon: 207,
     scope: 8,
@@ -6685,7 +6835,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1484',
     name: '올 테크닉',
-    description: '대상: 아군 전체　효과: 손재주 업\n아군 전체의 손재주를 업 시키는 마법',
+    description: '대상: 아군 전체　효과: 손재주 업 아군 전체의 손재주를 업 시키는 마법',
     type: '22',
     icon: 207,
     scope: 8,
@@ -6697,7 +6847,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1485',
     name: '질 올',
-    description: '대상: 아군 전체　효과: 전능력치 업\n아군 전체의 능력치를 업 시키는 마법',
+    description: '대상: 아군 전체　효과: 전능력치 업 아군 전체의 능력치를 업 시키는 마법',
     type: '22',
     icon: 207,
     scope: 8,
@@ -6709,7 +6859,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1486',
     name: '매직 커텐',
-    description: '대상: 아군 하나　효과: 데미지 MP변환\n받은 데미지에 응해 MP가 회복 하는 마법',
+    description: '대상: 아군 하나　효과: 데미지 MP변환 받은 데미지에 응해 MP가 회복 하는 마법',
     type: '22',
     icon: 207,
     scope: 7,
@@ -6721,7 +6871,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1487',
     name: '매직 월',
-    description: '대상: 아군 하나　효과: 데미지 MP소비\n받은 데미지를 MP로 인수하는 마법',
+    description: '대상: 아군 하나　효과: 데미지 MP소비 받은 데미지를 MP로 인수하는 마법',
     type: '22',
     icon: 207,
     scope: 7,
@@ -6733,7 +6883,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1488',
     name: '아쿠아 펜타곤',
-    description: '대상: 아군 하나　효과: 디후레크트 2회\n2회 분의 데미지를 무효화하는 마법',
+    description: '대상: 아군 하나　효과: 디후레크트 2회 2회 분의 데미지를 무효화하는 마법',
     type: '22',
     icon: 207,
     scope: 7,
@@ -6745,7 +6895,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1489',
     name: '캔슬',
-    description: '대상: 적 하나　효과: 강화 해제\n적 하나의 강화를 해제하는 마법',
+    description: '대상: 적 하나　효과: 강화 해제 적 하나의 강화를 해제하는 마법',
     type: '22',
     icon: 207,
     scope: 1,
@@ -6757,7 +6907,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1490',
     name: '올 캔슬',
-    description: '대상: 적 전체　효과: 강화 해제\n적 전체의 강화를 해제하는 마법',
+    description: '대상: 적 전체　효과: 강화 해제 적 전체의 강화를 해제하는 마법',
     type: '22',
     icon: 207,
     scope: 2,
@@ -6769,7 +6919,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1491',
     name: '마직크리후레크트',
-    description: '대상: 아군 전체　효과: 마법 반사\n적의 마법을 반사하는 마법',
+    description: '대상: 아군 전체　효과: 마법 반사 적의 마법을 반사하는 마법',
     type: '22',
     icon: 207,
     scope: 8,
@@ -6781,7 +6931,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1496',
     name: '파이어',
-    description: '위력: D(마)　대상: 적 하나　속성: 불길\n적을 다 굽는 불길의 초급 마법',
+    description: '위력: D(마)　대상: 적 하나　속성: 불길 적을 다 굽는 불길의 초급 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -6796,7 +6946,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1497',
     name: '메가 파이어',
-    description: '위력: C(마)　대상: 적 전체　속성: 불길\n적의 무리를 다 굽는 불길의 마법',
+    description: '위력: C(마)　대상: 적 전체　속성: 불길 적의 무리를 다 굽는 불길의 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -6811,7 +6961,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1498',
     name: '파이어 템페스트',
-    description: '위력: A(마)　대상: 적 랜덤 4회　속성: 불길\n적의 무리를 불길의 용권으로 말려들게 하는 마법',
+    description: '위력: A(마)　대상: 적 랜덤 4회　속성: 불길 적의 무리를 불길의 용권으로 말려들게 하는 마법',
     type: '23',
     icon: 206,
     scope: 3,
@@ -6826,7 +6976,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1499',
     name: '블레이즈',
-    description: '위력: B(마)　대상: 적 하나　속성: 불길\n적을 지옥의 맹렬한 불에 말려들게 하는 불길의 상급 마법',
+    description: '위력: B(마)　대상: 적 하나　속성: 불길 적을 지옥의 맹렬한 불에 말려들게 하는 불길의 상급 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -6841,7 +6991,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1500',
     name: '오메가 블레이즈',
-    description: '위력: A(마)　대상: 적 전체　속성: 불길\n지옥의 맹렬한 불의 소용돌이로 적 전체를 다 굽는 불길의 최상급 마법',
+    description: '위력: A(마)　대상: 적 전체　속성: 불길 지옥의 맹렬한 불의 소용돌이로 적 전체를 다 굽는 불길의 최상급 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -6856,7 +7006,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1501',
     name: '프로미넌스',
-    description: '위력: S(마)　대상: 적 전체　속성: 불길＋　효과: ＋\n작열의 지옥의 맹렬한 불로 적 전체를 멸하는 불길의 궁극 마법',
+    description: '위력: S(마)　대상: 적 전체　속성: 불길＋　효과: ＋ 작열의 지옥의 맹렬한 불로 적 전체를 멸하는 불길의 궁극 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -6871,7 +7021,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1502',
     name: '블리자드',
-    description: '위력: D(마)　대상: 적 하나　속성: 얼음\n적을 얼어붙게 하는 얼음의 초급 마법',
+    description: '위력: D(마)　대상: 적 하나　속성: 얼음 적을 얼어붙게 하는 얼음의 초급 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -6886,7 +7036,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1503',
     name: '메가 블리자드',
-    description: '위력: C(마)　대상: 적 전체　속성: 얼음\n적의 무리를 얼어붙게 하는 얼음의 마법',
+    description: '위력: C(마)　대상: 적 전체　속성: 얼음 적의 무리를 얼어붙게 하는 얼음의 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -6901,7 +7051,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1504',
     name: '블리자드 스톰',
-    description: '위력: A(마)　대상: 적 랜덤 4회　속성: 얼음\n적의 무리를 얼음의 용권으로 말려들게 하는 마법',
+    description: '위력: A(마)　대상: 적 랜덤 4회　속성: 얼음 적의 무리를 얼음의 용권으로 말려들게 하는 마법',
     type: '23',
     icon: 206,
     scope: 3,
@@ -6916,7 +7066,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1505',
     name: '프로스트',
-    description: '위력: B(마)　대상: 적 하나　속성: 얼음\n적을 동결시키는 얼음의 상급 마법',
+    description: '위력: B(마)　대상: 적 하나　속성: 얼음 적을 동결시키는 얼음의 상급 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -6931,7 +7081,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1506',
     name: '시그마 로스트',
-    description: '위력: A(마)　대상: 적 전체　속성: 얼음\n격렬한 냉기로 적 전체를 동결시키는 얼음의 최상급 마법',
+    description: '위력: A(마)　대상: 적 전체　속성: 얼음 격렬한 냉기로 적 전체를 동결시키는 얼음의 최상급 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -6946,7 +7096,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1507',
     name: '아이스 에이지',
-    description: '위력: S(마)　대상: 적 전체　속성: 얼음＋　효과: ＋\n공간 그 자체를 동결시키는 얼음의 궁극 마법',
+    description: '위력: S(마)　대상: 적 전체　속성: 얼음＋　효과: ＋ 공간 그 자체를 동결시키는 얼음의 궁극 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -6961,7 +7111,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1508',
     name: '썬더',
-    description: '위력: D(마)　대상: 적 하나　속성: 번개\n적에게 전격을 떨어뜨리는 번개의 초급 마법',
+    description: '위력: D(마)　대상: 적 하나　속성: 번개 적에게 전격을 떨어뜨리는 번개의 초급 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -6976,7 +7126,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1509',
     name: '메가 썬더',
-    description: '위력: C(마)　대상: 적 전체　속성: 번개\n적의 무리에 전격을 떨어뜨리는 번개의 마법',
+    description: '위력: C(마)　대상: 적 전체　속성: 번개 적의 무리에 전격을 떨어뜨리는 번개의 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -6991,7 +7141,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1510',
     name: '썬더 허리케인',
-    description: '위력: A(마)　대상: 적 랜덤 4회　속성: 번개\n적의 무리를 번개의 용권으로 말려들게 하는 마법',
+    description: '위력: A(마)　대상: 적 랜덤 4회　속성: 번개 적의 무리를 번개의 용권으로 말려들게 하는 마법',
     type: '23',
     icon: 206,
     scope: 3,
@@ -7006,7 +7156,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1511',
     name: '스파크',
-    description: '위력: B(마)　대상: 적 하나　속성: 번개\n적을 낙뢰를 퍼붓는 번개의 상급 마법',
+    description: '위력: B(마)　대상: 적 하나　속성: 번개 적을 낙뢰를 퍼붓는 번개의 상급 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -7021,7 +7171,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1512',
     name: '람다 스파크',
-    description: '위력: A(마)　대상: 적 전체　속성: 번개\n극대의 낙뢰로 적 전체를 토벌하는 번개의 최상급 마법',
+    description: '위력: A(마)　대상: 적 전체　속성: 번개 극대의 낙뢰로 적 전체를 토벌하는 번개의 최상급 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7036,7 +7186,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1513',
     name: '라이트닝',
-    description: '위력: S(마)　대상: 적 전체　속성: 번개＋　효과: ＋\n공간에 전광을 달리게 하는 번개의 궁극 마법',
+    description: '위력: S(마)　대상: 적 전체　속성: 번개＋　효과: ＋ 공간에 전광을 달리게 하는 번개의 궁극 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7051,7 +7201,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1514',
     name: '윈드',
-    description: '위력: D(마)　대상: 적 하나　속성: 바람\n진공으로 적을 베어 찢는 바람의 초급 마법',
+    description: '위력: D(마)　대상: 적 하나　속성: 바람 진공으로 적을 베어 찢는 바람의 초급 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -7066,7 +7216,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1515',
     name: '에어로',
-    description: '위력: B(마)　대상: 적 하나　속성: 바람\n무수한 진공칼날을 적에게 주입하는 바람의 상급 마법',
+    description: '위력: B(마)　대상: 적 하나　속성: 바람 무수한 진공칼날을 적에게 주입하는 바람의 상급 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -7081,7 +7231,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1516',
     name: '델타 에어로',
-    description: '위력: A(마)　대상: 적 전체　속성: 바람＋　효과: ＋\n무수한 용권으로 적을 베어 찢는 바람의 최상급 마법',
+    description: '위력: A(마)　대상: 적 전체　속성: 바람＋　효과: ＋ 무수한 용권으로 적을 베어 찢는 바람의 최상급 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7096,7 +7246,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1517',
     name: '어스',
-    description: '위력: D(마)　대상: 적 하나　속성: 흙\n땅울림으로 적을 공격하는 흙의 초급 마법',
+    description: '위력: D(마)　대상: 적 하나　속성: 흙 땅울림으로 적을 공격하는 흙의 초급 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -7111,7 +7261,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1518',
     name: '퀘이크',
-    description: '위력: B(마)　대상: 적 하나　속성: 흙\n대지를 흔드는 흙의 상급 마법',
+    description: '위력: B(마)　대상: 적 하나　속성: 흙 대지를 흔드는 흙의 상급 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -7126,7 +7276,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1519',
     name: '제이타크이크',
-    description: '위력: A(마)　대상: 적 전체　속성: 흙＋　효과: ＋\n격렬한 땅울림으로 적을 공격하는 흙의 최상급 마법',
+    description: '위력: A(마)　대상: 적 전체　속성: 흙＋　효과: ＋ 격렬한 땅울림으로 적을 공격하는 흙의 최상급 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7141,7 +7291,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1520',
     name: '워터',
-    description: '위력: D(마)　대상: 적 하나　속성: 물\n수 격을 주입하는 물의 초급 마법',
+    description: '위력: D(마)　대상: 적 하나　속성: 물 수 격을 주입하는 물의 초급 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -7156,7 +7306,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1521',
     name: '웨이브',
-    description: '위력: B(마)　대상: 적 하나　속성: 물\n특대의 수격으로 적을 흘러가게 하는 물의 상급 마법',
+    description: '위력: B(마)　대상: 적 하나　속성: 물 특대의 수격으로 적을 흘러가게 하는 물의 상급 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -7171,7 +7321,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1522',
     name: '감마 웨이브',
-    description: '위력: A(마)　대상: 적 전체　속성: 물＋　효과: ＋\n수 격의 난타를 적에게 퍼붓는 물의 최상급 마법',
+    description: '위력: A(마)　대상: 적 전체　속성: 물＋　효과: ＋ 수 격의 난타를 적에게 퍼붓는 물의 최상급 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7186,7 +7336,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1523',
     name: '바이브',
-    description: '위력: C(마)　대상: 적 전체　속성: 쾌락　효과: 민감\n성감대를 진동시켜, 적에게 자극을 주는 쾌락 마법',
+    description: '위력: C(마)　대상: 적 전체　속성: 쾌락　효과: 민감 성감대를 진동시켜, 적에게 자극을 주는 쾌락 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7201,7 +7351,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1524',
     name: '젤',
-    description: '위력: C(마)　대상: 적 전체　속성: 쾌락　효과: 미끈미끈\n끈적끈적의 점액을 적에게 휘감기게 하는 쾌락 마법',
+    description: '위력: C(마)　대상: 적 전체　속성: 쾌락　효과: 미끈미끈 끈적끈적의 점액을 적에게 휘감기게 하는 쾌락 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7216,7 +7366,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1525',
     name: '그란스아드',
-    description: '위력: A(마)　대상: 적 전체　속성: 쾌락　효과: 황홀\n점액으로 적의 몸을 다 희롱하는 최상급 쾌락 마법',
+    description: '위력: A(마)　대상: 적 전체　속성: 쾌락　효과: 황홀 점액으로 적의 몸을 다 희롱하는 최상급 쾌락 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7231,7 +7381,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1526',
     name: '드래곤 플레어',
-    description: '위력: S(마)　대상: 적 하나　속성: 불길＋　효과: ＋\n용의 마력을 응축해, 작열의 불길을 낳는 마법',
+    description: '위력: S(마)　대상: 적 하나　속성: 불길＋　효과: ＋ 용의 마력을 응축해, 작열의 불길을 낳는 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -7246,7 +7396,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1527',
     name: '드래곤 플레어 버스트',
-    description: '위력: SS(마)　대상: 적 랜덤 4회　속성: 불길＋　효과: ＋\n드래곤 플레어를 연속으로 사용하는 용신의 최강 오의',
+    description: '위력: SS(마)　대상: 적 랜덤 4회　속성: 불길＋　효과: ＋ 드래곤 플레어를 연속으로 사용하는 용신의 최강 오의',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7261,7 +7411,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1528',
     name: 'overload',
-    description: '위력: 가변　대상: 적 전체\n모든 마력을 파괴의 힘으로 변환해, 단번에 해방하는 궁극 마법',
+    description: '위력: 가변　대상: 적 전체 모든 마력을 파괴의 힘으로 변환해, 단번에 해방하는 궁극 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7276,7 +7426,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1530',
     name: '드레인',
-    description: '위력: E(마)　대상: 적 하나　효과: HP흡수\n적의 HP를 빼앗아, 자신의 것으로 하는 마법',
+    description: '위력: E(마)　대상: 적 하나　효과: HP흡수 적의 HP를 빼앗아, 자신의 것으로 하는 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -7291,7 +7441,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1531',
     name: '마드레인',
-    description: '대상: 적 하나(마)　효과: MP흡수\n적의 MP를 빼앗아, 자신의 것으로 하는 마법',
+    description: '대상: 적 하나(마)　효과: MP흡수 적의 MP를 빼앗아, 자신의 것으로 하는 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -7306,7 +7456,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1532',
     name: '데스',
-    description: '대상: 적 하나　효과: 즉사\n적 하나를 즉사시키는 마법',
+    description: '대상: 적 하나　효과: 즉사 적 하나를 즉사시키는 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -7318,7 +7468,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1533',
     name: '오르데스',
-    description: '대상: 적 전체　효과: 즉사\n적 전체를 즉사시키는 마법',
+    description: '대상: 적 전체　효과: 즉사 적 전체를 즉사시키는 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7330,7 +7480,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1534',
     name: '포이즌',
-    description: '대상: 적 전체　효과: 독\n적 전체를 독상태로 하는 마법',
+    description: '대상: 적 전체　효과: 독 적 전체를 독상태로 하는 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7342,7 +7492,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1535',
     name: '블라인드',
-    description: '대상: 적 전체　효과: 어둠\n적 전체를 어둠 상태로 하는 마법',
+    description: '대상: 적 전체　효과: 어둠 적 전체를 어둠 상태로 하는 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7354,7 +7504,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1536',
     name: '사일런스',
-    description: '대상: 적 전체　효과: 침묵\n적 전체를 침묵 상태로 하는 마법',
+    description: '대상: 적 전체　효과: 침묵 적 전체를 침묵 상태로 하는 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7366,7 +7516,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1537',
     name: '안녕 퓨즈',
-    description: '대상: 적 전체　효과: 혼란\n적 전체를 혼란 상태로 하는 마법',
+    description: '대상: 적 전체　효과: 혼란 적 전체를 혼란 상태로 하는 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7378,7 +7528,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1538',
     name: '슬립',
-    description: '대상: 적 전체　효과: 수면\n적 전체를 수면 상태로 하는 마법',
+    description: '대상: 적 전체　효과: 수면 적 전체를 수면 상태로 하는 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7390,7 +7540,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1539',
     name: '파라라이즈',
-    description: '대상: 적 전체　효과: 마비\n적 전체를 마비 상태로 하는 마법',
+    description: '대상: 적 전체　효과: 마비 적 전체를 마비 상태로 하는 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7402,7 +7552,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1540',
     name: '미니맘판타즘',
-    description: '대상: 적 전체　효과: 미니맘\n적 전체를 미니맘 상태로 하는 마법',
+    description: '대상: 적 전체　효과: 미니맘 적 전체를 미니맘 상태로 하는 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7414,7 +7564,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1541',
     name: '힐 태풍',
-    description: '대상: 아군 랜덤 4회　효과: HP중 회복\n위안의 폭풍우로 아군들을 회복 하는 마법',
+    description: '대상: 아군 랜덤 4회　효과: HP중 회복 위안의 폭풍우로 아군들을 회복 하는 마법',
     type: '23',
     icon: 206,
     scope: 3,
@@ -7429,7 +7579,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1542',
     name: '버스트 유니온',
-    description: '위력: B(마)　대상: 적 전체　속성: 쾌락　효과: 황홀\n주위의 공간을 매혹의 유방으로 싸는 쾌락 마법',
+    description: '위력: B(마)　대상: 적 전체　속성: 쾌락　효과: 황홀 주위의 공간을 매혹의 유방으로 싸는 쾌락 마법',
     type: '23',
     icon: 206,
     scope: 2,
@@ -7444,7 +7594,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1543',
     name: '카이저 피닉스',
-    description: '위력: SS(마)　대상: 적 하나　속성: 불길＋　효과: ＋\n마력을 응축해, 불길의 봉황을 낳는 극대 마법',
+    description: '위력: SS(마)　대상: 적 하나　속성: 불길＋　효과: ＋ 마력을 응축해, 불길의 봉황을 낳는 극대 마법',
     type: '23',
     icon: 206,
     scope: 1,
@@ -7459,7 +7609,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1547',
     name: '슬로우',
-    description: '대상: 적 하나　효과: 슬로우\n적 하나의 시간을 늦게 해, 슬로우 상태로 하는 마법',
+    description: '대상: 적 하나　효과: 슬로우 적 하나의 시간을 늦게 해, 슬로우 상태로 하는 마법',
     type: '24',
     icon: 208,
     scope: 1,
@@ -7471,7 +7621,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1548',
     name: '오르슬로우',
-    description: '대상: 적 전체　효과: 슬로우\n적 전체의 시간을 늦게 해, 슬로우 상태로 하는 마법',
+    description: '대상: 적 전체　효과: 슬로우 적 전체의 시간을 늦게 해, 슬로우 상태로 하는 마법',
     type: '24',
     icon: 208,
     scope: 2,
@@ -7483,7 +7633,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1549',
     name: '퀵',
-    description: '대상: 아군 하나　효과: 퀵\n아군 하나의 시간을 재촉해, 퀵 상태로 하는 마법',
+    description: '대상: 아군 하나　효과: 퀵 아군 하나의 시간을 재촉해, 퀵 상태로 하는 마법',
     type: '24',
     icon: 208,
     scope: 7,
@@ -7495,7 +7645,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1550',
     name: '올 퀵',
-    description: '대상: 아군 전체　효과: 퀵\n아군 전체의 시간을 재촉해, 퀵 상태로 하는 마법',
+    description: '대상: 아군 전체　효과: 퀵 아군 전체의 시간을 재촉해, 퀵 상태로 하는 마법',
     type: '24',
     icon: 208,
     scope: 8,
@@ -7507,7 +7657,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1551',
     name: '스톱',
-    description: '대상: 적 하나　효과: 스톱\n적 하나의 시간을 정지시켜, 스톱 상태로 하는 마법',
+    description: '대상: 적 하나　효과: 스톱 적 하나의 시간을 정지시켜, 스톱 상태로 하는 마법',
     type: '24',
     icon: 208,
     scope: 1,
@@ -7519,7 +7669,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1552',
     name: '올 스톱',
-    description: '대상: 적 전체　효과: 스톱\n적 전체의 시간을 정지시켜, 스톱 상태로 하는 마법',
+    description: '대상: 적 전체　효과: 스톱 적 전체의 시간을 정지시켜, 스톱 상태로 하는 마법',
     type: '24',
     icon: 208,
     scope: 2,
@@ -7531,7 +7681,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1553',
     name: '포실',
-    description: '대상: 적 하나　효과: 석화\n적 하나의 경년 상태를 과잉 촉진시켜, 석화 시키는 마법',
+    description: '대상: 적 하나　효과: 석화 적 하나의 경년 상태를 과잉 촉진시켜, 석화 시키는 마법',
     type: '24',
     icon: 208,
     scope: 1,
@@ -7543,7 +7693,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1554',
     name: '오르포실',
-    description: '대상: 적 전체　효과: 석화\n적 전체의 경년 상태를 과잉 촉진시켜, 석화 시키는 마법',
+    description: '대상: 적 전체　효과: 석화 적 전체의 경년 상태를 과잉 촉진시켜, 석화 시키는 마법',
     type: '24',
     icon: 208,
     scope: 2,
@@ -7555,7 +7705,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1555',
     name: '리존',
-    description: '대상: 적 하나　효과: 즉사\n적 하나를 이공간에 던져 넣어, 즉사시키는 마법',
+    description: '대상: 적 하나　효과: 즉사 적 하나를 이공간에 던져 넣어, 즉사시키는 마법',
     type: '24',
     icon: 208,
     scope: 1,
@@ -7567,7 +7717,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1556',
     name: '오르리존',
-    description: '대상: 적 전체　효과: 즉사\n적 전체를 이공간에 던져 넣어, 즉사시키는 마법',
+    description: '대상: 적 전체　효과: 즉사 적 전체를 이공간에 던져 넣어, 즉사시키는 마법',
     type: '24',
     icon: 208,
     scope: 2,
@@ -7579,7 +7729,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1557',
     name: '그라비디',
-    description: '위력: 비율 데미지　대상: 적 하나\n중력을 조작해, 적 하나를 찌부러뜨리는 마법',
+    description: '위력: 비율 데미지　대상: 적 하나 중력을 조작해, 적 하나를 찌부러뜨리는 마법',
     type: '24',
     icon: 208,
     scope: 1,
@@ -7594,7 +7744,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1558',
     name: '하이그라비디',
-    description: '위력: 비율 데미지　대상: 적 전체\n중력을 조작해, 적 전체를 찌부러뜨리는 마법',
+    description: '위력: 비율 데미지　대상: 적 전체 중력을 조작해, 적 전체를 찌부러뜨리는 마법',
     type: '24',
     icon: 208,
     scope: 2,
@@ -7609,7 +7759,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1559',
     name: '코멧',
-    description: '위력: B(마)　대상: 적 하나\n시공을 비뚤어지게 해, 운석을 직격시키는 마법',
+    description: '위력: B(마)　대상: 적 하나 시공을 비뚤어지게 해, 운석을 직격시키는 마법',
     type: '24',
     icon: 208,
     scope: 1,
@@ -7624,7 +7774,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1560',
     name: '메테오',
-    description: '위력: A(마)　대상: 적 전체\n시공을 비뚤어지게 해, 거대 운석을 소환 하는 마법',
+    description: '위력: A(마)　대상: 적 전체 시공을 비뚤어지게 해, 거대 운석을 소환 하는 마법',
     type: '24',
     icon: 208,
     scope: 2,
@@ -7639,7 +7789,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1561',
     name: '블랙 홀',
-    description: '위력: A(마)　대상: 적 전체　속성: 어둠\n시공을 비뚤어지게 해, 블랙 홀을 생산하는 마법',
+    description: '위력: A(마)　대상: 적 전체　속성: 어둠 시공을 비뚤어지게 해, 블랙 홀을 생산하는 마법',
     type: '24',
     icon: 208,
     scope: 2,
@@ -7654,7 +7804,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1562',
     name: '슈퍼 노바',
-    description: '위력: S(마)　대상: 적 전체　속성: 영겁\n시공을 비뚤어지게 하고 초신성 폭발을 일으키는 궁극 시공 마법',
+    description: '위력: S(마)　대상: 적 전체　속성: 영겁 시공을 비뚤어지게 하고 초신성 폭발을 일으키는 궁극 시공 마법',
     type: '24',
     icon: 208,
     scope: 2,
@@ -7669,7 +7819,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1566',
     name: '카오스 드라이브',
-    description: '대상: 전세계　효과: 시간 정지\n마력에 의해 시공을 동결시켜, 시를 멈추는 마법',
+    description: '대상: 전세계　효과: 시간 정지 마력에 의해 시공을 동결시켜, 시를 멈추는 마법',
     type: '24',
     icon: 208,
     scope: 11,
@@ -7681,7 +7831,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1569',
     name: '워프',
-    description: '대상: 파티 전체　효과: 필드 이동\n한 번 간 일이 있는 장소에 워프하는 마법',
+    description: '대상: 파티 전체　효과: 필드 이동 한 번 간 일이 있는 장소에 워프하는 마법',
     type: '24',
     icon: 208,
     scope: 0,
@@ -7693,7 +7843,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1570',
     name: '텔레포트',
-    description: '대상: 파티 전체　효과: 던전 탈출\n던전으로부터 탈출해, 지상에 나오는 마법',
+    description: '대상: 파티 전체　효과: 던전 탈출 던전으로부터 탈출해, 지상에 나오는 마법',
     type: '24',
     icon: 208,
     scope: 0,
@@ -7705,7 +7855,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1571',
     name: '제로 쉬프트',
-    description: '대상: 적 전체　효과: 특수 효과전해제\n혼돈의 힘으로 공간을 중화 하는 마법',
+    description: '대상: 적 전체　효과: 특수 효과전해제 혼돈의 힘으로 공간을 중화 하는 마법',
     type: '24',
     icon: 208,
     scope: 2,
@@ -7717,7 +7867,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1576',
     name: '고브 인',
-    description: '위력: C(마)　대상: 적 하나\n고브 인을 호출하는 소환 마법',
+    description: '위력: C(마)　대상: 적 하나 고브 인을 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 1,
@@ -7732,7 +7882,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1577',
     name: '라미아',
-    description: '위력: B(마)　대상: 적 전체　효과: 스턴\n라미아를 호출하는 소환 마법',
+    description: '위력: B(마)　대상: 적 전체　효과: 스턴 라미아를 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7747,7 +7897,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1578',
     name: '카반크루',
-    description: '대상: 아군 전체　효과: 마법 반사\n카반크루를 호출하는 소환 마법',
+    description: '대상: 아군 전체　효과: 마법 반사 카반크루를 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 8,
@@ -7759,7 +7909,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1579',
     name: '스큐라',
-    description: '위력: B(마)　대상: 적 전체　효과: 구속\n스큐라를 호출하는 소환 마법',
+    description: '위력: B(마)　대상: 적 전체　효과: 구속 스큐라를 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7774,7 +7924,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1580',
     name: '라크슈미',
-    description: '대상: 아군 전체　효과: HP전회복\n라크슈미를 호출하는 소환 마법',
+    description: '대상: 아군 전체　효과: HP전회복 라크슈미를 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 8,
@@ -7789,7 +7939,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1581',
     name: '드래곤',
-    description: '위력: A(마)　대상: 적 전체　속성: 불길\n드래곤을 호출하는 소환 마법',
+    description: '위력: A(마)　대상: 적 전체　속성: 불길 드래곤을 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7804,7 +7954,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1582',
     name: '피닉스',
-    description: '위력: B(마)　대상: 적 전체　속성: 염　효과: 아군 전체 소생\n피닉스를 호출하는 소환 마법',
+    description: '위력: B(마)　대상: 적 전체　속성: 염　효과: 아군 전체 소생 피닉스를 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7816,7 +7966,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1583',
     name: '페가수스',
-    description: '위력: A(마)　대상: 적 전체　효과: 강화 무효\n페가수스를 호출하는 소환 마법',
+    description: '위력: A(마)　대상: 적 전체　효과: 강화 무효 페가수스를 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7831,7 +7981,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1584',
     name: '세계수',
-    description: '위력: A(마)　대상: 적 전체　효과: HP흡수\n세계수를 호출하는 소환 마법',
+    description: '위력: A(마)　대상: 적 전체　효과: HP흡수 세계수를 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7846,7 +7996,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1585',
     name: '실프',
-    description: '위력: S(민or마)　대상: 적 전체　속성: 풍　효과: 사용자 강화\n실프를 소환 해, 그 몸에 바람을 품는다',
+    description: '위력: S(민or마)　대상: 적 전체　속성: 풍　효과: 사용자 강화 실프를 소환 해, 그 몸에 바람을 품는다',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7861,7 +8011,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1586',
     name: '놈',
-    description: '위력: S(방or마)　대상: 적 전체　속성: 흙　효과: 사용자 강화\n놈을 소환 해, 그 몸에 흙을 품는다',
+    description: '위력: S(방or마)　대상: 적 전체　속성: 흙　효과: 사용자 강화 놈을 소환 해, 그 몸에 흙을 품는다',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7876,7 +8026,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1587',
     name: '운디네',
-    description: '위력: S(정or마)　대상: 적 전체　속성: 수　효과: 사용자 강화\n운디네를 소환 해, 그 몸에 물을 품는다',
+    description: '위력: S(정or마)　대상: 적 전체　속성: 수　효과: 사용자 강화 운디네를 소환 해, 그 몸에 물을 품는다',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7891,7 +8041,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1588',
     name: '샐러맨더',
-    description: '위력: S(공or마)　대상: 적 전체　속성: 불　효과: 사용자 강화\n샐러맨더를 소환 해, 그 몸에 화를 품는다',
+    description: '위력: S(공or마)　대상: 적 전체　속성: 불　효과: 사용자 강화 샐러맨더를 소환 해, 그 몸에 화를 품는다',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7906,7 +8056,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1589',
     name: '지르피',
-    description: '위력: S(민or마)　대상: 적 전체　속성: 풍　효과: 대상 약체화\n지르피를 호출하는 소환 마법',
+    description: '위력: S(민or마)　대상: 적 전체　속성: 풍　효과: 대상 약체화 지르피를 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7921,7 +8071,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1590',
     name: '노마렌',
-    description: '위력: S(방or마)　대상: 적 전체　속성: 흙　효과: 대상 약체화\n노마렌을 호출하는 소환 마법',
+    description: '위력: S(방or마)　대상: 적 전체　속성: 흙　효과: 대상 약체화 노마렌을 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7936,7 +8086,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1591',
     name: '그란디네',
-    description: '위력: S(정or마)　대상: 적 전체　속성: 수　효과: 대상 약체화\n그란디네를 호출하는 소환 마법',
+    description: '위력: S(정or마)　대상: 적 전체　속성: 수　효과: 대상 약체화 그란디네를 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7951,7 +8101,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1592',
     name: '기가만드라',
-    description: '위력: S(공or마)　대상: 적 전체　속성: 염　효과: 대상 약체화\n기가만드라를 호출하는 소환 마법',
+    description: '위력: S(공or마)　대상: 적 전체　속성: 염　효과: 대상 약체화 기가만드라를 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7966,7 +8116,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1593',
     name: '신룡',
-    description: '위력: SS(마)　대상: 적 전체　속성: 성　효과: 승천\n신룡을 호출하는 소환 마법',
+    description: '위력: SS(마)　대상: 적 전체　속성: 성　효과: 승천 신룡을 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7981,7 +8131,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1594',
     name: '사신',
-    description: '위력: S(마)　대상: 적 전체　속성: 어둠　효과: 즉사\n사신을 호출하는 소환 마법',
+    description: '위력: S(마)　대상: 적 전체　속성: 어둠　효과: 즉사 사신을 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 2,
@@ -7996,7 +8146,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1597',
     name: '스트텐타크루',
-    description: '위력: A(마)　대상: 적 랜덤 4회　속성: 쾌락　효과: 구속\n스트텐타크루를 호출하는 소환 마법',
+    description: '위력: A(마)　대상: 적 랜덤 4회　속성: 쾌락　효과: 구속 스트텐타크루를 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 3,
@@ -8011,7 +8161,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1598',
     name: '카오스프레쟈',
-    description: '위력: S(마)　대상: 적 랜덤 6회　속성: 쾌락　효과: 구속\n카오스프레쟈를 호출하는 소환 마법',
+    description: '위력: S(마)　대상: 적 랜덤 6회　속성: 쾌락　효과: 구속 카오스프레쟈를 호출하는 소환 마법',
     type: '25',
     icon: 209,
     scope: 3,
@@ -8026,7 +8176,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1600',
     name: '깨물기 애니',
-    description: '위력: D(마·손)　대상: 적 하나\n사역 좀비 「깨물기 애니」를 호출한다',
+    description: '위력: D(마·손)　대상: 적 하나 사역 좀비 「깨물기 애니」를 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8041,7 +8191,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1601',
     name: '아마조네스제',
-    description: '위력: B(마·손)　대상: 적 하나　속성: 바이오\n사역 좀비 「아마조네스제」를 호출한다',
+    description: '위력: B(마·손)　대상: 적 하나　속성: 바이오 사역 좀비 「아마조네스제」를 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8056,7 +8206,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1602',
     name: '네크로시리',
-    description: '위력: C(마·손)　대상: 적 전체　속성: 불길\n사역 좀비 「네크로시리」를 호출한다',
+    description: '위력: C(마·손)　대상: 적 전체　속성: 불길 사역 좀비 「네크로시리」를 호출한다',
     type: '25',
     icon: 209,
     scope: 2,
@@ -8071,7 +8221,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1603',
     name: '마름의 엘리자베스',
-    description: '위력: A(마·손)　대상: 적 하나　속성: 쾌락\n사역 좀비 「마름의 엘리자베스」를 호출한다',
+    description: '위력: A(마·손)　대상: 적 하나　속성: 쾌락 사역 좀비 「마름의 엘리자베스」를 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8086,7 +8236,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1604',
     name: '대역 클라라',
-    description: '대상: 사용자　효과: 디후레크트 2회\n사역 좀비 「대역 클라라」를 호출한다',
+    description: '대상: 사용자　효과: 디후레크트 2회 사역 좀비 「대역 클라라」를 호출한다',
     type: '25',
     icon: 209,
     scope: 11,
@@ -8098,7 +8248,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1605',
     name: '부기사 아레크시아',
-    description: '위력: S(마·손)　대상: 적 하나　속성: 바이오\n사역 좀비 「부기사 아레크시아」를 호출한다',
+    description: '위력: S(마·손)　대상: 적 하나　속성: 바이오 사역 좀비 「부기사 아레크시아」를 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8113,7 +8263,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1606',
     name: '현난인 시정희레이나',
-    description: '위력: A(마·손)　대상: 적 전체　속성: 쾌락\n사역 좀비 「현난인 시정희레이나」를 호출한다',
+    description: '위력: A(마·손)　대상: 적 전체　속성: 쾌락 사역 좀비 「현난인 시정희레이나」를 호출한다',
     type: '25',
     icon: 209,
     scope: 2,
@@ -8128,7 +8278,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1607',
     name: '여왕 네크로디아',
-    description: '위력: A(마·손)　대상: 적 전체　속성: 바이오\n사역 좀비 「여왕 네크로디아」를 호출한다',
+    description: '위력: A(마·손)　대상: 적 전체　속성: 바이오 사역 좀비 「여왕 네크로디아」를 호출한다',
     type: '25',
     icon: 209,
     scope: 2,
@@ -8143,7 +8293,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1608',
     name: '대시군에리미네아',
-    description: '위력: S(마·손)　대상: 적 랜덤 4회\n사역 좀비 「대시군에리미네아」를 호출한다',
+    description: '위력: S(마·손)　대상: 적 랜덤 4회 사역 좀비 「대시군에리미네아」를 호출한다',
     type: '25',
     icon: 209,
     scope: 3,
@@ -8158,7 +8308,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1609',
     name: '댓바람 디아나',
-    description: '위력: E(마)　대상: 적 하나\n사역 고스트 「댓바람 디아나」를 호출한다',
+    description: '위력: E(마)　대상: 적 하나 사역 고스트 「댓바람 디아나」를 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8173,7 +8323,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1610',
     name: '색정영혼 안나',
-    description: '위력: B(마)　대상: 적 하나　속성: 쾌락\n사역 고스트 「색정영혼 안나」를 호출한다',
+    description: '위력: B(마)　대상: 적 하나　속성: 쾌락 사역 고스트 「색정영혼 안나」를 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8188,7 +8338,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1611',
     name: '령마도사 엘리',
-    description: '위력: C(마)　대상: 적 전체　속성: 얼음\n사역 고스트 「령마도사 엘리」를 호출한다',
+    description: '위력: C(마)　대상: 적 전체　속성: 얼음 사역 고스트 「령마도사 엘리」를 호출한다',
     type: '25',
     icon: 209,
     scope: 2,
@@ -8203,7 +8353,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1612',
     name: '브랏디마리',
-    description: '위력: A(마)　대상: 랜덤 3회\n사역 고스트 「브랏디마리」를 호출한다',
+    description: '위력: A(마)　대상: 랜덤 3회 사역 고스트 「브랏디마리」를 호출한다',
     type: '25',
     icon: 209,
     scope: 3,
@@ -8218,7 +8368,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1613',
     name: '유령 승려 마리아',
-    description: '대상: 아군 하나　효과: HP중 회복\n사역 고스트 「유령 승려 마리아」를 호출한다',
+    description: '대상: 아군 하나　효과: HP중 회복 사역 고스트 「유령 승려 마리아」를 호출한다',
     type: '25',
     icon: 209,
     scope: 7,
@@ -8233,7 +8383,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1614',
     name: '트모에 어전',
-    description: '위력: S(마)　대상: 적 하나\n사역 고스트 「트모에 어전」을 호출한다',
+    description: '위력: S(마)　대상: 적 하나 사역 고스트 「트모에 어전」을 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8248,7 +8398,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1615',
     name: '대마도사 그레고리아',
-    description: '위력: A(마)　대상: 적 전체　속성: 얼음\n사역 고스트 「대마도사 그레고리아」를 호출한다',
+    description: '위력: A(마)　대상: 적 전체　속성: 얼음 사역 고스트 「대마도사 그레고리아」를 호출한다',
     type: '25',
     icon: 209,
     scope: 2,
@@ -8263,7 +8413,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1616',
     name: '유음부 마제리',
-    description: '위력: S(마)　대상: 적 하나　속성: 쾌락\n사역 고스트 「유음부 마제리」를 호출한다',
+    description: '위력: S(마)　대상: 적 하나　속성: 쾌락 사역 고스트 「유음부 마제리」를 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8278,7 +8428,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1617',
     name: '흡정황녀 힐더',
-    description: '위력: S(마)　대상: 적 하나　속성: 쾌락　효과: HP흡수\n사역 고스트 「흡정황녀 힐더」를 호출한다',
+    description: '위력: S(마)　대상: 적 하나　속성: 쾌락　효과: HP흡수 사역 고스트 「흡정황녀 힐더」를 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8293,7 +8443,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1618',
     name: '찢어 엘리스',
-    description: '위력: D(손)　대상: 랜덤 3회\n계략 인형 「찢어 엘리스」를 호출한다',
+    description: '위력: D(손)　대상: 랜덤 3회 계략 인형 「찢어 엘리스」를 호출한다',
     type: '25',
     icon: 209,
     scope: 3,
@@ -8308,7 +8458,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1619',
     name: '센트 메이든',
-    description: '위력: A(손)　대상: 적 하나　효과: 구속\n계략 인형 「센트 메이든」를 호출한다',
+    description: '위력: A(손)　대상: 적 하나　효과: 구속 계략 인형 「센트 메이든」를 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8323,7 +8473,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1620',
     name: '소령인형',
-    description: '위력: B(손)　대상: 랜덤 3회\n계략 인형 「소령인형」을 호출한다',
+    description: '위력: B(손)　대상: 랜덤 3회 계략 인형 「소령인형」을 호출한다',
     type: '25',
     icon: 209,
     scope: 3,
@@ -8338,7 +8488,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1621',
     name: '샤우트마타',
-    description: '위력: C(손)　대상: 적 전체　속성: 음파\n계략 인형 「샤우트마타」를 호출한다',
+    description: '위력: C(손)　대상: 적 전체　속성: 음파 계략 인형 「샤우트마타」를 호출한다',
     type: '25',
     icon: 209,
     scope: 2,
@@ -8353,7 +8503,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1622',
     name: '라브마타',
-    description: '위력: B(손)　대상: 적 하나　속성: 쾌락\n계략 인형 「라브마타」를 호출한다',
+    description: '위력: B(손)　대상: 적 하나　속성: 쾌락 계략 인형 「라브마타」를 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8368,7 +8518,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1623',
     name: '베크·더·비스트',
-    description: '위력: S(손)　대상: 적 하나\n계략 인형 「베크·더·비스트」를 호출한다',
+    description: '위력: S(손)　대상: 적 하나 계략 인형 「베크·더·비스트」를 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8383,7 +8533,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1624',
     name: '자이언트 세라',
-    description: '위력: A(손)　대상: 적 전체\n계략 인형 「자이언트 세라」를 호출한다',
+    description: '위력: A(손)　대상: 적 전체 계략 인형 「자이언트 세라」를 호출한다',
     type: '25',
     icon: 209,
     scope: 2,
@@ -8398,7 +8548,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1625',
     name: '결전 인형 병기 아그니',
-    description: '위력: S(손)　대상: 랜덤 4회　속성: 불길\n계략 인형 「결전 인형 병기 아그니」를 호출한다',
+    description: '위력: S(손)　대상: 랜덤 4회　속성: 불길 계략 인형 「결전 인형 병기 아그니」를 호출한다',
     type: '25',
     icon: 209,
     scope: 3,
@@ -8413,7 +8563,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1626',
     name: '쾌락 인형·마사공주',
-    description: '위력: S(손)　대상: 적 하나　속성: 쾌락\n계략 인형 「쾌락 인형·마사공주」를 호출한다',
+    description: '위력: S(손)　대상: 적 하나　속성: 쾌락 계략 인형 「쾌락 인형·마사공주」를 호출한다',
     type: '25',
     icon: 209,
     scope: 1,
@@ -8428,7 +8578,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1632',
     name: '주홍색의',
-    description: '위력: A(손or정)　대상: 적 전체　속성: 성　효과: 물리 카운터 발동\n종말을 기다리는, 지상에 깜박거리는 타천의 파편',
+    description: '위력: A(손or정)　대상: 적 전체　속성: 성　효과: 물리 카운터 발동 종말을 기다리는, 지상에 깜박거리는 타천의 파편',
     type: '26',
     icon: 171,
     scope: 11,
@@ -8441,7 +8591,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1633',
     name: '다루기',
-    description: '위력: E(손or정)　대상: 적 하나　속성: 번개·성\n몸으로부터 전기를 발해, 적을 조금 저리게 하는 기술',
+    description: '위력: E(손or정)　대상: 적 하나　속성: 번개·성 몸으로부터 전기를 발해, 적을 조금 저리게 하는 기술',
     type: '26',
     icon: 171,
     scope: 1,
@@ -8456,7 +8606,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1634',
     name: '하늘의 번개',
-    description: '위력: C(손or정)　대상: 적 하나　속성: 번개·성\n하늘로부터 번개를 떨어뜨려, 적을 토벌하는 기술',
+    description: '위력: C(손or정)　대상: 적 하나　속성: 번개·성 하늘로부터 번개를 떨어뜨려, 적을 토벌하는 기술',
     type: '26',
     icon: 171,
     scope: 1,
@@ -8471,7 +8621,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1635',
     name: '멸마의 번개',
-    description: '위력: A(손or정)　대상: 적 하나　속성: 뢰·성　효과: 승천\n하늘로부터 멸마의 번개를 떨어뜨려, 적을 멸하는 기술',
+    description: '위력: A(손or정)　대상: 적 하나　속성: 뢰·성　효과: 승천 하늘로부터 멸마의 번개를 떨어뜨려, 적을 멸하는 기술',
     type: '26',
     icon: 171,
     scope: 1,
@@ -8486,7 +8636,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1636',
     name: '성광파',
-    description: '위력: E(손or정)　대상: 적 전체　속성: 성\n성스러운 파동으로 주위를 공격하는 기술',
+    description: '위력: E(손or정)　대상: 적 전체　속성: 성 성스러운 파동으로 주위를 공격하는 기술',
     type: '26',
     icon: 171,
     scope: 2,
@@ -8501,7 +8651,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1637',
     name: '더러움 없는 빛',
-    description: '위력: A(손or정)　대상: 적 전체　속성: 성\n성스러운 빛을 발해, 사악을 토벌하는 기술',
+    description: '위력: A(손or정)　대상: 적 전체　속성: 성 성스러운 빛을 발해, 사악을 토벌하는 기술',
     type: '26',
     icon: 171,
     scope: 2,
@@ -8516,7 +8666,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1638',
     name: '그랜드 크로스',
-    description: '위력: A(공or정)　대상: 적 전체　속성: 성\n성스러운 기분으로 십자를 그려, 사악을 멸하는 성 기술',
+    description: '위력: A(공or정)　대상: 적 전체　속성: 성 성스러운 기분으로 십자를 그려, 사악을 멸하는 성 기술',
     type: '26',
     icon: 171,
     scope: 2,
@@ -8531,7 +8681,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1639',
     name: '이노센트레이자',
-    description: '위력: B(손or정)　대상: 적 하나　속성: 성\n성에너지를 응축한 레이저로 적을 토벌하는 기술',
+    description: '위력: B(손or정)　대상: 적 하나　속성: 성 성에너지를 응축한 레이저로 적을 토벌하는 기술',
     type: '26',
     icon: 171,
     scope: 1,
@@ -8546,7 +8696,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1640',
     name: '이노센트장지',
-    description: '위력: A(손or정)　대상: 적 전체　속성: 성\n성에너지를 응축해, 적을 다 태우는 오의',
+    description: '위력: A(손or정)　대상: 적 전체　속성: 성 성에너지를 응축해, 적을 다 태우는 오의',
     type: '26',
     icon: 171,
     scope: 2,
@@ -8561,7 +8711,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1641',
     name: '골든 해머',
-    description: '위력: S(공or정)　대상: 적 전체　속성: 성\n하늘의 분노를 주먹으로 바꾸어, 철퇴를 내리는 오의',
+    description: '위력: S(공or정)　대상: 적 전체　속성: 성 하늘의 분노를 주먹으로 바꾸어, 철퇴를 내리는 오의',
     type: '26',
     icon: 171,
     scope: 2,
@@ -8576,7 +8726,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1642',
     name: '천벌',
-    description: '위력: S(손or정)　대상: 적 전체　속성: 성　효과: 승천\n성스러운 파동으로 적 전체에 천벌을 주는 오의',
+    description: '위력: S(손or정)　대상: 적 전체　속성: 성　효과: 승천 성스러운 파동으로 적 전체에 천벌을 주는 오의',
     type: '26',
     icon: 171,
     scope: 2,
@@ -8591,7 +8741,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1643',
     name: '마천회귀',
-    description: '위력: S(손or정)　대상: 적 전체　속성: 성　효과: 승천\n타천의 파동을 작렬시켜, 적 전체를 멸하는 오의',
+    description: '위력: S(손or정)　대상: 적 전체　속성: 성　효과: 승천 타천의 파동을 작렬시켜, 적 전체를 멸하는 오의',
     type: '26',
     icon: 171,
     scope: 2,
@@ -8606,7 +8756,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1644',
     name: '판결',
-    description: '위력: SS(손or정)　대상: 적 전체　속성: 성　효과: 승천\n십자를 그려 내질러져 사악을 멸하는 중재의 빛',
+    description: '위력: SS(손or정)　대상: 적 전체　속성: 성　효과: 승천 십자를 그려 내질러져 사악을 멸하는 중재의 빛',
     type: '26',
     icon: 171,
     scope: 2,
@@ -8621,7 +8771,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1645',
     name: '샛별',
-    description: '위력: SSS(손or정)　대상: 적 전체　속성: 성　효과: 물리·마법 카운터 발동\n종말을 가져오는, 지상에 떨어진 타천의 별',
+    description: '위력: SSS(손or정)　대상: 적 전체　속성: 성　효과: 물리·마법 카운터 발동 종말을 가져오는, 지상에 떨어진 타천의 별',
     type: '26',
     icon: 171,
     scope: 11,
@@ -8634,7 +8784,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1651',
     name: '엔젤 헤어',
-    description: '위력: E(손or정)　대상: 적 하나　속성: 쾌락·성　효과: 민감\n천사의 머리카락이 성감대로 휘감기는 음 기술',
+    description: '위력: E(손or정)　대상: 적 하나　속성: 쾌락·성　효과: 민감 천사의 머리카락이 성감대로 휘감기는 음 기술',
     type: '26',
     icon: 171,
     scope: 1,
@@ -8649,7 +8799,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1652',
     name: '엔젤 패더',
-    description: '위력: D(손or정)　대상: 적 전체　속성: 쾌락·성　효과: 민감\n천사의 날개가 몸을 애무하는 음 기술',
+    description: '위력: D(손or정)　대상: 적 전체　속성: 쾌락·성　효과: 민감 천사의 날개가 몸을 애무하는 음 기술',
     type: '26',
     icon: 171,
     scope: 2,
@@ -8664,7 +8814,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1653',
     name: '천의의 포옹',
-    description: '위력: B(손or정)　대상: 적 하나　속성: 쾌락·성　효과: 구속\n부드러운 천의로 껴안는 음 기술',
+    description: '위력: B(손or정)　대상: 적 하나　속성: 쾌락·성　효과: 구속 부드러운 천의로 껴안는 음 기술',
     type: '26',
     icon: 171,
     scope: 1,
@@ -8679,7 +8829,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1654',
     name: '쾌락의 원',
-    description: '위력: B(손or정)　대상: 적 전체　속성: 쾌락·성　효과: 유혹\n적 전체를 쾌락의 원으로 끌여들이는 음 기술',
+    description: '위력: B(손or정)　대상: 적 전체　속성: 쾌락·성　효과: 유혹 적 전체를 쾌락의 원으로 끌여들이는 음 기술',
     type: '26',
     icon: 171,
     scope: 2,
@@ -8694,7 +8844,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1655',
     name: '파이즈리텐프테이션',
-    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락·성　효과: 유혹\n부드러운 가슴으로 매료하는 음 기술',
+    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락·성　효과: 유혹 부드러운 가슴으로 매료하는 음 기술',
     type: '26',
     icon: 171,
     scope: 1,
@@ -8709,7 +8859,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1656',
     name: '천음흡정',
-    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락·성　효과: HP흡수·구속\n적을 범해, 쾌락과 함께 정력을 빨아 올리는 음 기술',
+    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락·성　효과: HP흡수·구속 적을 범해, 쾌락과 함께 정력을 빨아 올리는 음 기술',
     type: '26',
     icon: 171,
     scope: 1,
@@ -8724,7 +8874,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1657',
     name: '사랑 천사의 음욕',
-    description: '위력: S(손or정)　대상: 적 하나　속성: 쾌락·성　효과: 구속\n탐내도록(듯이) 적을 다 범하는 음 기술',
+    description: '위력: S(손or정)　대상: 적 하나　속성: 쾌락·성　효과: 구속 탐내도록(듯이) 적을 다 범하는 음 기술',
     type: '26',
     icon: 171,
     scope: 1,
@@ -8739,7 +8889,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1658',
     name: '쾌락의 십자가',
-    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락·성　효과: 구속·황홀\n적을 십자의 형태에 구속해, 집단에서 다 희롱하는 음 기술',
+    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락·성　효과: 구속·황홀 적을 십자의 형태에 구속해, 집단에서 다 희롱하는 음 기술',
     type: '26',
     icon: 171,
     scope: 1,
@@ -8754,7 +8904,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1659',
     name: '성체 회귀',
-    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락·성　효과: 승천\n적을 수중에 넣어, 새로운 존재로서 전생 하는 음 기술',
+    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락·성　효과: 승천 적을 수중에 넣어, 새로운 존재로서 전생 하는 음 기술',
     type: '26',
     icon: 171,
     scope: 1,
@@ -8769,7 +8919,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1660',
     name: '성자의 기원',
-    description: '대상: 아군 전체　효과: HP대회복\n성자의 기원에 의해, 아군 전체를 치유하는 회복 기술',
+    description: '대상: 아군 전체　효과: HP대회복 성자의 기원에 의해, 아군 전체를 치유하는 회복 기술',
     type: '26',
     icon: 171,
     scope: 8,
@@ -8784,7 +8934,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1661',
     name: '성자 대기도',
-    description: '대상: 아군 전체　효과: HP전회복\n성자의 기도에 의해, 아군 전체를 치유하는 회복 기술',
+    description: '대상: 아군 전체　효과: HP전회복 성자의 기도에 의해, 아군 전체를 치유하는 회복 기술',
     type: '26',
     icon: 171,
     scope: 8,
@@ -8799,7 +8949,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1662',
     name: '성자의 치유',
-    description: '대상: 아군 전체　효과: 상태 이상 회복\n성자의 기원으로 아군 전체 상태 이상을 치유하는 기술',
+    description: '대상: 아군 전체　효과: 상태 이상 회복 성자의 기원으로 아군 전체 상태 이상을 치유하는 기술',
     type: '26',
     icon: 171,
     scope: 8,
@@ -8811,7 +8961,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1663',
     name: '성자의 기적',
-    description: '대상: 아군 하나　효과: 소생\n기적을 가져와, 아군 하나를 부활시키는 기술',
+    description: '대상: 아군 하나　효과: 소생 기적을 가져와, 아군 하나를 부활시키는 기술',
     type: '26',
     icon: 171,
     scope: 9,
@@ -8826,7 +8976,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1664',
     name: '성자의 순교',
-    description: '대상: 아군 전체　효과: HP전회복·완전 소생\n자신의 희생과 교환에, 아군 전체를 회복·소생 하는 기술',
+    description: '대상: 아군 전체　효과: HP전회복·완전 소생 자신의 희생과 교환에, 아군 전체를 회복·소생 하는 기술',
     type: '26',
     icon: 171,
     scope: 8,
@@ -8841,7 +8991,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1665',
     name: '성자의 수호',
-    description: '대상: 아군 전체　효과: 방어력·마법 방어력 업\n성자의 가호로 아군 전원의 방어력과 마법 방어력이 올라간다',
+    description: '대상: 아군 전체　효과: 방어력·마법 방어력 업 성자의 가호로 아군 전원의 방어력과 마법 방어력이 올라간다',
     type: '26',
     icon: 171,
     scope: 8,
@@ -8853,7 +9003,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1666',
     name: '성자의 자폭',
-    description: '위력: 가변　대상: 적 전체\n성자의 생명과 교환에, 적을 괴멸 시키는 자폭 기술',
+    description: '위력: 가변　대상: 적 전체 성자의 생명과 교환에, 적을 괴멸 시키는 자폭 기술',
     type: '26',
     icon: 171,
     scope: 2,
@@ -8868,7 +9018,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1667',
     name: '에인헤리알',
-    description: '대상: 아군 전체　효과: 완전 소생·버서크\n전투 불능의 아군을 폭주 상태로 부활시키는 전처녀의 비장의 기술',
+    description: '대상: 아군 전체　효과: 완전 소생·버서크 전투 불능의 아군을 폭주 상태로 부활시키는 전처녀의 비장의 기술',
     type: '26',
     icon: 171,
     scope: 10,
@@ -8883,7 +9033,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1668',
     name: '몽환천무',
-    description: '대상: 사용자　효과: 민첩성 대업·명중율·마법 회피율 100%\n춤추는 것 같은 동작으로 공격을 회피하는 천사의 오의',
+    description: '대상: 사용자　효과: 민첩성 대업·명중율·마법 회피율 100% 춤추는 것 같은 동작으로 공격을 회피하는 천사의 오의',
     type: '26',
     icon: 171,
     scope: 11,
@@ -8895,7 +9045,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1669',
     name: '타천무도',
-    description: '대상: 사용자　효과: 민첩성 대업·명중율·회피율 100%\n성스러운 파동과 일체화해 공격을 회피하는 타천사의 오의',
+    description: '대상: 사용자　효과: 민첩성 대업·명중율·회피율 100% 성스러운 파동과 일체화해 공격을 회피하는 타천사의 오의',
     type: '26',
     icon: 171,
     scope: 11,
@@ -8907,7 +9057,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1670',
     name: '명상',
-    description: '대상: 사용자　효과: HP회복\n정신을 집중해 HP를 회복 하는 타천사의 비장의 기술',
+    description: '대상: 사용자　효과: HP회복 정신을 집중해 HP를 회복 하는 타천사의 비장의 기술',
     type: '26',
     icon: 171,
     scope: 11,
@@ -8922,7 +9072,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1671',
     name: '궁극 명상',
-    description: '대상: 사용자　효과: HP전회복\n정신을 집중해 HP를 전회복 하는 타천사의 비장의 기술',
+    description: '대상: 사용자　효과: HP전회복 정신을 집중해 HP를 전회복 하는 타천사의 비장의 기술',
     type: '26',
     icon: 171,
     scope: 11,
@@ -8937,7 +9087,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1672',
     name: '머리카락에 휩싸여진 낙원',
-    description: '위력: B(손or정)　대상: 적 전체　속성: 쾌락·성　효과: 민감\n머리카락이 주위에 침식 해 적 전체를 다 희롱하는 음 기술',
+    description: '위력: B(손or정)　대상: 적 전체　속성: 쾌락·성　효과: 민감 머리카락이 주위에 침식 해 적 전체를 다 희롱하는 음 기술',
     type: '26',
     icon: 171,
     scope: 2,
@@ -8952,7 +9102,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1674',
     name: '다크네스',
-    description: '위력: A(공or마)　대상: 적 하나　속성: 어둠＋　효과: ＋\n암흑의 파동으로 적을 멸하는 어둠의 마법',
+    description: '위력: A(공or마)　대상: 적 하나　속성: 어둠＋　효과: ＋ 암흑의 파동으로 적을 멸하는 어둠의 마법',
     type: '27',
     icon: 177,
     scope: 1,
@@ -8967,7 +9117,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1675',
     name: '다크 에터널',
-    description: '위력: A(공or마)　대상: 적 전체　속성: 어둠＋　효과: ＋\n암흑의 파동으로 주위를 다 굽는 어둠의 마법',
+    description: '위력: A(공or마)　대상: 적 전체　속성: 어둠＋　효과: ＋ 암흑의 파동으로 주위를 다 굽는 어둠의 마법',
     type: '27',
     icon: 177,
     scope: 2,
@@ -8982,7 +9132,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1676',
     name: '마인염 무용',
-    description: '위력: A(공or마)　대상: 적 전체　속성: 불길·어둠\n어둠의 마력으로 공간 그 자체를 연소시키는 오의',
+    description: '위력: A(공or마)　대상: 적 전체　속성: 불길·어둠 어둠의 마력으로 공간 그 자체를 연소시키는 오의',
     type: '27',
     icon: 177,
     scope: 2,
@@ -8997,7 +9147,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1677',
     name: '마빙장',
-    description: '위력: A(공or마)　대상: 적 전체　속성: 얼음·어둠\n어둠의 마력으로 공간 그 자체를 동결시키는 오의',
+    description: '위력: A(공or마)　대상: 적 전체　속성: 얼음·어둠 어둠의 마력으로 공간 그 자체를 동결시키는 오의',
     type: '27',
     icon: 177,
     scope: 2,
@@ -9012,7 +9162,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1678',
     name: '마뢰진',
-    description: '위력: A(공or마)　대상: 적 전체　속성: 번개·어둠\n어둠의 마력으로 공간에 번개를 채우는 오의',
+    description: '위력: A(공or마)　대상: 적 전체　속성: 번개·어둠 어둠의 마력으로 공간에 번개를 채우는 오의',
     type: '27',
     icon: 177,
     scope: 2,
@@ -9027,7 +9177,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1680',
     name: '마신흑장',
-    description: '위력: SS(공or마)　대상: 적 하나　속성: 어둠＋　효과: ＋\n어둠의 힘을 손바닥에 응축시켜, 적에게 주입하는 궁극 오의',
+    description: '위력: SS(공or마)　대상: 적 하나　속성: 어둠＋　효과: ＋ 어둠의 힘을 손바닥에 응축시켜, 적에게 주입하는 궁극 오의',
     type: '27',
     icon: 177,
     scope: 1,
@@ -9042,7 +9192,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1681',
     name: '네크로시스',
-    description: '위력: B(공or마)　대상: 적 하나　속성: 종언\n적을 혼돈의 장독에 쬐어, 육체를 파괴하는 기술',
+    description: '위력: B(공or마)　대상: 적 하나　속성: 종언 적을 혼돈의 장독에 쬐어, 육체를 파괴하는 기술',
     type: '27',
     icon: 177,
     scope: 1,
@@ -9057,7 +9207,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1682',
     name: '아포토시스',
-    description: '위력: S(공or마)　대상: 적 하나　속성: 종언\n혼돈의 폭발로 적을 파괴하는 오의',
+    description: '위력: S(공or마)　대상: 적 하나　속성: 종언 혼돈의 폭발로 적을 파괴하는 오의',
     type: '27',
     icon: 177,
     scope: 1,
@@ -9072,7 +9222,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1683',
     name: '죽어 줄래?',
-    description: '위력: S(공or마)　대상: 적 전체　속성: 어둠\n마왕의 저주로 적 전체의 생명을 빼앗는 암흑 오의',
+    description: '위력: S(공or마)　대상: 적 전체　속성: 어둠 마왕의 저주로 적 전체의 생명을 빼앗는 암흑 오의',
     type: '27',
     icon: 177,
     scope: 2,
@@ -9087,7 +9237,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1684',
     name: '마왕의 포학',
-    description: '위력: SS(공or마)　대상: 적 전체　속성: 어둠\n마왕의 분노로 공간을 흔드는 암흑 오의',
+    description: '위력: SS(공or마)　대상: 적 전체　속성: 어둠 마왕의 분노로 공간을 흔드는 암흑 오의',
     type: '27',
     icon: 177,
     scope: 2,
@@ -9102,7 +9252,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1685',
     name: '영원의 어둠',
-    description: '위력: SS(공or마)　대상: 적 전체　속성: 어둠\n마왕의 힘으로 공간에 어둠을 채워, 캄캄해 닫는 궁극 오의',
+    description: '위력: SS(공or마)　대상: 적 전체　속성: 어둠 마왕의 힘으로 공간에 어둠을 채워, 캄캄해 닫는 궁극 오의',
     type: '27',
     icon: 177,
     scope: 2,
@@ -9117,7 +9267,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1698',
     name: '마법검 파이어',
-    description: '대상: 사용자　효과: 통상 공격 불길 속성\n무기로 불길의 마력을 품어, 불길 속성의 공격을 내지르는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 불길 속성 무기로 불길의 마력을 품어, 불길 속성의 공격을 내지르는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9129,7 +9279,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1699',
     name: '마법검 블리자드',
-    description: '대상: 사용자　효과: 통상 공격 얼음 속성\n무기로 얼음의 마력을 품어, 얼음 속성의 공격을 내지르는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 얼음 속성 무기로 얼음의 마력을 품어, 얼음 속성의 공격을 내지르는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9141,7 +9291,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1700',
     name: '마법검 썬더',
-    description: '대상: 사용자　효과: 통상 공격 번개속성\n무기로 번개의 마력을 품어, 번개 속성의 공격을 내지르는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 번개속성 무기로 번개의 마력을 품어, 번개 속성의 공격을 내지르는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9153,7 +9303,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1701',
     name: '마법검 윈드',
-    description: '대상: 사용자　효과: 통상 공격 바람 속성\n무기로 바람의 마력을 품어, 바람 속성의 공격을 내지르는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 바람 속성 무기로 바람의 마력을 품어, 바람 속성의 공격을 내지르는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9165,7 +9315,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1702',
     name: '마법검 어스',
-    description: '대상: 사용자　효과: 통상 공격 흙 속성\n무기로 흙의 마력을 품어, 흙 속성의 공격을 내지르는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 흙 속성 무기로 흙의 마력을 품어, 흙 속성의 공격을 내지르는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9177,7 +9327,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1703',
     name: '마법검 아쿠아',
-    description: '대상: 사용자　효과: 통상 공격 물 속성\n무기로 물의 마력을 품어, 물 속성의 공격을 내지르는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 물 속성 무기로 물의 마력을 품어, 물 속성의 공격을 내지르는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9189,7 +9339,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1704',
     name: '마법검 홀리',
-    description: '대상: 사용자　효과: 통상 공격 성 속성\n무기로 성스러운 마력을 품어, 성속성의 공격을 내지르는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 성 속성 무기로 성스러운 마력을 품어, 성속성의 공격을 내지르는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9201,7 +9351,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1705',
     name: '마법검 다크',
-    description: '대상: 사용자　효과: 통상 공격 어둠 속성\n무기로 어둠의 마력을 품어, 어둠 속성의 공격을 내지르는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 어둠 속성 무기로 어둠의 마력을 품어, 어둠 속성의 공격을 내지르는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9213,7 +9363,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1706',
     name: '마법검 포이즌',
-    description: '대상: 사용자　효과: 통상 공격독 100%\n무기로 독의 마력을 품어, 독 상태 이상하게 하는 마법검',
+    description: '대상: 사용자　효과: 통상 공격독 100% 무기로 독의 마력을 품어, 독 상태 이상하게 하는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9225,7 +9375,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1707',
     name: '마법검 브라인',
-    description: '대상: 사용자　효과: 통상 공격 어둠 100%\n무기로 어둠의 마력을 품어, 어둠 상태 이상하게 하는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 어둠 100% 무기로 어둠의 마력을 품어, 어둠 상태 이상하게 하는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9237,7 +9387,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1708',
     name: '마법검 사일런스',
-    description: '대상: 사용자　효과: 통상 공격 침묵 100%\n무기로 침묵의 마력을 품어, 침묵 상태 이상하게 하는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 침묵 100% 무기로 침묵의 마력을 품어, 침묵 상태 이상하게 하는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9249,7 +9399,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1709',
     name: '마법검 파라라이즈',
-    description: '대상: 사용자　효과: 통상 공격 마비 100%\n무기로 마비의 마력을 품어, 마비 상태 이상하게 하는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 마비 100% 무기로 마비의 마력을 품어, 마비 상태 이상하게 하는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9261,7 +9411,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1710',
     name: '마법검 안녕 퓨즈',
-    description: '대상: 사용자　효과: 통상 공격 혼란 100%\n무기로 혼란의 마력을 품어, 혼란 상태 이상하게 하는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 혼란 100% 무기로 혼란의 마력을 품어, 혼란 상태 이상하게 하는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9273,7 +9423,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1711',
     name: '마법검 슬립',
-    description: '대상: 사용자　효과: 통상 공격 수면 100%\n무기로 수면의 마력을 품어, 수면 상태 이상하게 하는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 수면 100% 무기로 수면의 마력을 품어, 수면 상태 이상하게 하는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9285,7 +9435,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1712',
     name: '마법검 데스',
-    description: '대상: 사용자　효과: 통상 공격 즉사 100%\n무기로 죽음의 마력을 품어, 적을 즉사시키는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 즉사 100% 무기로 죽음의 마력을 품어, 적을 즉사시키는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9297,7 +9447,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1714',
     name: '마법검 드레인',
-    description: '대상: 사용자　효과: 통상 공격 HP흡수\n무기로 체력 흡수의 힘을 품어, HP를 빼앗는 마법검',
+    description: '대상: 사용자　효과: 통상 공격 HP흡수 무기로 체력 흡수의 힘을 품어, HP를 빼앗는 마법검',
     type: '28',
     icon: 181,
     scope: 11,
@@ -9309,7 +9459,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1716',
     name: '매직 배리어',
-    description: '대상: 아군 전체　효과: 마법 데미지 반감\n아군 전체를 마법으로부터 지키는 배리어를 전개한다',
+    description: '대상: 아군 전체　효과: 마법 데미지 반감 아군 전체를 마법으로부터 지키는 배리어를 전개한다',
     type: '28',
     icon: 181,
     scope: 8,
@@ -9321,7 +9471,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1717',
     name: '마직크리후레크트',
-    description: '대상: 아군 전체　효과: 마법 반사\n마법을 반사하는 배리어를 전개한다',
+    description: '대상: 아군 전체　효과: 마법 반사 마법을 반사하는 배리어를 전개한다',
     type: '28',
     icon: 181,
     scope: 8,
@@ -9333,7 +9483,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1723',
     name: '음양·풍암부',
-    description: '위력: C(마or손)　대상: 적 전체　속성: 풍　효과: 어둠·바람 약체\n바람의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
+    description: '위력: C(마or손)　대상: 적 전체　속성: 풍　효과: 어둠·바람 약체 바람의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
     type: '29',
     icon: 233,
     scope: 2,
@@ -9348,7 +9498,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1724',
     name: '음양·토묵부',
-    description: '위력: C(마or손)　대상: 적 전체　속성: 흙　효과: 침묵·흙약체\n흙의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
+    description: '위력: C(마or손)　대상: 적 전체　속성: 흙　효과: 침묵·흙약체 흙의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
     type: '29',
     icon: 233,
     scope: 2,
@@ -9363,7 +9513,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1725',
     name: '음양·물 요도부',
-    description: '위력: C(마or손)　대상: 적 전체　속성: 수　효과: 독·수약체\n물의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
+    description: '위력: C(마or손)　대상: 적 전체　속성: 수　효과: 독·수약체 물의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
     type: '29',
     icon: 233,
     scope: 2,
@@ -9378,7 +9528,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1726',
     name: '음양·광흡부',
-    description: '위력: B(마or손)　대상: 적 전체　속성: 성　효과: HP흡수·성약체\n성스러운 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
+    description: '위력: B(마or손)　대상: 적 전체　속성: 성　효과: HP흡수·성약체 성스러운 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
     type: '29',
     icon: 233,
     scope: 2,
@@ -9393,7 +9543,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1727',
     name: '음양·염란창',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 염　효과: 혼란·불길 약체\n불길의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 염　효과: 혼란·불길 약체 불길의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
     type: '29',
     icon: 233,
     scope: 2,
@@ -9408,7 +9558,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1728',
     name: '음양·빙몽창',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 얼음　효과: 수면·얼음 약체\n얼음의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 얼음　효과: 수면·얼음 약체 얼음의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
     type: '29',
     icon: 233,
     scope: 2,
@@ -9423,7 +9573,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1729',
     name: '음양·번개마비창',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 번개　효과: 마비·번개 약체\n번개의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 번개　효과: 마비·번개 약체 번개의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
     type: '29',
     icon: 233,
     scope: 2,
@@ -9438,7 +9588,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1730',
     name: '음양·암탐창',
-    description: '위력: S(마or손)　대상: 적 하나　속성: 어둠　효과: 즉사·어둠 약체\n어둠의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
+    description: '위력: S(마or손)　대상: 적 하나　속성: 어둠　효과: 즉사·어둠 약체 어둠의 힘을 가지는 부로, 데미지를 주는 것과 동시에 저항력을 내린다',
     type: '29',
     icon: 233,
     scope: 1,
@@ -9453,7 +9603,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1731',
     name: '음양·락 얼음기둥',
-    description: '위력: D(마or손)　대상: 적 하나　속성: 얼음　효과: 얼음 약체\n음양의 힘으로 얼음기둥을 낳아, 적의 두상에 낙하시킨다',
+    description: '위력: D(마or손)　대상: 적 하나　속성: 얼음　효과: 얼음 약체 음양의 힘으로 얼음기둥을 낳아, 적의 두상에 낙하시킨다',
     type: '29',
     icon: 233,
     scope: 1,
@@ -9468,7 +9618,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1732',
     name: '음양·빙탄 난무',
-    description: '위력: B(마or손)　대상: 적 하나　속성: 얼음　효과: 얼음 약체\n음양의 힘으로 빙탄을 낳아, 적에게 난무 시킨다',
+    description: '위력: B(마or손)　대상: 적 하나　속성: 얼음　효과: 얼음 약체 음양의 힘으로 빙탄을 낳아, 적에게 난무 시킨다',
     type: '29',
     icon: 233,
     scope: 1,
@@ -9483,7 +9633,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1733',
     name: '음양·요란빙격',
-    description: '위력: S(마or손)　대상: 적 하나　속성: 얼음　효과: 얼음 약체\n음양의 힘으로 거대한 얼음덩어리를 낳아, 적을 압괴 한다',
+    description: '위력: S(마or손)　대상: 적 하나　속성: 얼음　효과: 얼음 약체 음양의 힘으로 거대한 얼음덩어리를 낳아, 적을 압괴 한다',
     type: '29',
     icon: 233,
     scope: 1,
@@ -9498,7 +9648,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1734',
     name: '음양·여우의 시집가기',
-    description: '위력: D(마or손)　대상: 적 전체　속성: 흙　효과: 스턴·흙약체\n음양의 힘으로 대지를 흔들어, 적을 놀라게 한다',
+    description: '위력: D(마or손)　대상: 적 전체　속성: 흙　효과: 스턴·흙약체 음양의 힘으로 대지를 흔들어, 적을 놀라게 한다',
     type: '29',
     icon: 233,
     scope: 2,
@@ -9513,7 +9663,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1735',
     name: '음양·호람',
-    description: '위력: B(마or손)　대상: 적 전체　속성: 흙　효과: 혼란·흙약체\n음양의 힘으로 토탄을 분출하게 해 적을 말려들게 한다',
+    description: '위력: B(마or손)　대상: 적 전체　속성: 흙　효과: 혼란·흙약체 음양의 힘으로 토탄을 분출하게 해 적을 말려들게 한다',
     type: '29',
     icon: 233,
     scope: 2,
@@ -9528,7 +9678,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1736',
     name: '음양·롱달밤',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 바람·토·수　효과: 석화·흙약체\n음양의 힘으로 대지를 붕괴시켜, 적을 괴멸 시킨다',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 바람·토·수　효과: 석화·흙약체 음양의 힘으로 대지를 붕괴시켜, 적을 괴멸 시킨다',
     type: '29',
     icon: 233,
     scope: 2,
@@ -9543,7 +9693,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1737',
     name: '음양·소월',
-    description: '위력: B(마or손)　대상: 적 하나　속성: 흙　효과: 흙약체\n음양의 힘으로 대지를 무너뜨려, 적을 파묻히게 한다',
+    description: '위력: B(마or손)　대상: 적 하나　속성: 흙　효과: 흙약체 음양의 힘으로 대지를 무너뜨려, 적을 파묻히게 한다',
     type: '29',
     icon: 233,
     scope: 1,
@@ -9558,7 +9708,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1738',
     name: '음양·외월',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 흙　효과: 흙약체\n음양의 힘으로 대지를 붕괴시켜, 적을 압 부수게 한다',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 흙　효과: 흙약체 음양의 힘으로 대지를 붕괴시켜, 적을 압 부수게 한다',
     type: '29',
     icon: 233,
     scope: 2,
@@ -9573,7 +9723,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1741',
     name: '음양·마불진',
-    description: '위력: A(마or손)　대상: 적 하나　효과: 마법 카운터 발동\n음양의 식을 쳐, 마법 공격에 대해서 카운터를 실시하는 오의',
+    description: '위력: A(마or손)　대상: 적 하나　효과: 마법 카운터 발동 음양의 식을 쳐, 마법 공격에 대해서 카운터를 실시하는 오의',
     type: '29',
     icon: 233,
     scope: 11,
@@ -9586,7 +9736,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1742',
     name: '음양·명활창',
-    description: '대상: 아군 전체　효과: HP중 회복\n아군 전체의 체력을 회복 하는 위안의 부를 사용한다',
+    description: '대상: 아군 전체　효과: HP중 회복 아군 전체의 체력을 회복 하는 위안의 부를 사용한다',
     type: '29',
     icon: 233,
     scope: 8,
@@ -9601,7 +9751,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1743',
     name: '령우보',
-    description: '대상: 사용자　효과: 회피율소업·MP턴소회복\n회피율이 올라가, MP가 서서히 회복 해 나가는 음양의 식',
+    description: '대상: 사용자　효과: 회피율소업·MP턴소회복 회피율이 올라가, MP가 서서히 회복 해 나가는 음양의 식',
     type: '29',
     icon: 233,
     scope: 11,
@@ -9613,7 +9763,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1744',
     name: '신우보',
-    description: '대상: 사용자　효과: 회피율중 업·MP턴중 회복\n회피율이 대 올라가, MP가 크고 회복 해 나가는 음양의 식',
+    description: '대상: 사용자　효과: 회피율중 업·MP턴중 회복 회피율이 대 올라가, MP가 크고 회복 해 나가는 음양의 식',
     type: '29',
     icon: 233,
     scope: 11,
@@ -9625,7 +9775,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1745',
     name: '비우보',
-    description: '대상: 사용자　효과: 회피율소업·SP턴소회복\n회피율이 올라가, SP가 서서히 회복 해 나가는 음양의 식',
+    description: '대상: 사용자　효과: 회피율소업·SP턴소회복 회피율이 올라가, SP가 서서히 회복 해 나가는 음양의 식',
     type: '29',
     icon: 233,
     scope: 11,
@@ -9637,7 +9787,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1746',
     name: '룡우보',
-    description: '대상: 사용자　효과: 회피율중 업·SP턴중 회복\n회피율이 대 올라가, SP가 크고 회복 해 나가는 음양의 식',
+    description: '대상: 사용자　효과: 회피율중 업·SP턴중 회복 회피율이 대 올라가, SP가 크고 회복 해 나가는 음양의 식',
     type: '29',
     icon: 233,
     scope: 11,
@@ -9649,7 +9799,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1751',
     name: '훔친다',
-    description: '대상: 적 하나　효과: 훔친다\n적이 가지고 있는 아이템을 훔친다',
+    description: '대상: 적 하나　효과: 훔친다 적이 가지고 있는 아이템을 훔친다',
     type: '30',
     icon: 3009,
     scope: 1,
@@ -9661,7 +9811,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1752',
     name: '더블 훔친다',
-    description: '대상: 적 하나　효과: 훔친다\n두 번 연속으로 적으로부터 아이템을 훔친다',
+    description: '대상: 적 하나　효과: 훔친다 두 번 연속으로 적으로부터 아이템을 훔친다',
     type: '30',
     icon: 3009,
     scope: 1,
@@ -9673,7 +9823,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1753',
     name: '흐트러지고 훔친다',
-    description: '대상: 적 랜덤 4회　효과: 훔친다\n4회 연속으로 적으로부터 아이템을 흐트러지고 훔친다',
+    description: '대상: 적 랜덤 4회　효과: 훔친다 4회 연속으로 적으로부터 아이템을 흐트러지고 훔친다',
     type: '30',
     icon: 3009,
     scope: 3,
@@ -9685,7 +9835,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1754',
     name: '전체 훔친다',
-    description: '대상: 적 전체　효과: 훔친다\n모든 적으로부터 아이템을 훔친다',
+    description: '대상: 적 전체　효과: 훔친다 모든 적으로부터 아이템을 훔친다',
     type: '30',
     icon: 3009,
     scope: 2,
@@ -9697,7 +9847,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1755',
     name: '탈취한다',
-    description: '대상: 적 하나　속성: ＋　효과: 훔친다＋\n공격하는 것과 동시에 아이템을 훔친다',
+    description: '대상: 적 하나　속성: ＋　효과: 훔친다＋ 공격하는 것과 동시에 아이템을 훔친다',
     type: '30',
     icon: 3009,
     scope: 1,
@@ -9712,7 +9862,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1756',
     name: '음식을 훔친다',
-    description: '대상: 적 하나　효과: 훔친다\n적이 가지고 있는 음식을 훔친다',
+    description: '대상: 적 하나　효과: 훔친다 적이 가지고 있는 음식을 훔친다',
     type: '30',
     icon: 3009,
     scope: 1,
@@ -9724,7 +9874,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1757',
     name: '소재를 훔친다',
-    description: '대상: 적 하나　효과: 훔친다\n적이 가지고 있는 소재를 훔친다',
+    description: '대상: 적 하나　효과: 훔친다 적이 가지고 있는 소재를 훔친다',
     type: '30',
     icon: 3009,
     scope: 1,
@@ -9736,7 +9886,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1758',
     name: '마음을 훔친다',
-    description: '대상: 적 하나　효과: 유혹\n적의 마음을 훔쳐, 유혹 상태로 한다',
+    description: '대상: 적 하나　효과: 유혹 적의 마음을 훔쳐, 유혹 상태로 한다',
     type: '30',
     icon: 3009,
     scope: 1,
@@ -9748,7 +9898,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1759',
     name: '스테이터스를 훔친다',
-    description: '대상: 적 하나　효과: 훔친다\n적으로부터 능력치를 훔쳐, 자신의 것으로 한다',
+    description: '대상: 적 하나　효과: 훔친다 적으로부터 능력치를 훔쳐, 자신의 것으로 한다',
     type: '30',
     icon: 3009,
     scope: 1,
@@ -9760,7 +9910,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1760',
     name: 'HP를 훔친다',
-    description: '위력: E(손)　대상: 적 하나　효과: HP흡수\n적으로부터 HP를 훔쳐, 자신의 것으로 한다',
+    description: '위력: E(손)　대상: 적 하나　효과: HP흡수 적으로부터 HP를 훔쳐, 자신의 것으로 한다',
     type: '30',
     icon: 3009,
     scope: 1,
@@ -9775,7 +9925,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1761',
     name: 'MP를 훔친다',
-    description: '위력: E(손)　대상: 적 하나　효과: MP흡수\n적으로부터 MP를 훔쳐, 자신의 것으로 한다',
+    description: '위력: E(손)　대상: 적 하나　효과: MP흡수 적으로부터 MP를 훔쳐, 자신의 것으로 한다',
     type: '30',
     icon: 3009,
     scope: 1,
@@ -9790,7 +9940,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1762',
     name: 'SP를 훔친다',
-    description: '대상: 적 하나　효과: SP흡수\n적으로부터 SP를 훔쳐, 자신의 것으로 한다',
+    description: '대상: 적 하나　효과: SP흡수 적으로부터 SP를 훔쳐, 자신의 것으로 한다',
     type: '30',
     icon: 3009,
     scope: 11,
@@ -9802,7 +9952,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1763',
     name: '도적의 증거',
-    description: '위력: S(손or민)　대상: 적 하나　속성: ＋　효과: ＋\n도적의 극히 기술을 적으로 새기는 붐비는 일격',
+    description: '위력: S(손or민)　대상: 적 하나　속성: ＋　효과: ＋ 도적의 극히 기술을 적으로 새기는 붐비는 일격',
     type: '30',
     icon: 3009,
     scope: 1,
@@ -9817,7 +9967,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1764',
     name: '(와)과 않고들',
-    description: '대상: 파티 전체　효과: 도주\n특수한 전투 이외,100%의 성공율로 전투로부터 도주한다',
+    description: '대상: 파티 전체　효과: 도주 특수한 전투 이외,100%의 성공율로 전투로부터 도주한다',
     type: '30',
     icon: 3009,
     scope: 11,
@@ -9830,7 +9980,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1778',
     name: '인법·둔갑',
-    description: '위력: C(공or손)　대상: 적 전체　속성: 불길＋　효과: ＋\n인술로 지옥의 맹렬한 불을 불러, 주위를 후려쳐 넘긴',
+    description: '위력: C(공or손)　대상: 적 전체　속성: 불길＋　효과: ＋ 인술로 지옥의 맹렬한 불을 불러, 주위를 후려쳐 넘긴',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -9845,7 +9995,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1779',
     name: '인법·물둔',
-    description: '위력: C(공or손)　대상: 적 전체　속성: 물＋　효과: ＋\n인술로 물류를 불러, 적을 흘러가게 한다',
+    description: '위력: C(공or손)　대상: 적 전체　속성: 물＋　효과: ＋ 인술로 물류를 불러, 적을 흘러가게 한다',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -9860,7 +10010,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1780',
     name: '인법·뢰신',
-    description: '위력: C(공or손)　대상: 적 전체　속성: 번개＋　효과: ＋\n인술로 전류를 발생시켜, 적을 감전시킨다',
+    description: '위력: C(공or손)　대상: 적 전체　속성: 번개＋　효과: ＋ 인술로 전류를 발생시켜, 적을 감전시킨다',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -9875,7 +10025,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1781',
     name: '인법·바람차',
-    description: '위력: C(공or손)　대상: 적 전체　속성: 바람＋　효과: ＋\n인술로 돌풍을 불러, 주위를 후려쳐 넘긴',
+    description: '위력: C(공or손)　대상: 적 전체　속성: 바람＋　효과: ＋ 인술로 돌풍을 불러, 주위를 후려쳐 넘긴',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -9890,7 +10040,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1782',
     name: '인법·토붕',
-    description: '위력: C(공or손)　대상: 적 전체　속성: 흙＋　효과: ＋\n인술로 낙석을 불러, 주위를 다 메운다',
+    description: '위력: C(공or손)　대상: 적 전체　속성: 흙＋　효과: ＋ 인술로 낙석을 불러, 주위를 다 메운다',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -9905,7 +10055,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1783',
     name: '인법·빙룡',
-    description: '위력: C(공or손)　대상: 적 전체　속성: 얼음＋　효과: ＋\n인술로 얼음덩어리를 불러, 주위를 얼어붙게 한다',
+    description: '위력: C(공or손)　대상: 적 전체　속성: 얼음＋　효과: ＋ 인술로 얼음덩어리를 불러, 주위를 얼어붙게 한다',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -9920,7 +10070,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1784',
     name: '인법·독람',
-    description: '위력: C(공or손)　대상: 적 전체　속성: 바이오＋　효과: ＋\n인술로 독의 폭풍우를 불러, 주위를 독으로 무릅쓴다',
+    description: '위력: C(공or손)　대상: 적 전체　속성: 바이오＋　효과: ＋ 인술로 독의 폭풍우를 불러, 주위를 독으로 무릅쓴다',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -9935,7 +10085,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1785',
     name: '인법·그림자꿰기',
-    description: '위력: C(공or손)　대상: 적 하나　속성: 불길＋　효과: 마비＋\n적의 그림자에 칼날을 찔러, 움직임을 봉하는 인술',
+    description: '위력: C(공or손)　대상: 적 하나　속성: 불길＋　효과: 마비＋ 적의 그림자에 칼날을 찔러, 움직임을 봉하는 인술',
     type: '31',
     icon: 1482,
     scope: 1,
@@ -9950,7 +10100,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1786',
     name: '인법·져 벚꽃',
-    description: '위력: S(공or손)　대상: 적 하나　속성: ＋　효과: 즉사＋\n적의 급소를 꿰뚫어, 생명을 가라앉힐 수 있는 인의 기술',
+    description: '위력: S(공or손)　대상: 적 하나　속성: ＋　효과: 즉사＋ 적의 급소를 꿰뚫어, 생명을 가라앉힐 수 있는 인의 기술',
     type: '31',
     icon: 1482,
     scope: 1,
@@ -9965,7 +10115,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1787',
     name: '인오의·둔갑염무',
-    description: '위력: A(공or손)　대상: 적 전체　속성: 불길＋　효과: ＋\n인술로 지옥의 맹렬한 불을 호출해, 적 전체를 다 태우는 오의',
+    description: '위력: A(공or손)　대상: 적 전체　속성: 불길＋　효과: ＋ 인술로 지옥의 맹렬한 불을 호출해, 적 전체를 다 태우는 오의',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -9980,7 +10130,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1788',
     name: '인오의·물둔호류',
-    description: '위력: A(공or손)　대상: 적 전체　속성: 물＋　효과: ＋\n인술로 호류를 호출해, 적 전체를 흘러가게 하는 오의',
+    description: '위력: A(공or손)　대상: 적 전체　속성: 물＋　효과: ＋ 인술로 호류를 호출해, 적 전체를 흘러가게 하는 오의',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -9995,7 +10145,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1789',
     name: '인오의·뢰신백야',
-    description: '위력: A(공or손)　대상: 적 전체　속성: 번개＋　효과: ＋\n인술로 낙뢰를 연속시켜, 적 전체를 토벌해 멸하는 오의',
+    description: '위력: A(공or손)　대상: 적 전체　속성: 번개＋　효과: ＋ 인술로 낙뢰를 연속시켜, 적 전체를 토벌해 멸하는 오의',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -10010,7 +10160,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1790',
     name: '인오의·순영살',
-    description: '위력: S(공or손)　대상: 적 랜덤 4회　속성: ＋　효과: 즉사＋\n그림자마저 남기지 않는 몸놀림으로 난격을 내지르는 인오의',
+    description: '위력: S(공or손)　대상: 적 랜덤 4회　속성: ＋　효과: 즉사＋ 그림자마저 남기지 않는 몸놀림으로 난격을 내지르는 인오의',
     type: '31',
     icon: 1482,
     scope: 3,
@@ -10025,7 +10175,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1791',
     name: '인오의·암렬',
-    description: '위력: S(공or손)　대상: 적 하나　속성: 어둠＋　효과: ＋\n어둠 힘을 품은 칼날로 적을 베어 찢는 인오의',
+    description: '위력: S(공or손)　대상: 적 하나　속성: 어둠＋　효과: ＋ 어둠 힘을 품은 칼날로 적을 베어 찢는 인오의',
     type: '31',
     icon: 1482,
     scope: 1,
@@ -10040,7 +10190,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1792',
     name: '인오의·오행 열풍진',
-    description: '위력: A(공or손)　대상: 적 전체　속성: 불길·풍·토·수＋　효과: ＋\n인술로 자연의 힘을 해방해, 휘몰아치는 열풍을 부르는 인오의',
+    description: '위력: A(공or손)　대상: 적 전체　속성: 불길·풍·토·수＋　효과: ＋ 인술로 자연의 힘을 해방해, 휘몰아치는 열풍을 부르는 인오의',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -10055,7 +10205,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1793',
     name: '인오의·혼란 나선살',
-    description: '위력: S(공or손)　대상: 적 랜덤 6회　속성: ＋　효과: ＋\n적의 주위를 질주 해, 표를 담은 참격을 내지르는 인오의',
+    description: '위력: S(공or손)　대상: 적 랜덤 6회　속성: ＋　효과: ＋ 적의 주위를 질주 해, 표를 담은 참격을 내지르는 인오의',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -10070,7 +10220,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1794',
     name: '여우 인법·빙빙 차바퀴',
-    description: '위력: E(공or손)　대상: 적 전체　속성: ＋　효과: ＋\n빙빙 회전하면서 돌진하는 호족의 초보 인술',
+    description: '위력: E(공or손)　대상: 적 전체　속성: ＋　효과: ＋ 빙빙 회전하면서 돌진하는 호족의 초보 인술',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -10085,7 +10235,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1795',
     name: '여우 인법·회전오니불',
-    description: '위력: B(공or손)　대상: 적 전체　속성: 불길＋　효과: ＋\n회전하는 염탄으로 적을 공격하는 호족의 인술',
+    description: '위력: B(공or손)　대상: 적 전체　속성: 불길＋　효과: ＋ 회전하는 염탄으로 적을 공격하는 호족의 인술',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -10100,7 +10250,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1796',
     name: '여우 인법·굉염 고리',
-    description: '위력: A(공or손)　대상: 적 전체　속성: 불길＋　효과: ＋\n지옥의 맹렬한 불의 고리로 적을 다 태우는 호족의 상급 인술',
+    description: '위력: A(공or손)　대상: 적 전체　속성: 불길＋　효과: ＋ 지옥의 맹렬한 불의 고리로 적을 다 태우는 호족의 상급 인술',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -10115,7 +10265,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1797',
     name: '금술·3화산야',
-    description: '위력: S(공or손)　대상: 적 전체　속성: 불길·뢰·수＋　효과: ＋\n둔갑, 물둔, 뢰신을 동시에 사용하는 금단의 인술',
+    description: '위력: S(공or손)　대상: 적 전체　속성: 불길·뢰·수＋　효과: ＋ 둔갑, 물둔, 뢰신을 동시에 사용하는 금단의 인술',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -10130,7 +10280,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1800',
     name: '음 기술·혼란마거미',
-    description: '위력: S(공or손)　대상: 적 랜덤 6회　속성: 쾌락＋　효과: 민감＋\n손바닥으로 요염하게 성기를 애무하는 쿠노이치의 음 기술',
+    description: '위력: S(공or손)　대상: 적 랜덤 6회　속성: 쾌락＋　효과: 민감＋ 손바닥으로 요염하게 성기를 애무하는 쿠노이치의 음 기술',
     type: '31',
     icon: 1482,
     scope: 3,
@@ -10145,7 +10295,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1801',
     name: '음 기술·밤의 큰뱀',
-    description: '위력: A(공or손)　대상: 적 하나　속성: 쾌락＋　효과: 미끈미끈＋\n입으로 끈적 성기를 핥아대는 쿠노이치의 음 기술',
+    description: '위력: A(공or손)　대상: 적 하나　속성: 쾌락＋　효과: 미끈미끈＋ 입으로 끈적 성기를 핥아대는 쿠노이치의 음 기술',
     type: '31',
     icon: 1482,
     scope: 1,
@@ -10160,7 +10310,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1802',
     name: '음 기술·유포락',
-    description: '위력: A(공or손)　대상: 적 전체　속성: 쾌락＋　효과: 황홀＋\n풍만한 가슴으로 성기를 애무하는 쿠노이치의 음 기술',
+    description: '위력: A(공or손)　대상: 적 전체　속성: 쾌락＋　효과: 황홀＋ 풍만한 가슴으로 성기를 애무하는 쿠노이치의 음 기술',
     type: '31',
     icon: 1482,
     scope: 2,
@@ -10175,7 +10325,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1803',
     name: '음 기술·족무',
-    description: '위력: B(공or손)　대상: 적 랜덤 3회　속성: 물리·쾌락＋　효과: ＋\n요령 있는 다리로 성기를 희롱해 쿠노이치의 음 기술',
+    description: '위력: B(공or손)　대상: 적 랜덤 3회　속성: 물리·쾌락＋　효과: ＋ 요령 있는 다리로 성기를 희롱해 쿠노이치의 음 기술',
     type: '31',
     icon: 1482,
     scope: 3,
@@ -10190,7 +10340,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1804',
     name: '절 기술·통학등 해',
-    description: '위력: S(공or손)　대상: 적 하나　속성: 쾌락＋　효과: 절정·구속·HP흡수＋\n상대를 범해, 정령을 짜내는 쿠노이치의 오의',
+    description: '위력: S(공or손)　대상: 적 하나　속성: 쾌락＋　효과: 절정·구속·HP흡수＋ 상대를 범해, 정령을 짜내는 쿠노이치의 오의',
     type: '31',
     icon: 1482,
     scope: 1,
@@ -10205,7 +10355,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1805',
     name: '인법·유파',
-    description: '대상: 아군 전원　효과: HP소회복\n위안의 인술로 아군 전체를 소회복 시킨다',
+    description: '대상: 아군 전원　효과: HP소회복 위안의 인술로 아군 전체를 소회복 시킨다',
     type: '31',
     icon: 1482,
     scope: 8,
@@ -10220,7 +10370,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1806',
     name: '인법·분신술',
-    description: '대상: 사용자　효과: 회피율대업\n분신의 인술로, 적의 공격을 맞기 어렵게 한다',
+    description: '대상: 사용자　효과: 회피율대업 분신의 인술로, 적의 공격을 맞기 어렵게 한다',
     type: '31',
     icon: 1482,
     scope: 11,
@@ -10232,7 +10382,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1807',
     name: '인법·연막 숨고',
-    description: '대상: 파티 전체　효과: 도주\n연막을 쳐, 특수 전투 이외는 100%의 확률로 도주한다',
+    description: '대상: 파티 전체　효과: 도주 연막을 쳐, 특수 전투 이외는 100%의 확률로 도주한다',
     type: '31',
     icon: 1482,
     scope: 11,
@@ -10245,7 +10395,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1813',
     name: '잘게 잘라',
-    description: '위력: B(공or손or민)　대상: 적 하나　속성: ＋　효과: ＋\n칼날로 호쾌하게 적을 잘게 자르는 해적 기술',
+    description: '위력: B(공or손or민)　대상: 적 하나　속성: ＋　효과: ＋ 칼날로 호쾌하게 적을 잘게 자르는 해적 기술',
     type: '32',
     icon: 221,
     scope: 1,
@@ -10260,7 +10410,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1814',
     name: '희생의 제물',
-    description: '위력: B(공or손or민)　대상: 적 랜덤 3회　속성: ＋　효과: ＋\n용서가 없는 난격으로 적을 대패시키는 해적 기술',
+    description: '위력: B(공or손or민)　대상: 적 랜덤 3회　속성: ＋　효과: ＋ 용서가 없는 난격으로 적을 대패시키는 해적 기술',
     type: '32',
     icon: 221,
     scope: 3,
@@ -10275,7 +10425,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1815',
     name: '해병류·롱나누기',
-    description: '위력: C(공or손or민)　대상: 적 하나　속성: 물＋　효과: ＋\n해병이 체득 하고 있는, 폭포를 양단 하는 검 기술',
+    description: '위력: C(공or손or민)　대상: 적 하나　속성: 물＋　효과: ＋ 해병이 체득 하고 있는, 폭포를 양단 하는 검 기술',
     type: '32',
     icon: 221,
     scope: 1,
@@ -10290,7 +10440,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1816',
     name: '해병 난무',
-    description: '위력: B(공or손or민)　대상: 적 하나　속성: ＋　효과: ＋\n적에게 칼날의 비를 퍼붓는 해병 직전[直傳]의 검 기술',
+    description: '위력: B(공or손or민)　대상: 적 하나　속성: ＋　효과: ＋ 적에게 칼날의 비를 퍼붓는 해병 직전[直傳]의 검 기술',
     type: '32',
     icon: 221,
     scope: 1,
@@ -10305,7 +10455,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1817',
     name: '메로우스랏슈',
-    description: '위력: B(공or손or민)　대상: 적 하나　속성: 물＋　효과: ＋\n물의 마력을 따르는 칼날에서의 일격',
+    description: '위력: B(공or손or민)　대상: 적 하나　속성: 물＋　효과: ＋ 물의 마력을 따르는 칼날에서의 일격',
     type: '32',
     icon: 221,
     scope: 1,
@@ -10320,7 +10470,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1818',
     name: '머메이드 헌트',
-    description: '위력: C(공or손or민)　대상: 적 하나　속성: ＋　효과: 인어 특공＋\n해적이 짜낸, 인어에 대해서 효과의 높은 공격',
+    description: '위력: C(공or손or민)　대상: 적 하나　속성: ＋　효과: 인어 특공＋ 해적이 짜낸, 인어에 대해서 효과의 높은 공격',
     type: '32',
     icon: 221,
     scope: 1,
@@ -10335,7 +10485,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1819',
     name: '오션 슬레이어-',
-    description: '위력: C(공or손or민)　대상: 적 하나　속성: ＋　효과: 해서종 특공＋\n해적이 짜낸, 해양생물에 대해서 효과의 높은 공격',
+    description: '위력: C(공or손or민)　대상: 적 하나　속성: ＋　효과: 해서종 특공＋ 해적이 짜낸, 해양생물에 대해서 효과의 높은 공격',
     type: '32',
     icon: 221,
     scope: 1,
@@ -10350,7 +10500,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1820',
     name: '약탈',
-    description: '위력: D(공or손or민)　대상: 적 하나　속성: ＋　효과: 훔친다＋\n공격과 동시에 아이템을 훔친다',
+    description: '위력: D(공or손or민)　대상: 적 하나　속성: ＋　효과: 훔친다＋ 공격과 동시에 아이템을 훔친다',
     type: '32',
     icon: 221,
     scope: 1,
@@ -10365,7 +10515,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1821',
     name: '정리해 약탈',
-    description: '위력: B(공or손or민)　대상: 적 전체　속성: ＋　효과: 훔친다＋\n적 전체에 공격해, 동시에 아이템을 훔친다',
+    description: '위력: B(공or손or민)　대상: 적 전체　속성: ＋　효과: 훔친다＋ 적 전체에 공격해, 동시에 아이템을 훔친다',
     type: '32',
     icon: 221,
     scope: 2,
@@ -10380,7 +10530,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1822',
     name: '지권',
-    description: '위력: B(공or손or민)　대상: 적 하나　속성: 바람＋　효과: ＋\n바람의 칼날로 적을 찢는 해적 특유의 격투방법',
+    description: '위력: B(공or손or민)　대상: 적 하나　속성: 바람＋　효과: ＋ 바람의 칼날로 적을 찢는 해적 특유의 격투방법',
     type: '32',
     icon: 221,
     scope: 1,
@@ -10395,7 +10545,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1823',
     name: '4련지인',
-    description: '위력: S(공or손or민)　대상: 적 하나　속성: 바람＋　효과: ＋\n바람의 칼날을 4연속으로 발생시키는 해적의 격투 오의',
+    description: '위력: S(공or손or민)　대상: 적 하나　속성: 바람＋　효과: ＋ 바람의 칼날을 4연속으로 발생시키는 해적의 격투 오의',
     type: '32',
     icon: 221,
     scope: 1,
@@ -10410,7 +10560,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1824',
     name: '수 파',
-    description: '위력: B(공or손or민)　대상: 적 하나　속성: 물＋　효과: ＋\n수 격을 적에게 주입하는 해병 특유의 격투방법',
+    description: '위력: B(공or손or민)　대상: 적 하나　속성: 물＋　효과: ＋ 수 격을 적에게 주입하는 해병 특유의 격투방법',
     type: '32',
     icon: 221,
     scope: 1,
@@ -10425,7 +10575,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1825',
     name: '4명수파',
-    description: '위력: S(공or손or민)　대상: 적 하나　속성: 물＋　효과: ＋\n수 격을 4연속으로 발생시키는 해병의 격투 오의',
+    description: '위력: S(공or손or민)　대상: 적 하나　속성: 물＋　효과: ＋ 수 격을 4연속으로 발생시키는 해병의 격투 오의',
     type: '32',
     icon: 221,
     scope: 1,
@@ -10440,7 +10590,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1826',
     name: '나나미패참',
-    description: '위력: A(공or손or민)　대상: 적 전체　속성: ＋　효과: ＋\n밀어닥치는 물결과 같이 적을 베어버리는 해적왕의 검 기술',
+    description: '위력: A(공or손or민)　대상: 적 전체　속성: ＋　효과: ＋ 밀어닥치는 물결과 같이 적을 베어버리는 해적왕의 검 기술',
     type: '32',
     icon: 221,
     scope: 2,
@@ -10455,7 +10605,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1827',
     name: '8소뛰기',
-    description: '위력: S(공or손or민)　대상: 적 전체 8회　속성: ＋　효과: ＋\n춤추도록(듯이) 선상을 뛰어, 연격을 내지르는 해적왕의 오의',
+    description: '위력: S(공or손or민)　대상: 적 전체 8회　속성: ＋　효과: ＋ 춤추도록(듯이) 선상을 뛰어, 연격을 내지르는 해적왕의 오의',
     type: '32',
     icon: 221,
     scope: 2,
@@ -10470,7 +10620,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1828',
     name: '강도·물달리기',
-    description: '위력: A(공or손or민)　대상: 적 전체　속성: 물＋　효과: ＋\n물면을 달리면서 칼날을 흔들 해군대장의 호쾌한 검 기술',
+    description: '위력: A(공or손or민)　대상: 적 전체　속성: 물＋　효과: ＋ 물면을 달리면서 칼날을 흔들 해군대장의 호쾌한 검 기술',
     type: '32',
     icon: 221,
     scope: 2,
@@ -10485,7 +10635,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1829',
     name: '대장강난무',
-    description: '위력: S(공or손or민)　대상: 적 하나　속성: ＋　효과: ＋\n센 힘과 칼날의 날카로움을 양립시켜, 적을 흐트러지고 베는 해군대장의 오의',
+    description: '위력: S(공or손or민)　대상: 적 하나　속성: ＋　효과: ＋ 센 힘과 칼날의 날카로움을 양립시켜, 적을 흐트러지고 베는 해군대장의 오의',
     type: '32',
     icon: 221,
     scope: 1,
@@ -10500,7 +10650,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1830',
     name: '로렐라이 달러',
-    description: '위력: S(공or손or민)　대상: 적 랜덤 4회　속성: 불길＋　효과: ＋\n불길을 휘감은 칼날로 흐트러지고 베는, 해적 여왕의 비오의[秘奧義]',
+    description: '위력: S(공or손or민)　대상: 적 랜덤 4회　속성: 불길＋　효과: ＋ 불길을 휘감은 칼날로 흐트러지고 베는, 해적 여왕의 비오의[秘奧義]',
     type: '32',
     icon: 221,
     scope: 3,
@@ -10515,7 +10665,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1831',
     name: '허리케인',
-    description: '위력: C(마or손)　대상: 적 전체　속성: 바람·물＋　효과: ＋\n해적 인어의 마력으로 폭풍우를 발생시키는 기술',
+    description: '위력: C(마or손)　대상: 적 전체　속성: 바람·물＋　효과: ＋ 해적 인어의 마력으로 폭풍우를 발생시키는 기술',
     type: '32',
     icon: 221,
     scope: 2,
@@ -10530,7 +10680,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1832',
     name: '코라르레인',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 바람·물＋　효과: ＋\n해적 인어의 마력으로 굉장한 폭풍우를 발생시키는 오의',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 바람·물＋　효과: ＋ 해적 인어의 마력으로 굉장한 폭풍우를 발생시키는 오의',
     type: '32',
     icon: 221,
     scope: 2,
@@ -10545,7 +10695,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1833',
     name: '지원 포격',
-    description: '위력: B(공or손or민)　대상: 적 랜덤 4회　효과: 매턴 발동\n해적배로부터의 포격을 요청해, 3 턴 포탄이 쏟아진다',
+    description: '위력: B(공or손or민)　대상: 적 랜덤 4회　효과: 매턴 발동 해적배로부터의 포격을 요청해, 3 턴 포탄이 쏟아진다',
     type: '32',
     icon: 221,
     scope: 11,
@@ -10557,7 +10707,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1834',
     name: '카이자후리트',
-    description: '위력: S(공or손or민)　대상: 적 랜덤 4회　속성: 불길\n해적왕의 인솔하는 선단으로부터 포탄이 쏟아져, 5 턴 지속',
+    description: '위력: S(공or손or민)　대상: 적 랜덤 4회　속성: 불길 해적왕의 인솔하는 선단으로부터 포탄이 쏟아져, 5 턴 지속',
     type: '32',
     icon: 221,
     scope: 3,
@@ -10572,7 +10722,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1835',
     name: '무적함대 일제 포격',
-    description: '위력: S(공or손or민)　대상: 적 랜덤 4회　속성: 불길\n해군의 무적함대로부터 포탄이 쏟아져, 5 턴 지속',
+    description: '위력: S(공or손or민)　대상: 적 랜덤 4회　속성: 불길 해군의 무적함대로부터 포탄이 쏟아져, 5 턴 지속',
     type: '32',
     icon: 221,
     scope: 3,
@@ -10587,7 +10737,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1836',
     name: '인어 대포',
-    description: '위력: B(공or손or민)　대상: 적 전체　속성: 불길\n부하의 인어를 대포에 담아, 포탄으로서 발사한다',
+    description: '위력: B(공or손or민)　대상: 적 전체　속성: 불길 부하의 인어를 대포에 담아, 포탄으로서 발사한다',
     type: '32',
     icon: 221,
     scope: 2,
@@ -10602,7 +10752,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1842',
     name: '정의의 파이어 펀치',
-    description: '위력: B(공)　대상: 적 하나　속성: 불길\n불길을 휘감은 정의의 펀치',
+    description: '위력: B(공)　대상: 적 하나　속성: 불길 불길을 휘감은 정의의 펀치',
     type: '33',
     icon: 227,
     scope: 1,
@@ -10617,7 +10767,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1843',
     name: '정의의 블리자드 너클',
-    description: '위력: B(공)　대상: 적 하나　속성: 얼음\n얼음을 휘감은 정의의 연격',
+    description: '위력: B(공)　대상: 적 하나　속성: 얼음 얼음을 휘감은 정의의 연격',
     type: '33',
     icon: 227,
     scope: 1,
@@ -10632,7 +10782,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1844',
     name: '정의의 썬더 킥',
-    description: '위력: B(공)　대상: 적 하나　속성: 번개\n번개를 휘감은 정의의 킥',
+    description: '위력: B(공)　대상: 적 하나　속성: 번개 번개를 휘감은 정의의 킥',
     type: '33',
     icon: 227,
     scope: 1,
@@ -10647,7 +10797,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1845',
     name: '히어로 난무',
-    description: '위력: A(공)　대상: 적 하나\n정의의 영혼을 담은, 때리고 차는 것 폭행',
+    description: '위력: A(공)　대상: 적 하나 정의의 영혼을 담은, 때리고 차는 것 폭행',
     type: '33',
     icon: 227,
     scope: 1,
@@ -10662,7 +10812,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1846',
     name: '카이저 킥',
-    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋\n악을 미워하는 신념의 차는 것',
+    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋ 악을 미워하는 신념의 차는 것',
     type: '33',
     icon: 227,
     scope: 1,
@@ -10677,7 +10827,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1847',
     name: '카이저 파이널 소드',
-    description: '위력: A(공)　대상: 적 전체　속성: ＋　효과: ＋\n정의를 관철하는 영혼의 일섬',
+    description: '위력: A(공)　대상: 적 전체　속성: ＋　효과: ＋ 정의를 관철하는 영혼의 일섬',
     type: '33',
     icon: 227,
     scope: 2,
@@ -10692,7 +10842,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1848',
     name: '카이저 클라이막스 킥',
-    description: '위력: SS(공)　대상: 적 하나　속성: ＋　효과: ＋\n악을 멸하는 마지막 킥',
+    description: '위력: SS(공)　대상: 적 하나　속성: ＋　효과: ＋ 악을 멸하는 마지막 킥',
     type: '33',
     icon: 227,
     scope: 1,
@@ -10707,7 +10857,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1849',
     name: '히어로 근성',
-    description: '대상: 사용자　효과: HP대회복\n정의의 파워로 체력을 회복',
+    description: '대상: 사용자　효과: HP대회복 정의의 파워로 체력을 회복',
     type: '33',
     icon: 227,
     scope: 11,
@@ -10722,7 +10872,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1850',
     name: '카이저 리프레인',
-    description: '대상: 사용자　효과: HP전회복\n정의의 영혼이 육체를 크게 치유한다',
+    description: '대상: 사용자　효과: HP전회복 정의의 영혼이 육체를 크게 치유한다',
     type: '33',
     icon: 227,
     scope: 11,
@@ -10737,7 +10887,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1851',
     name: '카이저 배리어',
-    description: '대상: 사용자　효과: 디후레크트 2회\n정의의 배리어로 모든 공격을 막는다',
+    description: '대상: 사용자　효과: 디후레크트 2회 정의의 배리어로 모든 공격을 막는다',
     type: '33',
     icon: 227,
     scope: 11,
@@ -10749,7 +10899,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1852',
     name: '매직컬 스타',
-    description: '위력: B(마)　대상: 적 하나\n별의 마력으로 악을 토벌한다',
+    description: '위력: B(마)　대상: 적 하나 별의 마력으로 악을 토벌한다',
     type: '33',
     icon: 227,
     scope: 1,
@@ -10764,7 +10914,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1853',
     name: '매직컬 오라',
-    description: '위력: B(마)　대상: 적 전체\n생명의 파동으로 사악을 넘어뜨린다',
+    description: '위력: B(마)　대상: 적 전체 생명의 파동으로 사악을 넘어뜨린다',
     type: '33',
     icon: 227,
     scope: 2,
@@ -10779,7 +10929,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1854',
     name: '매직컬 힐',
-    description: '대상: 아군 전체　효과: HP중 회복\n더러움 없는 기원이 위안을 가져온다',
+    description: '대상: 아군 전체　효과: HP중 회복 더러움 없는 기원이 위안을 가져온다',
     type: '33',
     icon: 227,
     scope: 8,
@@ -10794,7 +10944,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1855',
     name: '엔환의 리',
-    description: '대상: 사용자　효과: 자동 소생\n엔환의 리에 이끌리고 재생하는 오의',
+    description: '대상: 사용자　효과: 자동 소생 엔환의 리에 이끌리고 재생하는 오의',
     type: '33',
     icon: 227,
     scope: 11,
@@ -10806,7 +10956,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1856',
     name: '화성',
-    description: '위력: S(마)　대상: 적 하나　효과: 석화\n미움에 물들여진 별의 힘을 해방한다',
+    description: '위력: S(마)　대상: 적 하나　효과: 석화 미움에 물들여진 별의 힘을 해방한다',
     type: '33',
     icon: 227,
     scope: 1,
@@ -10821,7 +10971,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1857',
     name: '카즈웨브',
-    description: '위력: S(마)　대상: 적 랜덤 4회\n저주의 파동을 주위로 흩뿌리는 오의',
+    description: '위력: S(마)　대상: 적 랜덤 4회 저주의 파동을 주위로 흩뿌리는 오의',
     type: '33',
     icon: 227,
     scope: 3,
@@ -10836,7 +10986,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1858',
     name: '와르프르기스의 밤',
-    description: '위력: SS(마)　대상: 적 전체　속성: 어둠＋　효과: 석화＋\n최강의 마녀화해, 절망과 파괴를 흩뿌리는 오의',
+    description: '위력: SS(마)　대상: 적 전체　속성: 어둠＋　효과: 석화＋ 최강의 마녀화해, 절망과 파괴를 흩뿌리는 오의',
     type: '33',
     icon: 227,
     scope: 2,
@@ -10851,7 +11001,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1859',
     name: '주시',
-    description: '대상: 적 전체　효과: 즉사\n죽음의 원한을 주위에 채워, 적 전체를 즉사시키는 기술',
+    description: '대상: 적 전체　효과: 즉사 죽음의 원한을 주위에 채워, 적 전체를 즉사시키는 기술',
     type: '33',
     icon: 227,
     scope: 2,
@@ -10863,7 +11013,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1874',
     name: '전 던지기',
-    description: '위력: 레벨 의존　대상: 적 전체\n돈을 적에게 내던져, 데미지를 준다',
+    description: '위력: 레벨 의존　대상: 적 전체 돈을 적에게 내던져, 데미지를 준다',
     type: '34',
     icon: 3444,
     scope: 2,
@@ -10878,7 +11028,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1875',
     name: '초전던지기',
-    description: '위력: 레벨 의존　대상: 적 전체\n돈을 적에게 내던져, 데미지를 준다',
+    description: '위력: 레벨 의존　대상: 적 전체 돈을 적에게 내던져, 데미지를 준다',
     type: '34',
     icon: 3444,
     scope: 2,
@@ -10893,7 +11043,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1876',
     name: '최종전던지기',
-    description: '위력: 레벨 의존　대상: 적 전체\n돈을 적에게 내던져, 데미지를 준다',
+    description: '위력: 레벨 의존　대상: 적 전체 돈을 적에게 내던져, 데미지를 준다',
     type: '34',
     icon: 3444,
     scope: 2,
@@ -10908,7 +11058,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1877',
     name: '스플래쉬 머니',
-    description: '위력: 레벨 의존　대상: 적 하나\n적 하나에 전던지기를 집중하는 바브 리인 기술',
+    description: '위력: 레벨 의존　대상: 적 하나 적 하나에 전던지기를 집중하는 바브 리인 기술',
     type: '34',
     icon: 3444,
     scope: 1,
@@ -10923,7 +11073,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1878',
     name: '보수 데미지',
-    description: '위력: 보수 의존　대상: 적 하나\n이것까지의 여로의 길이에 응한 데미지를 준다',
+    description: '위력: 보수 의존　대상: 적 하나 이것까지의 여로의 길이에 응한 데미지를 준다',
     type: '34',
     icon: 3444,
     scope: 1,
@@ -10938,7 +11088,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1879',
     name: '뇌물',
-    description: '대상: 적 하나　효과: 도주\n적에게 뇌물을 건네주어, 원만하게 돌아가 받는다',
+    description: '대상: 적 하나　효과: 도주 적에게 뇌물을 건네주어, 원만하게 돌아가 받는다',
     type: '34',
     icon: 3444,
     scope: 1,
@@ -10950,7 +11100,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1880',
     name: '뇌물 흩뿌림',
-    description: '대상: 적 전체　효과: 도주\n적 전체에 뇌물을 흩뿌려, 원만하게 돌아가 받는다',
+    description: '대상: 적 전체　효과: 도주 적 전체에 뇌물을 흩뿌려, 원만하게 돌아가 받는다',
     type: '34',
     icon: 3444,
     scope: 2,
@@ -10962,7 +11112,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1881',
     name: '금전의 유혹',
-    description: '대상: 적 전체　효과: 유혹·동료 확률 업\n금전을 반짝이게 해 적의 마음을 빼앗는다',
+    description: '대상: 적 전체　효과: 유혹·동료 확률 업 금전을 반짝이게 해 적의 마음을 빼앗는다',
     type: '34',
     icon: 3444,
     scope: 2,
@@ -10974,7 +11124,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1882',
     name: '트레이드 오프',
-    description: '대상: 적 전체　효과: 동료 확률 3배\n금전을 반짝이게 해 동료에 들어가도록(듯이) 권한다',
+    description: '대상: 적 전체　효과: 동료 확률 3배 금전을 반짝이게 해 동료에 들어가도록(듯이) 권한다',
     type: '34',
     icon: 3444,
     scope: 11,
@@ -10986,7 +11136,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1883',
     name: '맞고 이득',
-    description: '대상: 사용자　효과: 머니 커텐\n받은 데미지에 응한 골드를 입수할 수 있다',
+    description: '대상: 사용자　효과: 머니 커텐 받은 데미지에 응한 골드를 입수할 수 있다',
     type: '34',
     icon: 3444,
     scope: 11,
@@ -10998,7 +11148,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1884',
     name: '머니 월',
-    description: '대상: 사용자　효과: 머니 월\nHP의 소비를 소지 골드로 인수한다',
+    description: '대상: 사용자　효과: 머니 월 HP의 소비를 소지 골드로 인수한다',
     type: '34',
     icon: 3444,
     scope: 11,
@@ -11010,7 +11160,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1885',
     name: '생명보험 개인 가입',
-    description: '대상: 사용자　효과: 사망시에 골드 취득\n자신이 전투 불능이 되면, 골드가 지불된다',
+    description: '대상: 사용자　효과: 사망시에 골드 취득 자신이 전투 불능이 되면, 골드가 지불된다',
     type: '34',
     icon: 3444,
     scope: 11,
@@ -11022,7 +11172,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1886',
     name: '생명보험 파티 가입',
-    description: '대상: 아군 전체　효과: 사망시에 골드 취득\n동료들이 전투 불능이 되면, 골드가 지불된다',
+    description: '대상: 아군 전체　효과: 사망시에 골드 취득 동료들이 전투 불능이 되면, 골드가 지불된다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11034,7 +11184,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1887',
     name: '지옥의 소식도 금 나름',
-    description: '대상: 사용자　효과: 자동 소생\n사신에게 미리 돈을 보내, 곧바로 현세에 되돌리게 한다',
+    description: '대상: 사용자　효과: 자동 소생 사신에게 미리 돈을 보내, 곧바로 현세에 되돌리게 한다',
     type: '34',
     icon: 3444,
     scope: 11,
@@ -11046,7 +11196,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1888',
     name: 'HP구입',
-    description: '대상: 사용자　효과: HP대회복\nHP를 돈으로 구입해, 크게 회복 한다',
+    description: '대상: 사용자　효과: HP대회복 HP를 돈으로 구입해, 크게 회복 한다',
     type: '34',
     icon: 3444,
     scope: 11,
@@ -11061,7 +11211,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1889',
     name: 'MP구입',
-    description: '대상: 사용자　효과: MP대회복\nMP를 돈으로 구입해, 크게 회복 한다',
+    description: '대상: 사용자　효과: MP대회복 MP를 돈으로 구입해, 크게 회복 한다',
     type: '34',
     icon: 3444,
     scope: 11,
@@ -11076,7 +11226,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1890',
     name: 'SP구입',
-    description: '대상: 사용자　효과: SP대회복\nSP를 돈으로 구입해, 크게 회복 한다',
+    description: '대상: 사용자　효과: SP대회복 SP를 돈으로 구입해, 크게 회복 한다',
     type: '34',
     icon: 3444,
     scope: 11,
@@ -11088,7 +11238,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1891',
     name: '상품 납입',
-    description: '대상: 사용자　효과: 아이템 취득\n금을 지불해, 랜덤에 아이템을 취득한다',
+    description: '대상: 사용자　효과: 아이템 취득 금을 지불해, 랜덤에 아이템을 취득한다',
     type: '34',
     icon: 3444,
     scope: 0,
@@ -11100,7 +11250,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1892',
     name: '어둠 상품 납입',
-    description: '대상: 사용자　효과: 아이템 취득\n금을 지불해, 랜덤에 아이템을 취득한다',
+    description: '대상: 사용자　효과: 아이템 취득 금을 지불해, 랜덤에 아이템을 취득한다',
     type: '34',
     icon: 3444,
     scope: 0,
@@ -11112,7 +11262,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1893',
     name: '궁극 납입',
-    description: '대상: 사용자　효과: 아이템 취득\n금을 지불해, 랜덤에 아이템을 취득한다',
+    description: '대상: 사용자　효과: 아이템 취득 금을 지불해, 랜덤에 아이템을 취득한다',
     type: '34',
     icon: 3444,
     scope: 0,
@@ -11124,7 +11274,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1894',
     name: '식품 재료 납입',
-    description: '대상: 사용자　효과: 식품 재료 취득\n금을 지불해, 랜덤에 식품 재료를 취득한다',
+    description: '대상: 사용자　효과: 식품 재료 취득 금을 지불해, 랜덤에 식품 재료를 취득한다',
     type: '34',
     icon: 3444,
     scope: 0,
@@ -11136,7 +11286,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1895',
     name: '소재 납입',
-    description: '대상: 사용자　효과: 소재 취득\n금을 지불해, 랜덤에 소재를 취득한다',
+    description: '대상: 사용자　효과: 소재 취득 금을 지불해, 랜덤에 소재를 취득한다',
     type: '34',
     icon: 3444,
     scope: 0,
@@ -11148,7 +11298,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1896',
     name: '약초 구입',
-    description: '대상: 아군 하나　효과: HP50 회복\n약초를 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: HP50 회복 약초를 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11163,7 +11313,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1897',
     name: '고급 약초 구입',
-    description: '대상: 아군 하나　효과: HP300 회복\n고급 약초를 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: HP300 회복 고급 약초를 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11178,7 +11328,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1898',
     name: '궁극 약초 구입',
-    description: '대상: 아군 하나　효과: HP5000 회복\n궁극 약초를 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: HP5000 회복 궁극 약초를 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11193,7 +11343,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1899',
     name: '영약 구입',
-    description: '대상: 아군 하나　효과: MP30 회복\n영약을 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: MP30 회복 영약을 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11208,7 +11358,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1900',
     name: '엘프의 영약 구입',
-    description: '대상: 아군 하나　효과: MP100 회복\n엘프의 영약을 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: MP100 회복 엘프의 영약을 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11223,7 +11373,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1901',
     name: '일리아스의 영약 구입',
-    description: '대상: 아군 하나　효과: MP500 회복\n일리아스의 영약을 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: MP500 회복 일리아스의 영약을 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11238,7 +11388,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1902',
     name: '부스트 드링크 구입',
-    description: '대상: 아군 하나　효과: SP반회복\n부스트 드링크를 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: SP반회복 부스트 드링크를 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11250,7 +11400,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1903',
     name: '버스트 드링크 구입',
-    description: '대상: 아군 하나　효과: SP전회복\n버스트 드링크를 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: SP전회복 버스트 드링크를 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11262,7 +11412,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1904',
     name: '에릭서 구입',
-    description: '대상: 아군 하나　효과: HP·MP전회복\n에릭서를 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: HP·MP전회복 에릭서를 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11274,7 +11424,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1905',
     name: '라스트 에릭서 구입',
-    description: '대상: 아군 전체　효과: HP·MP전회복\n라스트 에릭서를 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 전체　효과: HP·MP전회복 라스트 에릭서를 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 8,
@@ -11286,7 +11436,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1906',
     name: '피닉스의 꼬리 구입',
-    description: '대상: 아군 하나　효과: 소생\n피닉스의 꼬리를 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 소생 피닉스의 꼬리를 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 9,
@@ -11301,7 +11451,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1907',
     name: '세계수의 잎구입',
-    description: '대상: 아군 하나　효과: 완전 소생\n세계수의 잎을 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 완전 소생 세계수의 잎을 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 9,
@@ -11316,7 +11466,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1908',
     name: '해독제풀구입',
-    description: '대상: 아군 하나　효과: 독치료\n해독제풀을 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 독치료 해독제풀을 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11328,7 +11478,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1909',
     name: '안약 구입',
-    description: '대상: 아군 하나　효과: 어둠 치료\n안약을 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 어둠 치료 안약을 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11340,7 +11490,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1910',
     name: '메아리풀구입',
-    description: '대상: 아군 하나　효과: 침묵 치료\n메아리풀을 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 침묵 치료 메아리풀을 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11352,7 +11502,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1911',
     name: '각성제 구입',
-    description: '대상: 아군 하나　효과: 수면·혼란 치료\n각성제를 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 수면·혼란 치료 각성제를 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11364,7 +11514,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1912',
     name: '만월풀구입',
-    description: '대상: 아군 하나　효과: 마비 치료\n만월풀을 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 마비 치료 만월풀을 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11376,7 +11526,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1913',
     name: '요술 망치 구입',
-    description: '대상: 아군 하나　효과: 미니맘 치료\n요술 망치를 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 미니맘 치료 요술 망치를 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11388,7 +11538,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1914',
     name: '성수 구입',
-    description: '대상: 아군 하나　효과: 좀비 치료\n성수를 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 좀비 치료 성수를 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11400,7 +11550,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1915',
     name: '돈의 바늘 구입',
-    description: '대상: 아군 하나　효과: 석화 치료\n돈의 바늘을 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 석화 치료 돈의 바늘을 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11412,7 +11562,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1916',
     name: '탈음약구입',
-    description: '대상: 아군 하나　효과: 민감·황홀·유혹 치료\n탈음약을 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 민감·황홀·유혹 치료 탈음약을 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11424,7 +11574,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1917',
     name: '만능약구입',
-    description: '대상: 아군 하나　효과: 상태 이상 치료\n만능약을 구입해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 상태 이상 치료 만능약을 구입해, 즉석에서 사용한다',
     type: '34',
     icon: 3444,
     scope: 7,
@@ -11436,7 +11586,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1918',
     name: '마차',
-    description: '대상: 파티 전체　효과: 필드 이동\n돈의 소비와 교환에, 한 번 간 장소로 이동한다',
+    description: '대상: 파티 전체　효과: 필드 이동 돈의 소비와 교환에, 한 번 간 장소로 이동한다',
     type: '34',
     icon: 3444,
     scope: 0,
@@ -11448,7 +11598,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1919',
     name: '레스큐 요청',
-    description: '대상: 파티 전체　효과: 던전 탈출\n돈의 소비와 교환에, 던전으로부터 탈출한다',
+    description: '대상: 파티 전체　효과: 던전 탈출 돈의 소비와 교환에, 던전으로부터 탈출한다',
     type: '34',
     icon: 3444,
     scope: 0,
@@ -11460,7 +11610,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1921',
     name: '전체화:약초',
-    description: '대상: 아군 전체　효과: HP50 회복\n약초의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: HP50 회복 약초의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11475,7 +11625,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1922',
     name: '전체화:고급 약초',
-    description: '대상: 아군 전체　효과: HP300 회복\n고급 약초의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: HP300 회복 고급 약초의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11490,7 +11640,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1923',
     name: '전체화:궁극 약초',
-    description: '대상: 아군 전체　효과: HP5000 회복\n궁극 약초의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: HP5000 회복 궁극 약초의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11505,7 +11655,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1924',
     name: '전체화:영약',
-    description: '대상: 아군 전체　효과: MP30 회복\n영약의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: MP30 회복 영약의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11520,7 +11670,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1925',
     name: '전체화:엘프의 영약',
-    description: '대상: 아군 전체　효과: MP100 회복\n엘프의 영약의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: MP100 회복 엘프의 영약의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11535,7 +11685,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1926',
     name: '전체화:일리아스의 영약',
-    description: '대상: 아군 전체　효과: MP500 회복\n일리아스의 영약의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: MP500 회복 일리아스의 영약의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11550,7 +11700,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1927',
     name: '전체화:부스트 드링크',
-    description: '대상: 아군 전체　효과: SP반회복\n부스트 드링크의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: SP반회복 부스트 드링크의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11562,7 +11712,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1928',
     name: '전체화:버스트 드링크',
-    description: '대상: 아군 전체　효과: SP전회복\n버스트 드링크의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: SP전회복 버스트 드링크의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11574,7 +11724,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1929',
     name: '전체화:에릭서',
-    description: '대상: 아군 전체　효과: HP·MP완전 회복\n에릭서의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: HP·MP완전 회복 에릭서의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11586,7 +11736,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1930',
     name: '전체화:피닉스의 꼬리',
-    description: '대상: 아군 전체　효과: 소생\n피닉스의 꼬리의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: 소생 피닉스의 꼬리의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 10,
@@ -11601,7 +11751,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1931',
     name: '전체화:세계수의 잎',
-    description: '대상: 아군 전체　효과: 완전 소생\n세계수의 잎의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: 완전 소생 세계수의 잎의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 10,
@@ -11616,7 +11766,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1932',
     name: '전체화:해독제풀',
-    description: '대상: 아군 전체　효과: 독치료\n해독제풀의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: 독치료 해독제풀의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11628,7 +11778,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1933',
     name: '전체화:안약',
-    description: '대상: 아군 전체　효과: 어둠 치료\n안약의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: 어둠 치료 안약의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11640,7 +11790,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1934',
     name: '전체화:메아리풀',
-    description: '대상: 아군 전체　효과: 침묵 치료\n메아리풀의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: 침묵 치료 메아리풀의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11652,7 +11802,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1935',
     name: '전체화:각성제',
-    description: '대상: 아군 전체　효과: 혼란·수면 치료\n각성제의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: 혼란·수면 치료 각성제의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11664,7 +11814,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1936',
     name: '전체화:만월풀',
-    description: '대상: 아군 전체　효과: 마비 치료\n만월풀의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: 마비 치료 만월풀의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11676,7 +11826,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1937',
     name: '전체화:전설의 망치',
-    description: '대상: 아군 전체　효과: 미니맘 치료\n전설의 망치의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: 미니맘 치료 전설의 망치의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11688,7 +11838,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1938',
     name: '전체화:성수',
-    description: '대상: 아군 전체　효과: 좀비 치료\n성수의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: 좀비 치료 성수의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11700,7 +11850,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1939',
     name: '전체화:돈의 바늘',
-    description: '대상: 아군 전체　효과: 석화 치료\n돈의 바늘의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: 석화 치료 돈의 바늘의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11712,7 +11862,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1940',
     name: '전체화:탈음약',
-    description: '대상: 아군 전체　효과: 민감·황홀·유혹 치료\n탈음약의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: 민감·황홀·유혹 치료 탈음약의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11724,7 +11874,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1941',
     name: '전체화:만능약',
-    description: '대상: 아군 전체　효과: 상태 이상 치료\n만능약의 효과를 전체화한다',
+    description: '대상: 아군 전체　효과: 상태 이상 치료 만능약의 효과를 전체화한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11736,7 +11886,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1942',
     name: '점시:약초',
-    description: '대상: 아군 전체　효과: 턴 HP소회복\n약초의 효과를 턴 마다 분산한다',
+    description: '대상: 아군 전체　효과: 턴 HP소회복 약초의 효과를 턴 마다 분산한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11748,7 +11898,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1943',
     name: '점시:고급 약초',
-    description: '대상: 아군 전체　효과: 턴 HP중 회복\n고급 약초의 효과를 턴 마다 분산한다',
+    description: '대상: 아군 전체　효과: 턴 HP중 회복 고급 약초의 효과를 턴 마다 분산한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11760,7 +11910,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1944',
     name: '점시:궁극 약초',
-    description: '대상: 아군 전체　효과: 턴 HP대회복\n궁극 약초의 효과를 턴 마다 분산한다',
+    description: '대상: 아군 전체　효과: 턴 HP대회복 궁극 약초의 효과를 턴 마다 분산한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11772,7 +11922,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1945',
     name: '점시:영약',
-    description: '대상: 아군 전체　효과: 턴 MP소회복\n영약의 효과를 턴 마다 분산한다',
+    description: '대상: 아군 전체　효과: 턴 MP소회복 영약의 효과를 턴 마다 분산한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11784,7 +11934,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1946',
     name: '점시:엘프의 영약',
-    description: '대상: 아군 전체　효과: 턴 MP중 회복\n엘프의 영약의 효과를 턴 마다 분산한다',
+    description: '대상: 아군 전체　효과: 턴 MP중 회복 엘프의 영약의 효과를 턴 마다 분산한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11796,7 +11946,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1947',
     name: '점시:일리아스의 영약',
-    description: '대상: 아군 전체　효과: 턴 MP대회복\n일리아스의 영약의 효과를 턴 마다 분산한다',
+    description: '대상: 아군 전체　효과: 턴 MP대회복 일리아스의 영약의 효과를 턴 마다 분산한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11808,7 +11958,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1948',
     name: '점시:부스트 드링크',
-    description: '대상: 아군 전체　효과: 턴 SP중 회복\n부스트 드링크의 효과를 턴 마다 분산한다',
+    description: '대상: 아군 전체　효과: 턴 SP중 회복 부스트 드링크의 효과를 턴 마다 분산한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11820,7 +11970,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1949',
     name: '점시:버스트 드링크',
-    description: '대상: 아군 전체　효과: 턴 SP대회복\n버스트 드링크의 효과를 턴 마다 분산한다',
+    description: '대상: 아군 전체　효과: 턴 SP대회복 버스트 드링크의 효과를 턴 마다 분산한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11832,7 +11982,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1950',
     name: '점시:에릭서',
-    description: '대상: 아군 전체　효과: 턴 HP·MP·SP대회복\n에릭서의 효과를 턴 마다 분산한다',
+    description: '대상: 아군 전체　효과: 턴 HP·MP·SP대회복 에릭서의 효과를 턴 마다 분산한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11844,7 +11994,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1951',
     name: '점시:라스트 에릭서',
-    description: '대상: 아군 하나　효과: 턴 HP·MP·SP전회복\n라스트 에릭서의 효과를 턴 마다 분산한다',
+    description: '대상: 아군 하나　효과: 턴 HP·MP·SP전회복 라스트 에릭서의 효과를 턴 마다 분산한다',
     type: '35',
     icon: 2999,
     scope: 7,
@@ -11856,7 +12006,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1952',
     name: '예방:피닉스의 꼬리',
-    description: '대상: 아군 전체　효과: 즉사·승천·절정 방어\n피닉스의 꼬리를 예방 사용한다',
+    description: '대상: 아군 전체　효과: 즉사·승천·절정 방어 피닉스의 꼬리를 예방 사용한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11868,7 +12018,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1953',
     name: '예방:세계수의 잎',
-    description: '대상: 아군 하나　효과: 재소생\n세계수의 잎을 예방 사용한다',
+    description: '대상: 아군 하나　효과: 재소생 세계수의 잎을 예방 사용한다',
     type: '35',
     icon: 2999,
     scope: 7,
@@ -11880,7 +12030,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1954',
     name: '예방:해독제풀',
-    description: '대상: 아군 전체　효과: 독방어\n해독제풀을 예방 사용한다',
+    description: '대상: 아군 전체　효과: 독방어 해독제풀을 예방 사용한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11892,7 +12042,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1955',
     name: '예방:안약',
-    description: '대상: 아군 전체　효과: 어둠 방어\n안약을 예방 사용한다',
+    description: '대상: 아군 전체　효과: 어둠 방어 안약을 예방 사용한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11904,7 +12054,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1956',
     name: '예방:메아리풀',
-    description: '대상: 아군 전체　효과: 침묵 방어\n메아리풀을 예방 사용한다',
+    description: '대상: 아군 전체　효과: 침묵 방어 메아리풀을 예방 사용한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11916,7 +12066,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1957',
     name: '예방:각성제',
-    description: '대상: 아군 전체　효과: 혼란·수면 방어\n각성제를 예방 사용한다',
+    description: '대상: 아군 전체　효과: 혼란·수면 방어 각성제를 예방 사용한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11928,7 +12078,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1958',
     name: '예방:만월풀',
-    description: '대상: 아군 전체　효과: 마비 방어\n만월풀을 예방 사용한다',
+    description: '대상: 아군 전체　효과: 마비 방어 만월풀을 예방 사용한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11940,7 +12090,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1959',
     name: '예방:전설의 망치',
-    description: '대상: 아군 전체　효과: 미니맘 방어\n전설의 망치를 예방 사용한다',
+    description: '대상: 아군 전체　효과: 미니맘 방어 전설의 망치를 예방 사용한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11952,7 +12102,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1960',
     name: '예방:성수',
-    description: '대상: 아군 전체　효과: 좀비 방어\n성수를 예방 사용한다',
+    description: '대상: 아군 전체　효과: 좀비 방어 성수를 예방 사용한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11964,7 +12114,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1961',
     name: '예방:돈의 바늘',
-    description: '대상: 아군 전체　효과: 석화 방어\n돈의 바늘을 예방 사용한다',
+    description: '대상: 아군 전체　효과: 석화 방어 돈의 바늘을 예방 사용한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11976,7 +12126,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1962',
     name: '예방:탈음약',
-    description: '대상: 아군 전체　효과: 민감·황홀·유혹 방어\n탈음약을 예방 사용한다',
+    description: '대상: 아군 전체　효과: 민감·황홀·유혹 방어 탈음약을 예방 사용한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -11988,7 +12138,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1963',
     name: '예방:만능약',
-    description: '대상: 아군 전체　효과: 상태 이상 방어\n만능약을 예방 사용한다',
+    description: '대상: 아군 전체　효과: 상태 이상 방어 만능약을 예방 사용한다',
     type: '35',
     icon: 2999,
     scope: 8,
@@ -12000,7 +12150,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1964',
     name: '반전:피닉스의 꼬리',
-    description: '대상: 적 전체　효과: 승천\n피닉스의 꼬리를 반전 사용한다',
+    description: '대상: 적 전체　효과: 승천 피닉스의 꼬리를 반전 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12012,7 +12162,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1965',
     name: '반전:해독제풀',
-    description: '대상: 적 전체　효과: 독\n해독제풀을 반전 사용한다',
+    description: '대상: 적 전체　효과: 독 해독제풀을 반전 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12024,7 +12174,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1966',
     name: '반전:안약',
-    description: '대상: 적 전체　효과: 어둠\n안약을 반전 사용한다',
+    description: '대상: 적 전체　효과: 어둠 안약을 반전 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12036,7 +12186,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1967',
     name: '반전:메아리풀',
-    description: '대상: 적 전체　효과: 침묵\n메아리풀을 반전 사용한다',
+    description: '대상: 적 전체　효과: 침묵 메아리풀을 반전 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12048,7 +12198,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1968',
     name: '반전:각성제',
-    description: '대상: 적 전체　효과: 혼란·수면\n각성제를 반전 사용한다',
+    description: '대상: 적 전체　효과: 혼란·수면 각성제를 반전 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12060,7 +12210,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1969',
     name: '반전:만월풀',
-    description: '대상: 적 전체　효과: 마비\n만월풀을 반전 사용한다',
+    description: '대상: 적 전체　효과: 마비 만월풀을 반전 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12072,7 +12222,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1970',
     name: '반전:전설의 망치',
-    description: '대상: 적 전체　효과: 미니맘\n전설의 망치를 반전 사용한다',
+    description: '대상: 적 전체　효과: 미니맘 전설의 망치를 반전 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12084,7 +12234,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1971',
     name: '반전:성수',
-    description: '대상: 적 전체　효과: 좀비\n성수를 반전 사용한다',
+    description: '대상: 적 전체　효과: 좀비 성수를 반전 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12096,7 +12246,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1972',
     name: '반전:돈의 바늘',
-    description: '대상: 적 전체　효과: 석화\n돈의 바늘을 반전 사용한다',
+    description: '대상: 적 전체　효과: 석화 돈의 바늘을 반전 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12108,7 +12258,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1973',
     name: '반전:탈음약',
-    description: '대상: 적 전체　효과: 민감·황홀·유혹\n탈음약을 반전 사용한다',
+    description: '대상: 적 전체　효과: 민감·황홀·유혹 탈음약을 반전 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12120,7 +12270,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1974',
     name: '반전:만능약',
-    description: '대상: 적 전체　효과: 랜덤 상태 이상\n만능약을 반전 사용한다',
+    description: '대상: 적 전체　효과: 랜덤 상태 이상 만능약을 반전 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12132,7 +12282,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1975',
     name: '무한 사용:염석',
-    description: '위력: E(손)　대상: 적 전체　속성: 불길\n염석을 소비하지 않고 사용한다',
+    description: '위력: E(손)　대상: 적 전체　속성: 불길 염석을 소비하지 않고 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12147,7 +12297,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1976',
     name: '무한 사용:빙석',
-    description: '위력: E(손)　대상: 적 전체　속성: 얼음\n빙석을 소비하지 않고 사용한다',
+    description: '위력: E(손)　대상: 적 전체　속성: 얼음 빙석을 소비하지 않고 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12162,7 +12312,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1977',
     name: '무한 사용:뢰석',
-    description: '위력: E(손)　대상: 적 전체　속성: 번개\n뢰석을 소비하지 않고 사용한다',
+    description: '위력: E(손)　대상: 적 전체　속성: 번개 뢰석을 소비하지 않고 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12177,7 +12327,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1978',
     name: '무한 사용:풍석',
-    description: '위력: E(손)　대상: 적 전체　속성: 바람\n풍석을 소비하지 않고 사용한다',
+    description: '위력: E(손)　대상: 적 전체　속성: 바람 풍석을 소비하지 않고 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12192,7 +12342,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1979',
     name: '무한 사용:토석',
-    description: '위력: E(손)　대상: 적 전체　속성: 흙\n토석을 소비하지 않고 사용한다',
+    description: '위력: E(손)　대상: 적 전체　속성: 흙 토석을 소비하지 않고 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12207,7 +12357,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1980',
     name: '무한 사용:수석',
-    description: '위력: E(손)　대상: 적 전체　속성: 물\n수석을 소비하지 않고 사용한다',
+    description: '위력: E(손)　대상: 적 전체　속성: 물 수석을 소비하지 않고 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12222,7 +12372,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1981',
     name: '무한 사용:성석',
-    description: '위력: E(손)　대상: 적 전체　속성: 성\n성석을 소비하지 않고 사용한다',
+    description: '위력: E(손)　대상: 적 전체　속성: 성 성석을 소비하지 않고 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12237,7 +12387,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1982',
     name: '무한 사용:암석',
-    description: '위력: E(손)　대상: 적 전체　속성: 어둠\n암석을 소비하지 않고 사용한다',
+    description: '위력: E(손)　대상: 적 전체　속성: 어둠 암석을 소비하지 않고 사용한다',
     type: '35',
     icon: 2999,
     scope: 2,
@@ -12252,7 +12402,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1984',
     name: ' 카드 던지기',
-    description: '위력: E(손)　대상: 적 하나　속성: ＋　효과: ＋\n적 하나에 카드를 내던지는 기술',
+    description: '위력: E(손)　대상: 적 하나　속성: ＋　효과: ＋ 적 하나에 카드를 내던지는 기술',
     type: '36',
     icon: 220,
     scope: 1,
@@ -12267,7 +12417,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1985',
     name: '바니싱 카드',
-    description: '위력: C(손)　대상: 적 하나　속성: ＋　효과: ＋\n트리키인 카드 던지기로 적에게 데미지를 준다',
+    description: '위력: C(손)　대상: 적 하나　속성: ＋　효과: ＋ 트리키인 카드 던지기로 적에게 데미지를 준다',
     type: '36',
     icon: 220,
     scope: 1,
@@ -12282,7 +12432,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1986',
     name: '슬래시 카드',
-    description: '위력: C(손)　대상: 적 하나　속성: ＋　효과: ＋\n 카드의 엣지에서 적을 베어 붙이는 기술',
+    description: '위력: C(손)　대상: 적 하나　속성: ＋　효과: ＋  카드의 엣지에서 적을 베어 붙이는 기술',
     type: '36',
     icon: 220,
     scope: 1,
@@ -12297,7 +12447,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1987',
     name: '미리온 카드',
-    description: '위력: A(손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n적에게 카드를 난무 시키는 기술',
+    description: '위력: A(손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 적에게 카드를 난무 시키는 기술',
     type: '36',
     icon: 220,
     scope: 3,
@@ -12312,7 +12462,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1988',
     name: '잭포트',
-    description: '위력: 가변(손)　대상: 적 하나\n위력이 랜덤에서 격변 하는 갬블러의 일격',
+    description: '위력: 가변(손)　대상: 적 하나 위력이 랜덤에서 격변 하는 갬블러의 일격',
     type: '36',
     icon: 220,
     scope: 1,
@@ -12327,7 +12477,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1989',
     name: '코인토스',
-    description: '대상: 사용자or적 하나　효과: 즉사\n코인을 던져, 자신이나 적의 어느 쪽인지를 즉사시킨다',
+    description: '대상: 사용자or적 하나　효과: 즉사 코인을 던져, 자신이나 적의 어느 쪽인지를 즉사시킨다',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12339,7 +12489,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1990',
     name: '어둠의 벌게임',
-    description: '위력: 가변　대상: 적 전체or아군 전체\n적 전체나 아군 전체인가 어딘가에 빈사 데미지를 준다',
+    description: '위력: 가변　대상: 적 전체or아군 전체 적 전체나 아군 전체인가 어딘가에 빈사 데미지를 준다',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12351,7 +12501,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1991',
     name: '죽음의 룰렛',
-    description: '대상: 적아군 랜덤 하나　효과: 즉사\n룰렛을 돌려, 적아군 전체의 한사람을 즉사시킨다',
+    description: '대상: 적아군 랜덤 하나　효과: 즉사 룰렛을 돌려, 적아군 전체의 한사람을 즉사시킨다',
     type: '36',
     icon: 220,
     scope: 3,
@@ -12363,7 +12513,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1992',
     name: '란다마이자',
-    description: '대상: 적 전체　효과: 랜덤 상태 이상\n적 전체에 랜덤 상태 이상을 일으킨다',
+    description: '대상: 적 전체　효과: 랜덤 상태 이상 적 전체에 랜덤 상태 이상을 일으킨다',
     type: '36',
     icon: 220,
     scope: 2,
@@ -12375,7 +12525,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1993',
     name: '운명의 타롯트',
-    description: '　효과: 랜덤\n당긴 카드에 의해 효과가 다른 랜덤 기술',
+    description: '　효과: 랜덤 당긴 카드에 의해 효과가 다른 랜덤 기술',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12387,7 +12537,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1994',
     name: '여신의 신탁',
-    description: '　효과: 랜덤\n여신의 신탁을 받는, 기분 나름의 랜덤 기술',
+    description: '　효과: 랜덤 여신의 신탁을 받는, 기분 나름의 랜덤 기술',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12399,7 +12549,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1995',
     name: '슬롯',
-    description: '　효과: 랜덤\n슬롯이 나온 눈에 의해 효과가 바뀌는 랜덤 기술',
+    description: '　효과: 랜덤 슬롯이 나온 눈에 의해 효과가 바뀌는 랜덤 기술',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12411,7 +12561,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1996',
     name: '포커',
-    description: '　효과: 랜덤\n포커의 역에 의해 효과가 바뀌는 랜덤 기술',
+    description: '　효과: 랜덤 포커의 역에 의해 효과가 바뀌는 랜덤 기술',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12423,7 +12573,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1997',
     name: '아탁크드로',
-    description: '　효과: 랜덤\n데크로부터 어택 카드를 드로 하는 랜덤 기술',
+    description: '　효과: 랜덤 데크로부터 어택 카드를 드로 하는 랜덤 기술',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12435,7 +12585,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1998',
     name: '히르드로',
-    description: '　효과: 랜덤\n데크로부터 힐 카드를 드로 하는 랜덤 기술',
+    description: '　효과: 랜덤 데크로부터 힐 카드를 드로 하는 랜덤 기술',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12447,7 +12597,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '1999',
     name: '사포트드로',
-    description: '　효과: 랜덤\n데크로부터 서포트 카드를 드로 하는 랜덤 기술',
+    description: '　효과: 랜덤 데크로부터 서포트 카드를 드로 하는 랜덤 기술',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12459,7 +12609,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2000',
     name: '하급 드로',
-    description: '　효과: 랜덤\n데크로부터 하급 소환 카드를 드로 하는 랜덤 기술',
+    description: '　효과: 랜덤 데크로부터 하급 소환 카드를 드로 하는 랜덤 기술',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12471,7 +12621,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2001',
     name: '상급 드로',
-    description: '　효과: 랜덤\n데크로부터 상급 소환 카드를 드로 하는 랜덤 기술',
+    description: '　효과: 랜덤 데크로부터 상급 소환 카드를 드로 하는 랜덤 기술',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12483,7 +12633,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2002',
     name: '스페이드의 킹',
-    description: '위력: S(손)　대상: 적 하나\n스페이드의 킹의 마력으로 적 하나에 대데미지를 준다',
+    description: '위력: S(손)　대상: 적 하나 스페이드의 킹의 마력으로 적 하나에 대데미지를 준다',
     type: '36',
     icon: 220,
     scope: 1,
@@ -12498,7 +12648,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2003',
     name: '클럽의 잭',
-    description: '위력: C(손)　대상: 적 전체\n클럽의 잭의 마력으로 적 전체에 데미지를 준다',
+    description: '위력: C(손)　대상: 적 전체 클럽의 잭의 마력으로 적 전체에 데미지를 준다',
     type: '36',
     icon: 220,
     scope: 2,
@@ -12513,7 +12663,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2004',
     name: '다이어의 퀸',
-    description: '대상: 아군 전체　효과: HP소회복\n다이어의 퀸의 마력으로 아군 전체를 회복 한다',
+    description: '대상: 아군 전체　효과: HP소회복 다이어의 퀸의 마력으로 아군 전체를 회복 한다',
     type: '36',
     icon: 220,
     scope: 8,
@@ -12528,7 +12678,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2005',
     name: '하트의 에이스',
-    description: '대상: 아군 하나　효과: HP중 회복\n하트의 에이스의 마력으로 아군 하나를 회복 한다',
+    description: '대상: 아군 하나　효과: HP중 회복 하트의 에이스의 마력으로 아군 하나를 회복 한다',
     type: '36',
     icon: 220,
     scope: 7,
@@ -12543,7 +12693,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2006',
     name: '죠카데스',
-    description: '대상: 적 전체　효과: 즉사\n조커의 마력으로 적 전체를 즉사시킨다',
+    description: '대상: 적 전체　효과: 즉사 조커의 마력으로 적 전체를 즉사시킨다',
     type: '36',
     icon: 220,
     scope: 2,
@@ -12555,7 +12705,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2007',
     name: '셔플 카드',
-    description: '　효과: 랜덤\n트럼프를 한 장 당겨, 나온 카드의 마력을 해방한다',
+    description: '　효과: 랜덤 트럼프를 한 장 당겨, 나온 카드의 마력을 해방한다',
     type: '36',
     icon: 220,
     scope: 1,
@@ -12567,7 +12717,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2008',
     name: '행운의 별',
-    description: '대상: 적아군 랜덤 하나　효과: 능력 강화\n적아군중 랜덤의 한사람이 대폭 강화된다',
+    description: '대상: 적아군 랜덤 하나　효과: 능력 강화 적아군중 랜덤의 한사람이 대폭 강화된다',
     type: '36',
     icon: 220,
     scope: 3,
@@ -12579,7 +12729,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2009',
     name: '럭키-헌터',
-    description: '대상: 사용자　효과: 경험치·직업 경험치·골드 2배\n그 전투만, 획득 경험치·직업 경험치와 골드가 배가 된다',
+    description: '대상: 사용자　효과: 경험치·직업 경험치·골드 2배 그 전투만, 획득 경험치·직업 경험치와 골드가 배가 된다',
     type: '36',
     icon: 220,
     scope: 11,
@@ -12591,7 +12741,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2010',
     name: '쭉 나의 턴',
-    description: '대상: 사용자　효과: 5회 행동·오라클만\n오라클밖에 사용할 수 없지만, 5회 행동이 가능',
+    description: '대상: 사용자　효과: 5회 행동·오라클만 오라클밖에 사용할 수 없지만, 5회 행동이 가능',
     type: '36',
     icon: 220,
     scope: 11,
@@ -12603,7 +12753,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2011',
     name: '하늘의 선물',
-    description: '　효과: 아이템 취득\n랜덤에서 아이템을 취득한다',
+    description: '　효과: 아이템 취득 랜덤에서 아이템을 취득한다',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12615,7 +12765,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2012',
     name: '아이템 슬롯',
-    description: '　효과: 아이템 취득\n랜덤에서 아이템을 취득한다',
+    description: '　효과: 아이템 취득 랜덤에서 아이템을 취득한다',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12627,7 +12777,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2013',
     name: '어둠 아이템 슬롯',
-    description: '　효과: 아이템 취득\n랜덤에서 아이템을 취득한다',
+    description: '　효과: 아이템 취득 랜덤에서 아이템을 취득한다',
     type: '36',
     icon: 220,
     scope: 0,
@@ -12639,7 +12789,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2016',
     name: '잔물결의 춤',
-    description: '위력: C(손)　대상: 적 전체　속성: 수　효과: 잠\n온화한 무용으로 잔물결을 초래 한다',
+    description: '위력: C(손)　대상: 적 전체　속성: 수　효과: 잠 온화한 무용으로 잔물결을 초래 한다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12655,7 +12805,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2017',
     name: '용궁천년 무용',
-    description: '위력: A(손)　대상: 적 전체　속성: 수　효과: 석화\n용궁에 전해지는 무용 있고로 물 덩어리를 난무 시킨다',
+    description: '위력: A(손)　대상: 적 전체　속성: 수　효과: 석화 용궁에 전해지는 무용 있고로 물 덩어리를 난무 시킨다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12671,7 +12821,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2018',
     name: '끊는 장작 댄스',
-    description: '위력: C(손)　대상: 적 전체　속성: 바람\n바람을 부르는 춤으로 끊는 장작을 일으킨다',
+    description: '위력: C(손)　대상: 적 전체　속성: 바람 바람을 부르는 춤으로 끊는 장작을 일으킨다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12687,7 +12837,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2019',
     name: '바람티끌의 무용',
-    description: '위력: C(손)　대상: 적 전체　속성: 바람\n라미아족에 전해지는 무용 있고로 격렬한 바람을 초래 한다',
+    description: '위력: C(손)　대상: 적 전체　속성: 바람 라미아족에 전해지는 무용 있고로 격렬한 바람을 초래 한다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12703,7 +12853,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2020',
     name: '토우의 무용',
-    description: '위력: C(손)　대상: 적 전체　속성: 흙\n라미아족에 전해지는 무용 있고로 토류를 초래 한다',
+    description: '위력: C(손)　대상: 적 전체　속성: 흙 라미아족에 전해지는 무용 있고로 토류를 초래 한다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12719,7 +12869,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2021',
     name: '유수의 무용',
-    description: '위력: C(손)　대상: 적 전체　속성: 물\n라미아족에 전해지는 무용 있고로 유수를 초래 한다',
+    description: '위력: C(손)　대상: 적 전체　속성: 물 라미아족에 전해지는 무용 있고로 유수를 초래 한다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12735,7 +12885,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2022',
     name: '염의 무용',
-    description: '위력: C(손)　대상: 적 전체　속성: 불길\n불길을 부르는 춤으로, 적 전체를 염에 싼다',
+    description: '위력: C(손)　대상: 적 전체　속성: 불길 불길을 부르는 춤으로, 적 전체를 염에 싼다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12751,7 +12901,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2023',
     name: '홍련 지옥의 맹렬한 불의 무용',
-    description: '위력: A(손)　대상: 적 전체　속성: 불길\n불길을 부르는 춤으로, 적 전체를 홍련의 지옥의 맹렬한 불에 싼다',
+    description: '위력: A(손)　대상: 적 전체　속성: 불길 불길을 부르는 춤으로, 적 전체를 홍련의 지옥의 맹렬한 불에 싼다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12767,7 +12917,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2024',
     name: '검의 춤',
-    description: '위력: A(손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n검을 데리고 가 춤추어 춤추어, 무수한 참격을 내지른다',
+    description: '위력: A(손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 검을 데리고 가 춤추어 춤추어, 무수한 참격을 내지른다',
     type: '37',
     icon: 176,
     scope: 3,
@@ -12783,7 +12933,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2025',
     name: '나루카미초뢰',
-    description: '위력: A(손)　대상: 적 전체　속성: 번개\n신의 번개를 초래 하는 무용 있고로, 적에게 중재를 준다',
+    description: '위력: A(손)　대상: 적 전체　속성: 번개 신의 번개를 초래 하는 무용 있고로, 적에게 중재를 준다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12799,7 +12949,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2026',
     name: '신대[神代]의 무용',
-    description: '위력: A(손)　대상: 적 전체　속성: 성\n성스러운 무용 있고로 신의 힘을 초래 해, 적을 멸한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 성 성스러운 무용 있고로 신의 힘을 초래 해, 적을 멸한다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12815,7 +12965,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2027',
     name: '레인보우 왈츠',
-    description: '위력: A(손)　대상: 적 전체　속성: 불길·빙·뢰·풍·토·수\n특수한 춤으로 복물 속성이 합쳐진 무지개를 생산한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 불길·빙·뢰·풍·토·수 특수한 춤으로 복물 속성이 합쳐진 무지개를 생산한다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12831,7 +12981,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2028',
     name: '엘레멘탈 댄스',
-    description: '위력: A(손)　대상: 적 전체　속성: 불길·풍·토·수\n대자연에 바치는 무용 있고로, 4 속성의 힘을 해방한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 불길·풍·토·수 대자연에 바치는 무용 있고로, 4 속성의 힘을 해방한다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12847,7 +12997,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2029',
     name: '대정령의 무용',
-    description: '위력: S(손)　대상: 적 전체　속성: 불길·풍·토·수\n대정령의 힘을 끌어 내는 춤으로, 4 속성의 힘을 푼다',
+    description: '위력: S(손)　대상: 적 전체　속성: 불길·풍·토·수 대정령의 힘을 끌어 내는 춤으로, 4 속성의 힘을 푼다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12863,7 +13013,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2032',
     name: '권하는 춤',
-    description: '대상: 적 하나　효과: 스턴\n끌려 춤추고 싶어지는 무용 있고로 적을 스턴 시킨다',
+    description: '대상: 적 하나　효과: 스턴 끌려 춤추고 싶어지는 무용 있고로 적을 스턴 시킨다',
     type: '37',
     icon: 176,
     scope: 1,
@@ -12876,7 +13026,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2033',
     name: '이상한 춤',
-    description: '위력: E(손·마)　대상: 적 하나　효과: MP흡수\n마력이 가득찬 춤으로 적의 MP를 빨아 들인다',
+    description: '위력: E(손·마)　대상: 적 하나　효과: MP흡수 마력이 가득찬 춤으로 적의 MP를 빨아 들인다',
     type: '37',
     icon: 176,
     scope: 1,
@@ -12892,7 +13042,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2034',
     name: '쇠약의 무용',
-    description: '대상: 적 전체　효과: 전능력 다운\n기묘한 춤으로 적 전체를 파워다운 시킨다',
+    description: '대상: 적 전체　효과: 전능력 다운 기묘한 춤으로 적 전체를 파워다운 시킨다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12905,7 +13055,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2035',
     name: '섹시 댄스',
-    description: '대상: 적 전체　효과: 민감·황홀\n섹시인 춤으로 적을 흥분시킨다',
+    description: '대상: 적 전체　효과: 민감·황홀 섹시인 춤으로 적을 흥분시킨다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12918,7 +13068,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2036',
     name: '저주의 춤',
-    description: '대상: 적 전체　효과: 독·어둠·침묵\n저주를 담은 춤으로 적을 상태 이상하게 한다',
+    description: '대상: 적 전체　효과: 독·어둠·침묵 저주를 담은 춤으로 적을 상태 이상하게 한다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12931,7 +13081,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2037',
     name: '페어리 댄스',
-    description: '대상: 적 전체　효과: 미니맘\n요정에게 전해지는 무용 있고로 적을 작게 한다',
+    description: '대상: 적 전체　효과: 미니맘 요정에게 전해지는 무용 있고로 적을 작게 한다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12944,7 +13094,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2038',
     name: '미스터리 댄스',
-    description: '대상: 적 전체　효과: 혼란\n기묘한 춤으로 적의 마음을 어지럽힌다',
+    description: '대상: 적 전체　효과: 혼란 기묘한 춤으로 적의 마음을 어지럽힌다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12957,7 +13107,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2039',
     name: '시 탁의 춤',
-    description: '대상: 적 전체　효과: 슬로우·스톱\n시공의 춤으로 때의 흐름을 저해한다',
+    description: '대상: 적 전체　효과: 슬로우·스톱 시공의 춤으로 때의 흐름을 저해한다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12970,7 +13120,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2040',
     name: '메카니컬 댄스',
-    description: '대상: 적 전체　효과: 슬로우·스톱\n기계적인 춤으로 적의 움직임을 무디어지게 할 수 있다',
+    description: '대상: 적 전체　효과: 슬로우·스톱 기계적인 춤으로 적의 움직임을 무디어지게 할 수 있다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12983,7 +13133,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2041',
     name: '신재의 춤',
-    description: '대상: 적 전체　효과: 반·프리즈·쇼크\n재앙의 춤으로 적 전체에 재액을 가져온다',
+    description: '대상: 적 전체　효과: 반·프리즈·쇼크 재앙의 춤으로 적 전체에 재액을 가져온다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -12996,7 +13146,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2042',
     name: '죽음의 춤',
-    description: '대상: 적 전체　효과: 즉사\n죽음의 춤으로 적 전체의 숨통을 끊는다',
+    description: '대상: 적 전체　효과: 즉사 죽음의 춤으로 적 전체의 숨통을 끊는다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -13009,7 +13159,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2043',
     name: '파호의 무용',
-    description: '대상: 적 전체　효과: 강화 해제\n이상한 춤으로 적의 강화 효과를 해제한다',
+    description: '대상: 적 전체　효과: 강화 해제 이상한 춤으로 적의 강화 효과를 해제한다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -13022,7 +13172,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2044',
     name: '용궁의 춤',
-    description: '대상: 적 전체　효과: 전속성 약점\n음양의 힘이 가득찬 춤으로 전속성을 약점으로 한다',
+    description: '대상: 적 전체　효과: 전속성 약점 음양의 힘이 가득찬 춤으로 전속성을 약점으로 한다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -13035,7 +13185,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2045',
     name: '소환의 춤',
-    description: '　효과: 랜덤\n마력이 가득찬 춤으로 랜덤 소환을 실시한다',
+    description: '　효과: 랜덤 마력이 가득찬 춤으로 랜덤 소환을 실시한다',
     type: '37',
     icon: 176,
     scope: 0,
@@ -13048,7 +13198,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2046',
     name: '건강의 춤',
-    description: '대상: 아군 하나　효과: HP소회복\n건강의 나오는 춤으로 아군 하나를 회복 시킨다',
+    description: '대상: 아군 하나　효과: HP소회복 건강의 나오는 춤으로 아군 하나를 회복 시킨다',
     type: '37',
     icon: 176,
     scope: 7,
@@ -13064,7 +13214,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2047',
     name: '허슬 댄스',
-    description: '대상: 아군 전체　효과: HP중 회복\n생명력 넘치는 춤으로 아군 전체의 체력을 회복 한다',
+    description: '대상: 아군 전체　효과: HP중 회복 생명력 넘치는 춤으로 아군 전체의 체력을 회복 한다',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13080,7 +13230,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2048',
     name: '뱀무녀의 무용',
-    description: '대상: 아군 전체　효과: HP·MP턴소회복\n라미아족에 전해지는 춤으로 신진대사를 활성화 시킨다',
+    description: '대상: 아군 전체　효과: HP·MP턴소회복 라미아족에 전해지는 춤으로 신진대사를 활성화 시킨다',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13093,7 +13243,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2049',
     name: '불사조의 춤',
-    description: '대상: 아군 전체　효과: 자동 소생\n하피족에 전해지는 춤으로 사망자를 자동 소생 시킨다',
+    description: '대상: 아군 전체　효과: 자동 소생 하피족에 전해지는 춤으로 사망자를 자동 소생 시킨다',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13106,7 +13256,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2050',
     name: '제물의 춤',
-    description: '대상: 아군 전체　효과: HP전회복·완전 소생\n자신을 제물에 바치는 무용 있고로 아군을 전회복·소생 한다',
+    description: '대상: 아군 전체　효과: HP전회복·완전 소생 자신을 제물에 바치는 무용 있고로 아군을 전회복·소생 한다',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13122,7 +13272,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2051',
     name: '고무의 춤',
-    description: '대상: 아군 전체　효과: 힘·민첩성 업\n아군을 고무 하는 춤으로 공격력과 민첩성을 높인다',
+    description: '대상: 아군 전체　효과: 힘·민첩성 업 아군을 고무 하는 춤으로 공격력과 민첩성을 높인다',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13135,7 +13285,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2052',
     name: '캣 댄스',
-    description: '대상: 아군 전체　효과: 회피율대업\n네코마타에게 전해지는 춤으로 아군 전체의 회피율을 업 시킨다',
+    description: '대상: 아군 전체　효과: 회피율대업 네코마타에게 전해지는 춤으로 아군 전체의 회피율을 업 시킨다',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13148,7 +13298,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2053',
     name: '바스테트단스',
-    description: '대상: 아군 전체　효과: 회피율·마법 회피율대업\n네코마타에게 전해지는 춤으로 아군 전체의 회피율을 크고 업 시킨다',
+    description: '대상: 아군 전체　효과: 회피율·마법 회피율대업 네코마타에게 전해지는 춤으로 아군 전체의 회피율을 크고 업 시킨다',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13161,7 +13311,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2054',
     name: '와일드 댄스',
-    description: '대상: 아군 전체　효과: 회피율·카운터율대업\n야생의 본능을 상기시키는 춤으로, 회피율과 반격율을 업 시킨다',
+    description: '대상: 아군 전체　효과: 회피율·카운터율대업 야생의 본능을 상기시키는 춤으로, 회피율과 반격율을 업 시킨다',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13174,7 +13324,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2055',
     name: '무신의 춤',
-    description: '대상: 아군 전체　효과: 흐트러지고 치는 것 가능\n특수한 춤으로 무신의 가호를 내려 주셔, 연속 공격이 가능하게 된다',
+    description: '대상: 아군 전체　효과: 흐트러지고 치는 것 가능 특수한 춤으로 무신의 가호를 내려 주셔, 연속 공격이 가능하게 된다',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13187,7 +13337,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2056',
     name: '하피 댄스',
-    description: '대상: 사용자　효과: 민첩성·회피율·마법 회피율대업\n하피족에 전해지는 춤으로 자신의 몸놀림이 올라간다',
+    description: '대상: 사용자　효과: 민첩성·회피율·마법 회피율대업 하피족에 전해지는 춤으로 자신의 몸놀림이 올라간다',
     type: '37',
     icon: 176,
     scope: 11,
@@ -13200,7 +13350,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2057',
     name: '천공의 춤',
-    description: '대상: 아군 전체　효과: 민첩성·회피율·마법 회피율대업\n하피족에 전해지는 춤으로 아군 전원의 몸놀림이 올라간다',
+    description: '대상: 아군 전체　효과: 민첩성·회피율·마법 회피율대업 하피족에 전해지는 춤으로 아군 전원의 몸놀림이 올라간다',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13213,7 +13363,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2058',
     name: '무봉천무',
-    description: '대상: 사용자　효과: 회피율·마법 회피율 100%\n어떠한 공격도 회피하는 전설의 춤',
+    description: '대상: 사용자　효과: 회피율·마법 회피율 100% 어떠한 공격도 회피하는 전설의 춤',
     type: '37',
     icon: 176,
     scope: 11,
@@ -13226,7 +13376,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2059',
     name: '전사의 춤',
-    description: '대상: 사용자　효과: 공격력·민첩성 업\n투쟁 본능을 상기시켜, 공격 능력을 강화하는 춤추어',
+    description: '대상: 사용자　효과: 공격력·민첩성 업 투쟁 본능을 상기시켜, 공격 능력을 강화하는 춤추어',
     type: '37',
     icon: 176,
     scope: 11,
@@ -13239,7 +13389,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2060',
     name: '영웅의 춤',
-    description: '대상: 사용자　효과: 전능력 업\n투쟁 본능을 상기시켜, 전능력을 강화하는 춤추어',
+    description: '대상: 사용자　효과: 전능력 업 투쟁 본능을 상기시켜, 전능력을 강화하는 춤추어',
     type: '37',
     icon: 176,
     scope: 11,
@@ -13252,7 +13402,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2061',
     name: '뱀신의 무용',
-    description: '대상: 아군 전체　효과: 반격율 100%·반격 공격력 대업\n전원이 카운터 능력을 향상시키는 뱀신의 춤',
+    description: '대상: 아군 전체　효과: 반격율 100%·반격 공격력 대업 전원이 카운터 능력을 향상시키는 뱀신의 춤',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13265,7 +13415,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2062',
     name: '여우의 무용',
-    description: '대상: 사용자　효과: 소비 MP·SP1/4\nMP나 SP의 소비가 현격히 저하하는 요호족의 춤',
+    description: '대상: 사용자　효과: 소비 MP·SP1/4 MP나 SP의 소비가 현격히 저하하는 요호족의 춤',
     type: '37',
     icon: 176,
     scope: 11,
@@ -13278,7 +13428,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2063',
     name: '월 연회의 무용',
-    description: '대상: 아군 전체　효과: 소비 MP·SP1/4\n전원의 MP나 SP의 소비가 현격히 저하하는 요호족의 춤',
+    description: '대상: 아군 전체　효과: 소비 MP·SP1/4 전원의 MP나 SP의 소비가 현격히 저하하는 요호족의 춤',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13291,7 +13441,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2064',
     name: '음력 16일밤 카구라',
-    description: '대상: 아군 전체　효과: 물리 무효\n물리 공격을 받아들이지 않게 되는 라미아족비전의 춤',
+    description: '대상: 아군 전체　효과: 물리 무효 물리 공격을 받아들이지 않게 되는 라미아족비전의 춤',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13304,7 +13454,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2065',
     name: '소월 카구라',
-    description: '대상: 아군 전체　효과: 마법 무효\n마법 공격을 받아들이지 않게 되는 라미아족비전의 춤',
+    description: '대상: 아군 전체　효과: 마법 무효 마법 공격을 받아들이지 않게 되는 라미아족비전의 춤',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13317,7 +13467,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2066',
     name: '젊은 댄스',
-    description: '대상: 적 전체　효과: 수면\n흔들흔들 흔들리는 것 같은 춤으로 적 전체를 재운다',
+    description: '대상: 적 전체　효과: 수면 흔들흔들 흔들리는 것 같은 춤으로 적 전체를 재운다',
     type: '37',
     icon: 176,
     scope: 2,
@@ -13330,7 +13480,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2067',
     name: '참새의 춤',
-    description: '대상: 아군 전원　효과: 혼란·수면의 치료와 방호\n참새의 춤이 아침의 눈을 뜸을 고한다',
+    description: '대상: 아군 전원　효과: 혼란·수면의 치료와 방호 참새의 춤이 아침의 눈을 뜸을 고한다',
     type: '37',
     icon: 176,
     scope: 8,
@@ -13343,7 +13493,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2071',
     name: '소용돌이의 노래',
-    description: '위력: C(손)　대상: 적 전체　속성: 수　효과: 수면\n바다의 노래로 소용돌이를 불러, 적 전체에 물 데미지를 준다',
+    description: '위력: C(손)　대상: 적 전체　속성: 수　효과: 수면 바다의 노래로 소용돌이를 불러, 적 전체에 물 데미지를 준다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13359,7 +13509,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2072',
     name: '대해의 노래',
-    description: '위력: A(손)　대상: 적 전체　속성: 물\n바다의 주인에게 바치는 노래로 대해를 난폭하게 굴게 한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 물 바다의 주인에게 바치는 노래로 대해를 난폭하게 굴게 한다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13375,7 +13525,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2073',
     name: '무패·화치루사토',
-    description: '위력: C(손)　대상: 적 전체　속성: 흙\n호족에 전해지는 노래로 대지를 흔든다',
+    description: '위력: C(손)　대상: 적 전체　속성: 흙 호족에 전해지는 노래로 대지를 흔든다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13391,7 +13541,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2074',
     name: '종패·몽우키하시',
-    description: '위력: A(손)　대상: 적 전체　속성: 흙\n호족에 전해지는 노래로 대지의 분노를 작렬시킨다',
+    description: '위력: A(손)　대상: 적 전체　속성: 흙 호족에 전해지는 노래로 대지의 분노를 작렬시킨다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13407,7 +13557,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2076',
     name: '레퀴엠',
-    description: '위력: C(손)　대상: 적 전체　효과: 좀비·유령 특공\n사망자에게 바치는 진혼노래로 언데드에게 데미지를 준다',
+    description: '위력: C(손)　대상: 적 전체　효과: 좀비·유령 특공 사망자에게 바치는 진혼노래로 언데드에게 데미지를 준다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13423,7 +13573,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2077',
     name: '사운드 임펙트',
-    description: '위력: C(손)　대상: 적 전체　속성: 음파\n대음량으로 적 전체에 충격을 주는 기술',
+    description: '위력: C(손)　대상: 적 전체　속성: 음파 대음량으로 적 전체에 충격을 주는 기술',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13439,7 +13589,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2078',
     name: '크리티컬 고함',
-    description: '위력: A(손)　대상: 적 전체　속성: 음파\n소리의 충격파로 공간을 흔드는 오의',
+    description: '위력: A(손)　대상: 적 전체　속성: 음파 소리의 충격파로 공간을 흔드는 오의',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13455,7 +13605,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2079',
     name: '사랑의 노래',
-    description: '대상: 적 전체　효과: 황홀\n달콤한 멜로디-로 적 전체를 황홀하게 잠기게 한다',
+    description: '대상: 적 전체　효과: 황홀 달콤한 멜로디-로 적 전체를 황홀하게 잠기게 한다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13468,7 +13618,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2080',
     name: '인어의 노래',
-    description: '대상: 적 전체　효과: 유혹\n마음을 녹게 하는 노래로 적 전체를 유혹한다',
+    description: '대상: 적 전체　효과: 유혹 마음을 녹게 하는 노래로 적 전체를 유혹한다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13481,7 +13631,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2081',
     name: '반짝☆',
-    description: '대상: 적 전체　효과: 스턴·유혹\n가희[歌姬]의 빛으로 모든 갤러리를 매료한다',
+    description: '대상: 적 전체　효과: 스턴·유혹 가희[歌姬]의 빛으로 모든 갤러리를 매료한다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13494,7 +13644,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2082',
     name: '휴프노스신포니',
-    description: '대상: 적 전체　효과: 수면\n잠의 멜로디-로 적 전체를 수면으로 이끈다',
+    description: '대상: 적 전체　효과: 수면 잠의 멜로디-로 적 전체를 수면으로 이끈다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13507,7 +13657,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2083',
     name: '죽음의 충동 세레나데',
-    description: '대상: 적 전체　효과: 즉사\n죽음의 멜로디-로 적 전체를 즉사시킨다',
+    description: '대상: 적 전체　효과: 즉사 죽음의 멜로디-로 적 전체를 즉사시킨다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13520,7 +13670,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2084',
     name: '치이팟파의 노래',
-    description: '대상: 적아군 전체　효과: 혼란\n기묘한 노래로 적아군 전체를 혼란시킨다',
+    description: '대상: 적아군 전체　효과: 혼란 기묘한 노래로 적아군 전체를 혼란시킨다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13533,7 +13683,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2085',
     name: '정령의 노래',
-    description: '대상: 아군 전체　효과: 소생\n정령에 바치는 노래로 전투 불능의 동료를 소생 시킨다',
+    description: '대상: 아군 전체　효과: 소생 정령에 바치는 노래로 전투 불능의 동료를 소생 시킨다',
     type: '38',
     icon: 184,
     scope: 10,
@@ -13549,7 +13699,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2086',
     name: '생명의 노래',
-    description: '대상: 아군 전체　효과: 턴 HP소회복\n생명력을 촉진시키는 노래로 턴 마다 HP를 회복 한다',
+    description: '대상: 아군 전체　효과: 턴 HP소회복 생명력을 촉진시키는 노래로 턴 마다 HP를 회복 한다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13562,7 +13712,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2087',
     name: '활력의 노래',
-    description: '대상: 아군 전체　효과: 턴 SP소회복\n활력을 촉진시키는 노래로 턴 마다 SP를 회복 한다',
+    description: '대상: 아군 전체　효과: 턴 SP소회복 활력을 촉진시키는 노래로 턴 마다 SP를 회복 한다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13575,7 +13725,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2088',
     name: '마력의 노래',
-    description: '대상: 아군 전체　효과: 턴 MP소회복\n마력을 촉진시키는 노래로 턴 마다 MP를 회복 한다',
+    description: '대상: 아군 전체　효과: 턴 MP소회복 마력을 촉진시키는 노래로 턴 마다 MP를 회복 한다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13588,7 +13738,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2089',
     name: '공세의 노래',
-    description: '대상: 아군 전체　효과: 공격력·마력 업\n화려한 노래로 아군 전체의 투쟁심을 높인다',
+    description: '대상: 아군 전체　효과: 공격력·마력 업 화려한 노래로 아군 전체의 투쟁심을 높인다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13601,7 +13751,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2090',
     name: '수세의 노래',
-    description: '대상: 아군 전체　효과: 방어력·마법 방어력 업\n침착한 노래로 아군 전체의 방어 성능을 높인다',
+    description: '대상: 아군 전체　효과: 방어력·마법 방어력 업 침착한 노래로 아군 전체의 방어 성능을 높인다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13614,7 +13764,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2091',
     name: '영웅의 노래',
-    description: '대상: 아군 전체　효과: 전능력 업\n용감한 노래로 아군 전체의 잠재 능력을 끌어 낸다',
+    description: '대상: 아군 전체　효과: 전능력 업 용감한 노래로 아군 전체의 잠재 능력을 끌어 낸다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13627,7 +13777,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2092',
     name: '매미 허물의 노래',
-    description: '대상: 아군 전체　효과: 회피율대업\n이상한 노래로 분신을 낳아, 회피율을 업 시킨다',
+    description: '대상: 아군 전체　효과: 회피율대업 이상한 노래로 분신을 낳아, 회피율을 업 시킨다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13640,7 +13790,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2093',
     name: '필중의 노래',
-    description: '대상: 아군 전체　효과: 명중율 100%\n집중력을 높이는 노래로 아군의 공격이 빗나가지 않게 된다',
+    description: '대상: 아군 전체　효과: 명중율 100% 집중력을 높이는 노래로 아군의 공격이 빗나가지 않게 된다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13653,7 +13803,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2094',
     name: '마경의 노래',
-    description: '대상: 아군 전체　효과: 마법 반사\n마력이 가득찬 노래로 적의 마법을 반사한다',
+    description: '대상: 아군 전체　효과: 마법 반사 마력이 가득찬 노래로 적의 마법을 반사한다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13666,7 +13816,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2095',
     name: '룡맥의 노래',
-    description: '대상: 아군 전체　효과: 바람·토·수흡수\n음양의 노래로 자연의 에너지를 흡수한다',
+    description: '대상: 아군 전체　효과: 바람·토·수흡수 음양의 노래로 자연의 에너지를 흡수한다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13679,7 +13829,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2096',
     name: '해적의 노래',
-    description: '대상: 아군 전체　효과: 버서크\n해적에게 전해지는 노래로 아군 전원을 광전사로 화한다',
+    description: '대상: 아군 전체　효과: 버서크 해적에게 전해지는 노래로 아군 전원을 광전사로 화한다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13692,7 +13842,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2097',
     name: '해적왕의 노래',
-    description: '대상: 아군 전체　효과: 버서크·2회 행동\n해적에게 전해지는 노래로 아군 전원을 궁극의 광전사로 화한다',
+    description: '대상: 아군 전체　효과: 버서크·2회 행동 해적에게 전해지는 노래로 아군 전원을 궁극의 광전사로 화한다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13705,7 +13855,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2098',
     name: ' 기술노우의 노래',
-    description: '대상: 사용자　효과: 전스킬 타입 사용 가능\n잠재 능력을 각성시켜, 모든 스킬 타입을 사용할 수 있다',
+    description: '대상: 사용자　효과: 전스킬 타입 사용 가능 잠재 능력을 각성시켜, 모든 스킬 타입을 사용할 수 있다',
     type: '38',
     icon: 184,
     scope: 11,
@@ -13718,7 +13868,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2099',
     name: '전능의 노래',
-    description: '대상: 아군 전원　효과: 전스킬 사용 가능\n아군 전원의 잠재 능력이 각성 해, 전스킬 타입을 사용할 수 있다',
+    description: '대상: 아군 전원　효과: 전스킬 사용 가능 아군 전원의 잠재 능력이 각성 해, 전스킬 타입을 사용할 수 있다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13731,7 +13881,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2100',
     name: '피사가요',
-    description: '대상: 아군 전원　효과: 즉사·승천·절정 무효\n기원의 노래로 즉사계의 효과를 받아들이지 않게 된다',
+    description: '대상: 아군 전원　효과: 즉사·승천·절정 무효 기원의 노래로 즉사계의 효과를 받아들이지 않게 된다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13744,7 +13894,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2101',
     name: '데이지·벨',
-    description: '대상: 아군 전체　효과: 전속성 강화\n가호의 노래로 모든 속성의 힘이 상승한다',
+    description: '대상: 아군 전체　효과: 전속성 강화 가호의 노래로 모든 속성의 힘이 상승한다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13757,7 +13907,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2102',
     name: '럭키-노래',
-    description: '대상: 아군 전체　효과: 획득 경험치·직업 경험치 2배\n행복의 노래로 전투 경험이 배가 된다',
+    description: '대상: 아군 전체　효과: 획득 경험치·직업 경험치 2배 행복의 노래로 전투 경험이 배가 된다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13770,7 +13920,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2103',
     name: '미러클 노래',
-    description: '대상: 아군 전체　효과: 획득 경험치·직업 경험치 3배\n기적의 노래로 전투 경험이 3배가 된다',
+    description: '대상: 아군 전체　효과: 획득 경험치·직업 경험치 3배 기적의 노래로 전투 경험이 3배가 된다',
     type: '38',
     icon: 184,
     scope: 8,
@@ -13783,7 +13933,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2104',
     name: '유혹의 노래',
-    description: '대상: 적 전체　효과: 유혹\n마음을 녹게 하는 노래로 적 전체를 유혹한다',
+    description: '대상: 적 전체　효과: 유혹 마음을 녹게 하는 노래로 적 전체를 유혹한다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13796,7 +13946,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2105',
     name: '자장가',
-    description: '대상: 적 전체　효과: 수면\n상냥한 자장가로 적 전체를 수면으로 이끈다',
+    description: '대상: 적 전체　효과: 수면 상냥한 자장가로 적 전체를 수면으로 이끈다',
     type: '38',
     icon: 184,
     scope: 2,
@@ -13809,7 +13959,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2109',
     name: '말을 건다',
-    description: '대상: 적 하나　효과: 적과 회화\n프렌들리에 말을 걸어, 적을 회화로 이끈다',
+    description: '대상: 적 하나　효과: 적과 회화 프렌들리에 말을 걸어, 적을 회화로 이끈다',
     type: '39',
     icon: 4,
     scope: 1,
@@ -13822,7 +13972,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2110',
     name: '칭찬한다',
-    description: '대상: 적 하나　효과: 우호도소업\n적을 칭찬해, 우호도를 조금 올린다',
+    description: '대상: 적 하나　효과: 우호도소업 적을 칭찬해, 우호도를 조금 올린다',
     type: '39',
     icon: 4,
     scope: 1,
@@ -13835,7 +13985,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2111',
     name: '대상찬',
-    description: '대상: 적 하나　효과: 우호도대업\n적을 칭찬해, 우호도를 크게 올린다',
+    description: '대상: 적 하나　효과: 우호도대업 적을 칭찬해, 우호도를 크게 올린다',
     type: '39',
     icon: 4,
     scope: 1,
@@ -13848,7 +13998,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2112',
     name: '도발한다',
-    description: '대상: 적 하나　효과: 우호도소다운\n적을 도발해, 우호도를 조금 내린다',
+    description: '대상: 적 하나　효과: 우호도소다운 적을 도발해, 우호도를 조금 내린다',
     type: '39',
     icon: 4,
     scope: 1,
@@ -13861,7 +14011,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2113',
     name: '대매도',
-    description: '대상: 적 하나　효과: 우호도대다운\n적을 매도해, 우호도를 크게 내린다',
+    description: '대상: 적 하나　효과: 우호도대다운 적을 매도해, 우호도를 크게 내린다',
     type: '39',
     icon: 4,
     scope: 1,
@@ -13874,7 +14024,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2114',
     name: '돈을 받는다',
-    description: '대상: 적 하나　효과: 골드 획득·우호도미다운\n적으로부터 골드를 받지만, 우호도가 조금 흐른다',
+    description: '대상: 적 하나　효과: 골드 획득·우호도미다운 적으로부터 골드를 받지만, 우호도가 조금 흐른다',
     type: '39',
     icon: 4,
     scope: 1,
@@ -13887,7 +14037,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2115',
     name: '아이템을 받는다',
-    description: '대상: 적 하나　효과: 아이템 획득·우호도미다운\n적으로부터 아이템을 받지만, 우호도가 조금 흐른다',
+    description: '대상: 적 하나　효과: 아이템 획득·우호도미다운 적으로부터 아이템을 받지만, 우호도가 조금 흐른다',
     type: '39',
     icon: 4,
     scope: 1,
@@ -13900,7 +14050,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2116',
     name: '동료로 이끈다',
-    description: '대상: 적 전체　효과: 동료 확률 3배\n적을 권유해, 그 전투로 동료가 되기 쉽게 한다',
+    description: '대상: 적 전체　효과: 동료 확률 3배 적을 권유해, 그 전투로 동료가 되기 쉽게 한다',
     type: '39',
     icon: 4,
     scope: 11,
@@ -13913,7 +14063,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2117',
     name: '협박한다',
-    description: '대상: 적 하나　효과: 적도주·우호도미다운\n적 하나를 위협해, 전투로부터 도주시킨다',
+    description: '대상: 적 하나　효과: 적도주·우호도미다운 적 하나를 위협해, 전투로부터 도주시킨다',
     type: '39',
     icon: 4,
     scope: 1,
@@ -13925,7 +14075,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2118',
     name: '돌아가 받는다',
-    description: '대상: 적 전체　효과: 적도주·우호도미다운\n적 전체를 말로 설득해, 돌아가 받는다',
+    description: '대상: 적 전체　효과: 적도주·우호도미다운 적 전체를 말로 설득해, 돌아가 받는다',
     type: '39',
     icon: 4,
     scope: 2,
@@ -13937,7 +14087,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2119',
     name: '재미있는 이야기',
-    description: '대상: 적 전체　효과: 스턴\n재미있는 이야기로 적 전체를 스턴 시킨다',
+    description: '대상: 적 전체　효과: 스턴 재미있는 이야기로 적 전체를 스턴 시킨다',
     type: '39',
     icon: 4,
     scope: 2,
@@ -13949,7 +14099,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2120',
     name: '추잡한 이야기',
-    description: '대상: 적 전체　효과: 민감\n추잡한 이야기로 적을 민감하게 한다',
+    description: '대상: 적 전체　효과: 민감 추잡한 이야기로 적을 민감하게 한다',
     type: '39',
     icon: 4,
     scope: 2,
@@ -13961,7 +14111,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2121',
     name: '무서운 이야기',
-    description: '대상: 적 전체　효과: 마비\n무서운 이야기로 적 전체를 마비 시킨다',
+    description: '대상: 적 전체　효과: 마비 무서운 이야기로 적 전체를 마비 시킨다',
     type: '39',
     icon: 4,
     scope: 2,
@@ -13973,7 +14123,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2122',
     name: '썰렁한 개그',
-    description: '대상: 적 전체　효과: 침묵·프리즈\n썰렁한 개그로 적을 경직시킨다',
+    description: '대상: 적 전체　효과: 침묵·프리즈 썰렁한 개그로 적을 경직시킨다',
     type: '39',
     icon: 4,
     scope: 2,
@@ -13985,7 +14135,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2123',
     name: '말의 폭탄',
-    description: '위력: A(손)　대상: 적 전체　속성: 음파\n언령의 힘으로 폭발을 일으킨다',
+    description: '위력: A(손)　대상: 적 전체　속성: 음파 언령의 힘으로 폭발을 일으킨다',
     type: '39',
     icon: 4,
     scope: 2,
@@ -14000,7 +14150,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2124',
     name: '저주',
-    description: '대상: 적 전체　효과: 즉사\n언령의 힘으로 적 전체에 저주를 뿌린다',
+    description: '대상: 적 전체　효과: 즉사 언령의 힘으로 적 전체에 저주를 뿌린다',
     type: '39',
     icon: 4,
     scope: 2,
@@ -14012,7 +14162,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2125',
     name: '축사',
-    description: '대상: 아군 전체　효과: HP대회복\n언령의 힘으로 아군 전체를 치유한다',
+    description: '대상: 아군 전체　효과: HP대회복 언령의 힘으로 아군 전체를 치유한다',
     type: '39',
     icon: 4,
     scope: 8,
@@ -14027,7 +14177,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2126',
     name: '영웅담',
-    description: '대상: 아군 전체　효과: 전능력 업\n언령의 힘으로 아군 전체의 잠재 능력을 해방한다',
+    description: '대상: 아군 전체　효과: 전능력 업 언령의 힘으로 아군 전체의 잠재 능력을 해방한다',
     type: '39',
     icon: 4,
     scope: 8,
@@ -14039,7 +14189,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2132',
     name: '연소 반응',
-    description: '위력: D(마or손)　대상: 적 전체　속성: 불길\n과학의 힘으로 연소 반응을 일으킨다',
+    description: '위력: D(마or손)　대상: 적 전체　속성: 불길 과학의 힘으로 연소 반응을 일으킨다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14054,7 +14204,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2133',
     name: '초열복사',
-    description: '위력: C(마or손)　대상: 적 전체　속성: 불길\n과학의 힘으로 초열복사를 일으킨다',
+    description: '위력: C(마or손)　대상: 적 전체　속성: 불길 과학의 힘으로 초열복사를 일으킨다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14069,7 +14219,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2134',
     name: '폭축',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 불길\n과학의 힘으로 폭축을 일으킨다',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 불길 과학의 힘으로 폭축을 일으킨다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14084,7 +14234,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2135',
     name: '응결 반응',
-    description: '위력: D(마or손)　대상: 적 전체　속성: 얼음\n과학의 힘으로 응결 반응을 일으킨다',
+    description: '위력: D(마or손)　대상: 적 전체　속성: 얼음 과학의 힘으로 응결 반응을 일으킨다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14099,7 +14249,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2136',
     name: '전하 상전이',
-    description: '위력: C(마or손)　대상: 적 전체　속성: 얼음\n과학의 힘으로 전하 상전이를 일으킨다',
+    description: '위력: C(마or손)　대상: 적 전체　속성: 얼음 과학의 힘으로 전하 상전이를 일으킨다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14114,7 +14264,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2137',
     name: '절대 영도',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 얼음\n과학의 힘으로 절대 영도를 일으킨다',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 얼음 과학의 힘으로 절대 영도를 일으킨다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14129,7 +14279,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2138',
     name: '통전 반응',
-    description: '위력: D(마or손)　대상: 적 전체　속성: 번개\n과학의 힘으로 통전 반응을 일으킨다',
+    description: '위력: D(마or손)　대상: 적 전체　속성: 번개 과학의 힘으로 통전 반응을 일으킨다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14144,7 +14294,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2139',
     name: '진공방전',
-    description: '위력: C(마or손)　대상: 적 전체　속성: 번개\n과학의 힘으로 진공방전을 일으킨다',
+    description: '위력: C(마or손)　대상: 적 전체　속성: 번개 과학의 힘으로 진공방전을 일으킨다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14159,7 +14309,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2140',
     name: '플라스마',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 번개\n과학의 힘으로 플라스마를 일으킨다',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 번개 과학의 힘으로 플라스마를 일으킨다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14174,7 +14324,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2141',
     name: '침묵의 봄',
-    description: '위력: B(마or손)　대상: 적 전체　속성: 바이오　효과: 어둠·침묵\n특별히 생성된 화학 병기를 사용한다',
+    description: '위력: B(마or손)　대상: 적 전체　속성: 바이오　효과: 어둠·침묵 특별히 생성된 화학 병기를 사용한다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14189,7 +14339,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2142',
     name: '디자인 브레이크',
-    description: '위력: B(마or손)　대상: 적 하나　효과: 키메라 특공\n유전자 조작된 특별한 마물을 파괴한다',
+    description: '위력: B(마or손)　대상: 적 하나　효과: 키메라 특공 유전자 조작된 특별한 마물을 파괴한다',
     type: '40',
     icon: 223,
     scope: 1,
@@ -14204,7 +14354,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2143',
     name: 'ID데스트라크션',
-    description: '위력: B(마or손)　대상: 적 전체　효과: 키메라 특공\n유전자 조작된 특별한 마물을 말소한다',
+    description: '위력: B(마or손)　대상: 적 전체　효과: 키메라 특공 유전자 조작된 특별한 마물을 말소한다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14219,7 +14369,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2144',
     name: '아르마게스트',
-    description: '위력: B(마or손)　대상: 적 전체　속성: 어둠\n과학의 힘으로 어둠의 파동을 이끈다',
+    description: '위력: B(마or손)　대상: 적 전체　속성: 어둠 과학의 힘으로 어둠의 파동을 이끈다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14234,7 +14384,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2145',
     name: '다크마타',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 어둠\n과학의 힘으로 다크마타를 발생시킨다',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 어둠 과학의 힘으로 다크마타를 발생시킨다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14249,7 +14399,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2146',
     name: '뉴클리어',
-    description: '위력: S(마or손)　대상: 적 전체　속성: 핵열\n과학의 힘으로 핵융합 반응을 일으킨다',
+    description: '위력: S(마or손)　대상: 적 전체　속성: 핵열 과학의 힘으로 핵융합 반응을 일으킨다',
     type: '40',
     icon: 223,
     scope: 2,
@@ -14264,7 +14414,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2147',
     name: '전환경 방호',
-    description: '대상: 사용자　효과: 불길·빙·뢰무효\n전환경에 견딜 만하는 방호 장비를 착용한다',
+    description: '대상: 사용자　효과: 불길·빙·뢰무효 전환경에 견딜 만하는 방호 장비를 착용한다',
     type: '40',
     icon: 223,
     scope: 11,
@@ -14276,7 +14426,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2148',
     name: '대 화학 방호',
-    description: '대상: 사용자　효과: 상태 이상 예방\n화학전에 견딜 만하는 방호 장비를 착용한다',
+    description: '대상: 사용자　효과: 상태 이상 예방 화학전에 견딜 만하는 방호 장비를 착용한다',
     type: '40',
     icon: 223,
     scope: 11,
@@ -14288,7 +14438,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2149',
     name: 'MP변환',
-    description: '대상: 사용자　효과: MP소회복\nSP를 MP로 변환한다',
+    description: '대상: 사용자　효과: MP소회복 SP를 MP로 변환한다',
     type: '40',
     icon: 223,
     scope: 11,
@@ -14300,7 +14450,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2150',
     name: '초MP변환',
-    description: '대상: 사용자　효과: MP중 회복\n대량의 SP를 MP로 변환한다',
+    description: '대상: 사용자　효과: MP중 회복 대량의 SP를 MP로 변환한다',
     type: '40',
     icon: 223,
     scope: 11,
@@ -14312,7 +14462,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2151',
     name: '극히 MP변환',
-    description: '대상: 사용자　효과: MP대회복\n방대한 양의 SP를 MP로 변환한다',
+    description: '대상: 사용자　효과: MP대회복 방대한 양의 SP를 MP로 변환한다',
     type: '40',
     icon: 223,
     scope: 11,
@@ -14324,7 +14474,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2152',
     name: 'SP변환',
-    description: '대상: 사용자　효과: SP소회복\nMP를 SP로 변환한다',
+    description: '대상: 사용자　효과: SP소회복 MP를 SP로 변환한다',
     type: '40',
     icon: 223,
     scope: 11,
@@ -14336,7 +14486,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2153',
     name: '초SP변환',
-    description: '대상: 사용자　효과: SP중 회복\n대량의 MP를 SP로 변환한다',
+    description: '대상: 사용자　효과: SP중 회복 대량의 MP를 SP로 변환한다',
     type: '40',
     icon: 223,
     scope: 11,
@@ -14348,7 +14498,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2154',
     name: '극히 SP변환',
-    description: '대상: 사용자　효과: SP대회복\n방대한 양의 MP를 SP로 변환한다',
+    description: '대상: 사용자　효과: SP대회복 방대한 양의 MP를 SP로 변환한다',
     type: '40',
     icon: 223,
     scope: 11,
@@ -14360,7 +14510,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2157',
     name: '연성·약초',
-    description: '대상: 아군 하나　효과: HP30 회복\n약초를 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: HP30 회복 약초를 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14375,7 +14525,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2158',
     name: '연성·고급 약초',
-    description: '대상: 아군 하나　효과: HP100 회복\n고급 약초를 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: HP100 회복 고급 약초를 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14390,7 +14540,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2159',
     name: '연성·궁극 약초',
-    description: '대상: 아군 하나　효과: HP5000 회복\n궁극 약초를 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: HP5000 회복 궁극 약초를 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14405,7 +14555,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2160',
     name: '연성·영약',
-    description: '대상: 아군 하나　효과: MP30 회복\n영약을 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: MP30 회복 영약을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14420,7 +14570,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2161',
     name: '연성·엘프의 영약',
-    description: '대상: 아군 하나　효과: MP100 회복\n엘프의 영약을 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: MP100 회복 엘프의 영약을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14435,7 +14585,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2162',
     name: '연성·일리아스의 영약',
-    description: '대상: 아군 하나　효과: MP500 회복\n일리아스의 영약을 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: MP500 회복 일리아스의 영약을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14450,7 +14600,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2163',
     name: '연성·부스트 드링크',
-    description: '대상: 아군 하나　효과: SP반회복\n부스트 드링크를 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: SP반회복 부스트 드링크를 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14462,7 +14612,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2164',
     name: '연성·버스트 드링크',
-    description: '대상: 아군 하나　효과: SP전회복\n버스트 드링크를 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: SP전회복 버스트 드링크를 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14474,7 +14624,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2165',
     name: '연성·에릭서',
-    description: '대상: 아군 하나　효과: HP·MP전회복\n에릭서를 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: HP·MP전회복 에릭서를 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14486,7 +14636,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2166',
     name: '연성·라스트 에릭서',
-    description: '대상: 아군 전체　효과: HP·MP전회복\n라스트 에릭서를 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 전체　효과: HP·MP전회복 라스트 에릭서를 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 8,
@@ -14498,7 +14648,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2167',
     name: '연성·피닉스의 꼬리',
-    description: '대상: 아군 하나　효과: 소생\n피닉스의 꼬리를 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 소생 피닉스의 꼬리를 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 9,
@@ -14513,7 +14663,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2168',
     name: '연성·세계수의 잎',
-    description: '대상: 아군 하나　효과: 완전 소생\n세계수의 잎을 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 완전 소생 세계수의 잎을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 9,
@@ -14528,7 +14678,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2169',
     name: '연성·해독제풀',
-    description: '대상: 아군 하나　효과: 독치료\n해독제풀을 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 독치료 해독제풀을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14540,7 +14690,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2170',
     name: '연성·중약',
-    description: '대상: 아군 하나　효과: 어둠 치료\n안약을 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 어둠 치료 안약을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14552,7 +14702,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2171',
     name: '연성·메아리풀',
-    description: '대상: 아군 하나　효과: 침묵 치료\n메아리풀을 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 침묵 치료 메아리풀을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14564,7 +14714,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2172',
     name: '연성·각성제',
-    description: '대상: 아군 하나　효과: 수면·혼란 치료\n각성제를 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 수면·혼란 치료 각성제를 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14576,7 +14726,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2173',
     name: '연성·만월풀',
-    description: '대상: 아군 하나　효과: 마비 치료\n만월풀을 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 마비 치료 만월풀을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14588,7 +14738,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2174',
     name: '연성·전설의 망치',
-    description: '대상: 아군 하나　효과: 미니맘 치료\n전설의 망치를 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 미니맘 치료 전설의 망치를 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14600,7 +14750,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2175',
     name: '연성·성수',
-    description: '대상: 아군 하나　효과: 좀비 치료\n성수를 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 좀비 치료 성수를 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14612,7 +14762,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2176',
     name: '연성·돈의 바늘',
-    description: '대상: 아군 하나　효과: 석화 치료\n돈의 바늘을 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 석화 치료 돈의 바늘을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14624,7 +14774,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2177',
     name: '연성·탈음약',
-    description: '대상: 아군 하나　효과: 민감·황홀·유혹 치료\n탈음약을 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 민감·황홀·유혹 치료 탈음약을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14636,7 +14786,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2178',
     name: '연성·만능약',
-    description: '대상: 아군 하나　효과: 상태 이상 치료\n만능약을 연성 해, 즉석에서 사용한다',
+    description: '대상: 아군 하나　효과: 상태 이상 치료 만능약을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 7,
@@ -14648,7 +14798,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2179',
     name: '연성·염석',
-    description: '위력: E(손)　대상: 적 전체　속성: 불길\n염석을 연성 해, 즉석에서 사용한다',
+    description: '위력: E(손)　대상: 적 전체　속성: 불길 염석을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14663,7 +14813,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2180',
     name: '연성·홍염석',
-    description: '위력: B(손)　대상: 적 전체　속성: 불길\n홍염석을 연성 해, 즉석에서 사용한다',
+    description: '위력: B(손)　대상: 적 전체　속성: 불길 홍염석을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14678,7 +14828,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2181',
     name: '연성·적열 홍염석',
-    description: '위력: S(손)　대상: 적 전체　속성: 불길\n적열 홍염석을 연성 해, 즉석에서 사용한다',
+    description: '위력: S(손)　대상: 적 전체　속성: 불길 적열 홍염석을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14693,7 +14843,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2182',
     name: '연성·빙석',
-    description: '위력: E(손)　대상: 적 전체　속성: 얼음\n빙석을 연성 해, 즉석에서 사용한다',
+    description: '위력: E(손)　대상: 적 전체　속성: 얼음 빙석을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14708,7 +14858,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2183',
     name: '연성·창빙석',
-    description: '위력: B(손)　대상: 적 전체　속성: 얼음\n창빙석을 연성 해, 즉석에서 사용한다',
+    description: '위력: B(손)　대상: 적 전체　속성: 얼음 창빙석을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14723,7 +14873,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2184',
     name: '연성·동결창빙석',
-    description: '위력: S(손)　대상: 적 전체　속성: 얼음\n동결창빙석을 연성 해, 즉석에서 사용한다',
+    description: '위력: S(손)　대상: 적 전체　속성: 얼음 동결창빙석을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14738,7 +14888,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2185',
     name: '연성·뢰석',
-    description: '위력: E(손)　대상: 적 전체　속성: 번개\n뢰석을 연성 해, 즉석에서 사용한다',
+    description: '위력: E(손)　대상: 적 전체　속성: 번개 뢰석을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14753,7 +14903,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2186',
     name: '연성·황뢰석',
-    description: '위력: B(손)　대상: 적 전체　속성: 번개\n황뢰석을 연성 해, 즉석에서 사용한다',
+    description: '위력: B(손)　대상: 적 전체　속성: 번개 황뢰석을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14768,7 +14918,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2187',
     name: '연성·전광황뢰석',
-    description: '위력: S(손)　대상: 적 전체　속성: 번개\n전광황뢰석을 연성 해, 즉석에서 사용한다',
+    description: '위력: S(손)　대상: 적 전체　속성: 번개 전광황뢰석을 연성 해, 즉석에서 사용한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14783,7 +14933,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2188',
     name: '연성·엔한스소드',
-    description: '대상: 사용자　효과: 「엔한스소드」장비\n엔한스소드를 연성 해, 장비 한다',
+    description: '대상: 사용자　효과: 「엔한스소드」장비 엔한스소드를 연성 해, 장비 한다',
     type: '41',
     icon: 3574,
     scope: 11,
@@ -14795,7 +14945,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2189',
     name: '연성·묠니르',
-    description: '대상: 사용자　효과: 「묠니르」장비\n묠니르를 연성 해, 일격을 발하는 것과 동시에 장비 한다',
+    description: '대상: 사용자　효과: 「묠니르」장비 묠니르를 연성 해, 일격을 발하는 것과 동시에 장비 한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14810,7 +14960,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2190',
     name: '연성·아리만롯드',
-    description: '대상: 사용자　효과: 「아리만롯드」장비\n아리만롯드를 연성 해, 일격을 발하는 것과 동시에 장비 한다',
+    description: '대상: 사용자　효과: 「아리만롯드」장비 아리만롯드를 연성 해, 일격을 발하는 것과 동시에 장비 한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14825,7 +14975,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2191',
     name: '연성·아르테미스의 활',
-    description: '대상: 사용자　효과: 「아르테미스의 활」장비\n아르테미스의 활을 연성 해, 일격을 발하는 것과 동시에 장비 한다',
+    description: '대상: 사용자　효과: 「아르테미스의 활」장비 아르테미스의 활을 연성 해, 일격을 발하는 것과 동시에 장비 한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14840,7 +14990,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2192',
     name: '연성·킹 오브 하트',
-    description: '대상: 사용자　효과: 「킹 오브 하트」장비\n킹 오브 하트를 연성 해, 일격을 발하는 것과 동시에 장비 한다',
+    description: '대상: 사용자　효과: 「킹 오브 하트」장비 킹 오브 하트를 연성 해, 일격을 발하는 것과 동시에 장비 한다',
     type: '41',
     icon: 3574,
     scope: 3,
@@ -14855,7 +15005,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2193',
     name: '연성·금편',
-    description: '대상: 사용자　효과: 「금편」장비\n금편을 연성 해, 일격을 발하는 것과 동시에 장비 한다',
+    description: '대상: 사용자　효과: 「금편」장비 금편을 연성 해, 일격을 발하는 것과 동시에 장비 한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14870,7 +15020,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2194',
     name: '연성·후트노미타마',
-    description: '대상: 사용자　효과: 「후트노미타마」장비\n후트노미타마를 연성 해, 일격을 발하는 것과 동시에 장비 한다',
+    description: '대상: 사용자　효과: 「후트노미타마」장비 후트노미타마를 연성 해, 일격을 발하는 것과 동시에 장비 한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14885,7 +15035,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2195',
     name: '연성·궁닐',
-    description: '대상: 사용자　효과: 「궁닐」장비\n궁닐을 연성 해, 일격을 발하는 것과 동시에 장비 한다',
+    description: '대상: 사용자　효과: 「궁닐」장비 궁닐을 연성 해, 일격을 발하는 것과 동시에 장비 한다',
     type: '41',
     icon: 3574,
     scope: 1,
@@ -14900,7 +15050,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2196',
     name: '연성·엑스칼리버',
-    description: '대상: 사용자　효과: 「엑스칼리버」장비\n엑스칼리버를 연성 해, 일격을 발하는 것과 동시에 장비 한다',
+    description: '대상: 사용자　효과: 「엑스칼리버」장비 엑스칼리버를 연성 해, 일격을 발하는 것과 동시에 장비 한다',
     type: '41',
     icon: 3574,
     scope: 2,
@@ -14915,7 +15065,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2200',
     name: '불길의 4 페이지',
-    description: '위력: C(마)　대상: 적 전체　속성: 불길\n마본의 힘으로 지옥의 맹렬한 불을 발생시킬 방법',
+    description: '위력: C(마)　대상: 적 전체　속성: 불길 마본의 힘으로 지옥의 맹렬한 불을 발생시킬 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -14931,7 +15081,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2201',
     name: '얼음의 8 페이지',
-    description: '위력: C(마)　대상: 적 전체　속성: 얼음\n마본의 힘으로 적을 동결시킬 방법',
+    description: '위력: C(마)　대상: 적 전체　속성: 얼음 마본의 힘으로 적을 동결시킬 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -14946,7 +15096,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2202',
     name: '번개의 16 페이지',
-    description: '위력: C(마)　대상: 적 전체　속성: 번개\n마본의 힘으로 낙뢰를 발생시킬 방법',
+    description: '위력: C(마)　대상: 적 전체　속성: 번개 마본의 힘으로 낙뢰를 발생시킬 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -14961,7 +15111,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2203',
     name: '바람의 32 페이지',
-    description: '위력: A(마)　대상: 적 전체　속성: 바람\n마본의 힘으로 진공의 칼날을 발생시킬 방법',
+    description: '위력: A(마)　대상: 적 전체　속성: 바람 마본의 힘으로 진공의 칼날을 발생시킬 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -14976,7 +15126,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2204',
     name: '흙의 64 페이지',
-    description: '위력: A(마)　대상: 적 전체　속성: 흙\n마본의 힘으로 낙석을 발생시킬 방법',
+    description: '위력: A(마)　대상: 적 전체　속성: 흙 마본의 힘으로 낙석을 발생시킬 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -14991,7 +15141,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2205',
     name: '물의 128 페이지',
-    description: '위력: A(마)　대상: 적 전체　속성: 물\n마본의 힘으로 수격을 발생시킬 방법',
+    description: '위력: A(마)　대상: 적 전체　속성: 물 마본의 힘으로 수격을 발생시킬 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -15006,7 +15156,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2206',
     name: '거완의 256 페이지',
-    description: '위력: A(마)　대상: 적 하나\n마본으로부터 소환 한 거완으로 적을 두드려 잡을 방법',
+    description: '위력: A(마)　대상: 적 하나 마본으로부터 소환 한 거완으로 적을 두드려 잡을 방법',
     type: '42',
     icon: 183,
     scope: 1,
@@ -15021,7 +15171,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2207',
     name: '촉수의 512 페이지',
-    description: '위력: B(마)　대상: 적 전체　속성: 쾌락　효과: 구속\n마본으로부터 소환 한 촉수로 적을 희세울 방법',
+    description: '위력: B(마)　대상: 적 전체　속성: 쾌락　효과: 구속 마본으로부터 소환 한 촉수로 적을 희세울 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -15036,7 +15186,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2208',
     name: '3마의 333 페이지',
-    description: '위력: B(마)　대상: 적 전체　속성: 불길·빙·뢰\n마본의 힘으로 불길·빙·뢰를 동시 발생시킬 방법',
+    description: '위력: B(마)　대상: 적 전체　속성: 불길·빙·뢰 마본의 힘으로 불길·빙·뢰를 동시 발생시킬 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -15051,7 +15201,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2209',
     name: '4정령의 444 페이지',
-    description: '위력: A(마)　대상: 적 전체　속성: 불길·풍·토·수\n마본의 힘으로 4 정령의 힘을 해방할 방법',
+    description: '위력: A(마)　대상: 적 전체　속성: 불길·풍·토·수 마본의 힘으로 4 정령의 힘을 해방할 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -15066,7 +15216,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2210',
     name: '종말의 666 페이지',
-    description: '위력: S(마)　대상: 적 전체　속성: 어둠\n마본으로 어둠의 힘을 해방할 방법',
+    description: '위력: S(마)　대상: 적 전체　속성: 어둠 마본으로 어둠의 힘을 해방할 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -15081,7 +15231,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2211',
     name: '금지된 0 페이지',
-    description: '위력: S(마)　대상: 적 전체\n마본으로 금단의 힘을 해방해, 모두를 파괴할 방법',
+    description: '위력: S(마)　대상: 적 전체 마본으로 금단의 힘을 해방해, 모두를 파괴할 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -15096,7 +15246,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2212',
     name: '무의 99999 페이지',
-    description: '위력: SS(마)　대상: 적 전체　속성: 종언\n마본의 힘으로 혼돈을 이끌어, 종말을 도래시킬 방법',
+    description: '위력: SS(마)　대상: 적 전체　속성: 종언 마본의 힘으로 혼돈을 이끌어, 종말을 도래시킬 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -15111,7 +15261,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2213',
     name: '마비의 12 페이지',
-    description: '대상: 적 전체　효과: 마비\n마본의 힘으로 적 전체를 마비 시킬 방법',
+    description: '대상: 적 전체　효과: 마비 마본의 힘으로 적 전체를 마비 시킬 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -15123,7 +15273,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2214',
     name: '옷종의 24 페이지',
-    description: '대상: 적 전체　효과: 유혹\n마본의 힘으로 적 전체를 유혹할 방법',
+    description: '대상: 적 전체　효과: 유혹 마본의 힘으로 적 전체를 유혹할 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -15135,7 +15285,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2215',
     name: '광란의 48 페이지',
-    description: '대상: 적 전체　효과: 혼란\n마본의 힘으로 적 전체를 혼란시킬 방법',
+    description: '대상: 적 전체　효과: 혼란 마본의 힘으로 적 전체를 혼란시킬 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -15147,7 +15297,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2216',
     name: '약체의 96 페이지',
-    description: '대상: 적 전체　효과: 전능력 다운\n마본의 힘으로 적 전체를 약체화 시킬 방법',
+    description: '대상: 적 전체　효과: 전능력 다운 마본의 힘으로 적 전체를 약체화 시킬 방법',
     type: '42',
     icon: 183,
     scope: 2,
@@ -15159,7 +15309,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2217',
     name: '위안의 777 페이지',
-    description: '대상: 아군 전체　효과: HP대회복\n마본의 힘으로 아군 전체를 치유할 방법',
+    description: '대상: 아군 전체　효과: HP대회복 마본의 힘으로 아군 전체를 치유할 방법',
     type: '42',
     icon: 183,
     scope: 8,
@@ -15174,7 +15324,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2218',
     name: '기적의 888 페이지',
-    description: '대상: 아군 전체　효과: HP전회복\n마본의 힘으로 아군 전체를 크게 치유할 방법',
+    description: '대상: 아군 전체　효과: HP전회복 마본의 힘으로 아군 전체를 크게 치유할 방법',
     type: '42',
     icon: 183,
     scope: 8,
@@ -15189,7 +15339,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2219',
     name: '부활의 999 페이지',
-    description: '대상: 아군 하나　효과: 완전 소생\n마본의 힘으로 아군을 소생 시킬 방법',
+    description: '대상: 아군 하나　효과: 완전 소생 마본의 힘으로 아군을 소생 시킬 방법',
     type: '42',
     icon: 183,
     scope: 9,
@@ -15204,7 +15354,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2220',
     name: '가호의 1001 페이지',
-    description: '대상: 아군 전체　효과: 전능력 업\n마본의 힘으로 아군 전체에 가호를 줄 방법',
+    description: '대상: 아군 전체　효과: 전능력 업 마본의 힘으로 아군 전체에 가호를 줄 방법',
     type: '42',
     icon: 183,
     scope: 8,
@@ -15216,7 +15366,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2221',
     name: '기력 회귀의 111 페이지',
-    description: '대상: 아군 하나　효과: SP중 회복\n마본의 힘으로 아군 하나의 기력을 증폭시킬 방법',
+    description: '대상: 아군 하나　효과: SP중 회복 마본의 힘으로 아군 하나의 기력을 증폭시킬 방법',
     type: '42',
     icon: 183,
     scope: 7,
@@ -15228,7 +15378,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2222',
     name: '마력 회귀의 222 페이지',
-    description: '대상: 아군 하나　효과: MP중 회복\n마본의 힘으로 아군 하나의 마력을 증폭시킬 방법',
+    description: '대상: 아군 하나　효과: MP중 회복 마본의 힘으로 아군 하나의 마력을 증폭시킬 방법',
     type: '42',
     icon: 183,
     scope: 7,
@@ -15240,7 +15390,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2223',
     name: '페이지 창출',
-    description: '　효과: 페이지×3 획득\n자신의 몸으로부터 마도서의 페이지를 낳는다',
+    description: '　효과: 페이지×3 획득 자신의 몸으로부터 마도서의 페이지를 낳는다',
     type: '42',
     icon: 183,
     scope: 0,
@@ -15252,7 +15402,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2224',
     name: '총페이지화',
-    description: '　효과: 페이지×10 획득\n자신의 몸을 모두 마도서의 페이지로 변환한다',
+    description: '　효과: 페이지×10 획득 자신의 몸을 모두 마도서의 페이지로 변환한다',
     type: '42',
     icon: 183,
     scope: 0,
@@ -15264,7 +15414,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2230',
     name: '오트보우간',
-    description: '위력: E(손)　대상: 적 전체\n연속 발사 기구가 짜넣어진 기계제 보우간',
+    description: '위력: E(손)　대상: 적 전체 연속 발사 기구가 짜넣어진 기계제 보우간',
     type: '43',
     icon: 4061,
     scope: 2,
@@ -15279,7 +15429,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2231',
     name: '바이오 블래스트',
-    description: '위력: E(손)　대상: 적 전체　속성: 바이오\n맹독의 가스를 주위에 살포하는 화학 병기',
+    description: '위력: E(손)　대상: 적 전체　속성: 바이오 맹독의 가스를 주위에 살포하는 화학 병기',
     type: '43',
     icon: 4063,
     scope: 2,
@@ -15294,7 +15444,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2232',
     name: '블래스트 음성',
-    description: '위력: E(손)　대상: 적 전체　속성: 음파\n파괴 음파를 발생시키는 마키나',
+    description: '위력: E(손)　대상: 적 전체　속성: 음파 파괴 음파를 발생시키는 마키나',
     type: '43',
     icon: 4062,
     scope: 2,
@@ -15309,7 +15459,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2233',
     name: '듀얼 캐논',
-    description: '위력: D(손)　대상: 적 하나\n철갑탄을 발사하는 대형 캐논포',
+    description: '위력: D(손)　대상: 적 하나 철갑탄을 발사하는 대형 캐논포',
     type: '43',
     icon: 4066,
     scope: 1,
@@ -15324,7 +15474,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2234',
     name: '오션 엥커',
-    description: '위력: E(손)　대상: 적 하나　효과: 인어·해서종 특공\n해 서몬스터에게 유효한 노여움을 발사하는 마키나',
+    description: '위력: E(손)　대상: 적 하나　효과: 인어·해서종 특공 해 서몬스터에게 유효한 노여움을 발사하는 마키나',
     type: '43',
     icon: 4069,
     scope: 1,
@@ -15339,7 +15489,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2235',
     name: '스팅거',
-    description: '위력: E(손)　대상: 적 하나　효과: 새특공\n비상 몬스터에게 유효한 대공 미사일을 발사하는 마키나',
+    description: '위력: E(손)　대상: 적 하나　효과: 새특공 비상 몬스터에게 유효한 대공 미사일을 발사하는 마키나',
     type: '43',
     icon: 4068,
     scope: 1,
@@ -15354,7 +15504,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2236',
     name: '화염 방사기',
-    description: '위력: D(손)　대상: 적 전체　속성: 불길\n화염을 발생시키고 적 전체에 방사하는 마키나',
+    description: '위력: D(손)　대상: 적 전체　속성: 불길 화염을 발생시키고 적 전체에 방사하는 마키나',
     type: '43',
     icon: 4064,
     scope: 2,
@@ -15369,7 +15519,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2237',
     name: '전속방사기',
-    description: '위력: D(손)　대상: 적 전체　속성: 번개\n전기를 수속[收束] 시키고 적 전체에 방사하는 마키나',
+    description: '위력: D(손)　대상: 적 전체　속성: 번개 전기를 수속[收束] 시키고 적 전체에 방사하는 마키나',
     type: '43',
     icon: 4065,
     scope: 2,
@@ -15384,7 +15534,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2238',
     name: '머신 발칸',
-    description: '위력: C(손)　대상: 적 전체\n다총몸의 회전 기구로 탄환을 연속 발사하는 기계 병기',
+    description: '위력: C(손)　대상: 적 전체 다총몸의 회전 기구로 탄환을 연속 발사하는 기계 병기',
     type: '43',
     icon: 1583,
     scope: 2,
@@ -15399,7 +15549,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2239',
     name: '고주파 커터',
-    description: '위력: B(손)　대상: 적 하나\n도신으로부터 고주파를 발하는 것으로 예리함을 늘린 절단 병기',
+    description: '위력: B(손)　대상: 적 하나 도신으로부터 고주파를 발하는 것으로 예리함을 늘린 절단 병기',
     type: '43',
     icon: 4072,
     scope: 1,
@@ -15414,7 +15564,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2240',
     name: '키르리안렌지',
-    description: '위력: C(손)　대상: 적 전체　효과: 고스트 특공\n고스트에 유효한 영적 필드를 발생시키는 마키나',
+    description: '위력: C(손)　대상: 적 전체　효과: 고스트 특공 고스트에 유효한 영적 필드를 발생시키는 마키나',
     type: '43',
     icon: 4070,
     scope: 2,
@@ -15429,7 +15579,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2241',
     name: '트라이파닛샤',
-    description: '위력: C(손)　대상: 적 전체　효과: 흡혈귀 특공\n개틀링 따위의 중화기가 가르쳐진 십자가형 병장',
+    description: '위력: C(손)　대상: 적 전체　효과: 흡혈귀 특공 개틀링 따위의 중화기가 가르쳐진 십자가형 병장',
     type: '43',
     icon: 4071,
     scope: 2,
@@ -15444,7 +15594,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2242',
     name: '전자 아머',
-    description: '대상: 사용자　효과: 디후레크트 2회\n전자 방벽을 발생시키는 방어 마키나',
+    description: '대상: 사용자　효과: 디후레크트 2회 전자 방벽을 발생시키는 방어 마키나',
     type: '43',
     icon: 4073,
     scope: 11,
@@ -15456,7 +15606,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2243',
     name: '드릴',
-    description: '위력: A(손)　대상: 적 하나\n첨단부가 회전해,　대상을 관철하는 대물 마키나',
+    description: '위력: A(손)　대상: 적 하나 첨단부가 회전해,　대상을 관철하는 대물 마키나',
     type: '43',
     icon: 4067,
     scope: 1,
@@ -15471,7 +15621,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2244',
     name: '초진동 블레이드',
-    description: '위력: A(손)　대상: 적 하나　효과: 즉사\n블레이드부가 초진동을 일으켜, 모든 물질을 절단 하는 마키나',
+    description: '위력: A(손)　대상: 적 하나　효과: 즉사 블레이드부가 초진동을 일으켜, 모든 물질을 절단 하는 마키나',
     type: '43',
     icon: 4074,
     scope: 1,
@@ -15486,7 +15636,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2245',
     name: 'MLRS',
-    description: '위력: A(손)　대상: 적 전체　속성: 불길\n연장 로켓을 발사하는 강력한 대군마키나',
+    description: '위력: A(손)　대상: 적 전체　속성: 불길 연장 로켓을 발사하는 강력한 대군마키나',
     type: '43',
     icon: 4075,
     scope: 2,
@@ -15501,7 +15651,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2246',
     name: '빔데스사이즈',
-    description: '위력: A(손)　대상: 적 랜덤 5회\n고출력의 빔 칼날로 적을 끊는 미지의 마키나',
+    description: '위력: A(손)　대상: 적 랜덤 5회 고출력의 빔 칼날로 적을 끊는 미지의 마키나',
     type: '43',
     icon: 1185,
     scope: 3,
@@ -15516,7 +15666,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2247',
     name: '하이페리온',
-    description: '위력: S(손)　대상: 적 하나\n광자탄을 발사해, 모든　대상을 파괴하는 전략 마키나',
+    description: '위력: S(손)　대상: 적 하나 광자탄을 발사해, 모든　대상을 파괴하는 전략 마키나',
     type: '43',
     icon: 4076,
     scope: 1,
@@ -15531,7 +15681,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2248',
     name: '에르드릿지',
-    description: '위력: S(손)　대상: 적 랜덤 8회\n차원을 넘은 일제 포격을 발하는 이문명의 군함',
+    description: '위력: S(손)　대상: 적 랜덤 8회 차원을 넘은 일제 포격을 발하는 이문명의 군함',
     type: '43',
     icon: 4078,
     scope: 3,
@@ -15546,7 +15696,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2250',
     name: '반입자 레일 암',
-    description: '위력: S(손)　대상: 적 전체　속성: 양자\n반입자를 전자 가속해 발사하는 미지의 전략 마키나',
+    description: '위력: S(손)　대상: 적 전체　속성: 양자 반입자를 전자 가속해 발사하는 미지의 전략 마키나',
     type: '43',
     icon: 4077,
     scope: 2,
@@ -15561,7 +15711,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2251',
     name: '라그나로크',
-    description: '위력: SS(손)　대상: 적 전체　속성: 핵열\n신들의 투쟁에 사용되었다고 하는 궁극의 파괴 마키나',
+    description: '위력: SS(손)　대상: 적 전체　속성: 핵열 신들의 투쟁에 사용되었다고 하는 궁극의 파괴 마키나',
     type: '43',
     icon: 4079,
     scope: 2,
@@ -15576,7 +15726,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2252',
     name: '위크메이카',
-    description: '대상: 적 하나　효과: 전속성 약점\n전속성을 약점으로 하는 특수 마키나',
+    description: '대상: 적 하나　효과: 전속성 약점 전속성을 약점으로 하는 특수 마키나',
     type: '43',
     icon: 4062,
     scope: 1,
@@ -15588,7 +15738,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2257',
     name: '달걀 후라이',
-    description: '위력: D(손)　대상: 적 하나\n달걀 후라이를 만들어, 요리 효과를 발휘한다',
+    description: '위력: D(손)　대상: 적 하나 달걀 후라이를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2966,
     scope: 1,
@@ -15603,7 +15753,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2258',
     name: '주먹밥',
-    description: '위력: D(손)　대상: 적 하나　속성: 불길\n주먹밥을 만들어, 요리 효과를 발휘한다',
+    description: '위력: D(손)　대상: 적 하나　속성: 불길 주먹밥을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2686,
     scope: 1,
@@ -15618,7 +15768,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2259',
     name: '샌드 마녀',
-    description: '위력: D(손)　대상: 적 하나　속성: 얼음\n샌드 위치를 만들어, 요리 효과를 발휘한다',
+    description: '위력: D(손)　대상: 적 하나　속성: 얼음 샌드 위치를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2857,
     scope: 1,
@@ -15633,7 +15783,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2260',
     name: '야채볶음',
-    description: '위력: D(손)　대상: 적 하나　속성: 번개\n야채볶음을 만들어, 요리 효과를 발휘한다',
+    description: '위력: D(손)　대상: 적 하나　속성: 번개 야채볶음을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2964,
     scope: 1,
@@ -15648,7 +15798,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2261',
     name: '햄버거',
-    description: '대상: 아군 하나　효과: 회심율 업\n햄버거를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: 회심율 업 햄버거를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2858,
     scope: 7,
@@ -15660,7 +15810,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2262',
     name: '생선구이',
-    description: '대상: 아군 하나　효과: 명중율 업\n생선구이를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: 명중율 업 생선구이를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2853,
     scope: 7,
@@ -15672,7 +15822,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2263',
     name: '된장국',
-    description: '대상: 아군 하나　효과: 회피율 업\n된장국을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: 회피율 업 된장국을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2845,
     scope: 7,
@@ -15684,7 +15834,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2264',
     name: '고양이 밥',
-    description: '대상: 아군 하나　효과: 마법 회피율 업\n고양이 밥을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: 마법 회피율 업 고양이 밥을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 3993,
     scope: 7,
@@ -15696,7 +15846,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2265',
     name: '햄버거',
-    description: '대상: 아군 하나　효과: HP소회복\n햄버거를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: HP소회복 햄버거를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2866,
     scope: 7,
@@ -15711,7 +15861,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2266',
     name: '핫도그',
-    description: '대상: 아군 하나　효과: 공격력 업\n핫도그를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: 공격력 업 핫도그를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2850,
     scope: 7,
@@ -15723,7 +15873,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2267',
     name: '야채 샐러드',
-    description: '대상: 아군 하나　효과: 방어력 업\n야채 샐러드를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: 방어력 업 야채 샐러드를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2839,
     scope: 7,
@@ -15735,7 +15885,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2268',
     name: '과일샐러드',
-    description: '대상: 아군 하나　효과: 민첩성 업\n과일샐러드를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: 민첩성 업 과일샐러드를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 3995,
     scope: 7,
@@ -15747,7 +15897,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2269',
     name: '카레라이스',
-    description: '대상: 아군 하나　효과: 마력 업\n카레라이스를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: 마력 업 카레라이스를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2840,
     scope: 7,
@@ -15759,7 +15909,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2270',
     name: '피자',
-    description: '대상: 아군 하나　효과: 정신력 업\n피자를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: 정신력 업 피자를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2842,
     scope: 7,
@@ -15771,7 +15921,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2271',
     name: '크림 스튜',
-    description: '대상: 아군 하나　효과: 손재주 업\n크림 스튜를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: 손재주 업 크림 스튜를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2848,
     scope: 7,
@@ -15783,7 +15933,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2272',
     name: '스파게티',
-    description: '대상: 아군 하나　효과: SP차지 2배\n스파게티를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: SP차지 2배 스파게티를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2861,
     scope: 7,
@@ -15795,7 +15945,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2273',
     name: '생선회',
-    description: '대상: 아군 전체　효과: 턴 HP소회복\n생선회를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: 턴 HP소회복 생선회를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2836,
     scope: 8,
@@ -15807,7 +15957,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2274',
     name: '닭꼬치',
-    description: '대상: 아군 전체　효과: 턴 SP소회복\n닭꼬치를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: 턴 SP소회복 닭꼬치를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2862,
     scope: 8,
@@ -15819,7 +15969,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2275',
     name: '국수',
-    description: '대상: 아군 전체　효과: 턴 MP소회복\n국수를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: 턴 MP소회복 국수를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 4081,
     scope: 8,
@@ -15831,7 +15981,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2276',
     name: '고로케',
-    description: '위력: D(손)　대상: 적 전체\n고로케를 만들어, 요리 효과를 발휘한다',
+    description: '위력: D(손)　대상: 적 전체 고로케를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2958,
     scope: 2,
@@ -15846,7 +15996,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2277',
     name: '튀김',
-    description: '위력: D(손)　대상: 적 전체　속성: 불길\n튀김을 만들어, 요리 효과를 발휘한다',
+    description: '위력: D(손)　대상: 적 전체　속성: 불길 튀김을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2846,
     scope: 2,
@@ -15861,7 +16011,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2278',
     name: '오무라이스',
-    description: '위력: D(손)　대상: 적 전체　속성: 얼음\n오무라이스를 만들어, 요리 효과를 발휘한다',
+    description: '위력: D(손)　대상: 적 전체　속성: 얼음 오무라이스를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2854,
     scope: 2,
@@ -15876,7 +16026,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2279',
     name: '토마토 스프',
-    description: '위력: D(손)　대상: 적 전체　속성: 번개\n토마토 스프를 만들어, 요리 효과를 발휘한다',
+    description: '위력: D(손)　대상: 적 전체　속성: 번개 토마토 스프를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2863,
     scope: 2,
@@ -15891,7 +16041,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2280',
     name: '그라탕',
-    description: '위력: C(손)　대상: 적 하나　속성: 번개\n그라탕을 만들어, 요리 효과를 발휘한다',
+    description: '위력: C(손)　대상: 적 하나　속성: 번개 그라탕을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2844,
     scope: 1,
@@ -15906,7 +16056,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2281',
     name: '파에리아',
-    description: '위력: C(손)　대상: 적 하나　속성: 얼음\n파에리아를 만들어, 요리 효과를 발휘한다',
+    description: '위력: C(손)　대상: 적 하나　속성: 얼음 파에리아를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2849,
     scope: 1,
@@ -15921,7 +16071,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2282',
     name: '새우 칠레',
-    description: '위력: C(손)　대상: 적 하나　속성: 불길\n새우 칠레를 만들어, 요리 효과를 발휘한다',
+    description: '위력: C(손)　대상: 적 하나　속성: 불길 새우 칠레를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2859,
     scope: 1,
@@ -15936,7 +16086,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2283',
     name: '타코야끼',
-    description: '위력: C(손)　대상: 적 하나　속성: 바람\n타코야끼를 만들어, 요리 효과를 발휘한다',
+    description: '위력: C(손)　대상: 적 하나　속성: 바람 타코야끼를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2867,
     scope: 1,
@@ -15951,7 +16101,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2284',
     name: '붕어빵',
-    description: '위력: C(손)　대상: 적 하나　속성: 물\n붕어빵를 만들어, 요리 효과를 발휘한다',
+    description: '위력: C(손)　대상: 적 하나　속성: 물 붕어빵를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2695,
     scope: 1,
@@ -15966,7 +16116,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2285',
     name: '오코노미야키',
-    description: '위력: C(손)　대상: 적 하나　속성: 흙\n오코노미야키를 만들어, 요리 효과를 발휘한다',
+    description: '위력: C(손)　대상: 적 하나　속성: 흙 오코노미야키를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2864,
     scope: 1,
@@ -15981,7 +16131,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2286',
     name: '팥빵',
-    description: '대상: 아군 전체　효과: HP소회복\n팥빵을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: HP소회복 팥빵을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2938,
     scope: 8,
@@ -15996,7 +16146,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2287',
     name: '쵸코코로네',
-    description: '대상: 아군 전체　효과: 손재주 업\n쵸코코로네를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: 손재주 업 쵸코코로네를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2942,
     scope: 8,
@@ -16008,7 +16158,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2288',
     name: '멜론 빵',
-    description: '대상: 아군 전체　효과: 마력 업\n멜론 빵을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: 마력 업 멜론 빵을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2943,
     scope: 8,
@@ -16020,7 +16170,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2289',
     name: '카레 빵',
-    description: '대상: 아군 전체　효과: 공격력 업\n카레 빵을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: 공격력 업 카레 빵을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2947,
     scope: 8,
@@ -16032,7 +16182,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2290',
     name: '고로케 빵',
-    description: '대상: 아군 전체　효과: SP차지 2배\n고로케 빵을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: SP차지 2배 고로케 빵을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2949,
     scope: 8,
@@ -16044,7 +16194,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2291',
     name: '고기만두',
-    description: '위력: B(손)　대상: 적 전체　속성: 불길\n고기만두를 만들어, 요리 효과를 발휘한다',
+    description: '위력: B(손)　대상: 적 전체　속성: 불길 고기만두를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2951,
     scope: 2,
@@ -16059,7 +16209,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2292',
     name: '찐빵',
-    description: '위력: B(손)　대상: 적 전체　속성: 얼음\n찐빵을 만들어, 요리 효과를 발휘한다',
+    description: '위력: B(손)　대상: 적 전체　속성: 얼음 찐빵을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2953,
     scope: 2,
@@ -16074,7 +16224,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2293',
     name: '피자 만두',
-    description: '위력: B(손)　대상: 적 전체　속성: 번개\n피자 만두을 만들어, 요리 효과를 발휘한다',
+    description: '위력: B(손)　대상: 적 전체　속성: 번개 피자 만두을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2952,
     scope: 2,
@@ -16089,7 +16239,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2294',
     name: '소고기 덮밥',
-    description: '위력: B(손)　대상: 적 전체\n소고기 덮밥을 만들어, 요리 효과를 발휘한다',
+    description: '위력: B(손)　대상: 적 전체 소고기 덮밥을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2843,
     scope: 2,
@@ -16104,7 +16254,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2295',
     name: '볶음밥',
-    description: '위력: B(손)　대상: 적 전체　속성: 바람\n볶음밥을 만들어, 요리 효과를 발휘한다',
+    description: '위력: B(손)　대상: 적 전체　속성: 바람 볶음밥을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2957,
     scope: 2,
@@ -16119,7 +16269,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2296',
     name: '남비',
-    description: '위력: B(손)　대상: 적 전체　속성: 흙\n남비를 만들어, 요리 효과를 발휘한다',
+    description: '위력: B(손)　대상: 적 전체　속성: 흙 남비를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2837,
     scope: 2,
@@ -16134,7 +16284,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2297',
     name: '오뎅',
-    description: '위력: B(손)　대상: 적 전체　속성: 물\n오뎅을 만들어, 요리 효과를 발휘한다',
+    description: '위력: B(손)　대상: 적 전체　속성: 물 오뎅을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2965,
     scope: 2,
@@ -16149,7 +16299,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2298',
     name: '초밥',
-    description: '대상: 아군 전체　효과: 방어력 업\n초밥을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: 방어력 업 초밥을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2687,
     scope: 8,
@@ -16161,7 +16311,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2299',
     name: '마파두부',
-    description: '대상: 아군 전체　효과: 공격력 업\n마파두부를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: 공격력 업 마파두부를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2960,
     scope: 8,
@@ -16173,7 +16323,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2300',
     name: '튀김 요리 두부',
-    description: '대상: 아군 전체　효과: 정신력 업\n튀김 요리 두부를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: 정신력 업 튀김 요리 두부를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2838,
     scope: 8,
@@ -16185,7 +16335,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2301',
     name: '로스트 치킨',
-    description: '대상: 아군 전체　효과: 마력 업\n로스트 치킨을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: 마력 업 로스트 치킨을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2956,
     scope: 8,
@@ -16197,7 +16347,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2302',
     name: '야키소바 빵',
-    description: '대상: 아군 전체　효과: 민첩성 업\n야키소바 빵을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: 민첩성 업 야키소바 빵을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2948,
     scope: 8,
@@ -16209,7 +16359,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2303',
     name: '불고기 빵',
-    description: '대상: 아군 전체　효과: 손재주 업\n불고기 빵을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: 손재주 업 불고기 빵을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2950,
     scope: 8,
@@ -16221,7 +16371,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2304',
     name: '에그 베이글 샌드',
-    description: '대상: 아군 하나　효과: MP소회복\n에그 베이글 샌드를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: MP소회복 에그 베이글 샌드를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2954,
     scope: 7,
@@ -16233,7 +16383,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2305',
     name: '연어 베이글 샌드',
-    description: '대상: 아군 하나　효과: SP소회복\n연어 베이글 샌드를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: SP소회복 연어 베이글 샌드를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2955,
     scope: 7,
@@ -16245,7 +16395,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2306',
     name: '카니타마',
-    description: '위력: A(손)　대상: 적 전체　속성: 불길\n카니타마를 만들어, 요리 효과를 발휘한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 불길 카니타마를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2959,
     scope: 2,
@@ -16260,7 +16410,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2307',
     name: '아이스크림',
-    description: '위력: A(손)　대상: 적 전체　속성: 얼음\n아이스크림을 만들어, 요리 효과를 발휘한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 얼음 아이스크림을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2865,
     scope: 2,
@@ -16275,7 +16425,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2308',
     name: '푸딩',
-    description: '위력: A(손)　대상: 적 전체　속성: 번개\n푸딩을 만들어, 요리 효과를 발휘한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 번개 푸딩을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2847,
     scope: 2,
@@ -16290,7 +16440,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2309',
     name: '파르페',
-    description: '대상: 아군 전체　효과: HP대회복\n파르페를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: HP대회복 파르페를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2855,
     scope: 8,
@@ -16305,7 +16455,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2310',
     name: '꼬마님 란치',
-    description: '대상: 아군 하나　효과: 자동 소생\n꼬마님 란치를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: 자동 소생 꼬마님 란치를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2852,
     scope: 7,
@@ -16317,7 +16467,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2311',
     name: '스테이크',
-    description: '위력: A(손)　대상: 적 전체　속성: 바람\n스테이크를 만들어, 요리 효과를 발휘한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 바람 스테이크를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2741,
     scope: 2,
@@ -16332,7 +16482,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2312',
     name: '특상 주먹밥',
-    description: '위력: A(손)　대상: 적 전체　속성: 흙\n특상 주먹밥을 만들어, 요리 효과를 발휘한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 흙 특상 주먹밥을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2856,
     scope: 2,
@@ -16347,7 +16497,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2313',
     name: '특상 스시',
-    description: '위력: A(손)　대상: 적 전체　속성: 물\n특상 스시를 만들어, 요리 효과를 발휘한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 물 특상 스시를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2851,
     scope: 2,
@@ -16362,7 +16512,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2314',
     name: '스끼야끼',
-    description: '대상: 아군 하나　효과: MP대회복\n스끼야끼를 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: MP대회복 스끼야끼를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2962,
     scope: 7,
@@ -16374,7 +16524,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2315',
     name: '인 겹',
-    description: '대상: 아군 하나　효과: SP대회복\n인 겹을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 하나　효과: SP대회복 인 겹을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2841,
     scope: 7,
@@ -16386,7 +16536,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2316',
     name: '쟈이안시츄',
-    description: '위력: A(손)　대상: 적 전체　속성: 어둠\n쟈이안시츄를 만들어, 요리 효과를 발휘한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 어둠 쟈이안시츄를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2848,
     scope: 2,
@@ -16401,7 +16551,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2317',
     name: '웨딩 케이크',
-    description: '위력: A(손)　대상: 적 전체　속성: 성\n웨딩 케이크를 만들어, 요리 효과를 발휘한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 성 웨딩 케이크를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 3994,
     scope: 2,
@@ -16416,7 +16566,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2318',
     name: '키츠네 우동',
-    description: '대상: 아군 전체　효과: SP차지 2배\n키츠네 우동을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: SP차지 2배 키츠네 우동을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2961,
     scope: 8,
@@ -16428,7 +16578,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2319',
     name: '유부 초밥',
-    description: '대상: 아군 전체　효과: MP·SP소비 1/4\n유부 초밥을 만들어, 요리 효과를 발휘한다',
+    description: '대상: 아군 전체　효과: MP·SP소비 1/4 유부 초밥을 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 2963,
     scope: 8,
@@ -16440,7 +16590,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2320',
     name: '식품 재료 채취',
-    description: '대상: 적 하나　효과: 식품 재료 훔친다\n적이 가지고 있는 식품 재료를 훔친다',
+    description: '대상: 적 하나　효과: 식품 재료 훔친다 적이 가지고 있는 식품 재료를 훔친다',
     type: '44',
     icon: 334,
     scope: 1,
@@ -16452,7 +16602,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2321',
     name: '변덕 세프의 맡겨라 요리',
-    description: '　효과: 랜덤\n랜덤에서 요리를 만들어, 요리 효과를 발휘한다',
+    description: '　효과: 랜덤 랜덤에서 요리를 만들어, 요리 효과를 발휘한다',
     type: '44',
     icon: 334,
     scope: 0,
@@ -16464,7 +16614,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2327',
     name: '메스 던지기',
-    description: '위력: E(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n적 하나에 날카로운 메스를 내던지는 호신 기술',
+    description: '위력: E(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 적 하나에 날카로운 메스를 내던지는 호신 기술',
     type: '45',
     icon: 228,
     scope: 1,
@@ -16479,7 +16629,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2328',
     name: '해부',
-    description: '위력: C(공·손)　대상: 적 하나　속성: ＋　효과: ＋\n적 하나를 해체하는 의사의 비장의 기술',
+    description: '위력: C(공·손)　대상: 적 하나　속성: ＋　효과: ＋ 적 하나를 해체하는 의사의 비장의 기술',
     type: '45',
     icon: 228,
     scope: 1,
@@ -16494,7 +16644,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2329',
     name: '바이오 닉 메스',
-    description: '위력: C(공·손)　대상: 적 하나　속성: ＋　효과: 좀비 특공＋\n시체를 적절히 처리하는 의사의 메스 다루기',
+    description: '위력: C(공·손)　대상: 적 하나　속성: ＋　효과: 좀비 특공＋ 시체를 적절히 처리하는 의사의 메스 다루기',
     type: '45',
     icon: 228,
     scope: 1,
@@ -16509,7 +16659,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2330',
     name: '타헤르아나트미아',
-    description: '위력: A(공·손)　대상: 적 하나　속성: ＋　효과: 즉사＋\n적 하나의 생명을 빼앗는 치명적 의료 행위',
+    description: '위력: A(공·손)　대상: 적 하나　속성: ＋　효과: 즉사＋ 적 하나의 생명을 빼앗는 치명적 의료 행위',
     type: '45',
     icon: 228,
     scope: 1,
@@ -16524,7 +16674,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2331',
     name: '헤르메스 헥사',
-    description: '위력: S(공·손)　대상: 적 하나　속성: ＋　효과: 좀비 특공＋\n메스로 마법진을 그려, 적을 멸하는 의료 오의',
+    description: '위력: S(공·손)　대상: 적 하나　속성: ＋　효과: 좀비 특공＋ 메스로 마법진을 그려, 적을 멸하는 의료 오의',
     type: '45',
     icon: 228,
     scope: 1,
@@ -16539,7 +16689,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2332',
     name: '독가스 살포',
-    description: '위력: C(공·손)　대상: 적 전체　속성: 바이오\n특별히 조제한 독가스를 살포하는 기술',
+    description: '위력: C(공·손)　대상: 적 전체　속성: 바이오 특별히 조제한 독가스를 살포하는 기술',
     type: '45',
     icon: 228,
     scope: 2,
@@ -16554,7 +16704,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2333',
     name: '아크 벨로시티',
-    description: '위력: S(공·손)　대상: 적 전체　속성: 바이오\n적 전체에 맹독을 흩뿌리는 외법의 의료 오의',
+    description: '위력: S(공·손)　대상: 적 전체　속성: 바이오 적 전체에 맹독을 흩뿌리는 외법의 의료 오의',
     type: '45',
     icon: 228,
     scope: 2,
@@ -16569,7 +16719,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2334',
     name: '의사놀이',
-    description: '위력: D(손)　대상: 적 하나　속성: 쾌락　효과: 민감\n요염한 촉진으로 쾌락 데미지를 주는 유희',
+    description: '위력: D(손)　대상: 적 하나　속성: 쾌락　효과: 민감 요염한 촉진으로 쾌락 데미지를 주는 유희',
     type: '45',
     icon: 228,
     scope: 1,
@@ -16584,7 +16734,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2335',
     name: '강제 배뇨',
-    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 실금\n숙달 한 손다루기로 실금을 권하는 의료 기술',
+    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 실금 숙달 한 손다루기로 실금을 권하는 의료 기술',
     type: '45',
     icon: 228,
     scope: 1,
@@ -16599,7 +16749,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2336',
     name: '응급 치료',
-    description: '대상: 아군 하나　효과: HP중 회복\n응급적인 처치로 HP를 회복 하는 의료 기술',
+    description: '대상: 아군 하나　효과: HP중 회복 응급적인 처치로 HP를 회복 하는 의료 기술',
     type: '45',
     icon: 228,
     scope: 7,
@@ -16614,7 +16764,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2337',
     name: '긴급 오퍼레이션',
-    description: '대상: 아군 하나　효과: HP전회복\n본격적인 처치로 HP를 크게 회복 하는 의료 기술',
+    description: '대상: 아군 하나　효과: HP전회복 본격적인 처치로 HP를 크게 회복 하는 의료 기술',
     type: '45',
     icon: 228,
     scope: 7,
@@ -16629,7 +16779,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2338',
     name: '집단 치료',
-    description: '대상: 아군 전체　효과: HP중 회복\n응급적인 처치로 동료들의 HP를 회복 하는 의료 기술',
+    description: '대상: 아군 전체　효과: HP중 회복 응급적인 처치로 동료들의 HP를 회복 하는 의료 기술',
     type: '45',
     icon: 228,
     scope: 8,
@@ -16644,7 +16794,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2339',
     name: '집단 오퍼레이션',
-    description: '대상: 아군 전체　효과: HP전회복\n본격적인 처치로 동료들의 HP를 크게 회복 하는 의료 기술',
+    description: '대상: 아군 전체　효과: HP전회복 본격적인 처치로 동료들의 HP를 크게 회복 하는 의료 기술',
     type: '45',
     icon: 228,
     scope: 8,
@@ -16659,7 +16809,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2340',
     name: '응급 치유',
-    description: '대상: 아군 하나　효과: 상태 이상 회복\n아군 하나 상태 이상을 회복 하는 의료 기술',
+    description: '대상: 아군 하나　효과: 상태 이상 회복 아군 하나 상태 이상을 회복 하는 의료 기술',
     type: '45',
     icon: 228,
     scope: 7,
@@ -16671,7 +16821,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2341',
     name: '집단 치유',
-    description: '대상: 아군 전체　효과: 상태 이상 회복\n아군 전체 상태 이상을 회복 하는 의료 기술',
+    description: '대상: 아군 전체　효과: 상태 이상 회복 아군 전체 상태 이상을 회복 하는 의료 기술',
     type: '45',
     icon: 228,
     scope: 8,
@@ -16683,7 +16833,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2342',
     name: '소생',
-    description: '대상: 아군 하나　효과: 소생\n아군 하나를 소생 하는 의료 기술',
+    description: '대상: 아군 하나　효과: 소생 아군 하나를 소생 하는 의료 기술',
     type: '45',
     icon: 228,
     scope: 9,
@@ -16698,7 +16848,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2343',
     name: '집단 소생',
-    description: '대상: 아군 전체　효과: 소생\n아군 전체를 소생 하는 의료 기술',
+    description: '대상: 아군 전체　효과: 소생 아군 전체를 소생 하는 의료 기술',
     type: '45',
     icon: 228,
     scope: 10,
@@ -16713,7 +16863,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2344',
     name: '대사 활성',
-    description: '대상: 아군 전체　효과: HP턴소회복\n대사를 활성화시켜, HP를 서서히 회복 시키는 의료 기술',
+    description: '대상: 아군 전체　효과: HP턴소회복 대사를 활성화시켜, HP를 서서히 회복 시키는 의료 기술',
     type: '45',
     icon: 228,
     scope: 8,
@@ -16725,7 +16875,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2345',
     name: '뒤대사 활성',
-    description: '대상: 아군 전체　효과: HP턴중 회복\n대사를 활성화시켜, HP를 서서히 회복 시키는 의료 기술',
+    description: '대상: 아군 전체　효과: HP턴중 회복 대사를 활성화시켜, HP를 서서히 회복 시키는 의료 기술',
     type: '45',
     icon: 228,
     scope: 8,
@@ -16737,7 +16887,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2346',
     name: '외법 대사 활성',
-    description: '대상: 아군 전체　효과: HP턴대회복\n대사를 활성화시켜, HP를 서서히 회복 시키는 의료 기술',
+    description: '대상: 아군 전체　효과: HP턴대회복 대사를 활성화시켜, HP를 서서히 회복 시키는 의료 기술',
     type: '45',
     icon: 228,
     scope: 8,
@@ -16749,7 +16899,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2347',
     name: '마도활성',
-    description: '대상: 아군 전체　효과: MP턴소회복\n마도대사를 활성화시켜, MP를 서서히 회복 시키는 의료 기술',
+    description: '대상: 아군 전체　효과: MP턴소회복 마도대사를 활성화시켜, MP를 서서히 회복 시키는 의료 기술',
     type: '45',
     icon: 228,
     scope: 8,
@@ -16761,7 +16911,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2348',
     name: '리마도활성',
-    description: '대상: 아군 전체　효과: MP턴중 회복\n마도대사를 활성화시켜, MP를 서서히 회복 시키는 의료 기술',
+    description: '대상: 아군 전체　효과: MP턴중 회복 마도대사를 활성화시켜, MP를 서서히 회복 시키는 의료 기술',
     type: '45',
     icon: 228,
     scope: 8,
@@ -16773,7 +16923,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2349',
     name: '외법마도활성',
-    description: '대상: 아군 전체　효과: MP턴대회복\n마도대사를 활성화시켜, MP를 서서히 회복 시키는 의료 기술',
+    description: '대상: 아군 전체　효과: MP턴대회복 마도대사를 활성화시켜, MP를 서서히 회복 시키는 의료 기술',
     type: '45',
     icon: 228,
     scope: 8,
@@ -16785,7 +16935,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2350',
     name: '도핑',
-    description: '대상: 아군 하나　효과: 최대 HP1. 5배\n특수한 약을 아군 하나에 먹여, 일시적으로 최대 HP를 증강한다',
+    description: '대상: 아군 하나　효과: 최대 HP1. 5배 특수한 약을 아군 하나에 먹여, 일시적으로 최대 HP를 증강한다',
     type: '45',
     icon: 228,
     scope: 7,
@@ -16797,7 +16947,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2351',
     name: '모두 도핑',
-    description: '대상: 아군 전체　효과: 최대 HP1. 5배\n특수한 약을 아군 전체에 먹여, 일시적으로 최대 HP를 증강한다',
+    description: '대상: 아군 전체　효과: 최대 HP1. 5배 특수한 약을 아군 전체에 먹여, 일시적으로 최대 HP를 증강한다',
     type: '45',
     icon: 228,
     scope: 8,
@@ -16809,7 +16959,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2352',
     name: '항생 물질 주사',
-    description: '대상: 아군 하나　효과: 상태 이상 예방\n항생 물질을 아군 하나에 주사해, 상태 이상을 예방한다',
+    description: '대상: 아군 하나　효과: 상태 이상 예방 항생 물질을 아군 하나에 주사해, 상태 이상을 예방한다',
     type: '45',
     icon: 228,
     scope: 7,
@@ -16821,7 +16971,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2353',
     name: '모두 항생 물질 주사',
-    description: '대상: 아군 전체　효과: 상태 이상 예방\n항생 물질을 아군 전체에 주사해, 상태 이상을 예방한다',
+    description: '대상: 아군 전체　효과: 상태 이상 예방 항생 물질을 아군 전체에 주사해, 상태 이상을 예방한다',
     type: '45',
     icon: 228,
     scope: 8,
@@ -16833,7 +16983,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2354',
     name: '내쇼크 주사',
-    description: '대상: 아군 하나　효과: 즉사·승천·절정 무효\n저항약을 아군 하나에 주사해, 즉사계 효과를 예방한다',
+    description: '대상: 아군 하나　효과: 즉사·승천·절정 무효 저항약을 아군 하나에 주사해, 즉사계 효과를 예방한다',
     type: '45',
     icon: 228,
     scope: 7,
@@ -16845,7 +16995,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2355',
     name: '모두내쇼크 주사',
-    description: '대상: 아군 전체　효과: 즉사·승천·절정 무효\n저항약을 아군 하나에 주사해, 즉사계 효과를 예방한다',
+    description: '대상: 아군 전체　효과: 즉사·승천·절정 무효 저항약을 아군 하나에 주사해, 즉사계 효과를 예방한다',
     type: '45',
     icon: 228,
     scope: 8,
@@ -16857,7 +17007,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2356',
     name: '재소생 처치',
-    description: '대상: 아군 하나　효과: 자동 소생\n특수한 처치를 실시해, 전투 불능이 되어도 자동 소생 시킨다',
+    description: '대상: 아군 하나　효과: 자동 소생 특수한 처치를 실시해, 전투 불능이 되어도 자동 소생 시킨다',
     type: '45',
     icon: 228,
     scope: 7,
@@ -16869,7 +17019,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2357',
     name: '주사인 것은!',
-    description: '대상: 적 하나　효과: 독·마비\n정체의 모르는 약품을 주사해, 상태 이상을 일으킨다',
+    description: '대상: 적 하나　효과: 독·마비 정체의 모르는 약품을 주사해, 상태 이상을 일으킨다',
     type: '45',
     icon: 228,
     scope: 1,
@@ -16881,7 +17031,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2358',
     name: '안젯드라이즈',
-    description: '대상: 적 하나　효과: 좀비\n특수한 주사로 적을 좀비화 시키는 외법의 의술',
+    description: '대상: 적 하나　효과: 좀비 특수한 주사로 적을 좀비화 시키는 외법의 의술',
     type: '45',
     icon: 228,
     scope: 1,
@@ -16893,7 +17043,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2359',
     name: '바이오 하자드',
-    description: '대상: 적 전체　효과: 좀비\n특수한 바이러스로 적 전체를 좀비화 시키는 외법의 의술',
+    description: '대상: 적 전체　효과: 좀비 특수한 바이러스로 적 전체를 좀비화 시키는 외법의 의술',
     type: '45',
     icon: 228,
     scope: 2,
@@ -16905,7 +17055,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2360',
     name: '시체는 시체에게',
-    description: '대상: 적 전체　효과: 좀비 즉사\n특수한 바이러스로 좀비를 시체에게 돌려보내는 의술',
+    description: '대상: 적 전체　효과: 좀비 즉사 특수한 바이러스로 좀비를 시체에게 돌려보내는 의술',
     type: '45',
     icon: 228,
     scope: 2,
@@ -16917,7 +17067,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2361',
     name: '아나피라키시',
-    description: '대상: 적 전체　효과: 즉사\n특수한 처치로, 독에 시달린 사람을 즉사시킨다',
+    description: '대상: 적 전체　효과: 즉사 특수한 처치로, 독에 시달린 사람을 즉사시킨다',
     type: '45',
     icon: 228,
     scope: 2,
@@ -16929,7 +17079,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2367',
     name: '먼지떨이 난무',
-    description: '위력: D(손)　대상: 적 하나　속성: ＋　효과: 어둠＋\n먼지떨이를 휘둘러, 모래 먼지로 시야를 빼앗는다',
+    description: '위력: D(손)　대상: 적 하나　속성: ＋　효과: 어둠＋ 먼지떨이를 휘둘러, 모래 먼지로 시야를 빼앗는다',
     type: '46',
     icon: 225,
     scope: 1,
@@ -16945,7 +17095,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2368',
     name: '먼지떨이 2 도난무',
-    description: '위력: B(손)　대상: 적 랜덤 4회　속성: ＋　효과: 어둠＋\n양손의 먼지떨이를 난무시켜, 모래 먼지로 시야를 빼앗는다',
+    description: '위력: B(손)　대상: 적 랜덤 4회　속성: ＋　효과: 어둠＋ 양손의 먼지떨이를 난무시켜, 모래 먼지로 시야를 빼앗는다',
     type: '46',
     icon: 225,
     scope: 3,
@@ -16961,7 +17111,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2369',
     name: '질주·걸레질',
-    description: '위력: C(손)　대상: 적 전체　속성: ＋　효과: 미끈미끈＋\n걸레를 걸치면서 적의 무리에 돌진한다',
+    description: '위력: C(손)　대상: 적 전체　속성: ＋　효과: 미끈미끈＋ 걸레를 걸치면서 적의 무리에 돌진한다',
     type: '46',
     icon: 225,
     scope: 2,
@@ -16977,7 +17127,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2370',
     name: '문어발처럼 여기저기 흩어짐 걸레질·사지분신',
-    description: '위력: A(손)　대상: 적 전체　속성: ＋　효과: 미끈미끈＋\n문어발처럼 여기저기 흩어짐을 풀 동원하면서 걸레질로 맹진한다',
+    description: '위력: A(손)　대상: 적 전체　속성: ＋　효과: 미끈미끈＋ 문어발처럼 여기저기 흩어짐을 풀 동원하면서 걸레질로 맹진한다',
     type: '46',
     icon: 225,
     scope: 2,
@@ -16993,7 +17143,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2371',
     name: '접시 던지기천매 벚꽃',
-    description: '위력: A(손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n무수한 접시를 연속으로 흐트러지고 던진다',
+    description: '위력: A(손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 무수한 접시를 연속으로 흐트러지고 던진다',
     type: '46',
     icon: 225,
     scope: 3,
@@ -17009,7 +17159,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2372',
     name: '메이드 오의·팔방미인',
-    description: '위력: S(손)　대상: 적 하나　속성: ＋　효과: ＋\n팔방미인의 동작으로 적 하나를 때려 눕히는 메이드 오의',
+    description: '위력: S(손)　대상: 적 하나　속성: ＋　효과: ＋ 팔방미인의 동작으로 적 하나를 때려 눕히는 메이드 오의',
     type: '46',
     icon: 225,
     scope: 1,
@@ -17025,7 +17175,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2373',
     name: '토요일 밤 피버',
-    description: '위력: S(손)　대상: 적 전체　속성: 쾌락＋　효과: ＋\n토요일의 한밤중과 같이 육욕을 해방하는 메이드 오의',
+    description: '위력: S(손)　대상: 적 전체　속성: 쾌락＋　효과: ＋ 토요일의 한밤중과 같이 육욕을 해방하는 메이드 오의',
     type: '46',
     icon: 225,
     scope: 2,
@@ -17041,7 +17191,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2375',
     name: '살충 스프레이',
-    description: '위력: D(손)　대상: 적 전체　효과: 충 특공\n살충 스프레이를 뿌려, 벌레에 대데미지를 준다',
+    description: '위력: D(손)　대상: 적 전체　효과: 충 특공 살충 스프레이를 뿌려, 벌레에 대데미지를 준다',
     type: '46',
     icon: 225,
     scope: 2,
@@ -17057,7 +17207,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2376',
     name: '메이드의 전정',
-    description: '위력: D(손)　대상: 적 전체　효과: 식물 특공\n가지를 전정 해, 식물에게 대데미지를 준다',
+    description: '위력: D(손)　대상: 적 전체　효과: 식물 특공 가지를 전정 해, 식물에게 대데미지를 준다',
     type: '46',
     icon: 225,
     scope: 2,
@@ -17073,7 +17223,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2377',
     name: '황홀의 맛사지',
-    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 황홀\n달콤한 성 봉사로　대상을 황홀하게 이끈다',
+    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 황홀 달콤한 성 봉사로　대상을 황홀하게 이끈다',
     type: '46',
     icon: 225,
     scope: 1,
@@ -17089,7 +17239,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2378',
     name: '실금의 맛사지',
-    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 실금\n달콤한 성 봉사로　대상을 실금에 이끈다',
+    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 실금 달콤한 성 봉사로　대상을 실금에 이끈다',
     type: '46',
     icon: 225,
     scope: 1,
@@ -17105,7 +17255,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2379',
     name: '승천의 맛사지',
-    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 절정\n달콤한 성 봉사로　대상을 승천 시킨다',
+    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 절정 달콤한 성 봉사로　대상을 승천 시킨다',
     type: '46',
     icon: 225,
     scope: 1,
@@ -17121,7 +17271,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2380',
     name: '메이드의 젖짜기',
-    description: '대상: 적 하나　효과: 밀크 획득\n목축 작업에도 통한 메이드의 젖짜기',
+    description: '대상: 적 하나　효과: 밀크 획득 목축 작업에도 통한 메이드의 젖짜기',
     type: '46',
     icon: 225,
     scope: 1,
@@ -17134,7 +17284,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2381',
     name: '강제 오줌 흘리기',
-    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 실금\n성기에 최고의 쾌락을 줘, 굴욕의 오줌 흘리기에 이끈다',
+    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 실금 성기에 최고의 쾌락을 줘, 굴욕의 오줌 흘리기에 이끈다',
     type: '46',
     icon: 225,
     scope: 1,
@@ -17150,7 +17300,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2382',
     name: '낙농 프로그램·젖짜기',
-    description: '대상: 적 하나　효과: 밀크 획득\n낙농 프로그램을 실행해, 착유를 실시한다',
+    description: '대상: 적 하나　효과: 밀크 획득 낙농 프로그램을 실행해, 착유를 실시한다',
     type: '46',
     icon: 225,
     scope: 1,
@@ -17163,7 +17313,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2383',
     name: '세정 프로그램·거품 세탁',
-    description: '위력: D(손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈·황홀\n세정 프로그램을 실행해, 거품으로 성기를 열심히 씻는다',
+    description: '위력: D(손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈·황홀 세정 프로그램을 실행해, 거품으로 성기를 열심히 씻는다',
     type: '46',
     icon: 225,
     scope: 1,
@@ -17179,7 +17329,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2384',
     name: '유희 프로그램·전기 안마',
-    description: '위력: B(손)　대상: 적 하나　속성: 물리·쾌락　효과: 마비\n유희 프로그램을 실행해, 성기에 다리로 진동을 준다',
+    description: '위력: B(손)　대상: 적 하나　속성: 물리·쾌락　효과: 마비 유희 프로그램을 실행해, 성기에 다리로 진동을 준다',
     type: '46',
     icon: 225,
     scope: 1,
@@ -17195,7 +17345,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2385',
     name: '성적 봉사 프로그램 666',
-    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: HP흡수·구속\n성적 봉사 프로그램을 실행해,　대상을 범한다',
+    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: HP흡수·구속 성적 봉사 프로그램을 실행해,　대상을 범한다',
     type: '46',
     icon: 225,
     scope: 1,
@@ -17211,7 +17361,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2386',
     name: '문어발처럼 여기저기 흩어짐 봉사',
-    description: '위력: B(손)　대상: 적 하나　속성: 쾌락　효과: 구속\n문어발처럼 여기저기 흩어짐으로 차분히 봉사해, 달콤한 쾌락을 준다',
+    description: '위력: B(손)　대상: 적 하나　속성: 쾌락　효과: 구속 문어발처럼 여기저기 흩어짐으로 차분히 봉사해, 달콤한 쾌락을 준다',
     type: '46',
     icon: 225,
     scope: 1,
@@ -17227,7 +17377,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2387',
     name: '8켤레 승천 맛사지',
-    description: '위력: S(손)　대상: 적 랜덤 8회　속성: 쾌락　효과: 절정\n8 개의 다리를 교묘하게 이용해 희롱하는 것 같은 맛사지를 실시한다',
+    description: '위력: S(손)　대상: 적 랜덤 8회　속성: 쾌락　효과: 절정 8 개의 다리를 교묘하게 이용해 희롱하는 것 같은 맛사지를 실시한다',
     type: '46',
     icon: 225,
     scope: 3,
@@ -17243,7 +17393,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2388',
     name: '메이드의 긴박',
-    description: '대상: 적 전체　효과: 어둠·침묵·구속\n숙달 한 수완으로 적을 단단히 묶고 구속해 버린다',
+    description: '대상: 적 전체　효과: 어둠·침묵·구속 숙달 한 수완으로 적을 단단히 묶고 구속해 버린다',
     type: '46',
     icon: 225,
     scope: 2,
@@ -17256,7 +17406,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2389',
     name: '차가 들어갔습니다',
-    description: '대상: 아군 하나　효과: HP·SP소회복\n메이드 특제의 차로 체력과 기력을 회복 한다',
+    description: '대상: 아군 하나　효과: HP·SP소회복 메이드 특제의 차로 체력과 기력을 회복 한다',
     type: '46',
     icon: 225,
     scope: 7,
@@ -17272,7 +17422,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2390',
     name: '특제 허브티-입니다',
-    description: '대상: 아군 하나　효과: HP·SP중 회복\n특제의 허브티-로 체력과 기력을 회복 한다',
+    description: '대상: 아군 하나　효과: HP·SP중 회복 특제의 허브티-로 체력과 기력을 회복 한다',
     type: '46',
     icon: 225,
     scope: 7,
@@ -17288,7 +17438,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2391',
     name: '금단의 허브티-입니다',
-    description: '대상: 아군 하나　효과: HP·SP대회복\n금단의 허브티-로 체력과 기력을 회복 한다',
+    description: '대상: 아군 하나　효과: HP·SP대회복 금단의 허브티-로 체력과 기력을 회복 한다',
     type: '46',
     icon: 225,
     scope: 7,
@@ -17304,7 +17454,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2392',
     name: '차가 들어갔던×8',
-    description: '대상: 아군 랜덤 8회　효과: HP·SP중 회복\n무수한 다리를 동원해, 차를 난무 시킨다',
+    description: '대상: 아군 랜덤 8회　효과: HP·SP중 회복 무수한 다리를 동원해, 차를 난무 시킨다',
     type: '46',
     icon: 225,
     scope: 3,
@@ -17320,7 +17470,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2393',
     name: '메이드 부스트',
-    description: '대상: 사용자　효과: 2회 행동·HP턴 감소\n1 턴에 2회 행동할 수 있게 되지만, 체력을 소비',
+    description: '대상: 사용자　효과: 2회 행동·HP턴 감소 1 턴에 2회 행동할 수 있게 되지만, 체력을 소비',
     type: '46',
     icon: 225,
     scope: 11,
@@ -17333,7 +17483,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2394',
     name: '배틀 메이드이십니다',
-    description: '대상: 사용자　효과: 공격력 업·물리 스킬만 사용 가능\n모든 물리 스킬 타입을 사용할 수 있어 그 이외의 스킬은 사용 불능에',
+    description: '대상: 사용자　효과: 공격력 업·물리 스킬만 사용 가능 모든 물리 스킬 타입을 사용할 수 있어 그 이외의 스킬은 사용 불능에',
     type: '46',
     icon: 225,
     scope: 11,
@@ -17346,7 +17496,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2395',
     name: '매직컬 메이드이십니다',
-    description: '대상: 사용자　효과: 마력 업·마법 스킬만 사용 가능\n모든 마법 스킬 타입을 사용할 수 있어 그 이외의 스킬은 사용 불능에',
+    description: '대상: 사용자　효과: 마력 업·마법 스킬만 사용 가능 모든 마법 스킬 타입을 사용할 수 있어 그 이외의 스킬은 사용 불능에',
     type: '46',
     icon: 225,
     scope: 11,
@@ -17359,7 +17509,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2396',
     name: '퍼펙트 메이드이십니다',
-    description: '대상: 사용자　효과: 전스킬 사용 가능\n모든 스킬 타입이 사용 가능하게 되는 금단의 메이드 오의',
+    description: '대상: 사용자　효과: 전스킬 사용 가능 모든 스킬 타입이 사용 가능하게 되는 금단의 메이드 오의',
     type: '46',
     icon: 225,
     scope: 11,
@@ -17372,7 +17522,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2397',
     name: '가정 채소밭의 수확',
-    description: '대상: 사용자　효과: 식품 재료 획득\n돌보고 있던 채소밭으로부터 식품 재료를 수확한다',
+    description: '대상: 사용자　효과: 식품 재료 획득 돌보고 있던 채소밭으로부터 식품 재료를 수확한다',
     type: '46',
     icon: 225,
     scope: 0,
@@ -17385,7 +17535,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2403',
     name: '양참',
-    description: '위력: B(공)　대상: 적 하나　속성: 불길＋　효과: ＋\n무예에 뛰어난 왕족이 습득하는 불길의 칼날',
+    description: '위력: B(공)　대상: 적 하나　속성: 불길＋　효과: ＋ 무예에 뛰어난 왕족이 습득하는 불길의 칼날',
     type: '47',
     icon: 226,
     scope: 1,
@@ -17400,7 +17550,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2404',
     name: '왕명검',
-    description: '위력: A(공)　대상: 적 전체　속성: 불길＋　효과: ＋\n왕자의 신념을 담아 내질러지는 폭염의 검',
+    description: '위력: A(공)　대상: 적 전체　속성: 불길＋　효과: ＋ 왕자의 신념을 담아 내질러지는 폭염의 검',
     type: '47',
     icon: 226,
     scope: 2,
@@ -17415,7 +17565,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2407',
     name: '르미나스레이',
-    description: '위력: S(마)　대상: 적 하나　속성: ＋　효과: ＋\n마반경으로 적을 둘러싸, 열선을 조사하는 마술',
+    description: '위력: S(마)　대상: 적 하나　속성: ＋　효과: ＋ 마반경으로 적을 둘러싸, 열선을 조사하는 마술',
     type: '47',
     icon: 226,
     scope: 1,
@@ -17430,7 +17580,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2408',
     name: '마도멸광',
-    description: '위력: S(마)　대상: 적 전체　속성: ＋　효과: ＋\n천공으로부터 파괴 광선을 조사시키는 마도왕의 오의',
+    description: '위력: S(마)　대상: 적 전체　속성: ＋　효과: ＋ 천공으로부터 파괴 광선을 조사시키는 마도왕의 오의',
     type: '47',
     icon: 226,
     scope: 2,
@@ -17445,7 +17595,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2409',
     name: '제 13 법전·철퇴',
-    description: '위력: B(마)　대상: 적 전체　속성: 성＋　효과: ＋\n성파동으로 사악을 비추는 법왕 성술',
+    description: '위력: B(마)　대상: 적 전체　속성: 성＋　효과: ＋ 성파동으로 사악을 비추는 법왕 성술',
     type: '47',
     icon: 226,
     scope: 2,
@@ -17460,7 +17610,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2413',
     name: '왕의 군대',
-    description: '위력: A(공)　대상: 적 랜덤 4회\n왕의 군대를 소집해, 적의 무리를 공격시킨다',
+    description: '위력: A(공)　대상: 적 랜덤 4회 왕의 군대를 소집해, 적의 무리를 공격시킨다',
     type: '47',
     icon: 226,
     scope: 3,
@@ -17475,7 +17625,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2415',
     name: '국교마도단',
-    description: '위력: S(마)　대상: 적 랜덤 6회\n국교마도단을 소집해, 적의 무리를 공격시킨다',
+    description: '위력: S(마)　대상: 적 랜덤 6회 국교마도단을 소집해, 적의 무리를 공격시킨다',
     type: '47',
     icon: 226,
     scope: 3,
@@ -17490,7 +17640,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2418',
     name: '회전 설법',
-    description: '대상: 적 전체　효과: 승천\n회전하면서의 설법으로 적 전체를 승천 시킨다',
+    description: '대상: 적 전체　효과: 승천 회전하면서의 설법으로 적 전체를 승천 시킨다',
     type: '47',
     icon: 226,
     scope: 2,
@@ -17502,7 +17652,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2420',
     name: '왕의 위광',
-    description: '대상: 사용자　효과: 전능력 업\n왕의 위광으로 전능력을 각성 시킨다',
+    description: '대상: 사용자　효과: 전능력 업 왕의 위광으로 전능력을 각성 시킨다',
     type: '47',
     icon: 226,
     scope: 11,
@@ -17514,7 +17664,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2421',
     name: '왕권 신수',
-    description: '대상: 사용자　효과: HP·SP·MP턴대회복\n신의 은총을 접수 HP나 MP, SP가 서서히 회복 해 나간다',
+    description: '대상: 사용자　효과: HP·SP·MP턴대회복 신의 은총을 접수 HP나 MP, SP가 서서히 회복 해 나간다',
     type: '47',
     icon: 226,
     scope: 11,
@@ -17526,7 +17676,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2422',
     name: '위안의 은총',
-    description: '대상: 아군 전체　효과: HP중 회복·SP소회복\n법왕의 기원에 의해, 아군 전체의 HP와 SP가 회복 한다',
+    description: '대상: 아군 전체　효과: HP중 회복·SP소회복 법왕의 기원에 의해, 아군 전체의 HP와 SP가 회복 한다',
     type: '47',
     icon: 226,
     scope: 8,
@@ -17541,7 +17691,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2424',
     name: '성자 재림',
-    description: '대상: 사용자　효과: 재소생\n진지한 기원에 의해, 자신의 자동 부활이 가능하게 된다',
+    description: '대상: 사용자　효과: 재소생 진지한 기원에 의해, 자신의 자동 부활이 가능하게 된다',
     type: '47',
     icon: 226,
     scope: 11,
@@ -17553,7 +17703,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2432',
     name: '(이)나 베어',
-    description: '위력: E(공)　대상: 적 랜덤 4회\n터무니없게 검을 휘두르는 검 기술',
+    description: '위력: E(공)　대상: 적 랜덤 4회 터무니없게 검을 휘두르는 검 기술',
     type: '48',
     icon: 215,
     scope: 3,
@@ -17568,7 +17718,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2433',
     name: '아류 파이어참',
-    description: '위력: D(공)　대상: 적 하나　속성: 불길\n불길의 힘으로 베어 붙이는 아류의 검 기술',
+    description: '위력: D(공)　대상: 적 하나　속성: 불길 불길의 힘으로 베어 붙이는 아류의 검 기술',
     type: '48',
     icon: 215,
     scope: 1,
@@ -17583,7 +17733,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2434',
     name: '불타라! 빙빙 참',
-    description: '위력: D(공)　대상: 적 전체　속성: 불길\n검에 불길을 품어, 빙빙 회전하는 엉뚱한 기술',
+    description: '위력: D(공)　대상: 적 전체　속성: 불길 검에 불길을 품어, 빙빙 회전하는 엉뚱한 기술',
     type: '48',
     icon: 215,
     scope: 2,
@@ -17598,7 +17748,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2435',
     name: '요마참',
-    description: '위력: C(공)　대상: 적 하나　속성: ＋　효과: 요마·흡혈귀 특공＋\n요마를 멸하는 용사의 검',
+    description: '위력: C(공)　대상: 적 하나　속성: ＋　효과: 요마·흡혈귀 특공＋ 요마를 멸하는 용사의 검',
     type: '48',
     icon: 215,
     scope: 1,
@@ -17613,7 +17763,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2436',
     name: '불사참',
-    description: '위력: C(공)　대상: 적 하나　속성: ＋　효과: 좀비·고스트 특공＋\n언데드를 멸하는 용사의 검',
+    description: '위력: C(공)　대상: 적 하나　속성: ＋　효과: 좀비·고스트 특공＋ 언데드를 멸하는 용사의 검',
     type: '48',
     icon: 215,
     scope: 1,
@@ -17628,7 +17778,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2437',
     name: '열화하늘츠바사섬',
-    description: '위력: B(공)　대상: 적 하나　속성: 불길＋　효과: ＋\n칼날에 불길을 품어, 혼신의 내리치기를 내지르는 용사의 검 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: 불길＋　효과: ＋ 칼날에 불길을 품어, 혼신의 내리치기를 내지르는 용사의 검 기술',
     type: '48',
     icon: 215,
     scope: 1,
@@ -17643,7 +17793,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2438',
     name: '홍련회천참',
-    description: '위력: B(공)　대상: 적 전체　속성: 불길＋　효과: ＋\n홍련의 불길을 휘감아 회전참를 내지르는 용사의 검 기술',
+    description: '위력: B(공)　대상: 적 전체　속성: 불길＋　효과: ＋ 홍련의 불길을 휘감아 회전참를 내지르는 용사의 검 기술',
     type: '48',
     icon: 215,
     scope: 2,
@@ -17658,7 +17808,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2439',
     name: '홍련염 무용',
-    description: '위력: A(공)　대상: 적 랜덤 4회　속성: 불길＋　효과: ＋\n지옥의 맹렬한 불을 휘감은 용사의 4연격',
+    description: '위력: A(공)　대상: 적 랜덤 4회　속성: 불길＋　효과: ＋ 지옥의 맹렬한 불을 휘감은 용사의 4연격',
     type: '48',
     icon: 215,
     scope: 3,
@@ -17673,7 +17823,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2440',
     name: '플라스마 브레이크',
-    description: '위력: S(공)　대상: 적 하나　속성: 번개＋　효과: ＋\n플라스마를 발생시키면서 어슷 베기로 하는 검 기술',
+    description: '위력: S(공)　대상: 적 하나　속성: 번개＋　효과: ＋ 플라스마를 발생시키면서 어슷 베기로 하는 검 기술',
     type: '48',
     icon: 215,
     scope: 1,
@@ -17688,7 +17838,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2441',
     name: '쉐도우 브레이크',
-    description: '위력: S(공)　대상: 적 하나　속성: 어둠＋　효과: ＋\n어둠 오라를 휘감으면서 어슷 베기로 하는 검 기술',
+    description: '위력: S(공)　대상: 적 하나　속성: 어둠＋　효과: ＋ 어둠 오라를 휘감으면서 어슷 베기로 하는 검 기술',
     type: '48',
     icon: 215,
     scope: 1,
@@ -17703,7 +17853,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2442',
     name: '열심성광참',
-    description: '위력: S(공)　대상: 적 하나　속성: 성＋　효과: ＋\n성스러운 파동을 휘감은 정화의 검',
+    description: '위력: S(공)　대상: 적 하나　속성: 성＋　효과: ＋ 성스러운 파동을 휘감은 정화의 검',
     type: '48',
     icon: 215,
     scope: 1,
@@ -17718,7 +17868,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2443',
     name: '그랜드 리온',
-    description: '위력: S(공)　대상: 적 전체　속성: ＋　효과: ＋\n정의의 마음이 이끄는 필살의 검섬',
+    description: '위력: S(공)　대상: 적 전체　속성: ＋　효과: ＋ 정의의 마음이 이끄는 필살의 검섬',
     type: '48',
     icon: 215,
     scope: 2,
@@ -17733,7 +17883,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2444',
     name: '얼티메이트 구세주',
-    description: '위력: A(공)　대상: 적 전체　속성: 성＋　효과: ＋\n용사의 더러움 없는 마음이 낳는 정화의 분류',
+    description: '위력: A(공)　대상: 적 전체　속성: 성＋　효과: ＋ 용사의 더러움 없는 마음이 낳는 정화의 분류',
     type: '48',
     icon: 215,
     scope: 2,
@@ -17748,7 +17898,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2445',
     name: '쉐도우 구세주',
-    description: '위력: A(공)　대상: 적 전체　속성: 어둠＋　효과: ＋\n용사의 어둠에게 물든 마음이 낳는 암흑의 분류',
+    description: '위력: A(공)　대상: 적 전체　속성: 어둠＋　효과: ＋ 용사의 어둠에게 물든 마음이 낳는 암흑의 분류',
     type: '48',
     icon: 215,
     scope: 2,
@@ -17763,7 +17913,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2446',
     name: '에레먼트·스피카',
-    description: '위력: SS(공)　대상: 적 하나　속성: 불길·풍·토·수＋　효과: ＋\n4 속성의 힘을 오른 팔에 머물어, 적에게 내던지는 격투 오의',
+    description: '위력: SS(공)　대상: 적 하나　속성: 불길·풍·토·수＋　효과: ＋ 4 속성의 힘을 오른 팔에 머물어, 적에게 내던지는 격투 오의',
     type: '48',
     icon: 215,
     scope: 1,
@@ -17778,7 +17928,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2448',
     name: ' 카드라풀·기가',
-    description: '위력: SS(공)　대상: 적 전체　속성: 불길·풍·토·수＋　효과: ＋\n4 속성의 힘을 검에 머물어, 모두를 끊는 궁극 최강의 오의',
+    description: '위력: SS(공)　대상: 적 전체　속성: 불길·풍·토·수＋　효과: ＋ 4 속성의 힘을 검에 머물어, 모두를 끊는 궁극 최강의 오의',
     type: '48',
     icon: 215,
     scope: 2,
@@ -17793,7 +17943,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2453',
     name: '브레이브 월',
-    description: '대상: 사용자　효과: 디후레크트 2회\n어떤 공격도 2회만 막는 방호벽을 만들어 낸다',
+    description: '대상: 사용자　효과: 디후레크트 2회 어떤 공격도 2회만 막는 방호벽을 만들어 낸다',
     type: '48',
     icon: 215,
     scope: 11,
@@ -17805,7 +17955,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2460',
     name: '자위',
-    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 민감\n손으로 성기를 애무하는 음 기술',
+    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 민감 손으로 성기를 애무하는 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -17820,7 +17970,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2461',
     name: '황홀의 손가락 사용',
-    description: '위력: B(손)　대상: 적 전체　속성: 쾌락　효과: 민감·황홀\n요염한 손가락 사용으로 성기를 훑어 황홀하게 잠기게 하는 음 기술',
+    description: '위력: B(손)　대상: 적 전체　속성: 쾌락　효과: 민감·황홀 요염한 손가락 사용으로 성기를 훑어 황홀하게 잠기게 하는 음 기술',
     type: '49',
     icon: 188,
     scope: 2,
@@ -17835,7 +17985,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2462',
     name: '승천의 손가락 사용',
-    description: '위력: B(손)　대상: 적 전체　속성: 쾌락　효과: 민감·절정\n요염한 손가락 사용으로 성기를 훑어 승천 시키는 음 기술',
+    description: '위력: B(손)　대상: 적 전체　속성: 쾌락　효과: 민감·절정 요염한 손가락 사용으로 성기를 훑어 승천 시키는 음 기술',
     type: '49',
     icon: 188,
     scope: 2,
@@ -17850,7 +18000,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2463',
     name: '골드 핑거',
-    description: '위력: B(손)　대상: 적 하나　속성: 쾌락　효과: 민감·실금\n상대를 실금에 이르게 하는 황금의 손가락 기술',
+    description: '위력: B(손)　대상: 적 하나　속성: 쾌락　효과: 민감·실금 상대를 실금에 이르게 하는 황금의 손가락 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -17865,7 +18015,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2464',
     name: '순살[瞬殺]의 손가락 기술',
-    description: '위력: S(손)　대상: 적 전체　속성: 쾌락　효과: 민감·절정\n즉시 상대를 절정 시키는 마성의 손가락 기술',
+    description: '위력: S(손)　대상: 적 전체　속성: 쾌락　효과: 민감·절정 즉시 상대를 절정 시키는 마성의 손가락 기술',
     type: '49',
     icon: 188,
     scope: 2,
@@ -17880,7 +18030,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2465',
     name: '구 음',
-    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n성기를 입으로 애무하는 음 기술',
+    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 성기를 입으로 애무하는 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -17895,7 +18045,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2466',
     name: '더 없이 행복한 구음',
-    description: '위력: A(손)　대상: 적 랜덤 4회　속성: 쾌락　효과: 미끈미끈\n달콤한 쾌락을 주는 일을 목적으로 한 요염한 구음',
+    description: '위력: A(손)　대상: 적 랜덤 4회　속성: 쾌락　효과: 미끈미끈 달콤한 쾌락을 주는 일을 목적으로 한 요염한 구음',
     type: '49',
     icon: 188,
     scope: 3,
@@ -17910,7 +18060,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2467',
     name: '종 흡 있고의 구음',
-    description: '위력: A(손)　대상: 적 랜덤 4회　속성: 쾌락　효과: 미끈미끈\n사정시키는 일을 목적으로 한 무자비한 구음',
+    description: '위력: A(손)　대상: 적 랜덤 4회　속성: 쾌락　효과: 미끈미끈 사정시키는 일을 목적으로 한 무자비한 구음',
     type: '49',
     icon: 188,
     scope: 3,
@@ -17925,7 +18075,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2468',
     name: '파이즈리',
-    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 황홀\n부드러운 가슴으로 상대의 성기를 자극하는 성 기술',
+    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 황홀 부드러운 가슴으로 상대의 성기를 자극하는 성 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -17940,7 +18090,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2469',
     name: '자애의 유압',
-    description: '위력: A(손)　대상: 적 전체　속성: 쾌락　효과: 황홀\n성기를 유방으로 압박해 자애에 잠기게 하는 음 기술',
+    description: '위력: A(손)　대상: 적 전체　속성: 쾌락　효과: 황홀 성기를 유방으로 압박해 자애에 잠기게 하는 음 기술',
     type: '49',
     icon: 188,
     scope: 2,
@@ -17955,7 +18105,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2470',
     name: '악몽의 가슴 눌러 짬',
-    description: '위력: A(손)　대상: 적 전체　속성: 쾌락　효과: 황홀\n성기를 유방으로 압박해 쾌락 지옥에 몸부림치게 하는 음 기술',
+    description: '위력: A(손)　대상: 적 전체　속성: 쾌락　효과: 황홀 성기를 유방으로 압박해 쾌락 지옥에 몸부림치게 하는 음 기술',
     type: '49',
     icon: 188,
     scope: 2,
@@ -17970,7 +18120,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2471',
     name: '승마위',
-    description: '위력: B(손)　대상: 적 하나　속성: 쾌락　효과: 구속\n상대에게 걸쳐 승마위로 적을 범하는 음 기술',
+    description: '위력: B(손)　대상: 적 하나　속성: 쾌락　효과: 구속 상대에게 걸쳐 승마위로 적을 범하는 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -17985,7 +18135,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2472',
     name: '천상의 카마스트라',
-    description: '위력: S(손)　대상: 적 하나　속성: 쾌락　효과: 구속\n상대에게 천상의 쾌락을 주는 승마위 오의',
+    description: '위력: S(손)　대상: 적 하나　속성: 쾌락　효과: 구속 상대에게 천상의 쾌락을 주는 승마위 오의',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18000,7 +18150,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2473',
     name: '경국의 꿈',
-    description: '위력: S(손)　대상: 적 하나　속성: 쾌락　효과: 구속\n모든 남녀를 포로로 하는 승마위 오의',
+    description: '위력: S(손)　대상: 적 하나　속성: 쾌락　효과: 구속 모든 남녀를 포로로 하는 승마위 오의',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18015,7 +18165,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2474',
     name: '초살그라인드',
-    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 구속·절정\n격렬한 허리의 움직임으로 즉시 절정 시키는 승마위의 오의',
+    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 구속·절정 격렬한 허리의 움직임으로 즉시 절정 시키는 승마위의 오의',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18030,7 +18180,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2475',
     name: '흡정살',
-    description: '위력: SS(손)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n정기를 천천히 빨아 올리는 승마위의 오의',
+    description: '위력: SS(손)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 정기를 천천히 빨아 올리는 승마위의 오의',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18045,7 +18195,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2476',
     name: '헤분즈킷스',
-    description: '위력: B(손)　대상: 적 랜덤 3회　속성: 쾌락　효과: 민감·승천\n천국의 키스로 승천 시키는 음 기술',
+    description: '위력: B(손)　대상: 적 랜덤 3회　속성: 쾌락　효과: 민감·승천 천국의 키스로 승천 시키는 음 기술',
     type: '49',
     icon: 188,
     scope: 3,
@@ -18060,7 +18210,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2477',
     name: '데스킷스',
-    description: '위력: B(손)　대상: 적 랜덤 3회　속성: 쾌락　효과: 민감·즉사\n마성의 키스로 죽어 권하는 음 기술',
+    description: '위력: B(손)　대상: 적 랜덤 3회　속성: 쾌락　효과: 민감·즉사 마성의 키스로 죽어 권하는 음 기술',
     type: '49',
     icon: 188,
     scope: 3,
@@ -18075,7 +18225,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2478',
     name: '음락 관련 합계',
-    description: '위력: B(손)　대상: 적 하나　속성: 쾌락　효과: 구속\n휘감기도록(듯이) 밀착해, 부드러운 육체로 조르는 조르기',
+    description: '위력: B(손)　대상: 적 하나　속성: 쾌락　효과: 구속 휘감기도록(듯이) 밀착해, 부드러운 육체로 조르는 조르기',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18090,7 +18240,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2479',
     name: '사랑과 음욕의 도그마',
-    description: '위력: SS(손)　대상: 적 전체　속성: 쾌락　효과: 구속·절정\n궁극의 성 기술이라고도 말하고 있는 음란 오의',
+    description: '위력: SS(손)　대상: 적 전체　속성: 쾌락　효과: 구속·절정 궁극의 성 기술이라고도 말하고 있는 음란 오의',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18105,7 +18255,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2480',
     name: '사타구니 연속 차는 것',
-    description: '위력: B(손or민)　대상: 적 하나　속성: 물리·쾌락　효과: 마비\n사타구니를 연속으로 차 붙여, 마비 시키는 기술',
+    description: '위력: B(손or민)　대상: 적 하나　속성: 물리·쾌락　효과: 마비 사타구니를 연속으로 차 붙여, 마비 시키는 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18120,7 +18270,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2481',
     name: '초속전기 안마',
-    description: '위력: A(손or민)　대상: 적 하나　속성: 물리·쾌락　효과: 마비\n상대의 사타구니에 다리로 진동을 주고 희세우는 음 기술',
+    description: '위력: A(손or민)　대상: 적 하나　속성: 물리·쾌락　효과: 마비 상대의 사타구니에 다리로 진동을 주고 희세우는 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18135,7 +18285,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2483',
     name: '소악마의 손가락 기술',
-    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락　효과: 민감\n소악마의 손가락 사용으로 달콤한 쾌락을 주는 음 기술',
+    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락　효과: 민감 소악마의 손가락 사용으로 달콤한 쾌락을 주는 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18150,7 +18300,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2484',
     name: '라핀젠드',
-    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 민감\n요염한 손다루기로 성기를 애무하는 음마의 자위',
+    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 민감 요염한 손다루기로 성기를 애무하는 음마의 자위',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18165,7 +18315,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2485',
     name: '소악마의 입 기술',
-    description: '위력: D(손or마)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n소악마의 혀 사용으로 성기에 쾌락을 주는 음 기술',
+    description: '위력: D(손or마)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 소악마의 혀 사용으로 성기에 쾌락을 주는 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18180,7 +18330,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2486',
     name: '틴큐르스',
-    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n끈적한 구견 있고로 성기를 희롱하는 음마의 음 기술',
+    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 끈적한 구견 있고로 성기를 희롱하는 음마의 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18195,7 +18345,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2487',
     name: '소악마의 파이즈리',
-    description: '위력: D(손or마)　대상: 적 하나　속성: 쾌락　효과: 황홀\n소악마의 유방으로 성기를 주무르는 음 기술',
+    description: '위력: D(손or마)　대상: 적 하나　속성: 쾌락　효과: 황홀 소악마의 유방으로 성기를 주무르는 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18210,7 +18360,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2488',
     name: '메로소피',
-    description: '위력: B(손or마)　대상: 적 하나　속성: 쾌락　효과: 황홀\n포근한 유방으로 성기를 애무하는 음마의 음 기술',
+    description: '위력: B(손or마)　대상: 적 하나　속성: 쾌락　효과: 황홀 포근한 유방으로 성기를 애무하는 음마의 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18225,7 +18375,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2489',
     name: '소악마 강간',
-    description: '위력: D(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n소악마의 승마위로 상대를 범하는 음 기술',
+    description: '위력: D(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 소악마의 승마위로 상대를 범하는 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18240,7 +18390,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2490',
     name: '에너지 드레인',
-    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n상대를 승마위로 범해 정기를 짜내는 서큐버스의 특기',
+    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 상대를 승마위로 범해 정기를 짜내는 서큐버스의 특기',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18255,7 +18405,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2491',
     name: '나이트메어 드레인',
-    description: '위력: S(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n번민 미치는 것 같은 쾌락으로 상대를 마르고 학시키는 음마의 오의',
+    description: '위력: S(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 번민 미치는 것 같은 쾌락으로 상대를 마르고 학시키는 음마의 오의',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18270,7 +18420,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2492',
     name: '쿠즈드레인',
-    description: '위력: SS(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n최고의 쾌락을 주면서 정기를 다 빼앗는 여왕의 오의',
+    description: '위력: SS(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 최고의 쾌락을 주면서 정기를 다 빼앗는 여왕의 오의',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18285,7 +18435,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2493',
     name: '테이르드레인',
-    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수\n꼬리로부터 정령을 착취하는 음마의 흡수 기술',
+    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수 꼬리로부터 정령을 착취하는 음마의 흡수 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18300,7 +18450,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2494',
     name: '테이르드레인·프랑',
-    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수\n학끝날 때까지 꼬리로 정령을 빨아 올리는 음마의 오의',
+    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수 학끝날 때까지 꼬리로 정령을 빨아 올리는 음마의 오의',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18315,7 +18465,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2495',
     name: '메르틱킷스',
-    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락　효과: 민감·황홀\n달콤한 키스로 황홀하게 잠기게 하는 음마의 초급 기술',
+    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락　효과: 민감·황홀 달콤한 키스로 황홀하게 잠기게 하는 음마의 초급 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18330,7 +18480,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2496',
     name: '메르틱보아',
-    description: '대상: 적 하나　효과: 포식\n황홀하게 잠겨 있는 상대를 꼬리로 포식 하는 음마의 오의',
+    description: '대상: 적 하나　효과: 포식 황홀하게 잠겨 있는 상대를 꼬리로 포식 하는 음마의 오의',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18342,7 +18492,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2497',
     name: '사큐바스아트',
-    description: '위력: S(공or손)　대상: 적 하나　속성: 물리·쾌락　효과: 절정\n흐르는 것 같은 연속음 기술로 상대를 절정에 이끄는 오의',
+    description: '위력: S(공or손)　대상: 적 하나　속성: 물리·쾌락　효과: 절정 흐르는 것 같은 연속음 기술로 상대를 절정에 이끄는 오의',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18357,7 +18507,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2498',
     name: '사큐바스아트영식',
-    description: '위력: SS(공or손)　대상: 적 하나　속성: 물리·쾌락　효과: 절정\n여러가지 음 기술을 연속으로 내질러, 절정에 몰아넣는 궁극음 기술',
+    description: '위력: SS(공or손)　대상: 적 하나　속성: 물리·쾌락　효과: 절정 여러가지 음 기술을 연속으로 내질러, 절정에 몰아넣는 궁극음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18372,7 +18522,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2499',
     name: '리리스오르기아',
-    description: '위력: S(손or마)　대상: 적 전체　속성: 쾌락　효과: 민감·황홀\n복수에 분신 해 적을 하렘의 쾌락에게 잠기게 하는 오의',
+    description: '위력: S(손or마)　대상: 적 전체　속성: 쾌락　효과: 민감·황홀 복수에 분신 해 적을 하렘의 쾌락에게 잠기게 하는 오의',
     type: '49',
     icon: 188,
     scope: 2,
@@ -18387,7 +18537,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2501',
     name: '엘프의 손 애무',
-    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 민감\n날씬한 손바닥으로 성기를 자극하는 엘프의 음 기술',
+    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 민감 날씬한 손바닥으로 성기를 자극하는 엘프의 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18402,7 +18552,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2502',
     name: '엘프의 풋잡',
-    description: '위력: D(손)　대상: 적 하나　속성: 물리·쾌락\n상대를 덮어누르고 성기를 짓밟는 엘프의 음 기술',
+    description: '위력: D(손)　대상: 적 하나　속성: 물리·쾌락 상대를 덮어누르고 성기를 짓밟는 엘프의 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18417,7 +18567,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2503',
     name: '엘프의 페라',
-    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n탐내는 것 같은 구견 있고로 성기를 빠는 엘프의 음 기술',
+    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 탐내는 것 같은 구견 있고로 성기를 빠는 엘프의 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18432,7 +18582,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2504',
     name: '엘프의 파이즈리',
-    description: '위력: B(손)　대상: 적 하나　속성: 쾌락　효과: 황홀\n차분히 감싸도록(듯이) 성기를 애무하는 엘프의 음 기술',
+    description: '위력: B(손)　대상: 적 하나　속성: 쾌락　효과: 황홀 차분히 감싸도록(듯이) 성기를 애무하는 엘프의 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18447,7 +18597,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2505',
     name: '지옥의 억압 고기단지',
-    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 구속\n힘들게 꼭 죄이는 여성기를 구사한 엘프의 음 기술',
+    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 구속 힘들게 꼭 죄이는 여성기를 구사한 엘프의 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18462,7 +18612,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2506',
     name: '천국의 허리 흔들기 고기단지',
-    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 구속\n달콤한 요견 있고를 구사한 엘프의 음 기술',
+    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 구속 달콤한 요견 있고를 구사한 엘프의 음 기술',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18477,7 +18627,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2507',
     name: '밑바닥이 없는 종 들이마셔 항아리',
-    description: '위력: SS(손)　대상: 적 하나　속성: 쾌락　효과: 구속\n탐욕에 정액을 다 짜는 엘프의 오의',
+    description: '위력: SS(손)　대상: 적 하나　속성: 쾌락　효과: 구속 탐욕에 정액을 다 짜는 엘프의 오의',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18492,7 +18642,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2509',
     name: '황홀의 키스',
-    description: '위력: D(손)　대상: 적 하나　속성: 쾌락　효과: 황홀\n달콤한 마력으로 상대를 황홀하게 잠기게 하는 키스',
+    description: '위력: D(손)　대상: 적 하나　속성: 쾌락　효과: 황홀 달콤한 마력으로 상대를 황홀하게 잠기게 하는 키스',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18507,7 +18657,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2510',
     name: '절정의 키스',
-    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 절정\n달콤한 마력으로 상대를 절정 시키는 키스',
+    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 절정 달콤한 마력으로 상대를 절정 시키는 키스',
     type: '49',
     icon: 188,
     scope: 1,
@@ -18522,7 +18672,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2511',
     name: '열락의 방호',
-    description: '대상: 사용자　효과: 쾌락 반감\n정신을 집중해 받는 쾌락을 경감한다',
+    description: '대상: 사용자　효과: 쾌락 반감 정신을 집중해 받는 쾌락을 경감한다',
     type: '49',
     icon: 188,
     scope: 11,
@@ -18534,7 +18684,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2512',
     name: '열락의 차단',
-    description: '대상: 사용자　효과: 쾌락 무효\n정신을 집중 주위차이의 쾌락을 차단한다',
+    description: '대상: 사용자　효과: 쾌락 무효 정신을 집중 주위차이의 쾌락을 차단한다',
     type: '49',
     icon: 188,
     scope: 11,
@@ -18546,7 +18696,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2513',
     name: '쾌락이야말로 양식',
-    description: '대상: 사용자　효과: 쾌락 흡수\n탐욕인 본성을 드러내 받는 쾌락을 양식으로 한다',
+    description: '대상: 사용자　효과: 쾌락 흡수 탐욕인 본성을 드러내 받는 쾌락을 양식으로 한다',
     type: '49',
     icon: 188,
     scope: 11,
@@ -18558,7 +18708,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2514',
     name: '버스트 프레스',
-    description: '위력: B(손)　대상: 적 전체　속성: 쾌락\n거대한 유방으로 적을 찌부러뜨리는 젖가슴 오의',
+    description: '위력: B(손)　대상: 적 전체　속성: 쾌락 거대한 유방으로 적을 찌부러뜨리는 젖가슴 오의',
     type: '49',
     icon: 188,
     scope: 2,
@@ -18573,7 +18723,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2519',
     name: '파이어 왈츠',
-    description: '위력: D(마or민)　대상: 적 전체　속성: 불길\n불길을 발생시키고 적을 다 굽는 마 기술',
+    description: '위력: D(마or민)　대상: 적 전체　속성: 불길 불길을 발생시키고 적을 다 굽는 마 기술',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18588,7 +18738,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2520',
     name: '플레어 론도',
-    description: '위력: B(마or민)　대상: 적 전체　속성: 불길\n지옥의 맹렬한 불을 발생시키고 적을 후려쳐 넘긴마 기술',
+    description: '위력: B(마or민)　대상: 적 전체　속성: 불길 지옥의 맹렬한 불을 발생시키고 적을 후려쳐 넘긴마 기술',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18603,7 +18753,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2521',
     name: '반 레퀴엠',
-    description: '위력: A(마or민)　대상: 적 전체　속성: 불길\n작열의 불길로 적을 다 굽는 마족의 오의',
+    description: '위력: A(마or민)　대상: 적 전체　속성: 불길 작열의 불길로 적을 다 굽는 마족의 오의',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18618,7 +18768,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2522',
     name: '아크 오벨리스크',
-    description: '위력: SS(마or민)　대상: 적 랜덤 9회　속성: 불길\n불길의 총알을 연속 방사해 적을 다 굽는 오의',
+    description: '위력: SS(마or민)　대상: 적 랜덤 9회　속성: 불길 불길의 총알을 연속 방사해 적을 다 굽는 오의',
     type: '50',
     icon: 205,
     scope: 3,
@@ -18633,7 +18783,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2523',
     name: '태고의 불길',
-    description: '위력: SS(마or민)　대상: 적 하나　속성: 불길\n태고의 불길을 소환 해 적을 멸하는 오의',
+    description: '위력: SS(마or민)　대상: 적 하나　속성: 불길 태고의 불길을 소환 해 적을 멸하는 오의',
     type: '50',
     icon: 205,
     scope: 1,
@@ -18648,7 +18798,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2525',
     name: '빙풍',
-    description: '위력: D(마or력)　대상: 적 전체　속성: 얼음·바람\n얼어붙는 것 같은 바람을 피울 수 있는 마 기술',
+    description: '위력: D(마or력)　대상: 적 전체　속성: 얼음·바람 얼어붙는 것 같은 바람을 피울 수 있는 마 기술',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18663,7 +18813,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2526',
     name: '령풍 얼음결',
-    description: '위력: B(마or력)　대상: 적 전체　속성: 얼음·바람\n주위를 얼음결 시키고 적을 얼게 하는 마 기술',
+    description: '위력: B(마or력)　대상: 적 전체　속성: 얼음·바람 주위를 얼음결 시키고 적을 얼게 하는 마 기술',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18678,7 +18828,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2527',
     name: '극풍동결진',
-    description: '위력: A(마or력)　대상: 적 전체　속성: 얼음·바람\n얼음의 진으로 적을 동결시키는 오의',
+    description: '위력: A(마or력)　대상: 적 전체　속성: 얼음·바람 얼음의 진으로 적을 동결시키는 오의',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18693,7 +18843,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2529',
     name: '생각번개',
-    description: '위력: D(마or손)　대상: 적 전체　속성: 번개\n생각으로 낙뢰를 일으키는 마 기술',
+    description: '위력: D(마or손)　대상: 적 전체　속성: 번개 생각으로 낙뢰를 일으키는 마 기술',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18708,7 +18858,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2530',
     name: '마뢰',
-    description: '위력: B(마or손)　대상: 적 전체　속성: 번개\n마력으로 번개를 불러, 적을 토벌하는 마 기술',
+    description: '위력: B(마or손)　대상: 적 전체　속성: 번개 마력으로 번개를 불러, 적을 토벌하는 마 기술',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18723,7 +18873,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2531',
     name: '흑뢰',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 번개\n암흑의 번개를 초래 하는 오의',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 번개 암흑의 번개를 초래 하는 오의',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18738,7 +18888,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2532',
     name: '월하의 야상곡',
-    description: '위력: S(마or손)　대상: 적 전체　속성: 번개\n격렬한 번개빛으로 적을 토벌해 멸하는 오의',
+    description: '위력: S(마or손)　대상: 적 전체　속성: 번개 격렬한 번개빛으로 적을 토벌해 멸하는 오의',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18753,7 +18903,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2534',
     name: '사지타리아',
-    description: '위력: A(마or정)　대상: 적 하나　속성: 성\n성스러운 오라로 만든 화살로 적을 꿰뚫는 마 기술',
+    description: '위력: A(마or정)　대상: 적 하나　속성: 성 성스러운 오라로 만든 화살로 적을 꿰뚫는 마 기술',
     type: '50',
     icon: 205,
     scope: 1,
@@ -18768,7 +18918,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2535',
     name: '산스피아',
-    description: '위력: B(마or정)　대상: 적 전체　속성: 성\n성스러운 오라를 적 전체에 조사하는 마 기술',
+    description: '위력: B(마or정)　대상: 적 전체　속성: 성 성스러운 오라를 적 전체에 조사하는 마 기술',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18783,7 +18933,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2536',
     name: '에바게리오',
-    description: '위력: A(마or정)　대상: 적 전체　속성: 성\n성스러운 파동으로 격렬한 폭발을 일으키는 오의',
+    description: '위력: A(마or정)　대상: 적 전체　속성: 성 성스러운 파동으로 격렬한 폭발을 일으키는 오의',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18798,7 +18948,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2537',
     name: '흡혈',
-    description: '위력: E(공or손)　대상: 적 하나　효과: HP·SP흡수\n적으로부터 피를 빨아들여, 정기를 흡수한다',
+    description: '위력: E(공or손)　대상: 적 하나　효과: HP·SP흡수 적으로부터 피를 빨아들여, 정기를 흡수한다',
     type: '50',
     icon: 205,
     scope: 1,
@@ -18810,7 +18960,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2538',
     name: '마정흡혈',
-    description: '위력: D(공or손)　대상: 적 하나　효과: HP·SP·MP흡수\n적으로부터 피를 빨아들여, 정기나 마력을 흡수한다',
+    description: '위력: D(공or손)　대상: 적 하나　효과: HP·SP·MP흡수 적으로부터 피를 빨아들여, 정기나 마력을 흡수한다',
     type: '50',
     icon: 205,
     scope: 1,
@@ -18822,7 +18972,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2539',
     name: '착혈살',
-    description: '위력: B(공or손)　대상: 적 하나　효과: HP·SP·MP흡수\n무자비한 흡혈로, 정력을 착취한다',
+    description: '위력: B(공or손)　대상: 적 하나　효과: HP·SP·MP흡수 무자비한 흡혈로, 정력을 착취한다',
     type: '50',
     icon: 205,
     scope: 1,
@@ -18834,7 +18984,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2540',
     name: '여왕의 무한 흡혈',
-    description: '위력: S(공or손)　대상: 적 하나　효과: HP·SP·MP흡수\n여왕의 흡혈로, 정기나 마력을 다 빼앗는다',
+    description: '위력: S(공or손)　대상: 적 하나　효과: HP·SP·MP흡수 여왕의 흡혈로, 정기나 마력을 다 빼앗는다',
     type: '50',
     icon: 205,
     scope: 1,
@@ -18846,7 +18996,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2542',
     name: '배트 차지',
-    description: '위력: D(공or손)　대상: 적 랜덤 3회　속성: ＋　효과: ＋\n육체를 무수한 박쥐로 바꾸고 적에게 덤벼 든다',
+    description: '위력: D(공or손)　대상: 적 랜덤 3회　속성: ＋　효과: ＋ 육체를 무수한 박쥐로 바꾸고 적에게 덤벼 든다',
     type: '50',
     icon: 205,
     scope: 3,
@@ -18861,7 +19011,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2543',
     name: '배트 스톰',
-    description: '위력: B(공or손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n육체를 무수한 박쥐로 바꾸고 폭풍우와 같이 흩날린다',
+    description: '위력: B(공or손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 육체를 무수한 박쥐로 바꾸고 폭풍우와 같이 흩날린다',
     type: '50',
     icon: 205,
     scope: 3,
@@ -18876,7 +19026,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2544',
     name: '어둠의 박쥐 난무',
-    description: '위력: S(공or손)　대상: 적 랜덤 6회　속성: ＋　효과: ＋\n육체를 무수한 박쥐로 바꾸고 격렬하게 난무 한다',
+    description: '위력: S(공or손)　대상: 적 랜덤 6회　속성: ＋　효과: ＋ 육체를 무수한 박쥐로 바꾸고 격렬하게 난무 한다',
     type: '50',
     icon: 205,
     scope: 3,
@@ -18891,7 +19041,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2546',
     name: '독의 마안',
-    description: '대상: 적 전체　효과: 독\n마력을 담은 눈동자로 응시해, 적을 독상태로 한다',
+    description: '대상: 적 전체　효과: 독 마력을 담은 눈동자로 응시해, 적을 독상태로 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18903,7 +19053,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2547',
     name: '어둠의 마안',
-    description: '대상: 적 전체　효과: 어둠\n마력을 담은 눈동자로 응시해, 적을 어둠 상태로 한다',
+    description: '대상: 적 전체　효과: 어둠 마력을 담은 눈동자로 응시해, 적을 어둠 상태로 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18915,7 +19065,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2548',
     name: '침묵의 마안',
-    description: '대상: 적 전체　효과: 침묵\n마력을 담은 눈동자로 응시해, 적을 침묵 상태로 한다',
+    description: '대상: 적 전체　효과: 침묵 마력을 담은 눈동자로 응시해, 적을 침묵 상태로 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18927,7 +19077,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2549',
     name: '혼란의 마안',
-    description: '대상: 적 전체　효과: 혼란\n마력을 담은 눈동자로 응시해, 적을 혼란 상태로 한다',
+    description: '대상: 적 전체　효과: 혼란 마력을 담은 눈동자로 응시해, 적을 혼란 상태로 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18939,7 +19089,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2550',
     name: '수면의 마안',
-    description: '대상: 적 전체　효과: 수면\n마력을 담은 눈동자로 응시해, 적을 수면 상태로 한다',
+    description: '대상: 적 전체　효과: 수면 마력을 담은 눈동자로 응시해, 적을 수면 상태로 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18951,7 +19101,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2551',
     name: '마비의 마안',
-    description: '대상: 적 전체　효과: 마비\n마력을 담은 눈동자로 응시해, 적을 마비 상태로 한다',
+    description: '대상: 적 전체　효과: 마비 마력을 담은 눈동자로 응시해, 적을 마비 상태로 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18963,7 +19113,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2552',
     name: '불꽃상의 마안',
-    description: '대상: 적 전체　효과: 반\n마력을 담은 눈동자로 응시해, 적을 반 상태로 한다',
+    description: '대상: 적 전체　효과: 반 마력을 담은 눈동자로 응시해, 적을 반 상태로 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18975,7 +19125,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2553',
     name: '동결의 마안',
-    description: '대상: 적 전체　효과: 프리즈\n마력을 담은 눈동자로 응시해, 적을 프리즈 상태로 한다',
+    description: '대상: 적 전체　효과: 프리즈 마력을 담은 눈동자로 응시해, 적을 프리즈 상태로 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18987,7 +19137,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2554',
     name: '감전의 마안',
-    description: '대상: 적 전체　효과: 쇼크\n마력을 담은 눈동자로 응시해, 적을 쇼크 상태로 한다',
+    description: '대상: 적 전체　효과: 쇼크 마력을 담은 눈동자로 응시해, 적을 쇼크 상태로 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -18999,7 +19149,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2555',
     name: '폭주의 마안',
-    description: '대상: 적 전체　효과: 버서크\n마력을 담은 눈동자로 응시해, 적을 버서크 상태로 한다',
+    description: '대상: 적 전체　효과: 버서크 마력을 담은 눈동자로 응시해, 적을 버서크 상태로 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19011,7 +19161,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2556',
     name: '석화의 마안',
-    description: '대상: 적 전체　효과: 석화\n마력을 담은 눈동자로 응시해, 적을 석화 시킨다',
+    description: '대상: 적 전체　효과: 석화 마력을 담은 눈동자로 응시해, 적을 석화 시킨다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19023,7 +19173,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2557',
     name: '즉사의 마안',
-    description: '대상: 적 전체　효과: 즉사\n마력을 담은 눈동자로 응시해, 적을 즉사시킨다',
+    description: '대상: 적 전체　효과: 즉사 마력을 담은 눈동자로 응시해, 적을 즉사시킨다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19035,7 +19185,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2558',
     name: '마지막 마안',
-    description: '대상: 적 전체　효과: 랜덤 상태 이상\n마력을 담은 눈동자로 응시해, 적을 복수 상태 이상하게 한다',
+    description: '대상: 적 전체　효과: 랜덤 상태 이상 마력을 담은 눈동자로 응시해, 적을 복수 상태 이상하게 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19047,7 +19197,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2560',
     name: '황홀의 마안',
-    description: '대상: 적 전체　효과: 황홀\n마력을 담은 눈동자로 응시해, 적을 황홀 상태로 한다',
+    description: '대상: 적 전체　효과: 황홀 마력을 담은 눈동자로 응시해, 적을 황홀 상태로 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19059,7 +19209,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2561',
     name: '유혹의 마안',
-    description: '대상: 적 전체　효과: 유혹\n마력을 담은 눈동자로 응시해, 적을 유혹 상태로 한다',
+    description: '대상: 적 전체　효과: 유혹 마력을 담은 눈동자로 응시해, 적을 유혹 상태로 한다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19071,7 +19221,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2562',
     name: '실금의 마안',
-    description: '대상: 적 전체　효과: 실금\n마력을 담은 눈동자로 응시해, 적을 실금 시킨다',
+    description: '대상: 적 전체　효과: 실금 마력을 담은 눈동자로 응시해, 적을 실금 시킨다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19083,7 +19233,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2563',
     name: '절정의 마안',
-    description: '대상: 적 전체　효과: 절정\n마력을 담은 눈동자로 응시해, 적을 절정 시킨다',
+    description: '대상: 적 전체　효과: 절정 마력을 담은 눈동자로 응시해, 적을 절정 시킨다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19095,7 +19245,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2564',
     name: '정화의 마안',
-    description: '대상: 적 전체　효과: 승천\n마력을 담은 눈동자로 응시해, 적을 승천 시킨다',
+    description: '대상: 적 전체　효과: 승천 마력을 담은 눈동자로 응시해, 적을 승천 시킨다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19107,7 +19257,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2565',
     name: '회복의 마안',
-    description: '대상: 아군 전체　효과: HP중 회복\n마력을 담은 눈동자로 응시해, 아군의 HP를 회복 시킨다',
+    description: '대상: 아군 전체　효과: HP중 회복 마력을 담은 눈동자로 응시해, 아군의 HP를 회복 시킨다',
     type: '50',
     icon: 205,
     scope: 8,
@@ -19122,7 +19272,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2566',
     name: '완쾌의 마안',
-    description: '대상: 아군 전체　효과: HP전회복\n마력을 담은 눈동자로 응시해, 아군의 HP를 완쾌 시킨다',
+    description: '대상: 아군 전체　효과: HP전회복 마력을 담은 눈동자로 응시해, 아군의 HP를 완쾌 시킨다',
     type: '50',
     icon: 205,
     scope: 8,
@@ -19137,7 +19287,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2567',
     name: '치유의 마안',
-    description: '대상: 아군 하나　효과: 상태 이상 회복\n마력을 담은 눈동자로 응시해, 아군 상태 이상을 치유 한다',
+    description: '대상: 아군 하나　효과: 상태 이상 회복 마력을 담은 눈동자로 응시해, 아군 상태 이상을 치유 한다',
     type: '50',
     icon: 205,
     scope: 7,
@@ -19149,7 +19299,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2568',
     name: '부활의 마안',
-    description: '대상: 아군 하나　효과: 완전 소생\n마력을 담은 눈동자로 응시해, 아군을 소생 시킨다',
+    description: '대상: 아군 하나　효과: 완전 소생 마력을 담은 눈동자로 응시해, 아군을 소생 시킨다',
     type: '50',
     icon: 205,
     scope: 9,
@@ -19164,7 +19314,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2569',
     name: '영면의 권유',
-    description: '대상: 적 전체　효과: 즉사\n영원의 잠으로 이끌어, 수면 상태의 적을 즉사시킨다',
+    description: '대상: 적 전체　효과: 즉사 영원의 잠으로 이끌어, 수면 상태의 적을 즉사시킨다',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19176,7 +19326,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2570',
     name: '쾌락 승천',
-    description: '대상: 적 전체　효과: 즉사\n쾌락 상태 이상의 적을 즉사시키는 음마의 여왕의 비장의 기술',
+    description: '대상: 적 전체　효과: 즉사 쾌락 상태 이상의 적을 즉사시키는 음마의 여왕의 비장의 기술',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19188,7 +19338,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2571',
     name: '혀의 채찍',
-    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: 미끈미끈＋\n길게 뻗은 혀를 채찍과 같이 터는 타격 기술',
+    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: 미끈미끈＋ 길게 뻗은 혀를 채찍과 같이 터는 타격 기술',
     type: '50',
     icon: 205,
     scope: 1,
@@ -19203,7 +19353,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2572',
     name: '혀권합계',
-    description: '위력: C(공or손)　대상: 적 하나　속성: ＋　효과: 구속·미끈미끈＋\n길게 뻗은 혀를 내둘러 붙여, 단단히 조이는 기술',
+    description: '위력: C(공or손)　대상: 적 하나　속성: ＋　효과: 구속·미끈미끈＋ 길게 뻗은 혀를 내둘러 붙여, 단단히 조이는 기술',
     type: '50',
     icon: 205,
     scope: 1,
@@ -19218,7 +19368,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2573',
     name: '신설난무',
-    description: '위력: A(공or손)　대상: 적 하나　속성: ＋　효과: 미끈미끈＋\n성장한 혀를 난무시켜, 적에게 연속 타격을 주는 오의',
+    description: '위력: A(공or손)　대상: 적 하나　속성: ＋　효과: 미끈미끈＋ 성장한 혀를 난무시켜, 적에게 연속 타격을 주는 오의',
     type: '50',
     icon: 205,
     scope: 1,
@@ -19233,7 +19383,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2574',
     name: '사타구니 할짝할짝 빨고',
-    description: '위력: D(공or손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n길게 뻗은 혀로 사타구니를 할짝할짝 핥아대는 쾌락 기술',
+    description: '위력: D(공or손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 길게 뻗은 혀로 사타구니를 할짝할짝 핥아대는 쾌락 기술',
     type: '50',
     icon: 205,
     scope: 1,
@@ -19248,7 +19398,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2575',
     name: '나선 기절 빨고',
-    description: '위력: B(공or손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n성장한 혀로 나선을 그리도록(듯이) 몸을 핥아대는 쾌락 기술',
+    description: '위력: B(공or손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 성장한 혀로 나선을 그리도록(듯이) 몸을 핥아대는 쾌락 기술',
     type: '50',
     icon: 205,
     scope: 1,
@@ -19263,7 +19413,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2576',
     name: '쾌락혀지옥',
-    description: '위력: A(공or손)　대상: 적 전체　속성: 쾌락　효과: 미끈미끈\n성장한 혀로 전신을 할짝할짝에 핥아대는 쾌락 오의',
+    description: '위력: A(공or손)　대상: 적 전체　속성: 쾌락　효과: 미끈미끈 성장한 혀로 전신을 할짝할짝에 핥아대는 쾌락 오의',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19278,7 +19428,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2577',
     name: '얼어붙는 입 맞춤',
-    description: '위력: E(손or마)　대상: 적 하나　속성: 얼음·쾌락　효과: 프리즈\n키스 한 사람을 얼어붙게 해 버리는 마성의 기술',
+    description: '위력: E(손or마)　대상: 적 하나　속성: 얼음·쾌락　효과: 프리즈 키스 한 사람을 얼어붙게 해 버리는 마성의 기술',
     type: '50',
     icon: 205,
     scope: 1,
@@ -19293,7 +19443,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2578',
     name: '류발흡정',
-    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수\n머리카락을 펴, 감아 꺼낸 상대로부터 정령을 들이마시는 마 기술',
+    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수 머리카락을 펴, 감아 꺼낸 상대로부터 정령을 들이마시는 마 기술',
     type: '50',
     icon: 205,
     scope: 1,
@@ -19308,7 +19458,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2579',
     name: '음등발착',
-    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수\n마성의 머리카락을 휘감기게 해 적의 정령을 짜 세우는 마 기술',
+    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수 마성의 머리카락을 휘감기게 해 적의 정령을 짜 세우는 마 기술',
     type: '50',
     icon: 205,
     scope: 1,
@@ -19323,7 +19473,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2580',
     name: '탕발절 기술',
-    description: '위력: A(손or마)　대상: 적 랜덤 3회　속성: 쾌락　효과: HP흡수\n편 머리카락을 난무시켜, 애무하면서 정령을 짜내는 오의',
+    description: '위력: A(손or마)　대상: 적 랜덤 3회　속성: 쾌락　효과: HP흡수 편 머리카락을 난무시켜, 애무하면서 정령을 짜내는 오의',
     type: '50',
     icon: 205,
     scope: 3,
@@ -19338,7 +19488,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2581',
     name: '팔손이나무 애무',
-    description: '위력: B(손or민)　대상: 적 하나　속성: 쾌락　효과: 민감\n8 개의 손으로 요염하게 애무하는 쾌락 기술',
+    description: '위력: B(손or민)　대상: 적 하나　속성: 쾌락　효과: 민감 8 개의 손으로 요염하게 애무하는 쾌락 기술',
     type: '50',
     icon: 205,
     scope: 1,
@@ -19353,7 +19503,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2582',
     name: '지옥 자위 겹침이네',
-    description: '위력: S(손or민)　대상: 적 랜덤 4회　속성: 쾌락　효과: 민감\n다완으로 성기에의 애무를 집중시키는 쾌락 오의',
+    description: '위력: S(손or민)　대상: 적 랜덤 4회　속성: 쾌락　효과: 민감 다완으로 성기에의 애무를 집중시키는 쾌락 오의',
     type: '50',
     icon: 205,
     scope: 3,
@@ -19368,7 +19518,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2583',
     name: '흡정망토',
-    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n마력이 가득찬 망토로 적을 감싸, 정령을 짜는 마 기술',
+    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 마력이 가득찬 망토로 적을 감싸, 정령을 짜는 마 기술',
     type: '50',
     icon: 205,
     scope: 1,
@@ -19383,7 +19533,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2584',
     name: '음막의 레퀴엠',
-    description: '위력: A(손or마)　대상: 적 전체　속성: 쾌락　효과: 구속·HP흡수\n망토로 적의 몸을 가려 싸, 정기를 착취하는 오의',
+    description: '위력: A(손or마)　대상: 적 전체　속성: 쾌락　효과: 구속·HP흡수 망토로 적의 몸을 가려 싸, 정기를 착취하는 오의',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19398,7 +19548,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2585',
     name: '지모신의 수위',
-    description: '위력: SS(손or민)　대상: 적 랜덤 4회　속성: 쾌락　효과: 민감\n태고의 성 전에게만 남는, 달콤하고 추잡한 자위 기술',
+    description: '위력: SS(손or민)　대상: 적 랜덤 4회　속성: 쾌락　효과: 민감 태고의 성 전에게만 남는, 달콤하고 추잡한 자위 기술',
     type: '50',
     icon: 205,
     scope: 3,
@@ -19413,7 +19563,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2586',
     name: '구 음의 제물',
-    description: '위력: SS(손or민)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n태고의 성 전에게만 남는, 끈적 요염한 구음 기술',
+    description: '위력: SS(손or민)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 태고의 성 전에게만 남는, 끈적 요염한 구음 기술',
     type: '50',
     icon: 205,
     scope: 1,
@@ -19428,7 +19578,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2587',
     name: '이시스의 방술',
-    description: '위력: S(손or민)　대상: 적 전체　속성: 쾌락　효과: 황홀\n태고의 성 전에게만 남는다, 녹을 것 같게 달콤한 흉음 기술',
+    description: '위력: S(손or민)　대상: 적 전체　속성: 쾌락　효과: 황홀 태고의 성 전에게만 남는다, 녹을 것 같게 달콤한 흉음 기술',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19443,7 +19593,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2588',
     name: '키스·오브·데스',
-    description: '위력: S(손or민)　대상: 적 하나　속성: 쾌락　효과: 즉사\n상대를 무자비한 죽어 권하는 악몽의 키스',
+    description: '위력: S(손or민)　대상: 적 하나　속성: 쾌락　효과: 즉사 상대를 무자비한 죽어 권하는 악몽의 키스',
     type: '50',
     icon: 205,
     scope: 1,
@@ -19458,7 +19608,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2589',
     name: '스핀크스리돌',
-    description: '대상: 적 전체　효과: 즉사\n물음에 대답할 수 없었던 사람을 즉사시키는 태고의 오의',
+    description: '대상: 적 전체　효과: 즉사 물음에 대답할 수 없었던 사람을 즉사시키는 태고의 오의',
     type: '50',
     icon: 205,
     scope: 2,
@@ -19470,7 +19620,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2593',
     name: '위안의 바람',
-    description: '대상: 아군 전체　효과: HP소회복\n전원의 HP를 아주 조금만 회복 시키는 마 기술',
+    description: '대상: 아군 전체　효과: HP소회복 전원의 HP를 아주 조금만 회복 시키는 마 기술',
     type: '50',
     icon: 205,
     scope: 8,
@@ -19485,7 +19635,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2594',
     name: '듀라한 트윈스',
-    description: '대상: 사용자　효과: 2회 공격·전능력 다운\n목과 몸통을 분리해 2회 공격이 가능하지만, 각각의 능력은 저하',
+    description: '대상: 사용자　효과: 2회 공격·전능력 다운 목과 몸통을 분리해 2회 공격이 가능하지만, 각각의 능력은 저하',
     type: '50',
     icon: 205,
     scope: 11,
@@ -19497,7 +19647,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2595',
     name: '듀라한 론도',
-    description: '대상: 사용자　효과: 2회 행동·전능력 다운\n목과 몸통을 분리해 2회 행동이 가능하지만, 각각의 능력은 저하',
+    description: '대상: 사용자　효과: 2회 행동·전능력 다운 목과 몸통을 분리해 2회 행동이 가능하지만, 각각의 능력은 저하',
     type: '50',
     icon: 205,
     scope: 11,
@@ -19509,7 +19659,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2596',
     name: '룡혼마도',
-    description: '대상: 아군 하나　효과: SP차지 5배·턴 SP중 회복\n아군 하나의 투쟁심을 높여, SP회복량을 대업 시키는 오의',
+    description: '대상: 아군 하나　효과: SP차지 5배·턴 SP중 회복 아군 하나의 투쟁심을 높여, SP회복량을 대업 시키는 오의',
     type: '63',
     icon: 205,
     scope: 7,
@@ -19521,7 +19671,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2602',
     name: '수 격',
-    description: '위력: D(마or손)　대상: 적 하나　속성: 물\n응축한 물을 탄환과 같이 쏘기 시작하는 인어의 특기',
+    description: '위력: D(마or손)　대상: 적 하나　속성: 물 응축한 물을 탄환과 같이 쏘기 시작하는 인어의 특기',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19536,7 +19686,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2603',
     name: '대해소',
-    description: '위력: B(마or손)　대상: 적 전체　속성: 물\n마력으로 대해소를 끌어 들이는 인어의 기술',
+    description: '위력: B(마or손)　대상: 적 전체　속성: 물 마력으로 대해소를 끌어 들이는 인어의 기술',
     type: '51',
     icon: 155,
     scope: 2,
@@ -19551,7 +19701,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2604',
     name: '메이르슈트롬',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 물\n마력으로 거대한 해일을 초래 하는 인어의 오의',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 물 마력으로 거대한 해일을 초래 하는 인어의 오의',
     type: '51',
     icon: 155,
     scope: 2,
@@ -19566,7 +19716,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2605',
     name: '물총',
-    description: '위력: S(마or손)　대상: 적 하나　속성: 물\n압축한 물의 덩어리를 주입하는 오의',
+    description: '위력: S(마or손)　대상: 적 하나　속성: 물 압축한 물의 덩어리를 주입하는 오의',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19581,7 +19731,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2606',
     name: '노치라스',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 물\n주위를 물로 채워 물압으로 단번에 압괴 하는 오의',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 물 주위를 물로 채워 물압으로 단번에 압괴 하는 오의',
     type: '51',
     icon: 155,
     scope: 2,
@@ -19596,7 +19746,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2607',
     name: '메이르스트림',
-    description: '위력: S(마or손)　대상: 적 전체　속성: 물\n격렬한 해일과 동시에 폭풍우를 불러일으키는 인어 비전의 오의',
+    description: '위력: S(마or손)　대상: 적 전체　속성: 물 격렬한 해일과 동시에 폭풍우를 불러일으키는 인어 비전의 오의',
     type: '51',
     icon: 155,
     scope: 2,
@@ -19611,7 +19761,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2608',
     name: '냉기',
-    description: '위력: C(마or손)　대상: 적 전체　속성: 얼음\n마력으로 주위를 얼어붙게 하는 인어의 기술',
+    description: '위력: C(마or손)　대상: 적 전체　속성: 얼음 마력으로 주위를 얼어붙게 하는 인어의 기술',
     type: '51',
     icon: 155,
     scope: 2,
@@ -19626,7 +19776,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2609',
     name: '다이아몬드 더스트',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 얼음\n마력으로 결정을 세례를 퍼부을 수 있는 인어의 오의',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 얼음 마력으로 결정을 세례를 퍼부을 수 있는 인어의 오의',
     type: '51',
     icon: 155,
     scope: 2,
@@ -19641,7 +19791,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2612',
     name: '물중 방전',
-    description: '위력: C(마or손)　대상: 적 전체　속성: 번개\n물중에서 방전해, 적 전체를 감전시키는 기술',
+    description: '위력: C(마or손)　대상: 적 전체　속성: 번개 물중에서 방전해, 적 전체를 감전시키는 기술',
     type: '51',
     icon: 155,
     scope: 2,
@@ -19656,7 +19806,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2613',
     name: '해신의 번개',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 번개\n해신의 힘을 빌려 분노의 번개를 초래 하는 오의',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 번개 해신의 힘을 빌려 분노의 번개를 초래 하는 오의',
     type: '51',
     icon: 155,
     scope: 2,
@@ -19671,7 +19821,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2614',
     name: '마메이드테일',
-    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: 음파 약점＋\n마력을 담은 꼬리로 구타해, 음파를 약점으로 하는 인어 체술',
+    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: 음파 약점＋ 마력을 담은 꼬리로 구타해, 음파를 약점으로 하는 인어 체술',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19686,7 +19836,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2615',
     name: '스크리테일',
-    description: '위력: C(공or손)　대상: 적 하나　속성: ＋　효과: 음파 약점＋\n후벼파는 것 같은 꼬리의 움직임으로 데미지를 쫓게 하는 인어 체술',
+    description: '위력: C(공or손)　대상: 적 하나　속성: ＋　효과: 음파 약점＋ 후벼파는 것 같은 꼬리의 움직임으로 데미지를 쫓게 하는 인어 체술',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19701,7 +19851,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2616',
     name: '인어의 서머 솔트',
-    description: '위력: A(공or손)　대상: 적 하나　속성: ＋　효과: 음파 약점＋\n하반신의 근육을 풀로 이용한 인어의 체술 오의',
+    description: '위력: A(공or손)　대상: 적 하나　속성: ＋　효과: 음파 약점＋ 하반신의 근육을 풀로 이용한 인어의 체술 오의',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19716,7 +19866,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2617',
     name: '서머 솔트 론도',
-    description: '위력: SS(공or손)　대상: 적 하나　속성: ＋　효과: 음파 약점＋\n서머 솔트를 연속으로 내지르는 인어의 궁극 체술',
+    description: '위력: SS(공or손)　대상: 적 하나　속성: ＋　효과: 음파 약점＋ 서머 솔트를 연속으로 내지르는 인어의 궁극 체술',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19731,7 +19881,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2618',
     name: '젤 프리즌',
-    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 구속\n산장의 육체로 감싸, 구속하는 종족 고유의 기술',
+    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 구속 산장의 육체로 감싸, 구속하는 종족 고유의 기술',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19746,7 +19896,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2619',
     name: '심연에 끌어들이는 사람',
-    description: '위력: B(공)　대상: 적 전체　효과: 인어·해서종 특공\n바다에 깃드는 마물에게 대데미지를 주는 심연으로부터의 촉수',
+    description: '위력: B(공)　대상: 적 전체　효과: 인어·해서종 특공 바다에 깃드는 마물에게 대데미지를 주는 심연으로부터의 촉수',
     type: '51',
     icon: 155,
     scope: 2,
@@ -19761,7 +19911,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2620',
     name: '심해의 공물',
-    description: '대상: 적 하나　효과: 포식\n심해의 포식자가, 어둠 상태의 적을 탐내 먹는다',
+    description: '대상: 적 하나　효과: 포식 심해의 포식자가, 어둠 상태의 적을 탐내 먹는다',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19773,7 +19923,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2621',
     name: '머메이드 자위',
-    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락　효과: 민감\n물이나 나무가 있는 손바닥으로 독특한 자극을 주는 인어의 자위',
+    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락　효과: 민감 물이나 나무가 있는 손바닥으로 독특한 자극을 주는 인어의 자위',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19788,7 +19938,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2622',
     name: '물고기 필레 애무',
-    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n미끌거린 꼬리 필레로 감싸도록(듯이) 애무하는 인어 특유의 음 기술',
+    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 미끌거린 꼬리 필레로 감싸도록(듯이) 애무하는 인어 특유의 음 기술',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19803,7 +19953,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2623',
     name: '머메이드 강간',
-    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속\n날씬한 하반신으로 상대를 범하는 인어의 음 기술',
+    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속 날씬한 하반신으로 상대를 범하는 인어의 음 기술',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19818,7 +19968,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2624',
     name: '아와아와',
-    description: '위력: D(손or마)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n상대를 거품 투성이로 해 쾌락을 준다',
+    description: '위력: D(손or마)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 상대를 거품 투성이로 해 쾌락을 준다',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19833,7 +19983,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2625',
     name: '메르티 워쉬',
-    description: '위력: B(손or마)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈·황홀\n상대의 성기를 거품으로 씻어, 녹을 것 같은 쾌락에게 잠기게 한다',
+    description: '위력: B(손or마)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈·황홀 상대의 성기를 거품으로 씻어, 녹을 것 같은 쾌락에게 잠기게 한다',
     type: '51',
     icon: 155,
     scope: 1,
@@ -19848,7 +19998,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2626',
     name: '위안의 비',
-    description: '대상: 아군 전체　효과: HP중 회복·MP소회복\n인어의 마력으로 위안을 세례를 퍼부을 수 있는 회복 기술',
+    description: '대상: 아군 전체　효과: HP중 회복·MP소회복 인어의 마력으로 위안을 세례를 퍼부을 수 있는 회복 기술',
     type: '51',
     icon: 155,
     scope: 8,
@@ -19863,7 +20013,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2627',
     name: '생명의 비',
-    description: '대상: 아군 전체　효과: HP대회복·MP중 회복·상태 이상 회복\n인어의 마력으로 생명을 세례를 퍼부을 수 있는 회복 기술',
+    description: '대상: 아군 전체　효과: HP대회복·MP중 회복·상태 이상 회복 인어의 마력으로 생명을 세례를 퍼부을 수 있는 회복 기술',
     type: '51',
     icon: 155,
     scope: 8,
@@ -19878,7 +20028,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2628',
     name: '기적의 비',
-    description: '대상: 아군 전체　효과: HP전회복·MP대회복·상태 이상 회복\n인어의 마력으로 기적을 세례를 퍼부을 수 있는 회복 기술',
+    description: '대상: 아군 전체　효과: HP전회복·MP대회복·상태 이상 회복 인어의 마력으로 기적을 세례를 퍼부을 수 있는 회복 기술',
     type: '51',
     icon: 155,
     scope: 8,
@@ -19893,7 +20043,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2630',
     name: '기적의 비',
-    description: '대상: 아군 전체　효과: HP전회복·MP중 회복·상태 이상 회복\n인어의 마력으로 기적을 세례를 퍼부을 수 있는 회복 기술',
+    description: '대상: 아군 전체　효과: HP전회복·MP중 회복·상태 이상 회복 인어의 마력으로 기적을 세례를 퍼부을 수 있는 회복 기술',
     type: '51',
     icon: 155,
     scope: 8,
@@ -19908,7 +20058,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2631',
     name: '치유의 비',
-    description: '대상: 아군 전체　효과: 상태 이상 회복\n치유함의 비에 의해 아군 전원 상태 이상을 회복 한다',
+    description: '대상: 아군 전체　효과: 상태 이상 회복 치유함의 비에 의해 아군 전원 상태 이상을 회복 한다',
     type: '51',
     icon: 155,
     scope: 8,
@@ -19920,7 +20070,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2635',
     name: '슬라임 이루고 갈아라',
-    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: ＋\n슬라임을 가시 상태로 바꾸어, 적을 따끔따끔 하는 기술',
+    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: ＋ 슬라임을 가시 상태로 바꾸어, 적을 따끔따끔 하는 기술',
     type: '52',
     icon: 174,
     scope: 1,
@@ -19935,7 +20085,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2636',
     name: '슬라임 스플래쉬',
-    description: '위력: C(공or손)　대상: 적 전체　속성: ＋　효과: ＋\n슬라임을 탄환장으로 해 내세우는 공격 기술',
+    description: '위력: C(공or손)　대상: 적 전체　속성: ＋　효과: ＋ 슬라임을 탄환장으로 해 내세우는 공격 기술',
     type: '52',
     icon: 174,
     scope: 2,
@@ -19950,7 +20100,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2637',
     name: '슬라임궁닐',
-    description: '위력: A(공or손)　대상: 적 전체　속성: ＋　효과: ＋\n슬라임의 창으로 적 전체를 후려쳐 넘긴 오의',
+    description: '위력: A(공or손)　대상: 적 전체　속성: ＋　효과: ＋ 슬라임의 창으로 적 전체를 후려쳐 넘긴 오의',
     type: '52',
     icon: 174,
     scope: 2,
@@ -19965,7 +20115,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2638',
     name: '슬라임드로우',
-    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n점액을 착 달라붙게 해 쾌락을 주는 기술',
+    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 점액을 착 달라붙게 해 쾌락을 주는 기술',
     type: '52',
     icon: 174,
     scope: 1,
@@ -19980,7 +20130,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2639',
     name: '슬라임헤분',
-    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈\n점액으로 상대를 감싸, 자유를 빼앗는 쾌락 기술',
+    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈 점액으로 상대를 감싸, 자유를 빼앗는 쾌락 기술',
     type: '52',
     icon: 174,
     scope: 1,
@@ -19995,7 +20145,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2640',
     name: '슬라임 유토피아',
-    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈\n대량의 점액으로 적을 가려 싸 다 희롱하는 쾌락 오의',
+    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈 대량의 점액으로 적을 가려 싸 다 희롱하는 쾌락 오의',
     type: '52',
     icon: 174,
     scope: 1,
@@ -20010,7 +20160,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2643',
     name: '황홀 점액',
-    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈·황홀\n마력이 가득찬 점액으로 적을 싸 황홀하게 잠기게 한다',
+    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈·황홀 마력이 가득찬 점액으로 적을 싸 황홀하게 잠기게 한다',
     type: '52',
     icon: 174,
     scope: 1,
@@ -20025,7 +20175,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2644',
     name: '실금 점액',
-    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈·실금\n마력이 가득찬 점액으로 적을 싸 실금 시킨다',
+    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈·실금 마력이 가득찬 점액으로 적을 싸 실금 시킨다',
     type: '52',
     icon: 174,
     scope: 1,
@@ -20040,7 +20190,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2645',
     name: '용해액',
-    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 소화·미끈미끈\n용해 효과가 있는 점액을 상대에게 퍼붓는다',
+    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 소화·미끈미끈 용해 효과가 있는 점액을 상대에게 퍼붓는다',
     type: '52',
     icon: 174,
     scope: 1,
@@ -20055,7 +20205,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2646',
     name: '소화 점액',
-    description: '위력: B(손)　대상: 적 하나　속성: 쾌락　효과: 소화·미끈미끈\n소화액을 겸한 점액으로 적을 가려 싼다',
+    description: '위력: B(손)　대상: 적 하나　속성: 쾌락　효과: 소화·미끈미끈 소화액을 겸한 점액으로 적을 가려 싼다',
     type: '52',
     icon: 174,
     scope: 1,
@@ -20070,7 +20220,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2647',
     name: '소화 점액의 소용돌이',
-    description: '위력: A(손)　대상: 적 전체　속성: 쾌락　효과: 소화·미끈미끈\n소화 점액으로 주위를 채워 적 전체를 정리해 소화한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 쾌락　효과: 소화·미끈미끈 소화 점액으로 주위를 채워 적 전체를 정리해 소화한다',
     type: '52',
     icon: 174,
     scope: 2,
@@ -20085,7 +20235,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2648',
     name: '블롭 보아',
-    description: '대상: 적 하나　효과: 포식\n소화 점액을 받은 적을 포식 해 버린다',
+    description: '대상: 적 하나　효과: 포식 소화 점액을 받은 적을 포식 해 버린다',
     type: '52',
     icon: 174,
     scope: 1,
@@ -20097,7 +20247,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2649',
     name: '식육의 레퀴엠',
-    description: '대상: 적 전체　효과: 포식\n소화 점액을 받은 적을 복수 정리해 포식 한다',
+    description: '대상: 적 전체　효과: 포식 소화 점액을 받은 적을 복수 정리해 포식 한다',
     type: '52',
     icon: 174,
     scope: 2,
@@ -20109,7 +20259,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2650',
     name: '소화 점액 침식',
-    description: '대상: 사용자　효과: 매턴 포식\n점액을 주위에 침식시켜, 소화액을 받은 사람을 포식 한다',
+    description: '대상: 사용자　효과: 매턴 포식 점액을 주위에 침식시켜, 소화액을 받은 사람을 포식 한다',
     type: '52',
     icon: 174,
     scope: 11,
@@ -20121,7 +20271,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2651',
     name: '끈적끈적 점액 지옥',
-    description: '위력: B(손)　대상: 적 전체　속성: 쾌락　효과: 미끈미끈\n끈적끈적의 점액을 주위에 흩뿌려 쾌락에게 몸부림치게 한다',
+    description: '위력: B(손)　대상: 적 전체　속성: 쾌락　효과: 미끈미끈 끈적끈적의 점액을 주위에 흩뿌려 쾌락에게 몸부림치게 한다',
     type: '52',
     icon: 174,
     scope: 2,
@@ -20136,7 +20286,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2652',
     name: '질척질척 점액 천국',
-    description: '위력: A(손)　대상: 적 전체　속성: 쾌락　효과: 미끈미끈·소화\n질척질척의 점액으로 주위를 채워 쾌락에게 녹게 한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 쾌락　효과: 미끈미끈·소화 질척질척의 점액으로 주위를 채워 쾌락에게 녹게 한다',
     type: '52',
     icon: 174,
     scope: 2,
@@ -20151,7 +20301,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2654',
     name: '슬라임 자폭',
-    description: '위력: 가변　대상: 적 전체\n점액 내부에 압력을 발생시켜, 자폭하는 오의',
+    description: '위력: 가변　대상: 적 전체 점액 내부에 압력을 발생시켜, 자폭하는 오의',
     type: '52',
     icon: 174,
     scope: 2,
@@ -20166,7 +20316,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2656',
     name: '슬라임 힐',
-    description: '대상: 아군 하나　효과: HP중 회복·미끈미끈\n위안의 점액으로 아군 하나를 안회복 한다',
+    description: '대상: 아군 하나　효과: HP중 회복·미끈미끈 위안의 점액으로 아군 하나를 안회복 한다',
     type: '52',
     icon: 174,
     scope: 7,
@@ -20181,7 +20331,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2657',
     name: '슬라임 메가 힐',
-    description: '대상: 아군 하나　효과: HP대회복·미끈미끈\n위안의 점액으로 아군 하나를 대회복 한다',
+    description: '대상: 아군 하나　효과: HP대회복·미끈미끈 위안의 점액으로 아군 하나를 대회복 한다',
     type: '52',
     icon: 174,
     scope: 7,
@@ -20196,7 +20346,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2658',
     name: '슬라임 올 힐',
-    description: '대상: 아군 전체　효과: HP중 회복·미끈미끈\n위안의 점액으로 아군 전체를 안회복 한다',
+    description: '대상: 아군 전체　효과: HP중 회복·미끈미끈 위안의 점액으로 아군 전체를 안회복 한다',
     type: '52',
     icon: 174,
     scope: 8,
@@ -20211,7 +20361,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2659',
     name: '슬라임 올 메가 힐',
-    description: '대상: 아군 전체　효과: HP대회복·미끈미끈\n위안의 점액으로 아군 전체를 대회복 한다',
+    description: '대상: 아군 전체　효과: HP대회복·미끈미끈 위안의 점액으로 아군 전체를 대회복 한다',
     type: '52',
     icon: 174,
     scope: 8,
@@ -20226,7 +20376,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2660',
     name: '슬라임 큐어',
-    description: '대상: 아군 하나　효과: 상태 이상 회복\n치유의 점액으로 아군 하나 상태 이상을 치료한다',
+    description: '대상: 아군 하나　효과: 상태 이상 회복 치유의 점액으로 아군 하나 상태 이상을 치료한다',
     type: '52',
     icon: 174,
     scope: 7,
@@ -20238,7 +20388,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2661',
     name: '슬라임 올 큐어',
-    description: '대상: 아군 전체　효과: 상태 이상 회복\n치유의 점액으로 아군 전체 상태 이상을 치료한다',
+    description: '대상: 아군 전체　효과: 상태 이상 회복 치유의 점액으로 아군 전체 상태 이상을 치료한다',
     type: '52',
     icon: 174,
     scope: 8,
@@ -20250,7 +20400,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2662',
     name: '슬라임 래이즈',
-    description: '대상: 아군 하나　효과: 소생·미끈미끈\n위안의 점액으로 아군 하나를 소생 시키는 기술',
+    description: '대상: 아군 하나　효과: 소생·미끈미끈 위안의 점액으로 아군 하나를 소생 시키는 기술',
     type: '52',
     icon: 174,
     scope: 9,
@@ -20265,7 +20415,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2663',
     name: '아쿠아 실드',
-    description: '대상: 아군 전체　효과: 방어력 업\n점액의 실드로 아군 전체의 방어력을 업 시킨다',
+    description: '대상: 아군 전체　효과: 방어력 업 점액의 실드로 아군 전체의 방어력을 업 시킨다',
     type: '52',
     icon: 174,
     scope: 8,
@@ -20277,7 +20427,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2664',
     name: '아쿠아 밀러',
-    description: '대상: 아군 전체　효과: 마법 반사\n점액의 거울로 마법을 반사한다',
+    description: '대상: 아군 전체　효과: 마법 반사 점액의 거울로 마법을 반사한다',
     type: '52',
     icon: 174,
     scope: 8,
@@ -20289,7 +20439,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2665',
     name: '아크아메타볼',
-    description: '대상: 아군 전체　효과: 상태 이상 무효\n점액으로 대사를 정돈해, 상태 이상을 무효화한다',
+    description: '대상: 아군 전체　효과: 상태 이상 무효 점액으로 대사를 정돈해, 상태 이상을 무효화한다',
     type: '52',
     icon: 174,
     scope: 8,
@@ -20301,7 +20451,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2666',
     name: '아크아리젼',
-    description: '대상: 아군 전체　효과: HP·MP턴소회복\n점액으로 대사를 활성화시켜, HP와 MP를 서서히 회복 시킨다',
+    description: '대상: 아군 전체　효과: HP·MP턴소회복 점액으로 대사를 활성화시켜, HP와 MP를 서서히 회복 시킨다',
     type: '52',
     icon: 174,
     scope: 8,
@@ -20313,7 +20463,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2667',
     name: '가짜 슬라임',
-    description: '대상: 사용자　효과: 회피율대업\n점액으로 가짜를 만들어 내, 회피율을 업 시킨다',
+    description: '대상: 사용자　효과: 회피율대업 점액으로 가짜를 만들어 내, 회피율을 업 시킨다',
     type: '52',
     icon: 174,
     scope: 11,
@@ -20325,7 +20475,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2669',
     name: '네버랜드 프런티어',
-    description: '대상: 적 전체　효과: 전능력 다운\n특수한 마술로 적을 아이로 해, 능력을 대폭 약체화 시킨다',
+    description: '대상: 적 전체　효과: 전능력 다운 특수한 마술로 적을 아이로 해, 능력을 대폭 약체화 시킨다',
     type: '52',
     icon: 174,
     scope: 2,
@@ -20337,7 +20487,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2670',
     name: '분열',
-    description: '대상: 사용자　효과: 2회 행동·전능력소다운\n2체에 분열해 2회 행동이 가능하게 되지만, 능력은 내린다',
+    description: '대상: 사용자　효과: 2회 행동·전능력소다운 2체에 분열해 2회 행동이 가능하게 되지만, 능력은 내린다',
     type: '52',
     icon: 174,
     scope: 11,
@@ -20349,7 +20499,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2671',
     name: '디바인디스티니',
-    description: '대상: 사용자　효과: 3회 행동·전능력소다운\n3체에 분열해 3회 행동이 가능하게 되지만, 능력은 내린다',
+    description: '대상: 사용자　효과: 3회 행동·전능력소다운 3체에 분열해 3회 행동이 가능하게 되지만, 능력은 내린다',
     type: '52',
     icon: 174,
     scope: 11,
@@ -20361,7 +20511,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2678',
     name: '할퀴기',
-    description: '위력: E(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n날카로운 손톱으로 세게 긁는 짐승 기술',
+    description: '위력: E(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 날카로운 손톱으로 세게 긁는 짐승 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20376,7 +20526,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2679',
     name: '일격의 손톱',
-    description: '위력: B(공·민)　대상: 적 하나　속성: ＋　효과: 즉사＋\n급소를 노려 날카로운 손톱을 휘두른짐승 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: ＋　효과: 즉사＋ 급소를 노려 날카로운 손톱을 휘두른짐승 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20391,7 +20541,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2680',
     name: '교조난격',
-    description: '위력: A(공·민)　대상: 적 하나　속성: ＋　효과: ＋\n깨물기와 할퀴기를 연속으로 내지르는 난무 기술',
+    description: '위력: A(공·민)　대상: 적 하나　속성: ＋　효과: ＋ 깨물기와 할퀴기를 연속으로 내지르는 난무 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20406,7 +20556,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2681',
     name: '전진조',
-    description: '위력: B(공·민)　대상: 적 하나　속성: 번개＋　효과: ＋\n전격을 수반한 손톱으로 세게 긁는 짐승 기술',
+    description: '위력: B(공·민)　대상: 적 하나　속성: 번개＋　효과: ＋ 전격을 수반한 손톱으로 세게 긁는 짐승 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20421,7 +20571,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2682',
     name: '혼란전진조',
-    description: '위력: S(공·민)　대상: 적 랜덤 4회　속성: 번개＋　효과: ＋\n전격을 수반한 손톱으로 흐트러지고 베는 짐승 기술',
+    description: '위력: S(공·민)　대상: 적 랜덤 4회　속성: 번개＋　효과: ＋ 전격을 수반한 손톱으로 흐트러지고 베는 짐승 기술',
     type: '53',
     icon: 3842,
     scope: 3,
@@ -20436,7 +20586,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2683',
     name: '그리피스 스크래치',
-    description: '위력: S(공·민)　대상: 적 하나　속성: 불길＋　효과: ＋\n불길을 품은 손톱을 주입하는 짐승의 오의',
+    description: '위력: S(공·민)　대상: 적 하나　속성: 불길＋　효과: ＋ 불길을 품은 손톱을 주입하는 짐승의 오의',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20451,7 +20601,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2684',
     name: '플라스마 란 페이지',
-    description: '위력: S(공·민)　대상: 적 하나　속성: 번개＋　효과: ＋\n날카로운 손톱으로 플라스마를 발생시키는 짐승의 오의',
+    description: '위력: S(공·민)　대상: 적 하나　속성: 번개＋　효과: ＋ 날카로운 손톱으로 플라스마를 발생시키는 짐승의 오의',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20466,7 +20616,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2685',
     name: '사무조',
-    description: '위력: SS(공·민)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n춤추는 것 같은 할퀴기를 난무 시키는 궁극 오의',
+    description: '위력: SS(공·민)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 춤추는 것 같은 할퀴기를 난무 시키는 궁극 오의',
     type: '53',
     icon: 3842,
     scope: 3,
@@ -20481,7 +20631,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2686',
     name: '깨물기',
-    description: '위력: D(공)　대상: 적 하나　속성: ＋　효과: ＋\n날카로운 이빨로 무는 짐승 기술',
+    description: '위력: D(공)　대상: 적 하나　속성: ＋　효과: ＋ 날카로운 이빨로 무는 짐승 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20496,7 +20646,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2687',
     name: '연속 깨물기',
-    description: '위력: B(공)　대상: 적 하나　속성: ＋　효과: ＋\n날카로운 깨물기를 2연속으로 내지르는 짐승 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: ＋　효과: ＋ 날카로운 깨물기를 2연속으로 내지르는 짐승 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20511,7 +20661,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2688',
     name: '굉련아',
-    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋\n강렬한 깨물기를 3연속으로 내지르는 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: ＋　효과: ＋ 강렬한 깨물기를 3연속으로 내지르는 오의',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20526,7 +20676,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2689',
     name: '쌍염 이빨',
-    description: '위력: B(공)　대상: 적 하나　속성: 불길＋　효과: ＋\n불길을 품은 이빨로 적을 씹어 부수는 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: 불길＋　효과: ＋ 불길을 품은 이빨로 적을 씹어 부수는 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20541,7 +20691,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2690',
     name: '바미리온팡',
-    description: '위력: S(공)　대상: 적 하나　속성: 불길＋　효과: ＋\n홍련의 이빨로 적을 멸하는 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: 불길＋　효과: ＋ 홍련의 이빨로 적을 멸하는 오의',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20556,7 +20706,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2691',
     name: '절빙아',
-    description: '위력: B(공)　대상: 적 하나　속성: 얼음＋　효과: ＋\n냉기를 품은 이빨로 깨물기를 내지르는 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: 얼음＋　효과: ＋ 냉기를 품은 이빨로 깨물기를 내지르는 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20571,7 +20721,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2692',
     name: '단빙련아',
-    description: '위력: S(공)　대상: 적 하나　속성: 얼음＋　효과: ＋\n냉기의 이빨로 연속 깨물기를 내지르는 오의',
+    description: '위력: S(공)　대상: 적 하나　속성: 얼음＋　효과: ＋ 냉기의 이빨로 연속 깨물기를 내지르는 오의',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20586,7 +20736,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2694',
     name: '몸통 박치기',
-    description: '위력: D(공)　대상: 적 하나　속성: ＋　효과: ＋\n돌진해 기세를 붙인 몸통 박치기',
+    description: '위력: D(공)　대상: 적 하나　속성: ＋　효과: ＋ 돌진해 기세를 붙인 몸통 박치기',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20601,7 +20751,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2695',
     name: '발광',
-    description: '위력: A(공)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n주위를 이리저리 다녀 연속 몸통 박치기를 내지르는 기술',
+    description: '위력: A(공)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 주위를 이리저리 다녀 연속 몸통 박치기를 내지르는 기술',
     type: '53',
     icon: 3842,
     scope: 3,
@@ -20616,7 +20766,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2696',
     name: '유린격',
-    description: '위력: S(공)　대상: 적 랜덤 6회　속성: ＋　효과: ＋\n주위를 질주 해 적을 유린하는 오의',
+    description: '위력: S(공)　대상: 적 랜덤 6회　속성: ＋　효과: ＋ 주위를 질주 해 적을 유린하는 오의',
     type: '53',
     icon: 3842,
     scope: 3,
@@ -20631,7 +20781,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2697',
     name: '위협',
-    description: '대상: 적 하나　효과: 스턴\n격렬하게 위협해 적을 스턴 시킨다',
+    description: '대상: 적 하나　효과: 스턴 격렬하게 위협해 적을 스턴 시킨다',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20643,7 +20793,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2698',
     name: '우렁찬 외침',
-    description: '대상: 적 전체　효과: 스턴\n우렁찬 외침으로 위협해 적 전체를 스턴 시킨다',
+    description: '대상: 적 전체　효과: 스턴 우렁찬 외침으로 위협해 적 전체를 스턴 시킨다',
     type: '53',
     icon: 3842,
     scope: 2,
@@ -20655,7 +20805,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2699',
     name: '파괴의 포후',
-    description: '위력: A(공)　대상: 적 전체　속성: 음파　효과: 스턴\n충격파와 같은 포후로 주위를 파괴하는 오의',
+    description: '위력: A(공)　대상: 적 전체　속성: 음파　효과: 스턴 충격파와 같은 포후로 주위를 파괴하는 오의',
     type: '53',
     icon: 3842,
     scope: 2,
@@ -20670,7 +20820,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2701',
     name: '수마합난격',
-    description: '위력: A(공)　대상: 적 하나　속성: ＋　효과: ＋\n본체와 짐승 부분이 동시에 공격을 거는 난격 기술',
+    description: '위력: A(공)　대상: 적 하나　속성: ＋　효과: ＋ 본체와 짐승 부분이 동시에 공격을 거는 난격 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20685,7 +20835,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2702',
     name: '수마난무',
-    description: '위력: S(공)　대상: 적 랜덤 4회　속성: 번개＋　효과: ＋\n본체와 짐승 부분이 동시에 내지르는 난무 기술',
+    description: '위력: S(공)　대상: 적 랜덤 4회　속성: 번개＋　효과: ＋ 본체와 짐승 부분이 동시에 내지르는 난무 기술',
     type: '53',
     icon: 3842,
     scope: 3,
@@ -20700,7 +20850,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2703',
     name: '동종 살인',
-    description: '위력: C(공)　대상: 적 하나　효과: 마수 특공\n짐승에 대해서 유효한 급소를 노린 일격',
+    description: '위력: C(공)　대상: 적 하나　효과: 마수 특공 짐승에 대해서 유효한 급소를 노린 일격',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20715,7 +20865,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2704',
     name: '수행원님둘',
-    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: ＋\n2 개의 꼬리로 연속 구타하는 요호의 기술',
+    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: ＋ 2 개의 꼬리로 연속 구타하는 요호의 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20730,7 +20880,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2705',
     name: '4개의 달',
-    description: '위력: B(공or손)　대상: 적 하나　속성: ＋　효과: ＋\n4개의 꼬리로 연속 구타하는 요호의 기술',
+    description: '위력: B(공or손)　대상: 적 하나　속성: ＋　효과: ＋ 4개의 꼬리로 연속 구타하는 요호의 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20745,7 +20895,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2706',
     name: '7개의 달',
-    description: '위력: S(공or손)　대상: 적 하나　속성: ＋　효과: ＋\n7 개의 꼬리로 연속 구타하는 요호의 기술',
+    description: '위력: S(공or손)　대상: 적 하나　속성: ＋　효과: ＋ 7 개의 꼬리로 연속 구타하는 요호의 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20760,7 +20910,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2707',
     name: '8개의 달',
-    description: '위력: S(공or손)　대상: 적 하나　속성: ＋　효과: ＋\n8 개의 꼬리로 연속 구타하는 요호의 기술',
+    description: '위력: S(공or손)　대상: 적 하나　속성: ＋　효과: ＋ 8 개의 꼬리로 연속 구타하는 요호의 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20775,7 +20925,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2712',
     name: '베놈아탁크',
-    description: '위력: D(공)　대상: 적 하나　속성: 바이오\n맹독을 품은 손톱을 주입하는 기술',
+    description: '위력: D(공)　대상: 적 하나　속성: 바이오 맹독을 품은 손톱을 주입하는 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20790,7 +20940,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2713',
     name: '베논잡파',
-    description: '위력: A(공)　대상: 적 전체　속성: 바이오\n맹독을 품은 손톱을 일섬 시키는 오의',
+    description: '위력: A(공)　대상: 적 전체　속성: 바이오 맹독을 품은 손톱을 일섬 시키는 오의',
     type: '53',
     icon: 3842,
     scope: 2,
@@ -20805,7 +20955,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2716',
     name: '꼬리 코키',
-    description: '위력: E(손or민)　대상: 적 하나　속성: 쾌락\n꼬리로 성기를 애무하는 음 기술',
+    description: '위력: E(손or민)　대상: 적 하나　속성: 쾌락 꼬리로 성기를 애무하는 음 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20820,7 +20970,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2717',
     name: '짐승의 구음',
-    description: '위력: C(공or손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n탐내도록(듯이) 성기를 빠는 구음 기술',
+    description: '위력: C(공or손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 탐내도록(듯이) 성기를 빠는 구음 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20835,7 +20985,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2718',
     name: '와일드 강간',
-    description: '위력: A(공or손)　대상: 적 하나　속성: 쾌락　효과: 구속\n와일드에 상대를 범하는 짐승의 음 기술',
+    description: '위력: A(공or손)　대상: 적 하나　속성: 쾌락　효과: 구속 와일드에 상대를 범하는 짐승의 음 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20850,7 +21000,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2719',
     name: '둥실둥실 꼬리',
-    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락\n둥실둥실의 꼬리로 성기를 애무하는 요호의 음 기술',
+    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락 둥실둥실의 꼬리로 성기를 애무하는 요호의 음 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20865,7 +21015,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2720',
     name: '젖의 골짜기',
-    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 황홀\n포근한 젖으로 성기를 애무하는 요호의 음 기술',
+    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 황홀 포근한 젖으로 성기를 애무하는 요호의 음 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20880,7 +21030,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2721',
     name: '여우의 교제',
-    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속\n환술을 이용하면서 상대를 범하는 요호의 음 기술',
+    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속 환술을 이용하면서 상대를 범하는 요호의 음 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20895,7 +21045,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2722',
     name: '말랑말랑 육구[肉球] 손 애무',
-    description: '위력: C(손or민)　대상: 적 하나　속성: 쾌락　효과: 민감\n말랑말랑의 육구[肉球]로 성기를 자극하는군 와 다음 음 기술',
+    description: '위력: C(손or민)　대상: 적 하나　속성: 쾌락　효과: 민감 말랑말랑의 육구[肉球]로 성기를 자극하는군 와 다음 음 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20910,7 +21060,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2723',
     name: '거슬거슬 고양이혀 페라',
-    description: '위력: A(손or민)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n거슬거슬의 고양이혀로 성기를 핥아대는군 와 다음 음 기술',
+    description: '위력: A(손or민)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 거슬거슬의 고양이혀로 성기를 핥아대는군 와 다음 음 기술',
     type: '53',
     icon: 3842,
     scope: 1,
@@ -20925,7 +21075,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2726',
     name: '비스트 하울링',
-    description: '대상: 사용자　효과: 명중·회피율대업·턴 SP중 회복\n수렵 본능을 눈을 뜨게 해 몸놀림을 강화하는 기술',
+    description: '대상: 사용자　효과: 명중·회피율대업·턴 SP중 회복 수렵 본능을 눈을 뜨게 해 몸놀림을 강화하는 기술',
     type: '53',
     icon: 3842,
     scope: 11,
@@ -20937,7 +21087,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2727',
     name: '짐승의 본능',
-    description: '대상: 사용자　효과: 버서크\n짐승의 본능을 상기시켜 마구 설치는 기술',
+    description: '대상: 사용자　효과: 버서크 짐승의 본능을 상기시켜 마구 설치는 기술',
     type: '53',
     icon: 3842,
     scope: 11,
@@ -20949,7 +21099,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2728',
     name: '루나틱 하이',
-    description: '대상: 사용자　효과: 버서크·회피율대업\n파괴 본능에 몸을 맡기고 마구 설치는 기술',
+    description: '대상: 사용자　효과: 버서크·회피율대업 파괴 본능에 몸을 맡기고 마구 설치는 기술',
     type: '53',
     icon: 3842,
     scope: 11,
@@ -20961,7 +21111,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2729',
     name: '제노사이드 하이',
-    description: '대상: 사용자　효과: 버서크·공격력 대업·회피율대업·2회 행동\n살육 본능에 몸을 맡기고 마구 설치는 오의',
+    description: '대상: 사용자　효과: 버서크·공격력 대업·회피율대업·2회 행동 살육 본능에 몸을 맡기고 마구 설치는 오의',
     type: '53',
     icon: 3842,
     scope: 11,
@@ -20973,7 +21123,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2730',
     name: '만큼 해',
-    description: '대상: 사용자　효과: 회피율소업\n마력으로 분신을 만들어 회피율을 올린다',
+    description: '대상: 사용자　효과: 회피율소업 마력으로 분신을 만들어 회피율을 올린다',
     type: '53',
     icon: 3842,
     scope: 11,
@@ -20985,7 +21135,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2731',
     name: '월 이상',
-    description: '대상: 사용자　효과: 버서크·MP·SP소비 없음\n달의 힘으로 폭주해 소비없이 기술이나 마법을 발동시킨다',
+    description: '대상: 사용자　효과: 버서크·MP·SP소비 없음 달의 힘으로 폭주해 소비없이 기술이나 마법을 발동시킨다',
     type: '53',
     icon: 3842,
     scope: 11,
@@ -20997,7 +21147,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2732',
     name: '초대 고양이',
-    description: '대상: 사용자　효과: 획득 골드 3배·아이템 드롭율 3배\n행복을 불러 획득 골드 3배, 아이템 취득율 3배',
+    description: '대상: 사용자　효과: 획득 골드 3배·아이템 드롭율 3배 행복을 불러 획득 골드 3배, 아이템 취득율 3배',
     type: '53',
     icon: 3842,
     scope: 11,
@@ -21009,7 +21159,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2733',
     name: '푹 야옹이',
-    description: '대상: 사용자　효과: 수면·HP·MP·SP턴 회복\n푹 자 HP, MP, SP를 순식간에 회복',
+    description: '대상: 사용자　효과: 수면·HP·MP·SP턴 회복 푹 자 HP, MP, SP를 순식간에 회복',
     type: '53',
     icon: 3842,
     scope: 11,
@@ -21021,7 +21171,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2734',
     name: '얼어붙는 파동',
-    description: '대상: 적 전체　효과: 강화 해제\n얼어붙는 파동을 발해 적의 강화 효과를 해제한다',
+    description: '대상: 적 전체　효과: 강화 해제 얼어붙는 파동을 발해 적의 강화 효과를 해제한다',
     type: '53',
     icon: 3842,
     scope: 2,
@@ -21033,7 +21183,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2740',
     name: '뱀격',
-    description: '위력: E(공or방)　대상: 적 전체　속성: ＋　효과: ＋\n뱀의 꼬리로 적에게 타격을 내지르는 기술',
+    description: '위력: E(공or방)　대상: 적 전체　속성: ＋　효과: ＋ 뱀의 꼬리로 적에게 타격을 내지르는 기술',
     type: '54',
     icon: 3973,
     scope: 2,
@@ -21048,7 +21198,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2741',
     name: '뱀의 형상 벼랑',
-    description: '위력: C(공or방)　대상: 적 전체　속성: ＋　효과: ＋\n뱀의 형상으로 적 전체를 후려쳐 넘긴 기술',
+    description: '위력: C(공or방)　대상: 적 전체　속성: ＋　효과: ＋ 뱀의 형상으로 적 전체를 후려쳐 넘긴 기술',
     type: '54',
     icon: 3973,
     scope: 2,
@@ -21063,7 +21213,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2742',
     name: '스네이크파닛샤',
-    description: '위력: A(공or방)　대상: 적 전체　속성: ＋　효과: ＋\n강인한 뱀의 형상으로 몇번이나 왕복 벼랑을 내지르는 오의',
+    description: '위력: A(공or방)　대상: 적 전체　속성: ＋　효과: ＋ 강인한 뱀의 형상으로 몇번이나 왕복 벼랑을 내지르는 오의',
     type: '54',
     icon: 3973,
     scope: 2,
@@ -21078,7 +21228,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2744',
     name: '라미아 롤',
-    description: '위력: C(공or방)　대상: 적 하나　효과: 구속\n뱀의 형상으로 적을 감아올려 구속하는 기술',
+    description: '위력: C(공or방)　대상: 적 하나　효과: 구속 뱀의 형상으로 적을 감아올려 구속하는 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21093,7 +21243,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2745',
     name: '헤비로르',
-    description: '위력: B(공or방)　대상: 적 하나　효과: 구속\n뱀의 형상으로 감아올려, 동작을 봉하는 기술',
+    description: '위력: B(공or방)　대상: 적 하나　효과: 구속 뱀의 형상으로 감아올려, 동작을 봉하는 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21108,7 +21258,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2746',
     name: '악몽의 억압',
-    description: '위력: A(공or방)　대상: 적 하나　효과: 구속\n적을에 잡아 충실히조르는 오의',
+    description: '위력: A(공or방)　대상: 적 하나　효과: 구속 적을에 잡아 충실히조르는 오의',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21123,7 +21273,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2747',
     name: '쿠즈로르',
-    description: '위력: S(공or방)　대상: 적 전체　효과: 구속\n적을 꽉 껴안도록(듯이) 조르는 여왕의 구속 오의',
+    description: '위력: S(공or방)　대상: 적 전체　효과: 구속 적을 꽉 껴안도록(듯이) 조르는 여왕의 구속 오의',
     type: '54',
     icon: 3973,
     scope: 2,
@@ -21138,7 +21288,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2748',
     name: '통째로 삼킴',
-    description: '대상: 적 하나　효과: 포식\n구속한 적을 통째로 삼킴으로 하는 라미아 특유의 포식 기술',
+    description: '대상: 적 하나　효과: 포식 구속한 적을 통째로 삼킴으로 하는 라미아 특유의 포식 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21150,7 +21300,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2749',
     name: '악몽의 춤추어 먹어',
-    description: '대상: 적 하나　효과: 포식\n구속한 적을 차분히 춤추어 먹어로 하는 잔혹한 포식 기술',
+    description: '대상: 적 하나　효과: 포식 구속한 적을 차분히 춤추어 먹어로 하는 잔혹한 포식 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21162,7 +21312,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2750',
     name: '쿠즈보아',
-    description: '대상: 적 전체　효과: 포식\n구속한 적을 천천히 삼키는 여왕의 포식 기술',
+    description: '대상: 적 전체　효과: 포식 구속한 적을 천천히 삼키는 여왕의 포식 기술',
     type: '54',
     icon: 3973,
     scope: 2,
@@ -21174,7 +21324,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2751',
     name: '석화격',
-    description: '위력: C(공)　대상: 적 하나　효과: 석화\n마력을 담은 공격으로 적을 석화 시킨다',
+    description: '위력: C(공)　대상: 적 하나　효과: 석화 마력을 담은 공격으로 적을 석화 시킨다',
     type: '63',
     icon: 300,
     scope: 1,
@@ -21189,7 +21339,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2752',
     name: '석화 난격',
-    description: '위력: A(공)　대상: 적 랜덤 3회　효과: 석화\n석화의 공격을 연속으로 내지르는 오의',
+    description: '위력: A(공)　대상: 적 랜덤 3회　효과: 석화 석화의 공격을 연속으로 내지르는 오의',
     type: '63',
     icon: 300,
     scope: 3,
@@ -21204,7 +21354,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2753',
     name: '(이)나 또·모래째',
-    description: '위력: A(손or방)　대상: 적 랜덤 8회　속성: 쾌락\n전신을 무수한 혀로 핥아대는 태고의 쾌락 기술',
+    description: '위력: A(손or방)　대상: 적 랜덤 8회　속성: 쾌락 전신을 무수한 혀로 핥아대는 태고의 쾌락 기술',
     type: '54',
     icon: 3973,
     scope: 3,
@@ -21219,7 +21369,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2754',
     name: '(이)나 또·사리',
-    description: '위력: S(공or방)　대상: 적 랜덤 8회\n8개의 몸보다 연속으로 타격을 내지르는 태고의 뱀오의',
+    description: '위력: S(공or방)　대상: 적 랜덤 8회 8개의 몸보다 연속으로 타격을 내지르는 태고의 뱀오의',
     type: '54',
     icon: 3973,
     scope: 3,
@@ -21234,7 +21384,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2755',
     name: '헤비오 코키',
-    description: '위력: E(손or방)　대상: 적 하나　속성: 쾌락\n꼬리를 성기에 걸고 쾌락을 주는 기술',
+    description: '위력: E(손or방)　대상: 적 하나　속성: 쾌락 꼬리를 성기에 걸고 쾌락을 주는 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21249,7 +21399,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2756',
     name: '졸졸 페라',
-    description: '위력: C(손or방)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n긴 혀로 열심히 성기를 핥아대는 구음 기술',
+    description: '위력: C(손or방)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 긴 혀로 열심히 성기를 핥아대는 구음 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21264,7 +21414,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2757',
     name: '라미아의 마질',
-    description: '위력: A(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속\n야무짐의 힘든 질을 이용해 상대를 범하는 오의',
+    description: '위력: A(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속 야무짐의 힘든 질을 이용해 상대를 범하는 오의',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21279,7 +21429,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2758',
     name: '성 어머니뱀의 포옹',
-    description: '위력: C(손or정)　대상: 적 하나　속성: 쾌락　효과: 황홀·구속\n뱀의 형상으로 상냥하게 껴안아, 황홀하게 잠기게 하는 쾌락 기술',
+    description: '위력: C(손or정)　대상: 적 하나　속성: 쾌락　효과: 황홀·구속 뱀의 형상으로 상냥하게 껴안아, 황홀하게 잠기게 하는 쾌락 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21294,7 +21444,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2759',
     name: '승천의 포옹',
-    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락　효과: 절정·구속\n뱀의 형상으로 상냥하게 껴안아, 승천 시키는 쾌락 기술',
+    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락　효과: 절정·구속 뱀의 형상으로 상냥하게 껴안아, 승천 시키는 쾌락 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21309,7 +21459,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2760',
     name: '젖먹이 눌러 짬',
-    description: '위력: C(손or정)　대상: 적 하나　속성: 쾌락　효과: 민감\n젖먹이를 희롱하도록(듯이) 정령을 짜는 자위 기술',
+    description: '위력: C(손or정)　대상: 적 하나　속성: 쾌락　효과: 민감 젖먹이를 희롱하도록(듯이) 정령을 짜는 자위 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21324,7 +21474,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2761',
     name: '야차음설',
-    description: '위력: C(손or정)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n끈적 성기를 다 빠는 뱀요의 구음 기술',
+    description: '위력: C(손or정)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 끈적 성기를 다 빠는 뱀요의 구음 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21339,7 +21489,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2762',
     name: '소포유락',
-    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락　효과: 황홀\n풍만한 가슴으로 감싸도록(듯이) 쾌락을 주는 음 기술',
+    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락　효과: 황홀 풍만한 가슴으로 감싸도록(듯이) 쾌락을 주는 음 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21354,7 +21504,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2763',
     name: '뱀밤시중',
-    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락　효과: 구속\n상대에게 감겨 차분히 범하는 뱀요의 쾌락 기술',
+    description: '위력: A(손or정)　대상: 적 하나　속성: 쾌락　효과: 구속 상대에게 감겨 차분히 범하는 뱀요의 쾌락 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21369,7 +21519,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2764',
     name: '음사의 뱀 머리카락',
-    description: '위력: B(손or마)　대상: 적 하나　속성: 쾌락\n머리카락의 뱀이 사타구니에 쇄도해 성기를 핥아대는 음 기술',
+    description: '위력: B(손or마)　대상: 적 하나　속성: 쾌락 머리카락의 뱀이 사타구니에 쇄도해 성기를 핥아대는 음 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21384,7 +21534,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2765',
     name: '음사의 뱀 항아리',
-    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속\n뱀이 우글거리는 것 같은 미쯔츠보로 상대를 범하는 음 기술',
+    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속 뱀이 우글거리는 것 같은 미쯔츠보로 상대를 범하는 음 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21399,7 +21549,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2767',
     name: '라미아의 기원',
-    description: '대상: 아군 전체　효과: HP중 회복\n진지한 기원으로 아군 전체를 치유한다',
+    description: '대상: 아군 전체　효과: HP중 회복 진지한 기원으로 아군 전체를 치유한다',
     type: '54',
     icon: 3973,
     scope: 8,
@@ -21414,7 +21564,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2768',
     name: '라미아의 총광',
-    description: '대상: 아군 전체　효과: HP대회복\n위안의 총광으로 아군 전체를 치유한다',
+    description: '대상: 아군 전체　효과: HP대회복 위안의 총광으로 아군 전체를 치유한다',
     type: '54',
     icon: 3973,
     scope: 8,
@@ -21429,7 +21579,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2769',
     name: '탈피',
-    description: '대상: 사용자　효과: HP전회복·방어력 다운\n탈피해 리프레쉬 할까 깨어, 방어가 다운한다',
+    description: '대상: 사용자　효과: HP전회복·방어력 다운 탈피해 리프레쉬 할까 깨어, 방어가 다운한다',
     type: '54',
     icon: 3973,
     scope: 11,
@@ -21444,7 +21594,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2770',
     name: '코브라의 독니',
-    description: '위력: C(공)　대상: 적 하나　속성: 바이오　효과: 즉사\n날카로운 독니로 물어, 즉사독을 보내는 기술',
+    description: '위력: C(공)　대상: 적 하나　속성: 바이오　효과: 즉사 날카로운 독니로 물어, 즉사독을 보내는 기술',
     type: '54',
     icon: 3973,
     scope: 1,
@@ -21459,7 +21609,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2775',
     name: '촉수격',
-    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: ＋\n촉수로 적에게 타격 공격을 내지르는 기술',
+    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: ＋ 촉수로 적에게 타격 공격을 내지르는 기술',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21474,7 +21624,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2776',
     name: '촉수 난무',
-    description: '위력: B(공or손)　대상: 적 랜덤 3회　속성: ＋　효과: ＋\n복수의 촉수를 난무 시키는 타격 기술',
+    description: '위력: B(공or손)　대상: 적 랜덤 3회　속성: ＋　효과: ＋ 복수의 촉수를 난무 시키는 타격 기술',
     type: '55',
     icon: 3974,
     scope: 3,
@@ -21489,7 +21639,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2777',
     name: '텐타크루스토무',
-    description: '위력: S(공or손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n무수한 촉수를 폭풍우와 같이 흐트러지고 치는 오의',
+    description: '위력: S(공or손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 무수한 촉수를 폭풍우와 같이 흐트러지고 치는 오의',
     type: '55',
     icon: 3974,
     scope: 3,
@@ -21504,7 +21654,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2778',
     name: '강촉수격',
-    description: '위력: B(공or손)　대상: 적 하나　속성: ＋　효과: ＋\n힘을 집중한 촉수로 적 하나를 구타하는 기술',
+    description: '위력: B(공or손)　대상: 적 하나　속성: ＋　효과: ＋ 힘을 집중한 촉수로 적 하나를 구타하는 기술',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21519,7 +21669,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2779',
     name: '난타 촉수무용',
-    description: '위력: S(공or손)　대상: 적 하나　속성: ＋　효과: ＋\n힘을 집중한 촉수로 적 하나를 집중 난타하는 기술',
+    description: '위력: S(공or손)　대상: 적 하나　속성: ＋　효과: ＋ 힘을 집중한 촉수로 적 하나를 집중 난타하는 기술',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21534,7 +21684,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2780',
     name: '텐타크루레이드',
-    description: '위력: B(공or손)　대상: 적 전체　속성: ＋　효과: ＋\n촉수로 적 전체를 후려쳐 넘긴 기술',
+    description: '위력: B(공or손)　대상: 적 전체　속성: ＋　효과: ＋ 촉수로 적 전체를 후려쳐 넘긴 기술',
     type: '55',
     icon: 3974,
     scope: 2,
@@ -21549,7 +21699,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2781',
     name: '텐타크루브라스트',
-    description: '위력: A(공or손)　대상: 적 전체　속성: ＋　효과: ＋\n촉수로 적 전체를 몇번이나 후려쳐 넘긴 오의',
+    description: '위력: A(공or손)　대상: 적 전체　속성: ＋　효과: ＋ 촉수로 적 전체를 몇번이나 후려쳐 넘긴 오의',
     type: '55',
     icon: 3974,
     scope: 2,
@@ -21564,7 +21714,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2783',
     name: '촉수 구속',
-    description: '위력: E(공or손)　대상: 적 하나　효과: 구속\n촉수로 적을 얽어매 움직임을 봉하는 기술',
+    description: '위력: E(공or손)　대상: 적 하나　효과: 구속 촉수로 적을 얽어매 움직임을 봉하는 기술',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21579,7 +21729,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2784',
     name: '텐타크루바인드',
-    description: '위력: C(공or손)　대상: 적 전체　효과: 구속\n촉수로 적을 감아올려, 차분히 조르는 구속 기술',
+    description: '위력: C(공or손)　대상: 적 전체　효과: 구속 촉수로 적을 감아올려, 차분히 조르는 구속 기술',
     type: '55',
     icon: 3974,
     scope: 2,
@@ -21594,7 +21744,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2785',
     name: '인페르노바인드',
-    description: '위력: A(공or손)　대상: 적 전체　효과: 구속\n적 전체를 촉수로 구속해 조르는 오의',
+    description: '위력: A(공or손)　대상: 적 전체　효과: 구속 적 전체를 촉수로 구속해 조르는 오의',
     type: '55',
     icon: 3974,
     scope: 2,
@@ -21609,7 +21759,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2786',
     name: '뱀액',
-    description: '위력: D(공or손)　대상: 적 하나　효과: 라미아 특공\n라미아의 뱀의 형상을 촉수로 감아올려, 조르는 기술',
+    description: '위력: D(공or손)　대상: 적 하나　효과: 라미아 특공 라미아의 뱀의 형상을 촉수로 감아올려, 조르는 기술',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21624,7 +21774,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2787',
     name: '라미아 캡처',
-    description: '위력: C(공or손)　대상: 적 전체　효과: 구속·라미아 특공\n라미아의 집단을 촉수로 정리해 조르는 기술',
+    description: '위력: C(공or손)　대상: 적 전체　효과: 구속·라미아 특공 라미아의 집단을 촉수로 정리해 조르는 기술',
     type: '55',
     icon: 3974,
     scope: 2,
@@ -21639,7 +21789,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2788',
     name: '촉수 애무',
-    description: '위력: D(공or손)　대상: 적 전체　속성: 쾌락　효과: 미끈미끈\n촉수로 성기를 애무해 쾌락을 주는 기술',
+    description: '위력: D(공or손)　대상: 적 전체　속성: 쾌락　효과: 미끈미끈 촉수로 성기를 애무해 쾌락을 주는 기술',
     type: '55',
     icon: 3974,
     scope: 2,
@@ -21654,7 +21804,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2789',
     name: '혼란 촉수 애무',
-    description: '위력: B(공or손)　대상: 적 랜덤 3회　속성: 쾌락　효과: 미끈미끈\n무수한 촉수를 휘감기게 해 전신을 애무하는 쾌락 기술',
+    description: '위력: B(공or손)　대상: 적 랜덤 3회　속성: 쾌락　효과: 미끈미끈 무수한 촉수를 휘감기게 해 전신을 애무하는 쾌락 기술',
     type: '55',
     icon: 3974,
     scope: 3,
@@ -21669,7 +21819,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2790',
     name: '텐타크루와르트',
-    description: '위력: S(공or손)　대상: 적 랜덤 4회　속성: 쾌락　효과: 구속·미끈미끈\n촉수로 적을 얽어매, 차분히 다 희롱하는 쾌락 오의',
+    description: '위력: S(공or손)　대상: 적 랜덤 4회　속성: 쾌락　효과: 구속·미끈미끈 촉수로 적을 얽어매, 차분히 다 희롱하는 쾌락 오의',
     type: '55',
     icon: 3974,
     scope: 3,
@@ -21684,7 +21834,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2791',
     name: '텐타크루에덴',
-    description: '위력: S(공or손)　대상: 적 전체　속성: 쾌락　효과: 구속·미끈미끈\n촉수로 주위를 다 메워 쾌락 지옥을 맛보게 하는 궁극 오의',
+    description: '위력: S(공or손)　대상: 적 전체　속성: 쾌락　효과: 구속·미끈미끈 촉수로 주위를 다 메워 쾌락 지옥을 맛보게 하는 궁극 오의',
     type: '55',
     icon: 3974,
     scope: 2,
@@ -21699,7 +21849,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2792',
     name: '웜 쇼트',
-    description: '위력: B(마or손)　대상: 적 하나　속성: ＋　효과: ＋\n웜으로 대암[大岩]을 내던지는 공격 기술',
+    description: '위력: B(마or손)　대상: 적 하나　속성: ＋　효과: ＋ 웜으로 대암[大岩]을 내던지는 공격 기술',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21714,7 +21864,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2793',
     name: '페인워무',
-    description: '위력: A(마or손)　대상: 적 랜덤 3회　속성: ＋　효과: ＋\n웜으로 연속 타격을 내지르는 공격 기술',
+    description: '위력: A(마or손)　대상: 적 랜덤 3회　속성: ＋　효과: ＋ 웜으로 연속 타격을 내지르는 공격 기술',
     type: '55',
     icon: 3974,
     scope: 3,
@@ -21729,7 +21879,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2794',
     name: '브레이크 웜',
-    description: '위력: S(마or손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n웜으로 혼란 치는 것을 퍼붓는 오의',
+    description: '위력: S(마or손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 웜으로 혼란 치는 것을 퍼붓는 오의',
     type: '55',
     icon: 3974,
     scope: 3,
@@ -21744,7 +21894,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2796',
     name: '카레스워무',
-    description: '위력: C(마or손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n웜으로 적을 애무하는 쾌락 기술',
+    description: '위력: C(마or손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 웜으로 적을 애무하는 쾌락 기술',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21759,7 +21909,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2797',
     name: '헤분즈워무',
-    description: '위력: A(마or손)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈\n웜으로 요염한 애무를 주는 쾌락 기술',
+    description: '위력: A(마or손)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈 웜으로 요염한 애무를 주는 쾌락 기술',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21774,7 +21924,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2799',
     name: '드레인 웜',
-    description: '위력: D(마or손)　대상: 적 하나　속성: 쾌락　효과: HP흡수\n착정웜으로 적의 HP를 흡수하는 기술',
+    description: '위력: D(마or손)　대상: 적 하나　속성: 쾌락　효과: HP흡수 착정웜으로 적의 HP를 흡수하는 기술',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21789,7 +21939,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2800',
     name: '로즈 웜',
-    description: '위력: E(마or손)　대상: 적 하나　속성: 쾌락　효과: MP흡수\n착정웜으로 적의 MP를 흡수하는 기술',
+    description: '위력: E(마or손)　대상: 적 하나　속성: 쾌락　효과: MP흡수 착정웜으로 적의 MP를 흡수하는 기술',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21804,7 +21954,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2801',
     name: '보아 웜',
-    description: '대상: 적 하나　효과: 포식\n구속 상태의 상대를 웜으로 수중에 넣는 포식 기술',
+    description: '대상: 적 하나　효과: 포식 구속 상태의 상대를 웜으로 수중에 넣는 포식 기술',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21816,7 +21966,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2810',
     name: '마비 촉수',
-    description: '위력: D(공or손)　대상: 적 하나　효과: 마비\n독침을 가르친 촉수로 적을 마비 시킨다',
+    description: '위력: D(공or손)　대상: 적 하나　효과: 마비 독침을 가르친 촉수로 적을 마비 시킨다',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21831,7 +21981,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2811',
     name: '맹독 촉수',
-    description: '위력: D(공or손)　대상: 적 하나　효과: 독\n독침을 가르친 촉수로 적을 독으로 한다',
+    description: '위력: D(공or손)　대상: 적 하나　효과: 독 독침을 가르친 촉수로 적을 독으로 한다',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21846,7 +21996,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2812',
     name: '최음촉수',
-    description: '위력: C(공or손)　대상: 적 하나　효과: 민감·황홀\n독침을 가르친 촉수로 적을 쾌락에게 몸부림치게 한다',
+    description: '위력: C(공or손)　대상: 적 하나　효과: 민감·황홀 독침을 가르친 촉수로 적을 쾌락에게 몸부림치게 한다',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21861,7 +22011,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2813',
     name: '즉사의 촉수',
-    description: '위력: D(공or손)　대상: 적 하나　효과: 즉사\n독침을 가르친 촉수로 적을 즉사시킨다',
+    description: '위력: D(공or손)　대상: 적 하나　효과: 즉사 독침을 가르친 촉수로 적을 즉사시킨다',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21876,7 +22026,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2814',
     name: '실금의 촉수',
-    description: '위력: D(공or손)　대상: 적 하나　효과: 실금\n독침을 가르친 촉수로 적을 실금 시킨다',
+    description: '위력: D(공or손)　대상: 적 하나　효과: 실금 독침을 가르친 촉수로 적을 실금 시킨다',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21891,7 +22041,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2815',
     name: '스미',
-    description: '위력: E(공or손)　대상: 적 하나　효과: 어둠\n먹을 토해 적의 시야를 닫는 기술',
+    description: '위력: E(공or손)　대상: 적 하나　효과: 어둠 먹을 토해 적의 시야를 닫는 기술',
     type: '55',
     icon: 3974,
     scope: 1,
@@ -21906,7 +22056,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2816',
     name: '암무',
-    description: '위력: D(공or손)　대상: 적 전체　효과: 어둠\n암흑의 안개를 발해 적을 어둠에 닫는 기술',
+    description: '위력: D(공or손)　대상: 적 전체　효과: 어둠 암흑의 안개를 발해 적을 어둠에 닫는 기술',
     type: '55',
     icon: 3974,
     scope: 2,
@@ -21921,7 +22071,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2817',
     name: '나이트메어 미스트',
-    description: '위력: B(공or손)　대상: 적 전체　속성: 바이오　효과: 어둠\n어둠의 독소를 흩뿌려 주위를 캄캄해 채우는 기술',
+    description: '위력: B(공or손)　대상: 적 전체　속성: 바이오　효과: 어둠 어둠의 독소를 흩뿌려 주위를 캄캄해 채우는 기술',
     type: '55',
     icon: 3974,
     scope: 2,
@@ -21936,7 +22086,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2818',
     name: '바이오 미스트',
-    description: '위력: C(공or손)　대상: 적 전체　속성: 바이오\n독의 안개를 주위에 흩뿌려, 적을 독에 무릅쓰는 기술',
+    description: '위력: C(공or손)　대상: 적 전체　속성: 바이오 독의 안개를 주위에 흩뿌려, 적을 독에 무릅쓰는 기술',
     type: '55',
     icon: 3974,
     scope: 2,
@@ -21951,7 +22101,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2820',
     name: '텐타크루압',
-    description: '대상: 사용자　효과: 통상 공격·촉수 기술 연속 발동\n촉수의 움직임을 활발하게 해, 공격 회수를 늘리는 기술',
+    description: '대상: 사용자　효과: 통상 공격·촉수 기술 연속 발동 촉수의 움직임을 활발하게 해, 공격 회수를 늘리는 기술',
     type: '55',
     icon: 3974,
     scope: 11,
@@ -21963,7 +22113,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2821',
     name: '텐타크루하이압',
-    description: '대상: 사용자　효과: 통상 공격·촉수 기술 연속 발동\n촉수의 움직임을 활발하게 해, 공격 회수를 늘리는 기술',
+    description: '대상: 사용자　효과: 통상 공격·촉수 기술 연속 발동 촉수의 움직임을 활발하게 해, 공격 회수를 늘리는 기술',
     type: '55',
     icon: 3974,
     scope: 11,
@@ -21975,7 +22125,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2822',
     name: '텐타크루에크스압',
-    description: '대상: 사용자　효과: 통상 공격·촉수 기술 연속 발동\n촉수의 움직임을 활발하게 해, 공격 회수를 늘리는 기술',
+    description: '대상: 사용자　효과: 통상 공격·촉수 기술 연속 발동 촉수의 움직임을 활발하게 해, 공격 회수를 늘리는 기술',
     type: '55',
     icon: 3974,
     scope: 11,
@@ -21987,7 +22137,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2830',
     name: '날개짓',
-    description: '위력: E(손or민)　대상: 적 전체　속성: 바람\n날개를 격렬해져 나 키, 돌풍을 발생시키는 기술',
+    description: '위력: E(손or민)　대상: 적 전체　속성: 바람 날개를 격렬해져 나 키, 돌풍을 발생시키는 기술',
     type: '56',
     icon: 3761,
     scope: 2,
@@ -22002,7 +22152,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2831',
     name: '강풍',
-    description: '위력: B(손or민)　대상: 적 전체　속성: 바람\n강인한 날개로 격렬한 돌풍을 일으키는 기술',
+    description: '위력: B(손or민)　대상: 적 전체　속성: 바람 강인한 날개로 격렬한 돌풍을 일으키는 기술',
     type: '56',
     icon: 3761,
     scope: 2,
@@ -22017,7 +22167,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2832',
     name: '초풍',
-    description: '위력: A(손or민)　대상: 적 전체　속성: 바람\n특수한 날개로 휘몰아치는 강풍을 불러일으키는 오의',
+    description: '위력: A(손or민)　대상: 적 전체　속성: 바람 특수한 날개로 휘몰아치는 강풍을 불러일으키는 오의',
     type: '56',
     icon: 3761,
     scope: 2,
@@ -22032,7 +22182,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2833',
     name: '여왕람무',
-    description: '위력: S(손or민)　대상: 적 전체　속성: 바람\n여왕의 힘으로 태풍을 발생시키는 오의',
+    description: '위력: S(손or민)　대상: 적 전체　속성: 바람 여왕의 힘으로 태풍을 발생시키는 오의',
     type: '56',
     icon: 3761,
     scope: 2,
@@ -22047,7 +22197,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2835',
     name: '글라이더 스파이크',
-    description: '위력: B(공or민)　대상: 적 하나　속성: ＋　효과: ＋\n고속 비상 하면서 몸통 박치기 하는 공격 기술',
+    description: '위력: B(공or민)　대상: 적 하나　속성: ＋　효과: ＋ 고속 비상 하면서 몸통 박치기 하는 공격 기술',
     type: '56',
     icon: 3761,
     scope: 1,
@@ -22062,7 +22212,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2836',
     name: '파괴의 날개',
-    description: '위력: S(공or민)　대상: 적 하나　속성: ＋　효과: ＋\n강인한 날개에 파괴의 힘을 집중해 내던지는 오의',
+    description: '위력: S(공or민)　대상: 적 하나　속성: ＋　효과: ＋ 강인한 날개에 파괴의 힘을 집중해 내던지는 오의',
     type: '56',
     icon: 3761,
     scope: 1,
@@ -22077,7 +22227,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2838',
     name: '에이비스의 조지',
-    description: '위력: C(공or민)　대상: 적 하나　효과: 수·충특공\n짐승이나 벌레를 찢어, 먹이로 하는 대괴조의 일격',
+    description: '위력: C(공or민)　대상: 적 하나　효과: 수·충특공 짐승이나 벌레를 찢어, 먹이로 하는 대괴조의 일격',
     type: '56',
     icon: 3761,
     scope: 1,
@@ -22092,7 +22242,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2839',
     name: '쟈바미등 있고',
-    description: '위력: B(공or민)　대상: 적 하나　효과: 라미아 특공\n뱀계의 마물을 먹이로 하는 대괴조의 일격',
+    description: '위력: B(공or민)　대상: 적 하나　효과: 라미아 특공 뱀계의 마물을 먹이로 하는 대괴조의 일격',
     type: '56',
     icon: 3761,
     scope: 1,
@@ -22107,7 +22257,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2840',
     name: '촉수식등 있고',
-    description: '위력: B(공or민)　대상: 적 하나　효과: 스큐라 특공\n촉수계의 마물을 먹이로 하는 대괴조의 일격',
+    description: '위력: B(공or민)　대상: 적 하나　효과: 스큐라 특공 촉수계의 마물을 먹이로 하는 대괴조의 일격',
     type: '56',
     icon: 3761,
     scope: 1,
@@ -22122,7 +22272,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2841',
     name: '날개 애무',
-    description: '위력: E(손or민)　대상: 적 하나　속성: 쾌락　효과: 민감\n부드러운 날개로 간질여 애무하는 쾌락 기술',
+    description: '위력: E(손or민)　대상: 적 하나　속성: 쾌락　효과: 민감 부드러운 날개로 간질여 애무하는 쾌락 기술',
     type: '56',
     icon: 3761,
     scope: 1,
@@ -22137,7 +22287,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2842',
     name: '조요의 풋잡',
-    description: '위력: C(손or민)　대상: 적 하나　속성: 쾌락\n독특한 형상의 다리로 성기를 자극하는 쾌락 기술',
+    description: '위력: C(손or민)　대상: 적 하나　속성: 쾌락 독특한 형상의 다리로 성기를 자극하는 쾌락 기술',
     type: '56',
     icon: 3761,
     scope: 1,
@@ -22152,7 +22302,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2843',
     name: '조요의 명기',
-    description: '위력: A(손or민)　대상: 적 하나　속성: 쾌락　효과: 구속\n특유의 명기로 상대를 범하는 쾌락 기술',
+    description: '위력: A(손or민)　대상: 적 하나　속성: 쾌락　효과: 구속 특유의 명기로 상대를 범하는 쾌락 기술',
     type: '56',
     icon: 3761,
     scope: 1,
@@ -22167,7 +22317,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2844',
     name: '해피네스·론도',
-    description: '위력: S(손or민)　대상: 적 하나　속성: 쾌락　효과: 구속\n여왕의 고기단지로 상대를 범해 뽑는 쾌락 오의',
+    description: '위력: S(손or민)　대상: 적 하나　속성: 쾌락　효과: 구속 여왕의 고기단지로 상대를 범해 뽑는 쾌락 오의',
     type: '56',
     icon: 3761,
     scope: 1,
@@ -22182,7 +22332,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2850',
     name: '니들',
-    description: '위력: E(공or방)　대상: 적 하나　속성: ＋　효과: 독·마비＋\n복부에 갖춰진 독침을 상대에게 찌르는 공격 기술',
+    description: '위력: E(공or방)　대상: 적 하나　속성: ＋　효과: 독·마비＋ 복부에 갖춰진 독침을 상대에게 찌르는 공격 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22197,7 +22347,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2851',
     name: '사우즌드 니들',
-    description: '위력: C(공or방)　대상: 적 하나　속성: ＋　효과: 독·마비＋\n복부의 독침을 몇번이나 찌르는 공격 기술',
+    description: '위력: C(공or방)　대상: 적 하나　속성: ＋　효과: 독·마비＋ 복부의 독침을 몇번이나 찌르는 공격 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22212,7 +22362,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2852',
     name: '나이트메어 니들',
-    description: '위력: A(공or방)　대상: 적 전체　속성: ＋　효과: 독·마비＋\n적 전체에 독침을 흐트러지고 공격하는 오의',
+    description: '위력: A(공or방)　대상: 적 전체　속성: ＋　효과: 독·마비＋ 적 전체에 독침을 흐트러지고 공격하는 오의',
     type: '57',
     icon: 3975,
     scope: 2,
@@ -22227,7 +22377,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2853',
     name: '페로몬바늘',
-    description: '위력: C(공or방)　대상: 적 하나　속성: ＋　효과: 유혹＋\n페로몬을 포함한 독침으로 적을 유혹하는 기술',
+    description: '위력: C(공or방)　대상: 적 하나　속성: ＋　효과: 유혹＋ 페로몬을 포함한 독침으로 적을 유혹하는 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22242,7 +22392,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2854',
     name: '크로',
-    description: '위력: D(공or방)　대상: 적 하나　속성: ＋　효과: ＋\n날카로운 손톱으로 참격을 발하는 공격 기술',
+    description: '위력: D(공or방)　대상: 적 하나　속성: ＋　효과: ＋ 날카로운 손톱으로 참격을 발하는 공격 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22257,7 +22407,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2855',
     name: '트인식크루',
-    description: '위력: B(공or방)　대상: 적 하나　속성: ＋　효과: ＋\n팔에 갖춰진 낫으로 2연격을 내지르는 공격 기술',
+    description: '위력: B(공or방)　대상: 적 하나　속성: ＋　효과: ＋ 팔에 갖춰진 낫으로 2연격을 내지르는 공격 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22272,7 +22422,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2856',
     name: '루나틱 크로',
-    description: '위력: S(공or방)　대상: 적 하나　속성: ＋　효과: ＋\n최고의 경도와 날카로움을 가지는 손톱으로 적을 찢는 오의',
+    description: '위력: S(공or방)　대상: 적 하나　속성: ＋　효과: ＋ 최고의 경도와 날카로움을 가지는 손톱으로 적을 찢는 오의',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22287,7 +22437,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2857',
     name: '마더 크로',
-    description: '위력: SS(공or방)　대상: 적 하나　속성: ＋　효과: ＋\n여왕의 손톱을 난무 시키고 적을 베어 새기는 오의',
+    description: '위력: SS(공or방)　대상: 적 하나　속성: ＋　효과: ＋ 여왕의 손톱을 난무 시키고 적을 베어 새기는 오의',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22302,7 +22452,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2859',
     name: '진동파',
-    description: '위력: B(공or방)　대상: 적 전체　속성: 음파\n겉껍데기를 진동시키고 간섭파를 발생시키는 공격 기술',
+    description: '위력: B(공or방)　대상: 적 전체　속성: 음파 겉껍데기를 진동시키고 간섭파를 발생시키는 공격 기술',
     type: '57',
     icon: 3975,
     scope: 2,
@@ -22317,7 +22467,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2860',
     name: '소닉 웨이브',
-    description: '위력: A(공or방)　대상: 적 전체　속성: 음파\n겉껍데기의 진동으로 음속의 물결을 발생시키는 기술',
+    description: '위력: A(공or방)　대상: 적 전체　속성: 음파 겉껍데기의 진동으로 음속의 물결을 발생시키는 기술',
     type: '57',
     icon: 3975,
     scope: 2,
@@ -22332,7 +22482,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2861',
     name: '마이크로파 쉘',
-    description: '위력: S(공or방)　대상: 적 전체　속성: 음파\n겉껍데기의 진동으로 마이크로파를 발생시키는 오의',
+    description: '위력: S(공or방)　대상: 적 전체　속성: 음파 겉껍데기의 진동으로 마이크로파를 발생시키는 오의',
     type: '57',
     icon: 3975,
     scope: 2,
@@ -22347,7 +22497,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2862',
     name: '레기온뷰트',
-    description: '위력: S(공or방)　대상: 적 하나　속성: ＋　효과: ＋\n빛의 채찍으로 적에게 연속 공격을 내지르는 오의',
+    description: '위력: S(공or방)　대상: 적 하나　속성: ＋　효과: ＋ 빛의 채찍으로 적에게 연속 공격을 내지르는 오의',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22362,7 +22512,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2864',
     name: '각격',
-    description: '위력: E(공or방)　대상: 적 하나　효과: 자신도 데미지\n강인한 겉껍데기로 몸통 박치기를 내지르는 공격 기술',
+    description: '위력: E(공or방)　대상: 적 하나　효과: 자신도 데미지 강인한 겉껍데기로 몸통 박치기를 내지르는 공격 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22377,7 +22527,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2865',
     name: '헤라클레스 쉘',
-    description: '위력: C(공or방)　대상: 적 하나　효과: 자신도 데미지\n강인한 겉껍데기로 돌진해, 적을 부수는 공격 기술',
+    description: '위력: C(공or방)　대상: 적 하나　효과: 자신도 데미지 강인한 겉껍데기로 돌진해, 적을 부수는 공격 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22392,7 +22542,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2866',
     name: '궁극 장갑격',
-    description: '위력: S(공or방)　대상: 적 하나　효과: 자신도 데미지\n궁극의 겉껍데기로 함성을 지르는 일해, 적을 분쇄하는 오의',
+    description: '위력: S(공or방)　대상: 적 하나　효과: 자신도 데미지 궁극의 겉껍데기로 함성을 지르는 일해, 적을 분쇄하는 오의',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22407,7 +22557,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2867',
     name: '끈적끈적 실',
-    description: '위력: D(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈\n끈적끈적의 실로 얽어매, 동작을 봉하는 쾌락 기술',
+    description: '위력: D(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈 끈적끈적의 실로 얽어매, 동작을 봉하는 쾌락 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22422,7 +22572,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2868',
     name: '아라크네 웹',
-    description: '위력: C(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈\n거미집에게 적을 걸고 구속하는 쾌락 기술',
+    description: '위력: C(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈 거미집에게 적을 걸고 구속하는 쾌락 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22437,7 +22587,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2869',
     name: '아라크네·리프로아',
-    description: '위력: A(손or방)　대상: 적 전체　속성: 쾌락　효과: 구속·미끈미끈\n무수한 거미집에서 적집단을 정리해 구속하는 쾌락 오의',
+    description: '위력: A(손or방)　대상: 적 전체　속성: 쾌락　효과: 구속·미끈미끈 무수한 거미집에서 적집단을 정리해 구속하는 쾌락 오의',
     type: '57',
     icon: 3975,
     scope: 2,
@@ -22452,7 +22602,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2870',
     name: '도취의 누에고치',
-    description: '위력: C(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속·황홀\n특별한 점실로 적을 감싸, 누에고치 중(안)에서 황홀하게 잠기게 하는 쾌락 기술',
+    description: '위력: C(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속·황홀 특별한 점실로 적을 감싸, 누에고치 중(안)에서 황홀하게 잠기게 하는 쾌락 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22467,7 +22617,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2871',
     name: '흡정의 누에고치',
-    description: '위력: D(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n특별한 점실로 적을 감싸, 누에고치 중(안)에서 정기를 빨아 들이는 쾌락 기술',
+    description: '위력: D(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 특별한 점실로 적을 감싸, 누에고치 중(안)에서 정기를 빨아 들이는 쾌락 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22482,7 +22632,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2872',
     name: '시르키로스헤분',
-    description: '위력: A(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속·승천\n극락의 점실로 적을 감싸, 쾌락 승천 시키는 오의',
+    description: '위력: A(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속·승천 극락의 점실로 적을 감싸, 쾌락 승천 시키는 오의',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22497,7 +22647,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2873',
     name: '8 개다리 난격',
-    description: '위력: A(손or방)　대상: 적 랜덤 4회\n8개의 다리로 난격을 내지르는 거미 요마의 특기',
+    description: '위력: A(손or방)　대상: 적 랜덤 4회 8개의 다리로 난격을 내지르는 거미 요마의 특기',
     type: '57',
     icon: 3975,
     scope: 3,
@@ -22512,7 +22662,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2874',
     name: '츠네요의 거미',
-    description: '위력: S(손or방)　대상: 적 랜덤 8회\n8개의 다리를 난무 시키고 적을 타격의 소용돌이에 말려들게 하는 오의',
+    description: '위력: S(손or방)　대상: 적 랜덤 8회 8개의 다리를 난무 시키고 적을 타격의 소용돌이에 말려들게 하는 오의',
     type: '57',
     icon: 3975,
     scope: 3,
@@ -22527,7 +22677,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2875',
     name: '연옥의 음승',
-    description: '위력: A(손or방)　대상: 적 전체　효과: 쾌락\n무수한 자승을 적의 몸에 착 달라붙게 하는 쾌락 기술',
+    description: '위력: A(손or방)　대상: 적 전체　효과: 쾌락 무수한 자승을 적의 몸에 착 달라붙게 하는 쾌락 기술',
     type: '57',
     icon: 3975,
     scope: 2,
@@ -22542,7 +22692,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2877',
     name: '집단격',
-    description: '위력: C(공or방)　대상: 적 랜덤 3회\n동료를 불러 집단에서 공격해, 3 턴 원호를 계속한다',
+    description: '위력: C(공or방)　대상: 적 랜덤 3회 동료를 불러 집단에서 공격해, 3 턴 원호를 계속한다',
     type: '57',
     icon: 3975,
     scope: 3,
@@ -22557,7 +22707,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2878',
     name: '일족 총공격',
-    description: '위력: S(공or방)　대상: 적 랜덤 4회\n일족을 집결시키고 일제 공격해, 5 턴 원호를 계속한다',
+    description: '위력: S(공or방)　대상: 적 랜덤 4회 일족을 집결시키고 일제 공격해, 5 턴 원호를 계속한다',
     type: '57',
     icon: 3975,
     scope: 3,
@@ -22572,7 +22722,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2879',
     name: '거미의 보식',
-    description: '대상: 적 하나　효과: 포식\n거미집에게 잡힌 사냥감을 차분히 포식 하는 기술',
+    description: '대상: 적 하나　효과: 포식 거미집에게 잡힌 사냥감을 차분히 포식 하는 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22584,7 +22734,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2880',
     name: '요거미의 먹이',
-    description: '대상: 적 전체　효과: 포식\n둥지에 잡은 모든 사냥감을 정리해 탐내 먹는 포식 기술',
+    description: '대상: 적 전체　효과: 포식 둥지에 잡은 모든 사냥감을 정리해 탐내 먹는 포식 기술',
     type: '57',
     icon: 3975,
     scope: 2,
@@ -22596,7 +22746,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2881',
     name: '체액 착취',
-    description: '위력: D(손or방)　대상: 적 하나　속성: 쾌락　효과: HP흡수\n사냥감을 포획 해 체액을 줄줄 착취하는 쾌락 기술',
+    description: '위력: D(손or방)　대상: 적 하나　속성: 쾌락　효과: HP흡수 사냥감을 포획 해 체액을 줄줄 착취하는 쾌락 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22611,7 +22761,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2882',
     name: '페트라테일',
-    description: '위력: B(손or방)　대상: 적 하나　속성: 쾌락　효과: HP흡수\n착정공이 갖춰진 꼬리로 정기를 빨아 올리는 쾌락 기술',
+    description: '위력: B(손or방)　대상: 적 하나　속성: 쾌락　효과: HP흡수 착정공이 갖춰진 꼬리로 정기를 빨아 올리는 쾌락 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22626,7 +22776,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2883',
     name: '산란 지옥',
-    description: '위력: A(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속\n상대를 범하면서 알을 이식하는 무자비한 쾌락 기술',
+    description: '위력: A(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속 상대를 범하면서 알을 이식하는 무자비한 쾌락 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22641,7 +22791,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2884',
     name: '밀 충분히 파이즈리',
-    description: '위력: C(손or방)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈·황홀\n밀을 바른 유방으로 성기를 애무하는 쾌락 기술',
+    description: '위력: C(손or방)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈·황홀 밀을 바른 유방으로 성기를 애무하는 쾌락 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22656,7 +22806,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2885',
     name: '홍작새 있고 페라',
-    description: '위력: A(손or방)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n밀을 들이마시는 것 같은 구견 있고로 성기를 희롱하는 쾌락 기술',
+    description: '위력: A(손or방)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 밀을 들이마시는 것 같은 구견 있고로 성기를 희롱하는 쾌락 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22671,7 +22821,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2886',
     name: '사타구니점실고문',
-    description: '위력: B(손or방)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n성기를 점실투성이로 해 희세우는 쾌락 기술',
+    description: '위력: B(손or방)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 성기를 점실투성이로 해 희세우는 쾌락 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22686,7 +22836,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2887',
     name: '종 학등 해의 실단지',
-    description: '위력: A(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈\n실단지로 상대를 범해, 정기를 전부 짜내는 쾌락 기술',
+    description: '위력: A(손or방)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈 실단지로 상대를 범해, 정기를 전부 짜내는 쾌락 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22701,7 +22851,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2888',
     name: '여왕의 생식항아리',
-    description: '위력: SS(손or방)　대상: 적 하나　속성: 쾌락　효과: HP흡수·구속\n여왕의 생식기관으로 상대를 범해, 정기를 짜내는 오의',
+    description: '위력: SS(손or방)　대상: 적 하나　속성: 쾌락　효과: HP흡수·구속 여왕의 생식기관으로 상대를 범해, 정기를 짜내는 오의',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22716,7 +22866,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2890',
     name: '인분',
-    description: '대상: 적 전체　효과: 마비\n인분을 장미 권적을 마비 시키는 기술',
+    description: '대상: 적 전체　효과: 마비 인분을 장미 권적을 마비 시키는 기술',
     type: '57',
     icon: 3975,
     scope: 2,
@@ -22728,7 +22878,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2891',
     name: '황홀의 인분',
-    description: '대상: 적 전체　효과: 황홀\n최음인분을 장미 권적을 황홀 상태로 하는 기술',
+    description: '대상: 적 전체　효과: 황홀 최음인분을 장미 권적을 황홀 상태로 하는 기술',
     type: '57',
     icon: 3975,
     scope: 2,
@@ -22740,7 +22890,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2892',
     name: '사망자의 인분',
-    description: '대상: 적 전체　효과: 즉사\n죽음의 인분을 장미 권적을 즉사시키는 기술',
+    description: '대상: 적 전체　효과: 즉사 죽음의 인분을 장미 권적을 즉사시키는 기술',
     type: '57',
     icon: 3975,
     scope: 2,
@@ -22752,7 +22902,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2893',
     name: '잿더미 인분',
-    description: '대상: 적 전체　효과: 즉사·반\n초고열의 인분을 장미 권적을 잿더미에 돌려보내는 오의',
+    description: '대상: 적 전체　효과: 즉사·반 초고열의 인분을 장미 권적을 잿더미에 돌려보내는 오의',
     type: '57',
     icon: 3975,
     scope: 2,
@@ -22764,7 +22914,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2894',
     name: '페로몬 키스',
-    description: '위력: E(손or방)　대상: 적 하나　효과: 유혹\n페로몬을 포함한 키스로 상대를 유혹하는 기술',
+    description: '위력: E(손or방)　대상: 적 하나　효과: 유혹 페로몬을 포함한 키스로 상대를 유혹하는 기술',
     type: '57',
     icon: 3975,
     scope: 1,
@@ -22779,7 +22929,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2895',
     name: '집단 행동',
-    description: '대상: 사용자　효과: 통상 공격·벌레 기술 연속 발동\n동료를 불러들여, 수턴의 사이는 함께 공격을 내지른다',
+    description: '대상: 사용자　효과: 통상 공격·벌레 기술 연속 발동 동료를 불러들여, 수턴의 사이는 함께 공격을 내지른다',
     type: '57',
     icon: 3975,
     scope: 11,
@@ -22791,7 +22941,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2896',
     name: '군단 지배자',
-    description: '대상: 사용자　효과: 통상 공격·벌레 기술 연속 발동\n동료를 불러들여, 수턴의 사이는 함께 공격을 내지른다',
+    description: '대상: 사용자　효과: 통상 공격·벌레 기술 연속 발동 동료를 불러들여, 수턴의 사이는 함께 공격을 내지른다',
     type: '57',
     icon: 3975,
     scope: 11,
@@ -22803,7 +22953,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2897',
     name: '집단 방어',
-    description: '대상: 사용자　효과: 디후레크트 2회\n동료들이 산 벽으로서 가로막아, 공격을 2회 막는다',
+    description: '대상: 사용자　효과: 디후레크트 2회 동료들이 산 벽으로서 가로막아, 공격을 2회 막는다',
     type: '57',
     icon: 3975,
     scope: 11,
@@ -22815,7 +22965,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2903',
     name: '담쟁이덩굴 공격',
-    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: ＋\n담쟁이덩굴을 채찍과 같이 터는 공격 기술',
+    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: ＋ 담쟁이덩굴을 채찍과 같이 터는 공격 기술',
     type: '58',
     icon: 3355,
     scope: 1,
@@ -22830,7 +22980,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2904',
     name: '담쟁이덩굴 옆으로 쳐쓰러뜨림',
-    description: '위력: C(공or손)　대상: 적 전체　속성: ＋　효과: ＋\n담쟁이덩굴로 적 전체를 후려쳐 넘긴 공격 기술',
+    description: '위력: C(공or손)　대상: 적 전체　속성: ＋　효과: ＋ 담쟁이덩굴로 적 전체를 후려쳐 넘긴 공격 기술',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -22845,7 +22995,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2905',
     name: '담쟁이덩굴 유린 지옥',
-    description: '위력: S(공or손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n무수한 담쟁이덩굴로 적의 무리를 유린하는 오의',
+    description: '위력: S(공or손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 무수한 담쟁이덩굴로 적의 무리를 유린하는 오의',
     type: '58',
     icon: 3355,
     scope: 3,
@@ -22860,7 +23010,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2906',
     name: '담쟁이덩굴 애무',
-    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락\n담쟁이덩굴로 상대의 성기를 애무하는 쾌락 기술',
+    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락 담쟁이덩굴로 상대의 성기를 애무하는 쾌락 기술',
     type: '58',
     icon: 3355,
     scope: 1,
@@ -22875,7 +23025,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2907',
     name: '담쟁이덩굴흡정',
-    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수·구속\n담쟁이덩굴로 구속해, 정기를 빨아 들이는 쾌락 기술',
+    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수·구속 담쟁이덩굴로 구속해, 정기를 빨아 들이는 쾌락 기술',
     type: '58',
     icon: 3355,
     scope: 1,
@@ -22890,7 +23040,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2908',
     name: '메르티이비',
-    description: '위력: C(손or마)　대상: 적 전체　속성: 쾌락　효과: 소화\n소화액의 방울져 떨어지는 담쟁이덩굴로 상대를 용해하는 기술',
+    description: '위력: C(손or마)　대상: 적 전체　속성: 쾌락　효과: 소화 소화액의 방울져 떨어지는 담쟁이덩굴로 상대를 용해하는 기술',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -22905,7 +23055,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2909',
     name: '레크이엠이비',
-    description: '위력: A(손or마)　대상: 적 전체　속성: 쾌락　효과: 소화·구속\n담쟁이덩굴로 적을 얽어매, 대량의 소화액으로 투성이 시키는 기술',
+    description: '위력: A(손or마)　대상: 적 전체　속성: 쾌락　효과: 소화·구속 담쟁이덩굴로 적을 얽어매, 대량의 소화액으로 투성이 시키는 기술',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -22920,7 +23070,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2911',
     name: '담쟁이덩굴 감겨',
-    description: '위력: D(공or손)　대상: 적 하나　효과: 구속\n담쟁이덩굴로 상대의 몸을 감아 꺼내 자유를 빼앗는 기술',
+    description: '위력: D(공or손)　대상: 적 하나　효과: 구속 담쟁이덩굴로 상대의 몸을 감아 꺼내 자유를 빼앗는 기술',
     type: '58',
     icon: 3355,
     scope: 1,
@@ -22935,7 +23085,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2912',
     name: '오르바인드',
-    description: '위력: D(공or손)　대상: 적 전체　효과: 구속\n담쟁이덩굴로 적 전체를 얽어매 자유를 빼앗는 기술',
+    description: '위력: D(공or손)　대상: 적 전체　효과: 구속 담쟁이덩굴로 적 전체를 얽어매 자유를 빼앗는 기술',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -22950,7 +23100,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2913',
     name: '음화흡정',
-    description: '위력: D(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수\n음화로 상대의 정기를 짜내는 쾌락 기술',
+    description: '위력: D(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수 음화로 상대의 정기를 짜내는 쾌락 기술',
     type: '58',
     icon: 3355,
     scope: 1,
@@ -22965,7 +23115,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2914',
     name: '착죽음의 장미',
-    description: '위력: B(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수\n음화로 상대가 힘이 다할 때까지 정령을 다 짜는 쾌락 기술',
+    description: '위력: B(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수 음화로 상대가 힘이 다할 때까지 정령을 다 짜는 쾌락 기술',
     type: '58',
     icon: 3355,
     scope: 1,
@@ -22980,7 +23130,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2915',
     name: '99 혼란화',
-    description: '위력: A(손or마)　대상: 적 전체　속성: 쾌락　효과: HP흡수\n99의 음화가 흐트러지고 피어, 적의 정기를 다 들이마시는 오의',
+    description: '위력: A(손or마)　대상: 적 전체　속성: 쾌락　효과: HP흡수 99의 음화가 흐트러지고 피어, 적의 정기를 다 들이마시는 오의',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -22995,7 +23145,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2916',
     name: '산화',
-    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: 즉사\n생명 질 때까지 정령을 다 들이마시는 무자비한 음화',
+    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: 즉사 생명 질 때까지 정령을 다 들이마시는 무자비한 음화',
     type: '58',
     icon: 3355,
     scope: 1,
@@ -23010,7 +23160,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2917',
     name: '화장',
-    description: '위력: A(손or마)　대상: 적 전체　속성: 쾌락　효과: 즉사\n전신을 착정화로 가려, 학끝날 때까지 다 짜는 오의',
+    description: '위력: A(손or마)　대상: 적 전체　속성: 쾌락　효과: 즉사 전신을 착정화로 가려, 학끝날 때까지 다 짜는 오의',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23025,7 +23175,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2918',
     name: '마화의 착함',
-    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수·구속\n거대한 꽃잎으로 감싸, 구속해 정기를 짜는 쾌락 기술',
+    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수·구속 거대한 꽃잎으로 감싸, 구속해 정기를 짜는 쾌락 기술',
     type: '58',
     icon: 3355,
     scope: 1,
@@ -23040,7 +23190,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2919',
     name: '마성의 가시',
-    description: '위력: C(공or손)　대상: 적 전체　속성: ＋　효과: ＋\n가시를 연속으로 발사하는 공격 기술',
+    description: '위력: C(공or손)　대상: 적 전체　속성: ＋　효과: ＋ 가시를 연속으로 발사하는 공격 기술',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23055,7 +23205,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2920',
     name: '저승의 가시',
-    description: '위력: A(공or손)　대상: 적 전체　속성: ＋　효과: 즉사＋\n저승의 독을 포함한 가시를 난사하는 오의',
+    description: '위력: A(공or손)　대상: 적 전체　속성: ＋　효과: 즉사＋ 저승의 독을 포함한 가시를 난사하는 오의',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23070,7 +23220,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2921',
     name: '도취의 방향',
-    description: '대상: 적 전체　효과: 황홀\n냄새 맡은 사람을 도취에 잠기게 하는 마성의 방향',
+    description: '대상: 적 전체　효과: 황홀 냄새 맡은 사람을 도취에 잠기게 하는 마성의 방향',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23082,7 +23232,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2922',
     name: '플라워 프레이그런스',
-    description: '대상: 적 전체　효과: 수면\n냄새 맡은 사람을 달콤한 잠으로 이끄는 마성의 방향',
+    description: '대상: 적 전체　효과: 수면 냄새 맡은 사람을 달콤한 잠으로 이끄는 마성의 방향',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23094,7 +23244,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2923',
     name: '실금의 마향',
-    description: '대상: 적 전체　효과: 실금\n냄새 맡은 사람을 녹는 것 같은 실금으로 이끄는 마성의 방향',
+    description: '대상: 적 전체　효과: 실금 냄새 맡은 사람을 녹는 것 같은 실금으로 이끄는 마성의 방향',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23106,7 +23256,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2924',
     name: '잠의 화분',
-    description: '대상: 적 전체　효과: 수면\n들이 마신 사람을 재우는 마성의 화분',
+    description: '대상: 적 전체　효과: 수면 들이 마신 사람을 재우는 마성의 화분',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23118,7 +23268,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2925',
     name: '석화의 화분',
-    description: '대상: 적 전체　효과: 석화\n들이 마신 사람을 석화 시키는 마성의 화분',
+    description: '대상: 적 전체　효과: 석화 들이 마신 사람을 석화 시키는 마성의 화분',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23130,7 +23280,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2926',
     name: '아즈 텍 로즈',
-    description: '대상: 적 전체　효과: 즉사\n들이 마신 사람을 즉사시키는 맹독의 방향',
+    description: '대상: 적 전체　효과: 즉사 들이 마신 사람을 즉사시키는 맹독의 방향',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23142,7 +23292,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2927',
     name: '종말의 방향',
-    description: '대상: 적 전체　효과: 즉사·랜덤 상태 이상\n들이 마신 사람을 복수 상태 이상하게 하는 악몽의 방향',
+    description: '대상: 적 전체　효과: 즉사·랜덤 상태 이상 들이 마신 사람을 복수 상태 이상하게 하는 악몽의 방향',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23154,7 +23304,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2928',
     name: '모판[苗床]의 포옹',
-    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·즉사\n꽉 껴안아 포자를 보내 모판[苗床]으로 하는 쾌락 기술',
+    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·즉사 꽉 껴안아 포자를 보내 모판[苗床]으로 하는 쾌락 기술',
     type: '58',
     icon: 3355,
     scope: 1,
@@ -23169,7 +23319,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2929',
     name: '포자 모판[苗床] 지옥',
-    description: '위력: A(손or마)　대상: 적 전체　속성: 쾌락　효과: 구속·즉사\n주위에 포자를 뿌려 적 전체를 모판[苗床]으로 하는 오의',
+    description: '위력: A(손or마)　대상: 적 전체　속성: 쾌락　효과: 구속·즉사 주위에 포자를 뿌려 적 전체를 모판[苗床]으로 하는 오의',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23184,7 +23334,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2930',
     name: '만드라고라의 절규',
-    description: '대상: 적 전체　효과: 마비\n굉장한 외침으로 적 전체를 마비 상태로 하는 고유 기술',
+    description: '대상: 적 전체　효과: 마비 굉장한 외침으로 적 전체를 마비 상태로 하는 고유 기술',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23196,7 +23346,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2931',
     name: '도취의 우트보카즈라',
-    description: '대상: 적 하나　효과: 포식\n우트보카즈라에 떨어뜨려, 황홀 상태의 적을 녹이는 포식 기술',
+    description: '대상: 적 하나　효과: 포식 우트보카즈라에 떨어뜨려, 황홀 상태의 적을 녹이는 포식 기술',
     type: '58',
     icon: 3355,
     scope: 1,
@@ -23208,7 +23358,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2932',
     name: '비나스트랍',
-    description: '대상: 적 전체　효과: 포식\n하에트리그사로 끼워 넣어, 황홀 상태의 적을 녹이는 포식 기술',
+    description: '대상: 적 전체　효과: 포식 하에트리그사로 끼워 넣어, 황홀 상태의 적을 녹이는 포식 기술',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23220,7 +23370,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2933',
     name: '비너스 네펜데스',
-    description: '대상: 적 전체　효과: 매턴 포식\n거대 하에트리그사를 설치해, 매턴 포식을 실시하는 오의',
+    description: '대상: 적 전체　효과: 매턴 포식 거대 하에트리그사를 설치해, 매턴 포식을 실시하는 오의',
     type: '58',
     icon: 3355,
     scope: 11,
@@ -23232,7 +23382,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2934',
     name: '위안의 꿀',
-    description: '대상: 아군 하나　효과: HP중 회복\n위안의 꿀로 아군 하나의 HP를 회복 한다',
+    description: '대상: 아군 하나　효과: HP중 회복 위안의 꿀로 아군 하나의 HP를 회복 한다',
     type: '58',
     icon: 3355,
     scope: 7,
@@ -23247,7 +23397,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2935',
     name: '축복의 꿀',
-    description: '대상: 아군 하나　효과: HP대회복·상태 이상 회복\n축복의 꿀로 아군 하나의 HP를 회복 한다',
+    description: '대상: 아군 하나　효과: HP대회복·상태 이상 회복 축복의 꿀로 아군 하나의 HP를 회복 한다',
     type: '58',
     icon: 3355,
     scope: 7,
@@ -23262,7 +23412,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2936',
     name: '기적의 꿀',
-    description: '대상: 아군 하나　효과: HP전회복\n기적의 꿀로 아군 하나를 부활시켜, 전회복 시킨다',
+    description: '대상: 아군 하나　효과: HP전회복 기적의 꿀로 아군 하나를 부활시켜, 전회복 시킨다',
     type: '58',
     icon: 3355,
     scope: 9,
@@ -23277,7 +23427,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2937',
     name: '치료의 꿀',
-    description: '대상: 아군 하나　효과: 상태 이상 회복\n특별한 밀로 아군 하나 상태 이상을 치료한다',
+    description: '대상: 아군 하나　효과: 상태 이상 회복 특별한 밀로 아군 하나 상태 이상을 치료한다',
     type: '58',
     icon: 3355,
     scope: 7,
@@ -23289,7 +23439,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2938',
     name: '쾌유의 꿀',
-    description: '대상: 아군 전체　효과: 상태 이상 회복\n특별한 밀로 아군 전체 상태 이상을 치료한다',
+    description: '대상: 아군 전체　효과: 상태 이상 회복 특별한 밀로 아군 전체 상태 이상을 치료한다',
     type: '58',
     icon: 3355,
     scope: 8,
@@ -23301,7 +23451,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2939',
     name: '여왕꽃의 꿀',
-    description: '대상: 아군 전체　효과: HP전회복·상태 이상 회복\n여왕의 꿀로 아군 전체의 HP를 전회복 한다',
+    description: '대상: 아군 전체　효과: HP전회복·상태 이상 회복 여왕의 꿀로 아군 전체의 HP를 전회복 한다',
     type: '58',
     icon: 3355,
     scope: 8,
@@ -23316,7 +23466,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2941',
     name: '포자 난무',
-    description: '대상: 적 전체　효과: 독·어둠·마비\n들이 마신 사람에게 여러가지 상태 이상을 가져오는 포자',
+    description: '대상: 적 전체　효과: 독·어둠·마비 들이 마신 사람에게 여러가지 상태 이상을 가져오는 포자',
     type: '58',
     icon: 3355,
     scope: 2,
@@ -23328,7 +23478,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2945',
     name: '매달려',
-    description: '위력: E(공)　대상: 적 하나　효과: 구속\n적에게 매달려 동작을 봉한다',
+    description: '위력: E(공)　대상: 적 하나　효과: 구속 적에게 매달려 동작을 봉한다',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23343,7 +23493,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2946',
     name: '독의 포옹',
-    description: '위력: C(공)　대상: 적 하나　효과: 구속·독\n독을 띤 육체로 매달려, 상대도 독으로 한다',
+    description: '위력: C(공)　대상: 적 하나　효과: 구속·독 독을 띤 육체로 매달려, 상대도 독으로 한다',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23358,7 +23508,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2947',
     name: '감염 포옹',
-    description: '위력: A(공)　대상: 적 하나　효과: 구속·좀비\n상대에게 매달려, 좀비를 감염시킨다',
+    description: '위력: A(공)　대상: 적 하나　효과: 구속·좀비 상대에게 매달려, 좀비를 감염시킨다',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23373,7 +23523,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2948',
     name: '달라붙음',
-    description: '위력: E(공)　대상: 적 하나　속성: ＋　효과: 좀비＋\n적에게 달라붙어, 무는 공격 기술',
+    description: '위력: E(공)　대상: 적 하나　속성: ＋　효과: 좀비＋ 적에게 달라붙어, 무는 공격 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23388,7 +23538,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2949',
     name: '네크로팡',
-    description: '위력: B(공)　대상: 적 하나　속성: 바이오＋　효과: 좀비＋\n독의 이빨로 적에게 달라붙는 공격 기술',
+    description: '위력: B(공)　대상: 적 하나　속성: 바이오＋　효과: 좀비＋ 독의 이빨로 적에게 달라붙는 공격 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23403,7 +23553,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2950',
     name: '맛드네스그레이브',
-    description: '위력: A(공)　대상: 적 하나　속성: 바이오＋　효과: 즉사·좀비＋\n맹독의 이빨로 달라붙어, 절명시키는 공격 기술',
+    description: '위력: A(공)　대상: 적 하나　속성: 바이오＋　효과: 즉사·좀비＋ 맹독의 이빨로 달라붙어, 절명시키는 공격 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23418,7 +23568,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2951',
     name: '붕대격',
-    description: '위력: C(공or마)　대상: 적 하나　속성: ＋　효과: 좀비＋\n마력을 띤 붕대를 늘려 타격을 주는 공격 기술',
+    description: '위력: C(공or마)　대상: 적 하나　속성: ＋　효과: 좀비＋ 마력을 띤 붕대를 늘려 타격을 주는 공격 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23433,7 +23583,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2952',
     name: '붕대 난무',
-    description: '위력: S(공or마)　대상: 적 랜덤 4회　속성: ＋　효과: 좀비＋\n마력을 띤 붕대를 난무 시키는 오의',
+    description: '위력: S(공or마)　대상: 적 랜덤 4회　속성: ＋　효과: 좀비＋ 마력을 띤 붕대를 난무 시키는 오의',
     type: '59',
     icon: 1,
     scope: 3,
@@ -23448,7 +23598,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2953',
     name: '오니불',
-    description: '위력: D(마or손)　대상: 적 하나　속성: 불길\n사념으로 발화 현상을 일으키는 기술',
+    description: '위력: D(마or손)　대상: 적 하나　속성: 불길 사념으로 발화 현상을 일으키는 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23463,7 +23613,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2954',
     name: '에비르피아',
-    description: '위력: C(마or손)　대상: 적 전체　속성: 불길\n사념으로 불길을 발생시키는 기술',
+    description: '위력: C(마or손)　대상: 적 전체　속성: 불길 사념으로 불길을 발생시키는 기술',
     type: '59',
     icon: 1,
     scope: 2,
@@ -23478,7 +23628,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2955',
     name: '반 소울',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 불길\n원한의 힘으로 지옥의 맹렬한 불을 발생시켜, 다 태우는 오의',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 불길 원한의 힘으로 지옥의 맹렬한 불을 발생시켜, 다 태우는 오의',
     type: '59',
     icon: 1,
     scope: 2,
@@ -23493,7 +23643,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2957',
     name: '파라오의 저주',
-    description: '위력: B(공or마)　대상: 적 하나　속성: 바이오　효과: 미니맘·석화\n태고의 원한에 의해 적을 저주해 상태로 하는 기술',
+    description: '위력: B(공or마)　대상: 적 하나　속성: 바이오　효과: 미니맘·석화 태고의 원한에 의해 적을 저주해 상태로 하는 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23508,7 +23658,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2958',
     name: '소라에크리프스',
-    description: '위력: A(공or마)　대상: 적 전체　속성: 바이오　효과: 미니맘·석화\n태고의 금술로 천체의 운행을 조작해, 전 국토에 저주를 미치는 오의',
+    description: '위력: A(공or마)　대상: 적 전체　속성: 바이오　효과: 미니맘·석화 태고의 금술로 천체의 운행을 조작해, 전 국토에 저주를 미치는 오의',
     type: '59',
     icon: 1,
     scope: 2,
@@ -23523,7 +23673,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2959',
     name: '빙의',
-    description: '대상: 적 하나　효과: 즉사\n적에게 빙의 해, 절명시키는 기술',
+    description: '대상: 적 하나　효과: 즉사 적에게 빙의 해, 절명시키는 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23535,7 +23685,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2960',
     name: '독의 키스',
-    description: '위력: E(공or손)　대상: 적 하나　속성: 쾌락　효과: 바이오 약점\n딥키스로 독을 보내는 쾌락 기술',
+    description: '위력: E(공or손)　대상: 적 하나　속성: 쾌락　효과: 바이오 약점 딥키스로 독을 보내는 쾌락 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23550,7 +23700,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2961',
     name: '갈망의 구음',
-    description: '위력: E(공or손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n마름을 채우도록(듯이) 격렬한 구음 기술',
+    description: '위력: E(공or손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 마름을 채우도록(듯이) 격렬한 구음 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23565,7 +23715,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2962',
     name: '배덕의 전기 안마',
-    description: '위력: C(공or손)　대상: 적 하나　속성: 물리·쾌락　효과: 마비\n상대의 사타구니에 격렬한 상하 진동을 주는 용서 없는 다리 기술',
+    description: '위력: C(공or손)　대상: 적 하나　속성: 물리·쾌락　효과: 마비 상대의 사타구니에 격렬한 상하 진동을 주는 용서 없는 다리 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23580,7 +23730,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2963',
     name: '여물어 울어 생식',
-    description: '위력: A(공or손)　대상: 적 하나　속성: 쾌락　효과: 구속\n생식기능을 잃은 여성기를 이용해 상대를 범하는 쾌락 기술',
+    description: '위력: A(공or손)　대상: 적 하나　속성: 쾌락　효과: 구속 생식기능을 잃은 여성기를 이용해 상대를 범하는 쾌락 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23595,7 +23745,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2964',
     name: '미라 붕대',
-    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속\n붕대로 상대를 구속해, 전신을 애무하는 쾌락 기술',
+    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속 붕대로 상대를 구속해, 전신을 애무하는 쾌락 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23610,7 +23760,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2965',
     name: '미라 패키지',
-    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n붕대로 상대를 완전하게 감아 꺼내, 정기를 짜내는 오의',
+    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 붕대로 상대를 완전하게 감아 꺼내, 정기를 짜내는 오의',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23625,7 +23775,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2966',
     name: '고스트 터치',
-    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수·민감\n유체의 손바닥으로 상대를 애무해, 정기를 빨아 들이는 쾌락 기술',
+    description: '위력: E(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수·민감 유체의 손바닥으로 상대를 애무해, 정기를 빨아 들이는 쾌락 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23640,7 +23790,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2967',
     name: '고스트 립',
-    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수·황홀\n유체의 입술로 성기를 들이마셔, 정령을 짜내는 쾌락 기술',
+    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: HP흡수·황홀 유체의 입술로 성기를 들이마셔, 정령을 짜내는 쾌락 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23655,7 +23805,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2968',
     name: '고스트 강간',
-    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락·HP흡수·구속\n유체로 상대를 범해, 정기를 다 짜는 쾌락 기술',
+    description: '위력: A(손or마)　대상: 적 하나　속성: 쾌락·HP흡수·구속 유체로 상대를 범해, 정기를 다 짜는 쾌락 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23670,7 +23820,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2969',
     name: '깜짝 상자',
-    description: '대상: 적 전체　효과: 스턴\n상자에서 튀어나와 상대를 위협해 스턴 시키는 고유 기술',
+    description: '대상: 적 전체　효과: 스턴 상자에서 튀어나와 상대를 위협해 스턴 시키는 고유 기술',
     type: '59',
     icon: 1,
     scope: 2,
@@ -23682,7 +23832,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2970',
     name: '미믹 보아',
-    description: '대상: 적 하나　효과: 포식\n놀라고 있는 상대를 포식 해 버리는 미믹의 고유 기술',
+    description: '대상: 적 하나　효과: 포식 놀라고 있는 상대를 포식 해 버리는 미믹의 고유 기술',
     type: '59',
     icon: 1,
     scope: 1,
@@ -23694,7 +23844,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2971',
     name: '판도라 보아',
-    description: '대상: 적 전체　효과: 포식\n놀라고 있는 상대를 정리해 포식 하는 미믹의 오의',
+    description: '대상: 적 전체　효과: 포식 놀라고 있는 상대를 정리해 포식 하는 미믹의 오의',
     type: '59',
     icon: 1,
     scope: 2,
@@ -23706,7 +23856,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2972',
     name: '영체화',
-    description: '대상: 사용자　효과: 회피율대업·마법 회피율대다운\n몸을 완전하게 영체화해, 물리 공격을 회피하는 특기',
+    description: '대상: 사용자　효과: 회피율대업·마법 회피율대다운 몸을 완전하게 영체화해, 물리 공격을 회피하는 특기',
     type: '59',
     icon: 1,
     scope: 11,
@@ -23718,7 +23868,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2978',
     name: '마이크로 드릴',
-    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: ＋\n팔에 가르친 소형 드릴로 적을 관철하는 공격 기술',
+    description: '위력: E(공or손)　대상: 적 하나　속성: ＋　효과: ＋ 팔에 가르친 소형 드릴로 적을 관철하는 공격 기술',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -23733,7 +23883,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2979',
     name: '드리르아트',
-    description: '위력: C(공or손)　대상: 적 전체　속성: ＋　효과: ＋\n몸에 가르친 드릴로 적 전체를 후려쳐 넘긴 공격 기술',
+    description: '위력: C(공or손)　대상: 적 전체　속성: ＋　효과: ＋ 몸에 가르친 드릴로 적 전체를 후려쳐 넘긴 공격 기술',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -23748,7 +23898,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2980',
     name: '화염 방사',
-    description: '위력: D(손)　대상: 적 전체　속성: 불길\n몸에 가르쳐진 화염 방사기로 적 전체를 다 태운다',
+    description: '위력: D(손)　대상: 적 전체　속성: 불길 몸에 가르쳐진 화염 방사기로 적 전체를 다 태운다',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -23763,7 +23913,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2981',
     name: '냉동 방사',
-    description: '위력: D(손)　대상: 적 전체　속성: 얼음\n냉동 방사기를 작동시키고 적 전체를 동결시킨다',
+    description: '위력: D(손)　대상: 적 전체　속성: 얼음 냉동 방사기를 작동시키고 적 전체를 동결시킨다',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -23778,7 +23928,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2982',
     name: '히트 스매쉬',
-    description: '위력: C(공or손)　대상: 적 하나　속성: 불길\n주먹을 가열해, 고열의 타격을 주입한다',
+    description: '위력: C(공or손)　대상: 적 하나　속성: 불길 주먹을 가열해, 고열의 타격을 주입한다',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -23793,7 +23943,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2983',
     name: '히트 러쉬',
-    description: '위력: S(공or손)　대상: 적 랜덤 3회　속성: 불길\n가열한 주먹으로 연속 공격을 내지른다',
+    description: '위력: S(공or손)　대상: 적 랜덤 3회　속성: 불길 가열한 주먹으로 연속 공격을 내지른다',
     type: '60',
     icon: 3829,
     scope: 3,
@@ -23808,7 +23958,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2984',
     name: '아이스 스매쉬',
-    description: '위력: C(공or손)　대상: 적 하나　속성: 얼음\n주먹을 냉각해, 저온의 타격을 주입한다',
+    description: '위력: C(공or손)　대상: 적 하나　속성: 얼음 주먹을 냉각해, 저온의 타격을 주입한다',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -23823,7 +23973,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2985',
     name: '아이스 차지',
-    description: '위력: S(공or손)　대상: 적 하나　속성: 얼음\n냉각한 주먹으로 적 하나를 집중 공격한다',
+    description: '위력: S(공or손)　대상: 적 하나　속성: 얼음 냉각한 주먹으로 적 하나를 집중 공격한다',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -23838,7 +23988,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2986',
     name: '분해격',
-    description: '위력: B(공or손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n머리나 손발을 분리시켜, 뿔뿔이 흩어지게 공격을 건다',
+    description: '위력: B(공or손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 머리나 손발을 분리시켜, 뿔뿔이 흩어지게 공격을 건다',
     type: '60',
     icon: 3829,
     scope: 3,
@@ -23853,7 +24003,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2987',
     name: '드르즈시지',
-    description: '위력: S(공or손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋\n몸을 분리시키고 사방으로부터 공격을 거는 오의',
+    description: '위력: S(공or손)　대상: 적 랜덤 4회　속성: ＋　효과: ＋ 몸을 분리시키고 사방으로부터 공격을 거는 오의',
     type: '60',
     icon: 3829,
     scope: 3,
@@ -23868,7 +24018,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2988',
     name: '자폭',
-    description: '위력: 가변　대상: 적 전체\n자폭 장치를 작동시켜, 주위를 바람에 날아가게 한다',
+    description: '위력: 가변　대상: 적 전체 자폭 장치를 작동시켜, 주위를 바람에 날아가게 한다',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -23883,7 +24033,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2989',
     name: '제노사이드 폭탄',
-    description: '위력: 가변　대상: 적 전체\n체내에 가르쳐진 핵폭탄을 작동시키는 최종 오의',
+    description: '위력: 가변　대상: 적 전체 체내에 가르쳐진 핵폭탄을 작동시키는 최종 오의',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -23898,7 +24048,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2990',
     name: '짓밟고',
-    description: '위력: B(공)　대상: 적 하나\n거대한 다리로 적을 밟아 붙이는 공격 기술',
+    description: '위력: B(공)　대상: 적 하나 거대한 다리로 적을 밟아 붙이는 공격 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -23913,7 +24063,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2991',
     name: '암석 던지기',
-    description: '위력: C(공)　대상: 적 전체\n거대한 암석을 적 전체에 내던지는 공격 기술',
+    description: '위력: C(공)　대상: 적 전체 거대한 암석을 적 전체에 내던지는 공격 기술',
     type: '63',
     icon: 300,
     scope: 2,
@@ -23928,7 +24078,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2992',
     name: '거인의 철퇴',
-    description: '위력: SS(공)　대상: 적 하나\n거대한 주먹을 적 하나에 주입하는 공격 기술',
+    description: '위력: SS(공)　대상: 적 하나 거대한 주먹을 적 하나에 주입하는 공격 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -23943,7 +24093,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2993',
     name: '메가톤 프레스',
-    description: '위력: A(공)　대상: 적 전체\n거체로 적의 무리에 덥쳐 단번에 프레스 하는 공격 기술',
+    description: '위력: A(공)　대상: 적 전체 거체로 적의 무리에 덥쳐 단번에 프레스 하는 공격 기술',
     type: '63',
     icon: 300,
     scope: 2,
@@ -23958,7 +24108,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2994',
     name: '아이스 미사일',
-    description: '위력: B(손)　대상: 적 하나　속성: 얼음\n적을 호밍 하는 얼음의 탄두',
+    description: '위력: B(손)　대상: 적 하나　속성: 얼음 적을 호밍 하는 얼음의 탄두',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -23973,7 +24123,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2995',
     name: '아이스 비트',
-    description: '위력: S(손)　대상: 적 하나　속성: 얼음\n적을 추적 해 강행[突貫] 하는 거대한 얼음의 탄두',
+    description: '위력: S(손)　대상: 적 하나　속성: 얼음 적을 추적 해 강행[突貫] 하는 거대한 얼음의 탄두',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -23988,7 +24138,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2996',
     name: '스텔스 어택',
-    description: '위력: A(공or손)　대상: 적 하나　효과: 즉사·하인드\n투명화한 다음에 급소를 노리는 무자비한 공격 기술',
+    description: '위력: A(공or손)　대상: 적 하나　효과: 즉사·하인드 투명화한 다음에 급소를 노리는 무자비한 공격 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -24003,7 +24153,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2997',
     name: '벡터 바이러스',
-    description: '위력: E(손)　대상: 적 전체　속성: 바이오\n바이러스를 살포해 적 전체를 무릅쓰는 기술',
+    description: '위력: E(손)　대상: 적 전체　속성: 바이오 바이러스를 살포해 적 전체를 무릅쓰는 기술',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -24018,7 +24168,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2998',
     name: '자기폭풍',
-    description: '위력: A(마or손)　대상: 적 전체\n주변의 자기를 조작해 난류를 일으키는 오의',
+    description: '위력: A(마or손)　대상: 적 전체 주변의 자기를 조작해 난류를 일으키는 오의',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -24033,7 +24183,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '2999',
     name: '펄스 필드',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 번개\n전자파로 공간을 가열하는 공격 기술',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 번개 전자파로 공간을 가열하는 공격 기술',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -24048,7 +24198,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3000',
     name: '포스 필드',
-    description: '위력: S(마or손)　대상: 적 전체\n특수한 자장에서 주위를 플라스마화하는 오의',
+    description: '위력: S(마or손)　대상: 적 전체 특수한 자장에서 주위를 플라스마화하는 오의',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -24063,7 +24213,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3001',
     name: '냉동 광선',
-    description: '위력: B(손)　대상: 적 하나　속성: 얼음\n적 하나를 동결시키는 광선을 발한다',
+    description: '위력: B(손)　대상: 적 하나　속성: 얼음 적 하나를 동결시키는 광선을 발한다',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -24078,7 +24228,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3002',
     name: '프로스트 맥동성',
-    description: '위력: A(손)　대상: 적 전체　속성: 얼음\n특수한 자장을 발생시키고 공간 그 자체를 동결시킨다',
+    description: '위력: A(손)　대상: 적 전체　속성: 얼음 특수한 자장을 발생시키고 공간 그 자체를 동결시킨다',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -24093,7 +24243,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3003',
     name: '이그니션 비트',
-    description: '위력: B(손)　대상: 적 전체　속성: 번개\n적에게 빔을 발하는 비트를 발사한다',
+    description: '위력: B(손)　대상: 적 전체　속성: 번개 적에게 빔을 발하는 비트를 발사한다',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -24108,7 +24258,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3004',
     name: '리 원숭이 비트',
-    description: '위력: A(손)　대상: 적 전체　속성: 번개\n빔을 연속 조사하는 비트를 복수 발사한다',
+    description: '위력: A(손)　대상: 적 전체　속성: 번개 빔을 연속 조사하는 비트를 복수 발사한다',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -24123,7 +24273,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3006',
     name: '보컬로이드의 입 써',
-    description: '위력: C(손)　대상: 적 하나　속성: 쾌락\n보컬로이드의 입으로 성 봉사를 실시하는 쾌락 기술',
+    description: '위력: C(손)　대상: 적 하나　속성: 쾌락 보컬로이드의 입으로 성 봉사를 실시하는 쾌락 기술',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -24138,7 +24288,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3007',
     name: '보컬로이드 강간',
-    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 구속\n성 봉사 프로그램에 따라 상대를 범하는 쾌락 기술',
+    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 구속 성 봉사 프로그램에 따라 상대를 범하는 쾌락 기술',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -24153,7 +24303,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3008',
     name: '동력 보급',
-    description: '위력: C(공or손)　대상: 적 하나　속성: 쾌락　효과: HP흡수·구속\n착정구에 상대를 잡아 동력으로서 정령을 짜내는 쾌락 기술',
+    description: '위력: C(공or손)　대상: 적 하나　속성: 쾌락　효과: HP흡수·구속 착정구에 상대를 잡아 동력으로서 정령을 짜내는 쾌락 기술',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -24168,7 +24318,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3009',
     name: '악몽의 포옹',
-    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·절정\n촉수준구내부에 가두는 아이언 메이든의 고유 기술',
+    description: '위력: C(손or마)　대상: 적 하나　속성: 쾌락　효과: 구속·절정 촉수준구내부에 가두는 아이언 메이든의 고유 기술',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -24183,7 +24333,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3010',
     name: '바큐무테일',
-    description: '위력: E(손or민)　대상: 적 하나　속성: 쾌락　효과: HP흡수\n꼬리로부터 정기를 짜내는 쾌락 기술',
+    description: '위력: E(손or민)　대상: 적 하나　속성: 쾌락　효과: HP흡수 꼬리로부터 정기를 짜내는 쾌락 기술',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -24198,7 +24348,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3011',
     name: '복유련간',
-    description: '위력: C(손or민)　대상: 적 하나　속성: 쾌락　효과: 황홀\n복유로 성기를 자극하는 쾌락 기술',
+    description: '위력: C(손or민)　대상: 적 하나　속성: 쾌락　효과: 황홀 복유로 성기를 자극하는 쾌락 기술',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -24213,7 +24363,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3012',
     name: '스플래쉬 탄',
-    description: '위력: A(손or민)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n무수한 혀로 전신을 희세우는 쾌락 기술',
+    description: '위력: A(손or민)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 무수한 혀로 전신을 희세우는 쾌락 기술',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -24228,7 +24378,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3013',
     name: '플랜트 암',
-    description: '위력: B(손or민)　대상: 적 하나　속성: 쾌락　효과: HP흡수\n특수한 기구를 갖춘 팔로 성기에 쾌락을 주는 기술',
+    description: '위력: B(손or민)　대상: 적 하나　속성: 쾌락　효과: HP흡수 특수한 기구를 갖춘 팔로 성기에 쾌락을 주는 기술',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -24243,7 +24393,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3014',
     name: '착정기 프리에스트라',
-    description: '위력: S(공or손)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n태고의 착정기로 전신으로부터 정령을 짜내는 쾌락 오의',
+    description: '위력: S(공or손)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 태고의 착정기로 전신으로부터 정령을 짜내는 쾌락 오의',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -24258,7 +24408,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3016',
     name: '괴음파',
-    description: '대상: 적 전체　효과: 음파 약점\n기묘한 음파로, 음파 속성을 약점으로 한다',
+    description: '대상: 적 전체　효과: 음파 약점 기묘한 음파로, 음파 속성을 약점으로 한다',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -24270,7 +24420,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3017',
     name: '유전자 혼잡',
-    description: '대상: 적 하나　효과: 포식\n독상태의 적을 체내 거두어들여, 유전자를 빼앗는 포식 기술',
+    description: '대상: 적 하나　효과: 포식 독상태의 적을 체내 거두어들여, 유전자를 빼앗는 포식 기술',
     type: '60',
     icon: 3829,
     scope: 1,
@@ -24282,7 +24432,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3018',
     name: '제네아비스',
-    description: '대상: 적 전체　효과: 포식\n적집단을 체내 거두어들여, 유전자를 빼앗는 포식 기술',
+    description: '대상: 적 전체　효과: 포식 적집단을 체내 거두어들여, 유전자를 빼앗는 포식 기술',
     type: '60',
     icon: 3829,
     scope: 2,
@@ -24294,7 +24444,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3019',
     name: '자기 재생',
-    description: '대상: 사용자　효과: HP중 회복\n재생 기능에 의해 자신의 HP가 회복 한다',
+    description: '대상: 사용자　효과: HP중 회복 재생 기능에 의해 자신의 HP가 회복 한다',
     type: '60',
     icon: 3829,
     scope: 11,
@@ -24309,7 +24459,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3020',
     name: '완전 수복',
-    description: '대상: 사용자　효과: HP전회복\n재생 기능에 의해 자신의 HP가 완전 회복 한다',
+    description: '대상: 사용자　효과: HP전회복 재생 기능에 의해 자신의 HP가 완전 회복 한다',
     type: '60',
     icon: 3829,
     scope: 11,
@@ -24324,7 +24474,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3021',
     name: '리미터 해제',
-    description: '대상: 사용자　효과: 버서크·전능력대업\n리미터를 해제해 폭주해, 잠재 능력을 해방한다',
+    description: '대상: 사용자　효과: 버서크·전능력대업 리미터를 해제해 폭주해, 잠재 능력을 해방한다',
     type: '60',
     icon: 3829,
     scope: 11,
@@ -24336,7 +24486,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3022',
     name: '마도폭주',
-    description: '대상: 사용자　효과: 버서크·HP·SP턴대회복\n마도로를 폭주시켜, 대사를 단번에 높인다',
+    description: '대상: 사용자　효과: 버서크·HP·SP턴대회복 마도로를 폭주시켜, 대사를 단번에 높인다',
     type: '60',
     icon: 3829,
     scope: 11,
@@ -24348,7 +24498,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3023',
     name: '유전자 활성',
-    description: '대상: 사용자　효과: 마물 스킬전사용 가능\n마물의 유전자를 활성화시켜, 모든 마물 기술 스킬 타입을 사용할 수 있다',
+    description: '대상: 사용자　효과: 마물 스킬전사용 가능 마물의 유전자를 활성화시켜, 모든 마물 기술 스킬 타입을 사용할 수 있다',
     type: '60',
     icon: 3829,
     scope: 11,
@@ -24360,7 +24510,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3028',
     name: '파이어 볼',
-    description: '위력: D(공or마)　대상: 적 하나　속성: 불길\n자연과 감응해, 불의 구슬을 발생시킨다',
+    description: '위력: D(공or마)　대상: 적 하나　속성: 불길 자연과 감응해, 불의 구슬을 발생시킨다',
     type: '61',
     icon: 157,
     scope: 1,
@@ -24375,7 +24525,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3029',
     name: '불기둥',
-    description: '위력: C(공or마)　대상: 적 전체　속성: 불길\n자연과 감응해, 불기둥을 야기한다',
+    description: '위력: C(공or마)　대상: 적 전체　속성: 불길 자연과 감응해, 불기둥을 야기한다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24390,7 +24540,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3030',
     name: '마그마',
-    description: '위력: A(공or마)　대상: 적 전체　속성: 불길\n자연과 감응해, 마그마를 상기시킨다',
+    description: '위력: A(공or마)　대상: 적 전체　속성: 불길 자연과 감응해, 마그마를 상기시킨다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24405,7 +24555,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3031',
     name: '얼음결',
-    description: '위력: D(마or손)　대상: 적 하나　속성: 얼음\n자연과 감응해, 적을 얼음결 시킨다',
+    description: '위력: D(마or손)　대상: 적 하나　속성: 얼음 자연과 감응해, 적을 얼음결 시킨다',
     type: '61',
     icon: 157,
     scope: 1,
@@ -24420,7 +24570,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3032',
     name: '얼음기둥',
-    description: '위력: C(마or손)　대상: 적 전체　속성: 얼음\n자연과 감응해, 얼음기둥을 발생시킨다',
+    description: '위력: C(마or손)　대상: 적 전체　속성: 얼음 자연과 감응해, 얼음기둥을 발생시킨다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24435,7 +24585,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3033',
     name: '대얼음강',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 얼음\n자연과 감응해, 대얼음강을 상기시킨다',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 얼음 자연과 감응해, 대얼음강을 상기시킨다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24450,7 +24600,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3034',
     name: '낙뢰',
-    description: '위력: D(민or마)　대상: 적 하나　속성: 번개\n자연과 감응해, 낙뢰를 발생시킨다',
+    description: '위력: D(민or마)　대상: 적 하나　속성: 번개 자연과 감응해, 낙뢰를 발생시킨다',
     type: '61',
     icon: 157,
     scope: 1,
@@ -24465,7 +24615,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3035',
     name: '번개',
-    description: '위력: C(민or마)　대상: 적 전체　속성: 번개\n자연과 감응해, 번개를 떨어뜨린다',
+    description: '위력: C(민or마)　대상: 적 전체　속성: 번개 자연과 감응해, 번개를 떨어뜨린다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24480,7 +24630,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3036',
     name: '대굉뢰',
-    description: '위력: A(민or마)　대상: 적 전체　속성: 번개\n자연과 감응해, 대굉뢰를 불러일으킨다',
+    description: '위력: A(민or마)　대상: 적 전체　속성: 번개 자연과 감응해, 대굉뢰를 불러일으킨다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24495,7 +24645,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3037',
     name: '카마이타치',
-    description: '위력: D(민or마)　대상: 적 하나　속성: 바람\n자연과 감응해, 카마이타치를 발생시킨다',
+    description: '위력: D(민or마)　대상: 적 하나　속성: 바람 자연과 감응해, 카마이타치를 발생시킨다',
     type: '61',
     icon: 157,
     scope: 1,
@@ -24510,7 +24660,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3038',
     name: '돌풍',
-    description: '위력: C(민or마)　대상: 적 전체　속성: 바람\n자연과 감응해, 돌풍을 일으킨다',
+    description: '위력: C(민or마)　대상: 적 전체　속성: 바람 자연과 감응해, 돌풍을 일으킨다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24525,7 +24675,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3039',
     name: '대선풍',
-    description: '위력: A(민or마)　대상: 적 전체　속성: 바람\n자연과 감응해, 대선풍을 일으킨다',
+    description: '위력: A(민or마)　대상: 적 전체　속성: 바람 자연과 감응해, 대선풍을 일으킨다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24540,7 +24690,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3040',
     name: '샴 씰',
-    description: '위력: S(민or마)　대상: 적 하나　속성: 바람\n자연과 감응해, 바람의 칼날을 발생시킨다',
+    description: '위력: S(민or마)　대상: 적 하나　속성: 바람 자연과 감응해, 바람의 칼날을 발생시킨다',
     type: '61',
     icon: 157,
     scope: 1,
@@ -24555,7 +24705,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3041',
     name: '테라 사이클론',
-    description: '위력: S(민or마)　대상: 적 전체　속성: 바람\n자연과 감응해, 대륙 규모의 사이클론을 부르는 오의',
+    description: '위력: S(민or마)　대상: 적 전체　속성: 바람 자연과 감응해, 대륙 규모의 사이클론을 부르는 오의',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24570,7 +24720,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3042',
     name: '절벽 붕괴',
-    description: '위력: D(방or마)　대상: 적 하나　속성: 흙\n자연과 감응해, 절벽 붕괴를 일으킨다',
+    description: '위력: D(방or마)　대상: 적 하나　속성: 흙 자연과 감응해, 절벽 붕괴를 일으킨다',
     type: '61',
     icon: 157,
     scope: 1,
@@ -24585,7 +24735,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3043',
     name: '지진',
-    description: '위력: C(방or마)　대상: 적 전체　속성: 흙\n자연과 감응해, 지진을 일으킨다',
+    description: '위력: C(방or마)　대상: 적 전체　속성: 흙 자연과 감응해, 지진을 일으킨다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24600,7 +24750,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3044',
     name: '대지의 분노',
-    description: '위력: A(방or마)　대상: 적 전체　속성: 흙\n자연과 감응해, 대지의 분노를 상기시킨다',
+    description: '위력: A(방or마)　대상: 적 전체　속성: 흙 자연과 감응해, 대지의 분노를 상기시킨다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24615,7 +24765,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3045',
     name: '대지포후',
-    description: '위력: S(방or마)　대상: 적 전체　속성: 흙\n자연과 감응해, 대지를 포후 시키는 오의',
+    description: '위력: S(방or마)　대상: 적 전체　속성: 흙 자연과 감응해, 대지를 포후 시키는 오의',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24630,7 +24780,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3046',
     name: '홍수',
-    description: '위력: D(정or마)　대상: 적 하나　속성: 물\n자연과 감응해, 홍수를 발생시킨다',
+    description: '위력: D(정or마)　대상: 적 하나　속성: 물 자연과 감응해, 홍수를 발생시킨다',
     type: '61',
     icon: 157,
     scope: 1,
@@ -24645,7 +24795,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3047',
     name: '해일',
-    description: '위력: C(정or마)　대상: 적 전체　속성: 물\n자연과 감응해, 해일을 일으킨다',
+    description: '위력: C(정or마)　대상: 적 전체　속성: 물 자연과 감응해, 해일을 일으킨다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24660,7 +24810,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3048',
     name: '대홍수',
-    description: '위력: A(정or마)　대상: 적 전체　속성: 물\n자연과 감응해, 대홍수를 불러일으킨다',
+    description: '위력: A(정or마)　대상: 적 전체　속성: 물 자연과 감응해, 대홍수를 불러일으킨다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24675,7 +24825,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3049',
     name: '타이 달 웨이브',
-    description: '위력: S(정or마)　대상: 적 전체　속성: 물\n자연과 감응해, 대륙급의 큰 해일을 불러일으키는 오의',
+    description: '위력: S(정or마)　대상: 적 전체　속성: 물 자연과 감응해, 대륙급의 큰 해일을 불러일으키는 오의',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24690,7 +24840,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3050',
     name: '독소',
-    description: '위력: C(마)　대상: 적 전체　속성: 바이오\n자연과 감응해, 독소를 출현시킨다',
+    description: '위력: C(마)　대상: 적 전체　속성: 바이오 자연과 감응해, 독소를 출현시킨다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24705,7 +24855,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3051',
     name: '맹독 선풍',
-    description: '위력: A(마)　대상: 적 전체　속성: 바이오\n자연과 감응해, 맹독의 선풍을 일으킨다',
+    description: '위력: A(마)　대상: 적 전체　속성: 바이오 자연과 감응해, 맹독의 선풍을 일으킨다',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24720,7 +24870,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3052',
     name: '황홀의 바람',
-    description: '위력: C(마or손)　대상: 적 전체　속성: 쾌락·바람　효과: 황홀\n바람을 불러, 간질이도록(듯이) 애무하는 쾌락 기술',
+    description: '위력: C(마or손)　대상: 적 전체　속성: 쾌락·바람　효과: 황홀 바람을 불러, 간질이도록(듯이) 애무하는 쾌락 기술',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24735,7 +24885,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3053',
     name: '바람의 세레나데',
-    description: '위력: A(마or손)　대상: 적 전체　속성: 쾌락·바람　효과: 황홀\n바람을 불러, 전신에 착 달라붙게 하는 쾌락 기술',
+    description: '위력: A(마or손)　대상: 적 전체　속성: 쾌락·바람　효과: 황홀 바람을 불러, 전신에 착 달라붙게 하는 쾌락 기술',
     type: '61',
     icon: 157,
     scope: 2,
@@ -24750,7 +24900,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3055',
     name: '페어리 힐',
-    description: '대상: 아군 하나　효과: HP중 회복\n자연과 감응해, 아군 하나를 회복 한다',
+    description: '대상: 아군 하나　효과: HP중 회복 자연과 감응해, 아군 하나를 회복 한다',
     type: '61',
     icon: 157,
     scope: 7,
@@ -24765,7 +24915,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3056',
     name: '원더 힐',
-    description: '대상: 아군 전체　효과: HP대회복\n자연과 감응해, 아군 전체를 회복 한다',
+    description: '대상: 아군 전체　효과: HP대회복 자연과 감응해, 아군 전체를 회복 한다',
     type: '61',
     icon: 157,
     scope: 8,
@@ -24780,7 +24930,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3057',
     name: '마지카르라이즈',
-    description: '대상: 아군 하나　효과: 완전 소생\n자연과 감응해, 아군 하나를 소생 한다',
+    description: '대상: 아군 하나　효과: 완전 소생 자연과 감응해, 아군 하나를 소생 한다',
     type: '61',
     icon: 157,
     scope: 9,
@@ -24795,7 +24945,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3058',
     name: '숲의 위안',
-    description: '대상: 아군 전체　효과: HP중 회복\n자연과 감응해, 아군 하나를 회복 한다',
+    description: '대상: 아군 전체　효과: HP중 회복 자연과 감응해, 아군 하나를 회복 한다',
     type: '61',
     icon: 157,
     scope: 8,
@@ -24810,7 +24960,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3059',
     name: '숲의 기적',
-    description: '대상: 아군 하나　효과: HP대회복\n자연과 감응해, 아군 하나를 크게 회복 한다',
+    description: '대상: 아군 하나　효과: HP대회복 자연과 감응해, 아군 하나를 크게 회복 한다',
     type: '61',
     icon: 157,
     scope: 7,
@@ -24825,7 +24975,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3060',
     name: '숲의 방비',
-    description: '대상: 아군 전체　효과: 속성 무효\n자연과 감응해, 속성을 무효화하는 방호벽을 친다',
+    description: '대상: 아군 전체　효과: 속성 무효 자연과 감응해, 속성을 무효화하는 방호벽을 친다',
     type: '61',
     icon: 157,
     scope: 8,
@@ -24837,7 +24987,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3061',
     name: '여왕의 기원',
-    description: '대상: 사용자　효과: 물리·마법 무효\n자연과 감응해, 물리 공격과 마법 공격을 차단한다',
+    description: '대상: 사용자　효과: 물리·마법 무효 자연과 감응해, 물리 공격과 마법 공격을 차단한다',
     type: '61',
     icon: 157,
     scope: 11,
@@ -24849,7 +24999,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3068',
     name: '불의 숨',
-    description: '위력: E(공or손or마)　대상: 적 전체　속성: 불길\n입으로부터 불의 숨을 내쉬기 시작하는 브레스 기술',
+    description: '위력: E(공or손or마)　대상: 적 전체　속성: 불길 입으로부터 불의 숨을 내쉬기 시작하는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -24864,7 +25014,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3069',
     name: '화염의 숨',
-    description: '위력: C(공or손or마)　대상: 적 전체　속성: 불길\n입으로부터 화염의 숨을 내쉬기 시작하는 브레스 기술',
+    description: '위력: C(공or손or마)　대상: 적 전체　속성: 불길 입으로부터 화염의 숨을 내쉬기 시작하는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -24879,7 +25029,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3070',
     name: '격렬한 불길',
-    description: '위력: A(공or손or마)　대상: 적 전체　속성: 불길\n입으로부터 격렬한 불길을 토해내는 브레스 기술',
+    description: '위력: A(공or손or마)　대상: 적 전체　속성: 불길 입으로부터 격렬한 불길을 토해내는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -24894,7 +25044,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3071',
     name: '작열의 불길',
-    description: '위력: S(공or손or마)　대상: 적 전체　속성: 불길\n입으로부터 작열의 불길을 토해내는 브레스 기술',
+    description: '위력: S(공or손or마)　대상: 적 전체　속성: 불길 입으로부터 작열의 불길을 토해내는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -24909,7 +25059,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3074',
     name: '차가운 숨',
-    description: '위력: E(공or손or마)　대상: 적 전체　속성: 얼음\n입으로부터 차가운 숨을 내쉬기 시작하는 브레스 기술',
+    description: '위력: E(공or손or마)　대상: 적 전체　속성: 얼음 입으로부터 차가운 숨을 내쉬기 시작하는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -24924,7 +25074,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3075',
     name: '얼어붙는 숨',
-    description: '위력: B(공or손or마)　대상: 적 전체　속성: 얼음\n입으로부터 얼어붙는 숨을 내쉬기 시작하는 브레스 기술',
+    description: '위력: B(공or손or마)　대상: 적 전체　속성: 얼음 입으로부터 얼어붙는 숨을 내쉬기 시작하는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -24939,7 +25089,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3076',
     name: '어는 눈보라',
-    description: '위력: S(공or손or마)　대상: 적 전체　속성: 얼음\n입으로부터 어는 눈보라를 토해내는 브레스 기술',
+    description: '위력: S(공or손or마)　대상: 적 전체　속성: 얼음 입으로부터 어는 눈보라를 토해내는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -24954,7 +25104,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3077',
     name: '빛나는 숨',
-    description: '위력: SS(공or손or마)　대상: 적 전체　속성: 얼음\n입으로부터 빛나는 숨을 내쉬기 시작하는 브레스 기술',
+    description: '위력: SS(공or손or마)　대상: 적 전체　속성: 얼음 입으로부터 빛나는 숨을 내쉬기 시작하는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -24969,7 +25119,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3079',
     name: '썬더 브레스',
-    description: '위력: C(공or손or마)　대상: 적 전체　속성: 번개\n입으로부터 수속[收束] 전류를 토해내는 브레스 기술',
+    description: '위력: C(공or손or마)　대상: 적 전체　속성: 번개 입으로부터 수속[收束] 전류를 토해내는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -24984,7 +25134,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3080',
     name: '트리플 브레스',
-    description: '위력: A(공or손or마)　대상: 적 전체　속성: 불길·빙·뢰\n입으로부터 불길과 얼음, 번개가 섞인 숨을 내쉬기 시작하는 브레스 기술',
+    description: '위력: A(공or손or마)　대상: 적 전체　속성: 불길·빙·뢰 입으로부터 불길과 얼음, 번개가 섞인 숨을 내쉬기 시작하는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -24999,7 +25149,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3081',
     name: '바이오 브레스',
-    description: '위력: C(공or손or마)　대상: 적 전체　속성: 바이오\n입으로부터 맹독의 숨을 내쉬기 시작하는 브레스 기술',
+    description: '위력: C(공or손or마)　대상: 적 전체　속성: 바이오 입으로부터 맹독의 숨을 내쉬기 시작하는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -25014,7 +25164,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3082',
     name: '홀리 브레스',
-    description: '위력: S(공or손or마)　대상: 적 전체　속성: 성\n입으로부터 성스러운 숨을 내쉬기 시작하는 브레스 기술',
+    description: '위력: S(공or손or마)　대상: 적 전체　속성: 성 입으로부터 성스러운 숨을 내쉬기 시작하는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -25029,7 +25179,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3083',
     name: '다크 브레스',
-    description: '위력: S(공or손or마)　대상: 적 전체　속성: 어둠\n입으로부터 암흑의 숨을 내쉬기 시작하는 브레스 기술',
+    description: '위력: S(공or손or마)　대상: 적 전체　속성: 어둠 입으로부터 암흑의 숨을 내쉬기 시작하는 브레스 기술',
     type: '62',
     icon: 144,
     scope: 2,
@@ -25044,7 +25194,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3085',
     name: '독의 숨',
-    description: '대상: 적 전체　효과: 독\n입으로부터 독의 숨을 내쉬어, 적 전체를 독으로 무릅쓴다',
+    description: '대상: 적 전체　효과: 독 입으로부터 독의 숨을 내쉬어, 적 전체를 독으로 무릅쓴다',
     type: '62',
     icon: 144,
     scope: 2,
@@ -25056,7 +25206,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3086',
     name: '달콤한 숨',
-    description: '대상: 적 전체　효과: 수면\n입으로부터 달콤한 숨을 내쉬어, 적 전체를 잠으로 이끈다',
+    description: '대상: 적 전체　효과: 수면 입으로부터 달콤한 숨을 내쉬어, 적 전체를 잠으로 이끈다',
     type: '62',
     icon: 144,
     scope: 2,
@@ -25068,7 +25218,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3087',
     name: '타는 숨',
-    description: '대상: 적 전체　효과: 마비\n입으로부터 타는 숨을 내쉬어, 적 전체를 마비 시킨다',
+    description: '대상: 적 전체　효과: 마비 입으로부터 타는 숨을 내쉬어, 적 전체를 마비 시킨다',
     type: '62',
     icon: 144,
     scope: 2,
@@ -25080,7 +25230,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3088',
     name: '냄새나는 숨',
-    description: '대상: 적 전체　효과: 상태 이상\n입으로부터 토해내는 마성의 숨으로 적을 복수 상태 이상하게 한다',
+    description: '대상: 적 전체　효과: 상태 이상 입으로부터 토해내는 마성의 숨으로 적을 복수 상태 이상하게 한다',
     type: '62',
     icon: 144,
     scope: 2,
@@ -25092,7 +25242,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3089',
     name: '석화 브레스',
-    description: '대상: 적 전체　효과: 석화\n입으로부터 석화 브레스를 토해, 적 전체를 돌로 한다',
+    description: '대상: 적 전체　효과: 석화 입으로부터 석화 브레스를 토해, 적 전체를 돌로 한다',
     type: '62',
     icon: 144,
     scope: 2,
@@ -25104,7 +25254,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3094',
     name: '치료',
-    description: '대상: 아군 하나　효과: HP소회복\n간단한 응급 처치로 아군 하나를 소회복 한다',
+    description: '대상: 아군 하나　효과: HP소회복 간단한 응급 처치로 아군 하나를 소회복 한다',
     type: '63',
     icon: 300,
     scope: 7,
@@ -25119,7 +25269,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3095',
     name: '기원',
-    description: '대상: 사용자　효과: MP소회복\n하늘에 빌어, 자신의 MP를 약간 회복 한다',
+    description: '대상: 사용자　효과: MP소회복 하늘에 빌어, 자신의 MP를 약간 회복 한다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25134,7 +25284,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3096',
     name: '력 모으고',
-    description: '대상: 사용자　효과: 공격력 업\n힘을 모아, 다음의 턴의 공격력을 업 시킨다',
+    description: '대상: 사용자　효과: 공격력 업 힘을 모아, 다음의 턴의 공격력을 업 시킨다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25146,7 +25296,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3097',
     name: '기합 모으고',
-    description: '대상: 사용자　효과: 공격력 업\n힘을 모아, 다음의 턴의 공격력을 크고 업 시킨다',
+    description: '대상: 사용자　효과: 공격력 업 힘을 모아, 다음의 턴의 공격력을 크고 업 시킨다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25158,7 +25308,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3098',
     name: '전력 모으고',
-    description: '대상: 사용자　효과: 공격력 업\n힘을 모아, 다음의 턴의 공격력을 폭발적으로 업 시킨다',
+    description: '대상: 사용자　효과: 공격력 업 힘을 모아, 다음의 턴의 공격력을 폭발적으로 업 시킨다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25170,7 +25320,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3099',
     name: '련기',
-    description: '대상: 사용자　효과: 공격력·회심율 업\n3 턴의 사이, 기분을 가다듬어 격투 능력을 높이는 기술',
+    description: '대상: 사용자　효과: 공격력·회심율 업 3 턴의 사이, 기분을 가다듬어 격투 능력을 높이는 기술',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25182,7 +25332,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3100',
     name: '리련기',
-    description: '대상: 사용자　효과: 공격력 대업·회심율 100%\n3 턴의 사이, 기분을 가다듬어 격투 능력을 큰폭으로 높이는 기술',
+    description: '대상: 사용자　효과: 공격력 대업·회심율 100% 3 턴의 사이, 기분을 가다듬어 격투 능력을 큰폭으로 높이는 기술',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25194,7 +25344,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3101',
     name: '강체',
-    description: '대상: 사용자　효과: 방어력 업\n내향성공으로 육체를 경화시켜, 방어력을 업 시킨다',
+    description: '대상: 사용자　효과: 방어력 업 내향성공으로 육체를 경화시켜, 방어력을 업 시킨다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25206,7 +25356,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3102',
     name: '룡강체',
-    description: '대상: 사용자　효과: 방어력·정신력 대업\n용의 힘으로 육체를 경화시켜, 방어력을 업 시킨다',
+    description: '대상: 사용자　효과: 방어력·정신력 대업 용의 힘으로 육체를 경화시켜, 방어력을 업 시킨다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25218,7 +25368,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3103',
     name: '마력 집중',
-    description: '대상: 사용자　효과: 마력 업\n힘을 모아, 다음의 턴의 마력을 업 시킨다',
+    description: '대상: 사용자　효과: 마력 업 힘을 모아, 다음의 턴의 마력을 업 시킨다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25230,7 +25380,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3104',
     name: '정신 집중',
-    description: '대상: 사용자　효과: 손재주 업\n힘을 모아, 다음의 턴의 손재주를 업 시킨다',
+    description: '대상: 사용자　효과: 손재주 업 힘을 모아, 다음의 턴의 손재주를 업 시킨다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25242,7 +25392,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3105',
     name: '초심',
-    description: '대상: 사용자　효과: 통상 공격 위력 업\n초심을 생각해 내, 통상 공격의 위력을 높이는 기술',
+    description: '대상: 사용자　효과: 통상 공격 위력 업 초심을 생각해 내, 통상 공격의 위력을 높이는 기술',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25254,7 +25404,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3106',
     name: '실프',
-    description: '위력: A(민or마)　대상: 적 전체　속성: 풍　효과: 사용자 강화\n실프를 소환 해, 그 몸에 바람을 품는다',
+    description: '위력: A(민or마)　대상: 적 전체　속성: 풍　효과: 사용자 강화 실프를 소환 해, 그 몸에 바람을 품는다',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25269,7 +25419,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3107',
     name: '놈',
-    description: '위력: A(방or마)　대상: 적 전체　속성: 흙　효과: 사용자 강화\n놈을 소환 해, 그 몸에 흙을 품는다',
+    description: '위력: A(방or마)　대상: 적 전체　속성: 흙　효과: 사용자 강화 놈을 소환 해, 그 몸에 흙을 품는다',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25284,7 +25434,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3108',
     name: '운디네',
-    description: '위력: A(정or마)　대상: 적 전체　속성: 수　효과: 사용자 강화\n운디네를 소환 해, 그 몸에 물을 품는다',
+    description: '위력: A(정or마)　대상: 적 전체　속성: 수　효과: 사용자 강화 운디네를 소환 해, 그 몸에 물을 품는다',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25299,7 +25449,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3109',
     name: '샐러맨더',
-    description: '위력: A(공or마)　대상: 적 전체　속성: 불　효과: 사용자 강화\n샐러맨더를 소환 해, 그 몸에 화를 품는다',
+    description: '위력: A(공or마)　대상: 적 전체　속성: 불　효과: 사용자 강화 샐러맨더를 소환 해, 그 몸에 화를 품는다',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25314,7 +25464,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3112',
     name: '바람의 장난',
-    description: '대상: 사용자　효과: 명중율·회피율중 업\n바람과 감응해, 바람과 함께 흩날린다',
+    description: '대상: 사용자　효과: 명중율·회피율중 업 바람과 감응해, 바람과 함께 흩날린다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25326,7 +25476,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3113',
     name: '질풍의 극한',
-    description: '대상: 사용자　효과: 명중율·회피율대업\n바람과 감응해, 그 움직임에 질풍을 품는다',
+    description: '대상: 사용자　효과: 명중율·회피율대업 바람과 감응해, 그 움직임에 질풍을 품는다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25338,7 +25488,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3114',
     name: '대지의 숨결',
-    description: '대상: 사용자　효과: 방어력 대업·물리 반감\n흙과 감응해, 대지의 숨결을 그 몸에 머문다',
+    description: '대상: 사용자　효과: 방어력 대업·물리 반감 흙과 감응해, 대지의 숨결을 그 몸에 머문다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25350,7 +25500,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3115',
     name: '난폭하게 구는 대지',
-    description: '대상: 사용자　효과: 방어력 특대 업·물리 반감\n흙과 감응해, 난폭하게 구는 대지의 힘을 품는다',
+    description: '대상: 사용자　효과: 방어력 특대 업·물리 반감 흙과 감응해, 난폭하게 구는 대지의 힘을 품는다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25362,7 +25512,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3116',
     name: '명경지수',
-    description: '대상: 사용자　효과: 명중율·회피율 업\n마음을 물의 흐름에 맡겨 물리 공격의 죄다를 회피하는 비장의 기술',
+    description: '대상: 사용자　효과: 명중율·회피율 업 마음을 물의 흐름에 맡겨 물리 공격의 죄다를 회피하는 비장의 기술',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25374,7 +25524,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3117',
     name: '심호흡',
-    description: '대상: 사용자　효과: HP·SP턴소회복\n정신을 안정시켜, HP와 SP를 서서히 회복 시킨다',
+    description: '대상: 사용자　효과: HP·SP턴소회복 정신을 안정시켜, HP와 SP를 서서히 회복 시킨다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25386,7 +25536,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3118',
     name: '전술적 호흡법',
-    description: '대상: 사용자　효과: HP·SP턴대회복\n훈련된 호흡법으로, HP와 SP를 순식간에 회복 시킨다',
+    description: '대상: 사용자　효과: HP·SP턴대회복 훈련된 호흡법으로, HP와 SP를 순식간에 회복 시킨다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25398,7 +25548,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3119',
     name: '자기 치료',
-    description: '대상: 사용자　효과: 상태 이상 회복\n자신에게 응급 처치를 실시해 상태 이상을 치료한다',
+    description: '대상: 사용자　효과: 상태 이상 회복 자신에게 응급 처치를 실시해 상태 이상을 치료한다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25410,7 +25560,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3120',
     name: '초자기 치료',
-    description: '대상: 사용자　효과: 상태 이상 예방\n자신에게 응급 처치를 실시해 상태 이상을 예방한다',
+    description: '대상: 사용자　효과: 상태 이상 예방 자신에게 응급 처치를 실시해 상태 이상을 예방한다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25422,7 +25572,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3121',
     name: '배수',
-    description: '대상: 사용자　효과: 회심율대업\n빈사의 데미지와 교환에 회심율이 크게 오른다',
+    description: '대상: 사용자　효과: 회심율대업 빈사의 데미지와 교환에 회심율이 크게 오른다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25437,7 +25587,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3122',
     name: '뒤배수',
-    description: '대상: 사용자　효과: SP전회복\n빈사의 데미지와 교환에 SP가 회복 한다',
+    description: '대상: 사용자　효과: SP전회복 빈사의 데미지와 교환에 SP가 회복 한다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25452,7 +25602,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3123',
     name: '궁극 배수',
-    description: '대상: 사용자　효과: 전능력 업\n빈사의 데미지와 교환에 전능력이 오른다',
+    description: '대상: 사용자　효과: 전능력 업 빈사의 데미지와 교환에 전능력이 오른다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25467,7 +25617,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3124',
     name: '버서커화',
-    description: '대상: 사용자　효과: 버서크\n폭주 상태가 되지만 공격력이 대폭 상승',
+    description: '대상: 사용자　효과: 버서크 폭주 상태가 되지만 공격력이 대폭 상승',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25479,7 +25629,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3125',
     name: '초 버서커화',
-    description: '대상: 사용자　효과: 버서크·2회 행동\n폭주 상태가 되지만 공격력이 대폭 상승, 2회 행동 가능하게',
+    description: '대상: 사용자　효과: 버서크·2회 행동 폭주 상태가 되지만 공격력이 대폭 상승, 2회 행동 가능하게',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25491,7 +25641,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3126',
     name: '변신',
-    description: '대상: 사용자　효과: 변신\nSP를 소비해 5 턴의 사이 히어로로 변신한다',
+    description: '대상: 사용자　효과: 변신 SP를 소비해 5 턴의 사이 히어로로 변신한다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25503,7 +25653,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3127',
     name: '초변신',
-    description: '대상: 사용자　효과: 변신\nSP를 대폭 소비해 전투중 쭉 변신 상태가 된다',
+    description: '대상: 사용자　효과: 변신 SP를 대폭 소비해 전투중 쭉 변신 상태가 된다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25515,7 +25665,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3128',
     name: '매직컬 체인지',
-    description: '대상: 사용자　효과: 변신\nMP를 소비해 5 턴의 사이 히어로로 변신한다',
+    description: '대상: 사용자　효과: 변신 MP를 소비해 5 턴의 사이 히어로로 변신한다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25527,7 +25677,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3129',
     name: '마녀화',
-    description: '대상: 사용자　효과: 변신\nMP를 대폭 소비해 전투중 쭉 변신 상태가 된다',
+    description: '대상: 사용자　효과: 변신 MP를 대폭 소비해 전투중 쭉 변신 상태가 된다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25539,7 +25689,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3130',
     name: '확보 홀드',
-    description: '대상: 적 하나　효과: 구속\n적 하나를 억눌러, 구속 상태로 한다',
+    description: '대상: 적 하나　효과: 구속 적 하나를 억눌러, 구속 상태로 한다',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25551,7 +25701,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3131',
     name: '원군 요청',
-    description: '위력: E　대상: 적 랜덤 3회　효과: 매턴 발동\n원군을 요청해, 3 턴 공격해 받는다',
+    description: '위력: E　대상: 적 랜덤 3회　효과: 매턴 발동 원군을 요청해, 3 턴 공격해 받는다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25563,7 +25713,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3132',
     name: '웨폰브레이크',
-    description: '위력: E(공)　대상: 적 하나 특수:공격력 다운\n적 하나의 공격력을 감소시키는 공격 기술',
+    description: '위력: E(공)　대상: 적 하나 특수:공격력 다운 적 하나의 공격력을 감소시키는 공격 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25578,7 +25728,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3133',
     name: '아머 브레이크',
-    description: '위력: E(공)　대상: 적 하나 특수:방어력 다운\n적 하나의 방어력을 감소시키는 공격 기술',
+    description: '위력: E(공)　대상: 적 하나 특수:방어력 다운 적 하나의 방어력을 감소시키는 공격 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25593,7 +25743,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3134',
     name: '매직 브레이크',
-    description: '위력: E(공)　대상: 적 하나 특수:마력 다운\n적 하나의 마력을 감소시키는 공격 기술',
+    description: '위력: E(공)　대상: 적 하나 특수:마력 다운 적 하나의 마력을 감소시키는 공격 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25608,7 +25758,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3135',
     name: '마인드 브레이크',
-    description: '위력: E(공)　대상: 적 하나 특수:정신력 다운\n적 하나의 정신력을 감소시키는 공격 기술',
+    description: '위력: E(공)　대상: 적 하나 특수:정신력 다운 적 하나의 정신력을 감소시키는 공격 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25623,7 +25773,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3136',
     name: '스피드 브레이크',
-    description: '위력: E(공)　대상: 적 하나 특수:민첩성 다운\n적 하나의 민첩성을 감소시키는 공격 기술',
+    description: '위력: E(공)　대상: 적 하나 특수:민첩성 다운 적 하나의 민첩성을 감소시키는 공격 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25638,7 +25788,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3137',
     name: '테크닉 브레이크',
-    description: '위력: E(공)　대상: 적 하나 특수:손재주 다운\n적 하나의 손재주를 감소시키는 공격 기술',
+    description: '위력: E(공)　대상: 적 하나 특수:손재주 다운 적 하나의 손재주를 감소시키는 공격 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25653,7 +25803,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3138',
     name: '웨폰인파크트',
-    description: '위력: D(공)　대상: 적 전체 특수:공격력 다운\n적 전체의 공격력을 감소시키는 공격 기술',
+    description: '위력: D(공)　대상: 적 전체 특수:공격력 다운 적 전체의 공격력을 감소시키는 공격 기술',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25668,7 +25818,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3139',
     name: '아머 임펙트',
-    description: '위력: D(공)　대상: 적 전체 특수:방어력 다운\n적 전체의 방어력을 감소시키는 공격 기술',
+    description: '위력: D(공)　대상: 적 전체 특수:방어력 다운 적 전체의 방어력을 감소시키는 공격 기술',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25683,7 +25833,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3140',
     name: '매직 임펙트',
-    description: '위력: D(공)　대상: 적 전체 특수:마력 다운\n적 전체의 마력을 감소시키는 공격 기술',
+    description: '위력: D(공)　대상: 적 전체 특수:마력 다운 적 전체의 마력을 감소시키는 공격 기술',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25698,7 +25848,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3141',
     name: '마인드 임펙트',
-    description: '위력: D(공)　대상: 적 전체 특수:정신력 다운\n적 전체의 정신력을 감소시키는 공격 기술',
+    description: '위력: D(공)　대상: 적 전체 특수:정신력 다운 적 전체의 정신력을 감소시키는 공격 기술',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25713,7 +25863,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3142',
     name: '스피드 임펙트',
-    description: '위력: D(공)　대상: 적 전체 특수:민첩성 다운\n적 전체의 민첩성을 감소시키는 공격 기술',
+    description: '위력: D(공)　대상: 적 전체 특수:민첩성 다운 적 전체의 민첩성을 감소시키는 공격 기술',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25728,7 +25878,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3143',
     name: '테크닉 임펙트',
-    description: '위력: D(공)　대상: 적 전체 특수:손재주 다운\n적 전체의 손재주를 감소시키는 공격 기술',
+    description: '위력: D(공)　대상: 적 전체 특수:손재주 다운 적 전체의 손재주를 감소시키는 공격 기술',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25743,7 +25893,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3144',
     name: '간헐천',
-    description: '위력: A(손)　대상: 적 하나　속성: 물＋　효과: ＋\n간헐천을 분출하게 한 적을 공격하는 기술',
+    description: '위력: A(손)　대상: 적 하나　속성: 물＋　효과: ＋ 간헐천을 분출하게 한 적을 공격하는 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25758,7 +25908,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3145',
     name: '아크아스프랏슈',
-    description: '위력: A(손)　대상: 적 전체　속성: 물＋　효과: ＋\n대지로부터 발한 물류로 적 전체를 공격하는 오의',
+    description: '위력: A(손)　대상: 적 전체　속성: 물＋　효과: ＋ 대지로부터 발한 물류로 적 전체를 공격하는 오의',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25773,7 +25923,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3146',
     name: '달랜다',
-    description: '대상: 적 전체　효과: 스턴\n적 전체를 위압해, 스턴 시키는 맹수 사용의 기술',
+    description: '대상: 적 전체　효과: 스턴 적 전체를 위압해, 스턴 시키는 맹수 사용의 기술',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25785,7 +25935,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3147',
     name: '파후파후',
-    description: '대상: 적 하나　효과: 사용 캐릭터 의존\n젖가슴으로 상대의 머리를 끼워 넣지만, 효과는 사용 캐릭터 나름',
+    description: '대상: 적 하나　효과: 사용 캐릭터 의존 젖가슴으로 상대의 머리를 끼워 넣지만, 효과는 사용 캐릭터 나름',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25797,7 +25947,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3148',
     name: '파렴치 도둑질',
-    description: '대상: 적 하나　효과: 훔친다\n상대의 속옷을 훔치는 파렴치 끝이 없는 기술',
+    description: '대상: 적 하나　효과: 훔친다 상대의 속옷을 훔치는 파렴치 끝이 없는 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25809,7 +25959,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3149',
     name: '세크시빔',
-    description: '위력: B(손)　대상: 적 하나　효과: 유혹\n섹시 포즈로부터 발해지는 광선으로 조준사격',
+    description: '위력: B(손)　대상: 적 하나　효과: 유혹 섹시 포즈로부터 발해지는 광선으로 조준사격',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25824,7 +25974,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3150',
     name: '핑크 태풍',
-    description: '위력: B(손)　대상: 적 전체　효과: 유혹\n색기의 태풍으로 어떤 적도 헤롱헤롱',
+    description: '위력: B(손)　대상: 적 전체　효과: 유혹 색기의 태풍으로 어떤 적도 헤롱헤롱',
     type: '63',
     icon: 300,
     scope: 2,
@@ -25839,7 +25989,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3151',
     name: '스테이지 타임',
-    description: '대상: 사용자　효과: 2회 행동·「춤」 「노래」마셔·SP자동 회복\n2회 행동이 가능하게 되지만, 「춤」와 「노래」밖에 사용할 수 없다',
+    description: '대상: 사용자　효과: 2회 행동·「춤」 「노래」마셔·SP자동 회복 2회 행동이 가능하게 되지만, 「춤」와 「노래」밖에 사용할 수 없다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25851,7 +26001,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3153',
     name: '하드 작업 모드',
-    description: '대상: 사용자　효과: 2회 행동·일자리 기술 연속 발동\n행동 회수가 증가하지만, HP를 소비해 나간다',
+    description: '대상: 사용자　효과: 2회 행동·일자리 기술 연속 발동 행동 회수가 증가하지만, HP를 소비해 나간다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25863,7 +26013,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3154',
     name: '술꾼',
-    description: '대상: 사용자　효과: 공격력 업·랜덤 상태 이상\n마시면 마실수록 강해져……?',
+    description: '대상: 사용자　효과: 공격력 업·랜덤 상태 이상 마시면 마실수록 강해져……?',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25875,7 +26025,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3155',
     name: '구멍파기',
-    description: '대상: 사용자　효과: 랜덤\n발밑을 파 봐, 무엇이 나올까는 즐거움',
+    description: '대상: 사용자　효과: 랜덤 발밑을 파 봐, 무엇이 나올까는 즐거움',
     type: '63',
     icon: 300,
     scope: 11,
@@ -25887,7 +26037,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3156',
     name: '게 광선',
-    description: '위력: D(손)　대상: 적 하나　속성: ＋　효과: 마비＋\n적 하나를 마비 시키는 무산 계급인 기술',
+    description: '위력: D(손)　대상: 적 하나　속성: ＋　효과: 마비＋ 적 하나를 마비 시키는 무산 계급인 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25902,7 +26052,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3157',
     name: '냉동 게 광선',
-    description: '위력: B(손)　대상: 적 하나　속성: 얼음＋　효과: 마비·프리즈＋\n적 하나를 동결시키는 무산 계급인 광선',
+    description: '위력: B(손)　대상: 적 하나　속성: 얼음＋　효과: 마비·프리즈＋ 적 하나를 동결시키는 무산 계급인 광선',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25917,7 +26067,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3158',
     name: '빤다',
-    description: '위력: C(공or손)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈\n상대의 몸을 대규모로 물어, 빠는 음 기술',
+    description: '위력: C(공or손)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈 상대의 몸을 대규모로 물어, 빠는 음 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25932,7 +26082,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3159',
     name: '착정공흡정',
-    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n보디에 갖춰진 착정공으로 정기를 짜내는 음 기술',
+    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 보디에 갖춰진 착정공으로 정기를 짜내는 음 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25947,7 +26097,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3160',
     name: '지렁이천 마리흡정',
-    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n극상의 착정공으로 정기를 전부 짜내는 음 기술',
+    description: '위력: C(손)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 극상의 착정공으로 정기를 전부 짜내는 음 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25962,7 +26112,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3161',
     name: '아비스드레인',
-    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n특수한 착정기관으로 마르고 학시까지 정액을 빨아 올리는 오의',
+    description: '위력: A(손)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 특수한 착정기관으로 마르고 학시까지 정액을 빨아 올리는 오의',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25977,7 +26127,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3162',
     name: '스위트 웜',
-    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈\n꼬리의 착정공으로부터 정기를 짜내는 쾌락 기술',
+    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 구속·미끈미끈 꼬리의 착정공으로부터 정기를 짜내는 쾌락 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -25992,7 +26142,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3163',
     name: '스랏그드레인',
-    description: '위력: E(공or손)　대상: 적 하나　속성: 쾌락　효과: HP흡수·미끈미끈\n미끌거린 연체 보디로 덥쳐, 정기를 빨아 들이는 기술',
+    description: '위력: E(공or손)　대상: 적 하나　속성: 쾌락　효과: HP흡수·미끈미끈 미끌거린 연체 보디로 덥쳐, 정기를 빨아 들이는 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -26007,7 +26157,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3164',
     name: '스랏그보아',
-    description: '대상: 적 하나　효과: 포식\n미끌거린 연체 보디로 덥쳐, 녹여 포식 하는 기술',
+    description: '대상: 적 하나　효과: 포식 미끌거린 연체 보디로 덥쳐, 녹여 포식 하는 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -26019,7 +26169,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3165',
     name: '포식',
-    description: '대상: 적 하나　효과: 포식\n소화 혹은 구속 상태의 적을 포식 하는 기술',
+    description: '대상: 적 하나　효과: 포식 소화 혹은 구속 상태의 적을 포식 하는 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -26031,7 +26181,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3166',
     name: '독설 나메나메',
-    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 독·바이오 약점\n독의 타액을 띤 혀로 상대를 핥아대는 기술',
+    description: '위력: E(손)　대상: 적 하나　속성: 쾌락　효과: 독·바이오 약점 독의 타액을 띤 혀로 상대를 핥아대는 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -26046,7 +26196,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3167',
     name: '연체 보디',
-    description: '대상: 사용자　효과: 물리 데미지 반감\n부드러운 보디로 충격을 흡수해 피데미지를 억제한다',
+    description: '대상: 사용자　효과: 물리 데미지 반감 부드러운 보디로 충격을 흡수해 피데미지를 억제한다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -26058,7 +26208,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3168',
     name: '점액 대량 분비',
-    description: '대상: 사용자　효과: 물리 데미지 격감·미끈미끈 카운터\n점액을 분비시키고 충격을 최소한으로 억제한다',
+    description: '대상: 사용자　효과: 물리 데미지 격감·미끈미끈 카운터 점액을 분비시키고 충격을 최소한으로 억제한다',
     type: '63',
     icon: 300,
     scope: 11,
@@ -26070,7 +26220,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3169',
     name: '동화 흡수',
-    description: '대상: 적 하나　효과: 포식\n적을 체내 거두어들여, 동화하는 포식 기술',
+    description: '대상: 적 하나　효과: 포식 적을 체내 거두어들여, 동화하는 포식 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -26082,7 +26232,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3170',
     name: '드레인 핸드',
-    description: '위력: D(공)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수\n유체의 손바닥으로 상대를 애무해, 정기를 빨아 들이는 쾌락 기술',
+    description: '위력: D(공)　대상: 적 하나　속성: 쾌락　효과: 구속·HP흡수 유체의 손바닥으로 상대를 애무해, 정기를 빨아 들이는 쾌락 기술',
     type: '63',
     icon: 300,
     scope: 1,
@@ -26097,7 +26247,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3171',
     name: '유사',
-    description: '위력: D(공)　대상: 적 전체　속성: 흙　효과: 구속\n거대한 유사를 발생시키고 적을 말려들게 한다',
+    description: '위력: D(공)　대상: 적 전체　속성: 흙　효과: 구속 거대한 유사를 발생시키고 적을 말려들게 한다',
     type: '63',
     icon: 300,
     scope: 2,
@@ -26112,7 +26262,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3172',
     name: '거설',
-    description: '위력: C(공or손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈\n거대한 혀로 상대의 전신을 할짝할짝에 핥아대는 음 기술',
+    description: '위력: C(공or손)　대상: 적 하나　속성: 쾌락　효과: 미끈미끈 거대한 혀로 상대의 전신을 할짝할짝에 핥아대는 음 기술',
     type: '63',
     icon: 0,
     scope: 1,
@@ -26127,7 +26277,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3173',
     name: '구멍파기',
-    description: '대상: 사용자　효과: 랜덤\n발밑을 파 봐, 무엇이 나올까는 즐거움',
+    description: '대상: 사용자　효과: 랜덤 발밑을 파 봐, 무엇이 나올까는 즐거움',
     type: '63',
     icon: 300,
     scope: 11,
@@ -26139,7 +26289,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3174',
     name: '수렁 지옥',
-    description: '위력: C(방or마)　대상: 적 전체　속성: 흙\n주위에 수렁을 넓히고 수중에 넣어 버린다',
+    description: '위력: C(방or마)　대상: 적 전체　속성: 흙 주위에 수렁을 넓히고 수중에 넣어 버린다',
     type: '63',
     icon: 300,
     scope: 2,
@@ -26154,7 +26304,7 @@ export const SKILL_LIST: Skill[] = [
   {
     id: '3175',
     name: '배고픔훈',
-    description: '대상: 적 전체　효과: 소화, 포식\n적집단을 소화액 투성이로 하면서, 단번에 포식 하는 배고픔 오의',
+    description: '대상: 적 전체　효과: 소화, 포식 적집단을 소화액 투성이로 하면서, 단번에 포식 하는 배고픔 오의',
     type: '63',
     icon: 300,
     scope: 2,

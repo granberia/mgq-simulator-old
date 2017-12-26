@@ -1,3 +1,5 @@
+import { Skill } from './skills';
+import { Ability } from './abilities';
 import { ElementResist, ElementAdd, ElementPower } from './elements';
 import { StateResist, StateOnHit } from './status';
 
@@ -26,12 +28,10 @@ export interface Equip extends Common {
   spOnInit?: number;
   physicalDamage?: number;
   magicDamage?: number;
-  floorDamage?: number;
   ignoreDamage?: number;
   endure?: number;
   absorbMP?: number;
   damageToGold?: number;
-  moreAction?: number;
   reverseHeal?: number;
   hpRegenOnVictory?: number;
   mpRegenOnVictory?: number;
@@ -54,7 +54,11 @@ export interface Equip extends Common {
 export interface Common {
   id: string;
   name: string;
-  learningSkills?: string[];
+  learningSkills?: {
+    id: string,
+    level: number,
+    skill?: Ability | Skill,
+  }[];
   addSkill?: string[];
   addWeapon?: string[];
   addArmor?: string[];
@@ -97,6 +101,8 @@ export interface Common {
   dualWield?: boolean;
   autoBattle?: boolean;
   noBackstab?: boolean;
+  floorDamage?: number;
+  moreAction?: number;
   // 속성 내성
   elementResist?: ElementResist;
   // 속성 부여
@@ -130,12 +136,9 @@ export const NOT_LEARN_ACTORS: number[] = [
   通常攻撃強化 일반 공격 강화 (무기군, 퍼센트)
   武器スキル倍率強化 무기 스킬 배율 강화 (무기군, 스킬군, 퍼센트)
   HPタイプ消費率 HP 소비율 (스킬군, 퍼센트)
-  TP消費率 SP 소모율 (퍼센트)
   武器マスタリー 무기 마스터리 (무기군, 배율)
   通常攻撃強 바다 강화
   海地形超強化 바다 초 강화
-  32로 시작하는 feature (온히트 상태이상) - 아직 직업 및 종족 및 액터에 적용 X
   34 0 2.0 (스큐라 공격횟수 2회 및 무기 공격횟수 2회)
-  55 1 0.0 이도류
   바닥 피해율 (23으로 시작함)
 */

@@ -3,26 +3,185 @@
 # ● Extract Actor in VXACE
 #===============================================================================
 def extract_actor_ace(file)
-  datas = get_weapon # weapon
-  #datas = get_armor # armor
-  set_data(file, 'import { Weapon } from "../datatype/weapons";')
-  set_data(file, 'export const WEAPON_LIST: Weapon[] = [')
+  extract = 'ability'
+  datas = get_skill
+  temp = ''
+  if extract == 'ability'
+    set_data(file, 'import { Ability } from "../datatype/abilities";') # ability
+    set_data(file, 'export const ABILITY_LIST: Ability[] = [') # ability
+  end
+  if extract == 'skill'
+    set_data(file, 'import { Skill } from "../datatype/skills";') # skill
+    set_data(file, 'export const SKILL_LIST: Skill[] = [') # skill
+  end
+  for i in 1...6000
+    if (extract == 'skill' && i >= 901 && i <= 3180) || 
+       (extract == 'ability' && i >= 61 && i <= 862) || 
+       (extract == 'ability' && i >= 5621 && i <= 5654)
+      target = datas[i]
+      if target.name != '***더미' &&  target.name != '**더미' &&  target.name != ''
+        set_data(file, '{')
+        
+        set_data(file, 'id: \''+ target.id.to_s + '\',', true)
+        set_data(file, 'name: \''+ target.name + '\',', true)
+        set_data(file, 'description: \''+ target.description + '\',', true)
+        set_data(file, 'type: \''+ target.stype_id.to_s + '\',', true)
+        set_data(file, 'icon: '+ target.icon_index.to_s + ',', true)
+        
+        if extract == 'skill' # if Skill
+          set_data(file, 'scope: '+ target.scope.to_s + ',', true)
+          set_data(file, 'action: '+ target.damage.type.to_s + ',', true)
+          set_data(file, 'mpCost: '+ target.mp_cost.to_s + ',', true)
+          set_data(file, 'spCost: '+ target.tp_cost.to_s + ',', true)
+          set_data(file, 'hitType: '+ target.hit_type.to_s + ',', true)
+          
+          # action이 0이 아니면 canCritical, fomula, elementId가 있다
+          if target.damage.type !=0
+            set_data(file, 'element: '+ target.damage.element_id.to_s + ',', true)
+            set_data(file, 'fomula: \''+ target.damage.formula.to_s + '\',', true)
+            set_data(file, 'canCritical: '+ target.damage.critical.to_s + ',', true)
+          end
+          
+          if target.speed != 0
+            set_data(file, 'addSpeed: '+ target.speed.to_s + ',', true)
+          end
+          
+          if target.repeats != 1
+            set_data(file, 'repeats: '+ target.repeats.to_s + ',', true)
+          end
+        end
+        
+        
+        if extract == 'ability' # if Ability
+          ## size
+          target.note.each_line do |line|
+            if /<記憶容量\s?(\d+)>/i.match(line)
+              set_data(file, 'size: '+ $1.to_f.round.to_s + ',', true)
+            end
+          end
+        end
+        
+        set_data(file, '},')
+      end
+    end
+    
+  end
+  set_data(file, '];')
+end
+
+#===============================================================================
+
+def extract_actor_ace_equip(file)
+  #datas = get_weapon # weapon
+  datas = get_armor # armor, accessory
+  #set_data(file, 'import { Weapon } from "../datatype/weapons";')
+  #set_data(file, 'export const WEAPON_LIST: Weapon[] = [')
   #set_data(file, 'import { Armor } from "../datatype/armors";')
   #set_data(file, 'export const ARMOR_LIST: Armor[] = [')
-  for i in 1...1000 # weapon
+  set_data(file, 'import { Accessory } from "../datatype/accessories";')
+  set_data(file, 'export const ACCESSORY_LIST: Accessory[] = [')
+  #for i in 1...1000 # weapon
   #for i in 1...349 # armor
+  for i in 1001...1741 # accessory
     target = datas[i]
     
-    if target.name != '***더미' &&  target.name != '**더미' &&  target.name != ''
+    if target.name[0] != '/' && target.name != '***더미' &&  target.name != '**더미' &&  target.name != ''
       set_data(file, '{')
       
       set_data(file, 'id: \''+ target.id.to_s + '\',', true)
       set_data(file, 'name: \''+ target.name + '\',', true)
       set_data(file, 'description: \''+ target.description + '\',', true)
-      set_data(file, 'type: \''+ target.wtype_id.to_s + '\',', true) #weapon 
-      # set_data(file, 'type: \''+ target.atype_id.to_s + '\',', true) #armor
+      # set_data(file, 'type: \''+ target.wtype_id.to_s + '\',', true) #weapon 
+      set_data(file, 'type: \''+ target.atype_id.to_s + '\',', true) #armor, accessory
       set_data(file, 'icon: '+ target.icon_index.to_s + ',', true)
       set_data(file, 'price: '+ target.price.to_s + ',', true)
+      
+      ## addSkill
+      temp = 'addSkill: ['
+      cnt = 0
+      for j in 0...target.features.size
+        if target.features[j].code == 41
+          if cnt != 0
+            temp = temp + ', '
+          end
+          temp = temp + '\'' + target.features[j].data_id.to_s + '\''
+          cnt = cnt + 1
+        end
+      end
+      temp = temp + '],'
+      set_data(file, temp, true)
+      
+      ## addWeapon
+      temp = 'addWeapon: ['
+      cnt = 0
+      for j in 0...target.features.size
+        if target.features[j].code == 51
+          if cnt != 0
+            temp = temp + ', '
+          end
+          temp = temp + '\'' + target.features[j].data_id.to_s + '\''
+          cnt = cnt + 1
+        end
+      end
+      temp = temp + '],'
+      set_data(file, temp, true)
+      
+      ## addArmor
+      temp = 'addArmor: ['
+      cnt = 0
+      for j in 0...target.features.size
+        if target.features[j].code == 52
+          if cnt != 0
+            temp = temp + ', '
+          end
+          temp = temp + '\'' + target.features[j].data_id.to_s + '\''
+          cnt = cnt + 1
+        end
+      end
+      temp = temp + '],'
+      set_data(file, temp, true)
+      
+      ## HP
+      for j in 0...target.features.size
+        if target.features[j].code == 21
+          if target.features[j].data_id == 0
+            set_data(file, 'hp: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+        end
+      end
+      
+      ## MP
+      for j in 0...target.features.size
+        if target.features[j].code == 21
+          if target.features[j].data_id == 1
+            set_data(file, 'mp: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+        end
+      end
+      
+      ## ATK DEF MAT MDF AGI LUK
+      for j in 0...target.features.size
+        if target.features[j].code == 21
+          if target.features[j].data_id == 2
+            set_data(file, 'atk: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 3
+            set_data(file, 'def: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 4
+            set_data(file, 'mat: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 5
+            set_data(file, 'mdf: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 6
+            set_data(file, 'agi: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 7
+            set_data(file, 'luk: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+        end
+      end
       
       set_data(file, 'hpAdd: '+ target.params[0].to_s + ',', true)      
       set_data(file, 'mpAdd: '+ target.params[1].to_s + ',', true)
@@ -89,12 +248,54 @@ def extract_actor_ace(file)
           if target.features[j].data_id == 5
             set_data(file, 'spCharge: '+ (target.features[j].value * 100).round.to_s + ',', true)
           end
+          if target.features[j].data_id == 6
+            set_data(file, 'physicalDamage: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 7
+            set_data(file, 'magicDamage: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 8
+            set_data(file, 'floorDamage: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
           if target.features[j].data_id == 9
             set_data(file, 'expRate: '+ (target.features[j].value * 100).round.to_s + ',', true)
           end
         end
       end
+      
+      ## 특수 플래그
+      for j in 0...target.features.size
+        if target.features[j].code == 34
+          set_data(file, 'moreAction: '+ target.features[j].value.to_i.to_s + ',', true)
+        end
+        if target.features[j].code == 55
+            set_data(file, 'dualWield: true,', true)
+        end
+        if target.features[j].code == 61
+          if target.features[j].data_id == 0
+            set_data(file, 'moreAction: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+        end
+        if target.features[j].code == 62
+          if target.features[j].data_id == 0
+            set_data(file, 'autoBattle: true,', true)
+          end
+        end
+        if target.features[j].code == 64
+          if target.features[j].data_id == 2
+            set_data(file, 'noBackstab: true,', true)
+          end
+        end
+      end
 
+
+      
+      ## magicCounter
+      target.note.each_line do |line|
+        if /<魔法反撃\s?(\d+)\%>/i.match(line)
+          set_data(file, 'magicCounter: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
       
       ## accuracyAdd
       target.note.each_line do |line|
@@ -128,6 +329,14 @@ def extract_actor_ace(file)
       end
 
       
+      ## criticalEvasionAdd
+      target.note.each_line do |line|
+        if /<拡張会心回避率\s?(\d+)\%>/i.match(line)
+          set_data(file, 'criticalEvasionAdd: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
+
+      
       ## counterAdd
       target.note.each_line do |line|
         if /<拡張反撃撃\s?(\d+)\%>/i.match(line)
@@ -152,10 +361,98 @@ def extract_actor_ace(file)
       end
 
       
+      ## spOnInit
+      target.note.each_line do |line|
+        if /<開始時TP\s?(\d+)\%>/i.match(line)
+          set_data(file, 'spOnInit: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
+
+      
       ## spCost
       target.note.each_line do |line|
         if /<TP消費率\s?(\d+)\%>/i.match(line)
           set_data(file, 'spCost: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
+
+      
+      ## goldCost
+      target.note.each_line do |line|
+        if /<ゴールド消費率\s?(\d+)\%>/i.match(line)
+          set_data(file, 'goldCost: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
+
+      
+      ## ignoreDamage
+      target.note.each_line do |line|
+        if /<無効化障壁\s?(\d+)>/i.match(line)
+          set_data(file, 'ignoreDamage: '+ $1.to_s + ',', true)
+        end
+      end
+
+      
+      ## endure
+      target.note.each_line do |line|
+        if /<踏みとどまり\s?(\d+)\%>/i.match(line)
+          set_data(file, 'endure: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
+
+      
+      ## absorbMP
+      target.note.each_line do |line|
+        if /<ダメージMP吸収\s?(\d+)\%>/i.match(line)
+          set_data(file, 'absorbMP: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
+
+      
+      ## damageToGold
+      target.note.each_line do |line|
+        if /<ダメージゴールド回収\s?(\d+)\%>/i.match(line)
+          set_data(file, 'damageToGold: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
+
+      
+      ## reverseHeal
+      target.note.each_line do |line|
+        if /<回復反転\s?(\d+)\%>/i.match(line)
+          set_data(file, 'reverseHeal: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
+
+      
+      ## hpRegenOnVictory
+      target.note.each_line do |line|
+        if /<戦闘後HP回復\s?(\d+)\%>/i.match(line)
+          set_data(file, 'hpRegenOnVictory: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
+
+      
+      ## mpRegenOnVictory
+      target.note.each_line do |line|
+        if /<戦闘後MP回復\s?(\d+)\%>/i.match(line)
+          set_data(file, 'mpRegenOnVictory: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
+
+      
+      ## expRate
+      target.note.each_line do |line|
+        if /<獲得経験値倍率\s?(\d+)\%>/i.match(line)
+          set_data(file, 'expRate: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
+
+      
+      ## jobExpRate
+      target.note.each_line do |line|
+        if /<獲得職業経験値倍率\s?(\d+)\%>/i.match(line)
+          set_data(file, 'jobExpRate: '+ $1.to_f.round.to_s + ',', true)
         end
       end
 
@@ -493,6 +790,42 @@ def extract_actor_ace(file)
       end
       temp = temp + '],'
       set_data(file, temp, true)
+      
+      
+      ## skillStateUp
+      temp = 'skillStateUp: ['
+      cnt = 0
+      target.note.each_line do |line|
+        if /<ステート割合強化タイプ\s?((?:\d+\-\d+(?:\,\s?)?)+)>/i.match(line) 
+          $1.scan(/(\d+)\-(\d+)/){|a, b|
+            if cnt != 0
+              temp = temp + ', '
+            end
+            temp = temp + '{id: \'' + a.to_s + '\', power: ' + b.to_s + '}'
+            cnt = cnt + 1
+          }
+        end
+      end
+      temp = temp + '],'
+      set_data(file, temp, true)
+
+      
+      ## raceKill
+      temp = 'raceKill: ['
+      cnt = 0
+      for j in 0...target.features.size
+        if target.features[j].code == 31
+          if target.features[j].data_id >= 11 && target.features[j].data_id <= 34
+            if cnt != 0
+              temp = temp + ', '
+            end
+            temp = temp + '\'' + target.features[j].data_id.to_s + '\''
+            cnt = cnt + 1
+          end
+        end
+      end
+      temp = temp + '],'
+      set_data(file, temp, true)
 
       set_data(file, '},')
     end
@@ -503,16 +836,35 @@ end
 #===============================================================================
 def extract_actor_ace_race(file)
   class_data = get_class
-  set_data(file, 'import { Race } from "../datatype/races";')
-  set_data(file, 'export const RACE_LIST: Race[] = [')
-  for i in 151...374
+  # set_data(file, 'import { Job } from "../datatype/jobs";') #job
+  # set_data(file, 'export const JOB_LIST: Job[] = [') # job
+  set_data(file, 'import { Race } from "../datatype/races";') # race
+  set_data(file, 'export const RACE_LIST: Race[] = [') # race
+  # for i in 1...149 # job
+  for i in 151...374 # race
     
-    if class_data[i].name != '***더미' &&  class_data[i].name != '**더미' &&  class_data[i].name != ''
+    target = class_data[i]
+    
+    if class_data[i].name != '마신' && class_data[i].name != '카오스' && class_data[i].name != '***더미' &&  class_data[i].name != '**더미' &&  class_data[i].name != ''
       set_data(file, '{')
       
       
       set_data(file, 'id: \''+ class_data[i].id.to_s + '\',', true)
       set_data(file, 'name: \''+ class_data[i].name + '\',', true)
+      
+      
+      ## learningSkills
+      temp = 'learningSkills: ['
+      cnt = 0
+      for j in 0...target.learnings.size
+        if cnt != 0
+          temp = temp + ', '
+        end
+        temp = temp + '{id: \'' + target.learnings[j].skill_id.to_s + '\', level: ' + target.learnings[j].level.to_s + '}'
+        cnt = cnt + 1
+      end
+      temp = temp + '],'
+      set_data(file, temp, true)
       
       ## 요구 직업 정규식
       temp = 'require: ['
@@ -594,8 +946,23 @@ def extract_actor_ace_race(file)
         end
       end
       
-      # SP - 종족의 경우 100%나 직업의 경우 고치자
-      set_data(file, 'sp: 100,', true)
+      if i <= 149 #sp 계산, if job
+        temp = 100
+        class_data[i].note.each_line do |line|
+          if /<最大TP増加\s?(\d+)\%>/i.match(line)
+            temp = $1.to_f.round
+            temp = 100 + temp
+          end
+          if /<最大TP減少\s?(\d+)\%>/i.match(line)
+            temp = $1.to_f.round
+            temp = 100 - temp
+          end
+        end
+        set_data(file, 'sp: '+ temp.to_s + ',', true)
+      end
+      if i > 150
+        set_data(file, 'sp: 100,', true)
+      end
       
       ## ATK DEF MAT MDF AGI LUK
       for j in 0...class_data[i].features.size
@@ -676,6 +1043,15 @@ def extract_actor_ace_race(file)
           if class_data[i].features[j].data_id == 5
             set_data(file, 'spCharge: '+ (class_data[i].features[j].value * 100).round.to_s + ',', true)
           end
+          if target.features[j].data_id == 6
+            set_data(file, 'physicalDamage: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 7
+            set_data(file, 'magicDamage: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 8
+            set_data(file, 'floorDamage: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
           if class_data[i].features[j].data_id == 9
             set_data(file, 'expRate: '+ (class_data[i].features[j].value * 100).round.to_s + ',', true)
           end
@@ -686,6 +1062,31 @@ def extract_actor_ace_race(file)
       class_data[i].note.each_line do |line|
         if /<TP消費率\s?(\d+)\%>/i.match(line)
           set_data(file, 'spCost: '+ $1.to_f.round.to_s + ',', true)
+        end
+      end
+      
+      ## 특수 플래그
+      for j in 0...target.features.size
+        if target.features[j].code == 34
+          set_data(file, 'moreAction: '+ target.features[j].value.to_i.to_s + ',', true)
+        end
+        if target.features[j].code == 55
+            set_data(file, 'dualWield: true,', true)
+        end
+        if target.features[j].code == 61
+          if target.features[j].data_id == 0
+            set_data(file, 'moreAction: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+        end
+        if target.features[j].code == 62
+          if target.features[j].data_id == 0
+            set_data(file, 'autoBattle: true,', true)
+          end
+        end
+        if target.features[j].code == 64
+          if target.features[j].data_id == 2
+            set_data(file, 'noBackstab: true,', true)
+          end
         end
       end
       
@@ -822,6 +1223,107 @@ def extract_actor_ace_race(file)
         end
       end
       set_data(file, '},')
+      
+      ## stateOnHit
+      set_data(file, 'stateOnHit: {')
+      for j in 0...target.features.size
+        if target.features[j].code == 32
+          if target.features[j].data_id == 230
+            set_data(file, 'death: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 231
+            set_data(file, 'ascension: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 232
+            set_data(file, 'climax: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 28
+            set_data(file, 'bind: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 7
+            set_data(file, 'poison: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 8
+            set_data(file, 'blind: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 9
+            set_data(file, 'silence: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 10
+            set_data(file, 'confusion: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 11
+            set_data(file, 'sleep: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 12
+            set_data(file, 'paralysis: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 13
+            set_data(file, 'burn: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 14
+            set_data(file, 'freeze: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 15
+            set_data(file, 'shock: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 16
+            set_data(file, 'slow: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 17
+            set_data(file, 'stop: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 18
+            set_data(file, 'mini: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 19
+            set_data(file, 'zombie: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 20
+            set_data(file, 'petrify: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 21
+            set_data(file, 'digest: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 22
+            set_data(file, 'stun: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 23
+            set_data(file, 'slime: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 24
+            set_data(file, 'horny: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 25
+            set_data(file, 'trance: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 26
+            set_data(file, 'seduction: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+          if target.features[j].data_id == 27
+            set_data(file, 'incontinence: '+ (target.features[j].value * 100).round.to_s + ',', true)
+          end
+        end
+      end
+      set_data(file, '},')
+      
+      if i <= 149 #abilityPoints 계산, if job
+        temp = 'abilityPoints: ['
+        cnt = 0
+        class_data[i].note.each_line do |line|
+          if /<メモライズ容量補正\s?((?:\d+(?:\,\s?)?)+)>/i.match(line)
+            $1.split(/\,\s?/).each_with_index{|capacity, i|
+              if cnt != 0
+                temp = temp + ', '
+              end
+              temp = temp + capacity
+              cnt = cnt + 1
+            }
+          end
+        end
+        temp = temp + '],'
+        set_data(file, temp, true)
+      end
 
       set_data(file, '},')
     end

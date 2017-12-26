@@ -1,12 +1,10 @@
-import { Job } from './../datatype/jobs';
-
-// TODO addSkill 등 부가적인 건 당분간 안 쓰니 맨 나중에 설정해주자
-
+import { Job } from "../datatype/jobs";
 export const JOB_LIST: Job[] = [
   {
     id: '1',
     name: '전사',
-    require: ['1'],
+    learningSkills: [{ id: '917', level: 2 }, { id: '61', level: 3 }, { id: '918', level: 4 }, { id: '3096', level: 5 }, { id: '919', level: 6 }, { id: '544', level: 7 }, { id: '920', level: 8 }, { id: '66', level: 9 }, { id: '921', level: 10 }],
+    require: [],
     addSkill: ['6', '7', '8'],
     addWeapon: ['1', '2', '5', '7', '13', '14', '15', '22'],
     addArmor: ['4', '34', '39'],
@@ -19,11 +17,18 @@ export const JOB_LIST: Job[] = [
     mdf: 80,
     agi: 95,
     luk: 80,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [30, 15, 10, 20, 15],
   },
   {
     id: '2',
     name: '검사',
+    learningSkills: [{ id: '932', level: 2 }, { id: '62', level: 3 }, { id: '935', level: 4 }, { id: '3097', level: 5 }, { id: '933', level: 6 }, { id: '212', level: 7 }, { id: '934', level: 8 }, { id: '163', level: 9 }, { id: '936', level: 10 }],
     require: ['1'],
     addSkill: ['6', '7', '8'],
     addWeapon: ['1', '2', '3', '5', '7', '13', '15'],
@@ -37,11 +42,18 @@ export const JOB_LIST: Job[] = [
     mdf: 85,
     agi: 100,
     luk: 90,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 25, 20, 30, 25],
   },
   {
     id: '3',
     name: '검성',
+    learningSkills: [{ id: '946', level: 2 }, { id: '63', level: 3 }, { id: '953', level: 4 }, { id: '3098', level: 5 }, { id: '1704', level: 6 }, { id: '230', level: 7 }, { id: '947', level: 8 }, { id: '164', level: 9 }, { id: '961', level: 10 }, { id: '5622', level: 10 }],
     require: ['2'],
     addSkill: ['6', '7', '9'],
     addWeapon: ['1', '2', '3', '5', '9', '7', '13', '15'],
@@ -55,18 +67,22 @@ export const JOB_LIST: Job[] = [
     mdf: 90,
     agi: 110,
     luk: 120,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [70, 45, 40, 55, 45],
   },
   {
     id: '4',
-    name: '마검사', // 공격시 어둠 속성, 이도류
+    name: '마검사',
+    learningSkills: [{ id: '948', level: 2 }, { id: '213', level: 3 }, { id: '110', level: 4 }, { id: '147', level: 5 }, { id: '1705', level: 6 }, { id: '230', level: 7 }, { id: '954', level: 8 }, { id: '164', level: 9 }, { id: '962', level: 10 }],
     require: ['2'],
     addSkill: ['6', '7', '8', '28'],
-    addWeapon: ['1', '2', '3', '5', '9', '7', '13', '15'],
+    addWeapon: ['1', '2', '3', '4', '5', '7', '13', '15'],
     addArmor: ['4', '5', '34', '35', '39', '40'],
-    elementResist: {
-      dark: 75,
-    },
     hp: 130,
     mp: 90,
     sp: 130,
@@ -76,11 +92,20 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 105,
     luk: 90,
+    dualWield: true,
+    elementResist: {
+      dark: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [70, 45, 40, 55, 45],
   },
   {
     id: '5',
-    name: '성당 기사',
+    name: '성기사',
+    learningSkills: [{ id: '1051', level: 2 }, { id: '545', level: 3 }, { id: '1088', level: 4 }, { id: '1053', level: 5 }, { id: '134', level: 6 }, { id: '135', level: 7 }, { id: '1085', level: 8 }, { id: '566', level: 9 }, { id: '1054', level: 10 }],
     require: ['1', '44'],
     addSkill: ['8', '10', '22', '26'],
     addWeapon: ['1', '5', '7', '8'],
@@ -94,18 +119,22 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 115,
     luk: 85,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [35, 30, 25, 40, 30],
   },
   {
     id: '6',
     name: '홀리 나이트',
+    learningSkills: [{ id: '1052', level: 2 }, { id: '546', level: 3 }, { id: '1087', level: 4 }, { id: '118', level: 5 }, { id: '1061', level: 6 }, { id: '119', level: 7 }, { id: '1086', level: 8 }, { id: '567', level: 9 }, { id: '1062', level: 10 }, { id: '5624', level: 10 }],
     require: ['5'],
     addSkill: ['8', '10', '22', '26'],
     addWeapon: ['1', '5', '7', '8'],
     addArmor: ['4', '5', '34', '35', '39', '40'],
-    elementResist: {
-      holy: 75,
-    },
     hp: 120,
     mp: 100,
     sp: 125,
@@ -115,11 +144,19 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 125,
     luk: 85,
+    elementResist: {
+      holy: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [60, 55, 45, 70, 55],
   },
   {
     id: '7',
-    name: '마법 전사',
+    name: '마법전사',
+    learningSkills: [{ id: '1698', level: 2 }, { id: '1699', level: 2 }, { id: '1700', level: 2 }, { id: '565', level: 3 }, { id: '922', level: 4 }, { id: '923', level: 5 }, { id: '924', level: 6 }, { id: '1706', level: 7 }, { id: '1707', level: 7 }, { id: '1708', level: 7 }, { id: '1716', level: 8 }, { id: '1714', level: 9 }, { id: '931', level: 10 }],
     require: ['1', '33'],
     addSkill: ['6', '7', '23', '28'],
     addWeapon: ['1', '2', '5'],
@@ -133,11 +170,18 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 100,
     luk: 90,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [35, 25, 35, 20, 30],
   },
   {
     id: '8',
     name: '마스터 소서러',
+    learningSkills: [{ id: '1701', level: 2 }, { id: '1702', level: 2 }, { id: '1703', level: 2 }, { id: '522', level: 3 }, { id: '264', level: 3 }, { id: '942', level: 4 }, { id: '943', level: 5 }, { id: '944', level: 6 }, { id: '1709', level: 7 }, { id: '1710', level: 7 }, { id: '1711', level: 7 }, { id: '1717', level: 8 }, { id: '530', level: 8 }, { id: '1712', level: 9 }, { id: '959', level: 10 }, { id: '5622', level: 10 }],
     require: ['7'],
     addSkill: ['6', '7', '23', '28'],
     addWeapon: ['1', '2', '5', '6'],
@@ -151,11 +195,18 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 110,
     luk: 95,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [60, 45, 60, 40, 55],
   },
   {
     id: '9',
     name: '용기사',
+    learningSkills: [{ id: '1041', level: 2 }, { id: '1042', level: 3 }, { id: '1082', level: 4 }, { id: '128', level: 5 }, { id: '1045', level: 6 }, { id: '1048', level: 7 }, { id: '1043', level: 8 }, { id: '169', level: 9 }, { id: '1044', level: 10 }],
     require: ['1'],
     addSkill: ['8', '10'],
     addWeapon: ['5', '7', '8'],
@@ -170,18 +221,22 @@ export const JOB_LIST: Job[] = [
     agi: 120,
     luk: 85,
     evasion: 10,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [35, 25, 20, 30, 30],
   },
   {
     id: '10',
     name: '홀리 랜서',
+    learningSkills: [{ id: '1069', level: 2 }, { id: '1047', level: 3 }, { id: '1050', level: 4 }, { id: '215', level: 5 }, { id: '252', level: 5 }, { id: '1071', level: 6 }, { id: '233', level: 7 }, { id: '1083', level: 8 }, { id: '170', level: 9 }, { id: '1073', level: 10 }, { id: '5624', level: 10 }],
     require: ['9'],
     addSkill: ['8', '10'],
     addWeapon: ['5', '7', '8'],
     addArmor: ['4', '5', '34', '35', '39', '40'],
-    elementResist: {
-      holy: 75,
-    },
     hp: 125,
     mp: 85,
     sp: 130,
@@ -192,18 +247,23 @@ export const JOB_LIST: Job[] = [
     agi: 130,
     luk: 90,
     evasion: 10,
+    elementResist: {
+      holy: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [60, 45, 40, 55, 55],
   },
   {
     id: '11',
-    name: '사룡기사', // 이도류
+    name: '사룡기사',
+    learningSkills: [{ id: '1070', level: 2 }, { id: '1046', level: 3 }, { id: '1049', level: 4 }, { id: '215', level: 5 }, { id: '251', level: 5 }, { id: '1072', level: 6 }, { id: '233', level: 7 }, { id: '1084', level: 8 }, { id: '170', level: 9 }, { id: '1074', level: 10 }],
     require: ['9'],
     addSkill: ['8', '10'],
     addWeapon: ['5', '7', '8'],
     addArmor: ['4', '5', '34', '35', '39', '40'],
-    elementResist: {
-      dark: 75,
-    },
     hp: 125,
     mp: 85,
     sp: 130,
@@ -214,14 +274,24 @@ export const JOB_LIST: Job[] = [
     agi: 130,
     luk: 90,
     evasion: 10,
+    dualWield: true,
+    elementResist: {
+      dark: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [60, 45, 40, 55, 55],
   },
   {
     id: '12',
     name: '사무라이',
+    learningSkills: [{ id: '1007', level: 2 }, { id: '1033', level: 3 }, { id: '1008', level: 4 }, { id: '564', level: 5 }, { id: '1009', level: 6 }, { id: '1032', level: 7 }, { id: '1010', level: 8 }, { id: '172', level: 9 }, { id: '1011', level: 10 }],
     require: ['1'],
     addSkill: ['9'],
     addWeapon: ['9'],
+    addArmor: [],
     hp: 115,
     mp: 75,
     sp: 120,
@@ -231,19 +301,24 @@ export const JOB_LIST: Job[] = [
     mdf: 85,
     agi: 105,
     luk: 120,
-    evasion: 15,
     critical: 20,
+    evasion: 15,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 30, 20, 25, 25],
   },
   {
     id: '13',
     name: '성사무라이',
+    learningSkills: [{ id: '1013', level: 2 }, { id: '216', level: 3 }, { id: '1018', level: 4 }, { id: '232', level: 5 }, { id: '250', level: 5 }, { id: '1022', level: 6 }, { id: '3116', level: 7 }, { id: '1024', level: 8 }, { id: '173', level: 9 }, { id: '1026', level: 10 }, { id: '5625', level: 10 }],
     require: ['12'],
     addSkill: ['9'],
     addWeapon: ['9'],
-    elementResist: {
-      holy: 75,
-    },
+    addArmor: [],
     hp: 120,
     mp: 80,
     sp: 130,
@@ -253,19 +328,25 @@ export const JOB_LIST: Job[] = [
     mdf: 90,
     agi: 115,
     luk: 130,
-    evasion: 15,
     critical: 30,
+    evasion: 15,
+    elementResist: {
+      holy: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [70, 55, 40, 45, 45],
   },
   {
     id: '14',
-    name: '마사무라이', // 이도류
+    name: '마사무라이',
+    learningSkills: [{ id: '1012', level: 2 }, { id: '216', level: 3 }, { id: '1019', level: 4 }, { id: '232', level: 5 }, { id: '249', level: 5 }, { id: '1023', level: 6 }, { id: '1034', level: 7 }, { id: '1025', level: 8 }, { id: '173', level: 9 }, { id: '1027', level: 10 }],
     require: ['12'],
     addSkill: ['9'],
     addWeapon: ['9'],
-    elementResist: {
-      dark: 75,
-    },
+    addArmor: [],
     hp: 120,
     mp: 80,
     sp: 130,
@@ -275,13 +356,22 @@ export const JOB_LIST: Job[] = [
     mdf: 90,
     agi: 115,
     luk: 130,
-    evasion: 15,
     critical: 30,
+    evasion: 15,
+    dualWield: true,
+    elementResist: {
+      dark: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [70, 55, 40, 45, 45],
   },
   {
     id: '15',
     name: '파워 파이터',
+    learningSkills: [{ id: '1124', level: 2 }, { id: '1288', level: 3 }, { id: '67', level: 3 }, { id: '221', level: 4 }, { id: '3097', level: 5 }, { id: '226', level: 5 }, { id: '585', level: 6 }, { id: '187', level: 7 }, { id: '202', level: 8 }, { id: '1125', level: 9 }, { id: '1289', level: 10 }],
     require: ['1'],
     addSkill: ['11', '12', '17'],
     addWeapon: ['4', '13', '14', '22'],
@@ -296,11 +386,18 @@ export const JOB_LIST: Job[] = [
     agi: 90,
     luk: 75,
     critical: 10,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 20, 20, 40, 20],
   },
   {
     id: '16',
     name: '기가 파이터',
+    learningSkills: [{ id: '1141', level: 2 }, { id: '1295', level: 3 }, { id: '68', level: 3 }, { id: '235', level: 4 }, { id: '3098', level: 5 }, { id: '240', level: 5 }, { id: '586', level: 6 }, { id: '188', level: 7 }, { id: '203', level: 8 }, { id: '1142', level: 9 }, { id: '1296', level: 10 }, { id: '5630', level: 10 }, { id: '5638', level: 10 }],
     require: ['15'],
     addSkill: ['11', '12', '17'],
     addWeapon: ['4', '13', '14', '22'],
@@ -315,11 +412,18 @@ export const JOB_LIST: Job[] = [
     agi: 85,
     luk: 80,
     critical: 20,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [70, 40, 40, 70, 40],
   },
   {
     id: '17',
-    name: '광전사', // 자동전투
+    name: '광전사',
+    learningSkills: [{ id: '1101', level: 2 }, { id: '67', level: 3 }, { id: '3124', level: 4 }, { id: '220', level: 5 }, { id: '1102', level: 6 }, { id: '740', level: 7 }, { id: '723', level: 8 }, { id: '184', level: 9 }, { id: '1103', level: 10 }],
     require: ['1'],
     addSkill: ['11', '12', '17'],
     addWeapon: ['4', '13', '14', '22'],
@@ -336,11 +440,19 @@ export const JOB_LIST: Job[] = [
     critical: 15,
     spRegen: 30,
     spCharge: 200,
+    autoBattle: true,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 20, 20, 30, 20],
   },
   {
     id: '18',
-    name: '베르세르크', // 자동전투
+    name: '베르세르크',
+    learningSkills: [{ id: '1112', level: 2 }, { id: '68', level: 3 }, { id: '741', level: 4 }, { id: '234', level: 5 }, { id: '1113', level: 6 }, { id: '3125', level: 7 }, { id: '724', level: 8 }, { id: '185', level: 9 }, { id: '1114', level: 10 }, { id: '5629', level: 10 }],
     require: ['17'],
     addSkill: ['11', '12', '17'],
     addWeapon: ['4', '13', '14', '22'],
@@ -357,20 +469,23 @@ export const JOB_LIST: Job[] = [
     critical: 30,
     spRegen: 30,
     spCharge: 300,
+    autoBattle: true,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [70, 40, 40, 55, 40],
   },
   {
     id: '19',
     name: '음양검사',
+    learningSkills: [{ id: '925', level: 2 }, { id: '926', level: 3 }, { id: '927', level: 4 }, { id: '479', level: 5 }, { id: '1745', level: 6 }, { id: '482', level: 7 }, { id: '928', level: 8 }, { id: '485', level: 9 }, { id: '929', level: 10 }],
     require: ['1', '42'],
     addSkill: ['6', '7', '29'],
     addWeapon: ['1', '2', '15', '17', '23'],
     addArmor: ['4', '34', '39'],
-    elementResist: {
-      wind: 50,
-      earth: 50,
-      water: 50,
-    },
     hp: 100,
     mp: 105,
     sp: 105,
@@ -381,21 +496,25 @@ export const JOB_LIST: Job[] = [
     agi: 95,
     luk: 115,
     magicEvasion: 10,
-    magicReflect: 25,
+    elementResist: {
+      wind: 50,
+      earth: 50,
+      water: 50,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [35, 30, 30, 20, 35],
   },
   {
     id: '20',
     name: '구자검신',
+    learningSkills: [{ id: '955', level: 2 }, { id: '480', level: 3 }, { id: '265', level: 3 }, { id: '956', level: 4 }, { id: '483', level: 5 }, { id: '957', level: 6 }, { id: '486', level: 7 }, { id: '512', level: 8 }, { id: '1746', level: 9 }, { id: '5652', level: 9 }, { id: '958', level: 10 }, { id: '5622', level: 10 }],
     require: ['19'],
     addSkill: ['6', '7', '29'],
     addWeapon: ['1', '2', '6', '9', '15', '17', '23'],
     addArmor: ['4', '34', '39'],
-    elementResist: {
-      wind: 25,
-      earth: 25,
-      water: 25,
-    },
     hp: 110,
     mp: 115,
     sp: 110,
@@ -406,13 +525,22 @@ export const JOB_LIST: Job[] = [
     agi: 105,
     luk: 125,
     magicEvasion: 10,
-    magicReflect: 50,
+    elementResist: {
+      wind: 25,
+      earth: 25,
+      water: 25,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [60, 55, 55, 40, 60],
   },
   {
     id: '22',
     name: '무도가',
-    require: ['22'],
+    learningSkills: [{ id: '1400', level: 2 }, { id: '273', level: 3 }, { id: '1401', level: 4 }, { id: '81', level: 5 }, { id: '1402', level: 6 }, { id: '3099', level: 7 }, { id: '3101', level: 7 }, { id: '1403', level: 8 }, { id: '75', level: 9 }, { id: '1405', level: 10 }],
+    require: [],
     addSkill: ['21'],
     addWeapon: ['11', '14'],
     addArmor: ['2'],
@@ -425,14 +553,21 @@ export const JOB_LIST: Job[] = [
     mdf: 90,
     agi: 115,
     luk: 95,
-    evasion: 20,
-    counter: 25,
     critical: 15,
+    counter: 25,
+    evasion: 20,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [25, 20, 15, 15, 20],
   },
   {
     id: '23',
     name: '권호',
+    learningSkills: [{ id: '1446', level: 2 }, { id: '274', level: 3 }, { id: '1406', level: 4 }, { id: '82', level: 5 }, { id: '1407', level: 6 }, { id: '76', level: 7 }, { id: '1450', level: 8 }, { id: '178', level: 9 }, { id: '1408', level: 10 }],
     require: ['22'],
     addSkill: ['21'],
     addWeapon: ['11', '14'],
@@ -446,21 +581,25 @@ export const JOB_LIST: Job[] = [
     mdf: 95,
     agi: 125,
     luk: 100,
-    evasion: 20,
-    counter: 50,
     critical: 20,
+    counter: 50,
+    evasion: 20,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [35, 30, 25, 25, 30],
   },
   {
     id: '24',
     name: '권성',
+    learningSkills: [{ id: '1425', level: 2 }, { id: '275', level: 3 }, { id: '218', level: 4 }, { id: '1427', level: 5 }, { id: '83', level: 6 }, { id: '247', level: 6 }, { id: '1447', level: 7 }, { id: '244', level: 8 }, { id: '1429', level: 9 }, { id: '179', level: 9 }, { id: '1445', level: 10 }, { id: '5627', level: 10 }],
     require: ['23'],
     addSkill: ['21'],
     addWeapon: ['11', '14'],
     addArmor: ['2'],
-    elementResist: {
-      holy: 75,
-    },
     hp: 120,
     mp: 95,
     sp: 120,
@@ -470,21 +609,26 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 130,
     luk: 105,
-    evasion: 20,
-    counter: 75,
     critical: 30,
+    counter: 75,
+    evasion: 20,
+    elementResist: {
+      holy: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [60, 55, 45, 45, 55],
   },
   {
     id: '25',
-    name: '사권왕', // 이도류
+    name: '사권왕',
+    learningSkills: [{ id: '1426', level: 2 }, { id: '697', level: 3 }, { id: '218', level: 4 }, { id: '1428', level: 5 }, { id: '77', level: 6 }, { id: '246', level: 6 }, { id: '110', level: 7 }, { id: '244', level: 8 }, { id: '179', level: 9 }, { id: '1430', level: 10 }],
     require: ['23'],
     addSkill: ['21'],
     addWeapon: ['11', '14'],
     addArmor: ['2'],
-    elementResist: {
-      dark: 75,
-    },
     hp: 120,
     mp: 95,
     sp: 120,
@@ -494,14 +638,23 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 130,
     luk: 105,
-    evasion: 20,
-    counter: 75,
     critical: 30,
+    counter: 75,
+    evasion: 20,
+    dualWield: true,
+    elementResist: {
+      dark: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [60, 55, 45, 45, 55],
   },
   {
     id: '26',
     name: '마도권사',
+    learningSkills: [{ id: '1409', level: 2 }, { id: '86', level: 3 }, { id: '1410', level: 4 }, { id: '3100', level: 5 }, { id: '1411', level: 6 }, { id: '106', level: 7 }, { id: '1452', level: 8 }, { id: '1448', level: 9 }, { id: '1453', level: 10 }],
     require: ['22', '33'],
     addSkill: ['21', '23'],
     addWeapon: ['11', '14'],
@@ -515,14 +668,20 @@ export const JOB_LIST: Job[] = [
     mdf: 95,
     agi: 120,
     luk: 110,
-    evasion: 15,
-    magicReflect: 25,
     critical: 15,
+    evasion: 15,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [35, 25, 30, 20, 30],
   },
   {
     id: '27',
     name: '포스 몽크',
+    learningSkills: [{ id: '1412', level: 2 }, { id: '87', level: 3 }, { id: '3122', level: 4 }, { id: '1413', level: 5 }, { id: '109', level: 6 }, { id: '1454', level: 7 }, { id: '1414', level: 8 }, { id: '1451', level: 9 }, { id: '531', level: 9 }, { id: '1431', level: 10 }, { id: '5627', level: 10 }],
     require: ['26'],
     addSkill: ['21', '23'],
     addWeapon: ['11', '14'],
@@ -536,14 +695,20 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 125,
     luk: 120,
-    evasion: 15,
-    magicReflect: 50,
     critical: 20,
+    evasion: 15,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [60, 45, 55, 40, 55],
   },
   {
     id: '28',
     name: '팔라딘',
+    learningSkills: [{ id: '1660', level: 2 }, { id: '550', level: 3 }, { id: '1415', level: 4 }, { id: '1665', level: 5 }, { id: '677', level: 6 }, { id: '1662', level: 7 }, { id: '646', level: 8 }, { id: '1666', level: 9 }, { id: '1638', level: 10 }],
     require: ['22', '44'],
     addSkill: ['21', '22', '26'],
     addWeapon: ['1', '11', '14', '16'],
@@ -558,18 +723,22 @@ export const JOB_LIST: Job[] = [
     agi: 120,
     luk: 100,
     critical: 15,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [35, 25, 25, 40, 35],
   },
   {
     id: '29',
     name: '갓 핸드',
+    learningSkills: [{ id: '1661', level: 2 }, { id: '551', level: 3 }, { id: '105', level: 4 }, { id: '678', level: 5 }, { id: '1416', level: 6 }, { id: '1663', level: 7 }, { id: '647', level: 8 }, { id: '1664', level: 9 }, { id: '1641', level: 10 }, { id: '5627', level: 10 }],
     require: ['28'],
     addSkill: ['21', '22', '26'],
     addWeapon: ['1', '11', '14', '16'],
     addArmor: ['2'],
-    elementResist: {
-      holy: 75,
-    },
     hp: 120,
     mp: 95,
     sp: 110,
@@ -580,11 +749,19 @@ export const JOB_LIST: Job[] = [
     agi: 125,
     luk: 105,
     critical: 20,
+    elementResist: {
+      holy: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [60, 45, 45, 70, 60],
   },
   {
     id: '30',
-    name: '배틀 마스터', // 방어 효과 200%, 이도류
+    name: '배틀 마스터',
+    learningSkills: [{ id: '1374', level: 2 }, { id: '67', level: 2 }, { id: '545', level: 3 }, { id: '655', level: 3 }, { id: '1375', level: 4 }, { id: '90', level: 5 }, { id: '1393', level: 6 }, { id: '1376', level: 7 }, { id: '665', level: 8 }, { id: '667', level: 8 }, { id: '669', level: 8 }, { id: '100', level: 9 }, { id: '1377', level: 10 }],
     require: ['1', '22'],
     addSkill: ['6', '7', '20', '21'],
     addWeapon: ['1', '2', '3', '5', '7', '8', '11', '13', '14', '15', '22'],
@@ -598,24 +775,28 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 120,
     luk: 100,
-    evasion: 15,
-    counter: 25,
     critical: 15,
+    counter: 25,
+    evasion: 15,
     hpRegen: 5,
+    defenceRate: 200,
+    dualWield: true,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 30, 20, 40, 30],
   },
   {
     id: '33',
     name: '마법사',
-    require: ['33'],
+    learningSkills: [{ id: '1496', level: 2 }, { id: '1502', level: 2 }, { id: '1508', level: 2 }, { id: '451', level: 3 }, { id: '1534', level: 4 }, { id: '446', level: 5 }, { id: '1535', level: 6 }, { id: '657', level: 7 }, { id: '1497', level: 8 }, { id: '1503', level: 8 }, { id: '1509', level: 8 }, { id: '1536', level: 9 }, { id: '3103', level: 10 }],
+    require: [],
     addSkill: ['23'],
     addWeapon: ['1', '5', '15', '17', '29'],
     addArmor: ['7', '36'],
-    elementResist: {
-      fire: 75,
-      ice: 75,
-      lightning: 75,
-    },
     hp: 80,
     mp: 110,
     sp: 70,
@@ -625,20 +806,25 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 100,
     luk: 105,
+    elementResist: {
+      fire: 75,
+      ice: 75,
+      lightning: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [10, 15, 30, 15, 25],
   },
   {
     id: '34',
     name: '흑마도사',
+    learningSkills: [{ id: '1530', level: 2 }, { id: '452', level: 3 }, { id: '658', level: 4 }, { id: '1499', level: 5 }, { id: '1505', level: 5 }, { id: '1511', level: 5 }, { id: '1537', level: 6 }, { id: '1538', level: 7 }, { id: '1539', level: 8 }, { id: '1532', level: 9 }, { id: '1531', level: 10 }],
     require: ['33'],
     addSkill: ['23'],
     addWeapon: ['1', '5', '15', '17', '29'],
     addArmor: ['7', '36'],
-    elementResist: {
-      fire: 50,
-      ice: 50,
-      lightning: 50,
-    },
     hp: 85,
     mp: 120,
     sp: 80,
@@ -648,15 +834,34 @@ export const JOB_LIST: Job[] = [
     mdf: 115,
     agi: 105,
     luk: 110,
+    elementResist: {
+      fire: 50,
+      ice: 50,
+      lightning: 50,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 25, 40, 25, 35],
   },
   {
     id: '35',
     name: '작열마도사',
+    learningSkills: [{ id: '1500', level: 2 }, { id: '453', level: 3 }, { id: '140', level: 4 }, { id: '666', level: 5 }, { id: '600', level: 6 }, { id: '514', level: 7 }, { id: '517', level: 8 }, { id: '471', level: 9 }, { id: '1501', level: 10 }, { id: '5633', level: 10 }],
     require: ['34'],
     addSkill: ['23', '27'],
-    addWeapon: ['1', '5', '6', '15', '17', '29'],
+    addWeapon: ['1', '5', '15', '6', '17', '29'],
     addArmor: ['7', '36'],
+    hp: 90,
+    mp: 130,
+    sp: 90,
+    atk: 90,
+    def: 95,
+    mat: 130,
+    mdf: 120,
+    agi: 110,
+    luk: 120,
     elementResist: {
       fire: 0,
       ice: 50,
@@ -665,6 +870,18 @@ export const JOB_LIST: Job[] = [
     stateResist: {
       burn: 0,
     },
+    stateOnHit: {
+    },
+    abilityPoints: [40, 45, 70, 45, 60],
+  },
+  {
+    id: '36',
+    name: '휘빙마도사',
+    learningSkills: [{ id: '1506', level: 2 }, { id: '453', level: 3 }, { id: '141', level: 4 }, { id: '668', level: 5 }, { id: '604', level: 6 }, { id: '514', level: 7 }, { id: '517', level: 8 }, { id: '474', level: 9 }, { id: '1507', level: 10 }, { id: '5633', level: 10 }],
+    require: ['34'],
+    addSkill: ['23', '27'],
+    addWeapon: ['1', '5', '15', '6', '17', '29'],
+    addArmor: ['7', '36'],
     hp: 90,
     mp: 130,
     sp: 90,
@@ -674,15 +891,6 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 110,
     luk: 120,
-    abilityPoints: [40, 45, 70, 45, 60],
-  },
-  {
-    id: '36',
-    name: '휘빙마도사',
-    require: ['34'],
-    addSkill: ['23', '27'],
-    addWeapon: ['1', '5', '6', '15', '17', '29'],
-    addArmor: ['7', '36'],
     elementResist: {
       fire: 50,
       ice: 0,
@@ -691,6 +899,18 @@ export const JOB_LIST: Job[] = [
     stateResist: {
       freeze: 0,
     },
+    stateOnHit: {
+    },
+    abilityPoints: [40, 45, 70, 45, 60],
+  },
+  {
+    id: '37',
+    name: '극뢰마도사',
+    learningSkills: [{ id: '1512', level: 2 }, { id: '453', level: 3 }, { id: '142', level: 4 }, { id: '670', level: 5 }, { id: '608', level: 6 }, { id: '514', level: 7 }, { id: '517', level: 8 }, { id: '477', level: 9 }, { id: '1513', level: 10 }, { id: '5633', level: 10 }],
+    require: ['34'],
+    addSkill: ['23', '27'],
+    addWeapon: ['1', '5', '6', '15', '17', '29'],
+    addArmor: ['7', '36'],
     hp: 90,
     mp: 130,
     sp: 90,
@@ -700,15 +920,6 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 110,
     luk: 120,
-    abilityPoints: [40, 45, 70, 45, 60],
-  },
-  {
-    id: '37',
-    name: '극뢰마도사',
-    require: ['34'],
-    addSkill: ['23', '27'],
-    addWeapon: ['1', '5', '6', '15', '17', '29'],
-    addArmor: ['7', '36'],
     elementResist: {
       fire: 50,
       ice: 50,
@@ -717,31 +928,18 @@ export const JOB_LIST: Job[] = [
     stateResist: {
       shock: 0,
     },
-    hp: 90,
-    mp: 130,
-    sp: 90,
-    atk: 90,
-    def: 95,
-    mat: 130,
-    mdf: 120,
-    agi: 110,
-    luk: 120,
+    stateOnHit: {
+    },
     abilityPoints: [40, 45, 70, 45, 60],
   },
   {
     id: '38',
     name: '시마도사',
+    learningSkills: [{ id: '1547', level: 2 }, { id: '1569', level: 3 }, { id: '1570', level: 4 }, { id: '1549', level: 5 }, { id: '1551', level: 6 }, { id: '671', level: 7 }, { id: '1557', level: 8 }, { id: '1553', level: 9 }, { id: '673', level: 9 }, { id: '1559', level: 10 }],
     require: ['33'],
     addSkill: ['24'],
     addWeapon: ['1', '5', '15', '17', '29'],
     addArmor: ['7', '36'],
-    elementResist: {
-      special: 0,
-    },
-    stateResist: {
-      slow: 0,
-      stop: 0,
-    },
     hp: 90,
     mp: 115,
     sp: 80,
@@ -751,15 +949,6 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 110,
     luk: 110,
-    abilityPoints: [20, 30, 35, 25, 30],
-  },
-  {
-    id: '39',
-    name: '시공마도사',
-    require: ['38'],
-    addSkill: ['24'],
-    addWeapon: ['1', '5', '6', '15', '17', '29'],
-    addArmor: ['7', '36'],
     elementResist: {
       special: 0,
     },
@@ -767,6 +956,18 @@ export const JOB_LIST: Job[] = [
       slow: 0,
       stop: 0,
     },
+    stateOnHit: {
+    },
+    abilityPoints: [20, 30, 35, 25, 30],
+  },
+  {
+    id: '39',
+    name: '시공마도사',
+    learningSkills: [{ id: '1548', level: 2 }, { id: '1550', level: 3 }, { id: '1552', level: 4 }, { id: '1555', level: 5 }, { id: '672', level: 6 }, { id: '1558', level: 7 }, { id: '518', level: 8 }, { id: '674', level: 9 }, { id: '1560', level: 10 }, { id: '5633', level: 10 }],
+    require: ['38'],
+    addSkill: ['24'],
+    addWeapon: ['1', '5', '6', '15', '17', '29'],
+    addArmor: ['7', '36'],
     hp: 100,
     mp: 125,
     sp: 90,
@@ -776,12 +977,22 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 120,
     luk: 120,
+    elementResist: {
+      special: 0,
+    },
+    stateResist: {
+      slow: 0,
+      stop: 0,
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 55, 60, 45, 55],
   },
   {
     id: '40',
     name: '소환사',
-    require: ['40'],
+    learningSkills: [{ id: '1576', level: 2 }, { id: '447', level: 3 }, { id: '1577', level: 4 }, { id: '1578', level: 5 }, { id: '1579', level: 6 }, { id: '1580', level: 7 }, { id: '1581', level: 8 }, { id: '506', level: 9 }, { id: '1582', level: 10 }],
+    require: ['33'],
     addSkill: ['25'],
     addWeapon: ['1', '5', '15', '17', '29'],
     addArmor: ['7', '36'],
@@ -794,14 +1005,21 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 110,
     luk: 110,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 25, 40, 20, 40],
   },
   {
     id: '41',
     name: '정령소환사',
+    learningSkills: [{ id: '1585', level: 2 }, { id: '1586', level: 3 }, { id: '448', level: 4 }, { id: '1587', level: 5 }, { id: '1588', level: 6 }, { id: '519', level: 7 }, { id: '1594', level: 8 }, { id: '507', level: 9 }, { id: '1593', level: 10 }, { id: '5633', level: 10 }],
     require: ['40'],
     addSkill: ['25'],
-    addWeapon: ['1', '5', '6', '15', '17', '29'],
+    addWeapon: ['1', '5', '15', '6', '17', '29'],
     addArmor: ['7', '36'],
     hp: 85,
     mp: 135,
@@ -812,20 +1030,22 @@ export const JOB_LIST: Job[] = [
     mdf: 130,
     agi: 115,
     luk: 120,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 45, 70, 40, 70],
   },
   {
     id: '42',
     name: '음양사',
+    learningSkills: [{ id: '1723', level: 2 }, { id: '1724', level: 3 }, { id: '1725', level: 4 }, { id: '610', level: 5 }, { id: '117', level: 6 }, { id: '614', level: 7 }, { id: '1743', level: 8 }, { id: '618', level: 9 }, { id: '1726', level: 10 }],
     require: ['33'],
     addSkill: ['29'],
     addWeapon: ['1', '15', '17', '23'],
     addArmor: ['7', '36'],
-    elementResist: {
-      wind: 50,
-      earth: 50,
-      water: 50,
-    },
     hp: 100,
     mp: 115,
     sp: 90,
@@ -837,20 +1057,25 @@ export const JOB_LIST: Job[] = [
     luk: 115,
     evasion: 5,
     magicEvasion: 5,
+    elementResist: {
+      wind: 50,
+      earth: 50,
+      water: 50,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [25, 35, 35, 20, 35],
   },
   {
     id: '43',
     name: '천지음양사',
+    learningSkills: [{ id: '1727', level: 2 }, { id: '612', level: 3 }, { id: '1728', level: 4 }, { id: '616', level: 5 }, { id: '1729', level: 6 }, { id: '620', level: 7 }, { id: '1730', level: 8 }, { id: '1744', level: 8 }, { id: '523', level: 9 }, { id: '1741', level: 10 }, { id: '5633', level: 10 }],
     require: ['42'],
     addSkill: ['29'],
     addWeapon: ['1', '6', '15', '17', '23'],
     addArmor: ['7', '36'],
-    elementResist: {
-      wind: 0,
-      earth: 0,
-      water: 0,
-    },
     hp: 110,
     mp: 125,
     sp: 100,
@@ -862,12 +1087,22 @@ export const JOB_LIST: Job[] = [
     luk: 125,
     evasion: 5,
     magicEvasion: 5,
+    elementResist: {
+      wind: 0,
+      earth: 0,
+      water: 0,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [45, 60, 60, 40, 60],
   },
   {
     id: '44',
     name: '승려',
-    require: ['44'],
+    learningSkills: [{ id: '1460', level: 2 }, { id: '549', level: 3 }, { id: '1476', level: 4 }, { id: '1478', level: 4 }, { id: '1464', level: 5 }, { id: '1466', level: 6 }, { id: '1462', level: 7 }, { id: '1479', level: 8 }, { id: '1475', level: 9 }, { id: '1477', level: 9 }, { id: '1489', level: 10 }],
+    require: [],
     addSkill: ['22'],
     addWeapon: ['14', '16', '19', '29'],
     addArmor: ['7', '36'],
@@ -880,11 +1115,18 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 100,
     luk: 105,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [15, 15, 25, 20, 25],
   },
   {
     id: '45',
     name: '백마도사',
+    learningSkills: [{ id: '1461', level: 2 }, { id: '550', level: 3 }, { id: '1465', level: 4 }, { id: '1482', level: 5 }, { id: '1483', level: 5 }, { id: '1469', level: 6 }, { id: '1473', level: 7 }, { id: '503', level: 8 }, { id: '1463', level: 9 }, { id: '1467', level: 10 }],
     require: ['44'],
     addSkill: ['22'],
     addWeapon: ['14', '16', '19', '29'],
@@ -898,18 +1140,22 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 105,
     luk: 110,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [25, 25, 35, 30, 35],
   },
   {
     id: '46',
     name: '성마도사',
+    learningSkills: [{ id: '1481', level: 2 }, { id: '551', level: 3 }, { id: '1484', level: 4 }, { id: '513', level: 5 }, { id: '1480', level: 6 }, { id: '516', level: 7 }, { id: '1470', level: 8 }, { id: '504', level: 9 }, { id: '1468', level: 10 }, { id: '5632', level: 10 }],
     require: ['45'],
     addSkill: ['22', '26'],
     addWeapon: ['14', '16', '19', '29'],
     addArmor: ['7', '36'],
-    elementResist: {
-      holy: 75,
-    },
     hp: 100,
     mp: 120,
     sp: 100,
@@ -919,20 +1165,23 @@ export const JOB_LIST: Job[] = [
     mdf: 130,
     agi: 110,
     luk: 115,
+    elementResist: {
+      holy: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [45, 45, 60, 55, 60],
   },
   {
     id: '47',
     name: '현자',
+    learningSkills: [{ id: '470', level: 2 }, { id: '473', level: 2 }, { id: '476', level: 2 }, { id: '1498', level: 3 }, { id: '1486', level: 4 }, { id: '1504', level: 5 }, { id: '701', level: 6 }, { id: '528', level: 6 }, { id: '1510', level: 7 }, { id: '456', level: 8 }, { id: '1541', level: 9 }, { id: '713', level: 10 }],
     require: ['33', '44'],
     addSkill: ['22', '23'],
     addWeapon: ['1', '5', '6', '14', '15', '19', '16', '17', '23', '29'],
     addArmor: ['7', '36'],
-    elementResist: {
-      fire: 50,
-      ice: 50,
-      lightning: 50,
-    },
     hp: 90,
     mp: 125,
     sp: 90,
@@ -943,24 +1192,25 @@ export const JOB_LIST: Job[] = [
     agi: 105,
     luk: 115,
     mpCost: 75,
+    elementResist: {
+      fire: 50,
+      ice: 50,
+      lightning: 50,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [25, 30, 40, 25, 40],
   },
   {
     id: '48',
     name: '삼라만상사',
+    learningSkills: [{ id: '1533', level: 2 }, { id: '454', level: 3 }, { id: '1474', level: 4 }, { id: '552', level: 5 }, { id: '1487', level: 6 }, { id: '699', level: 7 }, { id: '529', level: 7 }, { id: '1485', level: 8 }, { id: '457', level: 9 }, { id: '1528', level: 10 }],
     require: ['34', '38', '40', '45', '47'],
     addSkill: ['22', '23', '24', '25', '26', '27', '29'],
     addWeapon: ['1', '5', '6', '14', '15', '19', '16', '17', '23', '29'],
     addArmor: ['7', '36'],
-    elementResist: {
-      fire: 50,
-      ice: 50,
-      lightning: 50,
-      wind: 50,
-      earth: 50,
-      water: 50,
-      special: 0,
-    },
     hp: 95,
     mp: 135,
     sp: 100,
@@ -971,11 +1221,25 @@ export const JOB_LIST: Job[] = [
     agi: 110,
     luk: 125,
     mpCost: 50,
+    elementResist: {
+      fire: 50,
+      ice: 50,
+      lightning: 50,
+      wind: 50,
+      earth: 50,
+      water: 50,
+      special: 0,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [45, 55, 70, 45, 70],
   },
   {
     id: '49',
     name: '마법소녀',
+    learningSkills: [{ id: '3128', level: 2 }, { id: '1852', level: 3 }, { id: '598', level: 4 }, { id: '1854', level: 5 }, { id: '602', level: 6 }, { id: '1853', level: 7 }, { id: '606', level: 8 }, { id: '714', level: 9 }, { id: '1855', level: 10 }],
     require: ['33'],
     addSkill: ['22', '23'],
     addWeapon: ['1', '6', '15', '16', '17', '18', '29', '30'],
@@ -990,14 +1254,22 @@ export const JOB_LIST: Job[] = [
     agi: 100,
     luk: 100,
     mpRegen: 1,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [25, 25, 40, 20, 40],
   },
   {
     id: '52',
     name: '사냥꾼',
-    require: ['52'],
+    learningSkills: [{ id: '1182', level: 2 }, { id: '71', level: 3 }, { id: '278', level: 3 }, { id: '1199', level: 4 }, { id: '3104', level: 5 }, { id: '1198', level: 6 }, { id: '124', level: 7 }, { id: '130', level: 7 }, { id: '1185', level: 8 }, { id: '1186', level: 8 }, { id: '1187', level: 8 }, { id: '767', level: 9 }, { id: '1183', level: 10 }],
+    require: [],
     addSkill: ['13', '14', '15', '16'],
     addWeapon: ['1', '15', '18', '19', '21'],
+    addArmor: [],
     hp: 95,
     mp: 85,
     sp: 100,
@@ -1007,16 +1279,24 @@ export const JOB_LIST: Job[] = [
     mdf: 95,
     agi: 110,
     luk: 110,
-    evasion: 10,
     critical: 10,
+    evasion: 10,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 25, 15, 15, 30],
   },
   {
     id: '53',
     name: '보우 마스터',
+    learningSkills: [{ id: '1191', level: 2 }, { id: '72', level: 3 }, { id: '223', level: 4 }, { id: '1201', level: 5 }, { id: '781', level: 6 }, { id: '1200', level: 7 }, { id: '132', level: 8 }, { id: '133', level: 8 }, { id: '193', level: 9 }, { id: '1192', level: 10 }],
     require: ['52'],
     addSkill: ['13', '14', '15', '16'],
     addWeapon: ['1', '15', '18', '19', '21'],
+    addArmor: [],
     hp: 100,
     mp: 90,
     sp: 105,
@@ -1026,19 +1306,24 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 120,
     luk: 120,
-    evasion: 10,
     critical: 15,
+    evasion: 10,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [30, 35, 25, 25, 40],
   },
   {
     id: '54',
     name: '신궁수',
+    learningSkills: [{ id: '1203', level: 2 }, { id: '73', level: 3 }, { id: '237', level: 4 }, { id: '1204', level: 5 }, { id: '782', level: 6 }, { id: '126', level: 7 }, { id: '127', level: 8 }, { id: '194', level: 9 }, { id: '1219', level: 10 }, { id: '5634', level: 10 }],
     require: ['53'],
     addSkill: ['13', '14', '15', '16'],
     addWeapon: ['1', '15', '18', '19', '21'],
-    elementResist: {
-      holy: 75,
-    },
+    addArmor: [],
     hp: 110,
     mp: 95,
     sp: 110,
@@ -1048,19 +1333,25 @@ export const JOB_LIST: Job[] = [
     mdf: 105,
     agi: 130,
     luk: 130,
-    evasion: 10,
     critical: 20,
+    evasion: 10,
+    elementResist: {
+      holy: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [55, 60, 45, 45, 70],
   },
   {
     id: '55',
     name: '그림자 사냥꾼',
+    learningSkills: [{ id: '1205', level: 2 }, { id: '73', level: 3 }, { id: '237', level: 4 }, { id: '1206', level: 5 }, { id: '782', level: 6 }, { id: '121', level: 7 }, { id: '122', level: 8 }, { id: '194', level: 9 }, { id: '1220', level: 10 }, { id: '5634', level: 10 }],
     require: ['53'],
     addSkill: ['13', '14', '15', '16'],
     addWeapon: ['1', '15', '18', '19', '21'],
-    elementResist: {
-      dark: 75,
-    },
+    addArmor: [],
     hp: 110,
     mp: 95,
     sp: 110,
@@ -1070,16 +1361,25 @@ export const JOB_LIST: Job[] = [
     mdf: 105,
     agi: 130,
     luk: 130,
-    evasion: 10,
     critical: 20,
+    evasion: 10,
+    elementResist: {
+      dark: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [55, 60, 45, 45, 70],
   },
   {
     id: '56',
     name: '거너',
+    learningSkills: [{ id: '1338', level: 2 }, { id: '279', level: 3 }, { id: '1339', level: 4 }, { id: '1343', level: 5 }, { id: '1344', level: 5 }, { id: '1340', level: 6 }, { id: '1367', level: 7 }, { id: '1341', level: 8 }, { id: '208', level: 9 }, { id: '1342', level: 10 }],
     require: ['52'],
     addSkill: ['19'],
     addWeapon: ['30'],
+    addArmor: [],
     hp: 95,
     mp: 85,
     sp: 100,
@@ -1090,17 +1390,22 @@ export const JOB_LIST: Job[] = [
     agi: 115,
     luk: 125,
     critical: 15,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [30, 35, 25, 20, 35],
   },
   {
     id: '57',
     name: '신총사',
+    learningSkills: [{ id: '1353', level: 2 }, { id: '280', level: 3 }, { id: '1355', level: 4 }, { id: '228', level: 5 }, { id: '1345', level: 6 }, { id: '1346', level: 6 }, { id: '242', level: 7 }, { id: '1368', level: 8 }, { id: '209', level: 9 }, { id: '1357', level: 10 }, { id: '5646', level: 10 }],
     require: ['56'],
     addSkill: ['19'],
     addWeapon: ['30'],
-    elementResist: {
-      holy: 75,
-    },
+    addArmor: [],
     hp: 100,
     mp: 90,
     sp: 100,
@@ -1111,17 +1416,23 @@ export const JOB_LIST: Job[] = [
     agi: 120,
     luk: 135,
     critical: 20,
+    elementResist: {
+      holy: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [55, 60, 45, 40, 60],
   },
   {
     id: '58',
-    name: '마탄의 사수', // 이도류
+    name: '마탄의 사수',
+    learningSkills: [{ id: '1354', level: 2 }, { id: '280', level: 3 }, { id: '1356', level: 4 }, { id: '228', level: 5 }, { id: '1347', level: 6 }, { id: '1348', level: 6 }, { id: '242', level: 7 }, { id: '1349', level: 8 }, { id: '209', level: 9 }, { id: '1358', level: 10 }, { id: '5646', level: 10 }],
     require: ['56'],
     addSkill: ['19'],
     addWeapon: ['30'],
-    elementResist: {
-      dark: 75,
-    },
+    addArmor: [],
     hp: 100,
     mp: 90,
     sp: 100,
@@ -1132,14 +1443,24 @@ export const JOB_LIST: Job[] = [
     agi: 120,
     luk: 135,
     critical: 20,
+    dualWield: true,
+    elementResist: {
+      dark: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [55, 60, 45, 40, 60],
   },
   {
     id: '59',
-    name: '마물사', // 동료 가입 배율 150%
+    name: '마물사',
+    learningSkills: [{ id: '1233', level: 2 }, { id: '3146', level: 3 }, { id: '1249', level: 4 }, { id: '1250', level: 5 }, { id: '1251', level: 6 }, { id: '1252', level: 7 }, { id: '196', level: 8 }, { id: '768', level: 9 }, { id: '1234', level: 10 }],
     require: ['52'],
     addSkill: ['13', '15'],
     addWeapon: ['1', '15', '19', '21'],
+    addArmor: [],
     hp: 110,
     mp: 90,
     sp: 105,
@@ -1149,14 +1470,22 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 115,
     luk: 115,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [30, 35, 25, 30, 35],
   },
   {
     id: '60',
-    name: '드래곤 조련사', // 동료 가입 배율 200%
+    name: '드래곤 조련사',
+    learningSkills: [{ id: '1235', level: 2 }, { id: '224', level: 3 }, { id: '129', level: 4 }, { id: '1243', level: 5 }, { id: '238', level: 6 }, { id: '1253', level: 7 }, { id: '197', level: 8 }, { id: '769', level: 9 }, { id: '1244', level: 10 }, { id: '5635', level: 10 }],
     require: ['59'],
     addSkill: ['13', '15'],
     addWeapon: ['1', '15', '19', '21'],
+    addArmor: [],
     hp: 120,
     mp: 95,
     sp: 110,
@@ -1166,17 +1495,22 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 125,
     luk: 125,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [55, 60, 45, 55, 60],
   },
   {
     id: '61',
-    name: '데빌 서머너', // 동료 가입 배율 200%
+    name: '데빌 서머너',
+    learningSkills: [{ id: '1236', level: 2 }, { id: '224', level: 3 }, { id: '116', level: 4 }, { id: '1245', level: 5 }, { id: '238', level: 6 }, { id: '1254', level: 7 }, { id: '197', level: 8 }, { id: '769', level: 9 }, { id: '1246', level: 10 }],
     require: ['59'],
     addSkill: ['13', '15'],
     addWeapon: ['1', '15', '19', '21'],
-    elementResist: {
-      dark: 75,
-    },
+    addArmor: [],
     hp: 120,
     mp: 95,
     sp: 110,
@@ -1186,14 +1520,24 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 125,
     luk: 125,
+    dualWield: true,
+    elementResist: {
+      dark: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [55, 60, 45, 55, 60],
   },
   {
     id: '62',
-    name: '시프', // 기습 무효 선제공격 UP
-    require: ['62'],
+    name: '시프',
+    learningSkills: [{ id: '1751', level: 2 }, { id: '273', level: 3 }, { id: '901', level: 4 }, { id: '554', level: 5 }, { id: '764', level: 6 }, { id: '1764', level: 7 }, { id: '770', level: 8 }, { id: '211', level: 9 }, { id: '744', level: 9 }, { id: '902', level: 10 }],
+    require: [],
     addSkill: ['6', '16', '30'],
     addWeapon: ['1', '15', '19', '21'],
+    addArmor: [],
     hp: 90,
     mp: 85,
     sp: 100,
@@ -1203,17 +1547,25 @@ export const JOB_LIST: Job[] = [
     mdf: 85,
     agi: 110,
     luk: 110,
-    evasion: 20,
     critical: 10,
-    stealRate: 150,
+    evasion: 20,
+    noBackstab: true,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 20, 20, 20, 30],
   },
   {
     id: '63',
-    name: '마스터 시프', // 기습 무효 선제공격 UP
+    name: '마스터 시프',
+    learningSkills: [{ id: '1755', level: 2 }, { id: '555', level: 3 }, { id: '745', level: 3 }, { id: '904', level: 4 }, { id: '229', level: 5 }, { id: '1760', level: 6 }, { id: '765', level: 7 }, { id: '905', level: 8 }, { id: '160', level: 9 }, { id: '771', level: 10 }],
     require: ['62'],
     addSkill: ['6', '16', '30'],
     addWeapon: ['1', '15', '19', '21'],
+    addArmor: [],
     hp: 95,
     mp: 90,
     sp: 100,
@@ -1223,17 +1575,25 @@ export const JOB_LIST: Job[] = [
     mdf: 90,
     agi: 120,
     luk: 120,
-    evasion: 20,
     critical: 15,
-    stealRate: 200,
+    evasion: 20,
+    noBackstab: true,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [30, 30, 30, 30, 40],
   },
   {
     id: '64',
-    name: '트릭스터', // 기습 무효 선제공격 UP
+    name: '트릭스터',
+    learningSkills: [{ id: '907', level: 2 }, { id: '556', level: 3 }, { id: '908', level: 4 }, { id: '407', level: 5 }, { id: '248', level: 5 }, { id: '1761', level: 6 }, { id: '1762', level: 6 }, { id: '766', level: 7 }, { id: '772', level: 8 }, { id: '161', level: 9 }, { id: '1763', level: 10 }, { id: '5621', level: 10 }],
     require: ['63'],
     addSkill: ['6', '16', '30'],
     addWeapon: ['1', '15', '19', '21'],
+    addArmor: [],
     hp: 100,
     mp: 95,
     sp: 100,
@@ -1243,14 +1603,21 @@ export const JOB_LIST: Job[] = [
     mdf: 95,
     agi: 130,
     luk: 130,
+    critical: 20,
     evasion: 20,
-    critical: 15,
-    stealRate: 300,
+    noBackstab: true,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [55, 55, 55, 55, 70],
   },
   {
     id: '65',
-    name: '닌자', // 이도류
+    name: '닌자',
+    learningSkills: [{ id: '1778', level: 2 }, { id: '274', level: 3 }, { id: '1806', level: 4 }, { id: '1779', level: 5 }, { id: '611', level: 6 }, { id: '1807', level: 7 }, { id: '217', level: 8 }, { id: '175', level: 9 }, { id: '1780', level: 10 }],
     require: ['62'],
     addSkill: ['31'],
     addWeapon: ['1', '10', '15'],
@@ -1264,13 +1631,21 @@ export const JOB_LIST: Job[] = [
     mdf: 90,
     agi: 120,
     luk: 120,
-    evasion: 20,
     critical: 15,
+    evasion: 20,
+    dualWield: true,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [35, 35, 20, 20, 25],
   },
   {
     id: '66',
-    name: '극닌', // 이도류
+    name: '극닌',
+    learningSkills: [{ id: '1786', level: 2 }, { id: '275', level: 3 }, { id: '143', level: 4 }, { id: '1792', level: 5 }, { id: '612', level: 6 }, { id: '408', level: 7 }, { id: '114', level: 8 }, { id: '176', level: 9 }, { id: '1793', level: 10 }, { id: '5626', level: 10 }],
     require: ['65'],
     addSkill: ['31'],
     addWeapon: ['1', '10', '15'],
@@ -1284,26 +1659,25 @@ export const JOB_LIST: Job[] = [
     mdf: 95,
     agi: 130,
     luk: 130,
-    evasion: 20,
     critical: 20,
+    evasion: 20,
+    dualWield: true,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [60, 60, 40, 40, 45],
   },
   {
     id: '67',
-    name: '음류 쿠노이치', // 이도류, 공격시 민감 황홀 유혹 실금 확률 5%씩 있음
+    name: '음류 쿠노이치',
+    learningSkills: [{ id: '1803', level: 8 }, { id: '150', level: 3 }, { id: '1801', level: 4 }, { id: '692', level: 5 }, { id: '1802', level: 6 }, { id: '775', level: 7 }, { id: '1800', level: 2 }, { id: '371', level: 9 }, { id: '1804', level: 10 }, { id: '5626', level: 10 }],
     require: ['65'],
     addSkill: ['31', '49'],
     addWeapon: ['1', '10', '15', '31'],
     addArmor: ['2'],
-    elementResist: {
-      pleasure: 75,
-    },
-    stateResist: {
-      horny: 0,
-      trance: 0,
-      seduction: 0,
-      incontinence: 0,
-    },
     hp: 95,
     mp: 90,
     sp: 100,
@@ -1313,24 +1687,34 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 130,
     luk: 130,
-    evasion: 20,
     critical: 20,
+    evasion: 20,
+    dualWield: true,
+    elementResist: {
+      pleasure: 75,
+    },
+    stateResist: {
+      horny: 0,
+      trance: 0,
+      seduction: 0,
+      incontinence: 0,
+    },
+    stateOnHit: {
+      horny: 5,
+      trance: 5,
+      seduction: 5,
+      incontinence: 5,
+    },
     abilityPoints: [60, 60, 40, 40, 45],
   },
   {
     id: '68',
     name: '해적',
+    learningSkills: [{ id: '1813', level: 2 }, { id: '619', level: 3 }, { id: '661', level: 3 }, { id: '1818', level: 4 }, { id: '785', level: 5 }, { id: '120', level: 5 }, { id: '1820', level: 6 }, { id: '1833', level: 7 }, { id: '1822', level: 8 }, { id: '283', level: 9 }, { id: '1814', level: 10 }],
     require: ['62'],
     addSkill: ['7', '19', '32'],
     addWeapon: ['1', '2', '4', '13', '14', '22', '30'],
-    elementResist: {
-      fire: 75,
-      ice: 75,
-      lightning: 75,
-      wind: 75,
-      earth: 75,
-      water: 0,
-    },
+    addArmor: [],
     hp: 120,
     mp: 85,
     sp: 120,
@@ -1342,22 +1726,28 @@ export const JOB_LIST: Job[] = [
     luk: 90,
     critical: 10,
     spCost: 75,
+    elementResist: {
+      fire: 75,
+      ice: 75,
+      lightning: 75,
+      wind: 75,
+      earth: 75,
+      water: 0,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 40, 20, 35, 30],
   },
   {
     id: '69',
-    name: '해적왕', // 이도류
+    name: '해적왕',
+    learningSkills: [{ id: '1826', level: 2 }, { id: '620', level: 3 }, { id: '662', level: 3 }, { id: '145', level: 4 }, { id: '786', level: 5 }, { id: '409', level: 6 }, { id: '1834', level: 7 }, { id: '1823', level: 8 }, { id: '284', level: 9 }, { id: '1827', level: 10 }, { id: '5622', level: 10 }],
     require: ['68'],
     addSkill: ['7', '19', '32'],
     addWeapon: ['1', '2', '4', '13', '14', '22', '30'],
-    elementResist: {
-      fire: 50,
-      ice: 50,
-      lightning: 50,
-      wind: 50,
-      earth: 50,
-      water: 0,
-    },
+    addArmor: [],
     hp: 140,
     mp: 90,
     sp: 130,
@@ -1369,12 +1759,26 @@ export const JOB_LIST: Job[] = [
     luk: 95,
     critical: 20,
     spCost: 50,
+    dualWield: true,
+    elementResist: {
+      fire: 50,
+      ice: 50,
+      lightning: 50,
+      wind: 50,
+      earth: 50,
+      water: 0,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [70, 70, 40, 60, 55],
   },
   {
     id: '72',
     name: '병사',
-    require: ['72'],
+    learningSkills: [{ id: '3133', level: 2 }, { id: '268', level: 3 }, { id: '3135', level: 4 }, { id: '3130', level: 5 }, { id: '3136', level: 6 }, { id: '3137', level: 6 }, { id: '3134', level: 7 }, { id: '702', level: 8 }, { id: '3132', level: 9 }, { id: '3131', level: 10 }],
+    require: [],
     addSkill: ['7', '10'],
     addWeapon: ['1', '2', '5', '7', '21'],
     addArmor: ['4', '34', '39'],
@@ -1387,12 +1791,19 @@ export const JOB_LIST: Job[] = [
     mdf: 90,
     agi: 95,
     luk: 80,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [25, 20, 10, 20, 15],
   },
   {
     id: '73',
     name: '왕궁 기사',
-    require: ['72'],
+    learningSkills: [{ id: '3139', level: 2 }, { id: '269', level: 3 }, { id: '3141', level: 4 }, { id: '3142', level: 5 }, { id: '791', level: 6 }, { id: '3143', level: 7 }, { id: '3140', level: 8 }, { id: '700', level: 9 }, { id: '3138', level: 10 }],
+    require: ['1', '72'],
     addSkill: ['6', '7', '8', '10'],
     addWeapon: ['1', '2', '3', '5', '7', '8', '21'],
     addArmor: ['4', '5', '34', '35', '39', '40'],
@@ -1405,22 +1816,22 @@ export const JOB_LIST: Job[] = [
     mdf: 95,
     agi: 100,
     luk: 85,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [35, 30, 20, 30, 25],
   },
   {
     id: '75',
-    name: '해병', // 시작 SP 75%
+    name: '해병',
+    learningSkills: [{ id: '1815', level: 2 }, { id: '619', level: 3 }, { id: '659', level: 3 }, { id: '1819', level: 4 }, { id: '785', level: 5 }, { id: '131', level: 6 }, { id: '1833', level: 7 }, { id: '1824', level: 8 }, { id: '746', level: 9 }, { id: '1816', level: 10 }],
     require: ['72'],
     addSkill: ['7', '19', '32'],
     addWeapon: ['1', '2', '4', '7', '18', '30'],
-    elementResist: {
-      fire: 75,
-      ice: 75,
-      lightning: 75,
-      wind: 75,
-      earth: 75,
-      water: 0,
-    },
+    addArmor: [],
     hp: 120,
     mp: 85,
     sp: 120,
@@ -1431,22 +1842,28 @@ export const JOB_LIST: Job[] = [
     agi: 100,
     luk: 90,
     critical: 10,
+    elementResist: {
+      fire: 75,
+      ice: 75,
+      lightning: 75,
+      wind: 75,
+      earth: 75,
+      water: 0,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 40, 20, 35, 30],
   },
   {
     id: '76',
-    name: '해군대장', // 시작 SP 100%
+    name: '해군대장',
+    learningSkills: [{ id: '1828', level: 2 }, { id: '620', level: 3 }, { id: '660', level: 3 }, { id: '145', level: 4 }, { id: '786', level: 5 }, { id: '409', level: 6 }, { id: '1835', level: 7 }, { id: '1825', level: 8 }, { id: '747', level: 9 }, { id: '1829', level: 10 }, { id: '5622', level: 10 }],
     require: ['75'],
     addSkill: ['7', '19', '32'],
     addWeapon: ['1', '2', '4', '7', '8', '18', '30'],
-    elementResist: {
-      fire: 50,
-      ice: 50,
-      lightning: 50,
-      wind: 50,
-      earth: 50,
-      water: 0,
-    },
+    addArmor: [],
     hp: 140,
     mp: 90,
     sp: 130,
@@ -1457,14 +1874,28 @@ export const JOB_LIST: Job[] = [
     agi: 110,
     luk: 95,
     critical: 20,
+    elementResist: {
+      fire: 50,
+      ice: 50,
+      lightning: 50,
+      wind: 50,
+      earth: 50,
+      water: 0,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [70, 70, 40, 60, 55],
   },
   {
     id: '77',
-    name: '정의의 히어로', // HP 감소시 강화 20, 50 % 오버 소울 25 %    <--- 아니 이거 무슨 소리야?
+    name: '정의의 히어로',
+    learningSkills: [{ id: '3126', level: 2 }, { id: '1842', level: 3 }, { id: '642', level: 4 }, { id: '1843', level: 5 }, { id: '98', level: 6 }, { id: '1844', level: 7 }, { id: '1849', level: 8 }, { id: '94', level: 9 }, { id: '1845', level: 10 }],
     require: ['72'],
     addSkill: ['21'],
     addWeapon: ['11'],
+    addArmor: [],
     hp: 100,
     mp: 90,
     sp: 100,
@@ -1474,14 +1905,22 @@ export const JOB_LIST: Job[] = [
     mdf: 90,
     agi: 100,
     luk: 100,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [35, 35, 20, 25, 30],
   },
   {
     id: '79',
     name: '상인',
-    require: ['79'],
+    learningSkills: [{ id: '1896', level: 2 }, { id: '1908', level: 3 }, { id: '1909', level: 3 }, { id: '1912', level: 3 }, { id: '61', level: 3 }, { id: '1874', level: 4 }, { id: '1919', level: 5 }, { id: '1906', level: 6 }, { id: '726', level: 6 }, { id: '1918', level: 7 }, { id: '1910', level: 8 }, { id: '1911', level: 8 }, { id: '288', level: 8 }, { id: '758', level: 9 }, { id: '1899', level: 10 }, { id: '1891', level: 10 }],
+    require: [],
     addSkill: ['16', '34', '35'],
     addWeapon: ['1', '15', '21', '25'],
+    addArmor: [],
     hp: 110,
     mp: 80,
     sp: 100,
@@ -1492,15 +1931,22 @@ export const JOB_LIST: Job[] = [
     agi: 90,
     luk: 105,
     itemUseRate: 150,
-    goldRate: 150,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [10, 25, 10, 20, 20],
   },
   {
     id: '80',
     name: '암상인',
+    learningSkills: [{ id: '1897', level: 2 }, { id: '62', level: 3 }, { id: '1875', level: 4 }, { id: '1913', level: 4 }, { id: '1914', level: 4 }, { id: '1915', level: 4 }, { id: '402', level: 5 }, { id: '1902', level: 6 }, { id: '1916', level: 6 }, { id: '1879', level: 6 }, { id: '382', level: 7 }, { id: '1885', level: 8 }, { id: '1900', level: 8 }, { id: '759', level: 9 }, { id: '1892', level: 10 }, { id: '1904', level: 10 }],
     require: ['79'],
     addSkill: ['16', '34', '35'],
     addWeapon: ['1', '15', '21', '25'],
+    addArmor: [],
     hp: 120,
     mp: 85,
     sp: 105,
@@ -1511,15 +1957,22 @@ export const JOB_LIST: Job[] = [
     agi: 95,
     luk: 115,
     itemUseRate: 150,
-    goldRate: 200,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 35, 20, 30, 30],
   },
   {
     id: '81',
-    name: '신의 보이지 않는 손',
+    name: '신의 안보이는 손',
+    learningSkills: [{ id: '1898', level: 2 }, { id: '1903', level: 3 }, { id: '63', level: 3 }, { id: '1876', level: 4 }, { id: '1917', level: 5 }, { id: '410', level: 5 }, { id: '1880', level: 6 }, { id: '1907', level: 7 }, { id: '383', level: 7 }, { id: '1901', level: 8 }, { id: '1886', level: 8 }, { id: '1893', level: 9 }, { id: '760', level: 9 }, { id: '1905', level: 10 }, { id: '5641', level: 10 }],
     require: ['80'],
     addSkill: ['16', '34', '35'],
     addWeapon: ['1', '15', '21', '25'],
+    addArmor: [],
     hp: 130,
     mp: 90,
     sp: 110,
@@ -1530,15 +1983,22 @@ export const JOB_LIST: Job[] = [
     agi: 100,
     luk: 125,
     itemUseRate: 150,
-    goldRate: 300,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 60, 40, 55, 55],
   },
   {
     id: '82',
     name: '아이템사',
+    learningSkills: [{ id: '1921', level: 2 }, { id: '1942', level: 2 }, { id: '1932', level: 3 }, { id: '1933', level: 3 }, { id: '1936', level: 3 }, { id: '1954', level: 3 }, { id: '1955', level: 3 }, { id: '1958', level: 3 }, { id: '1965', level: 3 }, { id: '1966', level: 3 }, { id: '1969', level: 3 }, { id: '1263', level: 4 }, { id: '1927', level: 4 }, { id: '1948', level: 4 }, { id: '1934', level: 5 }, { id: '1935', level: 5 }, { id: '1956', level: 5 }, { id: '1957', level: 5 }, { id: '1967', level: 5 }, { id: '1968', level: 5 }, { id: '1922', level: 6 }, { id: '1943', level: 6 }, { id: '1937', level: 7 }, { id: '1938', level: 7 }, { id: '1939', level: 7 }, { id: '1959', level: 7 }, { id: '1960', level: 7 }, { id: '1961', level: 7 }, { id: '1970', level: 7 }, { id: '1971', level: 7 }, { id: '1972', level: 7 }, { id: '1930', level: 8 }, { id: '1952', level: 8 }, { id: '1964', level: 8 }, { id: '1924', level: 9 }, { id: '1945', level: 9 }, { id: '727', level: 9 }, { id: '1975', level: 10 }, { id: '1976', level: 10 }, { id: '1977', level: 10 }],
     require: ['79'],
     addSkill: ['16', '34', '35'],
     addWeapon: ['1', '21', '25'],
+    addArmor: [],
     hp: 110,
     mp: 100,
     sp: 105,
@@ -1549,14 +2009,22 @@ export const JOB_LIST: Job[] = [
     agi: 115,
     luk: 120,
     itemUseRate: 200,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 35, 20, 25, 35],
   },
   {
     id: '83',
     name: '마스터 아이템',
+    learningSkills: [{ id: '1978', level: 2 }, { id: '1979', level: 2 }, { id: '1980', level: 2 }, { id: '1269', level: 3 }, { id: '1940', level: 3 }, { id: '1962', level: 3 }, { id: '1973', level: 3 }, { id: '1925', level: 4 }, { id: '1946', level: 4 }, { id: '1928', level: 5 }, { id: '1949', level: 5 }, { id: '1981', level: 5 }, { id: '1982', level: 5 }, { id: '411', level: 5 }, { id: '1923', level: 6 }, { id: '1944', level: 6 }, { id: '1941', level: 6 }, { id: '1963', level: 6 }, { id: '1974', level: 6 }, { id: '1931', level: 7 }, { id: '1953', level: 7 }, { id: '1926', level: 8 }, { id: '1947', level: 8 }, { id: '1929', level: 9 }, { id: '1950', level: 9 }, { id: '728', level: 9 }, { id: '1951', level: 10 }, { id: '5637', level: 10 }],
     require: ['82'],
     addSkill: ['16', '34', '35'],
     addWeapon: ['1', '21', '25'],
+    addArmor: [],
     hp: 120,
     mp: 110,
     sp: 110,
@@ -1567,22 +2035,22 @@ export const JOB_LIST: Job[] = [
     agi: 125,
     luk: 130,
     itemUseRate: 300,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 60, 40, 45, 60],
   },
   {
     id: '84',
-    name: '모험가', // 바닥 피해율 50%
+    name: '모험가',
+    learningSkills: [{ id: '3117', level: 2 }, { id: '783', level: 3 }, { id: '789', level: 3 }, { id: '1268', level: 4 }, { id: '225', level: 5 }, { id: '3119', level: 6 }, { id: '644', level: 7 }, { id: '793', level: 7 }, { id: '748', level: 8 }, { id: '199', level: 9 }, { id: '3144', level: 10 }],
     require: ['52', '62'],
     addSkill: ['6', '16', '30', '35'],
     addWeapon: ['1', '10', '15', '18', '21'],
-    elementResist: {
-      fire: 75,
-      ice: 75,
-      lightning: 75,
-      wind: 75,
-      earth: 75,
-      water: 75,
-    },
+    addArmor: [],
     hp: 125,
     mp: 85,
     sp: 115,
@@ -1592,24 +2060,31 @@ export const JOB_LIST: Job[] = [
     mdf: 105,
     agi: 120,
     luk: 125,
-    evasion: 10,
     critical: 5,
+    evasion: 10,
+    floorDamage: 50,
+    elementResist: {
+      fire: 75,
+      ice: 75,
+      lightning: 75,
+      wind: 75,
+      earth: 75,
+      water: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [35, 35, 20, 35, 35],
   },
   {
     id: '85',
-    name: '레인저', // 바닥 피해율 0%
+    name: '레인저',
+    learningSkills: [{ id: '3118', level: 2 }, { id: '784', level: 3 }, { id: '790', level: 3 }, { id: '3145', level: 4 }, { id: '239', level: 5 }, { id: '3120', level: 6 }, { id: '645', level: 7 }, { id: '794', level: 7 }, { id: '749', level: 8 }, { id: '200', level: 9 }, { id: '5648', level: 9 }, { id: '1271', level: 10 }, { id: '5637', level: 10 }],
     require: ['84'],
     addSkill: ['6', '16', '30', '31', '32', '35'],
     addWeapon: ['1', '10', '15', '18', '21'],
-    elementResist: {
-      fire: 50,
-      ice: 50,
-      lightning: 50,
-      wind: 50,
-      earth: 50,
-      water: 50,
-    },
+    addArmor: [],
     hp: 135,
     mp: 90,
     sp: 130,
@@ -1619,16 +2094,31 @@ export const JOB_LIST: Job[] = [
     mdf: 115,
     agi: 130,
     luk: 135,
-    evasion: 10,
     critical: 10,
+    evasion: 10,
+    floorDamage: 0,
+    elementResist: {
+      fire: 50,
+      ice: 50,
+      lightning: 50,
+      wind: 50,
+      earth: 50,
+      water: 50,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [60, 60, 40, 60, 60],
   },
   {
     id: '86',
     name: '점쟁이',
-    require: ['86'],
+    learningSkills: [{ id: '1993', level: 2 }, { id: '278', level: 3 }, { id: '1984', level: 4 }, { id: '549', level: 5 }, { id: '2008', level: 6 }, { id: '290', level: 7 }, { id: '2011', level: 8 }, { id: '761', level: 9 }, { id: '1994', level: 10 }],
+    require: [],
     addSkill: ['36'],
     addWeapon: ['1', '16', '17', '27'],
+    addArmor: [],
     hp: 80,
     mp: 100,
     sp: 90,
@@ -1638,15 +2128,22 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 100,
     luk: 110,
-    itemGetRate: 150,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [10, 20, 20, 10, 30],
   },
   {
     id: '87',
-    name: '겜블러',
+    name: '갬블러',
+    learningSkills: [{ id: '1995', level: 2 }, { id: '279', level: 3 }, { id: '1985', level: 4 }, { id: '404', level: 5 }, { id: '1989', level: 6 }, { id: '291', level: 7 }, { id: '2012', level: 8 }, { id: '762', level: 9 }, { id: '2009', level: 10 }],
     require: ['86'],
     addSkill: ['36'],
     addWeapon: ['1', '16', '17', '27'],
+    addArmor: [],
     hp: 100,
     mp: 95,
     sp: 100,
@@ -1657,15 +2154,22 @@ export const JOB_LIST: Job[] = [
     agi: 110,
     luk: 120,
     critical: 30,
-    itemGetRate: 200,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [25, 30, 20, 25, 40],
   },
   {
     id: '88',
     name: '어둠의 도박사',
+    learningSkills: [{ id: '1996', level: 2 }, { id: '280', level: 3 }, { id: '1988', level: 4 }, { id: '412', level: 5 }, { id: '1991', level: 6 }, { id: '292', level: 7 }, { id: '2013', level: 8 }, { id: '763', level: 9 }, { id: '1990', level: 10 }, { id: '5643', level: 10 }],
     require: ['87'],
     addSkill: ['36'],
     addWeapon: ['1', '16', '17', '27'],
+    addArmor: [],
     hp: 110,
     mp: 100,
     sp: 110,
@@ -1676,15 +2180,22 @@ export const JOB_LIST: Job[] = [
     agi: 120,
     luk: 130,
     critical: 40,
-    itemGetRate: 300,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [45, 55, 40, 45, 70],
   },
   {
     id: '89',
     name: '카드 배틀러',
+    learningSkills: [{ id: '1997', level: 2 }, { id: '550', level: 3 }, { id: '1986', level: 4 }, { id: '1998', level: 5 }, { id: '683', level: 6 }, { id: '404', level: 7 }, { id: '1999', level: 8 }, { id: '388', level: 9 }, { id: '423', level: 10 }],
     require: ['86'],
     addSkill: ['36'],
     addWeapon: ['1', '16', '17', '27'],
+    addArmor: [],
     hp: 90,
     mp: 110,
     sp: 100,
@@ -1694,14 +2205,22 @@ export const JOB_LIST: Job[] = [
     mdf: 115,
     agi: 110,
     luk: 115,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [25, 30, 25, 20, 40],
   },
   {
     id: '90',
     name: '카드 서머너',
+    learningSkills: [{ id: '2000', level: 2 }, { id: '551', level: 3 }, { id: '1987', level: 4 }, { id: '1992', level: 5 }, { id: '684', level: 6 }, { id: '412', level: 7 }, { id: '2001', level: 8 }, { id: '389', level: 9 }, { id: '2010', level: 10 }, { id: '5643', level: 10 }],
     require: ['89'],
     addSkill: ['36'],
     addWeapon: ['1', '16', '17', '27'],
+    addArmor: [],
     hp: 95,
     mp: 120,
     sp: 110,
@@ -1711,14 +2230,22 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 120,
     luk: 125,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [45, 55, 45, 40, 70],
   },
   {
     id: '91',
-    name: '갓 파더', // 이도류
+    name: '갓 파더',
+    learningSkills: [{ id: '1361', level: 2 }, { id: '796', level: 3 }, { id: '1362', level: 4 }, { id: '1364', level: 5 }, { id: '107', level: 6 }, { id: '1363', level: 7 }, { id: '1365', level: 8 }, { id: '157', level: 9 }, { id: '1366', level: 10 }],
     require: ['63', '80', '87'],
     addSkill: ['19', '34', '21'],
     addWeapon: ['1', '11', '30'],
+    addArmor: [],
     hp: 130,
     mp: 85,
     sp: 130,
@@ -1729,14 +2256,23 @@ export const JOB_LIST: Job[] = [
     agi: 115,
     luk: 135,
     counter: 50,
+    dualWield: true,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [60, 60, 45, 55, 55],
   },
   {
     id: '92',
-    name: '놀이꾼', // 전투 중에 50% 확률로 논다
-    require: ['86'],
+    name: '놀이꾼',
+    learningSkills: [{ id: '795', level: 2 }, { id: '797', level: 2 }, { id: '554', level: 3 }, { id: '3147', level: 4 }, { id: '559', level: 5 }, { id: '2032', level: 6 }, { id: '806', level: 7 }, { id: '2102', level: 8 }, { id: '798', level: 9 }, { id: '3148', level: 10 }],
+    require: [],
     addSkill: ['36', '37', '38', '49'],
     addWeapon: ['23', '19', '21', '31'],
+    addArmor: [],
     hp: 80,
     mp: 80,
     sp: 70,
@@ -1746,16 +2282,24 @@ export const JOB_LIST: Job[] = [
     mdf: 85,
     agi: 105,
     luk: 105,
-    evasion: 20,
     critical: 20,
+    evasion: 20,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [10, 10, 10, 10, 30],
   },
   {
     id: '93',
     name: '무희',
+    learningSkills: [{ id: '2033', level: 2 }, { id: '2051', level: 2 }, { id: '555', level: 3 }, { id: '2035', level: 4 }, { id: '733', level: 5 }, { id: '1311', level: 6 }, { id: '227', level: 7 }, { id: '2036', level: 8 }, { id: '205', level: 9 }, { id: '2042', level: 10 }],
     require: ['92'],
     addSkill: ['18', '37'],
     addWeapon: ['1', '5', '19', '23'],
+    addArmor: [],
     hp: 90,
     mp: 100,
     sp: 105,
@@ -1766,14 +2310,22 @@ export const JOB_LIST: Job[] = [
     agi: 120,
     luk: 120,
     evasion: 20,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [25, 35, 30, 20, 30],
   },
   {
     id: '94',
     name: '전투 무녀',
+    learningSkills: [{ id: '2024', level: 2 }, { id: '556', level: 3 }, { id: '241', level: 4 }, { id: '734', level: 5 }, { id: '1328', level: 6 }, { id: '413', level: 7 }, { id: '2050', level: 8 }, { id: '206', level: 9 }, { id: '2025', level: 10 }, { id: '5639', level: 10 }],
     require: ['93'],
     addSkill: ['18', '37'],
     addWeapon: ['1', '5', '19', '23'],
+    addArmor: [],
     hp: 100,
     mp: 110,
     sp: 110,
@@ -1784,14 +2336,22 @@ export const JOB_LIST: Job[] = [
     agi: 130,
     luk: 130,
     evasion: 20,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [45, 60, 55, 40, 55],
   },
   {
     id: '95',
     name: '음유시인',
+    learningSkills: [{ id: '2086', level: 2 }, { id: '560', level: 3 }, { id: '2090', level: 4 }, { id: '735', level: 5 }, { id: '2087', level: 6 }, { id: '400', level: 7 }, { id: '2089', level: 8 }, { id: '376', level: 9 }, { id: '2088', level: 10 }],
     require: ['92'],
     addSkill: ['38'],
     addWeapon: ['21', '20'],
+    addArmor: [],
     hp: 85,
     mp: 110,
     sp: 105,
@@ -1802,14 +2362,22 @@ export const JOB_LIST: Job[] = [
     agi: 100,
     luk: 120,
     magicEvasion: 20,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [25, 35, 25, 25, 30],
   },
   {
     id: '96',
     name: '신창의 가희',
+    learningSkills: [{ id: '2092', level: 2 }, { id: '561', level: 3 }, { id: '2079', level: 4 }, { id: '736', level: 5 }, { id: '2076', level: 6 }, { id: '414', level: 7 }, { id: '2091', level: 8 }, { id: '377', level: 9 }, { id: '2085', level: 10 }, { id: '5636', level: 10 }],
     require: ['95'],
     addSkill: ['38'],
     addWeapon: ['21', '20'],
+    addArmor: [],
     hp: 95,
     mp: 120,
     sp: 110,
@@ -1820,20 +2388,22 @@ export const JOB_LIST: Job[] = [
     agi: 110,
     luk: 130,
     magicEvasion: 20,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [45, 60, 45, 45, 55],
   },
   {
     id: '97',
-    name: '창녀', // 공격시 민감 황홀 확률 5%씩 있음
+    name: '창녀',
+    learningSkills: [{ id: '2460', level: 2 }, { id: '687', level: 3 }, { id: '2465', level: 4 }, { id: '689', level: 5 }, { id: '2468', level: 6 }, { id: '364', level: 7 }, { id: '367', level: 8 }, { id: '394', level: 9 }, { id: '2471', level: 10 }],
     require: ['92'],
     addSkill: ['49'],
     addWeapon: ['19', '31'],
-    stateResist: {
-      horny: 50,
-      trance: 50,
-      seduction: 50,
-      incontinence: 50,
-    },
+    addArmor: [],
     hp: 90,
     mp: 95,
     sp: 105,
@@ -1843,20 +2413,28 @@ export const JOB_LIST: Job[] = [
     mdf: 115,
     agi: 110,
     luk: 120,
+    elementResist: {
+    },
+    stateResist: {
+      horny: 50,
+      trance: 50,
+      seduction: 50,
+      incontinence: 50,
+    },
+    stateOnHit: {
+      horny: 5,
+      trance: 5,
+    },
     abilityPoints: [20, 35, 20, 20, 35],
   },
   {
     id: '98',
-    name: '자애의 성창', // 공격시 민감 황홀 실금 확률 5%씩 있음
+    name: '자애의 성창',
+    learningSkills: [{ id: '2461', level: 2 }, { id: '406', level: 3 }, { id: '2466', level: 4 }, { id: '688', level: 5 }, { id: '2476', level: 6 }, { id: '365', level: 7 }, { id: '2469', level: 8 }, { id: '395', level: 9 }, { id: '2472', level: 10 }, { id: '5647', level: 10 }],
     require: ['97'],
     addSkill: ['49'],
     addWeapon: ['19', '31'],
-    stateResist: {
-      horny: 25,
-      trance: 25,
-      seduction: 25,
-      incontinence: 25,
-    },
+    addArmor: [],
     hp: 100,
     mp: 100,
     sp: 110,
@@ -1866,20 +2444,29 @@ export const JOB_LIST: Job[] = [
     mdf: 125,
     agi: 115,
     luk: 130,
+    elementResist: {
+    },
+    stateResist: {
+      horny: 25,
+      trance: 25,
+      seduction: 25,
+      incontinence: 25,
+    },
+    stateOnHit: {
+      horny: 5,
+      trance: 5,
+      incontinence: 5,
+    },
     abilityPoints: [40, 60, 40, 40, 60],
   },
   {
     id: '99',
-    name: '경국의 마창', // 공격시 민감 황홀 유혹 확률 5%씩 있음
+    name: '경국의 마창',
+    learningSkills: [{ id: '2462', level: 2 }, { id: '422', level: 3 }, { id: '2467', level: 4 }, { id: '690', level: 5 }, { id: '2477', level: 6 }, { id: '368', level: 7 }, { id: '2470', level: 8 }, { id: '395', level: 9 }, { id: '2473', level: 10 }, { id: '5647', level: 10 }],
     require: ['97'],
     addSkill: ['49'],
     addWeapon: ['19', '31'],
-    stateResist: {
-      horny: 25,
-      trance: 25,
-      seduction: 25,
-      incontinence: 25,
-    },
+    addArmor: [],
     hp: 100,
     mp: 100,
     sp: 110,
@@ -1889,14 +2476,29 @@ export const JOB_LIST: Job[] = [
     mdf: 125,
     agi: 115,
     luk: 130,
+    elementResist: {
+    },
+    stateResist: {
+      horny: 25,
+      trance: 25,
+      seduction: 25,
+      incontinence: 25,
+    },
+    stateOnHit: {
+      horny: 5,
+      trance: 5,
+      seduction: 5,
+    },
     abilityPoints: [40, 60, 40, 40, 60],
   },
   {
     id: '100',
-    name: '슈퍼스타', // 공격시 유혹 20%
+    name: '슈퍼스타',
+    learningSkills: [{ id: '3149', level: 2 }, { id: '691', level: 3 }, { id: '773', level: 4 }, { id: '2047', level: 5 }, { id: '774', level: 6 }, { id: '2081', level: 7 }, { id: '370', level: 8 }, { id: '3151', level: 9 }, { id: '3150', level: 10 }],
     require: ['93', '95'],
     addSkill: ['18', '37', '38'],
     addWeapon: ['1', '5', '19', '20', '23'],
+    addArmor: [],
     hp: 90,
     mp: 100,
     sp: 115,
@@ -1908,23 +2510,23 @@ export const JOB_LIST: Job[] = [
     luk: 130,
     evasion: 15,
     magicEvasion: 15,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+      seduction: 20,
+    },
     abilityPoints: [35, 50, 40, 35, 50],
   },
   {
     id: '101',
-    name: '배틀퍼커', // 공격시 민감 황홀 확률 5%씩 있음
+    name: '배틀퍼커',
+    learningSkills: [{ id: '2463', level: 2 }, { id: '648', level: 3 }, { id: '693', level: 3 }, { id: '2478', level: 4 }, { id: '373', level: 5 }, { id: '2480', level: 6 }, { id: '594', level: 7 }, { id: '2511', level: 8 }, { id: '467', level: 9 }, { id: '2474', level: 10 }],
     require: ['97'],
     addSkill: ['15', '21', '49'],
     addWeapon: ['19', '11', '31'],
-    elementResist: {
-      pleasure: 75,
-    },
-    stateResist: {
-      horny: 25,
-      trance: 25,
-      seduction: 25,
-      incontinence: 25,
-    },
+    addArmor: [],
     hp: 100,
     mp: 85,
     sp: 110,
@@ -1934,16 +2536,31 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 115,
     luk: 125,
-    evasion: 10,
     critical: 15,
+    evasion: 10,
+    elementResist: {
+      pleasure: 75,
+    },
+    stateResist: {
+      horny: 25,
+      trance: 25,
+      seduction: 25,
+      incontinence: 25,
+    },
+    stateOnHit: {
+      horny: 5,
+      trance: 5,
+    },
     abilityPoints: [25, 35, 20, 35, 35],
   },
   {
     id: '103',
     name: '학자',
-    require: ['103'],
+    learningSkills: [{ id: '2132', level: 2 }, { id: '2135', level: 3 }, { id: '2138', level: 4 }, { id: '634', level: 5 }, { id: '630', level: 6 }, { id: '2147', level: 7 }, { id: '2152', level: 8 }, { id: '2148', level: 9 }, { id: '2149', level: 10 }],
+    require: [],
     addSkill: ['40', '41', '42'],
     addWeapon: ['17', '26', '29', '30'],
+    addArmor: [],
     hp: 80,
     mp: 90,
     sp: 100,
@@ -1953,14 +2570,22 @@ export const JOB_LIST: Job[] = [
     mdf: 95,
     agi: 85,
     luk: 105,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [10, 25, 20, 10, 25],
   },
   {
     id: '104',
     name: '마도학자',
+    learningSkills: [{ id: '2133', level: 2 }, { id: '2136', level: 3 }, { id: '2139', level: 4 }, { id: '635', level: 5 }, { id: '631', level: 5 }, { id: '137', level: 6 }, { id: '2153', level: 7 }, { id: '2150', level: 8 }, { id: '2142', level: 9 }, { id: '2141', level: 10 }],
     require: ['103'],
     addSkill: ['40', '41', '42'],
     addWeapon: ['17', '26', '29', '30'],
+    addArmor: [],
     hp: 85,
     mp: 95,
     sp: 110,
@@ -1970,14 +2595,22 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 90,
     luk: 115,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 35, 30, 20, 35],
   },
   {
     id: '105',
     name: '마스터 알케미스트',
+    learningSkills: [{ id: '2134', level: 2 }, { id: '636', level: 3 }, { id: '632', level: 3 }, { id: '2143', level: 4 }, { id: '2137', level: 5 }, { id: '524', level: 6 }, { id: '2154', level: 7 }, { id: '2140', level: 8 }, { id: '2151', level: 9 }, { id: '2146', level: 10 }, { id: '5645', level: 10 }],
     require: ['104'],
     addSkill: ['40', '41', '42'],
     addWeapon: ['17', '26', '29', '30'],
+    addArmor: [],
     hp: 90,
     mp: 100,
     sp: 120,
@@ -1987,14 +2620,22 @@ export const JOB_LIST: Job[] = [
     mdf: 105,
     agi: 95,
     luk: 125,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 60, 55, 40, 60],
   },
   {
     id: '106',
     name: '연금술사',
+    learningSkills: [{ id: '2157', level: 2 }, { id: '2179', level: 2 }, { id: '2182', level: 2 }, { id: '2185', level: 2 }, { id: '2167', level: 3 }, { id: '2169', level: 3 }, { id: '2170', level: 3 }, { id: '2173', level: 3 }, { id: '2160', level: 4 }, { id: '2171', level: 4 }, { id: '2172', level: 4 }, { id: '2174', level: 4 }, { id: '2158', level: 5 }, { id: '2163', level: 5 }, { id: '2180', level: 5 }, { id: '2183', level: 5 }, { id: '2186', level: 5 }, { id: '2161', level: 6 }, { id: '2175', level: 6 }, { id: '2176', level: 6 }, { id: '2177', level: 6 }, { id: '2159', level: 7 }, { id: '2164', level: 7 }, { id: '2178', level: 7 }, { id: '2162', level: 8 }, { id: '2168', level: 8 }, { id: '2165', level: 9 }, { id: '2181', level: 9 }, { id: '2184', level: 9 }, { id: '2187', level: 9 }, { id: '2166', level: 10 }],
     require: ['103'],
     addSkill: ['40', '41', '42'],
     addWeapon: ['1', '16', '17', '29'],
+    addArmor: [],
     hp: 90,
     mp: 100,
     sp: 90,
@@ -2004,14 +2645,22 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 90,
     luk: 120,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [30, 30, 30, 20, 35],
   },
   {
     id: '107',
     name: '연금보구사',
+    learningSkills: [{ id: '2188', level: 2 }, { id: '2189', level: 3 }, { id: '2190', level: 4 }, { id: '2191', level: 5 }, { id: '2192', level: 6 }, { id: '2193', level: 7 }, { id: '2194', level: 8 }, { id: '2195', level: 9 }, { id: '525', level: 9 }, { id: '2196', level: 10 }, { id: '5645', level: 10 }],
     require: ['106'],
     addSkill: ['40', '41', '42'],
     addWeapon: ['1', '16', '17', '29'],
+    addArmor: [],
     hp: 95,
     mp: 110,
     sp: 100,
@@ -2021,14 +2670,22 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 100,
     luk: 130,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [55, 55, 55, 40, 60],
   },
   {
     id: '108',
     name: '마도사서',
+    learningSkills: [{ id: '2200', level: 2 }, { id: '2201', level: 3 }, { id: '2202', level: 4 }, { id: '462', level: 5 }, { id: '2213', level: 6 }, { id: '515', level: 7 }, { id: '2217', level: 8 }, { id: '509', level: 9 }, { id: '2214', level: 10 }],
     require: ['103'],
     addSkill: ['40', '41', '42'],
     addWeapon: ['16', '17', '29'],
+    addArmor: [],
     hp: 85,
     mp: 110,
     sp: 80,
@@ -2038,14 +2695,22 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 90,
     luk: 105,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 30, 40, 20, 35],
   },
   {
     id: '109',
     name: '로드 라이브러리',
+    learningSkills: [{ id: '2203', level: 2 }, { id: '2220', level: 3 }, { id: '2204', level: 4 }, { id: '526', level: 5 }, { id: '2205', level: 6 }, { id: '463', level: 7 }, { id: '2218', level: 8 }, { id: '510', level: 9 }, { id: '2212', level: 10 }, { id: '5645', level: 10 }],
     require: ['108'],
     addSkill: ['40', '41', '42'],
     addWeapon: ['16', '17', '29'],
+    addArmor: [],
     hp: 90,
     mp: 120,
     sp: 90,
@@ -2055,14 +2720,22 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 100,
     luk: 110,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 55, 70, 55, 60],
   },
   {
     id: '110',
     name: '기술자',
-    require: ['110'],
+    learningSkills: [{ id: '2230', level: 2 }, { id: '278', level: 3 }, { id: '2231', level: 4 }, { id: '2232', level: 5 }, { id: '2233', level: 6 }, { id: '2234', level: 7 }, { id: '2235', level: 8 }, { id: '2236', level: 9 }, { id: '2237', level: 10 }],
+    require: [],
     addSkill: ['43'],
     addWeapon: ['1', '14', '30'],
+    addArmor: [],
     hp: 105,
     mp: 80,
     sp: 110,
@@ -2072,14 +2745,22 @@ export const JOB_LIST: Job[] = [
     mdf: 95,
     agi: 85,
     luk: 110,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 25, 10, 20, 20],
   },
   {
     id: '111',
     name: '마키나 마이스터',
+    learningSkills: [{ id: '2238', level: 2 }, { id: '279', level: 3 }, { id: '2239', level: 4 }, { id: '2240', level: 5 }, { id: '136', level: 6 }, { id: '2241', level: 7 }, { id: '2242', level: 8 }, { id: '397', level: 9 }, { id: '2243', level: 10 }],
     require: ['110'],
     addSkill: ['43'],
     addWeapon: ['1', '14', '30'],
+    addArmor: [],
     hp: 115,
     mp: 85,
     sp: 120,
@@ -2089,14 +2770,22 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 90,
     luk: 120,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [30, 35, 20, 30, 30],
   },
   {
     id: '112',
     name: '마스터 머시너리',
+    learningSkills: [{ id: '2244', level: 2 }, { id: '280', level: 3 }, { id: '2245', level: 4 }, { id: '416', level: 5 }, { id: '2247', level: 6 }, { id: '2252', level: 7 }, { id: '2248', level: 8 }, { id: '398', level: 9 }, { id: '2251', level: 10 }, { id: '5646', level: 10 }],
     require: ['111'],
     addSkill: ['43'],
     addWeapon: ['1', '14', '30'],
+    addArmor: [],
     hp: 125,
     mp: 90,
     sp: 130,
@@ -2106,12 +2795,19 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 95,
     luk: 130,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [55, 60, 40, 55, 55],
   },
   {
     id: '113',
     name: '마예사',
-    require: ['113'],
+    learningSkills: [{ id: '1600', level: 2 }, { id: '1609', level: 3 }, { id: '1618', level: 4 }, { id: '66', level: 5 }, { id: '1156', level: 6 }, { id: '451', level: 7 }, { id: '3104', level: 8 }, { id: '278', level: 9 }, { id: '108', level: 10 }, { id: '519', level: 10 }],
+    require: [],
     addSkill: ['13', '25'],
     addWeapon: ['15', '17', '19', '29'],
     addArmor: ['7', '36'],
@@ -2124,11 +2820,18 @@ export const JOB_LIST: Job[] = [
     mdf: 105,
     agi: 110,
     luk: 110,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [15, 30, 25, 20, 25],
   },
   {
     id: '114',
     name: '네크로맨서',
+    learningSkills: [{ id: '1601', level: 2 }, { id: '653', level: 3 }, { id: '1602', level: 4 }, { id: '134', level: 5 }, { id: '1160', level: 6 }, { id: '222', level: 7 }, { id: '1604', level: 8 }, { id: '190', level: 9 }, { id: '1603', level: 10 }],
     require: ['113'],
     addSkill: ['13', '25', '45', '59'],
     addWeapon: ['15', '17', '19', '26', '29'],
@@ -2142,11 +2845,18 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 115,
     luk: 115,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [25, 40, 30, 35, 35],
   },
   {
     id: '115',
     name: '네크로마스터',
+    learningSkills: [{ id: '1605', level: 2 }, { id: '654', level: 3 }, { id: '1606', level: 4 }, { id: '149', level: 5 }, { id: '1161', level: 6 }, { id: '236', level: 7 }, { id: '1607', level: 8 }, { id: '191', level: 9 }, { id: '1608', level: 10 }, { id: '5631', level: 10 }],
     require: ['114'],
     addSkill: ['13', '25', '45', '59'],
     addWeapon: ['15', '17', '19', '26', '29'],
@@ -2160,11 +2870,18 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 120,
     luk: 120,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [45, 70, 55, 60, 60],
   },
   {
     id: '116',
     name: '강령술사',
+    learningSkills: [{ id: '1612', level: 2 }, { id: '663', level: 3 }, { id: '1611', level: 4 }, { id: '135', level: 5 }, { id: '1162', level: 6 }, { id: '222', level: 7 }, { id: '1613', level: 8 }, { id: '190', level: 9 }, { id: '1610', level: 10 }],
     require: ['113'],
     addSkill: ['13', '23', '25', '59'],
     addWeapon: ['15', '16', '17', '29'],
@@ -2178,11 +2895,18 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 115,
     luk: 115,
-    abilityPoints: [25, 40, 30, 35, 35],
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
+    abilityPoints: [25, 40, 35, 30, 35],
   },
   {
     id: '117',
     name: '마스터 샤먼',
+    learningSkills: [{ id: '1614', level: 2 }, { id: '664', level: 3 }, { id: '1615', level: 4 }, { id: '779', level: 5 }, { id: '1163', level: 6 }, { id: '236', level: 7 }, { id: '1616', level: 8 }, { id: '191', level: 9 }, { id: '1617', level: 10 }, { id: '5631', level: 10 }],
     require: ['116'],
     addSkill: ['13', '23', '25', '59'],
     addWeapon: ['15', '16', '17', '29'],
@@ -2196,11 +2920,19 @@ export const JOB_LIST: Job[] = [
     mdf: 130,
     agi: 120,
     luk: 120,
+    elementResist: {
+      dark: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [45, 70, 60, 55, 60],
   },
   {
     id: '118',
     name: '인형사',
+    learningSkills: [{ id: '1620', level: 2 }, { id: '679', level: 3 }, { id: '1621', level: 4 }, { id: '136', level: 5 }, { id: '1164', level: 6 }, { id: '222', level: 7 }, { id: '1622', level: 8 }, { id: '190', level: 9 }, { id: '1619', level: 10 }],
     require: ['113'],
     addSkill: ['13', '25', '43', '60'],
     addWeapon: ['15', '17', '29', '30'],
@@ -2214,11 +2946,18 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 120,
     luk: 125,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [30, 40, 30, 30, 35],
   },
   {
     id: '119',
     name: '마스터 돌러',
+    learningSkills: [{ id: '1623', level: 2 }, { id: '680', level: 3 }, { id: '1624', level: 4 }, { id: '148', level: 5 }, { id: '1165', level: 6 }, { id: '236', level: 7 }, { id: '1625', level: 8 }, { id: '191', level: 9 }, { id: '1626', level: 10 }, { id: '5631', level: 10 }],
     require: ['118'],
     addSkill: ['13', '25', '43', '60'],
     addWeapon: ['15', '17', '29', '30'],
@@ -2232,14 +2971,22 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 130,
     luk: 135,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [55, 70, 55, 55, 60],
   },
   {
     id: '120',
     name: '정보상',
-    require: ['120'],
+    learningSkills: [{ id: '2109', level: 2 }, { id: '549', level: 3 }, { id: '2112', level: 4 }, { id: '2119', level: 5 }, { id: '2120', level: 6 }, { id: '1262', level: 7 }, { id: '2121', level: 8 }, { id: '2122', level: 9 }, { id: '2110', level: 10 }],
+    require: [],
     addSkill: ['16', '39'],
     addWeapon: ['1', '5', '21', '30'],
+    addArmor: [],
     hp: 85,
     mp: 90,
     sp: 100,
@@ -2249,14 +2996,22 @@ export const JOB_LIST: Job[] = [
     mdf: 90,
     agi: 105,
     luk: 105,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [15, 25, 15, 15, 25],
   },
   {
     id: '121',
     name: '화술사',
+    learningSkills: [{ id: '2117', level: 2 }, { id: '550', level: 3 }, { id: '2114', level: 4 }, { id: '2115', level: 5 }, { id: '2116', level: 6 }, { id: '293', level: 7 }, { id: '1264', level: 8 }, { id: '2118', level: 9 }, { id: '2123', level: 10 }],
     require: ['120'],
     addSkill: ['16', '39'],
     addWeapon: ['1', '5', '21', '30'],
+    addArmor: [],
     hp: 90,
     mp: 95,
     sp: 105,
@@ -2266,14 +3021,22 @@ export const JOB_LIST: Job[] = [
     mdf: 95,
     agi: 115,
     luk: 115,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [25, 35, 25, 25, 35],
   },
   {
     id: '122',
     name: '화신',
+    learningSkills: [{ id: '2113', level: 2 }, { id: '551', level: 3 }, { id: '2126', level: 4 }, { id: '2124', level: 5 }, { id: '424', level: 6 }, { id: '1270', level: 7 }, { id: '415', level: 8 }, { id: '2125', level: 9 }, { id: '2111', level: 10 }, { id: '5637', level: 10 }],
     require: ['121'],
     addSkill: ['16', '39'],
     addWeapon: ['1', '5', '21', '30'],
+    addArmor: [],
     hp: 95,
     mp: 100,
     sp: 110,
@@ -2283,14 +3046,22 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 125,
     luk: 125,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [45, 60, 45, 45, 60],
   },
   {
     id: '123',
     name: '요리사',
-    require: ['123'],
+    learningSkills: [{ id: '2257', level: 2 }, { id: '2258', level: 2 }, { id: '2259', level: 2 }, { id: '2260', level: 2 }, { id: '730', level: 3 }, { id: '2261', level: 4 }, { id: '2262', level: 4 }, { id: '2263', level: 4 }, { id: '2264', level: 4 }, { id: '2265', level: 5 }, { id: '2266', level: 5 }, { id: '2267', level: 5 }, { id: '2268', level: 5 }, { id: '681', level: 6 }, { id: '2269', level: 7 }, { id: '2270', level: 7 }, { id: '2271', level: 7 }, { id: '2272', level: 7 }, { id: '2273', level: 8 }, { id: '2274', level: 8 }, { id: '2275', level: 8 }, { id: '2320', level: 9 }, { id: '2276', level: 10 }, { id: '2277', level: 10 }, { id: '2278', level: 10 }, { id: '2279', level: 10 }],
+    require: [],
     addSkill: ['6', '44'],
     addWeapon: ['1', '15', '24'],
+    addArmor: [],
     hp: 100,
     mp: 80,
     sp: 100,
@@ -2300,14 +3071,22 @@ export const JOB_LIST: Job[] = [
     mdf: 110,
     agi: 100,
     luk: 110,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 25, 10, 20, 20],
   },
   {
     id: '124',
     name: '트리플 쿡',
+    learningSkills: [{ id: '2280', level: 2 }, { id: '2281', level: 2 }, { id: '2282', level: 2 }, { id: '731', level: 3 }, { id: '2283', level: 4 }, { id: '2284', level: 4 }, { id: '2285', level: 4 }, { id: '682', level: 5 }, { id: '2286', level: 6 }, { id: '2287', level: 6 }, { id: '2288', level: 6 }, { id: '2289', level: 6 }, { id: '2290', level: 6 }, { id: '401', level: 7 }, { id: '2291', level: 8 }, { id: '2292', level: 8 }, { id: '2293', level: 8 }, { id: '379', level: 9 }, { id: '2294', level: 10 }, { id: '2295', level: 10 }, { id: '2296', level: 10 }, { id: '2297', level: 10 }],
     require: ['123'],
     addSkill: ['6', '44'],
     addWeapon: ['1', '15', '24'],
+    addArmor: [],
     hp: 110,
     mp: 85,
     sp: 105,
@@ -2317,14 +3096,22 @@ export const JOB_LIST: Job[] = [
     mdf: 115,
     agi: 105,
     luk: 115,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [30, 35, 20, 30, 30],
   },
   {
     id: '125',
     name: '미황',
+    learningSkills: [{ id: '2298', level: 2 }, { id: '2299', level: 2 }, { id: '2300', level: 2 }, { id: '2301', level: 2 }, { id: '732', level: 3 }, { id: '2302', level: 4 }, { id: '2303', level: 4 }, { id: '2304', level: 4 }, { id: '2305', level: 4 }, { id: '2321', level: 5 }, { id: '2306', level: 6 }, { id: '2307', level: 6 }, { id: '2308', level: 6 }, { id: '2309', level: 6 }, { id: '417', level: 7 }, { id: '2310', level: 8 }, { id: '2311', level: 8 }, { id: '2312', level: 8 }, { id: '2313', level: 8 }, { id: '2314', level: 9 }, { id: '2315', level: 9 }, { id: '380', level: 9 }, { id: '2316', level: 10 }, { id: '2317', level: 10 }, { id: '5640', level: 10 }],
     require: ['124'],
     addSkill: ['6', '44'],
     addWeapon: ['1', '15', '24'],
+    addArmor: [],
     hp: 120,
     mp: 90,
     sp: 110,
@@ -2334,14 +3121,22 @@ export const JOB_LIST: Job[] = [
     mdf: 120,
     agi: 110,
     luk: 120,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [55, 60, 40, 55, 55],
   },
   {
     id: '126',
     name: '간호사',
-    require: ['126'],
+    learningSkills: [{ id: '2336', level: 2 }, { id: '2327', level: 3 }, { id: '2340', level: 4 }, { id: '2334', level: 5 }, { id: '2344', level: 6 }, { id: '2347', level: 6 }, { id: '403', level: 7 }, { id: '2335', level: 8 }, { id: '2338', level: 9 }, { id: '2350', level: 10 }],
+    require: [],
     addSkill: ['6', '45'],
     addWeapon: ['16', '26'],
+    addArmor: [],
     hp: 85,
     mp: 90,
     sp: 100,
@@ -2352,14 +3147,22 @@ export const JOB_LIST: Job[] = [
     agi: 105,
     luk: 110,
     evasion: 10,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [10, 25, 20, 15, 20],
   },
   {
     id: '127',
     name: '의사',
+    learningSkills: [{ id: '2337', level: 2 }, { id: '2328', level: 3 }, { id: '2340', level: 4 }, { id: '2342', level: 5 }, { id: '2345', level: 6 }, { id: '2348', level: 6 }, { id: '2352', level: 7 }, { id: '2354', level: 8 }, { id: '385', level: 9 }, { id: '2351', level: 10 }],
     require: ['126'],
     addSkill: ['6', '45'],
     addWeapon: ['16', '26'],
+    addArmor: [],
     hp: 90,
     mp: 95,
     sp: 105,
@@ -2370,14 +3173,22 @@ export const JOB_LIST: Job[] = [
     agi: 115,
     luk: 120,
     evasion: 10,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 35, 30, 25, 30],
   },
   {
     id: '128',
     name: '신의',
+    learningSkills: [{ id: '2339', level: 2 }, { id: '2330', level: 3 }, { id: '2356', level: 4 }, { id: '418', level: 5 }, { id: '2346', level: 6 }, { id: '2349', level: 6 }, { id: '2353', level: 7 }, { id: '2355', level: 8 }, { id: '386', level: 9 }, { id: '2343', level: 10 }, { id: '5642', level: 10 }],
     require: ['127'],
     addSkill: ['6', '45'],
     addWeapon: ['16', '26'],
+    addArmor: [],
     hp: 95,
     mp: 100,
     sp: 110,
@@ -2388,14 +3199,22 @@ export const JOB_LIST: Job[] = [
     agi: 125,
     luk: 130,
     evasion: 10,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 60, 55, 45, 55],
   },
   {
     id: '129',
     name: '메이드',
-    require: ['129'],
+    learningSkills: [{ id: '2389', level: 2 }, { id: '2377', level: 3 }, { id: '615', level: 4 }, { id: '2375', level: 5 }, { id: '2376', level: 6 }, { id: '2367', level: 7 }, { id: '132', level: 8 }, { id: '133', level: 9 }, { id: '2397', level: 10 }],
+    require: [],
     addSkill: ['15', '46'],
     addWeapon: ['19', '23', '28', '31'],
+    addArmor: [],
     hp: 95,
     mp: 100,
     sp: 105,
@@ -2407,14 +3226,22 @@ export const JOB_LIST: Job[] = [
     luk: 110,
     evasion: 10,
     magicEvasion: 10,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [10, 30, 20, 20, 30],
   },
   {
     id: '130',
     name: '마스터 메이드',
+    learningSkills: [{ id: '2390', level: 2 }, { id: '2378', level: 3 }, { id: '616', level: 4 }, { id: '2380', level: 5 }, { id: '685', level: 6 }, { id: '2369', level: 7 }, { id: '405', level: 8 }, { id: '391', level: 9 }, { id: '755', level: 10 }],
     require: ['129'],
     addSkill: ['15', '46'],
-    addWeapon: ['19', '23', '28', '31'],
+    addWeapon: ['23', '19', '28', '31'],
+    addArmor: [],
     hp: 100,
     mp: 105,
     sp: 110,
@@ -2426,14 +3253,22 @@ export const JOB_LIST: Job[] = [
     luk: 120,
     evasion: 10,
     magicEvasion: 10,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 40, 30, 30, 40],
   },
   {
     id: '131',
     name: '퍼펙트 메이드',
+    learningSkills: [{ id: '2391', level: 2 }, { id: '2379', level: 3 }, { id: '144', level: 4 }, { id: '2381', level: 5 }, { id: '686', level: 6 }, { id: '2371', level: 7 }, { id: '419', level: 8 }, { id: '392', level: 9 }, { id: '756', level: 10 }, { id: '5644', level: 10 }],
     require: ['130'],
     addSkill: ['15', '46'],
-    addWeapon: ['19', '23', '28', '31'],
+    addWeapon: ['23', '19', '28', '31'],
+    addArmor: [],
     hp: 105,
     mp: 110,
     sp: 115,
@@ -2445,14 +3280,22 @@ export const JOB_LIST: Job[] = [
     luk: 130,
     evasion: 10,
     magicEvasion: 10,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 70, 55, 55, 70],
   },
   {
     id: '134',
     name: '귀족',
-    require: ['134'],
+    learningSkills: [{ id: '985', level: 2 }, { id: '568', level: 3 }, { id: '987', level: 4 }, { id: '214', level: 5 }, { id: '231', level: 5 }, { id: '988', level: 6 }, { id: '708', level: 7 }, { id: '1001', level: 8 }, { id: '752', level: 9 }, { id: '986', level: 10 }],
+    require: [],
     addSkill: ['6', '8', '47'],
     addWeapon: ['1', '5', '18'],
+    addArmor: [],
     hp: 110,
     mp: 100,
     sp: 100,
@@ -2464,11 +3307,18 @@ export const JOB_LIST: Job[] = [
     luk: 110,
     evasion: 10,
     hpRegen: 5,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 20, 20, 20, 25],
   },
   {
     id: '135',
     name: '왕',
+    learningSkills: [{ id: '2403', level: 2 }, { id: '572', level: 3 }, { id: '2420', level: 4 }, { id: '166', level: 5 }, { id: '2421', level: 6 }, { id: '709', level: 7 }, { id: '2413', level: 8 }, { id: '753', level: 9 }, { id: '2404', level: 10 }],
     require: ['1', '134'],
     addSkill: ['6', '7', '8', '47'],
     addWeapon: ['1', '2', '3', '5', '7', '8', '18'],
@@ -2484,23 +3334,22 @@ export const JOB_LIST: Job[] = [
     luk: 120,
     critical: 10,
     hpRegen: 10,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [35, 35, 30, 30, 40],
   },
   {
     id: '137',
     name: '마도왕',
+    learningSkills: [{ id: '2407', level: 2 }, { id: '449', level: 3 }, { id: '420', level: 4 }, { id: '167', level: 5 }, { id: '638', level: 6 }, { id: '710', level: 7 }, { id: '2415', level: 8 }, { id: '5650', level: 9 }, { id: '2408', level: 10 }, { id: '5633', level: 10 }],
     require: ['47', '135'],
     addSkill: ['22', '23', '24', '25', '40', '41', '42', '47'],
     addWeapon: ['1', '6', '16', '17', '29'],
     addArmor: ['7', '36'],
-    elementResist: {
-      fire: 50,
-      ice: 50,
-      lightning: 50,
-      wind: 50,
-      earth: 50,
-      water: 50,
-    },
     hp: 120,
     mp: 135,
     sp: 110,
@@ -2512,18 +3361,28 @@ export const JOB_LIST: Job[] = [
     luk: 130,
     magicEvasion: 20,
     mpRegen: 4,
+    elementResist: {
+      fire: 50,
+      ice: 50,
+      lightning: 50,
+      wind: 50,
+      earth: 50,
+      water: 50,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [55, 70, 70, 55, 60],
   },
   {
     id: '138',
-    name: '교황',
+    name: '법왕',
+    learningSkills: [{ id: '2422', level: 2 }, { id: '569', level: 3 }, { id: '2424', level: 4 }, { id: '500', level: 5 }, { id: '2409', level: 6 }, { id: '488', level: 7 }, { id: '298', level: 8 }, { id: '753', level: 9 }, { id: '2418', level: 10 }],
     require: ['44', '134'],
     addSkill: ['22', '26', '47'],
     addWeapon: ['1', '6', '14', '16', '29'],
     addArmor: ['7', '36'],
-    elementResist: {
-      holy: 75,
-    },
     hp: 100,
     mp: 125,
     sp: 100,
@@ -2535,12 +3394,20 @@ export const JOB_LIST: Job[] = [
     luk: 120,
     magicEvasion: 20,
     magicReflect: 30,
+    elementResist: {
+      holy: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [20, 40, 40, 30, 40],
   },
   {
     id: '141',
-    name: '견습 용사',
-    require: ['141'],
+    name: '견습용사',
+    learningSkills: [{ id: '2432', level: 2 }, { id: '268', level: 3 }, { id: '123', level: 4 }, { id: '3121', level: 5 }, { id: '801', level: 6 }, { id: '2433', level: 7 }, { id: '573', level: 8 }, { id: '718', level: 9 }, { id: '2434', level: 10 }],
+    require: [],
     addSkill: ['6', '7', '48'],
     addWeapon: ['1', '2', '5', '7', '13', '14', '15', '21'],
     addArmor: ['4', '34', '39'],
@@ -2553,12 +3420,19 @@ export const JOB_LIST: Job[] = [
     mdf: 100,
     agi: 100,
     luk: 90,
-    abilityPoints: [30, 15, 10, 20, 15],
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
+    abilityPoints: [25, 20, 15, 20, 25],
   },
   {
     id: '142',
     name: '용사',
-    require: ['141'],
+    learningSkills: [{ id: '2435', level: 2 }, { id: '2436', level: 2 }, { id: '269', level: 3 }, { id: '116', level: 4 }, { id: '118', level: 4 }, { id: '119', level: 4 }, { id: '2437', level: 5 }, { id: '574', level: 6 }, { id: '719', level: 7 }, { id: '2438', level: 8 }, { id: '151', level: 9 }, { id: '2439', level: 10 }],
+    require: ['1', '141'],
     addSkill: ['6', '7', '48'],
     addWeapon: ['1', '2', '3', '5', '7', '13', '14', '15', '21'],
     addArmor: ['4', '5', '34', '35', '39', '40'],
@@ -2573,18 +3447,22 @@ export const JOB_LIST: Job[] = [
     luk: 95,
     critical: 10,
     spRegen: 10,
+    elementResist: {
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [40, 35, 30, 35, 40],
   },
   {
     id: '143',
     name: '여신의 사도',
+    learningSkills: [{ id: '2440', level: 2 }, { id: '270', level: 3 }, { id: '2453', level: 4 }, { id: '421', level: 5 }, { id: '626', level: 5 }, { id: '2442', level: 6 }, { id: '575', level: 7 }, { id: '720', level: 7 }, { id: '2444', level: 8 }, { id: '152', level: 9 }, { id: '2443', level: 10 }, { id: '5622', level: 10 }],
     require: ['142'],
     addSkill: ['6', '7', '26', '48'],
     addWeapon: ['1', '2', '3', '4', '5', '7', '8', '13', '14', '15', '21'],
     addArmor: ['4', '5', '34', '35', '39', '40'],
-    elementResist: {
-      holy: 75,
-    },
     hp: 130,
     mp: 120,
     sp: 130,
@@ -2596,18 +3474,23 @@ export const JOB_LIST: Job[] = [
     luk: 100,
     critical: 20,
     spRegen: 20,
+    elementResist: {
+      holy: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [70, 60, 55, 60, 70],
   },
   {
     id: '144',
     name: '타락한 용사',
+    learningSkills: [{ id: '2441', level: 2 }, { id: '270', level: 3 }, { id: '3123', level: 4 }, { id: '421', level: 5 }, { id: '622', level: 5 }, { id: '2446', level: 6 }, { id: '720', level: 7 }, { id: '2445', level: 8 }, { id: '152', level: 9 }, { id: '2448', level: 10 }, { id: '5622', level: 10 }],
     require: ['142'],
     addSkill: ['6', '7', '27', '48'],
     addWeapon: ['1', '2', '3', '4', '5', '7', '8', '13', '14', '15', '21'],
     addArmor: ['4', '5', '34', '35', '39', '40'],
-    elementResist: {
-      dark: 75,
-    },
     hp: 130,
     mp: 120,
     sp: 130,
@@ -2619,22 +3502,13 @@ export const JOB_LIST: Job[] = [
     luk: 100,
     critical: 20,
     spRegen: 20,
+    elementResist: {
+      dark: 75,
+    },
+    stateResist: {
+    },
+    stateOnHit: {
+    },
     abilityPoints: [70, 60, 55, 60, 70],
-  },
-  {
-    id: '149',
-    name: '무직',
-    require: ['149'],
-    addWeapon: ['1'],
-    hp: 90,
-    mp: 90,
-    sp: 100,
-    atk: 90,
-    def: 90,
-    mat: 90,
-    mdf: 90,
-    agi: 90,
-    luk: 90,
-    abilityPoints: [20, 20, 20, 20, 20],
   },
 ];

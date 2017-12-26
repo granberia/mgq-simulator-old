@@ -3,6 +3,7 @@ export const RACE_LIST: Race[] = [
   {
     id: '151',
     name: '인간',
+    learningSkills: [{ id: '802', level: 2 }, { id: '804', level: 3 }, { id: '3094', level: 4 }, { id: '733', level: 5 }, { id: '799', level: 6 }, { id: '803', level: 7 }, { id: '805', level: 8 }, { id: '3117', level: 9 }, { id: '800', level: 9 }, { id: '3095', level: 10 }],
     require: [],
     addSkill: ['39'],
     addWeapon: [],
@@ -20,10 +21,13 @@ export const RACE_LIST: Race[] = [
     },
     stateResist: {
     },
+    stateOnHit: {
+    },
   },
   {
     id: '152',
     name: '마인',
+    learningSkills: [{ id: '1158', level: 2 }, { id: '1169', level: 2 }, { id: '779', level: 3 }, { id: '1676', level: 4 }, { id: '590', level: 5 }, { id: '1677', level: 6 }, { id: '190', level: 7 }, { id: '491', level: 7 }, { id: '1678', level: 8 }, { id: '151', level: 9 }, { id: '1566', level: 10 }],
     require: ['151', '160', '365'],
     addSkill: ['13', '24', '26', '27'],
     addWeapon: [],
@@ -77,125 +81,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
-  },
-  {
-    id: '153',
-    name: '마신',
-    require: ['48', '152'],
-    addSkill: ['13', '24', '26', '27'],
-    addWeapon: [],
-    addArmor: ['1', '4', '5', '7', '8', '9', '33', '34', '35', '36', '37', '38', '39', '40'],
-    hp: 140,
-    mp: 130,
-    sp: 100,
-    atk: 140,
-    def: 125,
-    mat: 130,
-    mdf: 125,
-    agi: 130,
-    luk: 120,
-    elementResist: {
-      fire: 25,
-      ice: 25,
-      lightning: 25,
-      wind: 25,
-      earth: 25,
-      water: 25,
-      holy: 50,
-      dark: 50,
-      bio: 25,
-      sonic: 25,
-      special: 0,
-    },
-    stateResist: {
-      death: 0,
-      ascension: 0,
-      climax: 25,
-      bind: 25,
-      poison: 25,
-      blind: 25,
-      silence: 25,
-      confusion: 25,
-      sleep: 25,
-      paralysis: 25,
-      burn: 0,
-      freeze: 0,
-      shock: 0,
-      slow: 0,
-      stop: 0,
-      mini: 0,
-      zombie: 0,
-      petrify: 0,
-      digest: 25,
-      stun: 25,
-      slime: 25,
-      horny: 25,
-      trance: 25,
-      seduction: 25,
-      incontinence: 25,
-    },
-  },
-  {
-    id: '154',
-    name: '카오스',
-    require: ['51', '153'],
-    addSkill: ['13', '24', '26', '27'],
-    addWeapon: [],
-    addArmor: ['1', '4', '5', '7', '8', '9', '33', '34', '35', '36', '37', '38', '39', '40'],
-    hp: 160,
-    mp: 160,
-    sp: 100,
-    atk: 160,
-    def: 150,
-    mat: 160,
-    mdf: 150,
-    agi: 150,
-    luk: 160,
-    hpRegen: 100,
-    elementResist: {
-      fire: 0,
-      ice: 0,
-      lightning: 0,
-      wind: 0,
-      earth: 0,
-      water: 0,
-      holy: 25,
-      dark: 25,
-      bio: 0,
-      sonic: 0,
-      special: 0,
-    },
-    stateResist: {
-      death: 0,
-      ascension: 0,
-      climax: 0,
-      bind: 0,
-      poison: 0,
-      blind: 0,
-      silence: 0,
-      confusion: 0,
-      sleep: 0,
-      paralysis: 0,
-      burn: 0,
-      freeze: 0,
-      shock: 0,
-      slow: 0,
-      stop: 0,
-      mini: 0,
-      zombie: 0,
-      petrify: 0,
-      digest: 0,
-      stun: 0,
-      slime: 0,
-      horny: 0,
-      trance: 0,
-      seduction: 0,
-      incontinence: 0,
+    stateOnHit: {
     },
   },
   {
     id: '155',
     name: '웜 서머너',
+    learningSkills: [{ id: '1497', level: 2 }, { id: '1503', level: 2 }, { id: '1509', level: 2 }, { id: '2796', level: 2 }, { id: '447', level: 3 }, { id: '452', level: 3 }, { id: '1579', level: 4 }, { id: '2799', level: 4 }, { id: '460', level: 5 }, { id: '2792', level: 6 }, { id: '108', level: 7 }, { id: '1597', level: 8 }, { id: '714', level: 9 }, { id: '2793', level: 10 }],
     require: ['151'],
     addSkill: ['23', '25', '52', '55'],
     addWeapon: [],
@@ -236,10 +128,13 @@ export const RACE_LIST: Race[] = [
       petrify: 125,
       digest: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '156',
     name: '마스터 호문쿨루스',
+    learningSkills: [{ id: '1499', level: 2 }, { id: '1505', level: 2 }, { id: '1511', level: 2 }, { id: '2797', level: 2 }, { id: '447', level: 3 }, { id: '453', level: 3 }, { id: '1598', level: 4 }, { id: '461', level: 5 }, { id: '2801', level: 6 }, { id: '464', level: 7 }, { id: '2800', level: 8 }, { id: '109', level: 9 }, { id: '715', level: 9 }, { id: '2794', level: 10 }],
     require: ['155'],
     addSkill: ['23', '25', '52', '55'],
     addWeapon: [],
@@ -284,10 +179,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '158',
     name: '요마',
+    learningSkills: [{ id: '273', level: 2 }, { id: '451', level: 2 }, { id: '2546', level: 2 }, { id: '989', level: 3 }, { id: '1496', level: 4 }, { id: '1502', level: 4 }, { id: '1508', level: 4 }, { id: '2547', level: 4 }, { id: '665', level: 5 }, { id: '2548', level: 6 }, { id: '2519', level: 7 }, { id: '2551', level: 8 }, { id: '986', level: 9 }, { id: '598', level: 9 }, { id: '2550', level: 10 }],
     require: [],
     addSkill: ['8', '23', '27', '50'],
     addWeapon: [],
@@ -335,10 +233,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '159',
     name: '상급요마',
+    learningSkills: [{ id: '990', level: 2 }, { id: '1497', level: 2 }, { id: '1503', level: 2 }, { id: '1509', level: 2 }, { id: '452', level: 3 }, { id: '666', level: 3 }, { id: '599', level: 4 }, { id: '2520', level: 5 }, { id: '140', level: 6 }, { id: '991', level: 7 }, { id: '331', level: 8 }, { id: '470', level: 9 }, { id: '807', level: 9 }, { id: '2561', level: 10 }],
     require: ['158'],
     addSkill: ['8', '23', '27', '50'],
     addWeapon: [],
@@ -386,10 +287,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '160',
     name: '요마귀족',
+    learningSkills: [{ id: '994', level: 2 }, { id: '5623', level: 2 }, { id: '453', level: 3 }, { id: '166', level: 3 }, { id: '2521', level: 4 }, { id: '1500', level: 5 }, { id: '1506', level: 5 }, { id: '1512', level: 5 }, { id: '600', level: 5 }, { id: '332', level: 6 }, { id: '529', level: 6 }, { id: '2557', level: 7 }, { id: '471', level: 8 }, { id: '808', level: 9 }, { id: '166', level: 9 }, { id: '999', level: 10 }],
     require: ['159'],
     addSkill: ['8', '23', '27', '50'],
     addWeapon: [],
@@ -438,10 +342,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '161',
     name: '성마',
+    learningSkills: [{ id: '1460', level: 2 }, { id: '995', level: 2 }, { id: '550', level: 3 }, { id: '2565', level: 3 }, { id: '1466', level: 4 }, { id: '2530', level: 4 }, { id: '1473', level: 5 }, { id: '607', level: 5 }, { id: '2567', level: 6 }, { id: '993', level: 7 }, { id: '1462', level: 8 }, { id: '2568', level: 8 }, { id: '476', level: 9 }, { id: '500', level: 9 }, { id: '2535', level: 10 }],
     require: ['158'],
     addSkill: ['8', '22', '23', '26', '27', '50'],
     addWeapon: [],
@@ -489,10 +396,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '162',
     name: '신마',
+    learningSkills: [{ id: '1461', level: 2 }, { id: '996', level: 2 }, { id: '254', level: 2 }, { id: '551', level: 3 }, { id: '2566', level: 3 }, { id: '2531', level: 4 }, { id: '528', level: 4 }, { id: '608', level: 5 }, { id: '2564', level: 6 }, { id: '1474', level: 7 }, { id: '776', level: 7 }, { id: '501', level: 8 }, { id: '516', level: 8 }, { id: '477', level: 9 }, { id: '2536', level: 10 }],
     require: ['161'],
     addSkill: ['8', '22', '23', '26', '27', '50'],
     addWeapon: [],
@@ -541,10 +451,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '163',
     name: '반수요마',
+    learningSkills: [{ id: '2686', level: 2 }, { id: '997', level: 2 }, { id: '274', level: 3 }, { id: '558', level: 3 }, { id: '2698', level: 4 }, { id: '2691', level: 4 }, { id: '603', level: 5 }, { id: '2549', level: 6 }, { id: '2555', level: 6 }, { id: '992', level: 7 }, { id: '96', level: 8 }, { id: '473', level: 9 }, { id: '2701', level: 10 }],
     require: ['158'],
     addSkill: ['8', '23', '27', '50', '53'],
     addWeapon: ['12'],
@@ -585,10 +498,13 @@ export const RACE_LIST: Race[] = [
       digest: 75,
       stun: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '164',
     name: '사수요마',
+    learningSkills: [{ id: '2695', level: 2 }, { id: '5628', level: 2 }, { id: '998', level: 2 }, { id: '2734', level: 3 }, { id: '275', level: 3 }, { id: '563', level: 3 }, { id: '2692', level: 4 }, { id: '604', level: 5 }, { id: '2556', level: 6 }, { id: '97', level: 7 }, { id: '100', level: 8 }, { id: '474', level: 9 }, { id: '2702', level: 10 }],
     require: ['163'],
     addSkill: ['8', '23', '27', '50', '53'],
     addWeapon: ['12'],
@@ -630,10 +546,13 @@ export const RACE_LIST: Race[] = [
       digest: 50,
       stun: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '165',
     name: '스핑크스',
+    learningSkills: [{ id: '2699', level: 2 }, { id: '2585', level: 2 }, { id: '276', level: 3 }, { id: '2588', level: 3 }, { id: '454', level: 4 }, { id: '2523', level: 4 }, { id: '552', level: 5 }, { id: '848', level: 5 }, { id: '2586', level: 6 }, { id: '2587', level: 6 }, { id: '2589', level: 7 }, { id: '2685', level: 8 }, { id: '737', level: 9 }, { id: '2522', level: 10 }],
     require: ['160', '162', '164'],
     addSkill: ['8', '22', '23', '26', '27', '50', '53'],
     addWeapon: ['12'],
@@ -684,10 +603,13 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '167',
     name: '아인',
+    learningSkills: [{ id: '2571', level: 2 }, { id: '268', level: 3 }, { id: '602', level: 3 }, { id: '1157', level: 4 }, { id: '2577', level: 5 }, { id: '1731', level: 6 }, { id: '2574', level: 7 }, { id: '2593', level: 8 }, { id: '2578', level: 9 }, { id: '2525', level: 10 }],
     require: [],
     addSkill: ['13', '29', '50'],
     addWeapon: [],
@@ -712,10 +634,13 @@ export const RACE_LIST: Race[] = [
       zombie: 50,
       petrify: 125,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '168',
     name: '요괴',
+    learningSkills: [{ id: '2572', level: 2 }, { id: '269', level: 3 }, { id: '1166', level: 4 }, { id: '141', level: 5 }, { id: '1732', level: 6 }, { id: '2575', level: 7 }, { id: '2579', level: 8 }, { id: '283', level: 8 }, { id: '473', level: 9 }, { id: '807', level: 9 }, { id: '2526', level: 10 }],
     require: ['167'],
     addSkill: ['13', '29', '50'],
     addWeapon: [],
@@ -760,10 +685,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '169',
     name: '요신',
+    learningSkills: [{ id: '2573', level: 2 }, { id: '5631', level: 2 }, { id: '270', level: 3 }, { id: '1167', level: 4 }, { id: '1733', level: 5 }, { id: '2576', level: 6 }, { id: '2580', level: 7 }, { id: '284', level: 8 }, { id: '474', level: 9 }, { id: '808', level: 9 }, { id: '2527', level: 10 }],
     require: ['168'],
     addSkill: ['13', '29', '50'],
     addWeapon: [],
@@ -808,10 +736,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '170',
     name: '요귀',
+    learningSkills: [{ id: '3097', level: 2 }, { id: '1137', level: 2 }, { id: '62', level: 3 }, { id: '1130', level: 3 }, { id: '667', level: 3 }, { id: '67', level: 4 }, { id: '94', level: 5 }, { id: '1128', level: 6 }, { id: '123', level: 7 }, { id: '740', level: 8 }, { id: '1132', level: 8 }, { id: '221', level: 9 }, { id: '746', level: 9 }, { id: '1129', level: 10 }],
     require: ['167'],
     addSkill: ['11', '12', '50'],
     addWeapon: [],
@@ -844,10 +775,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '171',
     name: '귀신',
+    learningSkills: [{ id: '1131', level: 2 }, { id: '63', level: 3 }, { id: '668', level: 3 }, { id: '68', level: 4 }, { id: '1133', level: 4 }, { id: '95', level: 5 }, { id: '3098', level: 6 }, { id: '1138', level: 7 }, { id: '741', level: 8 }, { id: '1145', level: 8 }, { id: '235', level: 9 }, { id: '747', level: 9 }, { id: '1146', level: 10 }],
     require: ['170'],
     addSkill: ['11', '12', '50'],
     addWeapon: [],
@@ -887,10 +821,13 @@ export const RACE_LIST: Race[] = [
       digest: 75,
       stun: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '172',
     name: '야차',
+    learningSkills: [{ id: '1016', level: 2 }, { id: '603', level: 3 }, { id: '1014', level: 4 }, { id: '334', level: 5 }, { id: '2581', level: 6 }, { id: '133', level: 7 }, { id: '1009', level: 8 }, { id: '1378', level: 8 }, { id: '216', level: 9 }, { id: '100', level: 9 }, { id: '1379', level: 10 }],
     require: ['167'],
     addSkill: ['9', '20', '50'],
     addWeapon: [],
@@ -905,6 +842,7 @@ export const RACE_LIST: Race[] = [
     agi: 115,
     luk: 115,
     evasion: 10,
+    dualWield: true,
     elementResist: {
       holy: 125,
     },
@@ -933,10 +871,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '173',
     name: '아수라',
+    learningSkills: [{ id: '1017', level: 2 }, { id: '604', level: 3 }, { id: '1015', level: 4 }, { id: '335', level: 5 }, { id: '250', level: 5 }, { id: '2582', level: 6 }, { id: '114', level: 7 }, { id: '1385', level: 8 }, { id: '232', level: 9 }, { id: '101', level: 9 }, { id: '1384', level: 10 }],
     require: ['172'],
     addSkill: ['9', '20', '50'],
     addWeapon: [],
@@ -951,6 +892,7 @@ export const RACE_LIST: Race[] = [
     agi: 125,
     luk: 125,
     evasion: 10,
+    dualWield: true,
     elementResist: {
       holy: 125,
     },
@@ -980,10 +922,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '175',
     name: '임프',
+    learningSkills: [{ id: '2483', level: 2 }, { id: '2495', level: 2 }, { id: '278', level: 3 }, { id: '2485', level: 4 }, { id: '1514', level: 5 }, { id: '2487', level: 6 }, { id: '2550', level: 7 }, { id: '2493', level: 8 }, { id: '3037', level: 9 }, { id: '2489', level: 10 }],
     require: [],
     addSkill: ['23', '49', '50', '61'],
     addWeapon: ['31'],
@@ -1013,10 +958,15 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      horny: 5,
+      trance: 5,
+    },
   },
   {
     id: '176',
     name: '서큐버스',
+    learningSkills: [{ id: '2484', level: 2 }, { id: '279', level: 3 }, { id: '2486', level: 4 }, { id: '367', level: 5 }, { id: '310', level: 5 }, { id: '406', level: 6 }, { id: '3038', level: 7 }, { id: '2488', level: 8 }, { id: '467', level: 9 }, { id: '2490', level: 10 }],
     require: ['175'],
     addSkill: ['23', '49', '50', '61'],
     addWeapon: ['31'],
@@ -1047,10 +997,16 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      horny: 5,
+      trance: 5,
+      seduction: 5,
+    },
   },
   {
     id: '177',
     name: '엘더 서큐버스',
+    learningSkills: [{ id: '2496', level: 2 }, { id: '280', level: 3 }, { id: '368', level: 4 }, { id: '311', level: 4 }, { id: '3112', level: 5 }, { id: '422', level: 6 }, { id: '3040', level: 7 }, { id: '2569', level: 8 }, { id: '468', level: 9 }, { id: '2491', level: 10 }],
     require: ['176'],
     addSkill: ['23', '49', '50', '61'],
     addWeapon: ['31'],
@@ -1096,10 +1052,17 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+      horny: 5,
+      trance: 5,
+      seduction: 5,
+      incontinence: 5,
+    },
   },
   {
     id: '178',
     name: '몽크 서큐버스',
+    learningSkills: [{ id: '1437', level: 2 }, { id: '274', level: 3 }, { id: '364', level: 3 }, { id: '1439', level: 4 }, { id: '648', level: 5 }, { id: '1438', level: 6 }, { id: '218', level: 7 }, { id: '150', level: 7 }, { id: '1407', level: 8 }, { id: '2511', level: 8 }, { id: '106', level: 9 }, { id: '108', level: 9 }, { id: '1441', level: 10 }],
     require: ['175'],
     addSkill: ['21', '49', '50', '61'],
     addWeapon: ['31'],
@@ -1131,10 +1094,15 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      horny: 5,
+      trance: 5,
+    },
   },
   {
     id: '179',
     name: '음투 서큐버스',
+    learningSkills: [{ id: '2497', level: 2 }, { id: '275', level: 3 }, { id: '365', level: 3 }, { id: '1440', level: 4 }, { id: '649', level: 5 }, { id: '1442', level: 6 }, { id: '1426', level: 7 }, { id: '143', level: 7 }, { id: '2512', level: 8 }, { id: '244', level: 9 }, { id: '109', level: 9 }, { id: '1443', level: 10 }],
     require: ['178'],
     addSkill: ['21', '49', '50', '61'],
     addWeapon: ['31'],
@@ -1181,10 +1149,15 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+      horny: 10,
+      trance: 10,
+    },
   },
   {
     id: '180',
     name: '위치 서큐버스',
+    learningSkills: [{ id: '1497', level: 2 }, { id: '1503', level: 2 }, { id: '1509', level: 2 }, { id: '1523', level: 2 }, { id: '452', level: 3 }, { id: '1524', level: 3 }, { id: '447', level: 4 }, { id: '370', level: 4 }, { id: '1530', level: 5 }, { id: '460', level: 5 }, { id: '2560', level: 6 }, { id: '2561', level: 6 }, { id: '1515', level: 7 }, { id: '1540', level: 8 }, { id: '394', level: 9 }, { id: '479', level: 9 }, { id: '1597', level: 10 }],
     require: ['175'],
     addSkill: ['23', '25', '49', '50', '61'],
     addWeapon: ['31'],
@@ -1214,10 +1187,15 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      horny: 5,
+      trance: 5,
+    },
   },
   {
     id: '181',
     name: '아크 서큐버스',
+    learningSkills: [{ id: '1499', level: 2 }, { id: '1505', level: 2 }, { id: '1511', level: 2 }, { id: '2494', level: 2 }, { id: '453', level: 3 }, { id: '371', level: 3 }, { id: '448', level: 4 }, { id: '2562', level: 4 }, { id: '1531', level: 5 }, { id: '461', level: 5 }, { id: '1516', level: 6 }, { id: '529', level: 6 }, { id: '2563', level: 7 }, { id: '1525', level: 8 }, { id: '395', level: 9 }, { id: '480', level: 9 }, { id: '1598', level: 10 }],
     require: ['180'],
     addSkill: ['23', '25', '49', '50', '61'],
     addWeapon: ['31'],
@@ -1263,10 +1241,15 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+      horny: 10,
+      trance: 10,
+    },
   },
   {
     id: '182',
     name: '퀸 서큐버스',
+    learningSkills: [{ id: '2498', level: 2 }, { id: '276', level: 3 }, { id: '281', level: 3 }, { id: '3041', level: 4 }, { id: '775', level: 5 }, { id: '373', level: 5 }, { id: '3113', level: 6 }, { id: '2499', level: 7 }, { id: '2513', level: 8 }, { id: '2570', level: 9 }, { id: '2492', level: 10 }],
     require: ['177', '179', '181'],
     addSkill: ['21', '23', '25', '49', '50', '61'],
     addWeapon: ['31'],
@@ -1313,10 +1296,17 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+      horny: 10,
+      trance: 10,
+      seduction: 10,
+      incontinence: 10,
+    },
   },
   {
     id: '184',
     name: '뱀파이어',
+    learningSkills: [{ id: '901', level: 2 }, { id: '2537', level: 2 }, { id: '1508', level: 3 }, { id: '655', level: 3 }, { id: '278', level: 4 }, { id: '2542', level: 4 }, { id: '2552', level: 5 }, { id: '903', level: 6 }, { id: '2554', level: 7 }, { id: '606', level: 8 }, { id: '2553', level: 9 }, { id: '2529', level: 10 }],
     require: [],
     addSkill: ['6', '23', '27', '50'],
     addWeapon: ['12'],
@@ -1354,10 +1344,13 @@ export const RACE_LIST: Race[] = [
       petrify: 150,
       stun: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '185',
     name: '노스페라투',
+    learningSkills: [{ id: '2538', level: 2 }, { id: '1509', level: 3 }, { id: '656', level: 3 }, { id: '279', level: 4 }, { id: '906', level: 4 }, { id: '2583', level: 5 }, { id: '607', level: 6 }, { id: '2543', level: 7 }, { id: '160', level: 8 }, { id: '807', level: 9 }, { id: '2530', level: 10 }],
     require: ['184'],
     addSkill: ['6', '23', '27', '50'],
     addWeapon: ['12'],
@@ -1396,10 +1389,13 @@ export const RACE_LIST: Race[] = [
       digest: 75,
       stun: 125,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '186',
     name: '밤의 제왕',
+    learningSkills: [{ id: '2539', level: 2 }, { id: '5621', level: 2 }, { id: '1511', level: 3 }, { id: '2556', level: 3 }, { id: '280', level: 4 }, { id: '2544', level: 4 }, { id: '2584', level: 5 }, { id: '248', level: 5 }, { id: '608', level: 6 }, { id: '2531', level: 7 }, { id: '161', level: 8 }, { id: '808', level: 9 }, { id: '909', level: 10 }],
     require: ['185'],
     addSkill: ['6', '23', '27', '50'],
     addWeapon: ['12'],
@@ -1436,10 +1432,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '187',
     name: '마지 뱀파이어',
+    learningSkills: [{ id: '1497', level: 2 }, { id: '1503', level: 2 }, { id: '1509', level: 2 }, { id: '2520', level: 2 }, { id: '452', level: 3 }, { id: '669', level: 3 }, { id: '447', level: 4 }, { id: '337', level: 4 }, { id: '3103', level: 5 }, { id: '460', level: 5 }, { id: '2526', level: 6 }, { id: '142', level: 7 }, { id: '2561', level: 8 }, { id: '476', level: 9 }, { id: '2530', level: 10 }],
     require: ['184'],
     addSkill: ['6', '23', '25', '27', '50'],
     addWeapon: ['12'],
@@ -1478,10 +1477,13 @@ export const RACE_LIST: Race[] = [
       digest: 75,
       stun: 125,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '188',
     name: '아크 뱀파이어',
+    learningSkills: [{ id: '1499', level: 2 }, { id: '1505', level: 2 }, { id: '1511', level: 2 }, { id: '2521', level: 2 }, { id: '453', level: 3 }, { id: '670', level: 3 }, { id: '448', level: 4 }, { id: '338', level: 4 }, { id: '461', level: 5 }, { id: '529', level: 5 }, { id: '2527', level: 6 }, { id: '1512', level: 7 }, { id: '2557', level: 8 }, { id: '477', level: 9 }, { id: '2531', level: 10 }],
     require: ['187'],
     addSkill: ['6', '23', '25', '27', '50'],
     addWeapon: ['12'],
@@ -1518,10 +1520,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '189',
     name: '시노비 뱀파이어',
+    learningSkills: [{ id: '1778', level: 2 }, { id: '1785', level: 2 }, { id: '555', level: 3 }, { id: '1781', level: 4 }, { id: '560', level: 5 }, { id: '1782', level: 6 }, { id: '1807', level: 7 }, { id: '1805', level: 7 }, { id: '217', level: 8 }, { id: '1784', level: 8 }, { id: '343', level: 9 }, { id: '1783', level: 10 }],
     require: ['184'],
     addSkill: ['6', '27', '31', '50'],
     addWeapon: [],
@@ -1536,6 +1541,7 @@ export const RACE_LIST: Race[] = [
     agi: 120,
     luk: 120,
     evasion: 20,
+    dualWield: true,
     elementResist: {
       fire: 150,
       lightning: 25,
@@ -1561,10 +1567,13 @@ export const RACE_LIST: Race[] = [
       digest: 75,
       stun: 125,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '190',
     name: '쿠노이치 뱀파이어',
+    learningSkills: [{ id: '1787', level: 2 }, { id: '556', level: 3 }, { id: '1788', level: 4 }, { id: '1801', level: 5 }, { id: '561', level: 5 }, { id: '1789', level: 6 }, { id: '114', level: 7 }, { id: '408', level: 7 }, { id: '1790', level: 8 }, { id: '344', level: 9 }, { id: '1804', level: 10 }, { id: '1791', level: 10 }],
     require: ['189'],
     addSkill: ['6', '27', '31', '50'],
     addWeapon: [],
@@ -1579,6 +1588,7 @@ export const RACE_LIST: Race[] = [
     agi: 130,
     luk: 130,
     evasion: 20,
+    dualWield: true,
     elementResist: {
       fire: 150,
       lightning: 0,
@@ -1602,10 +1612,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '192',
     name: '퀸 뱀파이어',
+    learningSkills: [{ id: '2540', level: 2 }, { id: '281', level: 3 }, { id: '454', level: 3 }, { id: '609', level: 4 }, { id: '848', level: 4 }, { id: '1797', level: 5 }, { id: '339', level: 6 }, { id: '345', level: 7 }, { id: '910', level: 8 }, { id: '776', level: 9 }, { id: '2532', level: 10 }],
     require: ['186', '188', '190'],
     addSkill: ['6', '31', '23', '25', '27', '50'],
     addWeapon: ['12'],
@@ -1652,10 +1665,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '194',
     name: '머메이드',
+    learningSkills: [{ id: '1460', level: 2 }, { id: '2602', level: 2 }, { id: '549', level: 3 }, { id: '2080', level: 3 }, { id: '618', level: 4 }, { id: '630', level: 4 }, { id: '1464', level: 5 }, { id: '2614', level: 5 }, { id: '1520', level: 6 }, { id: '2621', level: 7 }, { id: '148', level: 8 }, { id: '1466', level: 9 }, { id: '785', level: 9 }, { id: '2626', level: 10 }],
     require: [],
     addSkill: ['22', '23', '38', '51'],
     addWeapon: [],
@@ -1684,10 +1700,14 @@ export const RACE_LIST: Race[] = [
       shock: 125,
       seduction: 0,
     },
+    stateOnHit: {
+      sleep: 5,
+    },
   },
   {
     id: '195',
     name: '하이 머메이드',
+    learningSkills: [{ id: '1462', level: 2 }, { id: '2615', level: 2 }, { id: '550', level: 3 }, { id: '376', level: 3 }, { id: '2090', level: 4 }, { id: '2071', level: 4 }, { id: '1521', level: 5 }, { id: '2622', level: 6 }, { id: '2627', level: 7 }, { id: '1465', level: 8 }, { id: '2608', level: 8 }, { id: '500', level: 9 }, { id: '810', level: 9 }, { id: '2089', level: 10 }, { id: '2603', level: 10 }],
     require: ['194'],
     addSkill: ['22', '23', '38', '51'],
     addWeapon: [],
@@ -1716,10 +1736,14 @@ export const RACE_LIST: Race[] = [
       shock: 125,
       seduction: 0,
     },
+    stateOnHit: {
+      sleep: 10,
+    },
   },
   {
     id: '196',
     name: '로렐라이',
+    learningSkills: [{ id: '1522', level: 2 }, { id: '2631', level: 2 }, { id: '551', level: 3 }, { id: '2616', level: 3 }, { id: '1482', level: 4 }, { id: '377', level: 4 }, { id: '1483', level: 5 }, { id: '2072', level: 5 }, { id: '2076', level: 6 }, { id: '2623', level: 6 }, { id: '528', level: 6 }, { id: '1467', level: 7 }, { id: '2628', level: 7 }, { id: '2609', level: 8 }, { id: '501', level: 9 }, { id: '811', level: 9 }, { id: '2604', level: 10 }],
     require: ['195'],
     addSkill: ['22', '23', '38', '51'],
     addWeapon: [],
@@ -1765,10 +1789,14 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 75,
     },
+    stateOnHit: {
+      sleep: 20,
+    },
   },
   {
     id: '197',
     name: '해적 머메이드',
+    learningSkills: [{ id: '1817', level: 2 }, { id: '67', level: 3 }, { id: '659', level: 3 }, { id: '2096', level: 4 }, { id: '619', level: 5 }, { id: '1836', level: 6 }, { id: '1820', level: 7 }, { id: '145', level: 7 }, { id: '325', level: 8 }, { id: '485', level: 9 }, { id: '283', level: 9 }, { id: '1831', level: 10 }],
     require: ['194'],
     addSkill: ['22', '32', '38', '51'],
     addWeapon: [],
@@ -1801,10 +1829,14 @@ export const RACE_LIST: Race[] = [
       shock: 125,
       seduction: 0,
     },
+    stateOnHit: {
+      sleep: 5,
+    },
   },
   {
     id: '198',
     name: '해적왕 로렐라이',
+    learningSkills: [{ id: '1832', level: 2 }, { id: '68', level: 3 }, { id: '660', level: 3 }, { id: '2097', level: 4 }, { id: '620', level: 5 }, { id: '1821', level: 6 }, { id: '1826', level: 7 }, { id: '326', level: 8 }, { id: '409', level: 8 }, { id: '284', level: 9 }, { id: '486', level: 9 }, { id: '1830', level: 10 }],
     require: ['197'],
     addSkill: ['22', '32', '38', '51'],
     addWeapon: [],
@@ -1854,10 +1886,14 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 75,
     },
+    stateOnHit: {
+      sleep: 5,
+    },
   },
   {
     id: '199',
     name: '행상 머메이드',
+    learningSkills: [{ id: '1874', level: 2 }, { id: '1881', level: 2 }, { id: '62', level: 2 }, { id: '1918', level: 3 }, { id: '1919', level: 3 }, { id: '631', level: 3 }, { id: '1897', level: 4 }, { id: '1906', level: 4 }, { id: '1894', level: 4 }, { id: '1899', level: 5 }, { id: '1888', level: 5 }, { id: '1883', level: 6 }, { id: '402', level: 6 }, { id: '1890', level: 7 }, { id: '1878', level: 8 }, { id: '759', level: 9 }, { id: '494', level: 9 }, { id: '1875', level: 10 }, { id: '1889', level: 10 }],
     require: ['194'],
     addSkill: ['22', '34', '38', '51'],
     addWeapon: [],
@@ -1886,10 +1922,14 @@ export const RACE_LIST: Race[] = [
       shock: 125,
       seduction: 0,
     },
+    stateOnHit: {
+      sleep: 5,
+    },
   },
   {
     id: '200',
     name: '해운왕 로렐라이',
+    learningSkills: [{ id: '1882', level: 2 }, { id: '63', level: 3 }, { id: '632', level: 3 }, { id: '1895', level: 4 }, { id: '1898', level: 5 }, { id: '1900', level: 5 }, { id: '1887', level: 6 }, { id: '1907', level: 7 }, { id: '289', level: 7 }, { id: '410', level: 8 }, { id: '1884', level: 8 }, { id: '760', level: 9 }, { id: '495', level: 9 }, { id: '1877', level: 10 }],
     require: ['199'],
     addSkill: ['22', '34', '38', '51'],
     addWeapon: [],
@@ -1935,10 +1975,14 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 75,
     },
+    stateOnHit: {
+      sleep: 5,
+    },
   },
   {
     id: '201',
     name: '퀸 머메이드',
+    learningSkills: [{ id: '2617', level: 2 }, { id: '552', level: 3 }, { id: '621', level: 4 }, { id: '633', level: 5 }, { id: '1488', level: 6 }, { id: '849', level: 7 }, { id: '774', level: 8 }, { id: '502', level: 9 }, { id: '2607', level: 10 }],
     require: ['196', '198', '200'],
     addSkill: ['22', '23', '32', '34', '38', '51'],
     addWeapon: [],
@@ -1983,10 +2027,14 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 25,
     },
+    stateOnHit: {
+      sleep: 20,
+    },
   },
   {
     id: '203',
     name: '엘프',
+    learningSkills: [{ id: '1188', level: 2 }, { id: '1189', level: 3 }, { id: '1190', level: 4 }, { id: '278', level: 5 }, { id: '71', level: 5 }, { id: '2501', level: 6 }, { id: '3104', level: 7 }, { id: '663', level: 7 }, { id: '2502', level: 8 }, { id: '781', level: 9 }, { id: '1184', level: 10 }],
     require: [],
     addSkill: ['14', '49', '50', '61'],
     addWeapon: [],
@@ -2031,10 +2079,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '204',
     name: '하이 엘프',
+    learningSkills: [{ id: '1208', level: 2 }, { id: '279', level: 3 }, { id: '72', level: 3 }, { id: '1183', level: 4 }, { id: '2503', level: 4 }, { id: '1193', level: 5 }, { id: '664', level: 6 }, { id: '1209', level: 7 }, { id: '223', level: 8 }, { id: '2504', level: 8 }, { id: '193', level: 9 }, { id: '1194', level: 10 }],
     require: ['203'],
     addSkill: ['14', '49', '50', '61'],
     addWeapon: [],
@@ -2079,10 +2130,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '205',
     name: '마스터 엘프',
+    learningSkills: [{ id: '1210', level: 2 }, { id: '280', level: 3 }, { id: '1192', level: 4 }, { id: '73', level: 4 }, { id: '1212', level: 5 }, { id: '2505', level: 6 }, { id: '1211', level: 7 }, { id: '2506', level: 8 }, { id: '237', level: 9 }, { id: '194', level: 9 }, { id: '1213', level: 10 }],
     require: ['204'],
     addSkill: ['14', '49', '50', '61'],
     addWeapon: [],
@@ -2126,10 +2180,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '206',
     name: '포레스트 엘프',
+    learningSkills: [{ id: '3037', level: 2 }, { id: '3042', level: 2 }, { id: '3046', level: 2 }, { id: '2903', level: 2 }, { id: '2906', level: 2 }, { id: '560', level: 3 }, { id: '2922', level: 4 }, { id: '2904', level: 5 }, { id: '3058', level: 5 }, { id: '3038', level: 6 }, { id: '3043', level: 7 }, { id: '3047', level: 8 }, { id: '3060', level: 9 }, { id: '813', level: 10 }],
     require: ['203'],
     addSkill: ['14', '22', '49', '50', '58', '61'],
     addWeapon: [],
@@ -2173,10 +2230,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '207',
     name: '원더 엘프',
+    learningSkills: [{ id: '2907', level: 2 }, { id: '561', level: 3 }, { id: '2905', level: 4 }, { id: '3059', level: 5 }, { id: '2923', level: 6 }, { id: '3044', level: 7 }, { id: '3039', level: 8 }, { id: '782', level: 8 }, { id: '814', level: 9 }, { id: '3048', level: 10 }],
     require: ['206'],
     addSkill: ['14', '22', '49', '50', '58', '61'],
     addWeapon: [],
@@ -2220,10 +2280,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '208',
     name: '다크 엘프',
+    learningSkills: [{ id: '932', level: 2 }, { id: '2796', level: 2 }, { id: '1503', level: 3 }, { id: '269', level: 3 }, { id: '2509', level: 4 }, { id: '687', level: 4 }, { id: '599', level: 5 }, { id: '603', level: 5 }, { id: '607', level: 5 }, { id: '569', level: 6 }, { id: '2799', level: 7 }, { id: '937', level: 8 }, { id: '212', level: 8 }, { id: '1505', level: 9 }, { id: '2793', level: 9 }, { id: '2530', level: 10 }],
     require: ['203'],
     addSkill: ['7', '23', '27', '49', '50', '55', '61'],
     addWeapon: [],
@@ -2267,10 +2330,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '209',
-    name: '아크 엘프',
+    name: '아크 엪르',
+    learningSkills: [{ id: '931', level: 2 }, { id: '2790', level: 2 }, { id: '270', level: 3 }, { id: '570', level: 3 }, { id: '688', level: 3 }, { id: '2510', level: 4 }, { id: '600', level: 5 }, { id: '2800', level: 6 }, { id: '1506', level: 5 }, { id: '604', level: 7 }, { id: '949', level: 8 }, { id: '230', level: 9 }, { id: '608', level: 9 }, { id: '2531', level: 10 }],
     require: ['208'],
     addSkill: ['7', '23', '27', '49', '50', '55', '61'],
     addWeapon: [],
@@ -2314,10 +2380,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '210',
     name: '듀라한',
+    learningSkills: [{ id: '1698', level: 2 }, { id: '1699', level: 2 }, { id: '1700', level: 2 }, { id: '938', level: 2 }, { id: '67', level: 3 }, { id: '923', level: 4 }, { id: '2594', level: 4 }, { id: '3097', level: 5 }, { id: '677', level: 5 }, { id: '644', level: 6 }, { id: '2579', level: 7 }, { id: '700', level: 8 }, { id: '702', level: 8 }, { id: '163', level: 9 }, { id: '212', level: 9 }, { id: '939', level: 10 }],
     require: ['1', '203'],
     addSkill: ['7', '28', '50'],
     addWeapon: [],
@@ -2358,10 +2427,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '211',
     name: '로드 듀라한',
+    learningSkills: [{ id: '950', level: 2 }, { id: '68', level: 3 }, { id: '943', level: 4 }, { id: '2595', level: 4 }, { id: '3098', level: 5 }, { id: '678', level: 5 }, { id: '645', level: 6 }, { id: '2580', level: 7 }, { id: '698', level: 8 }, { id: '164', level: 9 }, { id: '230', level: 9 }, { id: '951', level: 10 }],
     require: ['210'],
     addSkill: ['7', '28', '50'],
     addWeapon: [],
@@ -2402,10 +2474,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '212',
     name: '퀸 엘프',
+    learningSkills: [{ id: '1222', level: 2 }, { id: '271', level: 3 }, { id: '281', level: 3 }, { id: '3061', level: 4 }, { id: '74', level: 5 }, { id: '2507', level: 6 }, { id: '650', level: 7 }, { id: '809', level: 8 }, { id: '815', level: 9 }, { id: '1221', level: 10 }],
     require: ['205', '207'],
     addSkill: ['7', '14', '22', '23', '27', '28', '49', '50', '58', '61'],
     addWeapon: [],
@@ -2454,10 +2529,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '214',
     name: '페어리',
+    learningSkills: [{ id: '3037', level: 2 }, { id: '3042', level: 2 }, { id: '3046', level: 2 }, { id: '451', level: 3 }, { id: '657', level: 3 }, { id: '2032', level: 4 }, { id: '3055', level: 4 }, { id: '610', level: 5 }, { id: '2037', level: 6 }, { id: '3028', level: 7 }, { id: '3031', level: 8 }, { id: '3034', level: 9 }, { id: '713', level: 10 }],
     require: [],
     addSkill: ['22', '23', '37', '61'],
     addWeapon: [],
@@ -2494,10 +2572,13 @@ export const RACE_LIST: Race[] = [
       zombie: 0,
       petrify: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '215',
     name: '풍정',
+    learningSkills: [{ id: '1514', level: 2 }, { id: '452', level: 2 }, { id: '658', level: 2 }, { id: '2033', level: 3 }, { id: '3056', level: 3 }, { id: '3038', level: 4 }, { id: '611', level: 5 }, { id: '2018', level: 6 }, { id: '2038', level: 6 }, { id: '1515', level: 7 }, { id: '3112', level: 7 }, { id: '813', level: 8 }, { id: '714', level: 9 }, { id: '479', level: 9 }, { id: '3052', level: 10 }, { id: '456', level: 10 }],
     require: ['214'],
     addSkill: ['22', '23', '37', '61'],
     addWeapon: [],
@@ -2534,10 +2615,13 @@ export const RACE_LIST: Race[] = [
       zombie: 0,
       petrify: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '216',
     name: '바람의 정령',
+    learningSkills: [{ id: '453', level: 2 }, { id: '3057', level: 3 }, { id: '3039', level: 4 }, { id: '612', level: 5 }, { id: '2028', level: 6 }, { id: '773', level: 7 }, { id: '1516', level: 8 }, { id: '814', level: 8 }, { id: '715', level: 9 }, { id: '480', level: 9 }, { id: '3053', level: 10 }, { id: '457', level: 10 }],
     require: ['215'],
     addSkill: ['22', '23', '37', '61'],
     addWeapon: [],
@@ -2574,10 +2658,13 @@ export const RACE_LIST: Race[] = [
       zombie: 0,
       petrify: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '217',
     name: '토정',
+    learningSkills: [{ id: '1099', level: 2 }, { id: '1124', level: 2 }, { id: '62', level: 3 }, { id: '67', level: 3 }, { id: '3043', level: 3 }, { id: '221', level: 4 }, { id: '615', level: 4 }, { id: '1128', level: 5 }, { id: '220', level: 5 }, { id: '1106', level: 6 }, { id: '723', level: 6 }, { id: '3114', level: 7 }, { id: '693', level: 7 }, { id: '482', level: 8 }, { id: '746', level: 9 }, { id: '1129', level: 10 }],
     require: ['214'],
     addSkill: ['11', '12', '37', '61'],
     addWeapon: [],
@@ -2614,10 +2701,13 @@ export const RACE_LIST: Race[] = [
       zombie: 0,
       petrify: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '218',
     name: '땅의 정령',
+    learningSkills: [{ id: '1115', level: 2 }, { id: '63', level: 3 }, { id: '68', level: 3 }, { id: '3044', level: 3 }, { id: '1131', level: 4 }, { id: '226', level: 5 }, { id: '616', level: 5 }, { id: '724', level: 6 }, { id: '483', level: 7 }, { id: '694', level: 7 }, { id: '1109', level: 8 }, { id: '747', level: 9 }, { id: '1145', level: 10 }],
     require: ['217'],
     addSkill: ['11', '12', '37', '61'],
     addWeapon: [],
@@ -2654,10 +2744,13 @@ export const RACE_LIST: Race[] = [
       zombie: 0,
       petrify: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '219',
     name: '다크 페어리',
+    learningSkills: [{ id: '2004', level: 2 }, { id: '2003', level: 3 }, { id: '279', level: 3 }, { id: '3029', level: 4 }, { id: '3032', level: 4 }, { id: '3035', level: 4 }, { id: '1995', level: 5 }, { id: '465', level: 5 }, { id: '2005', level: 6 }, { id: '3047', level: 7 }, { id: '761', level: 8 }, { id: '2036', level: 9 }, { id: '3050', level: 9 }, { id: '1583', level: 10 }],
     require: ['214'],
     addSkill: ['22', '23', '25', '27', '37', '36', '61'],
     addWeapon: [],
@@ -2698,10 +2791,13 @@ export const RACE_LIST: Race[] = [
       zombie: 0,
       petrify: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '220',
     name: '아크 페어리',
+    learningSkills: [{ id: '2042', level: 2 }, { id: '3030', level: 2 }, { id: '280', level: 3 }, { id: '2045', level: 3 }, { id: '2002', level: 3 }, { id: '1996', level: 4 }, { id: '3033', level: 4 }, { id: '2006', level: 5 }, { id: '2050', level: 6 }, { id: '3048', level: 6 }, { id: '2007', level: 7 }, { id: '3036', level: 8 }, { id: '3051', level: 9 }, { id: '762', level: 9 }, { id: '1584', level: 10 }],
     require: ['219'],
     addSkill: ['22', '23', '25', '27', '37', '36', '61'],
     addWeapon: [],
@@ -2742,10 +2838,13 @@ export const RACE_LIST: Race[] = [
       zombie: 0,
       petrify: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '221',
     name: '퀸 페어리',
+    learningSkills: [{ id: '3041', level: 2 }, { id: '449', level: 3 }, { id: '454', level: 3 }, { id: '859', level: 4 }, { id: '3045', level: 5 }, { id: '613', level: 6 }, { id: '650', level: 7 }, { id: '3049', level: 8 }, { id: '716', level: 9 }, { id: '2029', level: 10 }],
     require: ['216', '218', '220'],
     addSkill: ['22', '23', '25', '27', '36', '37', '58', '61'],
     addWeapon: [],
@@ -2797,10 +2896,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '223',
     name: '슬라임',
+    learningSkills: [{ id: '2638', level: 2 }, { id: '1260', level: 3 }, { id: '61', level: 3 }, { id: '618', level: 4 }, { id: '2635', level: 5 }, { id: '2656', level: 6 }, { id: '1261', level: 7 }, { id: '2645', level: 8 }, { id: '128', level: 8 }, { id: '708', level: 9 }, { id: '576', level: 10 }],
     require: [],
     addSkill: ['16', '52'],
     addWeapon: [],
@@ -2844,10 +2946,14 @@ export const RACE_LIST: Race[] = [
       stun: 150,
       slime: 0,
     },
+    stateOnHit: {
+      slime: 10,
+    },
   },
   {
     id: '224',
     name: '메가 슬라임',
+    learningSkills: [{ id: '2639', level: 2 }, { id: '62', level: 3 }, { id: '361', level: 3 }, { id: '2667', level: 4 }, { id: '1265', level: 5 }, { id: '225', level: 6 }, { id: '2636', level: 7 }, { id: '2670', level: 8 }, { id: '199', level: 9 }, { id: '577', level: 10 }],
     require: ['223'],
     addSkill: ['16', '52'],
     addWeapon: [],
@@ -2892,10 +2998,14 @@ export const RACE_LIST: Race[] = [
       stun: 150,
       slime: 0,
     },
+    stateOnHit: {
+      slime: 20,
+    },
   },
   {
     id: '225',
     name: '기가 슬라임',
+    learningSkills: [{ id: '2640', level: 2 }, { id: '5637', level: 2 }, { id: '63', level: 3 }, { id: '262', level: 3 }, { id: '362', level: 4 }, { id: '1272', level: 5 }, { id: '239', level: 6 }, { id: '2637', level: 7 }, { id: '2671', level: 8 }, { id: '200', level: 9 }, { id: '578', level: 10 }],
     require: ['224'],
     addSkill: ['16', '52'],
     addWeapon: [],
@@ -2939,10 +3049,14 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+      slime: 30,
+    },
   },
   {
     id: '226',
     name: '치유의 슬라임',
+    learningSkills: [{ id: '2658', level: 2 }, { id: '550', level: 3 }, { id: '2643', level: 3 }, { id: '2660', level: 4 }, { id: '619', level: 5 }, { id: '2663', level: 6 }, { id: '2657', level: 7 }, { id: '1266', level: 8 }, { id: '709', level: 9 }, { id: '2662', level: 10 }],
     require: ['223'],
     addSkill: ['22', '16', '52'],
     addWeapon: [],
@@ -2987,10 +3101,14 @@ export const RACE_LIST: Race[] = [
       stun: 150,
       slime: 0,
     },
+    stateOnHit: {
+      slime: 20,
+    },
   },
   {
     id: '227',
     name: '파사의 점요',
+    learningSkills: [{ id: '2661', level: 2 }, { id: '263', level: 2 }, { id: '551', level: 3 }, { id: '2644', level: 3 }, { id: '2666', level: 4 }, { id: '620', level: 5 }, { id: '2665', level: 6 }, { id: '2664', level: 7 }, { id: '1273', level: 8 }, { id: '710', level: 9 }, { id: '2659', level: 10 }],
     require: ['226'],
     addSkill: ['22', '16', '52'],
     addWeapon: [],
@@ -3037,10 +3155,14 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+      slime: 30,
+    },
   },
   {
     id: '228',
     name: '육식 슬라임',
+    learningSkills: [{ id: '2646', level: 2 }, { id: '67', level: 3 }, { id: '685', level: 3 }, { id: '2648', level: 4 }, { id: '681', level: 5 }, { id: '1267', level: 6 }, { id: '355', level: 7 }, { id: '92', level: 8 }, { id: '816', level: 9 }, { id: '2654', level: 10 }],
     require: ['223'],
     addSkill: ['16', '52'],
     addWeapon: [],
@@ -3085,10 +3207,14 @@ export const RACE_LIST: Race[] = [
       stun: 150,
       slime: 0,
     },
+    stateOnHit: {
+      digest: 10,
+    },
   },
   {
     id: '229',
     name: '음혹의 점요',
+    learningSkills: [{ id: '2647', level: 2 }, { id: '261', level: 2 }, { id: '68', level: 3 }, { id: '686', level: 3 }, { id: '2649', level: 4 }, { id: '682', level: 5 }, { id: '1274', level: 6 }, { id: '356', level: 7 }, { id: '93', level: 8 }, { id: '817', level: 9 }, { id: '2650', level: 10 }],
     require: ['228'],
     addSkill: ['16', '52'],
     addWeapon: [],
@@ -3132,10 +3258,14 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+      digest: 20,
+    },
   },
   {
     id: '232',
     name: '마수',
+    learningSkills: [{ id: '2678', level: 2 }, { id: '273', level: 3 }, { id: '81', level: 3 }, { id: '2697', level: 4 }, { id: '66', level: 4 }, { id: '2694', level: 5 }, { id: '2726', level: 6 }, { id: '2716', level: 7 }, { id: '2686', level: 8 }, { id: '85', level: 8 }, { id: '2727', level: 9 }, { id: '2698', level: 10 }],
     require: [],
     addSkill: ['53'],
     addWeapon: ['12'],
@@ -3177,10 +3307,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '233',
     name: '루나틱 비스트',
+    learningSkills: [{ id: '67', level: 2 }, { id: '655', level: 3 }, { id: '2687', level: 4 }, { id: '2728', level: 5 }, { id: '2717', level: 6 }, { id: '2679', level: 7 }, { id: '219', level: 8 }, { id: '819', level: 9 }, { id: '2695', level: 10 }],
     require: ['232'],
     addSkill: ['53'],
     addWeapon: ['12'],
@@ -3222,10 +3355,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '234',
     name: '피에 물든 광수',
+    learningSkills: [{ id: '2688', level: 2 }, { id: '68', level: 3 }, { id: '656', level: 3 }, { id: '2696', level: 4 }, { id: '2683', level: 5 }, { id: '2729', level: 6 }, { id: '2718', level: 7 }, { id: '300', level: 8 }, { id: '820', level: 9 }, { id: '2699', level: 10 }],
     require: ['233'],
     addSkill: ['53'],
     addWeapon: ['12'],
@@ -3263,10 +3399,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '235',
     name: '스피드 비스트',
+    learningSkills: [{ id: '1751', level: 2 }, { id: '2703', level: 2 }, { id: '274', level: 3 }, { id: '316', level: 3 }, { id: '1764', level: 4 }, { id: '671', level: 4 }, { id: '2681', level: 5 }, { id: '2734', level: 6 }, { id: '124', level: 7 }, { id: '1752', level: 8 }, { id: '1755', level: 9 }, { id: '181', level: 9 }, { id: '2680', level: 10 }],
     require: ['232'],
     addSkill: ['30', '53'],
     addWeapon: ['12'],
@@ -3308,10 +3447,14 @@ export const RACE_LIST: Race[] = [
       seduction: 125,
       incontinence: 125,
     },
+    stateOnHit: {
+      blind: 10,
+    },
   },
   {
     id: '236',
     name: '질공의 마수',
+    learningSkills: [{ id: '2682', level: 2 }, { id: '275', level: 3 }, { id: '317', level: 3 }, { id: '287', level: 4 }, { id: '672', level: 5 }, { id: '100', level: 6 }, { id: '1762', level: 7 }, { id: '851', level: 7 }, { id: '1753', level: 8 }, { id: '182', level: 9 }, { id: '2684', level: 10 }],
     require: ['235'],
     addSkill: ['30', '53'],
     addWeapon: ['12'],
@@ -3360,10 +3503,14 @@ export const RACE_LIST: Race[] = [
       seduction: 125,
       incontinence: 125,
     },
+    stateOnHit: {
+      blind: 20,
+    },
   },
   {
     id: '237',
     name: '미노타우로스',
+    learningSkills: [{ id: '1099', level: 2 }, { id: '62', level: 3 }, { id: '67', level: 3 }, { id: '1104', level: 4 }, { id: '90', level: 4 }, { id: '3097', level: 5 }, { id: '1106', level: 6 }, { id: '1107', level: 6 }, { id: '1108', level: 6 }, { id: '3124', level: 7 }, { id: '79', level: 8 }, { id: '1118', level: 9 }, { id: '220', level: 9 }, { id: '1100', level: 10 }],
     require: ['1', '232'],
     addSkill: ['11', '12', '17', '53'],
     addWeapon: [],
@@ -3403,10 +3550,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '238',
     name: '기가타우로스',
+    learningSkills: [{ id: '1115', level: 2 }, { id: '62', level: 3 }, { id: '68', level: 3 }, { id: '1105', level: 3 }, { id: '3125', level: 4 }, { id: '91', level: 4 }, { id: '3098', level: 5 }, { id: '1109', level: 6 }, { id: '1110', level: 7 }, { id: '1111', level: 8 }, { id: '80', level: 9 }, { id: '234', level: 9 }, { id: '1116', level: 10 }],
     require: ['237'],
     addSkill: ['11', '12', '17', '53'],
     addWeapon: [],
@@ -3442,10 +3592,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '239',
     name: '켄타우로스',
+    learningSkills: [{ id: '1056', level: 2 }, { id: '274', level: 3 }, { id: '86', level: 3 }, { id: '1055', level: 4 }, { id: '125', level: 5 }, { id: '1082', level: 6 }, { id: '1089', level: 6 }, { id: '1057', level: 7 }, { id: '683', level: 8 }, { id: '215', level: 9 }, { id: '673', level: 9 }, { id: '1090', level: 10 }],
     require: ['1', '232'],
     addSkill: ['8', '10', '53'],
     addWeapon: [],
@@ -3486,10 +3639,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '240',
     name: '그란센토르',
+    learningSkills: [{ id: '1064', level: 2 }, { id: '275', level: 3 }, { id: '87', level: 4 }, { id: '1068', level: 5 }, { id: '129', level: 6 }, { id: '252', level: 6 }, { id: '1084', level: 7 }, { id: '684', level: 7 }, { id: '1091', level: 8 }, { id: '233', level: 9 }, { id: '674', level: 9 }, { id: '1065', level: 10 }],
     require: ['239'],
     addSkill: ['8', '10', '53'],
     addWeapon: [],
@@ -3526,10 +3682,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '241',
     name: '네코마타',
+    learningSkills: [{ id: '1419', level: 2 }, { id: '274', level: 3 }, { id: '555', level: 3 }, { id: '1402', level: 4 }, { id: '2052', level: 4 }, { id: '82', level: 5 }, { id: '2722', level: 6 }, { id: '2733', level: 7 }, { id: '1420', level: 8 }, { id: '218', level: 8 }, { id: '1407', level: 9 }, { id: '2054', level: 9 }, { id: '2732', level: 10 }],
     require: ['22', '232'],
     addSkill: ['21', '37', '53'],
     addWeapon: ['12'],
@@ -3571,10 +3730,14 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+      blind: 10,
+    },
   },
   {
     id: '242',
     name: '무신 캣',
+    learningSkills: [{ id: '1421', level: 2 }, { id: '275', level: 3 }, { id: '556', level: 3 }, { id: '1409', level: 4 }, { id: '2053', level: 4 }, { id: '83', level: 5 }, { id: '2723', level: 6 }, { id: '413', level: 7 }, { id: '1414', level: 8 }, { id: '2055', level: 9 }, { id: '244', level: 9 }, { id: '1422', level: 10 }],
     require: ['241'],
     addSkill: ['21', '37', '53'],
     addWeapon: ['12'],
@@ -3612,10 +3775,14 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+      blind: 20,
+    },
   },
   {
     id: '245',
     name: '요호',
+    learningSkills: [{ id: '2704', level: 2 }, { id: '1496', level: 3 }, { id: '1502', level: 3 }, { id: '1508', level: 3 }, { id: '451', level: 3 }, { id: '1309', level: 4 }, { id: '614', level: 4 }, { id: '2719', level: 5 }, { id: '1517', level: 6 }, { id: '2730', level: 7 }, { id: '3103', level: 7 }, { id: '1794', level: 8 }, { id: '718', level: 9 }, { id: '1734', level: 10 }],
     require: [],
     addSkill: ['18', '23', '29', '31', '53', '61'],
     addWeapon: [],
@@ -3656,10 +3823,13 @@ export const RACE_LIST: Race[] = [
       digest: 75,
       stun: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '246',
     name: '중급요호',
+    learningSkills: [{ id: '1312', level: 2 }, { id: '1497', level: 2 }, { id: '1503', level: 2 }, { id: '1509', level: 2 }, { id: '452', level: 3 }, { id: '144', level: 3 }, { id: '615', level: 4 }, { id: '2720', level: 5 }, { id: '2705', level: 6 }, { id: '1795', level: 7 }, { id: '1518', level: 8 }, { id: '482', level: 9 }, { id: '1735', level: 10 }],
     require: ['245'],
     addSkill: ['18', '23', '29', '31', '53', '61'],
     addWeapon: [],
@@ -3700,10 +3870,13 @@ export const RACE_LIST: Race[] = [
       digest: 75,
       stun: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '247',
     name: '상급요호',
+    learningSkills: [{ id: '1499', level: 2 }, { id: '1505', level: 2 }, { id: '1511', level: 2 }, { id: '5639', level: 2 }, { id: '1313', level: 3 }, { id: '3114', level: 3 }, { id: '453', level: 3 }, { id: '616', level: 4 }, { id: '2721', level: 5 }, { id: '2707', level: 6 }, { id: '1796', level: 7 }, { id: '1519', level: 8 }, { id: '483', level: 9 }, { id: '1736', level: 10 }],
     require: ['246'],
     addSkill: ['18', '23', '29', '31', '53', '61'],
     addWeapon: [],
@@ -3749,10 +3922,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '248',
     name: '여우마수',
+    learningSkills: [{ id: '2678', level: 2 }, { id: '2686', level: 2 }, { id: '2687', level: 2 }, { id: '274', level: 3 }, { id: '96', level: 3 }, { id: '2705', level: 4 }, { id: '2731', level: 5 }, { id: '2680', level: 6 }, { id: '1737', level: 7 }, { id: '719', level: 8 }, { id: '181', level: 9 }, { id: '819', level: 9 }, { id: '2695', level: 10 }],
     require: ['245'],
     addSkill: ['29', '31', '53', '61'],
     addWeapon: ['12'],
@@ -3790,10 +3966,13 @@ export const RACE_LIST: Race[] = [
       petrify: 125,
       digest: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '249',
     name: '상급여우마수',
+    learningSkills: [{ id: '2698', level: 2 }, { id: '2688', level: 2 }, { id: '275', level: 3 }, { id: '97', level: 3 }, { id: '2706', level: 4 }, { id: '720', level: 5 }, { id: '2683', level: 6 }, { id: '2696', level: 7 }, { id: '182', level: 8 }, { id: '820', level: 9 }, { id: '1738', level: 10 }],
     require: ['248'],
     addSkill: ['29', '31', '53', '61'],
     addWeapon: ['12'],
@@ -3840,10 +4019,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '250',
     name: '여우기생',
+    learningSkills: [{ id: '1314', level: 2 }, { id: '2318', level: 3 }, { id: '279', level: 3 }, { id: '2098', level: 4 }, { id: '1315', level: 5 }, { id: '2022', level: 6 }, { id: '2100', level: 7 }, { id: '1325', level: 8 }, { id: '2036', level: 8 }, { id: '2062', level: 9 }, { id: '2073', level: 10 }],
     require: ['245'],
     addSkill: ['18', '29', '31', '37', '38', '44', '49', '53', '61'],
     addWeapon: [],
@@ -3892,10 +4074,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '251',
     name: '여우 오이란',
+    learningSkills: [{ id: '1316', level: 2 }, { id: '5639', level: 2 }, { id: '2319', level: 3 }, { id: '280', level: 3 }, { id: '1326', level: 4 }, { id: '2099', level: 5 }, { id: '2023', level: 6 }, { id: '2042', level: 7 }, { id: '2091', level: 7 }, { id: '1327', level: 8 }, { id: '2063', level: 9 }, { id: '2074', level: 10 }],
     require: ['250'],
     addSkill: ['18', '29', '31', '37', '38', '44', '49', '53', '61'],
     addWeapon: [],
@@ -3943,10 +4128,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '254',
     name: '라미아',
+    learningSkills: [{ id: '1282', level: 2 }, { id: '2740', level: 3 }, { id: '544', level: 3 }, { id: '2546', level: 4 }, { id: '2755', level: 5 }, { id: '1283', level: 6 }, { id: '1284', level: 7 }, { id: '1285', level: 8 }, { id: '1286', level: 9 }, { id: '2744', level: 10 }],
     require: [],
     addSkill: ['17', '50', '54'],
     addWeapon: [],
@@ -3973,10 +4161,13 @@ export const RACE_LIST: Race[] = [
       petrify: 50,
       stun: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '255',
     name: '라미안 보아',
+    learningSkills: [{ id: '2741', level: 2 }, { id: '2549', level: 3 }, { id: '545', level: 3 }, { id: '2756', level: 4 }, { id: '1287', level: 5 }, { id: '127', level: 6 }, { id: '2748', level: 7 }, { id: '2745', level: 8 }, { id: '822', level: 9 }, { id: '1290', level: 10 }],
     require: ['254'],
     addSkill: ['17', '50', '54'],
     addWeapon: [],
@@ -4004,10 +4195,13 @@ export const RACE_LIST: Race[] = [
       petrify: 25,
       stun: 25,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '256',
     name: '라미안 나이트 메어',
+    learningSkills: [{ id: '2742', level: 2 }, { id: '255', level: 2 }, { id: '546', level: 3 }, { id: '2557', level: 4 }, { id: '2757', level: 5 }, { id: '2769', level: 6 }, { id: '2749', level: 7 }, { id: '2746', level: 8 }, { id: '823', level: 9 }, { id: '1297', level: 10 }],
     require: ['255'],
     addSkill: ['17', '50', '54'],
     addWeapon: [],
@@ -4049,10 +4243,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '257',
     name: '시스터 라미아',
+    learningSkills: [{ id: '1460', level: 2 }, { id: '2767', level: 2 }, { id: '550', level: 3 }, { id: '683', level: 4 }, { id: '1464', level: 5 }, { id: '2565', level: 5 }, { id: '1291', level: 6 }, { id: '2758', level: 7 }, { id: '1466', level: 8 }, { id: '1471', level: 8 }, { id: '500', level: 9 }, { id: '1462', level: 10 }, { id: '2535', level: 10 }],
     require: ['254'],
     addSkill: ['17', '22', '50', '54'],
     addWeapon: [],
@@ -4080,10 +4277,13 @@ export const RACE_LIST: Race[] = [
       petrify: 25,
       stun: 25,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '258',
     name: '자애의 성사',
+    learningSkills: [{ id: '1461', level: 2 }, { id: '1472', level: 2 }, { id: '256', level: 2 }, { id: '551', level: 3 }, { id: '2568', level: 4 }, { id: '684', level: 5 }, { id: '1298', level: 6 }, { id: '1480', level: 7 }, { id: '2759', level: 7 }, { id: '2768', level: 8 }, { id: '516', level: 9 }, { id: '501', level: 9 }, { id: '2536', level: 10 }],
     require: ['257'],
     addSkill: ['17', '22', '50', '54'],
     addWeapon: [],
@@ -4126,10 +4326,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '259',
     name: '뱀무녀',
+    learningSkills: [{ id: '2048', level: 2 }, { id: '1292', level: 3 }, { id: '279', level: 3 }, { id: '2051', level: 4 }, { id: '2760', level: 4 }, { id: '2019', level: 5 }, { id: '2020', level: 6 }, { id: '2021', level: 7 }, { id: '319', level: 8 }, { id: '2761', level: 9 }, { id: '2034', level: 10 }],
     require: ['254'],
     addSkill: ['17', '37', '50', '54'],
     addWeapon: [],
@@ -4164,10 +4367,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '260',
     name: '백사 카구라',
+    learningSkills: [{ id: '2043', level: 2 }, { id: '257', level: 2 }, { id: '2042', level: 3 }, { id: '280', level: 3 }, { id: '1299', level: 4 }, { id: '2762', level: 5 }, { id: '2050', level: 6 }, { id: '320', level: 6 }, { id: '2064', level: 7 }, { id: '2065', level: 8 }, { id: '2763', level: 9 }, { id: '413', level: 9 }, { id: '2026', level: 10 }],
     require: ['259'],
     addSkill: ['17', '37', '50', '54'],
     addWeapon: [],
@@ -4210,10 +4416,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '261',
     name: '메두사',
+    learningSkills: [{ id: '2751', level: 2 }, { id: '67', level: 3 }, { id: '82', level: 3 }, { id: '1293', level: 4 }, { id: '679', level: 5 }, { id: '2551', level: 6 }, { id: '2764', level: 7 }, { id: '358', level: 8 }, { id: '585', level: 9 }, { id: '352', level: 9 }, { id: '1294', level: 10 }],
     require: ['33', '254'],
     addSkill: ['17', '50', '54'],
     addWeapon: [],
@@ -4242,10 +4451,13 @@ export const RACE_LIST: Race[] = [
       petrify: 0,
       stun: 25,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '262',
     name: '로드 메두사',
+    learningSkills: [{ id: '2752', level: 2 }, { id: '68', level: 3 }, { id: '83', level: 3 }, { id: '1300', level: 4 }, { id: '680', level: 5 }, { id: '2556', level: 6 }, { id: '2765', level: 7 }, { id: '359', level: 8 }, { id: '586', level: 9 }, { id: '353', level: 9 }, { id: '1301', level: 10 }],
     require: ['261'],
     addSkill: ['17', '50', '54'],
     addWeapon: [],
@@ -4288,10 +4500,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '263',
     name: '퀸 라미아',
+    learningSkills: [{ id: '2747', level: 2 }, { id: '547', level: 3 }, { id: '2061', level: 4 }, { id: '776', level: 5 }, { id: '2750', level: 6 }, { id: '852', level: 7 }, { id: '321', level: 8 }, { id: '502', level: 9 }, { id: '1302', level: 10 }],
     require: ['258', '260'],
     addSkill: ['17', '22', '37', '50', '54'],
     addWeapon: [],
@@ -4336,10 +4551,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '265',
     name: '스큐라',
+    learningSkills: [{ id: '2775', level: 2 }, { id: '278', level: 3 }, { id: '2815', level: 4 }, { id: '2783', level: 5 }, { id: '2788', level: 6 }, { id: '2786', level: 7 }, { id: '126', level: 8 }, { id: '2820', level: 9 }, { id: '2776', level: 10 }],
     require: [],
     addSkill: ['20', '55'],
     addWeapon: [],
@@ -4353,6 +4571,7 @@ export const RACE_LIST: Race[] = [
     mdf: 90,
     agi: 80,
     luk: 105,
+    moreAction: 2,
     elementResist: {
       lightning: 150,
       holy: 125,
@@ -4367,10 +4586,13 @@ export const RACE_LIST: Race[] = [
       stun: 125,
       slime: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '266',
     name: '하이 스큐라',
+    learningSkills: [{ id: '279', level: 2 }, { id: '2816', level: 3 }, { id: '2784', level: 4 }, { id: '2787', level: 5 }, { id: '3167', level: 6 }, { id: '2789', level: 7 }, { id: '2821', level: 8 }, { id: '825', level: 9 }, { id: '100', level: 10 }],
     require: ['265'],
     addSkill: ['20', '55'],
     addWeapon: [],
@@ -4384,6 +4606,7 @@ export const RACE_LIST: Race[] = [
     mdf: 95,
     agi: 85,
     luk: 120,
+    moreAction: 2,
     elementResist: {
       lightning: 150,
       holy: 125,
@@ -4398,10 +4621,13 @@ export const RACE_LIST: Race[] = [
       stun: 125,
       slime: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '267',
     name: '엘더 스큐라',
+    learningSkills: [{ id: '2777', level: 2 }, { id: '5635', level: 2 }, { id: '280', level: 3 }, { id: '2822', level: 4 }, { id: '2817', level: 5 }, { id: '2785', level: 6 }, { id: '3168', level: 7 }, { id: '2790', level: 8 }, { id: '826', level: 9 }, { id: '101', level: 10 }],
     require: ['266'],
     addSkill: ['20', '55'],
     addWeapon: [],
@@ -4415,6 +4641,7 @@ export const RACE_LIST: Race[] = [
     mdf: 100,
     agi: 90,
     luk: 130,
+    moreAction: 2,
     elementResist: {
       lightning: 150,
       holy: 125,
@@ -4429,10 +4656,13 @@ export const RACE_LIST: Race[] = [
       stun: 125,
       slime: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '268',
     name: '사무라이 스큐라',
+    learningSkills: [{ id: '1391', level: 2 }, { id: '67', level: 3 }, { id: '1008', level: 4 }, { id: '3105', level: 4 }, { id: '655', level: 5 }, { id: '1380', level: 6 }, { id: '659', level: 7 }, { id: '1009', level: 8 }, { id: '1036', level: 8 }, { id: '111', level: 9 }, { id: '216', level: 9 }, { id: '1020', level: 10 }],
     require: ['265'],
     addSkill: ['9', '20', '55'],
     addWeapon: [],
@@ -4446,6 +4676,8 @@ export const RACE_LIST: Race[] = [
     mdf: 90,
     agi: 95,
     luk: 115,
+    dualWield: true,
+    moreAction: 1,
     elementResist: {
       lightning: 150,
       holy: 125,
@@ -4460,10 +4692,13 @@ export const RACE_LIST: Race[] = [
       stun: 125,
       slime: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '269',
     name: '천하무쌍 스큐라',
+    learningSkills: [{ id: '1392', level: 2 }, { id: '1011', level: 3 }, { id: '68', level: 3 }, { id: '1021', level: 4 }, { id: '656', level: 5 }, { id: '660', level: 6 }, { id: '104', level: 7 }, { id: '1035', level: 8 }, { id: '232', level: 9 }, { id: '114', level: 9 }, { id: '1386', level: 10 }],
     require: ['268'],
     addSkill: ['9', '20', '55'],
     addWeapon: [],
@@ -4477,6 +4712,8 @@ export const RACE_LIST: Race[] = [
     mdf: 95,
     agi: 100,
     luk: 125,
+    dualWield: true,
+    moreAction: 1,
     elementResist: {
       lightning: 150,
       holy: 125,
@@ -4491,10 +4728,13 @@ export const RACE_LIST: Race[] = [
       stun: 125,
       slime: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '270',
     name: '스큐라 메이드',
+    learningSkills: [{ id: '2389', level: 2 }, { id: '2368', level: 2 }, { id: '2377', level: 3 }, { id: '279', level: 3 }, { id: '661', level: 3 }, { id: '2394', level: 4 }, { id: '2392', level: 5 }, { id: '693', level: 6 }, { id: '2388', level: 7 }, { id: '295', level: 8 }, { id: '405', level: 9 }, { id: '297', level: 9 }, { id: '2386', level: 10 }],
     require: ['265'],
     addSkill: ['46', '55'],
     addWeapon: [],
@@ -4509,6 +4749,7 @@ export const RACE_LIST: Race[] = [
     agi: 100,
     luk: 120,
     evasion: 10,
+    moreAction: 2,
     elementResist: {
       lightning: 150,
       holy: 125,
@@ -4523,10 +4764,13 @@ export const RACE_LIST: Race[] = [
       stun: 125,
       slime: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '271',
     name: '스큐라 서번트',
+    learningSkills: [{ id: '2370', level: 2 }, { id: '280', level: 3 }, { id: '662', level: 3 }, { id: '2395', level: 4 }, { id: '694', level: 5 }, { id: '2387', level: 6 }, { id: '296', level: 7 }, { id: '2393', level: 8 }, { id: '419', level: 9 }, { id: '2372', level: 10 }],
     require: ['270'],
     addSkill: ['46', '55'],
     addWeapon: [],
@@ -4541,6 +4785,7 @@ export const RACE_LIST: Race[] = [
     agi: 110,
     luk: 130,
     evasion: 10,
+    moreAction: 2,
     elementResist: {
       wind: 150,
       holy: 125,
@@ -4555,10 +4800,13 @@ export const RACE_LIST: Race[] = [
       stun: 125,
       slime: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '272',
     name: '퀸 스큐라',
+    learningSkills: [{ id: '2791', level: 2 }, { id: '281', level: 3 }, { id: '2373', level: 4 }, { id: '651', level: 5 }, { id: '1029', level: 6 }, { id: '853', level: 7 }, { id: '1388', level: 8 }, { id: '2396', level: 9 }, { id: '102', level: 10 }],
     require: ['267', '269', '271'],
     addSkill: ['9', '20', '46', '55'],
     addWeapon: [],
@@ -4597,10 +4845,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '274',
     name: '하피',
+    learningSkills: [{ id: '1751', level: 2 }, { id: '2830', level: 2 }, { id: '273', level: 3 }, { id: '554', level: 3 }, { id: '2046', level: 4 }, { id: '1758', level: 5 }, { id: '1310', level: 6 }, { id: '2056', level: 7 }, { id: '2841', level: 8 }, { id: '1764', level: 9 }, { id: '733', level: 9 }, { id: '1756', level: 10 }],
     require: [],
     addSkill: ['18', '30', '37', '56'],
     addWeapon: [],
@@ -4625,10 +4876,13 @@ export const RACE_LIST: Race[] = [
       bind: 125,
       confusion: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '275',
     name: '윙 하피',
+    learningSkills: [{ id: '555', level: 2 }, { id: '1757', level: 3 }, { id: '274', level: 3 }, { id: '2057', level: 4 }, { id: '1317', level: 5 }, { id: '2842', level: 6 }, { id: '2831', level: 7 }, { id: '734', level: 8 }, { id: '828', level: 9 }, { id: '1753', level: 10 }],
     require: ['274'],
     addSkill: ['18', '30', '37', '56'],
     addWeapon: [],
@@ -4653,10 +4907,13 @@ export const RACE_LIST: Race[] = [
       bind: 125,
       confusion: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '276',
     name: '엘더 하피',
+    learningSkills: [{ id: '1318', level: 2 }, { id: '5639', level: 2 }, { id: '556', level: 3 }, { id: '275', level: 3 }, { id: '1755', level: 4 }, { id: '2843', level: 5 }, { id: '2058', level: 6 }, { id: '1762', level: 7 }, { id: '2832', level: 8 }, { id: '829', level: 9 }, { id: '1759', level: 10 }],
     require: ['275'],
     addSkill: ['18', '30', '37', '56'],
     addWeapon: [],
@@ -4704,10 +4961,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '277',
     name: '하피 나이트',
+    learningSkills: [{ id: '1041', level: 2 }, { id: '1059', level: 2 }, { id: '67', level: 3 }, { id: '683', level: 3 }, { id: '2059', level: 4 }, { id: '125', level: 5 }, { id: '1055', level: 6 }, { id: '700', level: 7 }, { id: '702', level: 7 }, { id: '1089', level: 8 }, { id: '215', level: 9 }, { id: '1058', level: 10 }],
     require: ['274'],
     addSkill: ['10', '30', '37', '56'],
     addWeapon: [],
@@ -4738,10 +4998,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '278',
     name: '스카이하이',
+    learningSkills: [{ id: '1066', level: 2 }, { id: '1044', level: 3 }, { id: '68', level: 3 }, { id: '2060', level: 4 }, { id: '129', level: 5 }, { id: '252', level: 5 }, { id: '1068', level: 6 }, { id: '684', level: 7 }, { id: '698', level: 8 }, { id: '233', level: 9 }, { id: '1067', level: 10 }],
     require: ['277'],
     addSkill: ['10', '30', '37', '56'],
     addWeapon: [],
@@ -4790,10 +5053,13 @@ export const RACE_LIST: Race[] = [
       seduction: 125,
       incontinence: 125,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '279',
     name: '에이비스',
+    learningSkills: [{ id: '2686', level: 2 }, { id: '3068', level: 2 }, { id: '67', level: 3 }, { id: '2687', level: 3 }, { id: '599', level: 4 }, { id: '2838', level: 4 }, { id: '3069', level: 5 }, { id: '130', level: 6 }, { id: '132', level: 6 }, { id: '2835', level: 7 }, { id: '219', level: 8 }, { id: '181', level: 9 }, { id: '3070', level: 10 }],
     require: ['274'],
     addSkill: ['30', '53', '56', '62'],
     addWeapon: ['12'],
@@ -4818,10 +5084,13 @@ export const RACE_LIST: Race[] = [
     stateResist: {
       confusion: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '280',
     name: '가루다',
+    learningSkills: [{ id: '2688', level: 2 }, { id: '68', level: 3 }, { id: '600', level: 3 }, { id: '2839', level: 4 }, { id: '2840', level: 5 }, { id: '2836', level: 6 }, { id: '126', level: 7 }, { id: '127', level: 8 }, { id: '182', level: 9 }, { id: '860', level: 9 }, { id: '3071', level: 10 }],
     require: ['279'],
     addSkill: ['30', '53', '56', '62'],
     addWeapon: ['12'],
@@ -4869,10 +5138,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '281',
     name: '퀸 하피',
+    learningSkills: [{ id: '1330', level: 2 }, { id: '276', level: 3 }, { id: '2844', level: 4 }, { id: '854', level: 5 }, { id: '1080', level: 6 }, { id: '773', level: 7 }, { id: '2049', level: 8 }, { id: '1754', level: 9 }, { id: '2833', level: 10 }],
     require: ['276', '278', '280'],
     addSkill: ['10', '18', '30', '37', '53', '56', '62'],
     addWeapon: [],
@@ -4917,10 +5189,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '283',
     name: '드래곤',
+    learningSkills: [{ id: '3068', level: 2 }, { id: '61', level: 3 }, { id: '2678', level: 4 }, { id: '66', level: 5 }, { id: '3074', level: 6 }, { id: '2698', level: 7 }, { id: '3087', level: 8 }, { id: '2686', level: 9 }, { id: '3069', level: 10 }],
     require: [],
     addSkill: ['53', '62'],
     addWeapon: ['12'],
@@ -4965,10 +5240,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '284',
     name: '용인',
+    learningSkills: [{ id: '1418', level: 2 }, { id: '62', level: 3 }, { id: '921', level: 4 }, { id: '1405', level: 4 }, { id: '67', level: 5 }, { id: '940', level: 6 }, { id: '118', level: 6 }, { id: '1417', level: 7 }, { id: '119', level: 8 }, { id: '723', level: 9 }, { id: '941', level: 10 }],
     require: ['283'],
     addSkill: ['6', '7', '21', '53', '62'],
     addWeapon: [],
@@ -5013,10 +5291,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '285',
     name: '패룡',
+    learningSkills: [{ id: '952', level: 2 }, { id: '63', level: 3 }, { id: '3102', level: 4 }, { id: '68', level: 5 }, { id: '724', level: 6 }, { id: '2699', level: 7 }, { id: '1432', level: 8 }, { id: '213', level: 9 }, { id: '963', level: 10 }],
     require: ['284'],
     addSkill: ['6', '7', '21', '53', '62'],
     addWeapon: [],
@@ -5057,10 +5338,13 @@ export const RACE_LIST: Race[] = [
       digest: 25,
       stun: 25,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '286',
     name: '용신',
+    learningSkills: [{ id: '1499', level: 2 }, { id: '1505', level: 2 }, { id: '1511', level: 2 }, { id: '1461', level: 2 }, { id: '448', level: 3 }, { id: '453', level: 3 }, { id: '1547', level: 4 }, { id: '1549', level: 4 }, { id: '460', level: 5 }, { id: '461', level: 5 }, { id: '1526', level: 6 }, { id: '1467', level: 7 }, { id: '572', level: 7 }, { id: '2596', level: 8 }, { id: '464', level: 9 }, { id: '1527', level: 10 }],
     require: ['284'],
     addSkill: ['22', '23', '24', '26', '27', '53', '62'],
     addWeapon: [],
@@ -5107,10 +5391,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '287',
     name: '비룡',
+    learningSkills: [{ id: '2830', level: 2 }, { id: '2689', level: 2 }, { id: '274', level: 3 }, { id: '665', level: 4 }, { id: '331', level: 5 }, { id: '2831', level: 6 }, { id: '181', level: 7 }, { id: '479', level: 8 }, { id: '470', level: 9 }, { id: '3070', level: 10 }],
     require: ['283'],
     addSkill: ['53', '56', '62'],
     addWeapon: ['12'],
@@ -5157,10 +5444,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '288',
     name: '바하무트',
+    learningSkills: [{ id: '2832', level: 2 }, { id: '275', level: 3 }, { id: '666', level: 3 }, { id: '2690', level: 4 }, { id: '332', level: 5 }, { id: '182', level: 6 }, { id: '480', level: 7 }, { id: '471', level: 8 }, { id: '860', level: 9 }, { id: '3071', level: 10 }],
     require: ['287'],
     addSkill: ['53', '56', '62'],
     addWeapon: ['12'],
@@ -5201,10 +5491,13 @@ export const RACE_LIST: Race[] = [
       digest: 25,
       stun: 25,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '289',
     name: '해룡',
+    learningSkills: [{ id: '3046', level: 2 }, { id: '2691', level: 2 }, { id: '545', level: 3 }, { id: '550', level: 3 }, { id: '334', level: 4 }, { id: '667', level: 4 }, { id: '219', level: 5 }, { id: '3047', level: 6 }, { id: '485', level: 7 }, { id: '2695', level: 8 }, { id: '473', level: 8 }, { id: '831', level: 9 }, { id: '785', level: 9 }, { id: '3075', level: 10 }],
     require: ['283'],
     addSkill: ['53', '61', '62'],
     addWeapon: ['12'],
@@ -5250,10 +5543,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '290',
     name: '리바이어던',
+    learningSkills: [{ id: '3049', level: 2 }, { id: '546', level: 3 }, { id: '551', level: 3 }, { id: '2696', level: 4 }, { id: '668', level: 4 }, { id: '335', level: 5 }, { id: '832', level: 6 }, { id: '2692', level: 7 }, { id: '474', level: 8 }, { id: '486', level: 8 }, { id: '860', level: 9 }, { id: '786', level: 9 }, { id: '3076', level: 10 }],
     require: ['289'],
     addSkill: ['53', '61', '62'],
     addWeapon: ['12'],
@@ -5295,10 +5591,13 @@ export const RACE_LIST: Race[] = [
       digest: 25,
       stun: 25,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '293',
     name: '육서종',
+    learningSkills: [{ id: '3085', level: 2 }, { id: '2645', level: 3 }, { id: '61', level: 3 }, { id: '2697', level: 4 }, { id: '544', level: 4 }, { id: '2694', level: 5 }, { id: '730', level: 6 }, { id: '3068', level: 7 }, { id: '3086', level: 8 }, { id: '3166', level: 9 }, { id: '2712', level: 10 }],
     require: [],
     addSkill: ['52', '53', '55', '62'],
     addWeapon: [],
@@ -5320,10 +5619,13 @@ export const RACE_LIST: Race[] = [
     stateResist: {
       poison: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '294',
     name: '육상마류',
+    learningSkills: [{ id: '2698', level: 2 }, { id: '62', level: 3 }, { id: '2818', level: 4 }, { id: '731', level: 5 }, { id: '3087', level: 6 }, { id: '3069', level: 7 }, { id: '653', level: 8 }, { id: '497', level: 9 }, { id: '2695', level: 10 }],
     require: ['293'],
     addSkill: ['52', '53', '55', '62'],
     addWeapon: [],
@@ -5345,10 +5647,13 @@ export const RACE_LIST: Race[] = [
     stateResist: {
       poison: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '295',
     name: '이블 스피시즈',
+    learningSkills: [{ id: '3081', level: 2 }, { id: '63', level: 3 }, { id: '3070', level: 4 }, { id: '2696', level: 5 }, { id: '654', level: 6 }, { id: '732', level: 7 }, { id: '3088', level: 8 }, { id: '498', level: 9 }, { id: '2713', level: 10 }],
     require: ['294'],
     addSkill: ['52', '53', '55', '62'],
     addWeapon: [],
@@ -5394,10 +5699,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '296',
     name: '연체착정종',
+    learningSkills: [{ id: '2643', level: 2 }, { id: '545', level: 3 }, { id: '685', level: 3 }, { id: '3163', level: 4 }, { id: '361', level: 5 }, { id: '3167', level: 6 }, { id: '92', level: 7 }, { id: '2646', level: 8 }, { id: '577', level: 9 }, { id: '2651', level: 10 }],
     require: ['293'],
     addSkill: ['52', '53', '55', '62'],
     addWeapon: [],
@@ -5423,10 +5731,14 @@ export const RACE_LIST: Race[] = [
       shock: 125,
       slime: 0,
     },
+    stateOnHit: {
+      slime: 20,
+    },
   },
   {
     id: '297',
     name: '하이 크리처',
+    learningSkills: [{ id: '3164', level: 2 }, { id: '546', level: 3 }, { id: '686', level: 3 }, { id: '2644', level: 4 }, { id: '362', level: 5 }, { id: '3168', level: 6 }, { id: '93', level: 7 }, { id: '2647', level: 8 }, { id: '578', level: 9 }, { id: '2652', level: 10 }],
     require: ['296'],
     addSkill: ['52', '53', '55', '62'],
     addWeapon: [],
@@ -5474,10 +5786,14 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+      slime: 30,
+    },
   },
   {
     id: '298',
     name: '마물사냥꾼사냥꾼',
+    learningSkills: [{ id: '1183', level: 2 }, { id: '1195', level: 2 }, { id: '278', level: 3 }, { id: '791', level: 3 }, { id: '744', level: 4 }, { id: '675', level: 5 }, { id: '1202', level: 6 }, { id: '115', level: 7 }, { id: '121', level: 7 }, { id: '585', level: 8 }, { id: '154', level: 9 }, { id: '1215', level: 10 }],
     require: ['293'],
     addSkill: ['14', '52', '53', '55', '62'],
     addWeapon: [],
@@ -5493,16 +5809,20 @@ export const RACE_LIST: Race[] = [
     luk: 120,
     evasion: 10,
     healRate: 200,
+    noBackstab: true,
     elementResist: {
       holy: 125,
       bio: 0,
     },
     stateResist: {
     },
+    stateOnHit: {
+    },
   },
   {
     id: '299',
     name: '거인 살해자',
+    learningSkills: [{ id: '1192', level: 2 }, { id: '1207', level: 2 }, { id: '279', level: 3 }, { id: '792', level: 3 }, { id: '745', level: 4 }, { id: '676', level: 5 }, { id: '1216', level: 6 }, { id: '139', level: 7 }, { id: '586', level: 8 }, { id: '155', level: 9 }, { id: '1214', level: 10 }],
     require: ['298'],
     addSkill: ['14', '52', '53', '55', '62'],
     addWeapon: [],
@@ -5518,6 +5838,7 @@ export const RACE_LIST: Race[] = [
     luk: 130,
     evasion: 10,
     healRate: 300,
+    noBackstab: true,
     elementResist: {
       holy: 125,
       bio: 0,
@@ -5549,10 +5870,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '301',
     name: '해서종',
+    learningSkills: [{ id: '2775', level: 2 }, { id: '61', level: 3 }, { id: '278', level: 3 }, { id: '2602', level: 4 }, { id: '618', level: 4 }, { id: '2815', level: 5 }, { id: '2788', level: 6 }, { id: '2783', level: 7 }, { id: '2624', level: 8 }, { id: '785', level: 9 }, { id: '2811', level: 10 }],
     require: [],
     addSkill: ['51', '55'],
     addWeapon: [],
@@ -5575,10 +5899,13 @@ export const RACE_LIST: Race[] = [
     stateResist: {
       shock: 125,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '302',
     name: '해양착정종',
+    learningSkills: [{ id: '2778', level: 2 }, { id: '2816', level: 3 }, { id: '62', level: 3 }, { id: '2625', level: 4 }, { id: '2784', level: 5 }, { id: '2812', level: 6 }, { id: '786', level: 7 }, { id: '2789', level: 8 }, { id: '485', level: 9 }, { id: '2603', level: 10 }],
     require: ['301'],
     addSkill: ['51', '55'],
     addWeapon: [],
@@ -5601,10 +5928,13 @@ export const RACE_LIST: Race[] = [
     stateResist: {
       shock: 125,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '303',
     name: '마린 프린세스',
+    learningSkills: [{ id: '2790', level: 2 }, { id: '2813', level: 3 }, { id: '63', level: 3 }, { id: '2817', level: 4 }, { id: '2785', level: 5 }, { id: '2814', level: 6 }, { id: '3161', level: 7 }, { id: '2605', level: 8 }, { id: '486', level: 9 }, { id: '2779', level: 10 }],
     require: ['302'],
     addSkill: ['51', '55'],
     addWeapon: [],
@@ -5651,10 +5981,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '304',
     name: '심해착정종',
+    learningSkills: [{ id: '2810', level: 2 }, { id: '655', level: 3 }, { id: '545', level: 3 }, { id: '2612', level: 4 }, { id: '619', level: 5 }, { id: '120', level: 6 }, { id: '131', level: 6 }, { id: '787', level: 7 }, { id: '2603', level: 8 }, { id: '825', level: 9 }, { id: '2780', level: 10 }],
     require: ['301'],
     addSkill: ['51', '55'],
     addWeapon: [],
@@ -5701,10 +6034,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '305',
     name: '심연의 주인',
+    learningSkills: [{ id: '2619', level: 2 }, { id: '620', level: 3 }, { id: '546', level: 3 }, { id: '656', level: 3 }, { id: '2613', level: 4 }, { id: '3161', level: 5 }, { id: '2620', level: 6 }, { id: '2781', level: 7 }, { id: '788', level: 8 }, { id: '826', level: 9 }, { id: '2606', level: 10 }],
     require: ['304'],
     addSkill: ['51', '55'],
     addWeapon: [],
@@ -5752,10 +6088,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '306',
     name: '용궁무기',
+    learningSkills: [{ id: '2033', level: 2 }, { id: '1319', level: 2 }, { id: '2071', level: 3 }, { id: '279', level: 3 }, { id: '2086', level: 4 }, { id: '2016', level: 4 }, { id: '1321', level: 5 }, { id: '2093', level: 6 }, { id: '2039', level: 7 }, { id: '1323', level: 8 }, { id: '2035', level: 9 }, { id: '2095', level: 9 }, { id: '2044', level: 10 }],
     require: ['301'],
     addSkill: ['37', '38', '49', '51', '55'],
     addWeapon: [],
@@ -5788,10 +6127,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '307',
     name: '용궁희',
+    learningSkills: [{ id: '1320', level: 2 }, { id: '2094', level: 3 }, { id: '280', level: 3 }, { id: '2041', level: 4 }, { id: '2088', level: 4 }, { id: '1322', level: 5 }, { id: '2024', level: 6 }, { id: '774', level: 6 }, { id: '773', level: 7 }, { id: '1324', level: 8 }, { id: '2072', level: 9 }, { id: '2017', level: 10 }],
     require: ['306'],
     addSkill: ['37', '38', '49', '51', '55'],
     addWeapon: [],
@@ -5842,10 +6184,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '309',
     name: '요충',
+    learningSkills: [{ id: '2850', level: 2 }, { id: '544', level: 3 }, { id: '2890', level: 4 }, { id: '2864', level: 5 }, { id: '566', level: 6 }, { id: '2894', level: 7 }, { id: '2854', level: 8 }, { id: '2881', level: 9 }, { id: '783', level: 10 }],
     require: [],
     addSkill: ['57'],
     addWeapon: [],
@@ -5881,10 +6226,13 @@ export const RACE_LIST: Race[] = [
       zombie: 125,
       stun: 125,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '310',
     name: '암충',
+    learningSkills: [{ id: '2851', level: 2 }, { id: '545', level: 3 }, { id: '2891', level: 4 }, { id: '2882', level: 5 }, { id: '2865', level: 6 }, { id: '567', level: 7 }, { id: '2855', level: 8 }, { id: '834', level: 9 }, { id: '2859', level: 10 }],
     require: ['309'],
     addSkill: ['57'],
     addWeapon: [],
@@ -5921,10 +6269,13 @@ export const RACE_LIST: Race[] = [
       zombie: 125,
       stun: 125,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '311',
     name: '명충',
+    learningSkills: [{ id: '2852', level: 2 }, { id: '546', level: 3 }, { id: '2892', level: 4 }, { id: '2883', level: 5 }, { id: '2856', level: 6 }, { id: '105', level: 7 }, { id: '2866', level: 8 }, { id: '835', level: 9 }, { id: '2860', level: 10 }],
     require: ['310'],
     addSkill: ['57'],
     addWeapon: [],
@@ -5960,10 +6311,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '312',
     name: '레기온',
+    learningSkills: [{ id: '1403', level: 2 }, { id: '2853', level: 2 }, { id: '274', level: 3 }, { id: '663', level: 3 }, { id: '1402', level: 4 }, { id: '2877', level: 4 }, { id: '328', level: 5 }, { id: '1405', level: 6 }, { id: '2884', level: 6 }, { id: '1404', level: 7 }, { id: '2897', level: 8 }, { id: '1423', level: 9 }, { id: '2895', level: 10 }],
     require: ['309'],
     addSkill: ['21', '57'],
     addWeapon: [],
@@ -5999,10 +6353,13 @@ export const RACE_LIST: Race[] = [
       zombie: 125,
       stun: 125,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '313',
     name: '마더 레기온',
+    learningSkills: [{ id: '1407', level: 2 }, { id: '2878', level: 2 }, { id: '275', level: 3 }, { id: '664', level: 3 }, { id: '588', level: 4 }, { id: '329', level: 5 }, { id: '2885', level: 6 }, { id: '1424', level: 7 }, { id: '107', level: 8 }, { id: '2896', level: 9 }, { id: '2862', level: 10 }],
     require: ['312'],
     addSkill: ['21', '57'],
     addWeapon: [],
@@ -6037,10 +6394,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '314',
     name: '아라크네',
+    learningSkills: [{ id: '1547', level: 2 }, { id: '2867', level: 2 }, { id: '2879', level: 2 }, { id: '2868', level: 3 }, { id: '452', level: 3 }, { id: '550', level: 3 }, { id: '1569', level: 4 }, { id: '1570', level: 4 }, { id: '460', level: 5 }, { id: '2886', level: 6 }, { id: '340', level: 7 }, { id: '343', level: 7 }, { id: '1551', level: 8 }, { id: '1553', level: 9 }, { id: '2873', level: 10 }],
     require: ['33', '309'],
     addSkill: ['24', '57'],
     addWeapon: [],
@@ -6080,10 +6440,13 @@ export const RACE_LIST: Race[] = [
       digest: 50,
       stun: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '315',
     name: '아틀락=나크아',
+    learningSkills: [{ id: '2869', level: 2 }, { id: '453', level: 3 }, { id: '551', level: 3 }, { id: '1559', level: 4 }, { id: '2887', level: 4 }, { id: '1554', level: 5 }, { id: '341', level: 5 }, { id: '344', level: 6 }, { id: '461', level: 7 }, { id: '2880', level: 8 }, { id: '1556', level: 9 }, { id: '2874', level: 10 }],
     require: ['314'],
     addSkill: ['24', '57'],
     addWeapon: [],
@@ -6128,10 +6491,13 @@ export const RACE_LIST: Race[] = [
       seduction: 75,
       incontinence: 75,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '317',
     name: '퀸 인섹트',
+    learningSkills: [{ id: '2857', level: 2 }, { id: '276', level: 3 }, { id: '547', level: 3 }, { id: '1560', level: 4 }, { id: '2888', level: 4 }, { id: '552', level: 5 }, { id: '2893', level: 6 }, { id: '855', level: 7 }, { id: '342', level: 8 }, { id: '784', level: 9 }, { id: '2861', level: 10 }],
     require: ['311', '313', '315'],
     addSkill: ['21', '24', '57'],
     addWeapon: [],
@@ -6180,10 +6546,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '319',
     name: '알루라우네',
+    learningSkills: [{ id: '2903', level: 2 }, { id: '2934', level: 3 }, { id: '549', level: 3 }, { id: '1232', level: 4 }, { id: '1460', level: 4 }, { id: '2906', level: 5 }, { id: '726', level: 6 }, { id: '2911', level: 7 }, { id: '2937', level: 8 }, { id: '1466', level: 9 }, { id: '2921', level: 9 }, { id: '1462', level: 10 }, { id: '2913', level: 10 }],
     require: [],
     addSkill: ['15', '22', '58'],
     addWeapon: [],
@@ -6223,10 +6592,16 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+      poison: 5,
+      confusion: 5,
+      paralysis: 5,
+    },
   },
   {
     id: '320',
     name: '하이 알루라우네',
+    learningSkills: [{ id: '2912', level: 2 }, { id: '550', level: 3 }, { id: '1489', level: 4 }, { id: '2922', level: 4 }, { id: '2935', level: 5 }, { id: '1461', level: 6 }, { id: '2907', level: 6 }, { id: '1237', level: 7 }, { id: '2904', level: 8 }, { id: '727', level: 8 }, { id: '837', level: 9 }, { id: '2914', level: 10 }],
     require: ['319'],
     addSkill: ['15', '22', '58'],
     addWeapon: [],
@@ -6266,10 +6641,16 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+      poison: 5,
+      confusion: 5,
+      paralysis: 5,
+    },
   },
   {
     id: '321',
     name: '자애의 성화',
+    learningSkills: [{ id: '2905', level: 2 }, { id: '2938', level: 2 }, { id: '260', level: 2 }, { id: '2923', level: 3 }, { id: '551', level: 3 }, { id: '1463', level: 4 }, { id: '1490', level: 4 }, { id: '2936', level: 5 }, { id: '528', level: 5 }, { id: '1238', level: 6 }, { id: '1467', level: 6 }, { id: '1484', level: 7 }, { id: '728', level: 8 }, { id: '838', level: 9 }, { id: '2915', level: 10 }],
     require: ['320'],
     addSkill: ['15', '22', '58'],
     addWeapon: [],
@@ -6315,10 +6696,16 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      poison: 5,
+      confusion: 5,
+      paralysis: 5,
+    },
   },
   {
     id: '322',
     name: '와루라우네',
+    learningSkills: [{ id: '1497', level: 2 }, { id: '1503', level: 2 }, { id: '1509', level: 2 }, { id: '2919', level: 2 }, { id: '653', level: 3 }, { id: '659', level: 3 }, { id: '452', level: 3 }, { id: '2924', level: 4 }, { id: '3103', level: 5 }, { id: '313', level: 5 }, { id: '322', level: 6 }, { id: '1239', level: 7 }, { id: '687', level: 8 }, { id: '196', level: 9 }, { id: '2916', level: 10 }],
     require: ['319'],
     addSkill: ['15', '23', '58'],
     addWeapon: [],
@@ -6357,10 +6744,16 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+      poison: 7,
+      confusion: 7,
+      paralysis: 7,
+    },
   },
   {
     id: '323',
     name: '피안의 마화',
+    learningSkills: [{ id: '1499', level: 2 }, { id: '1505', level: 2 }, { id: '1511', level: 2 }, { id: '259', level: 2 }, { id: '2920', level: 3 }, { id: '654', level: 3 }, { id: '660', level: 3 }, { id: '2925', level: 4 }, { id: '453', level: 4 }, { id: '314', level: 5 }, { id: '529', level: 5 }, { id: '323', level: 6 }, { id: '1240', level: 7 }, { id: '688', level: 8 }, { id: '1512', level: 9 }, { id: '197', level: 9 }, { id: '2917', level: 10 }],
     require: ['322'],
     addSkill: ['15', '23', '58'],
     addWeapon: [],
@@ -6405,10 +6798,16 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      poison: 10,
+      confusion: 10,
+      paralysis: 10,
+    },
   },
   {
     id: '324',
     name: '식충음화',
+    learningSkills: [{ id: '2645', level: 2 }, { id: '2908', level: 2 }, { id: '2931', level: 3 }, { id: '67', level: 3 }, { id: '2643', level: 4 }, { id: '328', level: 5 }, { id: '663', level: 6 }, { id: '689', level: 6 }, { id: '2646', level: 7 }, { id: '355', level: 8 }, { id: '681', level: 9 }, { id: '1241', level: 10 }],
     require: ['319'],
     addSkill: ['15', '52', '58'],
     addWeapon: [],
@@ -6447,10 +6846,15 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+      digest: 10,
+      trance: 10,
+    },
   },
   {
     id: '325',
     name: '비너스 네펜데스',
+    learningSkills: [{ id: '2909', level: 2 }, { id: '5635', level: 2 }, { id: '664', level: 3 }, { id: '68', level: 3 }, { id: '258', level: 3 }, { id: '2932', level: 4 }, { id: '329', level: 5 }, { id: '690', level: 6 }, { id: '1242', level: 7 }, { id: '356', level: 8 }, { id: '682', level: 9 }, { id: '2933', level: 10 }],
     require: ['324'],
     addSkill: ['15', '52', '58'],
     addWeapon: ['19'],
@@ -6495,10 +6899,15 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      digest: 15,
+      trance: 15,
+    },
   },
   {
     id: '326',
     name: '퀸 알루라우네',
+    learningSkills: [{ id: '2926', level: 2 }, { id: '449', level: 3 }, { id: '552', level: 3 }, { id: '2939', level: 4 }, { id: '777', level: 5 }, { id: '856', level: 6 }, { id: '2927', level: 7 }, { id: '315', level: 8 }, { id: '729', level: 9 }, { id: '1247', level: 10 }],
     require: ['321', '323', '325'],
     addSkill: ['15', '22', '23', '52', '58'],
     addWeapon: [],
@@ -6544,10 +6953,18 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+      poison: 15,
+      confusion: 15,
+      paralysis: 15,
+      digest: 15,
+      trance: 15,
+    },
   },
   {
     id: '328',
     name: '좀비',
+    learningSkills: [{ id: '742', level: 1 }, { id: '2948', level: 2 }, { id: '3085', level: 3 }, { id: '61', level: 3 }, { id: '1126', level: 4 }, { id: '66', level: 4 }, { id: '2032', level: 5 }, { id: '2945', level: 5 }, { id: '2961', level: 6 }, { id: '2960', level: 7 }, { id: '3074', level: 8 }, { id: '634', level: 8 }, { id: '3086', level: 9 }, { id: '1127', level: 10 }],
     require: [],
     addSkill: ['12', '37', '59', '62'],
     addWeapon: [],
@@ -6594,10 +7011,15 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      poison: 5,
+      zombie: 5,
+    },
   },
   {
     id: '329',
     name: '하이 언데드',
+    learningSkills: [{ id: '2946', level: 2 }, { id: '349', level: 3 }, { id: '62', level: 3 }, { id: '2962', level: 4 }, { id: '67', level: 4 }, { id: '2033', level: 5 }, { id: '1143', level: 5 }, { id: '115', level: 6 }, { id: '635', level: 7 }, { id: '2036', level: 8 }, { id: '2949', level: 8 }, { id: '1144', level: 9 }, { id: '840', level: 9 }, { id: '3075', level: 10 }],
     require: ['328'],
     addSkill: ['12', '37', '59', '62'],
     addWeapon: [],
@@ -6644,10 +7066,15 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      poison: 10,
+      zombie: 10,
+    },
   },
   {
     id: '330',
     name: '마스터 언데드',
+    learningSkills: [{ id: '2947', level: 2 }, { id: '350', level: 3 }, { id: '63', level: 3 }, { id: '2963', level: 4 }, { id: '68', level: 4 }, { id: '2042', level: 5 }, { id: '1147', level: 5 }, { id: '636', level: 6 }, { id: '2950', level: 7 }, { id: '1148', level: 8 }, { id: '841', level: 9 }, { id: '3076', level: 10 }],
     require: ['329'],
     addSkill: ['12', '37', '59', '62'],
     addWeapon: [],
@@ -6694,10 +7121,15 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+      poison: 15,
+      zombie: 15,
+    },
   },
   {
     id: '331',
     name: '머미',
+    learningSkills: [{ id: '1497', level: 2 }, { id: '1503', level: 2 }, { id: '1509', level: 2 }, { id: '2951', level: 2 }, { id: '447', level: 3 }, { id: '452', level: 3 }, { id: '642', level: 4 }, { id: '679', level: 4 }, { id: '1139', level: 5 }, { id: '346', level: 5 }, { id: '1532', level: 6 }, { id: '2964', level: 6 }, { id: '352', level: 7 }, { id: '1530', level: 8 }, { id: '2526', level: 8 }, { id: '714', level: 9 }, { id: '2957', level: 10 }],
     require: ['328'],
     addSkill: ['12', '23', '50', '59'],
     addWeapon: [],
@@ -6748,10 +7180,15 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      mini: 5,
+      petrify: 5,
+    },
   },
   {
     id: '332',
     name: '이시스',
+    learningSkills: [{ id: '1499', level: 2 }, { id: '1505', level: 2 }, { id: '1511', level: 2 }, { id: '2952', level: 2 }, { id: '448', level: 3 }, { id: '453', level: 3 }, { id: '643', level: 4 }, { id: '680', level: 4 }, { id: '1140', level: 5 }, { id: '347', level: 5 }, { id: '1533', level: 6 }, { id: '2965', level: 6 }, { id: '1512', level: 7 }, { id: '353', level: 7 }, { id: '2527', level: 8 }, { id: '715', level: 9 }, { id: '2958', level: 10 }],
     require: ['331'],
     addSkill: ['12', '23', '50', '59'],
     addWeapon: [],
@@ -6801,10 +7238,15 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+      mini: 10,
+      petrify: 10,
+    },
   },
   {
     id: '333',
     name: '좀비 닥터',
+    learningSkills: [{ id: '2336', level: 2 }, { id: '2329', level: 2 }, { id: '279', level: 3 }, { id: '677', level: 3 }, { id: '2135', level: 3 }, { id: '2332', level: 4 }, { id: '2338', level: 5 }, { id: '294', level: 5 }, { id: '2358', level: 6 }, { id: '149', level: 7 }, { id: '2361', level: 8 }, { id: '497', level: 9 }, { id: '2136', level: 10 }, { id: '2144', level: 10 }],
     require: ['328'],
     addSkill: ['40', '41', '45', '59'],
     addWeapon: [],
@@ -6851,10 +7293,15 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      poison: 15,
+      zombie: 15,
+    },
   },
   {
     id: '334',
     name: '데스 프로페서',
+    learningSkills: [{ id: '2337', level: 2 }, { id: '2331', level: 2 }, { id: '280', level: 3 }, { id: '134', level: 3 }, { id: '2333', level: 4 }, { id: '2342', level: 5 }, { id: '2360', level: 5 }, { id: '2359', level: 6 }, { id: '2140', level: 7 }, { id: '678', level: 8 }, { id: '2339', level: 9 }, { id: '498', level: 9 }, { id: '2145', level: 10 }],
     require: ['333'],
     addSkill: ['40', '41', '45', '59'],
     addWeapon: [],
@@ -6902,10 +7349,15 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+      poison: 20,
+      zombie: 20,
+    },
   },
   {
     id: '336',
     name: '고스트',
+    learningSkills: [{ id: '1502', level: 2 }, { id: '2966', level: 2 }, { id: '451', level: 3 }, { id: '2953', level: 4 }, { id: '1174', level: 5 }, { id: '645', level: 6 }, { id: '2972', level: 7 }, { id: '568', level: 8 }, { id: '1158', level: 9 }, { id: '1503', level: 10 }, { id: '108', level: 10 }],
     require: [],
     addSkill: ['13', '23', '59'],
     addWeapon: [],
@@ -6949,10 +7401,14 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      death: 5,
+    },
   },
   {
     id: '337',
     name: '이블 미스트',
+    learningSkills: [{ id: '2967', level: 2 }, { id: '1530', level: 3 }, { id: '452', level: 3 }, { id: '2954', level: 4 }, { id: '304', level: 5 }, { id: '1505', level: 6 }, { id: '2959', level: 6 }, { id: '1175', level: 7 }, { id: '1159', level: 8 }, { id: '1532', level: 9 }, { id: '190', level: 9 }, { id: '109', level: 10 }],
     require: ['336'],
     addSkill: ['13', '23', '59'],
     addWeapon: [],
@@ -6996,10 +7452,14 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      death: 10,
+    },
   },
   {
     id: '338',
     name: '마스터 섀도우',
+    learningSkills: [{ id: '2955', level: 2 }, { id: '5631', level: 2 }, { id: '453', level: 3 }, { id: '2968', level: 4 }, { id: '1531', level: 5 }, { id: '305', level: 5 }, { id: '1533', level: 6 }, { id: '857', level: 6 }, { id: '1506', level: 7 }, { id: '1176', level: 8 }, { id: '191', level: 9 }, { id: '1168', level: 10 }],
     require: ['337'],
     addSkill: ['13', '23', '59'],
     addWeapon: [],
@@ -7049,10 +7509,14 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+      death: 20,
+    },
   },
   {
     id: '339',
     name: '마서의 서적',
+    learningSkills: [{ id: '2208', level: 2 }, { id: '569', level: 3 }, { id: '2216', level: 4 }, { id: '2206', level: 5 }, { id: '460', level: 6 }, { id: '2215', level: 7 }, { id: '2207', level: 8 }, { id: '2217', level: 9 }, { id: '2221', level: 9 }, { id: '2223', level: 10 }],
     require: ['336'],
     addSkill: ['41', '42', '59'],
     addWeapon: [],
@@ -7094,10 +7558,13 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '340',
     name: '페이지 오브 로드',
+    learningSkills: [{ id: '2209', level: 2 }, { id: '570', level: 3 }, { id: '2220', level: 4 }, { id: '2210', level: 5 }, { id: '461', level: 6 }, { id: '2219', level: 7 }, { id: '2224', level: 8 }, { id: '526', level: 9 }, { id: '2222', level: 9 }, { id: '2211', level: 10 }],
     require: ['339'],
     addSkill: ['41', '42', '59'],
     addWeapon: [],
@@ -7145,10 +7612,13 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '341',
     name: '미믹',
+    learningSkills: [{ id: '2645', level: 2 }, { id: '2970', level: 2 }, { id: '1532', level: 3 }, { id: '2969', level: 3 }, { id: '545', level: 4 }, { id: '2646', level: 5 }, { id: '2949', level: 6 }, { id: '735', level: 7 }, { id: '789', level: 8 }, { id: '840', level: 9 }, { id: '2651', level: 10 }],
     require: ['336'],
     addSkill: ['23', '52', '59'],
     addWeapon: [],
@@ -7189,10 +7659,14 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+      death: 20,
+    },
   },
   {
     id: '342',
     name: '판도라',
+    learningSkills: [{ id: '302', level: 2 }, { id: '546', level: 3 }, { id: '736', level: 3 }, { id: '2647', level: 4 }, { id: '1533', level: 5 }, { id: '2950', level: 6 }, { id: '790', level: 7 }, { id: '2971', level: 8 }, { id: '841', level: 9 }, { id: '2652', level: 10 }],
     require: ['341'],
     addSkill: ['23', '52', '59'],
     addWeapon: [],
@@ -7241,10 +7715,14 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+      death: 30,
+    },
   },
   {
     id: '344',
     name: '돌',
+    learningSkills: [{ id: '2978', level: 2 }, { id: '278', level: 3 }, { id: '2383', level: 4 }, { id: '3021', level: 5 }, { id: '2578', level: 6 }, { id: '2980', level: 7 }, { id: '2981', level: 8 }, { id: '2988', level: 9 }, { id: '2382', level: 10 }],
     require: [],
     addSkill: ['46', '50', '60'],
     addWeapon: [],
@@ -7288,10 +7766,13 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '345',
     name: '이블 마타',
+    learningSkills: [{ id: '2982', level: 2 }, { id: '2984', level: 3 }, { id: '279', level: 4 }, { id: '2579', level: 5 }, { id: '2979', level: 6 }, { id: '2384', level: 7 }, { id: '391', level: 8 }, { id: '843', level: 9 }, { id: '2986', level: 10 }],
     require: ['344'],
     addSkill: ['46', '50', '60'],
     addWeapon: [],
@@ -7335,10 +7816,13 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '346',
     name: '포스 돌',
+    learningSkills: [{ id: '2983', level: 2 }, { id: '280', level: 3 }, { id: '2985', level: 4 }, { id: '843', level: 5 }, { id: '2385', level: 6 }, { id: '2989', level: 7 }, { id: '392', level: 8 }, { id: '844', level: 9 }, { id: '2987', level: 10 }],
     require: ['345'],
     addSkill: ['46', '50', '60'],
     addWeapon: [],
@@ -7387,10 +7871,13 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '347',
     name: '보컬로이드',
+    learningSkills: [{ id: '2082', level: 2 }, { id: '2086', level: 3 }, { id: '555', level: 3 }, { id: '2101', level: 4 }, { id: '3016', level: 5 }, { id: '3006', level: 6 }, { id: '2087', level: 7 }, { id: '148', level: 7 }, { id: '2077', level: 8 }, { id: '414', level: 9 }, { id: '2083', level: 10 }],
     require: ['344'],
     addSkill: ['38', '46', '60'],
     addWeapon: [],
@@ -7437,10 +7924,13 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '348',
     name: '아카데미 돌',
+    learningSkills: [{ id: '2040', level: 2 }, { id: '2088', level: 3 }, { id: '556', level: 3 }, { id: '2103', level: 4 }, { id: '2035', level: 5 }, { id: '773', level: 5 }, { id: '2078', level: 6 }, { id: '3007', level: 7 }, { id: '774', level: 8 }, { id: '413', level: 9 }, { id: '2027', level: 10 }],
     require: ['347'],
     addSkill: ['37', '38', '46', '60'],
     addWeapon: [],
@@ -7490,10 +7980,13 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '349',
     name: '골렘',
+    learningSkills: [{ id: '2990', level: 2 }, { id: '62', level: 3 }, { id: '615', level: 4 }, { id: '2994', level: 5 }, { id: '67', level: 6 }, { id: '545', level: 6 }, { id: '3008', level: 7 }, { id: '679', level: 8 }, { id: '585', level: 9 }, { id: '2991', level: 10 }],
     require: ['344'],
     addSkill: ['60'],
     addWeapon: [],
@@ -7538,10 +8031,13 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '350',
     name: '마스터 골렘',
+    learningSkills: [{ id: '2993', level: 2 }, { id: '63', level: 3 }, { id: '2995', level: 4 }, { id: '68', level: 5 }, { id: '546', level: 5 }, { id: '3022', level: 6 }, { id: '680', level: 7 }, { id: '616', level: 8 }, { id: '586', level: 9 }, { id: '2992', level: 10 }],
     require: ['349'],
     addSkill: ['60'],
     addWeapon: [],
@@ -7591,10 +8087,13 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '351',
     name: '하위 아포토시스',
+    learningSkills: [{ id: '1681', level: 2 }, { id: '560', level: 3 }, { id: '793', level: 4 }, { id: '594', level: 5 }, { id: '2246', level: 6 }, { id: '695', level: 7 }, { id: '100', level: 8 }, { id: '157', level: 9 }, { id: '1561', level: 10 }],
     require: ['344'],
     addSkill: ['19', '24', '27', '43', '60'],
     addWeapon: [],
@@ -7641,10 +8140,13 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '352',
     name: '상위 아포토시스',
+    learningSkills: [{ id: '1682', level: 2 }, { id: '561', level: 3 }, { id: '794', level: 4 }, { id: '595', level: 5 }, { id: '2250', level: 6 }, { id: '696', level: 7 }, { id: '104', level: 8 }, { id: '158', level: 9 }, { id: '1562', level: 10 }],
     require: ['351'],
     addSkill: ['19', '24', '27', '43', '60'],
     addWeapon: [],
@@ -7691,10 +8193,13 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '354',
     name: '키메라',
+    learningSkills: [{ id: '3068', level: 2 }, { id: '2997', level: 3 }, { id: '3074', level: 4 }, { id: '61', level: 4 }, { id: '3010', level: 5 }, { id: '66', level: 6 }, { id: '3069', level: 7 }, { id: '3019', level: 8 }, { id: '576', level: 9 }, { id: '3079', level: 10 }],
     require: [],
     addSkill: ['53', '60', '62'],
     addWeapon: [],
@@ -7741,10 +8246,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '355',
     name: '삼종혼합체',
+    learningSkills: [{ id: '2698', level: 2 }, { id: '3081', level: 2 }, { id: '62', level: 3 }, { id: '3017', level: 4 }, { id: '3075', level: 5 }, { id: '67', level: 5 }, { id: '3011', level: 6 }, { id: '3023', level: 7 }, { id: '577', level: 8 }, { id: '3070', level: 9 }, { id: '831', level: 9 }, { id: '3080', level: 10 }],
     require: ['354'],
     addSkill: ['53', '60', '62'],
     addWeapon: [],
@@ -7791,10 +8299,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '356',
     name: '기가 뮤턴트',
+    learningSkills: [{ id: '3071', level: 2 }, { id: '63', level: 3 }, { id: '3018', level: 4 }, { id: '68', level: 5 }, { id: '3012', level: 6 }, { id: '2998', level: 7 }, { id: '578', level: 8 }, { id: '2699', level: 9 }, { id: '832', level: 9 }, { id: '3083', level: 10 }],
     require: ['355'],
     addSkill: ['53', '60', '62'],
     addWeapon: [],
@@ -7841,10 +8352,13 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '357',
     name: '마도 키메라',
+    learningSkills: [{ id: '1499', level: 2 }, { id: '1505', level: 2 }, { id: '1511', level: 2 }, { id: '1461', level: 2 }, { id: '447', level: 3 }, { id: '452', level: 3 }, { id: '1581', level: 4 }, { id: '460', level: 4 }, { id: '2520', level: 5 }, { id: '2526', level: 6 }, { id: '2530', level: 7 }, { id: '2534', level: 8 }, { id: '462', level: 8 }, { id: '464', level: 9 }, { id: '2999', level: 10 }],
     require: ['354'],
     addSkill: ['22', '23', '25', '50', '60', '62'],
     addWeapon: [],
@@ -7891,10 +8405,13 @@ export const RACE_LIST: Race[] = [
       seduction: 50,
       incontinence: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '358',
     name: '포스 뮤턴트',
+    learningSkills: [{ id: '1589', level: 2 }, { id: '448', level: 3 }, { id: '453', level: 3 }, { id: '1590', level: 4 }, { id: '461', level: 5 }, { id: '1591', level: 6 }, { id: '3000', level: 7 }, { id: '1592', level: 8 }, { id: '858', level: 9 }, { id: '3082', level: 10 }],
     require: ['357'],
     addSkill: ['22', '23', '25', '50', '60', '62'],
     addWeapon: [],
@@ -7941,10 +8458,13 @@ export const RACE_LIST: Race[] = [
       seduction: 25,
       incontinence: 25,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '359',
     name: '키메라로이드',
+    learningSkills: [{ id: '1350', level: 2 }, { id: '279', level: 3 }, { id: '669', level: 3 }, { id: '3001', level: 4 }, { id: '337', level: 5 }, { id: '3013', level: 6 }, { id: '3020', level: 7 }, { id: '3003', level: 8 }, { id: '208', level: 9 }, { id: '843', level: 9 }, { id: '1351', level: 10 }],
     require: ['354'],
     addSkill: ['19', '43', '60'],
     addWeapon: [],
@@ -7991,10 +8511,13 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '360',
     name: '기신',
+    learningSkills: [{ id: '3002', level: 2 }, { id: '280', level: 3 }, { id: '670', level: 3 }, { id: '589', level: 4 }, { id: '338', level: 5 }, { id: '3014', level: 6 }, { id: '3004', level: 7 }, { id: '209', level: 8 }, { id: '844', level: 9 }, { id: '579', level: 9 }, { id: '1352', level: 10 }],
     require: ['359'],
     addSkill: ['19', '43', '60'],
     addWeapon: [],
@@ -8042,10 +8565,13 @@ export const RACE_LIST: Race[] = [
       seduction: 0,
       incontinence: 0,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '362',
     name: '하위천사',
+    learningSkills: [{ id: '1460', level: 2 }, { id: '1636', level: 2 }, { id: '268', level: 3 }, { id: '549', level: 3 }, { id: '1464', level: 4 }, { id: '1651', level: 4 }, { id: '1466', level: 5 }, { id: '976', level: 5 }, { id: '1462', level: 6 }, { id: '930', level: 6 }, { id: '1634', level: 7 }, { id: '646', level: 7 }, { id: '1462', level: 8 }, { id: '1652', level: 8 }, { id: '581', level: 9 }, { id: '638', level: 10 }],
     require: [],
     addSkill: ['6', '7', '8', '22', '26'],
     addWeapon: [],
@@ -8096,10 +8622,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '363',
     name: '상위천사',
+    learningSkills: [{ id: '945', level: 2 }, { id: '550', level: 3 }, { id: '622', level: 3 }, { id: '1489', level: 4 }, { id: '1653', level: 4 }, { id: '1473', level: 5 }, { id: '977', level: 5 }, { id: '1635', level: 6 }, { id: '647', level: 7 }, { id: '1654', level: 8 }, { id: '488', level: 9 }, { id: '582', level: 9 }, { id: '1637', level: 10 }],
     require: ['362'],
     addSkill: ['6', '7', '8', '22', '26'],
     addWeapon: [],
@@ -8151,10 +8680,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '364',
     name: '치천사',
+    learningSkills: [{ id: '964', level: 2 }, { id: '551', level: 3 }, { id: '116', level: 3 }, { id: '1490', level: 4 }, { id: '1668', level: 4 }, { id: '1474', level: 5 }, { id: '623', level: 5 }, { id: '1656', level: 6 }, { id: '583', level: 7 }, { id: '978', level: 8 }, { id: '489', level: 9 }, { id: '1642', level: 10 }],
     require: ['363'],
     addSkill: ['6', '7', '8', '22', '26'],
     addWeapon: [],
@@ -8209,10 +8741,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '365',
     name: '타천사',
+    learningSkills: [{ id: '966', level: 2 }, { id: '1500', level: 2 }, { id: '1506', level: 2 }, { id: '1512', level: 2 }, { id: '453', level: 3 }, { id: '138', level: 3 }, { id: '1669', level: 4 }, { id: '627', level: 5 }, { id: '1670', level: 6 }, { id: '1533', level: 7 }, { id: '583', level: 7 }, { id: '965', level: 8 }, { id: '492', level: 9 }, { id: '1643', level: 10 }],
     require: ['363'],
     addSkill: ['6', '7', '8', '23', '26', '27'],
     addWeapon: [],
@@ -8259,10 +8794,13 @@ export const RACE_LIST: Race[] = [
       digest: 25,
       stun: 50,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '366',
     name: '발키리',
+    learningSkills: [{ id: '1051', level: 2 }, { id: '1077', level: 2 }, { id: '67', level: 3 }, { id: '269', level: 3 }, { id: '1088', level: 4 }, { id: '1667', level: 4 }, { id: '134', level: 5 }, { id: '1075', level: 6 }, { id: '135', level: 7 }, { id: '1085', level: 8 }, { id: '1092', level: 8 }, { id: '1704', level: 9 }, { id: '1060', level: 10 }],
     require: ['1', '362'],
     addSkill: ['6', '7', '8', '10', '26', '28'],
     addWeapon: [],
@@ -8315,10 +8853,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '367',
     name: '로드 발큐리아',
+    learningSkills: [{ id: '1052', level: 2 }, { id: '1076', level: 2 }, { id: '68', level: 3 }, { id: '270', level: 3 }, { id: '1087', level: 4 }, { id: '104', level: 4 }, { id: '117', level: 5 }, { id: '1063', level: 6 }, { id: '119', level: 7 }, { id: '1086', level: 8 }, { id: '1093', level: 8 }, { id: '146', level: 9 }, { id: '1078', level: 10 }],
     require: ['366'],
     addSkill: ['6', '7', '8', '10', '26', '28'],
     addWeapon: [],
@@ -8372,10 +8913,13 @@ export const RACE_LIST: Race[] = [
       seduction: 150,
       incontinence: 150,
     },
+    stateOnHit: {
+    },
   },
   {
     id: '368',
     name: '큐피드',
+    learningSkills: [{ id: '1196', level: 2 }, { id: '550', level: 3 }, { id: '1225', level: 4 }, { id: '307', level: 5 }, { id: '370', level: 5 }, { id: '373', level: 5 }, { id: '1469', level: 6 }, { id: '1655', level: 6 }, { id: '1463', level: 7 }, { id: '1639', level: 7 }, { id: '1482', level: 8 }, { id: '639', level: 8 }, { id: '500', level: 9 }, { id: '1197', level: 10 }],
     require: ['52', '362'],
     addSkill: ['14', '22', '23', '26', '49'],
     addWeapon: [],
@@ -8420,10 +8964,14 @@ export const RACE_LIST: Race[] = [
       digest: 25,
       stun: 50,
     },
+    stateOnHit: {
+      seduction: 10,
+    },
   },
   {
     id: '369',
     name: '음혹의 쿠피도',
+    learningSkills: [{ id: '1218', level: 2 }, { id: '1483', level: 3 }, { id: '551', level: 3 }, { id: '1467', level: 4 }, { id: '1226', level: 4 }, { id: '308', level: 5 }, { id: '371', level: 5 }, { id: '374', level: 5 }, { id: '1657', level: 6 }, { id: '640', level: 7 }, { id: '1640', level: 8 }, { id: '1470', level: 9 }, { id: '501', level: 9 }, { id: '1217', level: 10 }],
     require: ['368'],
     addSkill: ['14', '22', '23', '26', '49'],
     addWeapon: [],
@@ -8469,6 +9017,9 @@ export const RACE_LIST: Race[] = [
       petrify: 0,
       digest: 25,
       stun: 50,
+    },
+    stateOnHit: {
+      seduction: 20,
     },
   },
 ];
