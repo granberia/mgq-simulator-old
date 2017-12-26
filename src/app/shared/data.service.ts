@@ -199,7 +199,7 @@ export class DataService {
   }
 
   setupDefaultValues(target: any) { // interface 를 정의할 때 기본값 설정이 불가능하자 사용한 수단
-    if (target.learningSkills.length !== 0) {
+    if (target.learningSkills && target.learningSkills.length !== 0) {
       target.learningSkills = target.learningSkills.map(item => {
         return {
           ...item,
